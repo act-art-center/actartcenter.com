@@ -49,7 +49,7 @@ export function Footer() {
                   </Link>
                 </li>
               ))}
-              <li><Link href="/pricing" className="text-sm text-stone/70 hover:text-white transition-colors">가격 안내</Link></li>
+              <li><Link href="/pricing" className="text-sm text-stone/70 hover:text-white transition-colors">비용 안내</Link></li>
             </ul>
           </div>
 

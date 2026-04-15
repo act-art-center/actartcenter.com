@@ -18,7 +18,7 @@ export const NAV_ITEMS = [
   { label: "서비스", href: "/services" },
   { label: "ACT란?", href: "/act-approach" },
   { label: "팀소개", href: "/team" },
-  { label: "가격", href: "/pricing" },
+  { label: "비용", href: "/pricing" },
   { label: "블로그", href: "/blog" },
   { label: "FAQ", href: "/faq" },
 ] as const;
@@ -133,7 +133,7 @@ export const FAQ_ITEMS = [
   {
     question: "상담 비용은 얼마인가요?",
     answer:
-      "개인 미술치료는 1회 80,000~120,000원, 그룹 프로그램은 1회 40,000~60,000원입니다. 8주 패키지 프로그램 이용 시 할인이 적용됩니다. 자세한 가격은 가격 안내 페이지에서 확인하실 수 있습니다.",
+      "개인 미술치료는 회기당 80,000~120,000원, 그룹 프로그램은 회기당 40,000~60,000원입니다. 8주 패키지 프로그램 이용 시 할인이 적용됩니다. 자세한 내용은 비용 안내 페이지에서 확인하실 수 있습니다.",
   },
   {
     question: "ACT란 무엇인가요?",

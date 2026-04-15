@@ -5,8 +5,8 @@ import { PageHero } from "@/components/shared/PageHero";
 import { SectionWrapper } from "@/components/shared/SectionWrapper";
 
 export const metadata: Metadata = {
-  title: "가격 안내",
-  description: "ACT ART CENTER 미술심리치료 프로그램 가격 안내. 투명한 가격 정책.",
+  title: "비용 안내",
+  description: "ACT ART CENTER 미술심리치료 프로그램 비용 안내. 투명한 비용 정책.",
 };
 
 const pricing = [
@@ -27,11 +27,11 @@ export default function PricingPage() {
   return (
     <>
       <PageHero
-        title="가격 안내"
-        subtitle="투명한 가격 정책을 지향합니다. 첫 상담에서 상황에 맞는 프로그램과 비용을 안내드립니다."
+        title="비용 안내"
+        subtitle="투명한 비용 정책을 지향합니다. 첫 상담에서 상황에 맞는 프로그램과 비용을 안내드립니다."
         label="Pricing"
         imageSrc="https://images.unsplash.com/photo-1456086272160-b28b0645b729?w=1920&q=80"
-        imageAlt="ACT ART CENTER 가격 안내"
+        imageAlt="ACT ART CENTER 비용 안내"
       />
 
       {/* Individual pricing */}
@@ -66,7 +66,7 @@ export default function PricingPage() {
             ))}
           </div>
           <p className="mt-8 text-center text-stone text-sm">
-            * 가격은 프로그램 내용과 치료사 경력에 따라 달라질 수 있습니다.
+            * 비용은 프로그램 내용과 치료사 경력에 따라 달라질 수 있습니다.
           </p>
         </Container>
       </SectionWrapper>

@@ -34,7 +34,7 @@ export default function ChildPage() {
                 <span className="px-3 py-1.5 bg-cream rounded-lg text-sm text-charcoal/70">만 5세 이상</span>
                 <span className="px-3 py-1.5 bg-cream rounded-lg text-sm text-charcoal/70">사전 예약제</span>
               </div>
-              <p className="mt-4 text-primary-500 font-semibold tabular-nums">80,000 ~ 100,000원 / 회</p>
+              <p className="mt-4 text-primary-500 font-semibold tabular-nums">80,000 ~ 100,000원 / 회기</p>
               <Link href="/booking" className="mt-8 inline-flex items-center px-7 py-3.5 bg-primary-500 text-white font-semibold rounded-lg hover:bg-primary-600 transition-all duration-200">
                 예약 문의하기
               </Link>

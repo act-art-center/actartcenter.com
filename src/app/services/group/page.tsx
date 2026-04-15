@@ -33,7 +33,7 @@ export default function GroupPage() {
                 <span className="px-3 py-1.5 bg-cream rounded-lg text-sm text-charcoal/70">4~6인 소그룹</span>
                 <span className="px-3 py-1.5 bg-cream rounded-lg text-sm text-charcoal/70">사전 예약제</span>
               </div>
-              <p className="mt-4 text-primary-500 font-semibold tabular-nums">40,000 ~ 60,000원 / 회 / 인</p>
+              <p className="mt-4 text-primary-500 font-semibold tabular-nums">40,000 ~ 60,000원 / 회기기 / 인</p>
             </div>
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
               <Image src="https://images.unsplash.com/photo-1544967082-d9d25d867d66?w=800&q=80" alt="그룹 미술치료 활동" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" priority />
