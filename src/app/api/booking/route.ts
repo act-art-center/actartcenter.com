@@ -1,7 +1,6 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
 const RECIPIENTS = ["byeolko@gmail.com", "henryoh@kakao.com"];
 
 export async function POST(request: Request) {
@@ -15,6 +14,8 @@ export async function POST(request: Request) {
         { status: 400 }
       );
     }
+
+    const resend = new Resend(process.env.RESEND_API_KEY);
 
     const serviceLabels: Record<string, string> = {
       protective: "보호·의료 환경 미술심리치료",
