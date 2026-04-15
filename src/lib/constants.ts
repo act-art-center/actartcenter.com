@@ -64,7 +64,7 @@ export const ACT_PROCESSES = [
   },
   {
     id: "present-moment",
-    title: "현재 순간",
+    title: "현재 순간 접촉",
     titleEn: "Present Moment",
     description: "지금 이 순간에 온전히 머무릅니다.",
     artConnection: "지금 이 순간, 손끝의 물감에 집중하세요",

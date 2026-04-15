@@ -1,7 +1,9 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
-const RECIPIENTS = ["byeolko@gmail.com", "henryoh@kakao.com"];
+// Resend 무료 플랜: 계정 소유자 이메일로만 발송 가능
+// 도메인 인증(resend.com/domains) 후 다른 수신자 추가 가능
+const RECIPIENTS = ["actartkorea@gmail.com"];
 
 export async function POST(request: Request) {
   try {

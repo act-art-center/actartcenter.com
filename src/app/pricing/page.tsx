@@ -20,7 +20,7 @@ const packages = [
   { name: "마음유연성 8주 프로그램", sessions: "개인 8회기", price: "560,000 ~ 800,000원", note: "ACT 6프로세스 기반" },
   { name: "번아웃 탈출 워크숍", sessions: "그룹 4회 + 개인 1회", price: "250,000 ~ 350,000원", note: "" },
   { name: "부모-자녀 미술치료", sessions: "가족 세션 4회기", price: "320,000 ~ 400,000원", note: "" },
-  { name: "기업 힐링 워크숍", sessions: "반일 / 종일", price: "500,000 ~ 1,500,000원", note: "맞춤 설계" },
+  { name: "기업 미술심리치료 워크숍", sessions: "반일 / 종일", price: "500,000 ~ 1,500,000원", note: "맞춤 설계" },
 ];
 
 export default function PricingPage() {
