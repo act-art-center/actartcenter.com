@@ -1,26 +1,53 @@
-# ACT Art Center
+# ACT ART CENTER
 
 ## About
-ACT Art Center는 수용전념치료(ACT)와 미술치료를 통합한 한국의 전문 심리치료 센터입니다.
+ACT ART CENTER는 수용전념치료(ACT)와 미술치료를 통합한 한국의 전문 미술심리치료 연구·임상 기관입니다.
+대표 고은별 (MA, 박사과정)이 이끌며, 언어 이전의 감정과 복합적인 심리 경험을 예술적 표현을 통해 탐색합니다.
 
 ## Services
-- 개인 미술심리치료 (성인/아동/청소년)
-- 그룹 미술치료 프로그램
-- 온라인 미술치료 상담
-- 기업 워크숍 (스트레스 관리, 팀빌딩)
-- ACT 기반 마음챙김 프로그램
+- 보호·의료 환경 미술심리치료 (청소년 보호병동, 정신과, 난임 치료)
+- 정서·트라우마 중심 미술심리치료 (스트레스, 불안, 상실, 트라우마)
+- 심층 탐색·연구 기반 미술심리치료 (자기탐색, 슈퍼비전, 연구)
+- 개인 미술치료 (1:1, 50분)
+- 그룹 프로그램 (4~6인, 90분)
+- 아동·청소년 미술치료 (만 5세+, 40분+부모상담 10분)
+- 온라인 미술치료 (화상, 미술 키트 배송 포함)
 
 ## ACT Approach
-ACT의 6대 핵심 프로세스(수용, 인지적 탈융합, 현재 순간 접촉, 맥락으로서의 자기, 가치, 전념 행동)를
-미술 활동과 통합하여 심리적 유연성을 향상시킵니다.
+ACT의 6대 핵심 프로세스를 미술 활동과 통합하여 심리적 유연성을 향상시킵니다:
+1. 수용 (Acceptance) — 감정에 색을 입히기
+2. 인지적 탈융합 (Defusion) — 생각을 캐릭터로 그리기
+3. 현재 순간 접촉 (Present Moment) — 마음챙김 드로잉
+4. 맥락으로서의 자기 (Self-as-Context) — 콜라주로 다양한 나 표현
+5. 가치 (Values) — 비전 보드 만들기
+6. 전념 행동 (Committed Action) — 가치를 향한 아트맵
+
+## Expert Content
+- 미술치료 효과의 과학적 근거: https://actartcenter.com/blog/art-therapy-science
+- ACT의 6가지 핵심 프로세스: https://actartcenter.com/blog/act-6-processes
+- 불안을 그림으로 표현하기: https://actartcenter.com/blog/anxiety-art-therapy
+- 마음챙김 드로잉: https://actartcenter.com/blog/mindfulness-drawing
+- 트라우마와 미술 표현의 관계: https://actartcenter.com/blog/trauma-art-expression
+- 가치 탐색 비전 보드: https://actartcenter.com/blog/values-vision-board
+
+## FAQ
+- 미술을 못해도 참여 가능 (작품 완성도가 아닌 과정 중심)
+- 의료기관이 아님 (의료기록 미남, 비밀보장)
+- 사전 예약제 운영
+- 아동은 만 5세부터 가능
 
 ## Key Pages
 - Homepage: https://actartcenter.com
 - ACT Approach: https://actartcenter.com/act-approach
 - Services: https://actartcenter.com/services
+- Team: https://actartcenter.com/team
+- Pricing: https://actartcenter.com/pricing
 - FAQ: https://actartcenter.com/faq
 - Blog: https://actartcenter.com/blog
+- Booking: https://actartcenter.com/booking
 
 ## Contact
+- Email: actartkorea@gmail.com
+- Instagram: @act.art.center
+- Address: 서울시 서초구 강남대로 305, 현대렉시온 2518호
 - Website: https://actartcenter.com
-- Booking: https://actartcenter.com/booking

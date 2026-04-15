@@ -13,7 +13,7 @@ export function Footer() {
             <Link href="/" className="flex items-center gap-2.5 text-white">
               <Logo className="w-8 h-8" invert />
               <span className="font-[var(--font-display)] text-xl">
-                ACT Art Center
+                ACT ART CENTER
               </span>
             </Link>
             <p
@@ -78,7 +78,7 @@ export function Footer() {
         </div>
 
         <div className="mt-16 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone/40">
-          <p>&copy; {new Date().getFullYear()} ACT Art Center. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} ACT ART CENTER. All rights reserved.</p>
           <Link href="/privacy" className="hover:text-stone/70 transition-colors">
             개인정보처리방침
           </Link>

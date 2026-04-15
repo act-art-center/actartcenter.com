@@ -14,12 +14,21 @@ export const metadata: Metadata = {
     template: `%s | ${SITE_NAME}`,
   },
   description: SITE_DESCRIPTION,
+  keywords: [
+    "미술치료", "미술심리치료", "ACT", "수용전념치료",
+    "미술치료사", "심리상담", "아동미술치료", "온라인미술치료",
+    "트라우마미술치료", "불안미술치료", "심리적유연성",
+    "ACT ART CENTER", "미술심리치료연구소",
+  ],
+  authors: [{ name: "고은별", url: SITE_URL }],
+  creator: "ACT ART CENTER",
+  publisher: "ACT ART CENTER",
   openGraph: {
     type: "website",
     locale: "ko_KR",
     siteName: SITE_NAME,
-    title: `${SITE_NAME} — 미술로 마음을 치유하다`,
-    description: "ACT 수용전념치료 x 미술치료. 전문 미술치료사와 함께하는 맞춤 프로그램.",
+    title: `${SITE_NAME} — ACT 미술심리치료 연구소`,
+    description: "수용전념치료(ACT)와 미술치료를 통합한 전문 연구·임상 기관. 언어 이전의 감정을 예술적 표현으로 탐색합니다.",
     url: SITE_URL,
   },
   twitter: {
@@ -27,8 +36,22 @@ export const metadata: Metadata = {
     title: SITE_TITLE,
     description: SITE_DESCRIPTION,
   },
-  robots: { index: true, follow: true },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   alternates: { canonical: SITE_URL },
+  verification: {
+    // Google Search Console 인증 후 추가
+    // google: "verification-code",
+  },
 };
 
 const medicalBusinessSchema = {

@@ -6,7 +6,7 @@ import { SectionWrapper } from "@/components/shared/SectionWrapper";
 
 export const metadata: Metadata = {
   title: "가격 안내",
-  description: "ACT Art Center 미술심리치료 프로그램 가격 안내. 투명한 가격 정책.",
+  description: "ACT ART CENTER 미술심리치료 프로그램 가격 안내. 투명한 가격 정책.",
 };
 
 const pricing = [
@@ -31,7 +31,7 @@ export default function PricingPage() {
         subtitle="투명한 가격 정책을 지향합니다. 첫 상담에서 상황에 맞는 프로그램과 비용을 안내드립니다."
         label="Pricing"
         imageSrc="https://images.unsplash.com/photo-1456086272160-b28b0645b729?w=1920&q=80"
-        imageAlt="ACT Art Center 가격 안내"
+        imageAlt="ACT ART CENTER 가격 안내"
       />
 
       {/* Individual pricing */}

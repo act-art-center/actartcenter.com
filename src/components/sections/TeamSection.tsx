@@ -20,13 +20,13 @@ export function TeamSection() {
             style={{ border: "1px solid rgba(196, 191, 183, 0.15)" }}
           >
             {/* Profile photo */}
-            <div className="w-40 h-40 mx-auto rounded-2xl overflow-hidden shadow-[var(--shadow-md)]">
+            <div className="w-40 h-52 mx-auto rounded-2xl overflow-hidden shadow-[var(--shadow-md)]">
               <Image
                 src="/images/team-eunbyeol.jpg"
                 alt="고은별 대표"
                 width={160}
-                height={160}
-                className="w-full h-full object-cover"
+                height={208}
+                className="w-full h-full object-cover object-top"
               />
             </div>
 

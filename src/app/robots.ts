@@ -6,26 +6,33 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/booking", "/admin"],
+        disallow: ["/api/", "/admin"],
       },
       {
         userAgent: "GPTBot",
-        allow: ["/blog/", "/act-approach", "/faq"],
-        disallow: ["/booking", "/admin"],
+        allow: ["/", "/blog/", "/act-approach", "/faq", "/services/", "/team"],
+        disallow: ["/api/", "/booking"],
       },
       {
         userAgent: "Google-Extended",
         allow: "/",
       },
       {
+        userAgent: "anthropic-ai",
+        allow: ["/", "/blog/", "/act-approach", "/faq", "/services/"],
+        disallow: ["/api/", "/booking"],
+      },
+      {
+        userAgent: "PerplexityBot",
+        allow: ["/", "/blog/", "/act-approach", "/faq"],
+        disallow: ["/api/", "/booking"],
+      },
+      {
         userAgent: "CCBot",
         disallow: "/",
       },
-      {
-        userAgent: "anthropic-ai",
-        allow: ["/blog/", "/act-approach"],
-      },
     ],
     sitemap: "https://actartcenter.com/sitemap.xml",
+    host: "https://actartcenter.com",
   };
 }

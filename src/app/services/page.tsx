@@ -8,7 +8,7 @@ import { SERVICES } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "서비스",
-  description: "ACT Art Center의 미술심리치료 서비스. 보호·의료 환경, 정서·트라우마 중심, 심층 탐색·연구 기반 프로그램.",
+  description: "ACT ART CENTER의 미술심리치료 서비스. 보호·의료 환경, 정서·트라우마 중심, 심층 탐색·연구 기반 프로그램.",
 };
 
 const serviceImages = [

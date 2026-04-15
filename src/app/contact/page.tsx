@@ -7,7 +7,7 @@ import { Mail, MapPin, Clock } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "연락처",
-  description: "ACT Art Center 오시는 길, 연락처, 운영시간 안내.",
+  description: "ACT ART CENTER 오시는 길, 연락처, 운영시간 안내.",
 };
 
 const contactInfo = [
@@ -24,7 +24,7 @@ export default function ContactPage() {
         subtitle="편한 방법으로 연락해 주세요. 영업일 기준 1~2일 이내에 답변드립니다."
         label="Contact"
         imageSrc="https://images.unsplash.com/photo-1572947650440-e8a97ef053b2?w=1920&q=80"
-        imageAlt="ACT Art Center 연락처"
+        imageAlt="ACT ART CENTER 연락처"
       />
 
       <SectionWrapper bg="cream">
@@ -80,7 +80,7 @@ export default function ContactPage() {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="ACT Art Center 오시는 길 - 서울시 서초구 강남대로 305"
+                title="ACT ART CENTER 오시는 길 - 서울시 서초구 강남대로 305"
                 className="aspect-square lg:aspect-auto lg:h-full"
               />
             </div>

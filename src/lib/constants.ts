@@ -1,6 +1,6 @@
 export const SITE_URL = "https://actartcenter.com";
-export const SITE_NAME = "ACT Art Center";
-export const SITE_TITLE = "ACT Art Center | ACT 미술심리치료 연구소";
+export const SITE_NAME = "ACT ART CENTER";
+export const SITE_TITLE = "ACT ART CENTER | ACT 미술심리치료 연구소";
 export const SITE_DESCRIPTION =
   "수용전념치료(ACT)의 개념을 내포한 미술심리치료 전문 연구·임상 기관. 언어 이전의 감정과 복합적인 심리 경험을 예술적 표현을 통해 탐색하며, 내담자가 자신의 삶과 감정에 보다 유연하고 안정적으로 관계 맺을 수 있도록 돕습니다.";
 export const SITE_TAGLINE = "Accept. Create. Transform.";
@@ -153,7 +153,7 @@ export const FAQ_ITEMS = [
   {
     question: "의료기록에 남나요?",
     answer:
-      "아닙니다. ACT Art Center는 의료기관이 아닌 상담센터로, 의료보험 청구나 의료기록에 남지 않습니다. 모든 상담 내용은 철저히 비밀이 보장됩니다.",
+      "아닙니다. ACT ART CENTER는 의료기관이 아닌 상담센터로, 의료보험 청구나 의료기록에 남지 않습니다. 모든 상담 내용은 철저히 비밀이 보장됩니다.",
   },
 ] as const;
 

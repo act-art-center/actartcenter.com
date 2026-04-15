@@ -89,7 +89,7 @@ export default async function BlogPostPage({ params }: Props) {
               </div>
               <div>
                 <p className="text-night font-semibold">{post.author}</p>
-                <p className="text-primary-500 text-sm">ACT Art Center 대표 · MA (박사과정)</p>
+                <p className="text-primary-500 text-sm">ACT ART CENTER 대표 · MA (박사과정)</p>
                 <p className="mt-2 text-charcoal/60 text-sm leading-relaxed">
                   세 아이의 어머니이자 미술과 심리치료를 연결하는 전문가. 예술적 감수성과 임상적 통찰을 바탕으로 지속 가능한 심리적 성장을 돕는 미술치료를 지향합니다.
                 </p>

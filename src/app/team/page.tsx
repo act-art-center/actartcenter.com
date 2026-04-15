@@ -8,7 +8,7 @@ import { TEAM_MEMBERS } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "팀소개",
-  description: "ACT Art Center의 전문 미술심리치료사를 소개합니다.",
+  description: "ACT ART CENTER의 전문 미술심리치료사를 소개합니다.",
 };
 
 export default function TeamPage() {
@@ -20,7 +20,7 @@ export default function TeamPage() {
         subtitle="미술과 심리치료 모두에서 깊은 전문성을 갖춘 치료사가 함께합니다."
         label="Our Team"
         imageSrc="https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?w=1920&q=80"
-        imageAlt="ACT Art Center 전문가"
+        imageAlt="ACT ART CENTER 전문가"
       />
 
       <SectionWrapper bg="cream">
@@ -28,13 +28,13 @@ export default function TeamPage() {
           <div className="max-w-2xl mx-auto">
             <div className="bg-white rounded-2xl p-8 lg:p-12" style={{ border: "1px solid rgba(196, 191, 183, 0.15)" }}>
               {/* Profile photo */}
-              <div className="w-48 h-48 mx-auto rounded-2xl overflow-hidden shadow-[var(--shadow-md)]">
+              <div className="w-48 h-64 mx-auto rounded-2xl overflow-hidden shadow-[var(--shadow-md)]">
                 <Image
                   src="/images/team-eunbyeol.jpg"
                   alt="고은별 대표"
                   width={192}
-                  height={192}
-                  className="w-full h-full object-cover"
+                  height={256}
+                  className="w-full h-full object-cover object-top"
                 />
               </div>
 

@@ -4,7 +4,7 @@ import { Container } from "@/components/shared/Container";
 
 export const metadata: Metadata = {
   title: "갤러리",
-  description: "ACT Art Center 미술심리치료 작품 갤러리. 창작 활동의 순간들.",
+  description: "ACT ART CENTER 미술심리치료 작품 갤러리. 창작 활동의 순간들.",
 };
 
 const galleryImages = [

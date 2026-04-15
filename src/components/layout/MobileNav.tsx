@@ -25,7 +25,7 @@ export function MobileNav() {
             <div className="flex items-center justify-between px-6 h-16">
               <span className="flex items-center gap-2 text-night">
                 <Logo className="w-7 h-7" />
-                <span className="font-[var(--font-display)] text-xl">ACT Art Center</span>
+                <span className="font-[var(--font-display)] text-xl">ACT ART CENTER</span>
               </span>
               <SheetClose className="p-2 text-charcoal hover:text-primary-500 transition-colors" aria-label="메뉴 닫기">
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
