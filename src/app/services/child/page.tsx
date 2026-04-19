@@ -129,19 +129,31 @@ export default function ChildPage() {
 
       <SectionWrapper bg="cream" className="overflow-hidden">
         <Container className="relative">
-          {/* Artty welcome — 좌측 상단 floating (데스크탑만) */}
+          {/* Ambient layer — Artty welcome primary (아이 환대), Twins bottom-right small */}
           <CharacterIllustration
             name="artty-welcome"
             alt=""
-            width={260}
-            height={260}
+            width={340}
+            height={340}
             hideOnMobile
-            animation="float"
-            className="absolute left-0 top-0 z-[1] w-[200px] xl:w-[260px] -translate-x-4 -translate-y-2 opacity-90"
+            animation="ambient"
+            opacity={0.42}
+            className="absolute left-[6%] top-[14%] z-0 w-[240px] xl:w-[320px]"
+          />
+          <CharacterIllustration
+            name="twins-together"
+            alt=""
+            width={200}
+            height={200}
+            hideOnMobile
+            animation="ambient"
+            opacity={0.28}
+            delay={3}
+            className="absolute right-[4%] bottom-[6%] z-0 w-[150px] xl:w-[180px]"
           />
 
-          <h2 className="relative z-[2] text-center mb-12 text-2xl lg:text-3xl font-bold tracking-tight">이런 아이에게 도움이 됩니다</h2>
-          <div className="relative z-[2] grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+          <h2 className="relative z-10 text-center mb-12 text-2xl lg:text-3xl font-bold tracking-tight">이런 아이에게 도움이 됩니다</h2>
+          <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
             {areas.map((a) => (
               <div key={a.title} className="bg-white rounded-xl p-6" style={{ border: "1px solid rgba(196, 191, 183, 0.15)" }}>
                 <h3 className="text-night font-semibold">{a.title}</h3>

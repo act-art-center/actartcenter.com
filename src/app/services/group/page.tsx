@@ -133,21 +133,45 @@ export default function GroupPage() {
         </Container>
       </section>
 
-      <SectionWrapper bg="cream">
-        <Container>
+      <SectionWrapper bg="cream" className="overflow-hidden">
+        <Container className="relative">
+          {/* Ambient layer — Twins center primary (그룹 = 함께의 은유) + Artty welcome right accent */}
+          <CharacterIllustration
+            name="twins-together"
+            alt=""
+            width={380}
+            height={380}
+            hideOnMobile
+            animation="ambient"
+            opacity={0.35}
+            className="absolute left-1/2 top-[35%] z-0 w-[280px] xl:w-[360px] -translate-x-1/2"
+          />
+          <CharacterIllustration
+            name="artty-welcome"
+            alt=""
+            width={220}
+            height={220}
+            hideOnMobile
+            animation="ambient"
+            opacity={0.3}
+            delay={2.5}
+            className="absolute right-[4%] top-[60%] z-0 w-[160px] xl:w-[200px]"
+          />
+
           {/* Twins — 상단 센터에 작게 (그룹 = 함께의 은유) */}
-          <div className="flex justify-center mb-6">
+          <div className="relative z-10 flex justify-center mb-6">
             <CharacterIllustration
               name="twins-together"
               alt=""
               width={240}
               height={240}
-              animation="fade-in"
+              animation="ambient"
+              opacity={0.85}
               className="w-[160px] md:w-[200px] lg:w-[220px]"
             />
           </div>
-          <h2 className="text-center mb-12 text-2xl lg:text-3xl font-bold tracking-tight">진행 중인 프로그램</h2>
-          <div className="space-y-6 max-w-3xl mx-auto">
+          <h2 className="relative z-10 text-center mb-12 text-2xl lg:text-3xl font-bold tracking-tight">진행 중인 프로그램</h2>
+          <div className="relative z-10 space-y-6 max-w-3xl mx-auto">
             {programs.map((p) => (
               <div key={p.title} className="bg-white rounded-xl p-6 lg:p-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4" style={{ border: "1px solid rgba(196, 191, 183, 0.15)" }}>
                 <div>

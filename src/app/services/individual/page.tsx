@@ -133,19 +133,31 @@ export default function IndividualPage() {
 
       <SectionWrapper bg="cream" className="overflow-hidden">
         <Container className="relative">
-          {/* Artty holding paint — 우측 하단 floating (데스크탑만) */}
+          {/* Ambient layer — Artty paint primary (감정 표현), Twins bottom-right accent */}
           <CharacterIllustration
             name="artty-paint"
             alt=""
-            width={280}
-            height={280}
+            width={360}
+            height={360}
             hideOnMobile
-            animation="float"
-            className="absolute right-0 bottom-0 z-[1] w-[220px] xl:w-[280px] translate-x-4 translate-y-6 opacity-90"
+            animation="ambient"
+            opacity={0.4}
+            className="absolute left-[8%] top-[12%] z-0 w-[260px] xl:w-[340px]"
+          />
+          <CharacterIllustration
+            name="twins-together"
+            alt=""
+            width={200}
+            height={200}
+            hideOnMobile
+            animation="ambient"
+            opacity={0.28}
+            delay={3}
+            className="absolute right-[4%] bottom-[6%] z-0 w-[150px] xl:w-[180px]"
           />
 
-          <h2 className="relative z-[2] text-center mb-12 text-2xl lg:text-3xl font-bold tracking-tight">프로그램 특징</h2>
-          <div className="relative z-[2] grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+          <h2 className="relative z-10 text-center mb-12 text-2xl lg:text-3xl font-bold tracking-tight">프로그램 특징</h2>
+          <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
             {features.map((f) => (
               <div key={f.title} className="bg-white rounded-xl p-6" style={{ border: "1px solid rgba(196, 191, 183, 0.15)" }}>
                 <h3 className="text-night font-semibold">{f.title}</h3>

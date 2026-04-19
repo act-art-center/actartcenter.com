@@ -50,9 +50,21 @@ export default function BlogPage() {
         </Container>
       </section>
 
-      <SectionWrapper bg="cream">
-        <Container>
-          <div className="mb-8">
+      <SectionWrapper bg="cream" className="overflow-hidden">
+        <Container className="relative">
+          {/* Ambient layer — Acttie reading drifts left-bottom as quiet reading companion */}
+          <CharacterIllustration
+            name="acttie-reading"
+            alt=""
+            width={260}
+            height={260}
+            hideOnMobile
+            animation="ambient"
+            opacity={0.25}
+            delay={2.5}
+            className="absolute left-[3%] top-[60%] z-0 w-[180px] xl:w-[220px]"
+          />
+          <div className="relative z-10 mb-8">
             <Breadcrumbs
               items={[
                 { name: "홈", href: "/" },
@@ -63,7 +75,7 @@ export default function BlogPage() {
           </div>
 
           {/* Artty thoughtful — 블로그 헤더 옆 (2/3 · 1/3 비대칭) */}
-          <div className="mb-8 grid grid-cols-1 lg:grid-cols-3 gap-6 items-center">
+          <div className="relative z-10 mb-8 grid grid-cols-1 lg:grid-cols-3 gap-6 items-center">
             <div className="lg:col-span-2">
               <p className="text-secondary-500 text-xs font-medium tracking-wide uppercase mb-2">From Artty</p>
               <h2 className="text-night text-xl lg:text-2xl font-semibold leading-snug">
@@ -79,14 +91,15 @@ export default function BlogPage() {
                 alt=""
                 width={240}
                 height={240}
-                animation="fade-in"
+                animation="ambient"
+                opacity={0.88}
                 className="w-[160px] md:w-[200px] lg:w-[220px]"
               />
             </div>
           </div>
 
           {/* Search + Categories */}
-          <div className="mb-10 space-y-5">
+          <div className="relative z-10 mb-10 space-y-5">
             {/* Search */}
             <div className="relative max-w-md mx-auto">
               <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-stone" />
@@ -121,7 +134,7 @@ export default function BlogPage() {
 
           {/* Posts grid */}
           {filtered.length > 0 ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {filtered.map((post) => (
                 <Link
                   key={post.slug}
@@ -160,7 +173,7 @@ export default function BlogPage() {
               ))}
             </div>
           ) : (
-            <div className="text-center py-16">
+            <div className="relative z-10 text-center py-16">
               <p className="text-charcoal/50 text-lg">검색 결과가 없습니다.</p>
               <button
                 onClick={() => { setSearchQuery(""); setActiveCategory("전체"); }}

@@ -58,9 +58,22 @@ export default function FaqPage() {
         </Container>
       </section>
 
-      <SectionWrapper bg="cream">
-        <Container>
-          <div className="mb-8">
+      <SectionWrapper bg="cream" className="overflow-hidden">
+        <Container className="relative">
+          {/* Ambient accent — Artty thoughtful drifts right-bottom as patient listener */}
+          <CharacterIllustration
+            name="artty-thoughtful"
+            alt=""
+            width={240}
+            height={240}
+            hideOnMobile
+            animation="ambient"
+            opacity={0.26}
+            delay={2.5}
+            className="absolute right-[3%] bottom-[12%] z-0 w-[170px] xl:w-[210px]"
+          />
+
+          <div className="relative z-10 mb-8">
             <Breadcrumbs
               items={[
                 { name: "홈", href: "/" },
@@ -70,14 +83,15 @@ export default function FaqPage() {
             />
           </div>
           {/* Acttie reading — 답변 안내자 (좌측 상단 보조 / 데스크탑만) */}
-          <div className="mb-10 grid grid-cols-1 lg:grid-cols-3 gap-6 items-center max-w-3xl mx-auto">
+          <div className="relative z-10 mb-10 grid grid-cols-1 lg:grid-cols-3 gap-6 items-center max-w-3xl mx-auto">
             <div className="flex justify-center lg:justify-start">
               <CharacterIllustration
                 name="acttie-reading"
                 alt=""
                 width={220}
                 height={220}
-                animation="fade-in"
+                animation="ambient"
+                opacity={0.88}
                 className="w-[150px] md:w-[180px] lg:w-[200px]"
               />
             </div>
@@ -92,7 +106,7 @@ export default function FaqPage() {
             </div>
           </div>
 
-          <div className="max-w-2xl mx-auto">
+          <div className="relative z-10 max-w-2xl mx-auto">
             <Accordion className="space-y-3">
               {FAQ_ITEMS.map((item, i) => (
                 <AccordionItem

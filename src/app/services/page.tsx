@@ -96,17 +96,31 @@ export default function ServicesPage() {
         </Container>
       </div>
 
-      <SectionWrapper bg="cream">
-        <Container>
+      <SectionWrapper bg="cream" className="overflow-hidden">
+        <Container className="relative">
+          {/* Ambient accent — Artty welcome drifts top-right behind the content */}
+          <CharacterIllustration
+            name="artty-welcome"
+            alt=""
+            width={240}
+            height={240}
+            hideOnMobile
+            animation="ambient"
+            opacity={0.3}
+            delay={2}
+            className="absolute right-[4%] top-[60%] z-0 w-[180px] xl:w-[240px]"
+          />
+
           {/* Twins banner — 서비스 소개 도입 (비대칭 1/3 · 2/3 구성) */}
-          <div className="mb-12 lg:mb-16 grid grid-cols-1 lg:grid-cols-3 gap-6 items-center">
+          <div className="relative z-10 mb-12 lg:mb-16 grid grid-cols-1 lg:grid-cols-3 gap-6 items-center">
             <div className="flex justify-center lg:justify-start">
               <CharacterIllustration
                 name="twins-together"
                 alt="Acttie와 Artty — 사고와 감정을 함께 돌보는 마스코트"
                 width={320}
                 height={320}
-                animation="fade-in"
+                animation="ambient"
+                opacity={0.85}
                 className="w-[180px] md:w-[240px] lg:w-[280px]"
               />
             </div>
@@ -121,7 +135,7 @@ export default function ServicesPage() {
             </div>
           </div>
 
-          <div className="space-y-12 lg:space-y-20">
+          <div className="relative z-10 space-y-12 lg:space-y-20">
             {SERVICES_ALL.map((service, i) => (
               <div
                 key={service.id}

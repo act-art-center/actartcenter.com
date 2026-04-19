@@ -121,16 +121,40 @@ export default function ContactPage() {
         </Container>
       </div>
 
-      <SectionWrapper bg="cream">
-        <Container>
+      <SectionWrapper bg="cream" className="overflow-hidden">
+        <Container className="relative">
+          {/* Ambient layer — Acttie reading (좌하) + Artty welcome (우하) 맞이하는 숨결 */}
+          <CharacterIllustration
+            name="acttie-reading"
+            alt=""
+            width={240}
+            height={240}
+            hideOnMobile
+            animation="ambient"
+            opacity={0.25}
+            className="absolute left-[3%] bottom-[20%] z-0 w-[170px] xl:w-[210px]"
+          />
+          <CharacterIllustration
+            name="artty-welcome"
+            alt=""
+            width={240}
+            height={240}
+            hideOnMobile
+            animation="ambient"
+            opacity={0.25}
+            delay={3}
+            className="absolute right-[3%] bottom-[20%] z-0 w-[170px] xl:w-[210px]"
+          />
+
           {/* Twins 환영 배너 (센터) */}
-          <div className="mb-10 flex flex-col items-center text-center">
+          <div className="relative z-10 mb-10 flex flex-col items-center text-center">
             <CharacterIllustration
               name="twins-together"
               alt="Acttie와 Artty가 함께 인사합니다"
               width={240}
               height={240}
-              animation="fade-in"
+              animation="ambient"
+              opacity={0.88}
               className="w-[160px] md:w-[200px] lg:w-[220px]"
             />
             <p className="mt-4 max-w-[42ch] text-charcoal/70 text-sm leading-relaxed">
@@ -138,7 +162,7 @@ export default function ContactPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {/* Contact info */}
             <div className="space-y-6">
               <h2 className="text-night text-xl font-semibold">찾아오시는 길</h2>

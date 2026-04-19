@@ -188,19 +188,31 @@ export default function PricingPage() {
       {/* Individual pricing */}
       <SectionWrapper bg="cream" className="overflow-hidden">
         <Container className="relative">
-          {/* Acttie reading — 차분한 안내자 (좌측 상단, 데스크탑만) */}
+          {/* Ambient layer — Acttie reading primary (차분한 안내자) + Artty paint accent right */}
           <CharacterIllustration
             name="acttie-reading"
             alt=""
-            width={240}
-            height={240}
+            width={300}
+            height={300}
             hideOnMobile
-            animation="fade-in"
-            className="absolute left-0 top-4 z-[1] w-[180px] xl:w-[220px] -translate-x-2 opacity-90"
+            animation="ambient"
+            opacity={0.38}
+            className="absolute left-[4%] top-[12%] z-0 w-[210px] xl:w-[280px]"
+          />
+          <CharacterIllustration
+            name="artty-paint"
+            alt=""
+            width={220}
+            height={220}
+            hideOnMobile
+            animation="ambient"
+            opacity={0.28}
+            delay={3}
+            className="absolute right-[4%] bottom-[10%] z-0 w-[160px] xl:w-[200px]"
           />
 
-          <h2 className="relative z-[2] text-center mb-10 text-2xl lg:text-3xl font-bold tracking-tight">개별 세션</h2>
-          <div className="relative z-[2] max-w-3xl mx-auto space-y-4">
+          <h2 className="relative z-10 text-center mb-10 text-2xl lg:text-3xl font-bold tracking-tight">개별 세션</h2>
+          <div className="relative z-10 max-w-3xl mx-auto space-y-4">
             {pricing.map((item) => (
               <div key={item.service} className="bg-white rounded-xl p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3" style={{ border: "1px solid rgba(196, 191, 183, 0.15)" }}>
                 <div>

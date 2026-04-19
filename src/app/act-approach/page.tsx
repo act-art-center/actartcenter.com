@@ -115,17 +115,29 @@ export default function ActApproachPage() {
       </div>
 
       {/* 6 Processes */}
-      <SectionWrapper bg="cream">
+      <SectionWrapper bg="cream" className="overflow-hidden">
         <Container className="relative">
-          {/* Acttie — 좌측 상단, fade-in reveal (데스크탑에서만 보이며 content column에 overlap) */}
+          {/* Ambient layer — Acttie primary (사고 안내자), Artty 보조 (감정 동반자) */}
           <CharacterIllustration
             name="acttie-laptop"
             alt=""
-            width={280}
-            height={280}
+            width={360}
+            height={360}
             hideOnMobile
-            animation="fade-in"
-            className="absolute left-0 top-4 z-[1] w-[220px] xl:w-[280px] -translate-x-6 opacity-90"
+            animation="ambient"
+            opacity={0.4}
+            className="absolute left-[10%] top-[40%] z-0 w-[260px] xl:w-[340px] -translate-x-6"
+          />
+          <CharacterIllustration
+            name="artty-paint"
+            alt=""
+            width={240}
+            height={240}
+            hideOnMobile
+            animation="ambient"
+            opacity={0.3}
+            delay={3}
+            className="absolute right-[6%] top-[12%] z-0 w-[180px] xl:w-[220px]"
           />
 
           <div className="relative z-[2] text-center mb-12 lg:mb-16">

@@ -134,19 +134,31 @@ export default function OnlinePage() {
 
       <SectionWrapper bg="cream" className="overflow-hidden">
         <Container className="relative">
-          {/* Acttie laptop — 우측 상단 (온라인 안내자 은유, 데스크탑만) */}
+          {/* Ambient layer — Acttie laptop primary (온라인 안내자), Artty thoughtful 좌측 accent */}
           <CharacterIllustration
             name="acttie-laptop"
             alt=""
-            width={260}
-            height={260}
+            width={340}
+            height={340}
             hideOnMobile
-            animation="float"
-            className="absolute right-0 top-0 z-[1] w-[200px] xl:w-[260px] translate-x-4 -translate-y-2 opacity-90"
+            animation="ambient"
+            opacity={0.42}
+            className="absolute right-[6%] top-[14%] z-0 w-[240px] xl:w-[320px]"
+          />
+          <CharacterIllustration
+            name="artty-thoughtful"
+            alt=""
+            width={220}
+            height={220}
+            hideOnMobile
+            animation="ambient"
+            opacity={0.3}
+            delay={2.5}
+            className="absolute left-[4%] top-[55%] z-0 w-[160px] xl:w-[200px]"
           />
 
-          <h2 className="relative z-[2] text-center mb-12 text-2xl lg:text-3xl font-bold tracking-tight">진행 과정</h2>
-          <div className="relative z-[2] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
+          <h2 className="relative z-10 text-center mb-12 text-2xl lg:text-3xl font-bold tracking-tight">진행 과정</h2>
+          <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
             {steps.map((s) => (
               <div key={s.number} className="bg-white rounded-xl p-6 text-center" style={{ border: "1px solid rgba(196, 191, 183, 0.15)" }}>
                 <div className="w-10 h-10 mx-auto rounded-full bg-primary-50 flex items-center justify-center text-primary-500 font-bold text-sm">{s.number}</div>

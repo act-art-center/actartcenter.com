@@ -11,7 +11,9 @@ export function HeroSection() {
       overlayOpacity={0.55}
       className="min-h-[85vh] flex items-center"
     >
-      {/* Twins mascot — asymmetric right-side anchor (desktop only to preserve mobile readability) */}
+      {/* Ambient background layer — Twins primary (right anchor, hero signature),
+         Artty/Acttie accents (lower opacity so text remains primary on left column).
+         Three mascots drift on de-synced loops so the hero feels alive. */}
       <CharacterIllustration
         name="twins-together"
         alt=""
@@ -19,11 +21,34 @@ export function HeroSection() {
         height={520}
         priority
         hideOnMobile
-        animation="float"
-        className="absolute right-4 lg:right-12 bottom-0 z-[5] w-[38vw] max-w-[460px] opacity-90 drop-shadow-[0_12px_32px_rgba(29,28,21,0.25)]"
+        animation="ambient"
+        opacity={0.5}
+        className="absolute right-4 lg:right-12 bottom-0 z-[1] w-[38vw] max-w-[460px] drop-shadow-[0_12px_32px_rgba(29,28,21,0.25)]"
+      />
+      <CharacterIllustration
+        name="artty-thoughtful"
+        alt=""
+        width={220}
+        height={220}
+        hideOnMobile
+        animation="ambient"
+        opacity={0.2}
+        delay={2}
+        className="absolute right-[32%] top-[12%] z-[1] w-[160px] xl:w-[200px]"
+      />
+      <CharacterIllustration
+        name="acttie-reading"
+        alt=""
+        width={200}
+        height={200}
+        hideOnMobile
+        animation="ambient"
+        opacity={0.18}
+        delay={4}
+        className="absolute right-[38%] bottom-[14%] z-[1] w-[140px] xl:w-[170px]"
       />
 
-      <Container className="py-24 lg:py-32">
+      <Container className="relative z-[2] py-24 lg:py-32">
         <div className="max-w-2xl">
           <p
             className="text-white/60 font-[var(--font-accent)] text-lg mb-6"
