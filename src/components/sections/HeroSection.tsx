@@ -6,8 +6,8 @@ import { CharacterIllustration } from "@/components/shared/CharacterIllustration
 export function HeroSection() {
   return (
     <VideoHero
-      videoSrc="https://cdn.pixabay.com/video/2020/05/31/40395-426958684_large.mp4"
-      posterSrc="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=1920&q=80"
+      videoSrc="/videos/hero-video.mp4"
+      posterSrc="/videos/hero-poster.jpg"
       overlayOpacity={0.55}
       className="min-h-[85vh] flex items-center"
     >
