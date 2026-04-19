@@ -20,9 +20,9 @@ export function HeroSection() {
           </p>
 
           <h1 className="text-white font-bold leading-[1.1] tracking-[-0.03em] text-[clamp(2.2rem,1.5rem+4vw,4rem)]">
-            미술로 마음을 탐색하고,
+            ACT 미술심리치료로
             <br />
-            삶의 의미를 재발견하다
+            마음을 탐색하고, 삶의 의미를 재발견합니다
           </h1>
 
           <p className="mt-6 text-white/80 max-w-md text-lg leading-relaxed">
@@ -33,17 +33,36 @@ export function HeroSection() {
           <div className="mt-10 flex flex-wrap gap-4">
             <Link
               href="/booking"
+              aria-label="첫 무료 상담 예약하기"
               className="inline-flex items-center px-7 py-3.5 bg-primary-500 text-white font-semibold rounded-lg hover:bg-primary-600 transition-all duration-200 hover:scale-[1.02] shadow-[var(--shadow-md)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-night"
             >
-              예약 일정 확인하기
+              첫 무료 상담 예약하기
             </Link>
             <Link
               href="/act-approach"
+              aria-label="ACT 수용전념치료 자세히 보기"
               className="inline-flex items-center px-7 py-3.5 text-white font-semibold rounded-lg border-[1.5px] border-white/30 hover:bg-white/10 transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-night"
             >
-              치료 철학 알아보기
+              ACT 수용전념치료 자세히 보기
             </Link>
           </div>
+
+          {/* Tertiary cross-links — keeps home hero → hub depth-1 (B2 §2.5) */}
+          <p className="mt-6 text-sm text-white/60 leading-relaxed">
+            <Link
+              href="/services"
+              className="text-white/80 underline-offset-4 hover:underline hover:text-white"
+            >
+              미술심리치료 서비스 전체 보기
+            </Link>
+            <span className="mx-2 text-white/30" aria-hidden="true">·</span>
+            <Link
+              href="/gallery"
+              className="text-white/80 underline-offset-4 hover:underline hover:text-white"
+            >
+              미술치료 작품 갤러리
+            </Link>
+          </p>
         </div>
       </Container>
 

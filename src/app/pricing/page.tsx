@@ -3,10 +3,147 @@ import Link from "next/link";
 import { Container } from "@/components/shared/Container";
 import { PageHero } from "@/components/shared/PageHero";
 import { SectionWrapper } from "@/components/shared/SectionWrapper";
+import { JsonLd } from "@/components/shared/JsonLd";
+import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
+import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "비용 안내",
-  description: "ACT ART CENTER 미술심리치료 프로그램 비용 안내. 투명한 비용 정책.",
+  title: "미술치료 비용 — 개인·그룹·아동·온라인·패키지 요금표",
+  description:
+    "ACT ART CENTER 미술심리치료 비용을 투명하게 공개합니다. 개인 50분 80,000~120,000원, 그룹 4~6인 40,000~60,000원, 아동 세션 80,000원부터. 8주 패키지·번아웃 워크숍 가격 포함.",
+  keywords: [
+    "미술치료 비용",
+    "미술치료 가격",
+    "상담료",
+    "미술치료 1회 비용",
+    "미술치료 패키지 할인",
+    "기업 미술치료 비용",
+  ],
+  alternates: { canonical: `${SITE_URL}/pricing` },
+  openGraph: {
+    type: "website",
+    title: "미술치료 비용 — 개인·그룹·아동·온라인·패키지 요금표",
+    description: "투명한 비용 정책. 80,000원부터.",
+    url: `${SITE_URL}/pricing`,
+    images: [
+      {
+        url: "/og/pricing.png",
+        width: 1200,
+        height: 630,
+        alt: "ACT 미술치료 비용 요금표",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "미술치료 비용 — 개인·그룹·아동·온라인 요금표",
+    description: "투명한 비용 정책. 80,000원부터.",
+    images: ["/og/pricing.png"],
+  },
+};
+
+const pricingSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "홈", item: SITE_URL },
+        { "@type": "ListItem", position: 2, name: "비용", item: `${SITE_URL}/pricing` },
+      ],
+    },
+    {
+      "@type": "OfferCatalog",
+      "@id": `${SITE_URL}/pricing#offers`,
+      name: "ACT 미술치료 서비스 가격표",
+      itemListElement: [
+        {
+          "@type": "Offer",
+          name: "개인 미술심리치료 (성인) 50분",
+          priceSpecification: {
+            "@type": "PriceSpecification",
+            minPrice: "80000",
+            maxPrice: "120000",
+            priceCurrency: "KRW",
+          },
+          itemOffered: { "@id": `${SITE_URL}/services/individual#service` },
+        },
+        {
+          "@type": "Offer",
+          name: "개인 미술심리치료 (아동·청소년) 50분",
+          priceSpecification: {
+            "@type": "PriceSpecification",
+            minPrice: "80000",
+            maxPrice: "100000",
+            priceCurrency: "KRW",
+          },
+          itemOffered: { "@id": `${SITE_URL}/services/child#service` },
+        },
+        {
+          "@type": "Offer",
+          name: "그룹 프로그램 (1인당) 90분",
+          priceSpecification: {
+            "@type": "PriceSpecification",
+            minPrice: "40000",
+            maxPrice: "60000",
+            priceCurrency: "KRW",
+          },
+          itemOffered: { "@id": `${SITE_URL}/services/group#course-8weeks` },
+        },
+        {
+          "@type": "Offer",
+          name: "온라인 미술치료 50분 (키트 배송 포함)",
+          priceSpecification: {
+            "@type": "PriceSpecification",
+            minPrice: "70000",
+            maxPrice: "100000",
+            priceCurrency: "KRW",
+          },
+          itemOffered: { "@id": `${SITE_URL}/services/online#service` },
+        },
+        {
+          "@type": "Offer",
+          name: "마음유연성 8주 프로그램 (개인 8회)",
+          priceSpecification: {
+            "@type": "PriceSpecification",
+            minPrice: "560000",
+            maxPrice: "800000",
+            priceCurrency: "KRW",
+          },
+        },
+        {
+          "@type": "Offer",
+          name: "번아웃 탈출 워크숍 (그룹 4 + 개인 1)",
+          priceSpecification: {
+            "@type": "PriceSpecification",
+            minPrice: "250000",
+            maxPrice: "350000",
+            priceCurrency: "KRW",
+          },
+        },
+        {
+          "@type": "Offer",
+          name: "부모-자녀 미술치료 (가족 4회)",
+          priceSpecification: {
+            "@type": "PriceSpecification",
+            minPrice: "320000",
+            maxPrice: "400000",
+            priceCurrency: "KRW",
+          },
+        },
+        {
+          "@type": "Offer",
+          name: "기업 미술심리치료 워크숍",
+          priceSpecification: {
+            "@type": "PriceSpecification",
+            minPrice: "500000",
+            maxPrice: "1500000",
+            priceCurrency: "KRW",
+          },
+        },
+      ],
+    },
+  ],
 };
 
 const pricing = [
@@ -26,13 +163,26 @@ const packages = [
 export default function PricingPage() {
   return (
     <>
+      <JsonLd data={pricingSchema} />
       <PageHero
-        title="비용 안내"
+        title="ACT 미술치료 비용 안내"
         subtitle="투명한 비용 정책을 지향합니다. 첫 상담에서 상황에 맞는 프로그램과 비용을 안내드립니다."
         label="Pricing"
         imageSrc="https://images.unsplash.com/photo-1456086272160-b28b0645b729?w=1920&q=80"
         imageAlt="ACT ART CENTER 비용 안내"
       />
+
+      <div className="bg-paper pt-6 pb-2">
+        <Container>
+          <Breadcrumbs
+            items={[
+              { name: "홈", href: "/" },
+              { name: "비용", href: "/pricing" },
+            ]}
+            emitJsonLd={false}
+          />
+        </Container>
+      </div>
 
       {/* Individual pricing */}
       <SectionWrapper bg="cream">

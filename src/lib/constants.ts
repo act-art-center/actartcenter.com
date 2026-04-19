@@ -6,6 +6,13 @@ export const SITE_DESCRIPTION =
 export const SITE_TAGLINE = "Accept. Create. Transform.";
 export const SITE_TAGLINE_KR = "Exploring the mind through art, rediscovering meaning in life.";
 
+// Search console verification tokens.
+// - 값은 실제 GSC / 네이버 서치어드바이저 인증 후 환경변수로 주입한다.
+// - 빈 문자열이면 layout.tsx 에서 메타태그 자체를 출력하지 않도록 분기.
+// TODO: GSC 인증 후 GSC_VERIFICATION / NAVER_VERIFICATION 에 실제 토큰 주입.
+export const GSC_VERIFICATION = process.env.NEXT_PUBLIC_GSC_VERIFICATION ?? "";
+export const NAVER_VERIFICATION = process.env.NEXT_PUBLIC_NAVER_VERIFICATION ?? "";
+
 export const CONTACT = {
   phone: "010-####-####",
   email: "actartkorea@gmail.com",
@@ -23,6 +30,17 @@ export const NAV_ITEMS = [
   { label: "FAQ", href: "/faq" },
 ] as const;
 
+/**
+ * 기존 허브 카드 3개 (특수·전문 영역: protective/emotional/depth).
+ *
+ * ⚠️ WAVE 3 / C3: 이 상수는 `/services/page.tsx` (C1 담당)가 현재
+ * `serviceImages[i]` 로컬 배열과 인덱스로 매칭되어 있어, 요소 수를 바꾸면
+ * 런타임 크래시가 발생합니다. 신규 7개 full 카탈로그는 아래 `SERVICES_ALL`
+ * 을 사용하세요.
+ *
+ * C1에게 TODO: `/services/page.tsx`의 `SERVICES` + 로컬 `serviceImages`를
+ * `SERVICES_ALL` (7개, `service.image`/`service.imageAlt` 사용)로 전환할 것.
+ */
 export const SERVICES = [
   {
     id: "protective",
@@ -45,6 +63,126 @@ export const SERVICES = [
     description: "연구, 슈퍼비전, 전문 자문. 자기 이해와 내적 탐색을 원하는 개인 및 장기·심층 치료 사례를 위한 프로그램입니다.",
     href: "/services/depth",
   },
+] as const;
+
+/**
+ * 서비스 전체 카탈로그 (7개) — B2 spec §4.5 허브 7-hop 요구사항.
+ *
+ * 성인 대상 4개 (individual/group/child/online) + 특수·전문 영역 3개
+ * (protective/emotional/depth).
+ *
+ * - `anchor`: SEO internal-link anchor text
+ * - `image` / `imageAlt`: 카드 썸네일 (서비스 페이지 hero와 일관성 유지)
+ * - `group`: UI 분류 ("adult" / "specialty")
+ *
+ * Footer, ServicesSection (홈), /services 허브 (C1 마이그레이션 후)에서 공유.
+ */
+export const SERVICES_ALL = [
+  {
+    id: "individual",
+    title: "성인 1:1 개인 미술치료",
+    titleEn: "Individual Art Therapy",
+    description: "ACT 6프로세스 기반 1:1 맞춤 미술심리치료. 50분 세션으로 불안·우울·번아웃·트라우마·관계 갈등을 다룹니다.",
+    href: "/services/individual",
+    anchor: "성인 1:1 개인 미술치료 안내",
+    image: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=800&q=80",
+    imageAlt: "성인 1:1 개인 미술치료 공간",
+    group: "adult",
+  },
+  {
+    id: "group",
+    title: "ACT 그룹 미술치료 프로그램",
+    titleEn: "Group Art Therapy",
+    description: "4~6인 소그룹으로 함께하는 ACT 미술치료. 마음유연성 8주, 번아웃 탈출 워크숍, 테마별 단기 그룹 3가지.",
+    href: "/services/group",
+    anchor: "4~6인 그룹 프로그램",
+    image: "https://images.unsplash.com/photo-1529070538774-1843cb3265df?w=800&q=80",
+    imageAlt: "원형 테이블에 모인 4~6인 소그룹 미술치료",
+    group: "adult",
+  },
+  {
+    id: "child",
+    title: "아동·청소년 미술치료",
+    titleEn: "Child & Adolescent Art Therapy",
+    description: "만 5세부터 청소년까지. 놀이치료와 ACT를 통합한 발달 단계별 맞춤 미술치료. 부모 상담 10분 포함.",
+    href: "/services/child",
+    anchor: "아동·청소년 미술치료 안내",
+    image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&q=80",
+    imageAlt: "아동 미술치료 놀이 활동",
+    group: "adult",
+  },
+  {
+    id: "online",
+    title: "온라인 미술치료",
+    titleEn: "Online Art Therapy",
+    description: "Zoom 화상 + 미술 재료 키트 자택 배송. 전국 어디서나, 해외 거주 한국인도 참여 가능한 비대면 ACT 미술치료.",
+    href: "/services/online",
+    anchor: "전국 온라인 미술치료",
+    image: "https://images.unsplash.com/photo-1587440871875-191322ee64b0?w=800&q=80",
+    imageAlt: "온라인 미술치료 Zoom 세션",
+    group: "adult",
+  },
+  {
+    id: "protective",
+    title: "보호·의료 환경 미술심리치료",
+    titleEn: "Protective & Medical Environment",
+    description: "장기 치료·의료 병행 환경에서의 미술심리치료. 청소년 보호병동, 정신과 입원 환경, 난임·생식의학 치료 과정을 지원합니다.",
+    href: "/services/protective",
+    anchor: "보호·의료 환경 미술심리치료",
+    image: "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=800&q=80",
+    imageAlt: "보호·의료 환경에서의 미술치료 작업",
+    group: "specialty",
+  },
+  {
+    id: "emotional",
+    title: "정서·트라우마 중심 미술심리치료",
+    titleEn: "Emotional & Trauma-Focused",
+    description: "삶의 전환기에 놓인 분들을 위한 치료. 만성 스트레스, 불안, 정서 소진, 관계 갈등, 상실, 트라우마 경험을 다룹니다.",
+    href: "/services/emotional",
+    anchor: "정서·트라우마 중심 미술심리치료",
+    image: "https://images.unsplash.com/photo-1499892477393-f675706cbe6e?w=800&q=80",
+    imageAlt: "정서적 치유를 위한 미술 활동",
+    group: "specialty",
+  },
+  {
+    id: "depth",
+    title: "심층 탐색·연구 기반 미술심리치료",
+    titleEn: "Depth-Oriented & Research-Based",
+    description: "연구, 슈퍼비전, 전문 자문. 자기 이해와 내적 탐색을 원하는 개인 및 장기·심층 치료 사례를 위한 프로그램입니다.",
+    href: "/services/depth",
+    anchor: "심층 탐색·연구 기반 미술심리치료",
+    image: "https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=800&q=80",
+    imageAlt: "심층 탐색을 위한 예술적 표현",
+    group: "specialty",
+  },
+] as const;
+
+/** 성인 대상 4개 서비스 (individual/group/child/online). */
+export const SERVICES_ADULT = SERVICES_ALL.filter((s) => s.group === "adult");
+
+/** 특수·전문 영역 3개 (protective/emotional/depth). */
+export const SERVICES_SPECIALTY = SERVICES_ALL.filter((s) => s.group === "specialty");
+
+/** Footer 사이트맵 4컬럼용 리소스 링크. */
+export const RESOURCE_LINKS = [
+  { label: "블로그", href: "/blog" },
+  { label: "자주 묻는 질문", href: "/faq" },
+  { label: "비용 안내", href: "/pricing" },
+  { label: "작품 갤러리", href: "/gallery" },
+] as const;
+
+/** Footer 사이트맵 4컬럼용 센터 소개 링크. */
+export const ABOUT_LINKS = [
+  { label: "센터 소개·대표 프로필", href: "/team" },
+  { label: "ACT 수용전념치료란?", href: "/act-approach" },
+  { label: "작품 갤러리", href: "/gallery" },
+] as const;
+
+/** Footer 사이트맵 4컬럼용 연결 링크. */
+export const CONNECT_LINKS = [
+  { label: "상담 예약", href: "/booking" },
+  { label: "오시는 길·연락처", href: "/contact" },
+  { label: "개인정보처리방침", href: "/privacy" },
 ] as const;
 
 export const ACT_PROCESSES = [

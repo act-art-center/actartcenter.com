@@ -3,10 +3,67 @@ import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/shared/Container";
 import { SectionWrapper } from "@/components/shared/SectionWrapper";
+import { JsonLd } from "@/components/shared/JsonLd";
+import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
+import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "보호·의료 환경 미술심리치료",
-  description: "장기 치료·의료 병행 환경에서의 미술심리치료. 청소년 보호병동, 정신과 입원 환경, 난임·생식의학 치료 과정을 지원합니다.",
+  description:
+    "장기 치료·의료 병행 환경의 내담자를 위한 ACT 기반 미술심리치료입니다. 청소년 보호병동, 정신과 입원 환경, 난임·생식의학 치료 과정에서 정서적 고립과 심리적 압박을 안전하게 다룹니다. 기관 협력도 가능하며 첫 상담은 무료로 안내드립니다.",
+  keywords: [
+    "보호 환경 미술치료",
+    "의료 환경 미술치료",
+    "청소년 보호병동 미술치료",
+    "정신과 입원 미술치료",
+    "난임 미술치료",
+  ],
+  alternates: { canonical: `${SITE_URL}/services/protective` },
+  openGraph: {
+    type: "website",
+    title: "보호·의료 환경 미술심리치료",
+    description: "청소년 보호병동·정신과 입원·난임 치료 과정의 미술심리치료.",
+    url: `${SITE_URL}/services/protective`,
+    images: [
+      {
+        url: "/og/services-protective.png",
+        width: 1200,
+        height: 630,
+        alt: "보호·의료 환경 미술심리치료",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "보호·의료 환경 미술심리치료",
+    description: "청소년 보호병동·정신과 입원·난임 치료 과정의 미술심리치료.",
+    images: ["/og/services-protective.png"],
+  },
+};
+
+const protectiveServiceSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "홈", item: SITE_URL },
+        { "@type": "ListItem", position: 2, name: "서비스", item: `${SITE_URL}/services` },
+        { "@type": "ListItem", position: 3, name: "보호·의료 환경 미술심리치료", item: `${SITE_URL}/services/protective` },
+      ],
+    },
+    {
+      "@type": "MedicalTherapy",
+      "@id": `${SITE_URL}/services/protective#service`,
+      name: "보호·의료 환경 미술심리치료",
+      alternateName: "Protective & Medical Environment Art Therapy",
+      description: "청소년 보호병동·정신과 입원·난임 치료 과정 등 의료 환경에서의 미술심리치료.",
+      url: `${SITE_URL}/services/protective`,
+      image: `${SITE_URL}/og/services-protective.png`,
+      therapyType: "Art Therapy",
+      provider: { "@id": `${SITE_URL}/#organization` },
+    },
+  ],
 };
 
 const areas = [
@@ -18,8 +75,19 @@ const areas = [
 export default function ProtectivePage() {
   return (
     <>
+      <JsonLd data={protectiveServiceSchema} />
       <section className="relative bg-paper py-16 lg:py-24">
         <Container>
+          <div className="mb-8">
+            <Breadcrumbs
+              items={[
+                { name: "홈", href: "/" },
+                { name: "서비스", href: "/services" },
+                { name: "보호·의료 환경 미술심리치료", href: "/services/protective" },
+              ]}
+              emitJsonLd={false}
+            />
+          </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div>
               <p className="text-primary-500 text-xs font-medium tracking-wide uppercase mb-4">Protective & Medical Environment</p>

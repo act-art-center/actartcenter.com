@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Container } from "@/components/shared/Container";
 import { SectionWrapper } from "@/components/shared/SectionWrapper";
+import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { CONTACT } from "@/lib/constants";
 
 export default function BookingPage() {
@@ -48,8 +49,17 @@ export default function BookingPage() {
     <>
       <section className="bg-paper py-16 lg:py-24">
         <Container>
+          <div className="mb-8">
+            <Breadcrumbs
+              items={[
+                { name: "홈", href: "/" },
+                { name: "상담 예약", href: "/booking" },
+              ]}
+              emitJsonLd={false}
+            />
+          </div>
           <div className="text-center max-w-2xl mx-auto">
-            <h1 className="text-3xl lg:text-4xl font-bold tracking-tight">상담 예약</h1>
+            <h1 className="text-3xl lg:text-4xl font-bold tracking-tight">ACT 미술치료 상담 예약</h1>
             <p className="mt-6 text-charcoal/80 leading-[var(--leading-normal)]">
               첫 상담에서 현재 상태와 목표를 함께 살펴보고, 맞춤 프로그램을 설계합니다.
             </p>

@@ -3,10 +3,83 @@ import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/shared/Container";
 import { SectionWrapper } from "@/components/shared/SectionWrapper";
+import { JsonLd } from "@/components/shared/JsonLd";
+import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
+import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "개인 미술치료",
-  description: "ACT 6프로세스 기반 1:1 맞춤 미술심리치료. 당신만의 속도로, 당신만의 색으로 마음을 탐색합니다.",
+  title: "성인 1:1 개인 미술치료 — ACT 6프로세스 기반 미술심리치료",
+  description:
+    "50분 1:1 성인 개인 미술심리치료. ACT 수용전념치료 6가지 프로세스를 미술 활동과 통합해 불안·우울·번아웃·트라우마·관계 갈등을 다룹니다. 80,000원부터. 사전 예약제.",
+  keywords: [
+    "개인 미술치료",
+    "성인 미술치료",
+    "1:1 미술심리상담",
+    "ACT 미술치료",
+    "불안 미술치료",
+    "번아웃 미술치료",
+  ],
+  alternates: { canonical: `${SITE_URL}/services/individual` },
+  openGraph: {
+    type: "website",
+    title: "성인 1:1 개인 미술치료 — ACT 미술심리치료 연구소",
+    description: "50분 1:1 개인 미술치료. ACT 6프로세스 기반 맞춤 설계.",
+    url: `${SITE_URL}/services/individual`,
+    images: [
+      {
+        url: "/og/services-individual.png",
+        width: 1200,
+        height: 630,
+        alt: "성인 1:1 개인 미술치료 세션",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "성인 1:1 개인 미술치료 — ACT 6프로세스 기반",
+    description: "80,000원부터. 당신만의 속도와 색으로.",
+    images: ["/og/services-individual.png"],
+  },
+};
+
+const individualServiceSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "홈", item: SITE_URL },
+        { "@type": "ListItem", position: 2, name: "서비스", item: `${SITE_URL}/services` },
+        { "@type": "ListItem", position: 3, name: "개인 미술치료", item: `${SITE_URL}/services/individual` },
+      ],
+    },
+    {
+      "@type": "MedicalTherapy",
+      "@id": `${SITE_URL}/services/individual#service`,
+      name: "성인 1:1 개인 미술치료",
+      alternateName: "Individual Art Therapy",
+      description: "ACT 수용전념치료 6프로세스 기반 1:1 맞춤 미술심리치료. 50분 세션.",
+      url: `${SITE_URL}/services/individual`,
+      image: `${SITE_URL}/og/services-individual.png`,
+      therapyType: "Art Therapy",
+      provider: { "@id": `${SITE_URL}/#organization` },
+      areaServed: { "@type": "Country", name: "대한민국" },
+      offers: {
+        "@type": "Offer",
+        price: "80000",
+        priceCurrency: "KRW",
+        priceSpecification: {
+          "@type": "UnitPriceSpecification",
+          price: "80000",
+          priceCurrency: "KRW",
+          referenceQuantity: { "@type": "QuantitativeValue", value: 50, unitText: "MIN" },
+          description: "50분 세션 기준 80,000~120,000원",
+        },
+        availability: "https://schema.org/InStock",
+        url: `${SITE_URL}/booking`,
+      },
+    },
+  ],
 };
 
 const features = [
@@ -19,12 +92,23 @@ const features = [
 export default function IndividualPage() {
   return (
     <>
+      <JsonLd data={individualServiceSchema} />
       <section className="bg-paper py-16 lg:py-24">
         <Container>
+          <div className="mb-8">
+            <Breadcrumbs
+              items={[
+                { name: "홈", href: "/" },
+                { name: "서비스", href: "/services" },
+                { name: "개인 미술치료", href: "/services/individual" },
+              ]}
+              emitJsonLd={false}
+            />
+          </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div>
               <p className="text-primary-500 text-xs font-medium tracking-wide uppercase mb-4">Individual Art Therapy</p>
-              <h1 className="text-3xl lg:text-4xl font-bold tracking-tight">개인 미술치료</h1>
+              <h1 className="text-3xl lg:text-4xl font-bold tracking-tight">성인 1:1 개인 미술치료 — ACT 6프로세스 기반</h1>
               <p className="mt-6 text-charcoal/80 leading-[var(--leading-normal)]">
                 ACT 6프로세스 기반 1:1 맞춤 미술심리치료. 당신만의 속도로, 당신만의 색으로 내면을 탐색합니다.
                 불안, 우울, 스트레스, 트라우마 등 다양한 심리적 어려움을 미술 활동과 함께 다룹니다.

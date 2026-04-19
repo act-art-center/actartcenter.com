@@ -3,10 +3,67 @@ import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/shared/Container";
 import { SectionWrapper } from "@/components/shared/SectionWrapper";
+import { JsonLd } from "@/components/shared/JsonLd";
+import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
+import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "정서·트라우마 중심 미술심리치료",
-  description: "삶의 전환기, 만성 스트레스, 불안, 정서 소진, 관계 갈등, 상실, 트라우마 경험을 미술치료로 다룹니다.",
+  description:
+    "삶의 전환기에 놓인 분들을 위한 ACT 미술심리치료입니다. 만성 스트레스, 불안, 정서 소진, 번아웃, 관계 갈등, 상실, 트라우마 경험을 미술이라는 안전한 매개로 다룹니다. 말로 표현하기 어려운 감정을 색과 형태로 풀어내는 첫 상담을 무료로 안내드립니다.",
+  keywords: [
+    "트라우마 미술치료",
+    "번아웃 미술치료",
+    "상실 애도 미술치료",
+    "정서 미술치료",
+    "관계 갈등 미술치료",
+  ],
+  alternates: { canonical: `${SITE_URL}/services/emotional` },
+  openGraph: {
+    type: "website",
+    title: "정서·트라우마 중심 미술심리치료",
+    description: "삶의 전환기, 번아웃, 상실, 트라우마를 미술로 다룹니다.",
+    url: `${SITE_URL}/services/emotional`,
+    images: [
+      {
+        url: "/og/services-emotional.png",
+        width: 1200,
+        height: 630,
+        alt: "정서·트라우마 중심 미술심리치료",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "정서·트라우마 중심 미술심리치료",
+    description: "삶의 전환기, 번아웃, 상실, 트라우마를 미술로 다룹니다.",
+    images: ["/og/services-emotional.png"],
+  },
+};
+
+const emotionalServiceSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "홈", item: SITE_URL },
+        { "@type": "ListItem", position: 2, name: "서비스", item: `${SITE_URL}/services` },
+        { "@type": "ListItem", position: 3, name: "정서·트라우마 중심 미술심리치료", item: `${SITE_URL}/services/emotional` },
+      ],
+    },
+    {
+      "@type": "MedicalTherapy",
+      "@id": `${SITE_URL}/services/emotional#service`,
+      name: "정서·트라우마 중심 미술심리치료",
+      alternateName: "Emotional & Trauma-Focused Art Therapy",
+      description: "삶의 전환기, 만성 스트레스, 정서 소진, 상실, 트라우마 경험에 대한 ACT 미술심리치료.",
+      url: `${SITE_URL}/services/emotional`,
+      image: `${SITE_URL}/og/services-emotional.png`,
+      therapyType: "Art Therapy",
+      provider: { "@id": `${SITE_URL}/#organization` },
+    },
+  ],
 };
 
 const areas = [
@@ -18,8 +75,19 @@ const areas = [
 export default function EmotionalPage() {
   return (
     <>
+      <JsonLd data={emotionalServiceSchema} />
       <section className="relative bg-paper py-16 lg:py-24">
         <Container>
+          <div className="mb-8">
+            <Breadcrumbs
+              items={[
+                { name: "홈", href: "/" },
+                { name: "서비스", href: "/services" },
+                { name: "정서·트라우마 중심 미술심리치료", href: "/services/emotional" },
+              ]}
+              emitJsonLd={false}
+            />
+          </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div>
               <p className="text-primary-500 text-xs font-medium tracking-wide uppercase mb-4">Emotional & Trauma-Focused</p>

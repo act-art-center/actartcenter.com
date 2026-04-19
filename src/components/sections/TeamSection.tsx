@@ -61,14 +61,34 @@ export function TeamSection() {
 
             <Link
               href="/team"
+              aria-label="고은별 대표 프로필 보기"
               className="mt-6 inline-flex items-center gap-1 text-secondary-500 text-sm font-medium hover:gap-2 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary-500 focus-visible:ring-offset-2 rounded"
             >
-              프로필 보기
+              고은별 대표 프로필 보기
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
               </svg>
             </Link>
           </div>
+
+          {/* Cross-links — team → act-approach + booking (B2 spec anchor quality) */}
+          <p className="mt-8 text-sm text-center text-charcoal/70 leading-relaxed">
+            대표가 진행하는{" "}
+            <Link
+              href="/act-approach"
+              className="text-primary-500 font-medium hover:underline underline-offset-4"
+            >
+              ACT 수용전념치료
+            </Link>
+            의 6가지 핵심 프로세스가 궁금하시다면, 먼저{" "}
+            <Link
+              href="/booking"
+              className="text-primary-500 font-medium hover:underline underline-offset-4"
+            >
+              첫 무료 상담 예약
+            </Link>
+            을 통해 편안하게 만나보실 수 있습니다.
+          </p>
         </div>
       </Container>
     </SectionWrapper>

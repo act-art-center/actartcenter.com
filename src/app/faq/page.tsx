@@ -5,23 +5,36 @@ import Link from "next/link";
 import { Container } from "@/components/shared/Container";
 import { SectionWrapper } from "@/components/shared/SectionWrapper";
 import { JsonLd } from "@/components/shared/JsonLd";
-import { FAQ_ITEMS } from "@/lib/constants";
+import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
+import { FAQ_ITEMS, SITE_URL } from "@/lib/constants";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
-const faqSchema = {
+const faqPageSchema = {
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: FAQ_ITEMS.map((item) => ({
-    "@type": "Question",
-    name: item.question,
-    acceptedAnswer: { "@type": "Answer", text: item.answer },
-  })),
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "홈", item: SITE_URL },
+        { "@type": "ListItem", position: 2, name: "FAQ", item: `${SITE_URL}/faq` },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      "@id": `${SITE_URL}/faq#faq`,
+      mainEntity: FAQ_ITEMS.map((item) => ({
+        "@type": "Question",
+        name: item.question,
+        acceptedAnswer: { "@type": "Answer", text: item.answer },
+      })),
+    },
+  ],
 };
 
 export default function FaqPage() {
   return (
     <>
-      <JsonLd data={faqSchema} />
+      <JsonLd data={faqPageSchema} />
       {/* Hero */}
       <section className="relative min-h-[40vh] lg:min-h-[50vh] flex items-end overflow-hidden">
         <Image
@@ -36,7 +49,7 @@ export default function FaqPage() {
         <Container className="relative z-10 pb-12 lg:pb-16 pt-32">
           <p className="text-white/60 text-xs font-medium tracking-widest uppercase mb-3">FAQ</p>
           <h1 className="text-white text-3xl lg:text-5xl font-extrabold tracking-tight leading-[1.1]">
-            자주 묻는 질문
+            ACT 미술치료 자주 묻는 질문
           </h1>
           <p className="mt-4 text-white/80 max-w-xl text-lg leading-relaxed">
             미술치료에 대해 궁금하신 점을 모았습니다. 더 궁금한 점은 편하게 문의해 주세요.
@@ -46,6 +59,15 @@ export default function FaqPage() {
 
       <SectionWrapper bg="cream">
         <Container>
+          <div className="mb-8">
+            <Breadcrumbs
+              items={[
+                { name: "홈", href: "/" },
+                { name: "FAQ", href: "/faq" },
+              ]}
+              emitJsonLd={false}
+            />
+          </div>
           <div className="max-w-2xl mx-auto">
             <Accordion className="space-y-3">
               {FAQ_ITEMS.map((item, i) => (

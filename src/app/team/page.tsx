@@ -4,24 +4,108 @@ import Link from "next/link";
 import { Container } from "@/components/shared/Container";
 import { SectionWrapper } from "@/components/shared/SectionWrapper";
 import { PageHero } from "@/components/shared/PageHero";
-import { TEAM_MEMBERS } from "@/lib/constants";
+import { JsonLd } from "@/components/shared/JsonLd";
+import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
+import { TEAM_MEMBERS, SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "팀소개",
-  description: "ACT ART CENTER의 전문 미술심리치료사를 소개합니다.",
+  title: "대표 고은별 — ACT 미술심리치료사 프로필 (차의과대 박사과정)",
+  description:
+    "ACT ART CENTER 대표 고은별(Stella)의 프로필. 차의과학대학교 미술치료학 박사과정 이수중, 홍익대학교 미술대학 석사. 미술심리치료·수용전념치료·트라우마·정서 심층탐색 전문.",
+  keywords: [
+    "고은별 미술치료사",
+    "Stella 미술치료사",
+    "미술심리상담사",
+    "ACT 전문가",
+    "차의과대 미술치료 박사",
+    "홍익대 미술대학 석사",
+  ],
+  alternates: { canonical: `${SITE_URL}/team` },
+  openGraph: {
+    type: "profile",
+    title: "대표 고은별 — ACT 미술심리치료사",
+    description: "차의과대 박사과정, 홍익대 미술대학 석사. ACT + 미술치료 전문.",
+    url: `${SITE_URL}/team`,
+    images: [
+      {
+        url: "/og/team.png",
+        width: 1200,
+        height: 630,
+        alt: "ACT ART CENTER 대표 고은별 프로필",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "대표 고은별 — ACT 미술심리치료사",
+    description: "차의과대 박사과정 · 홍익대 미술대학 석사 · ACT 전문.",
+    images: ["/og/team.png"],
+  },
+};
+
+const teamSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "홈", item: SITE_URL },
+        { "@type": "ListItem", position: 2, name: "팀", item: `${SITE_URL}/team` },
+      ],
+    },
+    {
+      "@type": "Person",
+      "@id": `${SITE_URL}/team#stella`,
+      name: "고은별",
+      alternateName: "Stella Koh",
+      jobTitle: "대표 / 미술심리치료사",
+      description:
+        "ACT ART CENTER 대표. 차의과학대학교 미술치료학 박사과정 이수중. 홍익대학교 미술대학 석사. 미술심리치료·수용전념치료·트라우마·심층탐색 전문.",
+      image: `${SITE_URL}/images/team-eunbyeol.jpg`,
+      url: `${SITE_URL}/team`,
+      worksFor: { "@id": `${SITE_URL}/#organization` },
+      alumniOf: [
+        { "@type": "EducationalOrganization", name: "차의과학대학교 (박사과정 이수중)", sameAs: "https://www.cha.ac.kr/" },
+        { "@type": "EducationalOrganization", name: "차의과학대학교 (미술치료학 석사)", sameAs: "https://www.cha.ac.kr/" },
+        { "@type": "EducationalOrganization", name: "홍익대학교 미술대학 (학사·석사)", sameAs: "https://www.hongik.ac.kr/" },
+      ],
+      knowsAbout: [
+        "미술심리치료",
+        "Art Therapy",
+        "수용전념치료",
+        "Acceptance and Commitment Therapy",
+        "트라우마 미술치료",
+        "아동 미술치료",
+      ],
+      sameAs: ["https://instagram.com/act.art.center"],
+    },
+  ],
 };
 
 export default function TeamPage() {
   const member = TEAM_MEMBERS[0];
   return (
     <>
+      <JsonLd data={teamSchema} />
       <PageHero
-        title="함께하는 전문가"
+        title="대표 고은별 — ACT 미술심리치료사 프로필"
         subtitle="미술과 심리치료 모두에서 깊은 전문성을 갖춘 치료사가 함께합니다."
         label="Our Team"
         imageSrc="https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?w=1920&q=80"
         imageAlt="ACT ART CENTER 전문가"
       />
+
+      <div className="bg-paper pt-6 pb-2">
+        <Container>
+          <Breadcrumbs
+            items={[
+              { name: "홈", href: "/" },
+              { name: "팀", href: "/team" },
+            ]}
+            emitJsonLd={false}
+          />
+        </Container>
+      </div>
 
       <SectionWrapper bg="cream">
         <Container>
@@ -87,7 +171,7 @@ export default function TeamPage() {
           <div className="text-center">
             <h2 className="text-white text-2xl lg:text-3xl font-bold tracking-tight">상담을 시작하고 싶으신가요?</h2>
             <Link href="/booking" className="mt-8 inline-flex items-center px-8 py-4 bg-white text-primary-500 font-semibold rounded-lg hover:bg-cream transition-all">
-              예약 일정 확인하기
+              첫 무료 상담 예약하기
             </Link>
           </div>
         </Container>

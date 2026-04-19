@@ -4,42 +4,109 @@ import Link from "next/link";
 import { Container } from "@/components/shared/Container";
 import { SectionWrapper } from "@/components/shared/SectionWrapper";
 import { PageHero } from "@/components/shared/PageHero";
-import { SERVICES } from "@/lib/constants";
+import { JsonLd } from "@/components/shared/JsonLd";
+import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
+import { SERVICES_ALL, SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "서비스",
-  description: "ACT ART CENTER의 미술심리치료 서비스. 보호·의료 환경, 정서·트라우마 중심, 심층 탐색·연구 기반 프로그램.",
+  title: "ACT 미술심리치료 서비스 — 개인·그룹·아동·온라인 프로그램",
+  description:
+    "성인 1:1, 아동·청소년, 그룹, 온라인, 그리고 보호·의료 환경과 트라우마·심층 탐색까지. ACT 수용전념치료 기반 맞춤 미술심리치료 서비스 7종을 안내합니다.",
+  keywords: [
+    "미술심리상담",
+    "미술심리치료 서비스",
+    "ACT 미술치료",
+    "미술치료 프로그램",
+    "개인 미술치료",
+    "아동 미술치료",
+  ],
+  alternates: { canonical: `${SITE_URL}/services` },
+  openGraph: {
+    type: "website",
+    title: "ACT 미술심리치료 서비스 — 7가지 맞춤 프로그램",
+    description: "개인·그룹·아동·온라인·보호의료·트라우마·심층탐색. 상황에 맞는 ACT 미술치료를 찾으세요.",
+    url: `${SITE_URL}/services`,
+    images: [
+      {
+        url: "/og/services.png",
+        width: 1200,
+        height: 630,
+        alt: "ACT 미술심리치료 서비스 맵",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "ACT 미술심리치료 서비스 — 7가지 맞춤 프로그램",
+    description: "성인·아동·그룹·온라인·보호의료·트라우마·심층탐색 전 영역.",
+    images: ["/og/services.png"],
+  },
 };
 
-const serviceImages = [
-  { src: "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=800&q=80", alt: "보호·의료 환경 미술치료" },
-  { src: "https://images.unsplash.com/photo-1499892477393-f675706cbe6e?w=800&q=80", alt: "정서·트라우마 치유" },
-  { src: "https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=800&q=80", alt: "심층 탐색 미술치료" },
-];
+const servicesHubSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "홈", item: SITE_URL },
+        { "@type": "ListItem", position: 2, name: "서비스", item: `${SITE_URL}/services` },
+      ],
+    },
+    {
+      "@type": "ItemList",
+      name: "ACT 미술심리치료 서비스",
+      itemListOrder: "https://schema.org/ItemListOrderAscending",
+      numberOfItems: 7,
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "개인 미술치료", url: `${SITE_URL}/services/individual` },
+        { "@type": "ListItem", position: 2, name: "그룹 프로그램", url: `${SITE_URL}/services/group` },
+        { "@type": "ListItem", position: 3, name: "아동·청소년 미술치료", url: `${SITE_URL}/services/child` },
+        { "@type": "ListItem", position: 4, name: "온라인 미술치료", url: `${SITE_URL}/services/online` },
+        { "@type": "ListItem", position: 5, name: "보호·의료 환경 미술심리치료", url: `${SITE_URL}/services/protective` },
+        { "@type": "ListItem", position: 6, name: "정서·트라우마 중심 미술심리치료", url: `${SITE_URL}/services/emotional` },
+        { "@type": "ListItem", position: 7, name: "심층 탐색·연구 기반 미술심리치료", url: `${SITE_URL}/services/depth` },
+      ],
+    },
+  ],
+};
 
 export default function ServicesPage() {
   return (
     <>
+      <JsonLd data={servicesHubSchema} />
       <PageHero
-        title="치료 영역"
+        title="ACT 미술심리치료 서비스"
         subtitle="그림과 조형 활동을 단순한 표현 수단으로 사용하지 않습니다. 작품을 매개로 한 경험은 자각, 수용, 그리고 삶의 가치 인식으로 자연스럽게 확장됩니다."
         label="Services"
         imageSrc="https://images.unsplash.com/photo-1544967082-d9d25d867d66?w=1920&q=80"
         imageAlt="미술치료 서비스 공간"
       />
 
+      <div className="bg-paper pt-6 pb-2">
+        <Container>
+          <Breadcrumbs
+            items={[
+              { name: "홈", href: "/" },
+              { name: "서비스", href: "/services" },
+            ]}
+            emitJsonLd={false}
+          />
+        </Container>
+      </div>
+
       <SectionWrapper bg="cream">
         <Container>
           <div className="space-y-12 lg:space-y-20">
-            {SERVICES.map((service, i) => (
+            {SERVICES_ALL.map((service, i) => (
               <div
                 key={service.id}
                 className={`grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center ${i % 2 === 1 ? "lg:direction-rtl" : ""}`}
               >
                 <div className={`relative aspect-[16/10] rounded-2xl overflow-hidden ${i % 2 === 1 ? "lg:order-2" : ""}`}>
                   <Image
-                    src={serviceImages[i].src}
-                    alt={serviceImages[i].alt}
+                    src={service.image}
+                    alt={service.imageAlt}
                     fill
                     className="object-cover"
                     sizes="(max-width: 1024px) 100vw, 50vw"
@@ -51,6 +118,7 @@ export default function ServicesPage() {
                   <p className="mt-4 text-charcoal/80 leading-relaxed">{service.description}</p>
                   <Link
                     href={service.href}
+                    aria-label={service.anchor}
                     className="mt-6 inline-flex items-center gap-1 text-secondary-500 font-medium hover:gap-2 transition-all"
                   >
                     자세히 알아보기

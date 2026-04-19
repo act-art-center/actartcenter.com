@@ -3,10 +3,75 @@ import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/shared/Container";
 import { SectionWrapper } from "@/components/shared/SectionWrapper";
+import { JsonLd } from "@/components/shared/JsonLd";
+import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
+import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "심층 탐색·연구 기반 미술심리치료",
-  description: "연구, 슈퍼비전, 전문 자문. 자기 이해와 내적 탐색을 원하는 개인 및 장기·심층 치료 사례를 위한 프로그램.",
+  description:
+    "자기 이해와 내적 탐색을 원하는 개인, 장기·심층 치료 사례, 그리고 미술치료 전문가를 위한 슈퍼비전과 연구 협력까지. ACT 기반 심층 미술심리치료로 깊이 있는 치료적 관계 속에서 탐색을 이어갑니다. 첫 상담을 무료로 안내드립니다.",
+  keywords: [
+    "미술치료 슈퍼비전",
+    "전문가 자문",
+    "미술치료 연구 협력",
+    "심층 미술치료",
+    "장기 미술치료",
+  ],
+  alternates: { canonical: `${SITE_URL}/services/depth` },
+  openGraph: {
+    type: "website",
+    title: "심층 탐색·연구 기반 미술심리치료",
+    description: "자기 이해·내적 탐색·장기 치료·슈퍼비전·연구 협력.",
+    url: `${SITE_URL}/services/depth`,
+    images: [
+      {
+        url: "/og/services-depth.png",
+        width: 1200,
+        height: 630,
+        alt: "심층 탐색·연구 기반 미술심리치료",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "심층 탐색·연구 기반 미술심리치료",
+    description: "자기 이해·내적 탐색·장기 치료·슈퍼비전·연구 협력.",
+    images: ["/og/services-depth.png"],
+  },
+};
+
+const depthServiceSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "홈", item: SITE_URL },
+        { "@type": "ListItem", position: 2, name: "서비스", item: `${SITE_URL}/services` },
+        { "@type": "ListItem", position: 3, name: "심층 탐색·연구 기반 미술심리치료", item: `${SITE_URL}/services/depth` },
+      ],
+    },
+    {
+      "@type": "MedicalTherapy",
+      "@id": `${SITE_URL}/services/depth#service`,
+      name: "심층 탐색·연구 기반 미술심리치료",
+      alternateName: "Depth-Oriented & Research-Based Art Therapy",
+      description: "자기 이해·내적 탐색을 원하는 개인 및 장기·심층 치료 사례, 전문가 슈퍼비전과 연구 협력.",
+      url: `${SITE_URL}/services/depth`,
+      image: `${SITE_URL}/og/services-depth.png`,
+      therapyType: "Art Therapy",
+      provider: { "@id": `${SITE_URL}/#organization` },
+    },
+    {
+      "@type": "Service",
+      "@id": `${SITE_URL}/services/depth#supervision`,
+      name: "미술치료 슈퍼비전 및 전문가 자문",
+      serviceType: "Supervision",
+      provider: { "@id": `${SITE_URL}/#organization` },
+      audience: { "@type": "Audience", audienceType: "미술치료 전문가" },
+    },
+  ],
 };
 
 const areas = [
@@ -18,8 +83,19 @@ const areas = [
 export default function DepthPage() {
   return (
     <>
+      <JsonLd data={depthServiceSchema} />
       <section className="relative bg-paper py-16 lg:py-24">
         <Container>
+          <div className="mb-8">
+            <Breadcrumbs
+              items={[
+                { name: "홈", href: "/" },
+                { name: "서비스", href: "/services" },
+                { name: "심층 탐색·연구 기반 미술심리치료", href: "/services/depth" },
+              ]}
+              emitJsonLd={false}
+            />
+          </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div>
               <p className="text-primary-500 text-xs font-medium tracking-wide uppercase mb-4">Depth-Oriented & Research-Based</p>

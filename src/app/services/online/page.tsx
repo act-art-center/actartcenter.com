@@ -3,10 +3,84 @@ import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/shared/Container";
 import { SectionWrapper } from "@/components/shared/SectionWrapper";
+import { JsonLd } from "@/components/shared/JsonLd";
+import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
+import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "온라인 미술치료",
-  description: "전국 어디서나 화상으로 만나는 ACT 미술치료. 미술 키트 배송 포함.",
+  title: "온라인 미술치료 — 전국·해외에서 화상으로 ACT 미술심리상담",
+  description:
+    "전국 어디서나 Zoom으로 참여하는 ACT 온라인 미술치료. 세션 전 미술 재료 키트를 자택 배송하여 대면과 동일한 깊이의 치료를 제공합니다. 서울 외 지역·해외 거주자 환영. 50분 70,000원부터.",
+  keywords: [
+    "온라인 미술치료",
+    "비대면 미술치료",
+    "화상 미술상담",
+    "Zoom 미술치료",
+    "재택 미술치료",
+    "해외 한국인 상담",
+  ],
+  alternates: { canonical: `${SITE_URL}/services/online` },
+  openGraph: {
+    type: "website",
+    title: "온라인 미술치료 — Zoom 화상 + 미술 키트 배송",
+    description: "전국·해외 어디서나. 50분 70,000원부터.",
+    url: `${SITE_URL}/services/online`,
+    images: [
+      {
+        url: "/og/services-online.png",
+        width: 1200,
+        height: 630,
+        alt: "온라인 미술치료 Zoom 화면과 홈 스튜디오",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "온라인 미술치료 — Zoom + 미술 키트 배송",
+    description: "전국·해외 어디서나. ACT 기반 화상 미술심리상담.",
+    images: ["/og/services-online.png"],
+  },
+};
+
+const onlineServiceSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "홈", item: SITE_URL },
+        { "@type": "ListItem", position: 2, name: "서비스", item: `${SITE_URL}/services` },
+        { "@type": "ListItem", position: 3, name: "온라인 미술치료", item: `${SITE_URL}/services/online` },
+      ],
+    },
+    {
+      "@type": "MedicalTherapy",
+      "@id": `${SITE_URL}/services/online#service`,
+      name: "온라인 미술치료",
+      alternateName: ["Online Art Therapy", "비대면 미술치료"],
+      description: "Zoom 화상으로 진행되는 ACT 기반 미술심리치료. 미술 재료 키트 배송 포함.",
+      url: `${SITE_URL}/services/online`,
+      image: `${SITE_URL}/og/services-online.png`,
+      therapyType: "Art Therapy",
+      provider: { "@id": `${SITE_URL}/#organization` },
+      areaServed: [
+        { "@type": "Country", name: "대한민국" },
+        { "@type": "Place", name: "해외 거주 한국인" },
+      ],
+      availableChannel: {
+        "@type": "ServiceChannel",
+        serviceUrl: `${SITE_URL}/booking`,
+        servicePhone: "온라인 Zoom 미팅",
+        availableLanguage: "Korean",
+      },
+      offers: {
+        "@type": "Offer",
+        price: "70000",
+        priceCurrency: "KRW",
+        description: "50분 세션 70,000~100,000원 (미술 키트 배송 포함)",
+      },
+    },
+  ],
 };
 
 const steps = [
@@ -19,12 +93,23 @@ const steps = [
 export default function OnlinePage() {
   return (
     <>
+      <JsonLd data={onlineServiceSchema} />
       <section className="bg-paper py-16 lg:py-24">
         <Container>
+          <div className="mb-8">
+            <Breadcrumbs
+              items={[
+                { name: "홈", href: "/" },
+                { name: "서비스", href: "/services" },
+                { name: "온라인 미술치료", href: "/services/online" },
+              ]}
+              emitJsonLd={false}
+            />
+          </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div>
               <p className="text-primary-500 text-xs font-medium tracking-wide uppercase mb-4">Online Art Therapy</p>
-              <h1 className="text-3xl lg:text-4xl font-bold tracking-tight">온라인 미술치료</h1>
+              <h1 className="text-3xl lg:text-4xl font-bold tracking-tight">온라인 미술치료 — 전국·해외에서 Zoom으로 만나는 ACT 세션</h1>
               <p className="mt-6 text-charcoal/80 leading-[var(--leading-normal)]">
                 전국 어디서나 화상으로 만나는 ACT 미술치료입니다.
                 미술 재료 키트를 사전 배송하여 대면 상담과 동일한 깊이의 치료를 제공합니다.

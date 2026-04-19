@@ -6,6 +6,7 @@ import Link from "next/link";
 import { Search } from "lucide-react";
 import { Container } from "@/components/shared/Container";
 import { SectionWrapper } from "@/components/shared/SectionWrapper";
+import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { BLOG_POSTS, BLOG_CATEGORIES } from "@/lib/blog-data";
 import { cn } from "@/lib/utils";
 
@@ -40,7 +41,7 @@ export default function BlogPage() {
         <Container className="relative z-10 pb-12 lg:pb-16 pt-32">
           <p className="text-white/60 text-xs font-medium tracking-widest uppercase mb-3">Blog</p>
           <h1 className="text-white text-3xl lg:text-5xl font-extrabold tracking-tight leading-[1.1]">
-            ACT 미술치료 이야기
+            ACT 미술치료 이야기 — 수용전념치료와 미술의 만남
           </h1>
           <p className="mt-4 text-white/80 max-w-xl text-lg leading-relaxed">
             미술치료와 수용전념치료에 대한 전문 콘텐츠를 나눕니다.
@@ -50,6 +51,16 @@ export default function BlogPage() {
 
       <SectionWrapper bg="cream">
         <Container>
+          <div className="mb-8">
+            <Breadcrumbs
+              items={[
+                { name: "홈", href: "/" },
+                { name: "블로그", href: "/blog" },
+              ]}
+              emitJsonLd={false}
+            />
+          </div>
+
           {/* Search + Categories */}
           <div className="mb-10 space-y-5">
             {/* Search */}

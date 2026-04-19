@@ -1,10 +1,42 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { Container } from "@/components/shared/Container";
+import { JsonLd } from "@/components/shared/JsonLd";
+import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
+import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "갤러리",
-  description: "ACT ART CENTER 미술심리치료 작품 갤러리. 창작 활동의 순간들.",
+  title: "미술치료 작품 갤러리 — 비식별 창작의 순간들",
+  description:
+    "ACT ART CENTER 미술심리치료 과정에서 만들어진 창작의 순간들을 모았습니다. 모든 작품은 내담자의 동의 아래 비식별 처리되어 있으며, 미술치료 분위기와 공간감을 확인하실 수 있습니다.",
+  keywords: [
+    "미술치료 작품",
+    "미술치료 갤러리",
+    "미술치료 사례",
+    "창작 치유",
+    "비식별 작품",
+  ],
+  alternates: { canonical: `${SITE_URL}/gallery` },
+  openGraph: {
+    type: "website",
+    title: "미술치료 작품 갤러리 — ACT ART CENTER",
+    description: "미술심리치료 과정의 창작 순간들. 동의 기반 비식별 처리.",
+    url: `${SITE_URL}/gallery`,
+    images: [
+      {
+        url: "/og/gallery.png",
+        width: 1200,
+        height: 630,
+        alt: "ACT 미술치료 작품 갤러리",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "미술치료 작품 갤러리",
+    description: "창작 치유의 순간들. 비식별 처리.",
+    images: ["/og/gallery.png"],
+  },
 };
 
 const galleryImages = [
@@ -19,14 +51,53 @@ const galleryImages = [
   { src: "https://images.unsplash.com/photo-1456086272160-b28b0645b729?w=600&q=80", alt: "아틀리에 공간", aspect: "aspect-[4/3]" },
 ];
 
+const gallerySchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "홈", item: SITE_URL },
+        { "@type": "ListItem", position: 2, name: "갤러리", item: `${SITE_URL}/gallery` },
+      ],
+    },
+    {
+      "@type": "ImageGallery",
+      "@id": `${SITE_URL}/gallery#gallery`,
+      name: "미술치료 작품 갤러리",
+      description: "ACT 미술심리치료 과정에서 만들어진 비식별 창작물 9점",
+      url: `${SITE_URL}/gallery`,
+      publisher: { "@id": `${SITE_URL}/#organization` },
+      image: galleryImages.map((img, i) => ({
+        "@type": "ImageObject",
+        contentUrl: img.src,
+        name: img.alt,
+        description: img.alt,
+        position: i + 1,
+      })),
+    },
+  ],
+};
+
 export default function GalleryPage() {
   return (
     <>
+      <JsonLd data={gallerySchema} />
       <section className="bg-night py-16 lg:py-24">
         <Container>
+          <div className="mb-8">
+            <Breadcrumbs
+              items={[
+                { name: "홈", href: "/" },
+                { name: "갤러리", href: "/gallery" },
+              ]}
+              emitJsonLd={false}
+              className="text-sm text-white/60"
+            />
+          </div>
           <div className="text-center max-w-2xl mx-auto">
             <h1 className="text-white text-3xl lg:text-4xl font-bold tracking-tight">
-              갤러리
+              미술치료 작품 갤러리
             </h1>
             <p className="mt-6 text-stone/70">
               미술심리치료 과정에서 만들어지는 창작의 순간들.

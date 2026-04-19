@@ -1,15 +1,80 @@
 import type { Metadata } from "next";
 import { Container } from "@/components/shared/Container";
+import { JsonLd } from "@/components/shared/JsonLd";
+import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
+import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "개인정보처리방침",
-  description: "ACT ART CENTER 개인정보처리방침",
+  title: "개인정보처리방침 — ACT ART CENTER 상담 정보 보호",
+  description:
+    "ACT ART CENTER(서초구 강남대로 305)의 개인정보처리방침입니다. 상담 예약·상담 기록 정보 수집 항목, 처리 목적, 보유기간(최대 3년), 제3자 제공·위탁, 정보주체 권리 행사 방법을 안내합니다.",
+  keywords: [
+    "개인정보처리방침",
+    "ACT ART CENTER 개인정보",
+    "상담 정보 보관",
+    "프라이버시",
+  ],
+  alternates: { canonical: `${SITE_URL}/privacy` },
+  robots: { index: true, follow: true },
+  openGraph: {
+    type: "website",
+    title: "개인정보처리방침 — ACT ART CENTER",
+    description: "상담 예약·기록 정보의 수집, 보유, 제공, 파기 절차.",
+    url: `${SITE_URL}/privacy`,
+    images: [
+      {
+        url: "/og/default.png",
+        width: 1200,
+        height: 630,
+        alt: "ACT ART CENTER",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary",
+    title: "개인정보처리방침 — ACT ART CENTER",
+    description: "상담 정보 보호 절차 안내.",
+  },
+};
+
+const privacySchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "홈", item: SITE_URL },
+        { "@type": "ListItem", position: 2, name: "개인정보처리방침", item: `${SITE_URL}/privacy` },
+      ],
+    },
+    {
+      "@type": "WebPage",
+      "@id": `${SITE_URL}/privacy#page`,
+      name: "개인정보처리방침",
+      description: "ACT ART CENTER 개인정보 수집·이용·보유·파기 정책",
+      url: `${SITE_URL}/privacy`,
+      inLanguage: "ko-KR",
+      isPartOf: { "@id": `${SITE_URL}/#website` },
+      datePublished: "2026-04-15",
+      dateModified: "2026-04-15",
+    },
+  ],
 };
 
 export default function PrivacyPage() {
   return (
     <section className="bg-paper py-16 lg:py-24">
+      <JsonLd data={privacySchema} />
       <Container>
+        <div className="max-w-3xl mx-auto mb-8">
+          <Breadcrumbs
+            items={[
+              { name: "홈", href: "/" },
+              { name: "개인정보처리방침", href: "/privacy" },
+            ]}
+            emitJsonLd={false}
+          />
+        </div>
         <div className="max-w-3xl mx-auto prose prose-neutral prose-sm lg:prose-base">
           <h1 className="text-night text-center mb-12 text-3xl lg:text-4xl font-bold tracking-tight">
             개인정보처리방침

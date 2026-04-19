@@ -3,10 +3,79 @@ import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/shared/Container";
 import { SectionWrapper } from "@/components/shared/SectionWrapper";
+import { JsonLd } from "@/components/shared/JsonLd";
+import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
+import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "아동·청소년 미술치료",
-  description: "놀이와 ACT를 통합한 아동·청소년 맞춤 미술치료. 부모 상담 포함.",
+  title: "아동·청소년 미술치료 — 놀이 × ACT 통합 부모 상담 포함",
+  description:
+    "만 5세부터 참여하는 아동·청소년 미술심리치료. 놀이치료와 ACT 수용전념치료를 통합해 정서 불안·또래관계·학교적응·자존감·ADHD를 다룹니다. 매 세션 후 부모 상담 10분 포함, 80,000원부터.",
+  keywords: [
+    "아동 미술치료",
+    "청소년 미술치료",
+    "아동 심리상담",
+    "ADHD 아동 미술치료",
+    "놀이치료 미술치료",
+    "학교 부적응 미술치료",
+  ],
+  alternates: { canonical: `${SITE_URL}/services/child` },
+  openGraph: {
+    type: "website",
+    title: "아동·청소년 미술치료 — 놀이 × ACT 통합",
+    description: "만 5세부터. 부모 상담 10분 포함. 정서불안·또래관계·ADHD·자존감 이슈.",
+    url: `${SITE_URL}/services/child`,
+    images: [
+      {
+        url: "/og/services-child.png",
+        width: 1200,
+        height: 630,
+        alt: "아동 미술치료 놀이 활동",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "아동·청소년 미술치료 — 놀이 × ACT 통합",
+    description: "만 5세부터. 부모 상담 10분 포함.",
+    images: ["/og/services-child.png"],
+  },
+};
+
+const childServiceSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "홈", item: SITE_URL },
+        { "@type": "ListItem", position: 2, name: "서비스", item: `${SITE_URL}/services` },
+        { "@type": "ListItem", position: 3, name: "아동·청소년 미술치료", item: `${SITE_URL}/services/child` },
+      ],
+    },
+    {
+      "@type": "MedicalTherapy",
+      "@id": `${SITE_URL}/services/child#service`,
+      name: "아동·청소년 미술치료",
+      alternateName: "Child & Adolescent Art Therapy",
+      description: "놀이치료와 ACT 수용전념치료를 통합한 만 5세 이상 맞춤 미술심리치료. 부모 상담 포함.",
+      url: `${SITE_URL}/services/child`,
+      image: `${SITE_URL}/og/services-child.png`,
+      therapyType: "Art Therapy",
+      provider: { "@id": `${SITE_URL}/#organization` },
+      audience: {
+        "@type": "PeopleAudience",
+        suggestedMinAge: 5,
+        suggestedMaxAge: 18,
+      },
+      offers: {
+        "@type": "Offer",
+        price: "80000",
+        priceCurrency: "KRW",
+        description: "50분(아동 40분+부모 10분) 기준 80,000~100,000원",
+      },
+    },
+  ],
 };
 
 const areas = [
@@ -19,12 +88,23 @@ const areas = [
 export default function ChildPage() {
   return (
     <>
+      <JsonLd data={childServiceSchema} />
       <section className="bg-paper py-16 lg:py-24">
         <Container>
+          <div className="mb-8">
+            <Breadcrumbs
+              items={[
+                { name: "홈", href: "/" },
+                { name: "서비스", href: "/services" },
+                { name: "아동·청소년 미술치료", href: "/services/child" },
+              ]}
+              emitJsonLd={false}
+            />
+          </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div>
               <p className="text-primary-500 text-xs font-medium tracking-wide uppercase mb-4">Child & Adolescent</p>
-              <h1 className="text-3xl lg:text-4xl font-bold tracking-tight">아동·청소년 미술치료</h1>
+              <h1 className="text-3xl lg:text-4xl font-bold tracking-tight">아동·청소년 미술치료 — 놀이와 ACT의 통합</h1>
               <p className="mt-6 text-charcoal/80 leading-[var(--leading-normal)]">
                 놀이와 ACT를 통합한 아동·청소년 맞춤 미술치료입니다.
                 아이의 발달 단계에 맞춰 프로그램을 설계하며, 매 세션 후 부모 상담 10분이 포함됩니다.
