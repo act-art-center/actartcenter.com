@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Container } from "@/components/shared/Container";
 import { VideoHero } from "@/components/shared/VideoHero";
+import { CharacterIllustration } from "@/components/shared/CharacterIllustration";
 
 export function HeroSection() {
   return (
@@ -10,6 +11,18 @@ export function HeroSection() {
       overlayOpacity={0.55}
       className="min-h-[85vh] flex items-center"
     >
+      {/* Twins mascot — asymmetric right-side anchor (desktop only to preserve mobile readability) */}
+      <CharacterIllustration
+        name="twins-together"
+        alt=""
+        width={520}
+        height={520}
+        priority
+        hideOnMobile
+        animation="float"
+        className="absolute right-4 lg:right-12 bottom-0 z-[5] w-[38vw] max-w-[460px] opacity-90 drop-shadow-[0_12px_32px_rgba(29,28,21,0.25)]"
+      />
+
       <Container className="py-24 lg:py-32">
         <div className="max-w-2xl">
           <p

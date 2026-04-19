@@ -6,6 +6,7 @@ import { SectionWrapper } from "@/components/shared/SectionWrapper";
 import { PageHero } from "@/components/shared/PageHero";
 import { JsonLd } from "@/components/shared/JsonLd";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
+import { CharacterIllustration } from "@/components/shared/CharacterIllustration";
 import { SERVICES_ALL, SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
@@ -97,6 +98,29 @@ export default function ServicesPage() {
 
       <SectionWrapper bg="cream">
         <Container>
+          {/* Twins banner — 서비스 소개 도입 (비대칭 1/3 · 2/3 구성) */}
+          <div className="mb-12 lg:mb-16 grid grid-cols-1 lg:grid-cols-3 gap-6 items-center">
+            <div className="flex justify-center lg:justify-start">
+              <CharacterIllustration
+                name="twins-together"
+                alt="Acttie와 Artty — 사고와 감정을 함께 돌보는 마스코트"
+                width={320}
+                height={320}
+                animation="fade-in"
+                className="w-[180px] md:w-[240px] lg:w-[280px]"
+              />
+            </div>
+            <div className="lg:col-span-2">
+              <p className="text-primary-500 text-xs font-medium tracking-wide uppercase mb-3">Acttie &amp; Artty</p>
+              <h2 className="text-night text-xl lg:text-2xl font-semibold leading-snug max-w-[46ch]">
+                사고의 안내자 Acttie와 감정의 동반자 Artty가 당신의 치료 여정을 함께합니다.
+              </h2>
+              <p className="mt-3 text-charcoal/70 text-sm leading-relaxed max-w-[60ch]">
+                아래 7가지 프로그램 중 상황에 맞는 길을 찾아보세요. 어디서부터 시작해야 할지 모르겠다면, 첫 상담에서 함께 안내해 드릴게요.
+              </p>
+            </div>
+          </div>
+
           <div className="space-y-12 lg:space-y-20">
             {SERVICES_ALL.map((service, i) => (
               <div

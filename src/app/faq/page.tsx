@@ -6,6 +6,7 @@ import { Container } from "@/components/shared/Container";
 import { SectionWrapper } from "@/components/shared/SectionWrapper";
 import { JsonLd } from "@/components/shared/JsonLd";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
+import { CharacterIllustration } from "@/components/shared/CharacterIllustration";
 import { FAQ_ITEMS, SITE_URL } from "@/lib/constants";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
@@ -68,6 +69,29 @@ export default function FaqPage() {
               emitJsonLd={false}
             />
           </div>
+          {/* Acttie reading — 답변 안내자 (좌측 상단 보조 / 데스크탑만) */}
+          <div className="mb-10 grid grid-cols-1 lg:grid-cols-3 gap-6 items-center max-w-3xl mx-auto">
+            <div className="flex justify-center lg:justify-start">
+              <CharacterIllustration
+                name="acttie-reading"
+                alt=""
+                width={220}
+                height={220}
+                animation="fade-in"
+                className="w-[150px] md:w-[180px] lg:w-[200px]"
+              />
+            </div>
+            <div className="lg:col-span-2">
+              <p className="text-primary-500 text-xs font-medium tracking-wide uppercase mb-2">From Acttie</p>
+              <h2 className="text-night text-lg lg:text-xl font-semibold leading-snug">
+                차분히 짚어 드릴게요. 궁금한 항목부터 펼쳐 주세요.
+              </h2>
+              <p className="mt-2 text-charcoal/70 text-sm leading-relaxed">
+                답변은 한 번 더 읽어도 좋도록 짧고 명료하게 정리했어요.
+              </p>
+            </div>
+          </div>
+
           <div className="max-w-2xl mx-auto">
             <Accordion className="space-y-3">
               {FAQ_ITEMS.map((item, i) => (

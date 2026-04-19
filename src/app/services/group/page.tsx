@@ -5,6 +5,7 @@ import { Container } from "@/components/shared/Container";
 import { SectionWrapper } from "@/components/shared/SectionWrapper";
 import { JsonLd } from "@/components/shared/JsonLd";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
+import { CharacterIllustration } from "@/components/shared/CharacterIllustration";
 import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
@@ -134,6 +135,17 @@ export default function GroupPage() {
 
       <SectionWrapper bg="cream">
         <Container>
+          {/* Twins — 상단 센터에 작게 (그룹 = 함께의 은유) */}
+          <div className="flex justify-center mb-6">
+            <CharacterIllustration
+              name="twins-together"
+              alt=""
+              width={240}
+              height={240}
+              animation="fade-in"
+              className="w-[160px] md:w-[200px] lg:w-[220px]"
+            />
+          </div>
           <h2 className="text-center mb-12 text-2xl lg:text-3xl font-bold tracking-tight">진행 중인 프로그램</h2>
           <div className="space-y-6 max-w-3xl mx-auto">
             {programs.map((p) => (

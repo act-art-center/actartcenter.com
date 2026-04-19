@@ -5,6 +5,7 @@ import { PageHero } from "@/components/shared/PageHero";
 import { SectionWrapper } from "@/components/shared/SectionWrapper";
 import { JsonLd } from "@/components/shared/JsonLd";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
+import { CharacterIllustration } from "@/components/shared/CharacterIllustration";
 import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
@@ -185,10 +186,21 @@ export default function PricingPage() {
       </div>
 
       {/* Individual pricing */}
-      <SectionWrapper bg="cream">
-        <Container>
-          <h2 className="text-center mb-10 text-2xl lg:text-3xl font-bold tracking-tight">개별 세션</h2>
-          <div className="max-w-3xl mx-auto space-y-4">
+      <SectionWrapper bg="cream" className="overflow-hidden">
+        <Container className="relative">
+          {/* Acttie reading — 차분한 안내자 (좌측 상단, 데스크탑만) */}
+          <CharacterIllustration
+            name="acttie-reading"
+            alt=""
+            width={240}
+            height={240}
+            hideOnMobile
+            animation="fade-in"
+            className="absolute left-0 top-4 z-[1] w-[180px] xl:w-[220px] -translate-x-2 opacity-90"
+          />
+
+          <h2 className="relative z-[2] text-center mb-10 text-2xl lg:text-3xl font-bold tracking-tight">개별 세션</h2>
+          <div className="relative z-[2] max-w-3xl mx-auto space-y-4">
             {pricing.map((item) => (
               <div key={item.service} className="bg-white rounded-xl p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3" style={{ border: "1px solid rgba(196, 191, 183, 0.15)" }}>
                 <div>

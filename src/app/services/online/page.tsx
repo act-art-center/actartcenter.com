@@ -5,6 +5,7 @@ import { Container } from "@/components/shared/Container";
 import { SectionWrapper } from "@/components/shared/SectionWrapper";
 import { JsonLd } from "@/components/shared/JsonLd";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
+import { CharacterIllustration } from "@/components/shared/CharacterIllustration";
 import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
@@ -131,10 +132,21 @@ export default function OnlinePage() {
         </Container>
       </section>
 
-      <SectionWrapper bg="cream">
-        <Container>
-          <h2 className="text-center mb-12 text-2xl lg:text-3xl font-bold tracking-tight">진행 과정</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
+      <SectionWrapper bg="cream" className="overflow-hidden">
+        <Container className="relative">
+          {/* Acttie laptop — 우측 상단 (온라인 안내자 은유, 데스크탑만) */}
+          <CharacterIllustration
+            name="acttie-laptop"
+            alt=""
+            width={260}
+            height={260}
+            hideOnMobile
+            animation="float"
+            className="absolute right-0 top-0 z-[1] w-[200px] xl:w-[260px] translate-x-4 -translate-y-2 opacity-90"
+          />
+
+          <h2 className="relative z-[2] text-center mb-12 text-2xl lg:text-3xl font-bold tracking-tight">진행 과정</h2>
+          <div className="relative z-[2] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
             {steps.map((s) => (
               <div key={s.number} className="bg-white rounded-xl p-6 text-center" style={{ border: "1px solid rgba(196, 191, 183, 0.15)" }}>
                 <div className="w-10 h-10 mx-auto rounded-full bg-primary-50 flex items-center justify-center text-primary-500 font-bold text-sm">{s.number}</div>

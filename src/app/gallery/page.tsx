@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Container } from "@/components/shared/Container";
 import { JsonLd } from "@/components/shared/JsonLd";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
+import { CharacterIllustration } from "@/components/shared/CharacterIllustration";
 import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
@@ -104,6 +105,18 @@ export default function GalleryPage() {
               <br />
               모든 이미지는 비식별 처리되어 있습니다.
             </p>
+
+            {/* Artty multi-scene — 배너로 창작 순간을 상징 */}
+            <div className="mt-10 flex justify-center">
+              <CharacterIllustration
+                name="artty-scenes"
+                alt="Artty의 다양한 창작 장면"
+                width={360}
+                height={240}
+                animation="fade-in"
+                className="w-[260px] md:w-[320px] lg:w-[360px]"
+              />
+            </div>
           </div>
         </Container>
       </section>

@@ -5,6 +5,7 @@ import { SectionWrapper } from "@/components/shared/SectionWrapper";
 import { PageHero } from "@/components/shared/PageHero";
 import { JsonLd } from "@/components/shared/JsonLd";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
+import { CharacterIllustration } from "@/components/shared/CharacterIllustration";
 import { ACT_PROCESSES } from "@/lib/constants";
 import { SITE_URL } from "@/lib/constants";
 
@@ -115,15 +116,26 @@ export default function ActApproachPage() {
 
       {/* 6 Processes */}
       <SectionWrapper bg="cream">
-        <Container>
-          <div className="text-center mb-12 lg:mb-16">
+        <Container className="relative">
+          {/* Acttie — 좌측 상단, fade-in reveal (데스크탑에서만 보이며 content column에 overlap) */}
+          <CharacterIllustration
+            name="acttie-laptop"
+            alt=""
+            width={280}
+            height={280}
+            hideOnMobile
+            animation="fade-in"
+            className="absolute left-0 top-4 z-[1] w-[220px] xl:w-[280px] -translate-x-6 opacity-90"
+          />
+
+          <div className="relative z-[2] text-center mb-12 lg:mb-16">
             <h2 className="text-2xl lg:text-3xl font-bold tracking-tight">ACT의 6가지 핵심 프로세스</h2>
             <p className="mt-4 text-charcoal/70 max-w-[44ch] mx-auto">
               여섯 가지 프로세스가 유기적으로 연결되어 심리적 유연성을 만들어갑니다.
             </p>
           </div>
 
-          <div className="space-y-8 max-w-3xl mx-auto">
+          <div className="relative z-[2] space-y-8 max-w-3xl mx-auto">
             {ACT_PROCESSES.map((process, i) => (
               <div
                 key={process.id}

@@ -5,6 +5,7 @@ import { Container } from "@/components/shared/Container";
 import { SectionWrapper } from "@/components/shared/SectionWrapper";
 import { JsonLd } from "@/components/shared/JsonLd";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
+import { CharacterIllustration } from "@/components/shared/CharacterIllustration";
 import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
@@ -130,10 +131,21 @@ export default function IndividualPage() {
         </Container>
       </section>
 
-      <SectionWrapper bg="cream">
-        <Container>
-          <h2 className="text-center mb-12 text-2xl lg:text-3xl font-bold tracking-tight">프로그램 특징</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+      <SectionWrapper bg="cream" className="overflow-hidden">
+        <Container className="relative">
+          {/* Artty holding paint — 우측 하단 floating (데스크탑만) */}
+          <CharacterIllustration
+            name="artty-paint"
+            alt=""
+            width={280}
+            height={280}
+            hideOnMobile
+            animation="float"
+            className="absolute right-0 bottom-0 z-[1] w-[220px] xl:w-[280px] translate-x-4 translate-y-6 opacity-90"
+          />
+
+          <h2 className="relative z-[2] text-center mb-12 text-2xl lg:text-3xl font-bold tracking-tight">프로그램 특징</h2>
+          <div className="relative z-[2] grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
             {features.map((f) => (
               <div key={f.title} className="bg-white rounded-xl p-6" style={{ border: "1px solid rgba(196, 191, 183, 0.15)" }}>
                 <h3 className="text-night font-semibold">{f.title}</h3>

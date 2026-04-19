@@ -4,6 +4,7 @@ import { PageHero } from "@/components/shared/PageHero";
 import { SectionWrapper } from "@/components/shared/SectionWrapper";
 import { JsonLd } from "@/components/shared/JsonLd";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
+import { CharacterIllustration } from "@/components/shared/CharacterIllustration";
 import { CONTACT, SITE_NAME, SITE_URL } from "@/lib/constants";
 import { Mail, MapPin, Clock } from "lucide-react";
 
@@ -122,6 +123,21 @@ export default function ContactPage() {
 
       <SectionWrapper bg="cream">
         <Container>
+          {/* Twins 환영 배너 (센터) */}
+          <div className="mb-10 flex flex-col items-center text-center">
+            <CharacterIllustration
+              name="twins-together"
+              alt="Acttie와 Artty가 함께 인사합니다"
+              width={240}
+              height={240}
+              animation="fade-in"
+              className="w-[160px] md:w-[200px] lg:w-[220px]"
+            />
+            <p className="mt-4 max-w-[42ch] text-charcoal/70 text-sm leading-relaxed">
+              Acttie가 일정과 절차를, Artty가 마음의 속도를 함께 살펴드립니다.
+            </p>
+          </div>
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {/* Contact info */}
             <div className="space-y-6">

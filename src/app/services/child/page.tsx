@@ -5,6 +5,7 @@ import { Container } from "@/components/shared/Container";
 import { SectionWrapper } from "@/components/shared/SectionWrapper";
 import { JsonLd } from "@/components/shared/JsonLd";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
+import { CharacterIllustration } from "@/components/shared/CharacterIllustration";
 import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
@@ -126,10 +127,21 @@ export default function ChildPage() {
         </Container>
       </section>
 
-      <SectionWrapper bg="cream">
-        <Container>
-          <h2 className="text-center mb-12 text-2xl lg:text-3xl font-bold tracking-tight">이런 아이에게 도움이 됩니다</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+      <SectionWrapper bg="cream" className="overflow-hidden">
+        <Container className="relative">
+          {/* Artty welcome — 좌측 상단 floating (데스크탑만) */}
+          <CharacterIllustration
+            name="artty-welcome"
+            alt=""
+            width={260}
+            height={260}
+            hideOnMobile
+            animation="float"
+            className="absolute left-0 top-0 z-[1] w-[200px] xl:w-[260px] -translate-x-4 -translate-y-2 opacity-90"
+          />
+
+          <h2 className="relative z-[2] text-center mb-12 text-2xl lg:text-3xl font-bold tracking-tight">이런 아이에게 도움이 됩니다</h2>
+          <div className="relative z-[2] grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
             {areas.map((a) => (
               <div key={a.title} className="bg-white rounded-xl p-6" style={{ border: "1px solid rgba(196, 191, 183, 0.15)" }}>
                 <h3 className="text-night font-semibold">{a.title}</h3>

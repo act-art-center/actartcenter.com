@@ -6,6 +6,7 @@ import { SectionWrapper } from "@/components/shared/SectionWrapper";
 import { PageHero } from "@/components/shared/PageHero";
 import { JsonLd } from "@/components/shared/JsonLd";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
+import { CharacterIllustration } from "@/components/shared/CharacterIllustration";
 import { TEAM_MEMBERS, SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
@@ -161,6 +162,21 @@ export default function TeamPage() {
               <blockquote className="mt-8 text-center text-primary-500 font-[var(--font-accent)] text-xl leading-relaxed italic max-w-[36ch] mx-auto">
                 &ldquo;{member.quote}&rdquo;
               </blockquote>
+            </div>
+
+            {/* Twins — 보조 요소로 프로필 카드 아래 작게 */}
+            <div className="mt-10 flex flex-col items-center gap-3">
+              <CharacterIllustration
+                name="twins-together"
+                alt="Acttie와 Artty — ACT ART CENTER 마스코트"
+                width={220}
+                height={220}
+                animation="fade-in"
+                className="w-[140px] md:w-[180px]"
+              />
+              <p className="text-stone text-xs text-center max-w-[28ch] leading-relaxed">
+                치료실 밖에서는 Acttie와 Artty가 안내와 따뜻함을 더해드립니다.
+              </p>
             </div>
           </div>
         </Container>
