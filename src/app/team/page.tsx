@@ -59,6 +59,7 @@ const teamSchema = {
       "@id": `${SITE_URL}/team#stella`,
       name: "고은별",
       alternateName: "Stella Koh",
+      honorificSuffix: "MA",
       jobTitle: "대표 / 미술심리치료사",
       description:
         "ACT ART CENTER 대표. 차의과학대학교 미술치료학 박사과정 이수중. 홍익대학교 미술대학 석사. 미술심리치료·수용전념치료·트라우마·심층탐색 전문.",
@@ -66,10 +67,20 @@ const teamSchema = {
       url: `${SITE_URL}/team`,
       worksFor: { "@id": `${SITE_URL}/#organization` },
       alumniOf: [
-        { "@type": "EducationalOrganization", name: "차의과학대학교 (박사과정 이수중)", sameAs: "https://www.cha.ac.kr/" },
-        { "@type": "EducationalOrganization", name: "차의과학대학교 (미술치료학 석사)", sameAs: "https://www.cha.ac.kr/" },
+        { "@type": "EducationalOrganization", name: "차의과학대학교 미술치료학 박사과정", sameAs: "https://www.cha.ac.kr/" },
+        { "@type": "EducationalOrganization", name: "차의과학대학교 미술치료학 석사", sameAs: "https://www.cha.ac.kr/" },
         { "@type": "EducationalOrganization", name: "홍익대학교 미술대학 (학사·석사)", sameAs: "https://www.hongik.ac.kr/" },
       ],
+      memberOf: {
+        "@type": "OrganizationRole",
+        roleName: "정회원",
+        memberOf: {
+          "@type": "Organization",
+          name: "한국미술치료학회",
+          alternateName: "Korean Art Therapy Association",
+          url: "http://www.korean-arttherapy.or.kr/",
+        },
+      },
       knowsAbout: [
         "미술심리치료",
         "Art Therapy",
