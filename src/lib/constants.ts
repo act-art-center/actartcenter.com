@@ -185,6 +185,14 @@ export const CONNECT_LINKS = [
   { label: "개인정보처리방침", href: "/privacy" },
 ] as const;
 
+/**
+ * ACT 6 핵심 프로세스 (Hexaflex) — Hayes, Strosahl, Wilson (2012) 기준.
+ *
+ * 각 프로세스는 "심리적 유연성 (Psychological Flexibility)" 을 구성하는
+ * 축이며, 반대편에는 "심리적 경직성 (Psychological Inflexibility)" 극이
+ * 존재합니다. 미술치료 작업은 언어 이전의 감각·이미지 경로를 통해
+ * 이 6개 과정을 경험적으로 탐색할 수 있는 안전한 매체가 됩니다.
+ */
 export const ACT_PROCESSES = [
   {
     id: "acceptance",
@@ -192,20 +200,41 @@ export const ACT_PROCESSES = [
     titleEn: "Acceptance",
     description: "감정을 밀어내지 않고 있는 그대로 받아들입니다.",
     artConnection: "지금 느끼는 감정에 색을 입혀보세요",
+    essence:
+      "불편한 감정을 억누르거나 없애려 애쓰지 않고, 그 감정이 내 안에 머물 공간을 허용하는 태도입니다.",
+    metaphor:
+      "파도를 막으려 하면 휩쓸립니다. 파도 위에 올라타는 법을 배우면 같은 파도가 나를 앞으로 나아가게 합니다.",
+    artIntegration:
+      "말로 표현하기 어려운 감정에 색과 질감을 부여하는 과정 자체가 \"감정을 두어도 괜찮다\"는 수용 경험이 됩니다.",
+    inflexibilityPole: "경험 회피 (Experiential Avoidance)",
   },
   {
     id: "defusion",
     title: "인지적 탈융합",
-    titleEn: "Defusion",
+    titleEn: "Cognitive Defusion",
     description: "생각을 사실이 아닌 '생각'으로 바라봅니다.",
     artConnection: "불안한 생각을 캐릭터로 그려보세요",
+    essence:
+      "\"나는 부족해\" 라는 생각과 \"나는 부족하다는 생각을 하고 있다\" 를 구분하는 능력입니다.",
+    metaphor:
+      "영화를 스크린에서 한 발 물러서서 볼 때, 같은 장면도 더 이상 나를 휩쓸지 못합니다.",
+    artIntegration:
+      "반복되는 비판적 생각을 캐릭터·형태·색으로 외재화하면, 그 생각이 \"나\" 자체가 아니라 내가 관찰할 수 있는 하나의 현상임이 몸으로 전해집니다.",
+    inflexibilityPole: "인지적 융합 (Cognitive Fusion)",
   },
   {
     id: "present-moment",
     title: "현재 순간 접촉",
-    titleEn: "Present Moment",
+    titleEn: "Contact with the Present Moment",
     description: "지금 이 순간에 온전히 머무릅니다.",
     artConnection: "지금 이 순간, 손끝의 물감에 집중하세요",
+    essence:
+      "과거의 후회나 미래의 걱정에 끌려가는 대신, 지금 여기서 일어나는 감각·호흡·생각을 열린 태도로 알아차리는 힘입니다.",
+    metaphor:
+      "카메라의 초점을 지금 내 손 앞의 한 점에 맞추면, 멀리 있는 불안은 자연스럽게 배경으로 흐려집니다.",
+    artIntegration:
+      "종이 위를 미끄러지는 붓, 점토의 온도, 파스텔의 저항감은 \"지금\" 으로 돌아오는 마음챙김 앵커로 작동합니다.",
+    inflexibilityPole: "과거·미래에의 몰두 (Dominance of Past/Future)",
   },
   {
     id: "self-as-context",
@@ -213,6 +242,13 @@ export const ACT_PROCESSES = [
     titleEn: "Self-as-Context",
     description: "경험하는 '나'와 관찰하는 '나'를 구분합니다.",
     artConnection: "다양한 '나'를 콜라주로 표현하세요",
+    essence:
+      "역할·생각·감정은 계속 바뀌지만, 그 모든 경험을 바라보는 \"관찰하는 자기\" 는 변하지 않고 그대로 있습니다.",
+    metaphor:
+      "날씨는 매일 바뀌지만 하늘은 그 자리에 있습니다. 하늘은 비도 해도 모두 품을 수 있습니다.",
+    artIntegration:
+      "콜라주·자화상 연작·여러 관점에서 그린 자기 이미지 작업은 \"여러 나\"를 동시에 바라보는 관찰자적 자기 감각을 키웁니다.",
+    inflexibilityPole: "자기 개념에의 집착 (Attachment to the Conceptualized Self)",
   },
   {
     id: "values",
@@ -220,6 +256,13 @@ export const ACT_PROCESSES = [
     titleEn: "Values",
     description: "삶에서 진정으로 중요한 것이 무엇인지 탐색합니다.",
     artConnection: "당신에게 소중한 것을 상징으로 그려보세요",
+    essence:
+      "목표는 달성하면 끝나지만, 가치는 평생 향해 걸어가는 방향입니다. \"어떤 사람이 되고 싶은가\" 의 나침반입니다.",
+    metaphor:
+      "북극성은 영원히 도달하지 못해도, 가는 길을 비춰 줍니다.",
+    artIntegration:
+      "언어로 정리하기 전에 이미지·상징·색으로 먼저 표현된 가치는, 이성이 합리화한 가치보다 더 진솔한 내면의 방향을 보여줍니다.",
+    inflexibilityPole: "가치 불명료 (Lack of Values Clarity)",
   },
   {
     id: "committed-action",
@@ -227,6 +270,40 @@ export const ACT_PROCESSES = [
     titleEn: "Committed Action",
     description: "가치를 향해 구체적인 한 걸음을 내딛습니다.",
     artConnection: "가치를 향한 한 걸음을 미술로 계획하세요",
+    essence:
+      "가치는 선언이 아니라 행동으로 드러납니다. 불편한 감정이 있어도 가치 방향으로 한 걸음을 선택하는 반복적 실천입니다.",
+    metaphor:
+      "지도를 아무리 들여다봐도 걸어야 도착합니다. 중요한 것은 속도가 아니라 방향의 일관성입니다.",
+    artIntegration:
+      "이번 주 내가 내디딜 한 걸음을 시각적 지도·스토리보드·미니북으로 구성하면, 실행 가능성과 지속성이 눈에 띄게 높아집니다.",
+    inflexibilityPole: "비활동성·충동성 (Inaction / Impulsivity)",
+  },
+] as const;
+
+/**
+ * ACT 과학적 근거 — 실제로 존재하는 학회·이론·연구자만 기재합니다.
+ * 허구 인용은 절대 금지이며, 추가 시 PubMed/Google Scholar 확인 후에만 등록합니다.
+ */
+export const ACT_EVIDENCE_REFS = [
+  {
+    label: "ACBS (Association for Contextual Behavioral Science)",
+    detail:
+      "ACT 와 맥락적 행동과학 (Contextual Behavioral Science) 을 다루는 국제 학회입니다. 전 세계 연구자·임상가가 매년 학술대회와 프로토콜 업데이트를 공유합니다.",
+  },
+  {
+    label: "RFT (Relational Frame Theory)",
+    detail:
+      "인간 언어와 인지를 설명하는 행동분석 기반 이론으로, ACT 의 이론적 토대입니다. 왜 생각이 우리를 그렇게 세게 사로잡는지를 \"관계 틀\" 로 설명합니다.",
+  },
+  {
+    label: "Hayes, Strosahl, & Wilson — ACT 공동 개발자",
+    detail:
+      "Steven C. Hayes, Kirk D. Strosahl, Kelly G. Wilson 세 사람이 함께 정립한 치료 모델이며, 임상 매뉴얼 『Acceptance and Commitment Therapy』(2nd ed., 2012) 는 전 세계 교육 프로그램의 기본 교재로 사용됩니다.",
+  },
+  {
+    label: "증거 기반 실천 (Evidence-Based Practice)",
+    detail:
+      "미국심리학회 (APA) Division 12 의 Empirically Supported Treatments 목록과 다수의 메타분석 (예: A-Tjak et al., 2015, Psychother Psychosom; Gloster et al., 2020, J Contextual Behav Sci) 에서 불안·우울·만성 통증·물질 사용 등 다양한 임상 집단에 대한 효능이 보고되어 왔습니다. 모든 사례에 동일한 효과가 보장되는 것은 아니며, 개별 임상 판단이 필요합니다.",
   },
 ] as const;
 

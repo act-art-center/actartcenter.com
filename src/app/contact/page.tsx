@@ -5,38 +5,38 @@ import { SectionWrapper } from "@/components/shared/SectionWrapper";
 import { JsonLd } from "@/components/shared/JsonLd";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { CONTACT, SITE_NAME, SITE_URL } from "@/lib/constants";
-import { Mail, MapPin, Clock } from "lucide-react";
+import { Mail, MapPin, Clock, Train, Bus, Car } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "오시는 길·연락처 — 서울 서초 ACT ART CENTER 미술치료 센터",
+  title: "오시는 길·연락처 — ACT ART CENTER 강남센터",
   description:
-    "ACT ART CENTER 서초 센터 주소·이메일·카카오톡·인스타그램 안내. 서울시 서초구 강남대로 305 현대렉시온 2518호, 사전 예약제로 운영됩니다.",
+    "ACT ART CENTER 강남센터 위치·연락처 안내. 서울시 서초구 강남대로 305 현대렉시온 2518호. 지하철·버스로 편리하게, 건물 내 주차 2시간까지 무료.",
   keywords: [
     "ACT ART CENTER 오시는 길",
-    "서초 미술치료",
+    "강남 미술치료",
     "강남대로 305",
-    "미술치료 연락처",
-    "서초구 심리상담센터",
+    "서초 미술치료 센터",
+    "ACT ART CENTER 강남센터",
   ],
   alternates: { canonical: `${SITE_URL}/contact` },
   openGraph: {
     type: "website",
-    title: "오시는 길 — ACT ART CENTER 서초 센터",
-    description: "서울시 서초구 강남대로 305 현대렉시온 2518호. 이메일·카카오톡·인스타그램.",
+    title: "오시는 길·연락처 — ACT ART CENTER 강남센터",
+    description: "서울시 서초구 강남대로 305 현대렉시온 2518호. 주차 2시간 무료.",
     url: `${SITE_URL}/contact`,
     images: [
       {
         url: "/og/contact.png",
         width: 1200,
         height: 630,
-        alt: "ACT ART CENTER 서초 센터 지도",
+        alt: "ACT ART CENTER 강남센터 오시는 길",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "오시는 길 — ACT ART CENTER 서초 센터",
-    description: "서울 서초 강남대로 305. 사전 예약제.",
+    title: "오시는 길·연락처 — ACT ART CENTER 강남센터",
+    description: "서울 서초 강남대로 305. 주차 2시간 무료.",
     images: ["/og/contact.png"],
   },
 };
@@ -55,8 +55,9 @@ const contactSchema = {
       "@type": ["LocalBusiness", "MedicalBusiness"],
       "@id": `${SITE_URL}/#localbusiness`,
       name: SITE_NAME,
+      alternateName: "ACT ART CENTER 강남센터",
       url: SITE_URL,
-      image: `${SITE_URL}/og/contact.png`,
+      image: `${SITE_URL}/images/office-hero.jpg`,
       address: {
         "@type": "PostalAddress",
         streetAddress: "강남대로 305, 현대렉시온 2518호",
@@ -70,8 +71,16 @@ const contactSchema = {
         latitude: 37.4917,
         longitude: 127.0263,
       },
-      hasMap: "https://maps.google.com/?q=서울+서초구+강남대로+305",
+      hasMap: "https://maps.google.com/?q=서울+서초구+강남대로+305+현대렉시온",
       email: "actartkorea@gmail.com",
+      amenityFeature: [
+        {
+          "@type": "LocationFeatureSpecification",
+          name: "주차",
+          value: "건물 내 자주식 주차장, 2시간까지 무료",
+        },
+      ],
+      publicAccess: true,
       contactPoint: [
         {
           "@type": "ContactPoint",
@@ -93,7 +102,34 @@ const contactSchema = {
 const contactInfo = [
   { icon: Mail, label: "이메일", value: CONTACT.email, href: `mailto:${CONTACT.email}` },
   { icon: MapPin, label: "주소", value: CONTACT.address, href: undefined },
-  { icon: Clock, label: "운영방식", value: "사전 예약제", href: undefined },
+  { icon: Clock, label: "운영방식", value: "사전 예약제 · 영업일 기준 1~2일 내 회신", href: undefined },
+];
+
+const directions = [
+  {
+    icon: Train,
+    label: "지하철",
+    lines: [
+      "강남역 2호선·신분당선 11번 출구 · 도보 약 10분",
+      "양재역 3호선·신분당선 7번 출구 · 도보 약 10분",
+    ],
+  },
+  {
+    icon: Bus,
+    label: "버스",
+    lines: [
+      "강남대로변 '뱅뱅사거리·우성아파트' 정류장 도보 2분",
+      "간선 140·144·360·421·462, 지선 3412, 광역 9408 등 이용 가능",
+    ],
+  },
+  {
+    icon: Car,
+    label: "자가용·주차",
+    lines: [
+      "내비게이션: 서울 서초구 강남대로 305 현대렉시온",
+      "건물 내 자주식 주차장 · 상담 방문 시 2시간까지 무료",
+    ],
+  },
 ];
 
 export default function ContactPage() {
@@ -101,11 +137,11 @@ export default function ContactPage() {
     <>
       <JsonLd data={contactSchema} />
       <PageHero
-        title="오시는 길·연락처 — ACT ART CENTER 서초 센터"
-        subtitle="편한 방법으로 연락해 주세요. 영업일 기준 1~2일 이내에 답변드립니다."
+        title="오시는 길·연락처 — ACT ART CENTER 강남센터"
+        subtitle="편한 방법으로 연락해 주세요."
         label="Contact"
-        imageSrc="https://images.unsplash.com/photo-1572947650440-e8a97ef053b2?w=1920&q=80"
-        imageAlt="ACT ART CENTER 연락처"
+        imageSrc="/images/office-hero.jpg"
+        imageAlt="ACT ART CENTER 강남센터 내부 — 대형 테이블과 채광 좋은 상담 공간"
       />
 
       <div className="bg-paper pt-6 pb-2">
@@ -122,10 +158,10 @@ export default function ContactPage() {
 
       <SectionWrapper bg="cream" className="overflow-hidden">
         <Container className="relative">
-          <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {/* Contact info */}
             <div className="space-y-6">
-              <h2 className="text-night text-xl font-semibold">찾아오시는 길</h2>
+              <h2 className="text-night text-xl font-semibold">연락처</h2>
               <div className="space-y-4">
                 {contactInfo.map((item) => {
                   const Icon = item.icon;
@@ -151,14 +187,14 @@ export default function ContactPage() {
               </div>
 
               {/* Social */}
-              <div className="flex gap-4 pt-2">
-                <a href={`https://instagram.com/${CONTACT.instagram.replace("@", "")}`} target="_blank" rel="noopener noreferrer"
-                  className="text-primary-500 hover:text-primary-600 transition-colors text-sm font-medium">
+              <div className="pt-2">
+                <a
+                  href={`https://instagram.com/${CONTACT.instagram.replace("@", "")}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-primary-500 hover:text-primary-600 transition-colors text-sm font-medium"
+                >
                   Instagram {CONTACT.instagram}
-                </a>
-                <a href={`https://pf.kakao.com/${CONTACT.kakao}`} target="_blank" rel="noopener noreferrer"
-                  className="text-primary-500 hover:text-primary-600 transition-colors text-sm font-medium">
-                  카카오톡 상담
                 </a>
               </div>
             </div>
@@ -166,17 +202,68 @@ export default function ContactPage() {
             {/* Google Maps */}
             <div className="bg-white rounded-2xl overflow-hidden" style={{ border: "1px solid rgba(196, 191, 183, 0.15)" }}>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.3!2d127.0263!3d37.4917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca15a0a5a5a5b%3A0x0!2z7ISc7Jq47IucIOyEnOy0iOq1rCDqsJXrgqjrjIDroZwgMzA1!5e0!3m2!1sko!2skr!4v1700000000000"
+                src="https://www.google.com/maps?q=서울+서초구+강남대로+305+현대렉시온&z=16&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0, minHeight: "400px" }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="ACT ART CENTER 오시는 길 - 서울시 서초구 강남대로 305"
+                title="ACT ART CENTER 강남센터 지도 — 서울시 서초구 강남대로 305 현대렉시온 2518호"
                 className="aspect-square lg:aspect-auto lg:h-full"
               />
             </div>
+          </div>
+        </Container>
+      </SectionWrapper>
+
+      {/* 찾아오시는 길 — 대중교통·자가용 */}
+      <SectionWrapper bg="paper">
+        <Container>
+          <div className="max-w-5xl mx-auto">
+            <div className="max-w-2xl">
+              <p className="text-secondary-500 font-medium text-sm tracking-wide uppercase">Directions</p>
+              <h2 className="mt-2 text-night text-2xl lg:text-3xl font-bold tracking-tight">
+                찾아오시는 길
+              </h2>
+              <p className="mt-4 text-charcoal/70 leading-relaxed">
+                강남대로변에 위치해 지하철·버스 모두 편리합니다.
+                자가용으로 오시는 경우 건물 내 주차장을 이용하실 수 있으며,
+                상담 방문 시 <span className="font-semibold text-night">2시간까지 주차가 무료</span>입니다.
+              </p>
+            </div>
+
+            <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-4">
+              {directions.map(({ icon: Icon, label, lines }) => (
+                <div
+                  key={label}
+                  className="bg-white rounded-2xl p-6 shadow-[var(--shadow-sm)]"
+                  style={{ border: "1px solid rgba(196, 191, 183, 0.15)" }}
+                >
+                  <div className="w-11 h-11 rounded-xl bg-primary-50 flex items-center justify-center">
+                    <Icon className="w-5 h-5 text-primary-500" strokeWidth={1.5} />
+                  </div>
+                  <p className="mt-4 text-night font-semibold">{label}</p>
+                  <ul className="mt-3 space-y-2 text-sm text-charcoal/70 leading-relaxed">
+                    {lines.map((line) => (
+                      <li key={line} className="flex gap-2">
+                        <span
+                          className="mt-2 w-1 h-1 rounded-full bg-primary-500 shrink-0"
+                          aria-hidden="true"
+                        />
+                        <span>{line}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+
+            <p className="mt-8 text-xs text-stone leading-relaxed max-w-2xl">
+              * 위 소요 시간은 일반 도보 기준 근사치입니다. 교통 상황과 출구 선택에 따라
+              차이가 있을 수 있으니 방문 전 지도 앱에서 실제 경로를 확인해 주세요.
+              주차 무료 검증은 방문 시 안내 데스크에 문의하시면 도움드립니다.
+            </p>
           </div>
         </Container>
       </SectionWrapper>
