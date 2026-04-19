@@ -4,7 +4,6 @@ import { useState } from "react";
 import { Container } from "@/components/shared/Container";
 import { SectionWrapper } from "@/components/shared/SectionWrapper";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
-import { CharacterIllustration } from "@/components/shared/CharacterIllustration";
 import { CONTACT } from "@/lib/constants";
 
 export default function BookingPage() {
@@ -70,29 +69,6 @@ export default function BookingPage() {
 
       <SectionWrapper bg="cream" className="overflow-hidden">
         <Container className="relative">
-          {/* Ambient layer — Acttie laptop (비서), Artty welcome (동반자) */}
-          <CharacterIllustration
-            name="acttie-laptop"
-            alt=""
-            width={340}
-            height={340}
-            hideOnMobile
-            animation="ambient"
-            opacity={0.4}
-            className="absolute right-[4%] top-[10%] z-0 w-[240px] xl:w-[320px]"
-          />
-          <CharacterIllustration
-            name="artty-welcome"
-            alt=""
-            width={220}
-            height={220}
-            hideOnMobile
-            animation="ambient"
-            opacity={0.28}
-            delay={2.5}
-            className="absolute left-[4%] bottom-[10%] z-0 w-[160px] xl:w-[200px]"
-          />
-
           <div className="max-w-xl mx-auto relative z-10">
             <div className="bg-white rounded-2xl p-8 lg:p-10" style={{ border: "1px solid rgba(196, 191, 183, 0.15)" }}>
               {status === "success" ? (

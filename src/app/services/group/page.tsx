@@ -5,7 +5,6 @@ import { Container } from "@/components/shared/Container";
 import { SectionWrapper } from "@/components/shared/SectionWrapper";
 import { JsonLd } from "@/components/shared/JsonLd";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
-import { CharacterIllustration } from "@/components/shared/CharacterIllustration";
 import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
@@ -135,41 +134,6 @@ export default function GroupPage() {
 
       <SectionWrapper bg="cream" className="overflow-hidden">
         <Container className="relative">
-          {/* Ambient layer — Twins center primary (그룹 = 함께의 은유) + Artty welcome right accent */}
-          <CharacterIllustration
-            name="twins-together"
-            alt=""
-            width={380}
-            height={380}
-            hideOnMobile
-            animation="ambient"
-            opacity={0.35}
-            className="absolute left-1/2 top-[35%] z-0 w-[280px] xl:w-[360px] -translate-x-1/2"
-          />
-          <CharacterIllustration
-            name="artty-welcome"
-            alt=""
-            width={220}
-            height={220}
-            hideOnMobile
-            animation="ambient"
-            opacity={0.3}
-            delay={2.5}
-            className="absolute right-[4%] top-[60%] z-0 w-[160px] xl:w-[200px]"
-          />
-
-          {/* Twins — 상단 센터에 작게 (그룹 = 함께의 은유) */}
-          <div className="relative z-10 flex justify-center mb-6">
-            <CharacterIllustration
-              name="twins-together"
-              alt=""
-              width={240}
-              height={240}
-              animation="ambient"
-              opacity={0.85}
-              className="w-[160px] md:w-[200px] lg:w-[220px]"
-            />
-          </div>
           <h2 className="relative z-10 text-center mb-12 text-2xl lg:text-3xl font-bold tracking-tight">진행 중인 프로그램</h2>
           <div className="relative z-10 space-y-6 max-w-3xl mx-auto">
             {programs.map((p) => (

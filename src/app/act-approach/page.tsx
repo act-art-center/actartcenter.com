@@ -5,7 +5,6 @@ import { SectionWrapper } from "@/components/shared/SectionWrapper";
 import { PageHero } from "@/components/shared/PageHero";
 import { JsonLd } from "@/components/shared/JsonLd";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
-import { CharacterIllustration } from "@/components/shared/CharacterIllustration";
 import { ACT_PROCESSES } from "@/lib/constants";
 import { SITE_URL } from "@/lib/constants";
 
@@ -117,29 +116,6 @@ export default function ActApproachPage() {
       {/* 6 Processes */}
       <SectionWrapper bg="cream" className="overflow-hidden">
         <Container className="relative">
-          {/* Ambient layer — Acttie primary (사고 안내자), Artty 보조 (감정 동반자) */}
-          <CharacterIllustration
-            name="acttie-laptop"
-            alt=""
-            width={360}
-            height={360}
-            hideOnMobile
-            animation="ambient"
-            opacity={0.4}
-            className="absolute left-[10%] top-[40%] z-0 w-[260px] xl:w-[340px] -translate-x-6"
-          />
-          <CharacterIllustration
-            name="artty-paint"
-            alt=""
-            width={240}
-            height={240}
-            hideOnMobile
-            animation="ambient"
-            opacity={0.3}
-            delay={3}
-            className="absolute right-[6%] top-[12%] z-0 w-[180px] xl:w-[220px]"
-          />
-
           <div className="relative z-[2] text-center mb-12 lg:mb-16">
             <h2 className="text-2xl lg:text-3xl font-bold tracking-tight">ACT의 6가지 핵심 프로세스</h2>
             <p className="mt-4 text-charcoal/70 max-w-[44ch] mx-auto">

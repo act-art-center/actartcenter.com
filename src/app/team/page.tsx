@@ -6,7 +6,6 @@ import { SectionWrapper } from "@/components/shared/SectionWrapper";
 import { PageHero } from "@/components/shared/PageHero";
 import { JsonLd } from "@/components/shared/JsonLd";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
-import { CharacterIllustration } from "@/components/shared/CharacterIllustration";
 import { TEAM_MEMBERS, SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
@@ -121,29 +120,6 @@ export default function TeamPage() {
 
       <SectionWrapper bg="cream" className="overflow-hidden">
         <Container className="relative">
-          {/* Ambient accents — Acttie reading (좌상), Artty thoughtful (우하) 낮은 opacity로 배경 숨결 */}
-          <CharacterIllustration
-            name="acttie-reading"
-            alt=""
-            width={240}
-            height={240}
-            hideOnMobile
-            animation="ambient"
-            opacity={0.25}
-            className="absolute left-[2%] top-[12%] z-0 w-[180px] xl:w-[220px]"
-          />
-          <CharacterIllustration
-            name="artty-thoughtful"
-            alt=""
-            width={220}
-            height={220}
-            hideOnMobile
-            animation="ambient"
-            opacity={0.22}
-            delay={3}
-            className="absolute right-[2%] bottom-[18%] z-0 w-[170px] xl:w-[200px]"
-          />
-
           <div className="relative z-10 max-w-2xl mx-auto">
             <div className="bg-white rounded-2xl p-8 lg:p-12" style={{ border: "1px solid rgba(196, 191, 183, 0.15)" }}>
               {/* Profile photo */}
@@ -196,22 +172,6 @@ export default function TeamPage() {
               <blockquote className="mt-8 text-center text-primary-500 font-[var(--font-accent)] text-xl leading-relaxed italic max-w-[36ch] mx-auto">
                 &ldquo;{member.quote}&rdquo;
               </blockquote>
-            </div>
-
-            {/* Twins — 보조 요소로 프로필 카드 아래 작게 (ambient breathing) */}
-            <div className="mt-10 flex flex-col items-center gap-3">
-              <CharacterIllustration
-                name="twins-together"
-                alt="Acttie와 Artty — ACT ART CENTER 마스코트"
-                width={220}
-                height={220}
-                animation="ambient"
-                opacity={0.9}
-                className="w-[140px] md:w-[180px]"
-              />
-              <p className="text-stone text-xs text-center max-w-[28ch] leading-relaxed">
-                치료실 밖에서는 Acttie와 Artty가 안내와 따뜻함을 더해드립니다.
-              </p>
             </div>
           </div>
         </Container>

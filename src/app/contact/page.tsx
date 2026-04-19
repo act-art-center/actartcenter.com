@@ -4,7 +4,6 @@ import { PageHero } from "@/components/shared/PageHero";
 import { SectionWrapper } from "@/components/shared/SectionWrapper";
 import { JsonLd } from "@/components/shared/JsonLd";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
-import { CharacterIllustration } from "@/components/shared/CharacterIllustration";
 import { CONTACT, SITE_NAME, SITE_URL } from "@/lib/constants";
 import { Mail, MapPin, Clock } from "lucide-react";
 
@@ -123,45 +122,6 @@ export default function ContactPage() {
 
       <SectionWrapper bg="cream" className="overflow-hidden">
         <Container className="relative">
-          {/* Ambient layer — Acttie reading (좌하) + Artty welcome (우하) 맞이하는 숨결 */}
-          <CharacterIllustration
-            name="acttie-reading"
-            alt=""
-            width={240}
-            height={240}
-            hideOnMobile
-            animation="ambient"
-            opacity={0.25}
-            className="absolute left-[3%] bottom-[20%] z-0 w-[170px] xl:w-[210px]"
-          />
-          <CharacterIllustration
-            name="artty-welcome"
-            alt=""
-            width={240}
-            height={240}
-            hideOnMobile
-            animation="ambient"
-            opacity={0.25}
-            delay={3}
-            className="absolute right-[3%] bottom-[20%] z-0 w-[170px] xl:w-[210px]"
-          />
-
-          {/* Twins 환영 배너 (센터) */}
-          <div className="relative z-10 mb-10 flex flex-col items-center text-center">
-            <CharacterIllustration
-              name="twins-together"
-              alt="Acttie와 Artty가 함께 인사합니다"
-              width={240}
-              height={240}
-              animation="ambient"
-              opacity={0.88}
-              className="w-[160px] md:w-[200px] lg:w-[220px]"
-            />
-            <p className="mt-4 max-w-[42ch] text-charcoal/70 text-sm leading-relaxed">
-              Acttie가 일정과 절차를, Artty가 마음의 속도를 함께 살펴드립니다.
-            </p>
-          </div>
-
           <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {/* Contact info */}
             <div className="space-y-6">

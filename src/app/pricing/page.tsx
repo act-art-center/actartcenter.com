@@ -5,7 +5,6 @@ import { PageHero } from "@/components/shared/PageHero";
 import { SectionWrapper } from "@/components/shared/SectionWrapper";
 import { JsonLd } from "@/components/shared/JsonLd";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
-import { CharacterIllustration } from "@/components/shared/CharacterIllustration";
 import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
@@ -188,29 +187,6 @@ export default function PricingPage() {
       {/* Individual pricing */}
       <SectionWrapper bg="cream" className="overflow-hidden">
         <Container className="relative">
-          {/* Ambient layer — Acttie reading primary (차분한 안내자) + Artty paint accent right */}
-          <CharacterIllustration
-            name="acttie-reading"
-            alt=""
-            width={300}
-            height={300}
-            hideOnMobile
-            animation="ambient"
-            opacity={0.38}
-            className="absolute left-[4%] top-[12%] z-0 w-[210px] xl:w-[280px]"
-          />
-          <CharacterIllustration
-            name="artty-paint"
-            alt=""
-            width={220}
-            height={220}
-            hideOnMobile
-            animation="ambient"
-            opacity={0.28}
-            delay={3}
-            className="absolute right-[4%] bottom-[10%] z-0 w-[160px] xl:w-[200px]"
-          />
-
           <h2 className="relative z-10 text-center mb-10 text-2xl lg:text-3xl font-bold tracking-tight">개별 세션</h2>
           <div className="relative z-10 max-w-3xl mx-auto space-y-4">
             {pricing.map((item) => (

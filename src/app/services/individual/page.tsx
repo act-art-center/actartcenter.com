@@ -5,7 +5,6 @@ import { Container } from "@/components/shared/Container";
 import { SectionWrapper } from "@/components/shared/SectionWrapper";
 import { JsonLd } from "@/components/shared/JsonLd";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
-import { CharacterIllustration } from "@/components/shared/CharacterIllustration";
 import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
@@ -133,29 +132,6 @@ export default function IndividualPage() {
 
       <SectionWrapper bg="cream" className="overflow-hidden">
         <Container className="relative">
-          {/* Ambient layer — Artty paint primary (감정 표현), Twins bottom-right accent */}
-          <CharacterIllustration
-            name="artty-paint"
-            alt=""
-            width={360}
-            height={360}
-            hideOnMobile
-            animation="ambient"
-            opacity={0.4}
-            className="absolute left-[8%] top-[12%] z-0 w-[260px] xl:w-[340px]"
-          />
-          <CharacterIllustration
-            name="twins-together"
-            alt=""
-            width={200}
-            height={200}
-            hideOnMobile
-            animation="ambient"
-            opacity={0.28}
-            delay={3}
-            className="absolute right-[4%] bottom-[6%] z-0 w-[150px] xl:w-[180px]"
-          />
-
           <h2 className="relative z-10 text-center mb-12 text-2xl lg:text-3xl font-bold tracking-tight">프로그램 특징</h2>
           <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
             {features.map((f) => (

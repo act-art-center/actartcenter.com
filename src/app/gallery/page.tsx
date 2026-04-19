@@ -3,7 +3,6 @@ import Image from "next/image";
 import { Container } from "@/components/shared/Container";
 import { JsonLd } from "@/components/shared/JsonLd";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
-import { CharacterIllustration } from "@/components/shared/CharacterIllustration";
 import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
@@ -85,29 +84,6 @@ export default function GalleryPage() {
     <>
       <JsonLd data={gallerySchema} />
       <section className="relative overflow-hidden bg-night py-16 lg:py-24">
-        {/* Ambient accents — dark background, lower opacity to avoid clashing with white text */}
-        <CharacterIllustration
-          name="artty-paint"
-          alt=""
-          width={240}
-          height={240}
-          hideOnMobile
-          animation="ambient"
-          opacity={0.22}
-          className="absolute left-[4%] top-[18%] z-0 w-[170px] xl:w-[210px] mix-blend-luminosity"
-        />
-        <CharacterIllustration
-          name="acttie-laptop"
-          alt=""
-          width={220}
-          height={220}
-          hideOnMobile
-          animation="ambient"
-          opacity={0.2}
-          delay={3}
-          className="absolute right-[4%] bottom-[12%] z-0 w-[160px] xl:w-[200px] mix-blend-luminosity"
-        />
-
         <Container className="relative z-10">
           <div className="mb-8">
             <Breadcrumbs
@@ -128,19 +104,6 @@ export default function GalleryPage() {
               <br />
               모든 이미지는 비식별 처리되어 있습니다.
             </p>
-
-            {/* Artty multi-scene — 배너로 창작 순간을 상징 (ambient breathing) */}
-            <div className="mt-10 flex justify-center">
-              <CharacterIllustration
-                name="artty-scenes"
-                alt="Artty의 다양한 창작 장면"
-                width={360}
-                height={240}
-                animation="ambient"
-                opacity={0.9}
-                className="w-[260px] md:w-[320px] lg:w-[360px]"
-              />
-            </div>
           </div>
         </Container>
       </section>

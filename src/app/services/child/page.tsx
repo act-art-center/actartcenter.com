@@ -5,7 +5,6 @@ import { Container } from "@/components/shared/Container";
 import { SectionWrapper } from "@/components/shared/SectionWrapper";
 import { JsonLd } from "@/components/shared/JsonLd";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
-import { CharacterIllustration } from "@/components/shared/CharacterIllustration";
 import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
@@ -129,29 +128,6 @@ export default function ChildPage() {
 
       <SectionWrapper bg="cream" className="overflow-hidden">
         <Container className="relative">
-          {/* Ambient layer — Artty welcome primary (아이 환대), Twins bottom-right small */}
-          <CharacterIllustration
-            name="artty-welcome"
-            alt=""
-            width={340}
-            height={340}
-            hideOnMobile
-            animation="ambient"
-            opacity={0.42}
-            className="absolute left-[6%] top-[14%] z-0 w-[240px] xl:w-[320px]"
-          />
-          <CharacterIllustration
-            name="twins-together"
-            alt=""
-            width={200}
-            height={200}
-            hideOnMobile
-            animation="ambient"
-            opacity={0.28}
-            delay={3}
-            className="absolute right-[4%] bottom-[6%] z-0 w-[150px] xl:w-[180px]"
-          />
-
           <h2 className="relative z-10 text-center mb-12 text-2xl lg:text-3xl font-bold tracking-tight">이런 아이에게 도움이 됩니다</h2>
           <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
             {areas.map((a) => (

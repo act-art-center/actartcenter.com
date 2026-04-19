@@ -7,7 +7,6 @@ import { Search } from "lucide-react";
 import { Container } from "@/components/shared/Container";
 import { SectionWrapper } from "@/components/shared/SectionWrapper";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
-import { CharacterIllustration } from "@/components/shared/CharacterIllustration";
 import { BLOG_POSTS, BLOG_CATEGORIES } from "@/lib/blog-data";
 import { cn } from "@/lib/utils";
 
@@ -52,18 +51,6 @@ export default function BlogPage() {
 
       <SectionWrapper bg="cream" className="overflow-hidden">
         <Container className="relative">
-          {/* Ambient layer — Acttie reading drifts left-bottom as quiet reading companion */}
-          <CharacterIllustration
-            name="acttie-reading"
-            alt=""
-            width={260}
-            height={260}
-            hideOnMobile
-            animation="ambient"
-            opacity={0.25}
-            delay={2.5}
-            className="absolute left-[3%] top-[60%] z-0 w-[180px] xl:w-[220px]"
-          />
           <div className="relative z-10 mb-8">
             <Breadcrumbs
               items={[
@@ -72,30 +59,6 @@ export default function BlogPage() {
               ]}
               emitJsonLd={false}
             />
-          </div>
-
-          {/* Artty thoughtful — 블로그 헤더 옆 (2/3 · 1/3 비대칭) */}
-          <div className="relative z-10 mb-8 grid grid-cols-1 lg:grid-cols-3 gap-6 items-center">
-            <div className="lg:col-span-2">
-              <p className="text-secondary-500 text-xs font-medium tracking-wide uppercase mb-2">From Artty</p>
-              <h2 className="text-night text-xl lg:text-2xl font-semibold leading-snug">
-                하루가 버거웠던 저녁, 오늘은 그 실타래를 함께 만져 보려 합니다.
-              </h2>
-              <p className="mt-2 text-charcoal/70 text-sm leading-relaxed max-w-[56ch]">
-                Artty가 전하는 감성 에세이와 ACT 미술치료 현장 이야기를 모았습니다.
-              </p>
-            </div>
-            <div className="flex justify-center lg:justify-end">
-              <CharacterIllustration
-                name="artty-thoughtful"
-                alt=""
-                width={240}
-                height={240}
-                animation="ambient"
-                opacity={0.88}
-                className="w-[160px] md:w-[200px] lg:w-[220px]"
-              />
-            </div>
           </div>
 
           {/* Search + Categories */}

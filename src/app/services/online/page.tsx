@@ -5,7 +5,6 @@ import { Container } from "@/components/shared/Container";
 import { SectionWrapper } from "@/components/shared/SectionWrapper";
 import { JsonLd } from "@/components/shared/JsonLd";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
-import { CharacterIllustration } from "@/components/shared/CharacterIllustration";
 import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
@@ -134,29 +133,6 @@ export default function OnlinePage() {
 
       <SectionWrapper bg="cream" className="overflow-hidden">
         <Container className="relative">
-          {/* Ambient layer — Acttie laptop primary (온라인 안내자), Artty thoughtful 좌측 accent */}
-          <CharacterIllustration
-            name="acttie-laptop"
-            alt=""
-            width={340}
-            height={340}
-            hideOnMobile
-            animation="ambient"
-            opacity={0.42}
-            className="absolute right-[6%] top-[14%] z-0 w-[240px] xl:w-[320px]"
-          />
-          <CharacterIllustration
-            name="artty-thoughtful"
-            alt=""
-            width={220}
-            height={220}
-            hideOnMobile
-            animation="ambient"
-            opacity={0.3}
-            delay={2.5}
-            className="absolute left-[4%] top-[55%] z-0 w-[160px] xl:w-[200px]"
-          />
-
           <h2 className="relative z-10 text-center mb-12 text-2xl lg:text-3xl font-bold tracking-tight">진행 과정</h2>
           <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
             {steps.map((s) => (

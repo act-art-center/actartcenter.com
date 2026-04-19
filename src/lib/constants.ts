@@ -232,7 +232,7 @@ export const ACT_PROCESSES = [
 
 export const PROCESS_STEPS = [
   { number: "01", title: "문의 상담", description: "전화 또는 온라인으로 편하게 문의하세요" },
-  { number: "02", title: "초기 평가", description: "현재 상태와 목표를 함께 살펴봅니다" },
+  { number: "02", title: "초기 분석", description: "현재 상태와 목표를 함께 살펴봅니다" },
   { number: "03", title: "맞춤 설계", description: "ACT 프로세스 기반 개인 맞춤 프로그램 설계" },
   { number: "04", title: "상담 진행", description: "미술 활동과 ACT를 통합한 세션 진행" },
   { number: "05", title: "성장 종결", description: "변화를 정리하고 일상에서의 실천을 계획" },
