@@ -14,6 +14,46 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
+/**
+ * MedicalCondition 추론 — FAQ 질문·답변에서 특정 의료 맥락 키워드가 발견되면
+ * 해당 Question 에 `about` 필드로 MedicalCondition 을 부착합니다. 전체 FAQPage
+ * 가 아닌 개별 Question 단위 참조 (간접 참조, 의료 행위 주장 아님).
+ */
+type MedicalConditionRef = { "@type": "MedicalCondition"; name: string; alternateName?: string };
+
+function inferMedicalConditions(question: string, answer: string): MedicalConditionRef[] {
+  const text = `${question} ${answer}`.toLowerCase();
+  const refs: MedicalConditionRef[] = [];
+  if (/(불안|anxiety|공황)/i.test(text)) {
+    refs.push({ "@type": "MedicalCondition", name: "불안", alternateName: "Anxiety" });
+  }
+  if (/(트라우마|외상|ptsd)/i.test(text)) {
+    refs.push({
+      "@type": "MedicalCondition",
+      name: "복합성 트라우마",
+      alternateName: "Complex Trauma / PTSD",
+    });
+  }
+  if (/(번아웃|burnout|소진)/i.test(text)) {
+    refs.push({
+      "@type": "MedicalCondition",
+      name: "번아웃",
+      alternateName: "Occupational Burnout",
+    });
+  }
+  if (/(우울|depression)/i.test(text)) {
+    refs.push({ "@type": "MedicalCondition", name: "우울", alternateName: "Depression" });
+  }
+  if (/(상실|애도|grief|bereavement)/i.test(text)) {
+    refs.push({
+      "@type": "MedicalCondition",
+      name: "애도·상실",
+      alternateName: "Grief / Bereavement",
+    });
+  }
+  return refs;
+}
+
 const faqPageSchema = {
   "@context": "https://schema.org",
   "@graph": [
@@ -27,11 +67,18 @@ const faqPageSchema = {
     {
       "@type": "FAQPage",
       "@id": `${SITE_URL}/faq#faq`,
-      mainEntity: FAQ_ITEMS.map((item) => ({
-        "@type": "Question",
-        name: item.question,
-        acceptedAnswer: { "@type": "Answer", text: item.answer },
-      })),
+      mainEntity: FAQ_ITEMS.map((item) => {
+        const conditions = inferMedicalConditions(item.question, item.answer);
+        const question: Record<string, unknown> = {
+          "@type": "Question",
+          name: item.question,
+          acceptedAnswer: { "@type": "Answer", text: item.answer },
+        };
+        if (conditions.length > 0) {
+          question.about = conditions.length === 1 ? conditions[0] : conditions;
+        }
+        return question;
+      }),
     },
   ],
 };

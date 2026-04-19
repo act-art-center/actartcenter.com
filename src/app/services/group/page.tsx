@@ -482,26 +482,41 @@ export default function GroupPage() {
         <Container>
           <div className="max-w-2xl">
             <h2 className="text-2xl lg:text-3xl font-bold tracking-tight">
-              우리가 참고하는 곳
+              그룹 과정을 지탱하는 연구
             </h2>
             <p className="mt-4 text-charcoal/70 text-sm leading-relaxed">
-              본 그룹 프로그램 설계의 개념과 구조는 다음 기관·저자의 표준에
-              기반합니다. 효과를 단정하기 위한 인용이 아니라 설계의 투명성을
-              위한 기록입니다.
+              그룹 미술치료는 집단 역동과 창작 과정이 동시에 작동하는 다층적 접근입니다.
+              설계의 학술적 기반을 네 흐름으로 정리하면 아래와 같습니다.
             </p>
           </div>
-          <div className="mt-10 space-y-4 max-w-3xl">
-            {evidenceNotes.map((e) => (
-              <div
-                key={e.source}
-                className="bg-white rounded-xl p-6"
-                style={{ border: "1px solid rgba(196, 191, 183, 0.15)" }}
-              >
-                <h3 className="text-night font-semibold text-sm">{e.source}</h3>
-                <p className="mt-2 text-charcoal/70 text-sm leading-relaxed">{e.note}</p>
-              </div>
-            ))}
+          <div className="mt-10 max-w-3xl space-y-6 text-charcoal/80 text-[15px] leading-relaxed">
+            <p>
+              본 그룹 프로그램의 이론적 중심에는 <strong>Irvin D. Yalom</strong>이 정립한 집단 심리치료의
+              11가지 치료적 요인이 있습니다. 『The Theory and Practice of Group Psychotherapy』에서 Yalom은
+              보편성·대인관계 학습·응집력·희망 주입 등이 그룹 세팅에서만 고유하게 작동하는 변화 기제임을 논증했고,
+              본 센터의 8주 구조와 2주 간 워밍업은 이 요인들이 집단 내에 자리 잡을 시간을 의도적으로 확보합니다.
+            </p>
+            <p>
+              매체 선택과 개입의 강도 조절은 <strong>American Art Therapy Association(AATA)</strong>의
+              그룹 미술치료 실무 정의 — 참여자 간 상호작용과 창작 과정이 동시에 운영되는 형식 — 을 따릅니다.
+              국내 임상 적용은 <strong>한국미술치료학회</strong>의 소그룹 사례 연구 축적(정서 조절·자기표현·
+              사회적 지지감 측면)에서 언어와 절차를 가져왔습니다. 마지막 축은 <strong>Steven C. Hayes 외의 ACT 모델</strong>로,
+              특히 '가치 명료화'와 '전념 행동' 단계에서 그룹 구성원이 서로의 증인이 되어 주는 효과가 관찰됩니다.
+            </p>
           </div>
+          <details className="mt-8 max-w-3xl">
+            <summary className="cursor-pointer text-charcoal/60 text-xs tracking-wide uppercase hover:text-charcoal transition-colors">
+              참고 자료 상세 ({evidenceNotes.length}건)
+            </summary>
+            <ul className="mt-4 space-y-3 text-charcoal/70 text-sm">
+              {evidenceNotes.map((e) => (
+                <li key={e.source} className="pl-4 border-l-2 border-primary-500/20">
+                  <p className="text-night font-semibold text-sm">{e.source}</p>
+                  <p className="mt-1 leading-relaxed">{e.note}</p>
+                </li>
+              ))}
+            </ul>
+          </details>
         </Container>
       </SectionWrapper>
 

@@ -66,7 +66,7 @@ const actApproachSchema = {
       description:
         "Hayes·Strosahl·Wilson 이 정립한 수용전념치료(ACT)의 6가지 핵심 프로세스(수용·탈융합·현재 순간·맥락으로서의 자기·가치·전념 행동)를 미술치료와 통합해 해설합니다. ACBS·APA Division 12·RFT 등 국제 학문적 토대, 내담자가 ACT 에 끌릴 수 있는 다섯 가지 이유, 자기 인식 질문까지 함께 안내합니다.",
       articleBody:
-        "수용전념치료(ACT)는 Steven C. Hayes, Kirk D. Strosahl, Kelly G. Wilson 이 함께 정립한 3세대 인지행동치료입니다. 관계틀이론(RFT) 을 이론적 토대로 하며, 수용·탈융합·현재 순간 접촉·맥락으로서의 자기·가치·전념 행동 이라는 6가지 핵심 프로세스를 통해 심리적 유연성을 높이는 것을 목표로 합니다. 국제적으로는 Association for Contextual Behavioral Science(ACBS) 가 60여 개 국 회원이 참여하는 학술 커뮤니티로 운영되고 있으며, APA Division 12(Society of Clinical Psychology) 의 경험적으로 지지되는 치료(Empirically Supported Treatments) 목록에도 ACT 가 등재되어 있습니다. University of Nevada Reno, Ghent University, Bond University 등 여러 대학 연구실이 ACT 와 관계틀이론 연구를 지속하고 있고, Steven Hayes 의 『Get Out of Your Mind and Into Your Life』(2005) 와 『A Liberated Mind』(2019) 는 세계 여러 언어로 번역되어 대중에게 전해졌습니다. 한국에서는 한국수용전념치료학회(KACBS) 등을 중심으로 학술·임상 커뮤니티가 형성되는 단계에 있습니다. 미술치료는 언어 이전의 감각·이미지 경로를 열어 주기 때문에 이 6개 과정을 경험적으로 탐색하기에 적합한 매체입니다. 불안·우울·만성 통증·번아웃·트라우마 등에서의 유효성은 다수의 메타분석(A-Tjak et al., 2015; Gloster et al., 2020 등)에서 보고되어 왔으나, 모든 사례에 동일하게 작동하는 만병통치는 아니며 개별 상담과 임상 판단이 필요합니다. 본 페이지는 ACT 의 국제적 위상, 내담자가 ACT 에 끌릴 수 있는 다섯 가지 이유, 그리고 \"지금 이런 상태\" 라는 자기 인식 지점을 함께 안내합니다.",
+        "수용전념치료(ACT)는 Steven C. Hayes, Kirk D. Strosahl, Kelly G. Wilson 이 함께 정립한 3세대 인지행동치료입니다. 관계틀이론(RFT) 을 이론적 토대로 하며, 수용·탈융합·현재 순간 접촉·맥락으로서의 자기·가치·전념 행동 이라는 6가지 핵심 프로세스를 통해 심리적 유연성을 높이는 것을 목표로 합니다. 국제적으로는 Association for Contextual Behavioral Science(ACBS) 가 60여 개 국 회원이 참여하는 학술 커뮤니티로 운영되고 있으며, APA Division 12(Society of Clinical Psychology) 의 경험적으로 지지되는 치료(Empirically Supported Treatments) 목록에도 ACT 가 등재되어 있습니다. University of Nevada Reno, Ghent University, Bond University 등 여러 대학 연구실이 ACT 와 관계틀이론 연구를 지속하고 있고, Steven Hayes 의 『Get Out of Your Mind and Into Your Life』(2005) 와 『A Liberated Mind』(2019) 는 세계 여러 언어로 번역되어 대중에게 전해졌습니다. 한국에서도 ACBS 의 한국 네트워크와 ACT 연구·임상 커뮤니티가 형성되는 단계에 있습니다. 미술치료는 언어 이전의 감각·이미지 경로를 열어 주기 때문에 이 6개 과정을 경험적으로 탐색하기에 적합한 매체입니다. 불안·우울·만성 통증·번아웃·트라우마 등에서의 유효성은 다수의 메타분석(A-Tjak et al., 2015; Gloster et al., 2020 등)에서 보고되어 왔으나, 모든 사례에 동일하게 작동하는 만병통치는 아니며 개별 상담과 임상 판단이 필요합니다. 본 페이지는 ACT 의 국제적 위상, 내담자가 ACT 에 끌릴 수 있는 다섯 가지 이유, 그리고 \"지금 이런 상태\" 라는 자기 인식 지점을 함께 안내합니다.",
       url: `${SITE_URL}/act-approach`,
       image: `${SITE_URL}/og/act-approach.png`,
       inLanguage: "ko-KR",
@@ -400,9 +400,9 @@ export default function ActApproachPage() {
                   한국 내 학술 커뮤니티
                 </h3>
                 <p className="mt-3 text-charcoal/80 leading-relaxed text-[15px]">
-                  한국수용전념치료학회(KACBS) 등 국내 학술 커뮤니티가 형성되어 연구와 임상 교육이 진행되고
-                  있으나, 해외 대비 규모는 아직 작은 편입니다. 그래서 일반 내담자 사이에서 ACT 의 인지도는
-                  낮게 느껴질 수 있습니다.
+                  국내에서도 ACBS(Association for Contextual Behavioral Science) 의 한국 네트워크와 ACT 연구·임상 커뮤니티가
+                  형성되어 학술·임상 교육이 이어지고 있으나, 해외 대비 규모는 아직 작은 편입니다. 그래서 일반 내담자
+                  사이에서 ACT 의 인지도는 낮게 느껴질 수 있습니다.
                 </p>
               </article>
               <article

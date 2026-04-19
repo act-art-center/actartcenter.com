@@ -10,7 +10,7 @@ import { SITE_URL } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "정서·트라우마 중심 미술심리치료 — 몸이 기억하는 경험을 미술로",
   description:
-    "만성 스트레스, 불안, 번아웃, 상실, 관계 트라우마 경험을 말 이전의 이미지로 먼저 풀어 내는 ACT 미술심리치료. Bessel van der Kolk · Dan Siegel · Steven Hayes · Kristin Neff 의 임상 원칙을 미술 매체와 통합해, 자극량을 천천히 올리는 타이트레이션 구조로 진행합니다.",
+    "불안·번아웃·상실·관계 트라우마 경험을 말 이전의 이미지로 먼저 풀어 내는 ACT 미술심리치료. van der Kolk·Siegel·Hayes 의 임상 원칙을 미술 매체와 통합해 타이트레이션 구조로 진행합니다.",
   keywords: [
     "트라우마 미술심리치료",
     "번아웃 미술치료",
@@ -502,24 +502,26 @@ export default function EmotionalPage() {
         <Container>
           <div className="max-w-2xl">
             <h2 className="text-2xl lg:text-3xl font-bold tracking-tight">
-              우리가 참고하는 곳
+              트라우마·정서 작업의 신경생리학 참조
             </h2>
             <p className="mt-4 text-charcoal/70 text-sm leading-relaxed">
-              본 정서 트랙의 설계는 다음 저자·기관의 표준과 개념에 기반합니다.
-              인용은 효과를 단정하기 위한 것이 아니라, 어떤 언어와 근거 위에서
-              작업을 짰는지 공개하기 위한 것입니다.
+              정서 트랙 설계의 뼈대는 트라우마 신경생리학에 있습니다. Bessel van der Kolk이
+              『The Body Keeps the Score』에서 종합한 브로카 영역 연구, Dan Siegel의 window of
+              tolerance, Kristin Neff의 자기자비 모델 — 이 세 가지가 페이싱·자기비난 완화·감정
+              수용의 언어를 공급합니다. 여기에 Hayes의 ACT와 Malchiodi의 매체 원칙,
+              국내 한국미술치료학회의 사례 축적이 현지화 층위를 만듭니다.
             </p>
           </div>
-          <div className="mt-10 space-y-4 max-w-3xl">
+          <div className="mt-10 max-w-3xl grid grid-cols-1 lg:grid-cols-2 gap-4">
             {evidenceNotes.map((e) => (
-              <div
+              <article
                 key={e.source}
-                className="bg-cream rounded-xl p-6"
+                className="bg-cream rounded-xl p-5"
                 style={{ border: "1px solid rgba(196, 191, 183, 0.15)" }}
               >
                 <h3 className="text-night font-semibold text-sm">{e.source}</h3>
                 <p className="mt-2 text-charcoal/70 text-sm leading-relaxed">{e.note}</p>
-              </div>
+              </article>
             ))}
           </div>
         </Container>

@@ -19,13 +19,43 @@ export default function robots(): MetadataRoute.Robots {
       },
       {
         userAgent: "anthropic-ai",
-        allow: ["/", "/blog/", "/act-approach", "/faq", "/services/"],
+        allow: ["/", "/blog/", "/act-approach", "/faq", "/services/", "/team"],
         disallow: ["/api/", "/booking"],
       },
       {
+        userAgent: "ClaudeBot",
+        allow: ["/", "/blog/", "/act-approach", "/faq", "/services/", "/team"],
+        disallow: ["/api/", "/admin", "/booking"],
+      },
+      {
+        userAgent: "OAI-SearchBot",
+        allow: ["/", "/blog/", "/act-approach", "/faq", "/services/", "/team"],
+        disallow: ["/api/", "/admin", "/booking"],
+      },
+      {
+        userAgent: "ChatGPT-User",
+        allow: ["/", "/blog/", "/act-approach", "/faq", "/services/", "/team"],
+        disallow: ["/api/", "/admin", "/booking"],
+      },
+      {
         userAgent: "PerplexityBot",
-        allow: ["/", "/blog/", "/act-approach", "/faq"],
+        allow: ["/", "/blog/", "/act-approach", "/faq", "/services/", "/team"],
         disallow: ["/api/", "/booking"],
+      },
+      {
+        userAgent: "Perplexity-User",
+        allow: ["/", "/blog/", "/act-approach", "/faq", "/services/", "/team"],
+        disallow: ["/api/", "/admin", "/booking"],
+      },
+      {
+        userAgent: "Applebot-Extended",
+        allow: ["/", "/blog/", "/act-approach", "/faq", "/services/", "/team"],
+        disallow: ["/api/", "/admin", "/booking"],
+      },
+      {
+        userAgent: "Meta-ExternalAgent",
+        allow: ["/", "/blog/", "/act-approach", "/faq", "/services/", "/team"],
+        disallow: ["/api/", "/admin", "/booking"],
       },
       {
         userAgent: "CCBot",

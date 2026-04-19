@@ -96,6 +96,52 @@ const teamSchema = {
           url: "http://www.korean-arttherapy.or.kr/",
         },
       },
+      hasCredential: [
+        {
+          "@type": "EducationalOccupationalCredential",
+          credentialCategory: "대학원 학위",
+          educationalLevel: "석사",
+          name: "미술치료학 석사 (차의과학대학교)",
+          recognizedBy: {
+            "@type": "EducationalOrganization",
+            name: "차의과학대학교",
+            url: "https://www.cha.ac.kr/",
+          },
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          credentialCategory: "대학원 과정",
+          educationalLevel: "박사과정 이수중",
+          name: "미술치료학 박사과정 (차의과학대학교)",
+          recognizedBy: {
+            "@type": "EducationalOrganization",
+            name: "차의과학대학교",
+            url: "https://www.cha.ac.kr/",
+          },
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          credentialCategory: "학부·대학원 학위",
+          educationalLevel: "학사·석사",
+          name: "미술 학사·석사 (홍익대학교 미술대학)",
+          recognizedBy: {
+            "@type": "EducationalOrganization",
+            name: "홍익대학교",
+            url: "https://www.hongik.ac.kr/",
+          },
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          credentialCategory: "전문학회 회원",
+          name: "한국미술치료학회 정회원",
+          recognizedBy: {
+            "@type": "Organization",
+            name: "한국미술치료학회",
+            alternateName: "Korean Art Therapy Association",
+            url: "http://www.korean-arttherapy.or.kr/",
+          },
+        },
+      ],
       knowsAbout: [
         "미술심리치료",
         "Art Therapy",
@@ -140,7 +186,8 @@ export default function TeamPage() {
         <Container className="relative">
           <div className="relative z-10 max-w-2xl mx-auto">
             <div
-              className="bg-white rounded-2xl p-8 lg:p-12"
+              id="stella"
+              className="bg-white rounded-2xl p-8 lg:p-12 scroll-mt-24"
               style={{ border: "1px solid rgba(196, 191, 183, 0.15)" }}
             >
               {/* Profile photo */}

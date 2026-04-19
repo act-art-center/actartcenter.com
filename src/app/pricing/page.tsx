@@ -212,7 +212,7 @@ const marketReference = [
   {
     label: "심리상담 (민간 센터, 50분)",
     range: "약 80,000 ~ 200,000원",
-    source: "한국 주요 심리상담 센터·상담사 협회 공개 정보 기준 일반 범위 (비급여).",
+    source: "서울·수도권 민간 심리상담 센터 공개 가격의 일반 범위(비급여). 협회 차원의 공식 수가 고시는 존재하지 않으며, 기관·상담사 경력에 따라 편차가 큽니다.",
   },
   {
     label: "정신건강의학과 외래 진료 (건강보험)",
@@ -312,7 +312,7 @@ export default function PricingPage() {
           <p className="mx-auto max-w-2xl text-center text-charcoal/70 text-sm leading-relaxed">
             심리치료 연구에서는 세션 용량(회기 수)과 변화 사이에 뚜렷한 관계가 있다는 결과가 일관되게
             보고되어 왔습니다. 한두 번의 개입보다 일정 기간 이어지는 구조가 변화의 폭을 넓힙니다.
-            패키지에는 이 연속성을 돕는 설계와 함께 10~15% 수준의 할인이 포함되어 있습니다.
+            패키지에는 이 연속성을 돕는 설계와 함께 회기당 환산 기준 약 10~17% 수준의 할인이 포함되어 있습니다.
           </p>
           <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             {packages.map((pkg) => (
@@ -412,7 +412,7 @@ export default function PricingPage() {
               한국 심리상담 시장 가격 참고
             </h2>
             <p className="mt-4 text-center text-charcoal/70 leading-relaxed">
-              우리 센터의 가격을 비교해 보실 수 있도록, 국내에서 흔히 접할 수 있는 세 유형의 일반 범위를
+              센터의 가격을 비교해 보실 수 있도록, 국내에서 흔히 접할 수 있는 세 유형의 일반 범위를
               함께 정리했습니다. 각 유형은 비용뿐 아니라 ‘무엇을 위한 서비스인가’가 다르다는 점을
               참고해 주세요.
             </p>

@@ -470,26 +470,30 @@ export default function OnlinePage() {
         <Container>
           <div className="max-w-2xl">
             <h2 className="text-2xl lg:text-3xl font-bold tracking-tight">
-              우리가 참고하는 곳
+              원격 작업의 근거 축적
             </h2>
             <p className="mt-4 text-charcoal/70 text-sm leading-relaxed">
-              본 온라인 프로그램 설계는 다음 기관·연구 흐름에 기반합니다.
-              효과를 단정하기 위한 인용이 아니라, 어떤 근거 위에서 절차를
-              짰는지 투명하게 공개하기 위한 기록입니다.
+              COVID-19 이후 원격 심리치료는 비열등성(non-inferiority) 관점에서 다수의 메타분석이
+              축적된 분야입니다. 본 센터의 온라인 구조는 이 근거 흐름과 AATA 원격 가이드라인,
+              국내 학회 사례 축적을 기반으로 짜였습니다.
             </p>
           </div>
-          <div className="mt-10 space-y-4 max-w-3xl">
-            {evidenceNotes.map((e) => (
-              <div
+          <ol className="mt-10 max-w-3xl space-y-5 list-none">
+            {evidenceNotes.map((e, idx) => (
+              <li
                 key={e.source}
-                className="bg-cream rounded-xl p-6"
-                style={{ border: "1px solid rgba(196, 191, 183, 0.15)" }}
+                className="flex gap-5"
               >
-                <h3 className="text-night font-semibold text-sm">{e.source}</h3>
-                <p className="mt-2 text-charcoal/70 text-sm leading-relaxed">{e.note}</p>
-              </div>
+                <span className="shrink-0 w-10 h-10 rounded-full bg-cream text-primary-500 font-semibold text-sm flex items-center justify-center tabular-nums">
+                  {String(idx + 1).padStart(2, "0")}
+                </span>
+                <div className="flex-1 pt-1">
+                  <h3 className="text-night font-semibold text-sm">{e.source}</h3>
+                  <p className="mt-2 text-charcoal/70 text-sm leading-relaxed">{e.note}</p>
+                </div>
+              </li>
             ))}
-          </div>
+          </ol>
         </Container>
       </SectionWrapper>
 

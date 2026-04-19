@@ -20,7 +20,7 @@ export function ServicesSection() {
     <SectionWrapper bg="cream">
       <Container>
         <div className="text-center mb-6">
-          <h2 className="text-2xl lg:text-3xl font-bold tracking-tight">우리의 세션 영역</h2>
+          <h2 className="text-2xl lg:text-3xl font-bold tracking-tight">ACT ART CENTER의 세션 영역</h2>
           <p className="mt-4 text-charcoal/80 max-w-2xl mx-auto text-base leading-relaxed">
             그림과 조형 활동을 단순한 표현 수단으로 사용하지 않습니다.
             작품을 매개로 한 경험은{" "}

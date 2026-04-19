@@ -486,22 +486,26 @@ export default function ChildPage() {
         <Container>
           <div className="max-w-2xl">
             <h2 className="text-2xl lg:text-3xl font-bold tracking-tight">
-              우리가 참고하는 곳
+              아동 작업의 발달적 근거
             </h2>
             <p className="mt-4 text-charcoal/70 text-sm leading-relaxed">
-              본 프로그램 설계는 다음 기관·저자의 아동·청소년 미술치료 표준에
-              기반합니다. 효과를 단정하기 위한 인용이 아니라, 설계의 투명성을
-              공개하기 위한 기록입니다.
+              Judith Aron Rubin이 『Child Art Therapy』에서 정리한 <em>아동 발달 단계별 매체 선택</em>,
+              Cathy Malchiodi가 체계화한 <em>감각 기반 자극량의 단계적 조절</em>, 미국·한국 학회의
+              <em>부모·양육자 협력 기준</em> — 세 축이 한 회기 안에서 어떻게 교차하는지 설계 투명성을
+              위해 공개합니다.
             </p>
           </div>
-          <div className="mt-10 space-y-4 max-w-3xl">
-            {evidenceNotes.map((e) => (
+          <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-5 max-w-4xl">
+            {evidenceNotes.map((e, idx) => (
               <div
                 key={e.source}
                 className="bg-white rounded-xl p-6"
                 style={{ border: "1px solid rgba(196, 191, 183, 0.15)" }}
               >
-                <h3 className="text-night font-semibold text-sm">{e.source}</h3>
+                <span className="inline-block text-[10px] font-semibold tracking-widest uppercase text-primary-500">
+                  Ref {String(idx + 1).padStart(2, "0")}
+                </span>
+                <h3 className="mt-2 text-night font-semibold text-sm">{e.source}</h3>
                 <p className="mt-2 text-charcoal/70 text-sm leading-relaxed">{e.note}</p>
               </div>
             ))}

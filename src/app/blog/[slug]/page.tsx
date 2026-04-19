@@ -124,6 +124,7 @@ export default async function BlogPostPage({ params }: Props) {
 
   const content = blogContent[slug];
   const relatedPosts = BLOG_POSTS.filter((p) => p.slug !== slug && p.category === post.category).slice(0, 2);
+  const isoDate = isoFromKoreanDate(post.date);
 
   return (
     <>
@@ -144,13 +145,19 @@ export default async function BlogPostPage({ params }: Props) {
               />
             </div>
             <h1 className="text-3xl lg:text-4xl font-bold tracking-tight leading-tight">{post.title}</h1>
-            <div className="mt-4 flex items-center gap-3 text-sm text-stone">
-              <span>{post.author}</span>
-              <span>·</span>
-              <span>{post.date}</span>
-              <span>·</span>
+            <address className="mt-4 flex items-center gap-3 text-sm text-stone not-italic">
+              <Link
+                rel="author"
+                href="/team#stella"
+                className="hover:text-primary-500 transition-colors"
+              >
+                {post.author}
+              </Link>
+              <span aria-hidden="true">·</span>
+              <time dateTime={isoDate}>{post.date}</time>
+              <span aria-hidden="true">·</span>
               <span>{post.readTime} 읽기</span>
-            </div>
+            </address>
           </div>
         </Container>
       </section>

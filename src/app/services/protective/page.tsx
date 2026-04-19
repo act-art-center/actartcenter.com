@@ -556,22 +556,25 @@ export default function ProtectivePage() {
         <Container>
           <div className="max-w-2xl">
             <h2 className="text-2xl lg:text-3xl font-bold tracking-tight">
-              우리가 참고하는 곳
+              의료 맥락에서의 미술치료
             </h2>
             <p className="mt-4 text-charcoal/70 text-sm leading-relaxed">
-              본 프로그램 설계는 다음 기관·저자의 의료 미술치료 표준에 기반합니다.
-              효과를 단정하기 위한 인용이 아니라, 어떤 근거 위에서 절차를 짰는지
-              공개하기 위한 기록입니다.
+              'medical art therapy'는 1990년대 후반 Cathy Malchiodi의 두 편의 단행본을 기점으로
+              학문적 언어를 갖추기 시작했고, 이후 AATA의 실무 기준과 JAATA 게재 사례 연구로
+              축적되어 왔습니다. 본 센터의 파트너십 모델은 이 국제·국내 흐름 위에서 설계됐습니다.
             </p>
           </div>
-          <div className="mt-10 space-y-4 max-w-3xl">
-            {medicalEvidence.map((e) => (
-              <div
-                key={e.source}
-                className="bg-cream rounded-xl p-6"
-                style={{ border: "1px solid rgba(196, 191, 183, 0.15)" }}
-              >
-                <h3 className="text-night font-semibold text-sm">{e.source}</h3>
+          <div className="mt-10 max-w-3xl border-l-2 border-primary-500/20 pl-6 space-y-8">
+            {medicalEvidence.map((e, idx) => (
+              <div key={e.source} className="relative">
+                <span
+                  className="absolute -left-[34px] top-1 w-4 h-4 rounded-full bg-primary-500"
+                  aria-hidden="true"
+                />
+                <p className="text-[10px] font-semibold tracking-widest uppercase text-primary-500">
+                  Source {String(idx + 1).padStart(2, "0")}
+                </p>
+                <h3 className="mt-1 text-night font-semibold text-sm">{e.source}</h3>
                 <p className="mt-2 text-charcoal/70 text-sm leading-relaxed">{e.note}</p>
               </div>
             ))}

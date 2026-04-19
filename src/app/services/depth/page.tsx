@@ -585,26 +585,26 @@ export default function DepthPage() {
         <Container>
           <div className="max-w-2xl">
             <h2 className="text-2xl lg:text-3xl font-bold tracking-tight">
-              우리가 참고하는 곳
+              심층 작업의 이론적 계보
             </h2>
             <p className="mt-4 text-charcoal/70 text-sm leading-relaxed">
-              본 심층 트랙과 슈퍼비전·연구 협력 설계는 다음 저자·기관의 흐름에
-              기반합니다. 인용은 효과를 단정하기 위한 것이 아니라, 어떤 언어와
-              전통 위에서 작업을 짰는지 공개하기 위한 것입니다.
+              심층 트랙은 하나의 학파가 아니라 <em>교차하는 계보</em> 위에서 설계됩니다.
+              정신역동·실존주의·상징 전통·행동과학이 미술치료 안에서 만나는 자리이며, 본 센터는
+              어느 하나를 '해석의 권위'로 고정하지 않고 각 전통의 언어를 참조로만 씁니다.
             </p>
           </div>
-          <div className="mt-10 space-y-4 max-w-3xl">
+          <dl className="mt-10 max-w-3xl space-y-6">
             {evidenceNotes.map((e) => (
-              <div
-                key={e.source}
-                className="bg-white rounded-xl p-6"
-                style={{ border: "1px solid rgba(196, 191, 183, 0.15)" }}
-              >
-                <h3 className="text-night font-semibold text-sm">{e.source}</h3>
-                <p className="mt-2 text-charcoal/70 text-sm leading-relaxed">{e.note}</p>
+              <div key={e.source} className="grid grid-cols-1 md:grid-cols-[220px_1fr] gap-3 md:gap-6 pb-6 border-b border-charcoal/10 last:border-b-0">
+                <dt className="text-night font-semibold text-sm leading-snug">
+                  {e.source}
+                </dt>
+                <dd className="text-charcoal/70 text-sm leading-relaxed">
+                  {e.note}
+                </dd>
               </div>
             ))}
-          </div>
+          </dl>
         </Container>
       </SectionWrapper>
 

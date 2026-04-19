@@ -22,11 +22,11 @@ export const blogContent: Record<string, string> = {
 <p>그런데 우반구의 시각·감각 영역은 오히려 활성화됩니다. 말이 안 되지만 감각은 선명한 상태. 상담실에서 "그때 일이 생각은 안 나는데 가슴이 답답해요"라고 하시는 분들의 경험이 바로 이 구조와 맞닿아 있습니다.</p>
 
 <h2>'바디마인드 모델' — 왜 손을 쓰면 마음이 움직이는가</h2>
-<p>최근 10년간 미술치료의 작동 기전을 체계화하려는 시도가 늘고 있습니다. 그중 Czamanski-Cohen과 Weihs(2016)가 <em>The Arts in Psychotherapy</em>에 제안한 'Bodymind Model'이 개인적으로 흥미롭다고 느끼는 프레임이에요. 이 모델은 미술 창작 과정이 (1) 감각운동 활성화, (2) 정서 조절, (3) 인지적 재구성, (4) 관계적 조율을 동시에 일으킨다고 설명합니다.</p>
+<p>최근 10년간 미술치료의 작동 기전을 체계화하려는 시도가 늘고 있습니다. 그중 Czamanski-Cohen과 Weihs(2016)가 <em>The Arts in Psychotherapy</em>에 제안한 'Bodymind Model'이 개인적으로 흥미롭다고 느끼는 프레임이에요. 이 모델은 미술 창작 과정이 세 가지 층위에서 동시에 작동한다고 설명합니다. 손끝으로 재료에 닿는 <em>촉각적 관여(tactile engagement)</em>, 일어나는 감정을 밀어내지 않는 <em>정서 수용(emotion acceptance)</em>, 그리고 그 과정에서 자기만의 의미를 찾는 <em>의미 만들기(meaning making)</em>.</p>
 
-<p>복잡해 보이지만, 쉽게 풀면 이렇습니다. 찰흙을 주무를 때 손끝의 감각이 뇌로 올라가면서 부교감신경이 활성화되고, 동시에 색을 고르고 형태를 만드는 선택 과정이 전두엽을 자극합니다. 여기에 치료사와의 관계가 얹히면 안전감이라는 또 다른 층이 더해지고요. 하나의 활동에서 여러 경로가 동시에 열리는 겁니다.</p>
+<p>자료만 보면 분절적으로 보이지만, 상담실에서는 대개 한 번의 호흡 안에서 겹쳐 일어납니다. 찰흙을 주무를 때 손끝의 감각이 뇌로 올라가면서 부교감신경이 활성화되고, 동시에 그 느낌을 "밀어내지 않고 잠시 두어보는" 태도가 감정 수용을 가능하게 하고, 작업 끝에 남은 형태를 바라보며 "이게 나에게 어떤 이야기지" 묻는 순간 의미 만들기가 시작됩니다.</p>
 
-<p>Hass-Cohen과 Clyde Findlay(2015)의 『Art Therapy and the Neuroscience of Relationships, Creativity, and Resiliency』(Norton)는 이 관점을 대인관계 신경생물학과 연결해 CREATE 원칙으로 정리하는데, 임상가 입장에서 특히 도움이 많이 되었습니다.</p>
+<p>관계적 차원 — 치료사와의 안전한 조율이 어떻게 변화에 기여하는가 — 은 Bodymind Model과는 별도로 Hass-Cohen과 Clyde Findlay(2015)의 『Art Therapy and the Neuroscience of Relationships, Creativity, and Resiliency』(Norton)에서 CREATE 프레임으로 따로 다뤄집니다. 두 프레임은 서로를 대체하지 않고, 한쪽은 '손과 마음 사이의 작동'을, 다른 한쪽은 '관계 안에서의 작동'을 설명하는 식으로 보완적으로 쓰입니다.</p>
 
 <h2>그래서, 어떤 분들께 도움이 되나요</h2>
 <p>여기서부터는 연구보다는 임상 감각에 가까운 이야기예요. 근거 기반에 제 현장 경험을 보태 말씀드리면, 미술치료는 다음과 같은 상황에서 특히 잘 맞는 편이었습니다.</p>
@@ -47,14 +47,23 @@ export const blogContent: Record<string, string> = {
 
 <hr />
 
+<h3>이 글이 답한 질문</h3>
+<ul class="post-qa">
+<li><strong>Q: 미술치료는 과학적 근거가 있나요?</strong><br />A: Kaimal 등(2016)의 코르티솔 연구, Shella(2018)의 병상 미술치료 데이터, Huang 등(2025)의 35개 RCT·3,167명 메타분석(SMD = −1.31) 등이 불안·기분·통증 개선 효과를 지지합니다. 다만 연구 질적 수준은 아직 '매우 낮음~중간' 등급이라 방법론 보완이 진행 중입니다.</li>
+<li><strong>Q: 미술을 못해도 효과가 있나요?</strong><br />A: Kaimal 등(2016) 연구에서 미술 경험 유무와 코르티솔 감소 효과 사이 상관이 없었습니다. 작품 완성도가 아닌 창작 과정의 심리적 경험이 핵심이며, 그림을 처음 그리시는 분도 동일한 생리적 반응을 보입니다.</li>
+<li><strong>Q: 왜 말보다 그림이 먼저 나오기도 하나요?</strong><br />A: Rauch·van der Kolk 등(1996) PET 연구에서 트라우마 기억 회상 시 브로카 영역(언어) 활동이 감소하고 우반구 시각·감각 영역이 활성화됨이 확인되었습니다. 언어가 막히는 신경학적 이유가 있고, 미술은 그 우회로를 열어 줍니다.</li>
+</ul>
+
+<hr />
+
 <h3>참고 문헌</h3>
 <ul class="references">
-<li>Czamanski-Cohen, J., &amp; Weihs, K. L. (2016). The Bodymind Model: A platform for studying the mechanisms of change induced by art therapy. <em>The Arts in Psychotherapy</em>, 51, 63–71.</li>
+<li>Czamanski-Cohen, J., &amp; Weihs, K. L. (2016). The Bodymind Model: A platform for studying the mechanisms of change induced by art therapy. <em>The Arts in Psychotherapy</em>, 51, 63–71. <a href="https://doi.org/10.1016/j.aip.2016.05.003" rel="noopener noreferrer" target="_blank">doi:10.1016/j.aip.2016.05.003</a></li>
 <li>Hass-Cohen, N., &amp; Clyde Findlay, J. (2015). <em>Art Therapy and the Neuroscience of Relationships, Creativity, and Resiliency</em>. W. W. Norton &amp; Company.</li>
-<li>Huang, Y., et al. (2025). The effects of visual art therapy on improving anxiety symptoms in adults: A systematic review and meta-analysis. <em>Journal of Psychiatric and Mental Health Nursing</em>.</li>
-<li>Kaimal, G., Ray, K., &amp; Muniz, J. (2016). Reduction of cortisol levels and participants' responses following art making. <em>Art Therapy</em>, 33(2), 74–80.</li>
-<li>Rauch, S. L., van der Kolk, B. A., Fisler, R. E., et al. (1996). A symptom provocation study of posttraumatic stress disorder using positron emission tomography and script-driven imagery. <em>Archives of General Psychiatry</em>, 53(5), 380–387.</li>
-<li>Shella, T. A. (2018). Art therapy improves mood, and reduces pain and anxiety when offered at bedside during acute hospital treatment. <em>The Arts in Psychotherapy</em>, 57, 59–64.</li>
+<li>Huang, Y., et al. (2025). The effects of visual art therapy on improving anxiety symptoms in adults: A systematic review and meta-analysis. <em>Journal of Psychiatric and Mental Health Nursing</em>. <a href="https://doi.org/10.1111/jpm.70003" rel="noopener noreferrer" target="_blank">doi:10.1111/jpm.70003</a></li>
+<li>Kaimal, G., Ray, K., &amp; Muniz, J. (2016). Reduction of cortisol levels and participants' responses following art making. <em>Art Therapy</em>, 33(2), 74–80. <a href="https://doi.org/10.1080/07421656.2016.1166832" rel="noopener noreferrer" target="_blank">doi:10.1080/07421656.2016.1166832</a></li>
+<li>Rauch, S. L., van der Kolk, B. A., Fisler, R. E., et al. (1996). A symptom provocation study of posttraumatic stress disorder using positron emission tomography and script-driven imagery. <em>Archives of General Psychiatry</em>, 53(5), 380–387. <a href="https://doi.org/10.1001/archpsyc.1996.01830050067011" rel="noopener noreferrer" target="_blank">doi:10.1001/archpsyc.1996.01830050067011</a></li>
+<li>Shella, T. A. (2018). Art therapy improves mood, and reduces pain and anxiety when offered at bedside during acute hospital treatment. <em>The Arts in Psychotherapy</em>, 57, 59–64. <a href="https://doi.org/10.1016/j.aip.2017.10.006" rel="noopener noreferrer" target="_blank">doi:10.1016/j.aip.2017.10.006</a></li>
 <li>van der Kolk, B. A. (2014). <em>The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma</em>. Viking.</li>
 </ul>
 `,
@@ -92,7 +101,7 @@ export const blogContent: Record<string, string> = {
 <h2>5. 가치 — 나침반의 방향</h2>
 <p>가치와 목표는 다릅니다. 이 구분이 처음에는 헷갈리실 수 있어요. 목표는 도달하면 끝나는 지점이고, 가치는 매일 다시 선택하는 방향입니다. "3kg 감량"은 목표. "건강을 소중히 여기며 산다"는 가치. 한쪽은 결승선이 있고, 한쪽은 나침반처럼 방향만 가리킵니다.</p>
 
-<p>Harris, May와 Haddock(2008) 등 여러 연구에서 가치 명료화가 불안·우울 감소와 심리적 안녕감 향상에 기여한다는 결과가 반복적으로 보고되고 있어요. 말로 가치를 나열하는 것보다, 비전 보드나 만다라 같은 시각 작업으로 가치를 탐색할 때 자기 자신도 미처 몰랐던 우선순위가 드러나는 경우가 많습니다.</p>
+<p>Plumb, Stewart, Dahl과 Lundgren(2009)이 <em>The Behavior Analyst</em>에 발표한 개관에서도, 가치를 단순히 말로 열거하기보다 <strong>실제 행동 단위로 구체화</strong>할 때 치료적 변화가 더 잘 일어난다는 점이 반복해 강조돼요. 말로 가치를 나열하는 것보다, 비전 보드나 만다라 같은 시각 작업으로 가치를 탐색할 때 자기 자신도 미처 몰랐던 우선순위가 드러나는 경우가 많습니다.</p>
 
 <h2>6. 전념 행동 — 한 걸음, 그리고 한 걸음</h2>
 <p>가치를 명료하게 했다면, 그다음은 그 방향으로 구체적인 행동을 내딛는 것입니다. 완벽한 계획이 아니라, 지금 가능한 작은 한 걸음이요.</p>
@@ -108,13 +117,23 @@ export const blogContent: Record<string, string> = {
 
 <hr />
 
+<h3>이 글이 답한 질문</h3>
+<ul class="post-qa">
+<li><strong>Q: ACT란 무엇인가요?</strong><br />A: ACT(Acceptance and Commitment Therapy, 수용전념치료)는 Hayes·Strosahl·Wilson이 정립한 3세대 인지행동치료입니다. 생각을 교정하는 대신 '심리적 유연성'을 키우는 6개 프로세스(수용·탈융합·현재 순간 접촉·맥락으로서의 자기·가치·전념 행동)로 구성됩니다.</li>
+<li><strong>Q: ACT와 전통 CBT의 차이는 무엇인가요?</strong><br />A: 전통 CBT는 부정적 생각을 사실에 맞게 교정하려 하고, ACT는 생각을 '떠오르는 경험'으로 보고 그것과 거리 두는 연습을 합니다. 증상 제거보다 가치 있는 삶의 방향을 회복하는 데 초점을 둡니다.</li>
+<li><strong>Q: ACT의 효과는 입증되었나요?</strong><br />A: A-Tjak 등(2015)의 39개 RCT 메타분석에서 ACT는 다양한 정신·신체 건강 문제에서 대조 조건 대비 중간 효과 크기(Hedges' g = 0.57)를 보였습니다. Gloster 등(2020) 메타분석 리뷰도 6 프로세스의 상호 강화 관계를 반복적으로 확인했습니다.</li>
+</ul>
+
+<hr />
+
 <h3>참고 문헌</h3>
 <ul class="references">
-<li>A-Tjak, J. G. L., Davis, M. L., Morina, N., Powers, M. B., Smits, J. A. J., &amp; Emmelkamp, P. M. G. (2015). A meta-analysis of the efficacy of acceptance and commitment therapy for clinically relevant mental and physical health problems. <em>Psychotherapy and Psychosomatics</em>, 84(1), 30–36.</li>
-<li>Gloster, A. T., Walder, N., Levin, M. E., Twohig, M. P., &amp; Karekla, M. (2020). The empirical status of acceptance and commitment therapy: A review of meta-analyses. <em>Journal of Contextual Behavioral Science</em>, 18, 181–192.</li>
-<li>Harris, R. (2008). <em>The Happiness Trap: How to Stop Struggling and Start Living</em>. Shambhala.</li>
+<li>A-Tjak, J. G. L., Davis, M. L., Morina, N., Powers, M. B., Smits, J. A. J., &amp; Emmelkamp, P. M. G. (2015). A meta-analysis of the efficacy of acceptance and commitment therapy for clinically relevant mental and physical health problems. <em>Psychotherapy and Psychosomatics</em>, 84(1), 30–36. <a href="https://doi.org/10.1159/000365764" rel="noopener noreferrer" target="_blank">doi:10.1159/000365764</a></li>
+<li>Gloster, A. T., Walder, N., Levin, M. E., Twohig, M. P., &amp; Karekla, M. (2020). The empirical status of acceptance and commitment therapy: A review of meta-analyses. <em>Journal of Contextual Behavioral Science</em>, 18, 181–192. <a href="https://doi.org/10.1016/j.jcbs.2020.09.009" rel="noopener noreferrer" target="_blank">doi:10.1016/j.jcbs.2020.09.009</a></li>
+<li>Harris, R. (2008). <em>The Happiness Trap: How to Stop Struggling and Start Living</em>. Shambhala. <span class="ref-note">(실무·대중서)</span></li>
 <li>Hayes, S. C. (2019). <em>A Liberated Mind: How to Pivot Toward What Matters</em>. Avery.</li>
 <li>Hayes, S. C., Strosahl, K. D., &amp; Wilson, K. G. (2012). <em>Acceptance and Commitment Therapy: The Process and Practice of Mindful Change</em> (2nd ed.). Guilford Press.</li>
+<li>Plumb, J. C., Stewart, I., Dahl, J., &amp; Lundgren, T. (2009). In search of meaning: Values in modern clinical behavior analysis. <em>The Behavior Analyst</em>, 32(1), 85–103.</li>
 </ul>
 `,
 
@@ -160,13 +179,22 @@ export const blogContent: Record<string, string> = {
 
 <hr />
 
+<h3>이 글이 답한 질문</h3>
+<ul class="post-qa">
+<li><strong>Q: 불안은 왜 없애려 할수록 커지나요?</strong><br />A: ACT에서는 이 패턴을 '경험 회피(experiential avoidance)'라고 부릅니다. 불안을 피하려는 모든 시도 — 생각 억제, 상황 회피, 주의 돌리기 — 가 단기적으로는 편해지지만 장기적으로는 불안을 강화합니다. 회피 자체가 '불안은 위험하다'는 학습을 반복시키기 때문입니다.</li>
+<li><strong>Q: 불안을 그림으로 표현하면 어떤 효과가 있나요?</strong><br />A: 그림을 통해 '내가 불안하다'에서 '내 앞에 불안이 있다'로 관계가 바뀝니다(ACT의 인지적 탈융합). Huang 등(2025) 메타분석(35개 RCT, 3,167명)은 시각예술치료가 성인 불안에서 큰 효과(SMD = −1.31)를 보였다고 보고했습니다.</li>
+<li><strong>Q: 집에서 혼자 해볼 수 있는 방법이 있나요?</strong><br />A: 세 가지를 권합니다 — (1) 불안의 초상 그리기 5분, (2) A4 위에 천천히 선 긋기 10분(호흡 박자에 맞춰), (3) 찰흙·밀가루 반죽 주무르기 5분(형태 만들지 않음). 심한 공황 발작 시에는 전문가의 도움이 우선입니다.</li>
+</ul>
+
+<hr />
+
 <h3>참고 문헌</h3>
 <ul class="references">
 <li>Hayes, S. C., Strosahl, K. D., &amp; Wilson, K. G. (2012). <em>Acceptance and Commitment Therapy: The Process and Practice of Mindful Change</em> (2nd ed.). Guilford Press.</li>
-<li>Huang, Y., et al. (2025). The effects of visual art therapy on improving anxiety symptoms in adults: A systematic review and meta-analysis. <em>Journal of Psychiatric and Mental Health Nursing</em>.</li>
-<li>Kaimal, G., Ray, K., &amp; Muniz, J. (2016). Reduction of cortisol levels and participants' responses following art making. <em>Art Therapy</em>, 33(2), 74–80.</li>
+<li>Huang, Y., et al. (2025). The effects of visual art therapy on improving anxiety symptoms in adults: A systematic review and meta-analysis. <em>Journal of Psychiatric and Mental Health Nursing</em>. <a href="https://doi.org/10.1111/jpm.70003" rel="noopener noreferrer" target="_blank">doi:10.1111/jpm.70003</a></li>
+<li>Kaimal, G., Ray, K., &amp; Muniz, J. (2016). Reduction of cortisol levels and participants' responses following art making. <em>Art Therapy</em>, 33(2), 74–80. <a href="https://doi.org/10.1080/07421656.2016.1166832" rel="noopener noreferrer" target="_blank">doi:10.1080/07421656.2016.1166832</a></li>
 <li>Porges, S. W. (2011). <em>The Polyvagal Theory: Neurophysiological Foundations of Emotions, Attachment, Communication, and Self-Regulation</em>. W. W. Norton &amp; Company.</li>
-<li>Shella, T. A. (2018). Art therapy improves mood, and reduces pain and anxiety when offered at bedside during acute hospital treatment. <em>The Arts in Psychotherapy</em>, 57, 59–64.</li>
+<li>Shella, T. A. (2018). Art therapy improves mood, and reduces pain and anxiety when offered at bedside during acute hospital treatment. <em>The Arts in Psychotherapy</em>, 57, 59–64. <a href="https://doi.org/10.1016/j.aip.2017.10.006" rel="noopener noreferrer" target="_blank">doi:10.1016/j.aip.2017.10.006</a></li>
 <li>Van de Kamp, M. M., et al. (2024). A theoretical exploration of polyvagal theory in creative arts and psychomotor therapies for emotion regulation in stress and trauma. <em>Frontiers in Psychology</em>, 15.</li>
 </ul>
 `,
@@ -216,12 +244,21 @@ export const blogContent: Record<string, string> = {
 
 <hr />
 
+<h3>이 글이 답한 질문</h3>
+<ul class="post-qa">
+<li><strong>Q: 가부좌 명상이 어려운데 마음챙김을 할 수 있을까요?</strong><br />A: 네. '손이 움직이는 명상' 인 마음챙김 드로잉은 정지 상태의 명상이 어려운 분(불안이 높거나 주의력 조절이 어려운 경우)에게 진입 장벽이 훨씬 낮습니다. 움직임과 감각이 함께 일어나는 활동은 뇌의 주의 체계를 한 방향으로 정렬시키는 효과가 있습니다.</li>
+<li><strong>Q: 마음챙김 드로잉에는 과학적 근거가 있나요?</strong><br />A: Kabat-Zinn 등(1992)의 MBSR 연구가 구조화된 명상의 불안 장애 효과를 경험적으로 입증한 기반이 됩니다. 최근 Stojcevski 등(2023)의 연구는 Zentangle 기반 가상 워크숍 후 심각한 정신질환 참가자의 증상 감소와 마음챙김 상태 향상을 보고했습니다.</li>
+<li><strong>Q: 집에서 어떻게 시작할 수 있나요?</strong><br />A: 펜 한 자루와 A4 용지 한 장이면 됩니다. 5가지 실습을 추천합니다 — (1) 연속선 드로잉 5분, (2) 호흡 색 입히기 10~15분, (3) 촉각 스케치, (4) 반복 패턴 그리기 10분, (5) 하루 한 페이지 드로잉 일기 5분. 잘 그리려 하지 않는 태도가 핵심입니다.</li>
+</ul>
+
+<hr />
+
 <h3>참고 문헌</h3>
 <ul class="references">
 <li>Csikszentmihalyi, M. (1990). <em>Flow: The Psychology of Optimal Experience</em>. Harper &amp; Row.</li>
 <li>Kabat-Zinn, J. (1990). <em>Full Catastrophe Living: Using the Wisdom of Your Body and Mind to Face Stress, Pain, and Illness</em>. Delacorte.</li>
-<li>Kabat-Zinn, J., Massion, A. O., Kristeller, J., Peterson, L. G., Fletcher, K. E., Pbert, L., et al. (1992). Effectiveness of a meditation-based stress reduction program in the treatment of anxiety disorders. <em>American Journal of Psychiatry</em>, 149(7), 936–943.</li>
-<li>Stojcevski, M., Cheung, R., et al. (2023). Exploring Zentangle as a virtual mindfulness-based art intervention for people with serious mental illness. <em>Frontiers in Psychiatry</em>, 14, 1260937. <a href="https://doi.org/10.3389/fpsyt.2023.1260937">doi:10.3389/fpsyt.2023.1260937</a></li>
+<li>Kabat-Zinn, J., Massion, A. O., Kristeller, J., Peterson, L. G., Fletcher, K. E., Pbert, L., et al. (1992). Effectiveness of a meditation-based stress reduction program in the treatment of anxiety disorders. <em>American Journal of Psychiatry</em>, 149(7), 936–943. <a href="https://doi.org/10.1176/ajp.149.7.936" rel="noopener noreferrer" target="_blank">doi:10.1176/ajp.149.7.936</a></li>
+<li>Stojcevski, M., Cheung, R., et al. (2023). Exploring Zentangle as a virtual mindfulness-based art intervention for people with serious mental illness. <em>Frontiers in Psychiatry</em>, 14, 1260937. <a href="https://doi.org/10.3389/fpsyt.2023.1260937" rel="noopener noreferrer" target="_blank">doi:10.3389/fpsyt.2023.1260937</a></li>
 <li>Yeung, A., Chan, J. S. M., et al. (2022). An exploratory trial of brief mindfulness-based Zentangle art workshops in family social services during COVID-19. <em>International Journal of Environmental Research and Public Health</em>.</li>
 </ul>
 `,
@@ -274,13 +311,22 @@ export const blogContent: Record<string, string> = {
 
 <hr />
 
+<h3>이 글이 답한 질문</h3>
+<ul class="post-qa">
+<li><strong>Q: 트라우마를 말로 꺼내기 어려운 이유가 있나요?</strong><br />A: 신경학적 이유가 있습니다. Rauch·van der Kolk 등(1996) PET 연구에서 PTSD 환자가 트라우마를 떠올리는 순간 좌반구 브로카 영역(언어 산출)의 활동이 현저히 감소하고, 우반구 시각·감정 영역이 활성화되는 것이 확인되었습니다. 의지의 문제가 아닙니다.</li>
+<li><strong>Q: 미술치료가 트라우마에 효과가 있나요?</strong><br />A: Schouten 등(2015) 체계적 고찰과 Maddox 등(2024) 메타분석에서 시각예술치료가 트라우마 증상 감소에 일관된 효과를 보였습니다. 다만 연구의 질적 수준은 중간 정도이며, 방법론 개선이 진행 중입니다.</li>
+<li><strong>Q: 트라우마 미술치료를 혼자 해도 되나요?</strong><br />A: 권장하지 않습니다. 신경계가 충분히 조절되지 않은 상태에서 트라우마 기억을 꺼내면 '처리'가 아닌 '재활성화'가 되어 증상이 악화될 수 있습니다. '안전한 장소 그리기' 정도까지만 혼자 안전하게 가능하며, 그 이상은 반드시 훈련받은 치료사와 함께 해야 합니다.</li>
+</ul>
+
+<hr />
+
 <h3>참고 문헌</h3>
 <ul class="references">
 <li>Malchiodi, C. A. (2012). <em>Handbook of Art Therapy</em> (2nd ed.). Guilford Press.</li>
 <li>Malchiodi, C. A. (2020). <em>Trauma and Expressive Arts Therapy: Brain, Body, and Imagination in the Healing Process</em>. Guilford Press.</li>
-<li>Maddox, B. B., et al. (2024). On the effectiveness of visual arts therapy for traumatic experiences: A systematic review and meta-analysis. <em>Clinical Psychology &amp; Psychotherapy</em>, 31, e3041.</li>
-<li>Rauch, S. L., van der Kolk, B. A., Fisler, R. E., et al. (1996). A symptom provocation study of posttraumatic stress disorder using positron emission tomography and script-driven imagery. <em>Archives of General Psychiatry</em>, 53(5), 380–387.</li>
-<li>Schouten, K. A., de Niet, G. J., Knipscheer, J. W., Kleber, R. J., &amp; Hutschemaekers, G. J. M. (2015). The effectiveness of art therapy in the treatment of traumatized adults: A systematic review on art therapy and trauma. <em>Trauma, Violence, &amp; Abuse</em>, 16(2), 220–228.</li>
+<li>Maddox, B. B., et al. (2024). On the effectiveness of visual arts therapy for traumatic experiences: A systematic review and meta-analysis. <em>Clinical Psychology &amp; Psychotherapy</em>, 31, e3041. <a href="https://doi.org/10.1002/cpp.3041" rel="noopener noreferrer" target="_blank">doi:10.1002/cpp.3041</a></li>
+<li>Rauch, S. L., van der Kolk, B. A., Fisler, R. E., et al. (1996). A symptom provocation study of posttraumatic stress disorder using positron emission tomography and script-driven imagery. <em>Archives of General Psychiatry</em>, 53(5), 380–387. <a href="https://doi.org/10.1001/archpsyc.1996.01830050067011" rel="noopener noreferrer" target="_blank">doi:10.1001/archpsyc.1996.01830050067011</a></li>
+<li>Schouten, K. A., de Niet, G. J., Knipscheer, J. W., Kleber, R. J., &amp; Hutschemaekers, G. J. M. (2015). The effectiveness of art therapy in the treatment of traumatized adults: A systematic review on art therapy and trauma. <em>Trauma, Violence, &amp; Abuse</em>, 16(2), 220–228. <a href="https://doi.org/10.1177/1524838014555032" rel="noopener noreferrer" target="_blank">doi:10.1177/1524838014555032</a></li>
 <li>van der Kolk, B. A. (2014). <em>The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma</em>. Viking.</li>
 </ul>
 `,
@@ -296,7 +342,9 @@ export const blogContent: Record<string, string> = {
 <h2>말로 물으면 나오지 않는 것</h2>
 <p>재미있는 현상이 있습니다. "당신에게 가장 중요한 것이 무엇입니까?"라고 직접 여쭈면, 대부분 즉답을 하세요. "가족이요." "성장이요." "건강이요." 그런데 그 답을 듣고 "그럼 지난 한 주 동안 그 가치를 위해 시간을 얼마나 쓰셨어요?"라고 다시 여쭤보면, 당황하시는 경우가 꽤 많습니다.</p>
 
-<p>이게 머리로 아는 가치와 몸이 움직이는 가치의 차이예요. ACT 연구에서도 반복적으로 확인되는 지점입니다. Plumb, Stewart 등(2009)을 비롯한 여러 연구는 단순히 가치를 말로 열거하는 것보다 <strong>시각화하고 구체화</strong>할 때 행동 변화 가능성이 높아진다고 보고해 왔어요. Harris, May, Haddock(2008)의 연구에서도 가치 명료화 작업이 심리적 안녕감 향상 및 불안·우울 감소와 연관됐습니다.</p>
+<p>이게 머리로 아는 가치와 몸이 움직이는 가치의 차이예요. ACT 이론의 기초 논문 중 하나인 Plumb, Stewart, Dahl, Lundgren(2009, <em>The Behavior Analyst</em>)은 가치를 <strong>말로 세우는 것보다 행동 단위로 구체화</strong>하는 것이 왜 중요한지 functional 분석으로 풀어냅니다. 실제 임상에서도 '무엇이 중요한가'를 단어 목록으로 묻는 것과, 이미지·색·배치로 묻는 것은 올라오는 내용이 완전히 다릅니다. 저는 후자에서 내담자도 저도 미처 몰랐던 우선순위가 드러나는 장면을 자주 만납니다.</p>
+
+<p>최근에는 Rahal과 Caserta Gon(2020)이 <em>International Journal of Psychology and Psychological Therapy</em>에 ACT의 가치 개입을 다룬 체계적 고찰을 발표했는데요, 가치 명료화 작업이 불안·우울 감소 및 심리적 유연성 증진과 연관된다는 방향의 결과가 여러 연구에서 반복 관찰된다고 정리하고 있습니다.</p>
 
 <p>그래서 저는 가치 작업에 꼭 '시각' 요소를 넣습니다. 가장 자주 쓰는 도구가 비전 보드예요.</p>
 
@@ -335,13 +383,22 @@ export const blogContent: Record<string, string> = {
 
 <hr />
 
+<h3>이 글이 답한 질문</h3>
+<ul class="post-qa">
+<li><strong>Q: 목표와 가치는 어떻게 다른가요?</strong><br />A: 목표는 '도착하는 지점' (예: 3kg 감량) 으로 달성하면 끝이 나는 결승선이고, 가치는 '걷는 방향' (예: 건강을 소중히 여기며 산다) 으로 매일 다시 선택해야 하는 나침반입니다. ACT 에서는 가치가 전념 행동의 방향을 제공하는 핵심 축입니다.</li>
+<li><strong>Q: 왜 말로 하는 것보다 시각화가 더 효과적인가요?</strong><br />A: Plumb 등(2009) 의 functional 분석은 가치를 말로 세우는 것보다 행동 단위로 구체화할 때 변화 가능성이 높다고 설명합니다. 말로 물을 때는 평소 '좋다고 알고 있는' 답이 나오지만, 이미지·색·배치로 물을 때는 미처 몰랐던 우선순위가 드러납니다.</li>
+<li><strong>Q: 집에서 비전 보드는 어떻게 만드나요?</strong><br />A: 4 단계를 따릅니다 — (1) 재료 준비(A3 종이·가위·풀·잡지 여러 권), (2) 이미지 수집 20 분 (설명할 수 없이 끌리는 것만, 왜 좋은지 분석하지 않음), (3) 배치 20 분, (4) 관찰(완성 직후 + 다음 날 한 번 더). 완성 후 가장 작은 전념 행동 하나를 설계하는 것이 핵심입니다.</li>
+</ul>
+
+<hr />
+
 <h3>참고 문헌</h3>
 <ul class="references">
 <li>Hayes, S. C. (2019). <em>A Liberated Mind: How to Pivot Toward What Matters</em>. Avery.</li>
 <li>Hayes, S. C., Strosahl, K. D., &amp; Wilson, K. G. (2012). <em>Acceptance and Commitment Therapy: The Process and Practice of Mindful Change</em> (2nd ed.). Guilford Press.</li>
-<li>Harris, R. (2008). <em>The Happiness Trap: How to Stop Struggling and Start Living</em>. Shambhala.</li>
+<li>Harris, R. (2008). <em>The Happiness Trap: How to Stop Struggling and Start Living</em>. Shambhala. <span class="ref-note">(실무·대중서)</span></li>
 <li>Plumb, J. C., Stewart, I., Dahl, J., &amp; Lundgren, T. (2009). In search of meaning: Values in modern clinical behavior analysis. <em>The Behavior Analyst</em>, 32(1), 85–103.</li>
-<li>Reyes, A. T., et al. (2019). A systematic review of values interventions in acceptance and commitment therapy. <em>International Journal of Psychology and Psychological Therapy</em>, 20(3), 355–385.</li>
+<li>Rahal, G. M., &amp; Caserta Gon, M. C. (2020). A systematic review of values interventions in acceptance and commitment therapy. <em>International Journal of Psychology and Psychological Therapy</em>, 20(3), 355–372.</li>
 <li>Wilson, K. G., &amp; DuFrene, T. (2008). <em>Mindfulness for Two: An Acceptance and Commitment Therapy Approach to Mindfulness in Psychotherapy</em>. New Harbinger.</li>
 </ul>
 `,

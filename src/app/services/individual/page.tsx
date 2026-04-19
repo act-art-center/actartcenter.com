@@ -473,12 +473,13 @@ export default function IndividualPage() {
         <Container>
           <div className="max-w-2xl">
             <h2 className="text-2xl lg:text-3xl font-bold tracking-tight">
-              우리가 참고하는 곳
+              1:1 작업의 이론적 배경
             </h2>
             <p className="mt-4 text-charcoal/70 text-sm leading-relaxed">
-              본 센터의 설계는 다음 기관·연구자의 임상 표준과 개념에 기반합니다.
-              인용은 효과를 단정하기 위한 것이 아니라, 우리가 어떤 언어로
-              생각하고 있는지를 공개하기 위한 것입니다.
+              개인 세션은 네 가지 흐름의 교차점에서 설계됩니다. 미국미술치료협회(AATA)의
+              임상 정의, 국내 한국미술치료학회의 사례 축적, Cathy Malchiodi가 정리한
+              감각 기반 매체 원칙, 그리고 Hayes 외가 체계화한 ACT 심리적 유연성 모델 —
+              네 가지가 한 회기 안에서 어떻게 맞물리는지를 공개합니다.
             </p>
           </div>
           <div className="mt-10 space-y-4 max-w-3xl">
