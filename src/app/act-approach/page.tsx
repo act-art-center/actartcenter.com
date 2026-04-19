@@ -119,7 +119,7 @@ const IN_PAGE_QUESTIONS = [
   },
   {
     q: "저 같은 경우에도 효과가 있을까요?",
-    a: "ACT 는 불안·우울·만성 통증·번아웃 등 다양한 영역에서 효과가 보고되어 왔지만, 모든 사람에게 동일한 효과가 보장되는 치료는 존재하지 않습니다. 현재 겪고 있는 어려움의 성격·기간·기존 치료 이력에 따라 접근이 달라지므로, 초기 상담에서 함께 살펴본 뒤 적합성을 판단하는 것이 가장 정확합니다.",
+    a: "ACT 는 불안·우울·만성 통증·번아웃 등 다양한 영역에서 효과가 보고되어 왔지만, 모든 사람에게 동일한 효과가 보장되는 접근은 존재하지 않습니다. 현재 겪고 있는 어려움의 성격·기간·기존 상담 이력에 따라 접근이 달라지므로, 초기 상담에서 함께 살펴본 뒤 적합성을 판단하는 것이 가장 정확합니다.",
   },
   {
     q: "미술을 잘 못해도 ACT 미술치료가 가능한가요?",
@@ -193,8 +193,8 @@ export default function ActApproachPage() {
             <h2 className="text-2xl lg:text-3xl font-bold tracking-tight">ACT 의 6가지 핵심 프로세스</h2>
             <p className="mt-4 text-charcoal/70 max-w-[52ch] mx-auto">
               여섯 프로세스는 유기적으로 연결되어 &ldquo;심리적 유연성&rdquo; 이라는 하나의 능력을 만듭니다.
-              각 프로세스에는 반대편의 &ldquo;경직성 극 (inflexibility pole)&rdquo; 이 있으며, 치료는 이 축을
-              따라 유연성 쪽으로 이동하는 과정입니다.
+              각 프로세스에는 반대편의 &ldquo;경직성 극 (inflexibility pole)&rdquo; 이 있으며, 세션은 이 축을
+              따라 유연성 쪽으로 이동하는 여정입니다.
             </p>
           </div>
 
@@ -276,7 +276,7 @@ export default function ActApproachPage() {
                 ACT 의 학문적 토대와 근거 기반 실천
               </h2>
               <p className="mt-4 text-charcoal/70 max-w-[56ch] mx-auto">
-                ACT 는 철학·이론·임상 근거가 누적된 치료 모델입니다. 특정 유행이 아닌, 국제 학회와
+                ACT 는 철학·이론·임상 근거가 누적된 접근 모델입니다. 특정 유행이 아닌, 국제 학회와
                 다수의 메타분석에 의해 지속적으로 검증되어 온 접근입니다.
               </p>
             </div>
@@ -298,7 +298,7 @@ export default function ActApproachPage() {
 
             <p className="mt-8 text-xs text-charcoal/60 leading-relaxed max-w-[70ch] mx-auto text-center">
               * 본 페이지에서 인용한 학회·연구자·이론은 모두 실재하는 출처입니다. 개별 임상 결과는 증상의
-              특성과 기간, 이전 치료 경험 등에 따라 달라질 수 있으며, 어떤 치료도 100% 효과를 보장하지 않습니다.
+              특성과 기간, 이전 상담 경험 등에 따라 달라질 수 있으며, 어떤 접근도 100% 효과를 보장하지 않습니다.
             </p>
           </div>
         </Container>
@@ -407,7 +407,7 @@ export default function ActApproachPage() {
               당신의 이야기와 연결된 ACT 를 함께 찾아 봅니다
             </h2>
             <p className="mt-5 text-charcoal/75 leading-[var(--leading-normal)]">
-              ACT 는 매뉴얼대로 찍어내는 치료가 아닙니다. 지금 당신이 겪고 있는 문제와 가장 잘 맞는
+              ACT 는 매뉴얼대로 찍어내는 접근이 아닙니다. 지금 당신이 겪고 있는 문제와 가장 잘 맞는
               프로세스부터, 미술치료의 속도에 맞춰 함께 열어 갑니다.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row gap-3 justify-center">

@@ -125,7 +125,7 @@ const weeklyStructure = [
     range: "Week 1 – 2",
     phase: "관계 형성과 목표 설정",
     description:
-      "치료 관계의 안전감을 우선합니다. 간단한 스케치·콜라주로 지금의 마음 상태를 기록하고, 함께 치료 목표와 속도를 합의합니다.",
+      "치료 관계의 안전감을 우선합니다. 간단한 스케치·콜라주로 지금의 마음 상태를 기록하고, 함께 세션 목표와 속도를 합의합니다.",
   },
   {
     range: "Week 3 – 4",
@@ -414,7 +414,7 @@ export default function IndividualPage() {
             </h2>
             <p className="mt-4 text-charcoal/70 text-sm leading-relaxed">
               그림을 '잘 그리는 것'은 기준이 아닙니다. 매체마다 저항과 유동성이
-              다르고, 그 성질 자체가 치료적 개입의 일부가 됩니다. 치료사와 함께
+              다르고, 그 성질 자체가 세션 안의 개입의 일부가 됩니다. 치료사와 함께
               그날 적합한 재료를 골라 작업합니다.
             </p>
           </div>

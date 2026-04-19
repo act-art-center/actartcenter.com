@@ -310,7 +310,7 @@ export default function PricingPage() {
             프로그램 패키지
           </h2>
           <p className="mx-auto max-w-2xl text-center text-charcoal/70 text-sm leading-relaxed">
-            심리치료 연구에서는 치료 용량(회기 수)과 효과 사이에 뚜렷한 관계가 있다는 결과가 일관되게
+            심리치료 연구에서는 세션 용량(회기 수)과 변화 사이에 뚜렷한 관계가 있다는 결과가 일관되게
             보고되어 왔습니다. 한두 번의 개입보다 일정 기간 이어지는 구조가 변화의 폭을 넓힙니다.
             패키지에는 이 연속성을 돕는 설계와 함께 10~15% 수준의 할인이 포함되어 있습니다.
           </p>

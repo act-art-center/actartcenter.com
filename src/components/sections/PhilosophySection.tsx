@@ -20,7 +20,7 @@ export function PhilosophySection() {
 
           {/* Text */}
           <div className="order-1 lg:order-2">
-            <h2 className="text-2xl lg:text-3xl font-bold tracking-tight">치료 철학</h2>
+            <h2 className="text-2xl lg:text-3xl font-bold tracking-tight">상담 철학</h2>
 
             <p className="mt-6 text-charcoal text-base leading-relaxed">
               해석이나 빠른 변화보다는 내담자의 <strong className="text-night">경험과 안전한 과정을 존중</strong>하며,

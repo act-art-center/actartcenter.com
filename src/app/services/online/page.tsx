@@ -401,7 +401,7 @@ export default function OnlinePage() {
                 기술·환경 요건
               </h2>
               <p className="mt-4 text-charcoal/70 text-sm leading-relaxed">
-                세션의 치료적 밀도를 유지하기 위해 최소 환경을 안내해 드립니다.
+                세션의 밀도를 유지하기 위해 최소 환경을 안내해 드립니다.
                 첫 세션에 함께 점검합니다.
               </p>
               <div className="mt-6 space-y-4">

@@ -95,7 +95,7 @@ export default function EmotionalPage() {
                 정서·트라우마 중심 미술심리치료
               </h1>
               <p className="mt-6 text-charcoal/80 leading-[var(--leading-normal)]">
-                삶의 전환기에 놓인 분들을 위한 치료입니다.
+                삶의 전환기에 놓인 분들을 위한 프로그램입니다.
                 만성 스트레스, 불안, 정서 소진, 관계 갈등, 상실, 트라우마 경험을
                 미술이라는 안전한 매개를 통해 다룹니다.
               </p>

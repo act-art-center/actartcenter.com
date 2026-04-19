@@ -57,7 +57,7 @@ export default function FaqPage() {
             ACT 미술치료 자주 묻는 질문
           </h1>
           <p className="mt-4 text-white/80 max-w-xl text-lg leading-relaxed">
-            처음 오시는 분부터 치료 중간에 궁금하실 수 있는 질문까지, 여섯 주제로 정리했습니다.
+            처음 오시는 분부터 세션 중간에 궁금하실 수 있는 질문까지, 여섯 주제로 정리했습니다.
             더 궁금하신 점은 편하게 문의해 주세요.
           </p>
         </Container>

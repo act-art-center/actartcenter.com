@@ -51,7 +51,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: "mindfulness-drawing",
     title: "마음챙김 드로잉: 현재에 머무르기",
-    excerpt: "그리는 행위 자체에 집중하는 마음챙김 드로잉의 치료적 효과와 일상에서 실천하는 방법을 안내합니다.",
+    excerpt: "그리는 행위 자체에 집중하는 마음챙김 드로잉이 가져오는 실제적 변화와 일상에서 실천하는 방법을 안내합니다.",
     category: "실습 가이드",
     image: "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=600&q=80",
     date: "2026년 3월 20일",

@@ -104,8 +104,8 @@ export default function DepthPage() {
               </h1>
               <p className="mt-6 text-charcoal/80 leading-[var(--leading-normal)]">
                 연구, 슈퍼비전, 전문 자문을 포함하는 심층적인 접근입니다.
-                자기 이해와 내적 탐색을 원하는 개인부터 장기·심층 치료 사례까지,
-                깊이 있는 치료적 관계 속에서 탐색을 이어갑니다.
+                자기 이해와 내적 탐색을 원하는 개인부터 장기·심층 사례까지,
+                깊이 있는 상담 관계 속에서 탐색을 이어갑니다.
               </p>
             </div>
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
