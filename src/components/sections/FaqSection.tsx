@@ -26,9 +26,26 @@ export interface FaqSectionProps {
   emitJsonLd?: boolean;
 }
 
+/**
+ * 홈 섹션에서는 대표 질문만 간결하게 노출합니다. 전체 FAQ 는 `/faq` 페이지에서 카테고리별로
+ * 확인할 수 있으며, 카테고리별 맨 앞 질문 6개를 하이라이트로 선택합니다.
+ */
+const HIGHLIGHT_QUESTIONS = [
+  "미술을 못해도 괜찮나요?",
+  "첫 상담은 무료라고 들었는데 무엇을 하나요?",
+  "몇 회기 정도 받아야 효과가 있나요?",
+  "상담 비용은 얼마인가요?",
+  "ACT란 무엇인가요?",
+  "아이가 몇 살부터 가능한가요?",
+] as const;
+
+const HIGHLIGHTED_ITEMS = HIGHLIGHT_QUESTIONS.map(
+  (q) => FAQ_ITEMS.find((item) => item.question === q),
+).filter((item): item is (typeof FAQ_ITEMS)[number] => Boolean(item));
+
 export function FaqSection({ emitJsonLd = false }: FaqSectionProps = {}) {
   const schema = emitJsonLd
-    ? buildGraph(buildFaqPage(FAQ_ITEMS.map((i) => ({ q: i.question, a: i.answer }))))
+    ? buildGraph(buildFaqPage(HIGHLIGHTED_ITEMS.map((i) => ({ q: i.question, a: i.answer }))))
     : null;
 
   return (
@@ -44,7 +61,7 @@ export function FaqSection({ emitJsonLd = false }: FaqSectionProps = {}) {
 
         <div className="max-w-2xl mx-auto">
           <Accordion className="space-y-2">
-            {FAQ_ITEMS.map((item, i) => (
+            {HIGHLIGHTED_ITEMS.map((item, i) => (
               <AccordionItem
                 key={i}
                 value={`faq-${i}`}
