@@ -182,7 +182,7 @@ export const blogContent: Record<string, string> = {
 <h2>왜 그림이 닻이 되는가</h2>
 <p>움직임과 감각이 함께 일어나는 활동은 뇌의 주의 체계를 한 방향으로 정렬시키는 힘이 있습니다. Csikszentmihalyi가 『Flow』(1990)에서 설명한 '몰입 상태'는 활동의 도전 수준과 개인의 능력이 맞물릴 때 일어나는데, 드로잉은 이 조건을 꽤 쉽게 충족시켜요. 너무 어렵지 않고, 너무 쉽지도 않은 상태.</p>
 
-<p>최근 연구 중에 Zentangle(젠탱글) — 반복적인 패턴 드로잉 기법 — 을 마음챙김 기반 미술 개입으로 활용한 결과를 보고한 논문들이 있습니다. 예컨대 Stojcevski 등(2023)이 <em>Art Therapy</em>에 발표한 논문에서는 심각한 정신질환을 가진 참가자들이 Zentangle 기반 가상 워크숍 후 증상 감소와 마음챙김 상태 향상을 보고했어요. 흥미로운 점은 참가자들이 '그리는 것이 명상과 비슷하다'고 일관되게 느꼈다는 거예요.</p>
+<p>최근 연구 중에 Zentangle(젠탱글) — 반복적인 패턴 드로잉 기법 — 을 마음챙김 기반 미술 개입으로 활용한 결과를 보고한 논문들이 있습니다. 예컨대 Stojcevski 등(2023)이 <em>Frontiers in Psychiatry</em>에 발표한 논문에서는 심각한 정신질환을 가진 참가자들이 Zentangle 기반 가상 워크숍 후 증상 감소와 마음챙김 상태 향상을 보고했어요. 흥미로운 점은 참가자들이 '그리는 것이 명상과 비슷하다'고 일관되게 느꼈다는 거예요.</p>
 
 <p>Kabat-Zinn 등(1992)이 <em>American Journal of Psychiatry</em>에 발표한 MBSR의 고전적 연구는 구조화된 명상이 불안 장애에 효과적임을 처음으로 경험적으로 입증했습니다. 마음챙김 드로잉은 그 원리를 손의 움직임이라는 다른 통로로 가져온 셈이에요.</p>
 
@@ -221,7 +221,7 @@ export const blogContent: Record<string, string> = {
 <li>Csikszentmihalyi, M. (1990). <em>Flow: The Psychology of Optimal Experience</em>. Harper &amp; Row.</li>
 <li>Kabat-Zinn, J. (1990). <em>Full Catastrophe Living: Using the Wisdom of Your Body and Mind to Face Stress, Pain, and Illness</em>. Delacorte.</li>
 <li>Kabat-Zinn, J., Massion, A. O., Kristeller, J., Peterson, L. G., Fletcher, K. E., Pbert, L., et al. (1992). Effectiveness of a meditation-based stress reduction program in the treatment of anxiety disorders. <em>American Journal of Psychiatry</em>, 149(7), 936–943.</li>
-<li>Stojcevski, M., Cheung, R., et al. (2023). Exploring Zentangle as a virtual mindfulness-based art intervention for people with serious mental illness. <em>Art Therapy</em>.</li>
+<li>Stojcevski, M., Cheung, R., et al. (2023). Exploring Zentangle as a virtual mindfulness-based art intervention for people with serious mental illness. <em>Frontiers in Psychiatry</em>, 14, 1260937. <a href="https://doi.org/10.3389/fpsyt.2023.1260937">doi:10.3389/fpsyt.2023.1260937</a></li>
 <li>Yeung, A., Chan, J. S. M., et al. (2022). An exploratory trial of brief mindfulness-based Zentangle art workshops in family social services during COVID-19. <em>International Journal of Environmental Research and Public Health</em>.</li>
 </ul>
 `,
