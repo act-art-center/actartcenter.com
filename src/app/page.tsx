@@ -5,7 +5,6 @@ import { ActApproach } from "@/components/sections/ActApproach";
 import { ServicesSection } from "@/components/sections/ServicesSection";
 import { ProcessTimeline } from "@/components/sections/ProcessTimeline";
 import { TeamSection } from "@/components/sections/TeamSection";
-import { TestimonialsCarousel } from "@/components/sections/TestimonialsCarousel";
 import { FaqSection } from "@/components/sections/FaqSection";
 import { CtaBand } from "@/components/sections/CtaBand";
 import { BlogPreview } from "@/components/sections/BlogPreview";
@@ -30,7 +29,7 @@ export default function HomePage() {
       <ServicesSection />
       <ProcessTimeline />
       <TeamSection />
-      <TestimonialsCarousel />
+      {/* TestimonialsCarousel: 실제 내담자 후기 확보 전까지 노출 보류. docs/TODO.md 참조. */}
       <FaqSection />
       <CtaBand />
       <BlogPreview />

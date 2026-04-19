@@ -238,29 +238,23 @@ export const PROCESS_STEPS = [
   { number: "05", title: "성장 종결", description: "변화를 정리하고 일상에서의 실천을 계획" },
 ] as const;
 
-export const TESTIMONIALS = [
-  {
-    id: 1,
-    content:
-      "8주 프로그램을 통해 제 감정을 처음으로 그림으로 표현할 수 있었어요. 말로는 어려웠던 것이 색으로 나왔을 때, 비로소 제 마음을 이해할 수 있었습니다.",
-    attribution: "30대 여성, 마음유연성 8주 프로그램",
-    rating: 5,
-  },
-  {
-    id: 2,
-    content:
-      "아이가 미술치료를 시작한 후 감정 표현이 풍부해졌어요. 선생님이 아이의 속도를 존중해주셔서 안심하고 맡길 수 있었습니다.",
-    attribution: "40대 학부모, 아동 미술치료",
-    rating: 5,
-  },
-  {
-    id: 3,
-    content:
-      "번아웃으로 힘든 시기에 그룹 프로그램에 참여했는데, 같은 고민을 가진 분들과 미술로 소통하는 경험이 정말 특별했어요.",
-    attribution: "30대 남성, 번아웃 탈출 워크숍",
-    rating: 5,
-  },
-] as const;
+/**
+ * TESTIMONIALS — 실제 내담자 후기 확보 전까지 빈 배열로 유지한다.
+ *
+ * 신규 상담 확보율이 아직 낮아 허위 후기 노출 시 신뢰도 저하 + 의료/심리상담
+ * 업계 허위광고 리스크가 크다. 실제 동의 기반 후기를 수집한 뒤에만 채운다.
+ *
+ * 재활성화 프로세스 (docs/TODO.md 참조)
+ * 1. 동의서 서면 수령 (이름·나이대·프로그램명 공개 범위 명시)
+ * 2. 원문 인용 + 실제 참여 프로그램 매칭
+ * 3. 여기 배열에 추가 + src/app/page.tsx 의 TestimonialsCarousel 주석 해제
+ */
+export const TESTIMONIALS: ReadonlyArray<{
+  id: number;
+  content: string;
+  attribution: string;
+  rating: number;
+}> = [];
 
 export const FAQ_ITEMS = [
   {

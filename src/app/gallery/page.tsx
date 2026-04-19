@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+import Link from "next/link";
 import { Container } from "@/components/shared/Container";
 import { JsonLd } from "@/components/shared/JsonLd";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "미술치료 작품 갤러리 — 비식별 창작의 순간들",
+  title: "미술치료 작품 갤러리 — 준비 중",
   description:
-    "ACT ART CENTER 미술심리치료 과정에서 만들어진 창작의 순간들을 모았습니다. 모든 작품은 내담자의 동의 아래 비식별 처리되어 있으며, 미술치료 분위기와 공간감을 확인하실 수 있습니다.",
+    "ACT ART CENTER 미술심리치료 과정에서 만들어지는 창작의 순간들을 준비 중입니다. 모든 작품은 내담자의 서면 동의 후 비식별 처리되어 공개됩니다.",
   keywords: [
     "미술치료 작품",
     "미술치료 갤러리",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     title: "미술치료 작품 갤러리 — ACT ART CENTER",
-    description: "미술심리치료 과정의 창작 순간들. 동의 기반 비식별 처리.",
+    description: "미술심리치료 과정의 창작 순간들. 동의 기반 비식별 처리 예정.",
     url: `${SITE_URL}/gallery`,
     images: [
       {
@@ -34,22 +34,14 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "미술치료 작품 갤러리",
-    description: "창작 치유의 순간들. 비식별 처리.",
+    description: "창작 치유의 순간들. 비식별 처리 예정.",
     images: ["/og/gallery.png"],
   },
 };
 
-const galleryImages = [
-  { src: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=600&q=80", alt: "수채화 물감과 붓", aspect: "aspect-[3/4]" },
-  { src: "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=600&q=80", alt: "색채 표현 작업", aspect: "aspect-square" },
-  { src: "https://images.unsplash.com/photo-1547891654-e66ed7ebb968?w=600&q=80", alt: "미술 작업 과정", aspect: "aspect-[4/3]" },
-  { src: "https://images.unsplash.com/photo-1572947650440-e8a97ef053b2?w=600&q=80", alt: "창작 활동의 결과물", aspect: "aspect-[3/4]" },
-  { src: "https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?w=600&q=80", alt: "미술 재료 클로즈업", aspect: "aspect-square" },
-  { src: "https://images.unsplash.com/photo-1499892477393-f675706cbe6e?w=600&q=80", alt: "따뜻한 색감의 작업", aspect: "aspect-[4/3]" },
-  { src: "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=600&q=80", alt: "드로잉 작업", aspect: "aspect-[3/4]" },
-  { src: "https://images.unsplash.com/photo-1596464716127-f2a82984de30?w=600&q=80", alt: "미술치료 과정", aspect: "aspect-square" },
-  { src: "https://images.unsplash.com/photo-1456086272160-b28b0645b729?w=600&q=80", alt: "아틀리에 공간", aspect: "aspect-[4/3]" },
-];
+// 갤러리 이미지는 실제 내담자 서면 동의 후 비식별 처리된 작품만 게시한다.
+// 현재 공개 가능한 작품이 없어 빈 상태로 유지 (docs/TODO.md 참조).
+const galleryImages: { src: string; alt: string; aspect: string }[] = [];
 
 const gallerySchema = {
   "@context": "https://schema.org",
@@ -62,19 +54,13 @@ const gallerySchema = {
       ],
     },
     {
-      "@type": "ImageGallery",
-      "@id": `${SITE_URL}/gallery#gallery`,
-      name: "미술치료 작품 갤러리",
-      description: "ACT 미술심리치료 과정에서 만들어진 비식별 창작물 9점",
+      "@type": "WebPage",
+      "@id": `${SITE_URL}/gallery`,
+      name: "미술치료 작품 갤러리 — 준비 중",
+      description: "ACT 미술심리치료 과정에서 만들어지는 창작의 순간들을 준비하고 있습니다. 실제 내담자의 서면 동의 후 비식별 처리되어 공개됩니다.",
       url: `${SITE_URL}/gallery`,
       publisher: { "@id": `${SITE_URL}/#organization` },
-      image: galleryImages.map((img, i) => ({
-        "@type": "ImageObject",
-        contentUrl: img.src,
-        name: img.alt,
-        description: img.alt,
-        position: i + 1,
-      })),
+      inLanguage: "ko-KR",
     },
   ],
 };
@@ -102,30 +88,49 @@ export default function GalleryPage() {
             <p className="mt-6 text-stone/70">
               미술심리치료 과정에서 만들어지는 창작의 순간들.
               <br />
-              모든 이미지는 비식별 처리되어 있습니다.
+              모든 이미지는 내담자의 서면 동의를 받아 비식별 처리 후 공개됩니다.
             </p>
           </div>
         </Container>
       </section>
 
-      <section className="bg-night py-8 pb-24">
+      <section className="bg-night pt-12 pb-24">
         <Container>
-          <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4">
-            {galleryImages.map((img, i) => (
-              <div key={i} className="break-inside-avoid">
-                <div className={`relative ${img.aspect} rounded-xl overflow-hidden group`}>
-                  <Image
-                    src={img.src}
-                    alt={img.alt}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  />
-                  <div className="absolute inset-0 bg-night/0 group-hover:bg-night/20 transition-colors duration-300" />
+          {galleryImages.length > 0 ? (
+            <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4">
+              {/* 갤러리 이미지가 추가되면 기존 렌더 로직이 활성화된다. */}
+            </div>
+          ) : (
+            <div className="mx-auto max-w-xl text-center">
+              <div className="rounded-2xl border border-white/10 bg-white/[0.03] px-8 py-16">
+                <p className="font-[var(--font-accent)] text-white/40 text-sm tracking-wide">
+                  Coming soon
+                </p>
+                <h2 className="mt-3 text-white text-xl lg:text-2xl font-semibold tracking-tight">
+                  작품을 준비하고 있습니다
+                </h2>
+                <p className="mt-4 text-white/60 leading-relaxed text-sm">
+                  실제 내담자의 서면 동의를 받아 비식별 처리된 작품만 게시합니다.
+                  <br className="hidden sm:block" />
+                  준비가 되는 대로 이 페이지에서 공개할 예정입니다.
+                </p>
+                <div className="mt-8 flex flex-wrap justify-center gap-3">
+                  <Link
+                    href="/booking"
+                    className="inline-flex items-center px-5 py-2.5 bg-white text-night font-semibold rounded-lg hover:bg-cream transition-colors text-sm"
+                  >
+                    첫 무료 상담 예약하기
+                  </Link>
+                  <Link
+                    href="/services"
+                    className="inline-flex items-center px-5 py-2.5 text-white font-semibold rounded-lg border border-white/20 hover:bg-white/10 transition-colors text-sm"
+                  >
+                    서비스 전체 보기
+                  </Link>
                 </div>
               </div>
-            ))}
-          </div>
+            </div>
+          )}
         </Container>
       </section>
     </>
