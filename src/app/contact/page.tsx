@@ -199,20 +199,43 @@ export default function ContactPage() {
               </div>
             </div>
 
-            {/* Google Maps */}
-            <div className="bg-white rounded-2xl overflow-hidden" style={{ border: "1px solid rgba(196, 191, 183, 0.15)" }}>
-              <iframe
-                src="https://www.google.com/maps?q=서울+서초구+강남대로+305+현대렉시온&z=16&output=embed"
-                width="100%"
-                height="100%"
-                style={{ border: 0, minHeight: "400px" }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="ACT ART CENTER 강남센터 지도 — 서울시 서초구 강남대로 305 현대렉시온 2518호"
-                className="aspect-square lg:aspect-auto lg:h-full"
+            {/* Naver Map — 국내 사용자 접근성 우선, iframe X-Frame-Options 이슈 회피 위해 클릭 카드 방식 */}
+            <a
+              href="https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%20%EC%84%9C%EC%B4%88%EA%B5%AC%20%EA%B0%95%EB%82%A8%EB%8C%80%EB%A1%9C%20305%20%ED%98%84%EB%8C%80%EB%A0%89%EC%8B%9C%EC%98%A8"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="네이버 지도에서 ACT ART CENTER 강남센터 위치 보기 (새 창)"
+              className="group relative bg-white rounded-2xl overflow-hidden flex flex-col items-center justify-center gap-4 p-10 min-h-[400px] lg:h-full hover:shadow-[var(--shadow-md)] transition-all duration-200 hover:-translate-y-0.5"
+              style={{ border: "1px solid rgba(196, 191, 183, 0.15)" }}
+            >
+              {/* 배경 map grid pattern */}
+              <div
+                aria-hidden="true"
+                className="pointer-events-none absolute inset-0 opacity-[0.05]"
+                style={{
+                  backgroundImage:
+                    "linear-gradient(rgba(0,83,75,0.6) 1px, transparent 1px), linear-gradient(90deg, rgba(0,83,75,0.6) 1px, transparent 1px)",
+                  backgroundSize: "28px 28px",
+                }}
               />
-            </div>
+
+              <div className="relative w-16 h-16 rounded-2xl bg-primary-500 flex items-center justify-center shadow-[var(--shadow-sm)]">
+                <MapPin className="w-8 h-8 text-white" strokeWidth={1.5} />
+              </div>
+
+              <div className="relative text-center">
+                <p className="text-stone text-xs font-medium tracking-[0.12em] uppercase">NAVER MAP</p>
+                <p className="mt-2 text-night text-lg font-semibold leading-tight">
+                  서울 서초구 강남대로 305
+                </p>
+                <p className="mt-1 text-charcoal/70 text-sm">현대렉시온 2518호</p>
+              </div>
+
+              <span className="relative inline-flex items-center gap-1.5 mt-2 px-4 py-2 bg-primary-50 text-primary-600 rounded-lg text-sm font-semibold group-hover:bg-primary-100 transition-colors">
+                네이버 지도로 열기
+                <span aria-hidden="true">↗</span>
+              </span>
+            </a>
           </div>
         </Container>
       </SectionWrapper>
