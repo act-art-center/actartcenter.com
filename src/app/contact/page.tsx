@@ -102,7 +102,7 @@ const contactSchema = {
 const contactInfo = [
   { icon: Mail, label: "이메일", value: CONTACT.email, href: `mailto:${CONTACT.email}` },
   { icon: MapPin, label: "주소", value: CONTACT.address, href: undefined },
-  { icon: Clock, label: "운영방식", value: "사전 예약제 · 영업일 기준 1~2일 내 회신", href: undefined },
+  { icon: Clock, label: "운영방식", value: "사전 예약제 · Walk-in 상담 불가 · 영업일 기준 1~2일 내 회신", href: undefined },
 ];
 
 const directions = [
@@ -138,7 +138,7 @@ export default function ContactPage() {
       <JsonLd data={contactSchema} />
       <PageHero
         title="오시는 길·연락처 — ACT ART CENTER 강남센터"
-        subtitle="편한 방법으로 연락해 주세요."
+        subtitle="편한 방법으로 연락해 주세요. 모든 상담은 사전 예약제로 운영되며, 방문 전 반드시 예약이 필요합니다."
         label="Contact"
         imageSrc="/images/office-hero.jpg"
         imageAlt="ACT ART CENTER 강남센터 내부 — 대형 테이블과 채광 좋은 상담 공간"
