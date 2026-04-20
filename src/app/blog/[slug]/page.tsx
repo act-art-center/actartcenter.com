@@ -180,7 +180,10 @@ export default async function BlogPostPage({ params }: Props) {
                 [&_p]:text-charcoal/80 [&_p]:leading-relaxed [&_p]:mb-5
                 [&_ul]:space-y-2 [&_li]:text-charcoal/80
                 [&_blockquote]:border-l-2 [&_blockquote]:border-primary-300 [&_blockquote]:pl-5 [&_blockquote]:italic [&_blockquote]:text-charcoal/60
-                [&_strong]:text-night [&_strong]:font-semibold"
+                [&_strong]:text-night [&_strong]:font-semibold
+                [&_a]:text-primary-600 [&_a]:font-medium [&_a]:underline [&_a]:underline-offset-4 [&_a]:decoration-primary-300/60 [&_a]:decoration-1
+                [&_a:hover]:text-primary-700 [&_a:hover]:decoration-primary-500
+                [&_ul.references_a]:break-words [&_ul.references_a]:text-sm"
               dangerouslySetInnerHTML={{ __html: content || "<p>콘텐츠 준비 중입니다.</p>" }}
             />
 
