@@ -375,7 +375,7 @@ export default function PricingPage() {
               First Free Consultation
             </p>
             <h2 className="text-night text-xl lg:text-2xl font-bold tracking-tight">
-              첫 30분 무료 상담, 왜 마련되어 있는가
+              초기 상담, 왜 먼저 받아보시는 것이 좋은가
             </h2>
             <p className="mt-4 text-charcoal/75 leading-relaxed">
               심리치료는 치료사와의 ‘맞음’ 이 실제 효과에 가장 큰 영향을 주는 요소 중 하나로 꼽힙니다.
@@ -386,7 +386,7 @@ export default function PricingPage() {
             <ul className="mt-5 space-y-2.5 text-charcoal/80 text-sm">
               <li className="flex gap-2">
                 <span className="mt-2 w-1.5 h-1.5 rounded-full bg-primary-500 shrink-0" />
-                현재의 어려움과 원하시는 변화 방향을 30분간 함께 정리합니다.
+                현재의 어려움과 원하시는 변화 방향을 상담에서 함께 정리합니다.
               </li>
               <li className="flex gap-2">
                 <span className="mt-2 w-1.5 h-1.5 rounded-full bg-primary-500 shrink-0" />
@@ -474,7 +474,7 @@ export default function PricingPage() {
             <h2 className="text-white text-2xl lg:text-3xl font-bold tracking-tight">
               나에게 맞는 프로그램이 궁금하신가요?
             </h2>
-            <p className="mt-4 text-white/80">첫 상담 30분은 무료입니다.</p>
+            <p className="mt-4 text-white/80">부담 없이 상담을 받아보시고, 나에게 맞는 방향을 함께 찾으실 수 있습니다.</p>
             <Link
               href="/booking"
               className="mt-8 inline-flex items-center px-8 py-4 bg-white text-primary-500 font-semibold rounded-lg hover:bg-cream transition-all"
