@@ -479,7 +479,7 @@ export default function PricingPage() {
               href="/booking"
               className="mt-8 inline-flex items-center px-8 py-4 bg-white text-primary-500 font-semibold rounded-lg hover:bg-cream transition-all"
             >
-              무료 상담 예약하기
+              상담 예약하기
             </Link>
           </div>
         </Container>
