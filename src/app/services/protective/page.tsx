@@ -653,7 +653,7 @@ export default function ProtectivePage() {
               <p className="text-primary-500 text-xs font-semibold tracking-wide uppercase">Team</p>
               <h3 className="mt-2 text-night font-semibold">대표 프로필·연구 관심</h3>
               <p className="mt-2 text-charcoal/70 text-sm leading-relaxed">
-                차의과학대학교 미술치료학 박사과정 이수중인 원장의 임상 배경과
+                차의과학대학교 의학과 임상미술치료 박사과정인 원장의 임상 배경과
                 연구 관심을 확인하실 수 있습니다.
               </p>
             </Link>

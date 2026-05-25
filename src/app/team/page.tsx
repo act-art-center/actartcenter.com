@@ -9,9 +9,9 @@ import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { TEAM_MEMBERS, SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "대표 고은별 — ACT 미술심리치료사 프로필 (차의과대 박사과정)",
+  title: "대표 고은별 — ACT 미술심리치료사 프로필 (차의과학대학교 의학과 임상미술치료 박사과정)",
   description:
-    "ACT ART CENTER 대표 고은별(Stella)의 치료 철학·전문 영역·연구 관심사·첫 회기 흐름 안내. 차의과학대학교 미술치료학 박사과정 이수중, 홍익대학교 미술대학 석사. 한국미술치료학회 정회원.",
+    "ACT ART CENTER 대표 고은별(Stella)의 치료 철학·전문 영역·연구 관심사·첫 회기 흐름 안내. 차의과학대학교 의학과 임상미술치료 박사과정, 석사. 홍익대학교 미술학 석사, 학사. 한국미술치료학회 정회원.",
   keywords: [
     "고은별 미술치료사",
     "Stella 미술치료사",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     type: "profile",
     title: "대표 고은별 — ACT 미술심리치료사",
     description:
-      "차의과대 박사과정, 홍익대 미술대학 석사. 한국미술치료학회 정회원. ACT + 미술치료 통합 접근 전문.",
+      "차의과학대학교 의학과 임상미술치료 박사과정, 석사 · 홍익대학교 미술학 석사, 학사 · 한국미술치료학회 정회원. ACT + 미술치료 통합 접근 전문.",
     url: `${SITE_URL}/team`,
     images: [
       {
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "대표 고은별 — ACT 미술심리치료사",
-    description: "차의과대 박사과정 · 홍익대 미술대학 석사 · 한국미술치료학회 정회원.",
+    description: "차의과학대학교 의학과 임상미술치료 박사과정, 석사 · 홍익대학교 미술학 석사, 학사 · 한국미술치료학회 정회원.",
     images: ["/og/team.png"],
   },
 };
@@ -65,24 +65,24 @@ const teamSchema = {
       honorificSuffix: "MA",
       jobTitle: "대표 / 미술심리치료사",
       description:
-        "ACT ART CENTER 대표. 차의과학대학교 미술치료학 박사과정 이수중, 홍익대학교 미술대학 석사. 한국미술치료학회 정회원. 언어 이전의 경험을 예술로 꺼내고, 수용전념치료(ACT)로 방향을 세우는 통합 접근을 지향합니다.",
+        "ACT ART CENTER 대표. 차의과학대학교 의학과 임상미술치료 박사과정, 석사. 홍익대학교 미술학 석사, 학사. 한국미술치료학회 정회원. 언어 이전의 경험을 예술로 꺼내고, 수용전념치료(ACT)로 방향을 세우는 통합 접근을 지향합니다.",
       image: `${SITE_URL}/images/team-eunbyeol.jpg`,
       url: `${SITE_URL}/team`,
       worksFor: { "@id": `${SITE_URL}/#organization` },
       alumniOf: [
         {
           "@type": "EducationalOrganization",
-          name: "차의과학대학교 미술치료학 박사과정",
+          name: "차의과학대학교 의학과 임상미술치료 박사과정",
           sameAs: "https://www.cha.ac.kr/",
         },
         {
           "@type": "EducationalOrganization",
-          name: "차의과학대학교 미술치료학 석사",
+          name: "차의과학대학교 의학과 임상미술치료 석사",
           sameAs: "https://www.cha.ac.kr/",
         },
         {
           "@type": "EducationalOrganization",
-          name: "홍익대학교 미술대학 (학사·석사)",
+          name: "홍익대학교 미술학 석사, 학사",
           sameAs: "https://www.hongik.ac.kr/",
         },
       ],
@@ -101,7 +101,7 @@ const teamSchema = {
           "@type": "EducationalOccupationalCredential",
           credentialCategory: "대학원 학위",
           educationalLevel: "석사",
-          name: "미술치료학 석사 (차의과학대학교)",
+          name: "의학과 임상미술치료 석사 (차의과학대학교)",
           recognizedBy: {
             "@type": "EducationalOrganization",
             name: "차의과학대학교",
@@ -112,7 +112,7 @@ const teamSchema = {
           "@type": "EducationalOccupationalCredential",
           credentialCategory: "대학원 과정",
           educationalLevel: "박사과정 이수중",
-          name: "미술치료학 박사과정 (차의과학대학교)",
+          name: "의학과 임상미술치료 박사과정 (차의과학대학교)",
           recognizedBy: {
             "@type": "EducationalOrganization",
             name: "차의과학대학교",
@@ -123,7 +123,7 @@ const teamSchema = {
           "@type": "EducationalOccupationalCredential",
           credentialCategory: "학부·대학원 학위",
           educationalLevel: "학사·석사",
-          name: "미술 학사·석사 (홍익대학교 미술대학)",
+          name: "미술학 석사, 학사 (홍익대학교)",
           recognizedBy: {
             "@type": "EducationalOrganization",
             name: "홍익대학교",
