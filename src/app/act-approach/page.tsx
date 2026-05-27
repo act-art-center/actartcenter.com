@@ -200,6 +200,54 @@ export default function ActApproachPage() {
             </p>
           </div>
 
+          {/* Hexaflex visual — 6각형 개념도 */}
+          <div className="relative z-[2] mb-10 lg:mb-14 max-w-4xl mx-auto">
+            <div className="hidden md:block relative h-[420px]">
+              {[
+                { idx: 0, x: "50%", y: "8%" },
+                { idx: 1, x: "74%", y: "24%" },
+                { idx: 2, x: "74%", y: "56%" },
+                { idx: 3, x: "50%", y: "72%" },
+                { idx: 4, x: "26%", y: "56%" },
+                { idx: 5, x: "26%", y: "24%" },
+              ].map((node) => {
+                const p = ACT_PROCESSES[node.idx];
+                return (
+                  <div
+                    key={`hex-${p.id}`}
+                    className="absolute -translate-x-1/2 -translate-y-1/2"
+                    style={{ left: node.x, top: node.y }}
+                  >
+                    <div
+                      className="w-[170px] h-[148px] bg-white/95 border border-primary-100 flex items-center justify-center text-center px-4"
+                      style={{ clipPath: "polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)", boxShadow: "var(--shadow-sm)" }}
+                    >
+                      <div>
+                        <p className="text-[11px] text-primary-500 font-semibold tracking-wide">{p.titleEn}</p>
+                        <p className="mt-1 text-sm lg:text-[15px] font-semibold text-night leading-tight">{p.title}</p>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+
+              <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+                <div className="w-[190px] h-[190px] rounded-full bg-primary-500 text-white flex items-center justify-center text-center px-4 shadow-[var(--shadow-md)]">
+                  <p className="text-sm lg:text-base font-semibold leading-snug">심리적 유연성<br />Psychological Flexibility</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="md:hidden grid grid-cols-2 gap-3">
+              {ACT_PROCESSES.map((p) => (
+                <div key={`hex-mobile-${p.id}`} className="bg-white rounded-xl p-3 text-center" style={{ boxShadow: "var(--shadow-sm)" }}>
+                  <p className="text-[11px] text-primary-500 font-semibold tracking-wide">{p.titleEn}</p>
+                  <p className="mt-1 text-sm font-semibold text-night leading-tight">{p.title}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
           <div className="relative z-[2] grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-5xl mx-auto">
             {ACT_PROCESSES.map((process, i) => (
               <div
