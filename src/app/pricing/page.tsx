@@ -344,7 +344,7 @@ export default function PricingPage() {
               Pricing Philosophy
             </p>
             <h2 className="text-center text-2xl lg:text-3xl font-bold tracking-tight">
-              표시 가격 안에 무엇이 들어 있는가
+              표시된 가격에 무엇이 포함되나요
             </h2>
             <p className="mt-4 text-center text-charcoal/70 leading-relaxed">
               심리치료의 가격은 단지 ‘50분의 대화값’이 아닙니다. 한 회기를 준비하는 보이지 않는
