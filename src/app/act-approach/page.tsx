@@ -137,8 +137,8 @@ export default function ActApproachPage() {
         title="수용전념치료(ACT)란? 미술치료와 만나는 6가지 핵심 프로세스"
         subtitle="심리적 유연성을 높이는 것을 목표로 하는 3세대 인지행동치료. 고통스러운 생각과 감정을 있는 그대로 수용하면서 가치를 향해 행동하는 법을 배웁니다."
         label="Acceptance and Commitment Therapy"
-        imageSrc="https://images.unsplash.com/photo-1547891654-e66ed7ebb968?w=1920&q=80"
-        imageAlt="ACT 수용전념치료"
+        imageSrc="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=1920&q=80"
+        imageAlt="캔버스와 이젤이 있는 미술치료 작업 공간"
       />
 
       <div className="bg-paper pt-6 pb-2">
