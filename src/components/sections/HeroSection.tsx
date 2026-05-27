@@ -12,7 +12,7 @@ export function HeroSection() {
     >
       <Container className="relative z-[2] py-24 lg:py-32">
         <div className="max-w-2xl">
-          <h1 className="text-white font-bold leading-[1.1] tracking-[-0.03em] text-[clamp(2.2rem,1.5rem+4vw,4rem)]">
+          <h1 className="text-white font-bold leading-[1.1] tracking-[-0.03em] text-[clamp(2.2rem,1.5rem+4vw,4rem)] [word-break:keep-all]">
             ACT 미술심리치료로 마음을 탐색하고, 삶의 의미를 재발견합니다.
           </h1>
 
