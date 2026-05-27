@@ -162,7 +162,7 @@ export default function TeamPage() {
     <>
       <JsonLd data={teamSchema} />
       <PageHero
-        title="대표 고은별 — ACT 미술심리치료사 프로필"
+        title="대표 고은별 — 미술심리치료사 프로필"
         subtitle="미술과 심리치료 모두에서 깊은 전문성을 갖춘 치료사가 함께합니다."
         label="Our Team"
         imageSrc="https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?w=1920&q=80"
