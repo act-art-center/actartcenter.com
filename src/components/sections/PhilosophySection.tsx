@@ -10,7 +10,7 @@ export function PhilosophySection() {
           {/* Image */}
           <div className="relative aspect-[4/3] rounded-2xl overflow-hidden order-2 lg:order-1">
             <Image
-              src="https://source.unsplash.com/1200x900/?art-studio,canvas,easel,painting"
+              src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=1600&q=80"
               alt="캔버스와 이젤이 있는 미술 작업 장면"
               fill
               className="object-cover"

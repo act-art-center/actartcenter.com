@@ -130,7 +130,7 @@ export const SERVICES_ALL = [
     description: "장기 치료·의료 병행 환경에서의 미술심리치료. 청소년 보호병동, 정신과 입원 환경, 난임·생식의학 치료 과정을 지원합니다.",
     href: "/services/protective",
     anchor: "보호·의료 환경 미술심리치료",
-    image: "https://source.unsplash.com/800x600/?computer,drawing,hands,art,desk",
+    image: "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=800&q=80",
     imageAlt: "컴퓨터 앞에서 사람들이 그림을 그리는 손이 보이는 장면",
     group: "specialty",
   },
