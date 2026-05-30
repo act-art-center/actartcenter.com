@@ -99,6 +99,22 @@ const globalGraphSchema = {
         "https://instagram.com/act.art.center",
       ],
       founder: { "@id": `${SITE_URL}/team#stella` },
+      contactPoint: [
+        {
+          "@type": "ContactPoint",
+          contactType: "customer support",
+          email: "actartkorea@gmail.com",
+          availableLanguage: ["ko", "en"],
+          areaServed: "KR",
+        },
+      ],
+      knowsAbout: [
+        "Acceptance and Commitment Therapy",
+        "Art Therapy",
+        "Psychological Flexibility",
+        "Trauma-informed Care",
+        "Mindfulness",
+      ],
       description: "수용전념치료(ACT)와 미술치료를 통합한 전문 연구·임상 기관",
     },
     {

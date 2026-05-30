@@ -105,6 +105,15 @@ function buildBlogPostingSchema(post: BlogPost) {
         articleSection: post.category,
         keywords: [post.category, "미술치료", "ACT", "미술심리치료"],
         wordCount: estimateWordCount(post.readTime),
+        isAccessibleForFree: true,
+        about: [
+          { "@type": "DefinedTerm", name: "Acceptance and Commitment Therapy (ACT)" },
+          { "@type": "DefinedTerm", name: "Art Therapy" },
+        ],
+        mentions: [
+          { "@type": "Thing", name: "ACT ART CENTER" },
+          { "@type": "Thing", name: "Psychological Flexibility" },
+        ],
         author: {
           "@id": `${SITE_URL}/team#stella`,
           "@type": "Person",
