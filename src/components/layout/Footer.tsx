@@ -144,9 +144,15 @@ export function Footer() {
         </div>
       </Container>
 
-      {/* Copyright band — surface shift (No-Line Rule §6) */}
+      {/* Medical/YMYL disclaimer + crisis resource — site-wide (health content safe-harbor) */}
       <div className="mt-16 bg-white/[0.04]">
         <Container>
+          <p className="pt-6 text-xs leading-relaxed text-stone/45 max-w-3xl">
+            본 웹사이트의 콘텐츠는 일반적인 정보 제공을 위한 것이며, 의학적 진단이나 정신건강 치료를 대체하지 않습니다. ACT ART CENTER는 의료기관이 아닙니다. 위기 상황이거나 즉각적인 도움이 필요하시면 정신건강 위기상담전화{" "}
+            <a href="tel:1577-0199" className="underline underline-offset-2 hover:text-stone/75 transition-colors">1577-0199</a>
+            (24시간) 또는 119, 가까운 응급실을 이용해 주세요.
+          </p>
+          {/* Copyright band — surface shift (No-Line Rule §6) */}
           <div className="py-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone/40">
             <p>&copy; {new Date().getFullYear()} ACT ART CENTER. All rights reserved.</p>
             <div className="flex items-center gap-5">

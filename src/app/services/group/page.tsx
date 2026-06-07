@@ -247,6 +247,39 @@ const evidenceNotes = [
   },
 ];
 
+const trustSafety = [
+  {
+    title: "누가 진행하나요",
+    description:
+      "모든 그룹은 본 센터 대표인 미술심리치료사가 직접 설계·진행합니다. 차의과학대학교 미술치료학 박사과정을 이수 중이며 한국미술치료학회 정회원으로, 집단 역동·정서 밀도 조율을 한 사람이 일관되게 책임집니다. 자세한 임상 배경은 대표 프로필에서 확인하실 수 있습니다.",
+  },
+  {
+    title: "참여 전 개별 사전 점검",
+    description:
+      "신청 후 짧은 개별 사전 면담으로 현재 상태와 그룹 적합성을 함께 살핍니다. 지금은 개인 세션이 더 안전하다고 판단되면 솔직하게 안내드립니다. 그룹 구성 단계에서 무리가 없는 조합을 맞추기 위한 절차입니다.",
+  },
+  {
+    title: "비밀유지와 그룹 규칙",
+    description:
+      "첫 회기에 비밀유지·존중·관찰자 자세의 기본 규칙을 구성원이 함께 합의합니다. 그룹에서 나눈 이야기는 그룹 밖으로 옮기지 않는 것을 공통 약속으로 둡니다. 안전감은 규칙이 먼저 설 때 만들어집니다.",
+  },
+  {
+    title: "페이싱 — 무리한 노출은 없습니다",
+    description:
+      "강제된 자기 개방은 요구하지 않습니다. 먼저 이미지를 만들고, 원하는 만큼만 말로 옮기면 됩니다. 자극이 과하다고 느껴지면 잠시 멈추거나 자리를 비우셔도 되며, 치료사가 회기마다 정서 밀도를 조율합니다.",
+  },
+  {
+    title: "의료적 처치를 대체하지 않습니다",
+    description:
+      "그룹 미술치료는 의료·정신건강의학과 치료를 보완하는 위치에 있으며 진단·처방을 대체하지 않습니다. 급성 위기나 즉각적 안정화가 필요한 상황에서는 개인 세션 또는 의료적 도움이 먼저입니다.",
+  },
+  {
+    title: "더 개인화된 속도가 필요할 때",
+    description:
+      "주제의 강도나 안전 여건상 그룹이 적합하지 않다고 판단되면, 1:1 개인 미술치료로 먼저 안정화를 진행하도록 안내해 드립니다. 그룹은 충분히 준비되었을 때 다시 권해 드립니다.",
+  },
+];
+
 export default function GroupPage() {
   return (
     <>
@@ -520,8 +553,47 @@ export default function GroupPage() {
         </Container>
       </SectionWrapper>
 
-      {/* Cross-links */}
+      {/* Trust & safety — group-specific */}
       <SectionWrapper bg="paper">
+        <Container>
+          <div className="max-w-2xl">
+            <h2 className="text-2xl lg:text-3xl font-bold tracking-tight">
+              안전하게 함께하기 위한 약속
+            </h2>
+            <p className="mt-4 text-charcoal/70 text-sm leading-relaxed">
+              그룹은 여러 사람의 정서가 한 공간에서 만나는 자리입니다. 누가
+              진행하고, 어떤 절차로 안전을 지키며, 무엇을 대체하지 않는지를
+              참여 전에 분명히 안내해 드립니다.
+            </p>
+          </div>
+          <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {trustSafety.map((t) => (
+              <div
+                key={t.title}
+                className="bg-cream rounded-xl p-6"
+                style={{ border: "1px solid rgba(196, 191, 183, 0.15)" }}
+              >
+                <h3 className="text-night font-semibold">{t.title}</h3>
+                <p className="mt-2 text-charcoal/70 text-sm leading-relaxed">{t.description}</p>
+              </div>
+            ))}
+          </div>
+          <p className="mt-8 text-charcoal/60 text-xs leading-relaxed max-w-3xl">
+            ※ 급성 위기 상황에서는 그룹보다{" "}
+            <Link href="/services/individual" className="text-primary-500 underline underline-offset-2">
+              개인 미술치료
+            </Link>{" "}
+            또는 의료적 도움이 먼저입니다. 적합성 판단이 어려우실 때는{" "}
+            <Link href="/booking" className="text-primary-500 underline underline-offset-2">
+              첫 상담
+            </Link>
+            에서 함께 살펴드립니다.
+          </p>
+        </Container>
+      </SectionWrapper>
+
+      {/* Cross-links */}
+      <SectionWrapper bg="cream">
         <Container>
           <h2 className="text-2xl lg:text-3xl font-bold tracking-tight text-center">
             비슷한 주제의 다른 프로그램
@@ -529,7 +601,7 @@ export default function GroupPage() {
           <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
             <Link
               href="/services/individual"
-              className="bg-cream rounded-xl p-6 hover:-translate-y-1 transition-transform"
+              className="bg-white rounded-xl p-6 hover:-translate-y-1 transition-transform"
               style={{ border: "1px solid rgba(196, 191, 183, 0.15)" }}
             >
               <p className="text-primary-500 text-xs font-semibold tracking-wide uppercase">Individual</p>
@@ -540,7 +612,7 @@ export default function GroupPage() {
             </Link>
             <Link
               href="/services/emotional"
-              className="bg-cream rounded-xl p-6 hover:-translate-y-1 transition-transform"
+              className="bg-white rounded-xl p-6 hover:-translate-y-1 transition-transform"
               style={{ border: "1px solid rgba(196, 191, 183, 0.15)" }}
             >
               <p className="text-primary-500 text-xs font-semibold tracking-wide uppercase">Specialty</p>
@@ -551,7 +623,7 @@ export default function GroupPage() {
             </Link>
             <Link
               href="/services/online"
-              className="bg-cream rounded-xl p-6 hover:-translate-y-1 transition-transform"
+              className="bg-white rounded-xl p-6 hover:-translate-y-1 transition-transform"
               style={{ border: "1px solid rgba(196, 191, 183, 0.15)" }}
             >
               <p className="text-primary-500 text-xs font-semibold tracking-wide uppercase">Online</p>
