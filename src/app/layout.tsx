@@ -7,6 +7,7 @@ import {
   SITE_DESCRIPTION,
   GSC_VERIFICATION,
   NAVER_VERIFICATION,
+  BING_VERIFICATION,
 } from "@/lib/constants";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -18,7 +19,10 @@ import "./globals.css";
 // Empty strings -> omit field -> Next.js won't emit <meta name="...verification">.
 const verification: Metadata["verification"] = {};
 if (GSC_VERIFICATION) verification.google = GSC_VERIFICATION;
-if (NAVER_VERIFICATION) verification.other = { "naver-site-verification": NAVER_VERIFICATION };
+const otherVerification: Record<string, string> = {};
+if (NAVER_VERIFICATION) otherVerification["naver-site-verification"] = NAVER_VERIFICATION;
+if (BING_VERIFICATION) otherVerification["msvalidate.01"] = BING_VERIFICATION;
+if (Object.keys(otherVerification).length) verification.other = otherVerification;
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

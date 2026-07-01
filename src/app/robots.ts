@@ -8,6 +8,17 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
         disallow: ["/api/", "/admin"],
       },
+      // 한국 검색엔진 크롤러 명시 허용 — Naver=Yeti, Daum=Daumoa. "*" 로도 커버되나 한국 SEO 의도를 명시 고정.
+      {
+        userAgent: "Yeti",
+        allow: "/",
+        disallow: ["/api/", "/admin"],
+      },
+      {
+        userAgent: "Daumoa",
+        allow: "/",
+        disallow: ["/api/", "/admin"],
+      },
       {
         userAgent: "GPTBot",
         allow: ["/", "/blog/", "/act-approach", "/faq", "/services/", "/team"],
