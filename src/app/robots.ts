@@ -68,6 +68,14 @@ export default function robots(): MetadataRoute.Robots {
         allow: ["/", "/blog/", "/act-approach", "/faq", "/services/", "/team"],
         disallow: ["/api/", "/admin", "/booking"],
       },
+      // Bytespider (ByteDance/TikTok 크롤러) 차단.
+      // robots 미준수 봇 — robots.txt 만으로는 강제되지 않으므로 Cloudflare WAF 병행 필요.
+      {
+        userAgent: "Bytespider",
+        disallow: "/",
+      },
+      // TODO: CCBot 허용/차단 = Henry 사업판단(AI 학습셋 편입 여부) — 게이트.
+      // 아래 CCBot 규칙(현 상태=차단)은 그 판단 전까지 절대 변경 금지.
       {
         userAgent: "CCBot",
         disallow: "/",
