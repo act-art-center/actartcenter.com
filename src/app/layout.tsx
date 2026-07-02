@@ -129,6 +129,7 @@ const globalGraphSchema = {
       },
       email: "actartkorea@gmail.com",
       // 전화번호는 실 번호 확정 전까지 의도적으로 제외 (spec §2.6, audit P2).
+      // TODO: telephone 실값 확보 후 추가(추측 금지) — 로컬 SEO 핵심 필드.
       availableService: [
         { "@type": "MedicalTherapy", name: "미술심리치료", therapyType: "Art Therapy" },
         { "@type": "MedicalTherapy", name: "수용전념치료", therapyType: "Acceptance and Commitment Therapy" },

@@ -73,6 +73,7 @@ const contactSchema = {
       },
       hasMap: "https://maps.google.com/?q=서울+서초구+강남대로+305+현대렉시온",
       email: "actartkorea@gmail.com",
+      // TODO: telephone 실값 확보 후 추가(추측 금지) — 로컬 SEO 핵심 필드.
       amenityFeature: [
         {
           "@type": "LocationFeatureSpecification",
