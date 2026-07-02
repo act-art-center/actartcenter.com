@@ -170,6 +170,12 @@ export default function RootLayout({
     >
       <head>
         <JsonLd data={globalGraphSchema} />
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          title="ACT ART CENTER 블로그"
+          href="/blog/rss.xml"
+        />
       </head>
       <body className="min-h-screen min-h-dvh flex flex-col bg-paper text-charcoal antialiased">
         {/* Skip to content — accessibility */}
