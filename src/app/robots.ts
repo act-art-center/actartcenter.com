@@ -74,11 +74,13 @@ export default function robots(): MetadataRoute.Robots {
         userAgent: "Bytespider",
         disallow: "/",
       },
-      // TODO: CCBot 허용/차단 = Henry 사업판단(AI 학습셋 편입 여부) — 게이트.
-      // 아래 CCBot 규칙(현 상태=차단)은 그 판단 전까지 절대 변경 금지.
+      // CCBot(Common Crawl) 허용 — Henry 위임 결정(2026-07-03): 타 학습봇(GPTBot·ClaudeBot·
+      // Google-Extended 등)을 이미 허용 중이라 CCBot만 차단하면 보호 효과가 없고(비일관),
+      // 하우스 기본(학습봇 허용+Bytespider만 차단)과 정렬 + 오픈 모델 학습 코퍼스에 브랜드 편입.
       {
         userAgent: "CCBot",
-        disallow: "/",
+        allow: ["/", "/blog/", "/act-approach", "/faq", "/services/", "/team"],
+        disallow: ["/api/", "/admin", "/booking"],
       },
     ],
     sitemap: "https://actartcenter.com/sitemap.xml",
