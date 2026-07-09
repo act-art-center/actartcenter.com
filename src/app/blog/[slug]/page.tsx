@@ -26,6 +26,10 @@ function estimateWordCount(readTime: string): number {
   return parseInt(m[1], 10) * 300;
 }
 
+function blogSeoKeywords(post: BlogPost): string[] {
+  return Array.from(new Set([post.category, "미술치료", "ACT", "미술심리치료", ...(post.seoKeywords ?? [])]));
+}
+
 export async function generateStaticParams() {
   return BLOG_POSTS.map((post) => ({ slug: post.slug }));
 }
@@ -41,7 +45,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: post.title,
     description: post.excerpt,
-    keywords: [post.category, "미술치료", "ACT", "미술심리치료"],
+    keywords: blogSeoKeywords(post),
     authors: [{ name: post.author, url: `${SITE_URL}/team` }],
     alternates: { canonical: url },
     openGraph: {
@@ -54,7 +58,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       modifiedTime: publishedIso,
       authors: [`${SITE_URL}/team`],
       section: post.category,
-      tags: [post.category, "미술치료", "ACT"],
+      tags: blogSeoKeywords(post),
     },
     twitter: {
       card: "summary_large_image",
@@ -103,12 +107,13 @@ function buildBlogPostingSchema(post: BlogPost) {
         dateModified: isoDate,
         inLanguage: "ko-KR",
         articleSection: post.category,
-        keywords: [post.category, "미술치료", "ACT", "미술심리치료"],
+        keywords: blogSeoKeywords(post),
         wordCount: estimateWordCount(post.readTime),
         isAccessibleForFree: true,
         about: [
           { "@type": "DefinedTerm", name: "Acceptance and Commitment Therapy (ACT)" },
           { "@type": "DefinedTerm", name: "Art Therapy" },
+          ...(post.seoKeywords ?? []).map((name) => ({ "@type": "Thing", name })),
         ],
         mentions: [
           { "@type": "Thing", name: "ACT ART CENTER" },

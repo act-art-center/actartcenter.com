@@ -1,4 +1,93 @@
 export const blogContent: Record<string, string> = {
+  "creative-arts-therapy-cancer-review-2026": `
+<h2>암 치료 과정에서 마음이 따라오지 못할 때</h2>
+<p>암 진단과 치료는 몸의 일만으로 끝나지 않습니다. 치료 일정, 검사 결과, 재발에 대한 걱정, 가족에게 남기고 싶은 말까지 마음이 감당해야 할 일이 한꺼번에 많아집니다. 이때 미술치료와 음악치료, 무용·동작치료를 포함한 창의예술치료는 감정을 먼저 표현할 수 있는 통로를 열어 줍니다.</p>
+
+<p>2026년 <em>Psycho-Oncology</em>에 발표된 체계적 문헌고찰 및 메타분석은 이 흐름을 꽤 넓은 자료로 확인했습니다. 무작위대조시험 67편, 암 환자 6,259명을 종합해 보니 창의예술치료는 단기·중기 시점에서 불안과 우울을 낮추고 삶의 질을 높이는 데 긍정적인 효과를 보였습니다. 연구진은 근거수준을 낮음에서 매우 낮음으로 평가했습니다. 효과의 방향은 분명하지만, 개입 유형과 세션 구조를 더 세밀하게 표준화해야 한다는 뜻입니다.</p>
+
+<h2>두려움을 밖으로 꺼내면 다룰 수 있습니다</h2>
+<p>오늘 함께 읽을 두 번째 연구는 폐암 환자의 암 재발 두려움(FCR)을 다룬 AM-I-FCR 파일럿 무작위대조시험입니다. 미술제작 프로그램을 받은 참여자는 표준치료군에 비해 재발 두려움, 불안, 우울, 질병지각 점수가 낮아졌고 정서적 삶의 질과 직면 대처가 좋아졌습니다. 면담에서는 정서 방출과 자기탐색이 주요 경험으로 나타났습니다.</p>
+
+<p>재발에 대한 두려움은 단순히 “걱정하지 마세요”라는 말로 잦아들지 않습니다. 오히려 마음속에서 형태 없이 커질 때가 많습니다. 종이 위에 두려움의 색, 크기, 거리, 무게를 올려놓으면 두려움은 조금 더 다룰 수 있는 대상이 됩니다. ACT 관점에서는 이 지점이 중요합니다. 두려움을 없애는 목표에 머무르지 않고, 두려움이 있는 상태에서도 오늘 내가 선택할 수 있는 작은 가치행동을 찾습니다.</p>
+
+<h2>호스피스·완화의료에서 미술은 ‘남기는 일’이 되기도 합니다</h2>
+<p>세 번째 문헌은 진행성 암을 가진 젊은 성인 환자의 레거시 작업 사례입니다. 가정 호스피스 사회복지사와 미술치료사가 협업해 환자가 바라는 방식으로 기억과 관계, 의미를 남길 수 있도록 도왔습니다. 말기 돌봄에서 미술치료는 정서 완화만 담당하지 않습니다. 한 사람이 자신을 어떻게 기억하고 싶은지, 누구에게 어떤 마음을 전하고 싶은지, 삶의 중요한 조각을 어떤 형태로 남기고 싶은지 함께 정리하는 작업이 됩니다.</p>
+
+<p>이런 작업은 존엄기반 미술치료와도 잘 맞닿아 있습니다. 존엄은 거창한 말이지만, 실제 세션에서는 매우 구체적인 장면으로 나타납니다. 손주에게 남기고 싶은 색, 배우자에게 전하고 싶은 문장, 내 삶을 설명하는 한 장의 이미지 같은 것들입니다. 미술은 그 마음을 조심스럽게 담는 그릇이 될 수 있습니다.</p>
+
+<h2>센터에서 이 근거를 읽는 방식</h2>
+<p>ACT ART CENTER는 암 환자와 가족을 위한 미술치료를 이야기할 때 치료 효과를 과장하지 않습니다. 동시에 창작 과정이 정서고통, 재발 두려움, 의미와 관계의 정리에 실제로 기여할 수 있다는 근거를 소중히 봅니다. 중요한 것은 세션의 구조입니다. 감정을 알아차리고, 이미지로 외현화하고, 내 삶의 가치와 연결한 뒤, 오늘 가능한 작은 행동으로 이어지는 흐름이 필요합니다.</p>
+
+<p>암 치료 중이거나 치료 이후의 불안이 오래 남아 있다면, 혼자 잘 견디는 능력만으로 자신을 평가하지 않으셔도 됩니다. 말로 정리되지 않는 마음은 색과 선, 형태로 먼저 나올 수 있습니다. 그 표현을 함께 바라보는 시간이 회복의 한 부분이 될 수 있습니다.</p>
+
+<p>ACT와 미술치료가 만나는 방식은 <a href="/act-approach">ACT 접근 페이지</a>에서 더 보실 수 있고, 현재 상황에 맞는 상담 가능 여부는 <a href="/booking">첫 상담 예약</a>에서 문의하실 수 있습니다.</p>
+
+<hr />
+
+<h3>이 글이 답한 질문</h3>
+<ul class="post-qa">
+<li><strong>Q: 암 환자에게 창의예술치료 효과가 있나요?</strong><br />A: 2026년 <em>Psycho-Oncology</em> 메타분석은 67개 RCT, 6,259명을 종합해 창의예술치료가 암 환자의 불안·우울 감소와 삶의 질 향상에 긍정적 효과를 보였다고 보고했습니다. 다만 GRADE 근거수준은 낮음에서 매우 낮음으로 평가되어 세션 구조의 표준화가 계속 필요합니다.</li>
+<li><strong>Q: 재발 두려움은 미술치료에서 어떻게 다루나요?</strong><br />A: 두려움을 이미지로 외현화하고, 그 감정과 거리를 둔 뒤, 두려움이 있는 상태에서도 가능한 가치행동을 설계합니다. 폐암 환자 대상 AM-I-FCR 파일럿 RCT에서는 재발 두려움, 불안, 우울, 질병지각 감소와 정서적 삶의 질 개선이 보고되었습니다.</li>
+<li><strong>Q: 호스피스 미술치료는 어떤 의미가 있나요?</strong><br />A: 호스피스·완화의료에서 미술치료는 기억, 관계, 의미를 남기는 레거시 작업으로 확장될 수 있습니다. 젊은 암 환자 사례보고는 사회복지사와 미술치료사의 협업이 심리사회영적 요구를 돕는 방식을 보여줍니다.</li>
+</ul>
+
+<hr />
+
+<h3>참고 문헌</h3>
+<ul class="references">
+<li><a href="https://pubmed.ncbi.nlm.nih.gov/41852192/" rel="noopener noreferrer" target="_blank">Creative Arts Therapy for Anxiety, Depression, and Quality of Life in Cancer Patients: A Systematic Review and Meta-Analysis of Randomized Controlled Trials. <em>Psycho-oncology</em>, 2026.</a></li>
+<li><a href="https://pubmed.ncbi.nlm.nih.gov/41761252/" rel="noopener noreferrer" target="_blank">Feasibility and preliminary efficacy of an art-making program to manage fear of cancer recurrence (AM-I-FCR) in lung cancer patients: a randomized controlled pilot study. <em>BMC Medicine</em>, 2026.</a></li>
+<li><a href="https://pubmed.ncbi.nlm.nih.gov/40232864/" rel="noopener noreferrer" target="_blank">An Interdisciplinary Approach to Legacy Work for a Young Cancer patient - A Case Illustration. <em>Journal of Social Work in End-of-Life &amp; Palliative Care</em>, 2025.</a></li>
+</ul>
+`,
+
+  "pediatric-oncology-art-therapy-observation": `
+<h2>“좋아졌나요?”라는 질문만으로는 부족할 때</h2>
+<p>미술치료 세션이 끝난 뒤 아이의 표정이 조금 편안해지고, 손의 움직임이 부드러워지고, 색 선택이 달라지는 순간이 있습니다. 현장에서는 분명히 느껴지지만, 이것을 어떻게 관찰하고 기록할지에 대한 고민은 늘 남습니다. 특히 소아 혈액종양 병동처럼 치료 과정이 길고 아이의 컨디션이 자주 달라지는 환경에서는 더 그렇습니다.</p>
+
+<p>2025년 <em>Healthcare</em>에 실린 Arts Observational Scale(ArtsObS) 이탈리아어판 번역·문화적응·검증 연구는 이 질문에 실무적인 힌트를 줍니다. 연구진은 소아 혈액종양 병동에서 미술치료 전후의 기분과 정서 상태를 관찰할 수 있도록 ArtsObS를 이탈리아어로 옮기고, 두 명의 평가자 자료를 바탕으로 내적 일관성, 변화 민감도, 신뢰도와 수렴타당도를 확인했습니다.</p>
+
+<h2>작품보다 과정에 더 많은 정보가 있습니다</h2>
+<p>ACT 기반 미술치료에서는 완성된 그림만 보지 않습니다. 아이가 재료에 손을 대기까지 걸리는 시간, 선택한 색을 바꾸는 방식, 실수처럼 보이는 자국을 어떻게 다루는지, 치료자와 눈을 맞추는 순간이 어떻게 달라지는지를 함께 봅니다. 이런 변화는 말로 표현되기 전의 정서 신호일 수 있습니다.</p>
+
+<p>ArtsObS 같은 관찰 도구의 장점은 세션을 “좋았다/힘들었다”라는 인상으로만 남기지 않게 해 준다는 점입니다. 창작 과정에서 정서 접촉이 늘었는지, 회피가 조금 줄었는지, 아이가 현재 순간에 머무르는 시간이 생겼는지 더 구체적으로 볼 수 있습니다. 기록이 정교해질수록 미술치료는 병동 안에서 더 안전하고 설명 가능한 치료가 됩니다.</p>
+
+<h2>신체상 변화도 그림 안에서 조심스럽게 다룰 수 있습니다</h2>
+<p>두 번째 문헌은 양측 유방암 수술과 항암치료 이후 신체상 변화를 겪은 여성 화가의 간호 경험 사례입니다. 연구는 환자가 다시 그림을 그리도록 격려하고, 흉터와 탈모로 인한 감정을 표현하는 과정을 통해 심리적 적응을 돕는 장면을 소개합니다.</p>
+
+<p>몸이 달라졌다는 경험은 단순한 외모 문제가 아닙니다. “내가 나로 느껴지는가”라는 정체성의 문제와 연결됩니다. 미술치료는 변화된 몸을 평가하거나 교정하는 시간이 아닙니다. 지금의 몸을 안전하게 바라보고, 그 몸과 함께 살아가는 방식을 조금씩 찾아가는 시간입니다. 자기연민, 수용, 창작 활동의 회복이 여기에서 자연스럽게 이어질 수 있습니다.</p>
+
+<h2>종양 지지치료에서 구조가 중요한 이유</h2>
+<p>프랑스어권 종양 지지치료 문헌인 “Sens et motions” 논문은 미술치료가 체계 없이 단순 활동 프로그램처럼 쓰일 위험을 짚습니다. 암 치료 현장에서 예술 활동이 도움이 되려면 재현 가능하고 평가 가능한 구조가 필요하다는 제안입니다.</p>
+
+<p>이 지점은 ACT ART CENTER가 중요하게 보는 부분과도 맞닿아 있습니다. 매체 선택, 정서 접촉, 의미 탐색, 가치와 연결되는 행동까지 세션의 흐름이 있어야 합니다. 따뜻한 분위기만으로는 충분하지 않습니다. 아이와 환자가 지금 감당할 수 있는 만큼 표현하고, 그 표현이 삶의 방향과 연결되도록 돕는 설계가 필요합니다.</p>
+
+<h2>오늘의 실무 메모</h2>
+<p>어제 읽은 세 편의 문헌은 한 가지 방향을 가리킵니다. 암 치료 현장에서 미술치료는 정서 변화를 관찰할 수 있어야 하고, 변화된 몸과 마음을 수용할 수 있게 도와야 하며, 세션 구조를 통해 치료로서의 설명 가능성을 갖춰야 합니다.</p>
+
+<p>병동과 상담실에서 미술은 아이와 환자의 마음을 표현하는 도구가 될 수 있습니다. 그 마음을 성급히 해석하기 전에, 먼저 관찰하고 기록하고 함께 바라보는 태도가 필요합니다.</p>
+
+<p>관련 접근은 <a href="/act-approach">ACT 접근 페이지</a>에서 더 확인하실 수 있으며, 센터 상담은 <a href="/booking">첫 상담 예약</a>을 통해 문의하실 수 있습니다.</p>
+
+<hr />
+
+<h3>이 글이 답한 질문</h3>
+<ul class="post-qa">
+<li><strong>Q: 소아암 병동 미술치료에서는 무엇을 관찰하나요?</strong><br />A: 완성된 작품뿐 아니라 재료 선택, 손의 움직임, 색의 변화, 정서 접촉, 회피 감소, 치료자와의 상호작용을 함께 봅니다. ArtsObS 검증 연구는 이런 변화를 구조적으로 기록할 수 있는 가능성을 보여줍니다.</li>
+<li><strong>Q: 유방암 이후 신체상 변화에 미술치료가 도움이 될 수 있나요?</strong><br />A: 사례보고에서는 수술 흉터와 항암치료 관련 탈모를 경험한 환자가 그림을 통해 감정을 표현하고 창작 활동을 회복하는 과정이 소개되었습니다. 미술치료는 변화된 몸을 안전하게 바라보고 수용하는 데 도움을 줄 수 있습니다.</li>
+<li><strong>Q: 종양 지지치료에서 미술치료와 단순 활동은 어떻게 다른가요?</strong><br />A: 치료로 기능하려면 매체 선택, 정서 접촉, 의미 탐색, 평가 가능한 기록과 같은 구조가 필요합니다. “Sens et motions” 문헌은 암 치료 맥락에서 재현 가능한 치료 구조의 중요성을 강조합니다.</li>
+</ul>
+
+<hr />
+
+<h3>참고 문헌</h3>
+<ul class="references">
+<li><a href="https://pubmed.ncbi.nlm.nih.gov/40805884/" rel="noopener noreferrer" target="_blank">Art Therapy and Its Impact on Mood and Emotional States in Pediatric Hematology Oncology Units: Translation and Validation of the Italian Version of the Arts Observational Scale (ArtsObS). <em>Healthcare</em>, 2025.</a></li>
+<li><a href="https://pubmed.ncbi.nlm.nih.gov/38253859/" rel="noopener noreferrer" target="_blank">Nursing Experience Using Art Therapy to Help Women With Breast Cancer Face Changes in Body Image. <em>Hu li za zhi The Journal of Nursing</em>, 2024.</a></li>
+<li><a href="https://pubmed.ncbi.nlm.nih.gov/38070974/" rel="noopener noreferrer" target="_blank">“Sens et motions”: a supportive media therapy in oncology. <em>Soins; la revue de reference infirmiere</em>, 2023.</a></li>
+</ul>
+`,
+
   "art-therapy-science": `
 <h2>상담실에서 반복되는 한 장면</h2>
 <p>"오늘 마음 상태를 색 하나로 골라 보시겠어요?" 이렇게 권하면, 대부분의 분들이 잠깐 멈칫하십니다. 말로 설명하는 것과 색을 고르는 것은 전혀 다른 종류의 경험이라서요. 저는 이 짧은 정지의 순간을 꽤 좋아합니다. 말로는 "괜찮아요"라고 했던 분이, 정작 손은 회색 물감병 위에 머물러 있는 장면. 말과 몸이 다른 이야기를 하는 바로 그 순간이요.</p>

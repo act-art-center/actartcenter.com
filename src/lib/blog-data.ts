@@ -3,6 +3,7 @@ export type BlogPost = {
   title: string;
   excerpt: string;
   category: string;
+  seoKeywords?: string[];
   image: string;
   date: string;
   author: string;
@@ -19,10 +20,33 @@ export const BLOG_CATEGORIES = [
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "creative-arts-therapy-cancer-review-2026",
+    title: "암 환자 창의예술치료: 불안·우울·삶의 질에 대한 최신 근거",
+    excerpt: "67개 무작위대조시험, 6,259명을 종합한 2026년 메타분석을 바탕으로 암 환자 미술치료가 정서고통과 삶의 질에 어떻게 기여하는지 정리했습니다.",
+    category: "미술치료",
+    seoKeywords: ["암 환자 미술치료", "창의예술치료", "암 환자 불안 우울", "호스피스 미술치료", "존엄기반 미술치료"],
+    image: "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=600&q=80",
+    date: "2026년 7월 9일",
+    author: "고은별",
+    readTime: "8분",
+  },
+  {
+    slug: "pediatric-oncology-art-therapy-observation",
+    title: "소아 혈액종양 병동 미술치료에서 ‘정서 변화’를 어떻게 볼 수 있을까",
+    excerpt: "ArtsObS 이탈리아어판 검증 연구와 유방암 신체상 사례, 종양 지지치료 모델을 함께 읽으며 암 치료 현장에서 미술치료의 관찰·수용·구조화 원칙을 살펴봅니다.",
+    category: "미술치료",
+    seoKeywords: ["소아암 미술치료", "혈액종양 미술치료", "암 환자 미술치료", "신체상 미술치료", "종양 지지치료"],
+    image: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=600&q=80",
+    date: "2026년 7월 8일",
+    author: "고은별",
+    readTime: "7분",
+  },
+  {
     slug: "art-therapy-science",
     title: "미술치료 효과의 과학적 근거",
     excerpt: "Kaimal의 코르티솔 연구, Shella의 병상 미술치료 데이터, van der Kolk의 브로카 발견까지. 미술치료가 어디까지 과학적으로 입증되어 있는지 임상가의 시선으로 정리했습니다.",
     category: "미술치료",
+    seoKeywords: ["미술치료 효과", "미술치료 사례", "정신건강 미술치료"],
     image: "https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=600&q=80",
     date: "2026년 4월 10일",
     author: "고은별",
@@ -33,6 +57,7 @@ export const BLOG_POSTS: BlogPost[] = [
     title: "ACT의 6가지 핵심 프로세스",
     excerpt: "수용, 탈융합, 현재 순간 접촉, 맥락으로서의 자기, 가치, 전념 행동. Hayes의 헥사플렉스를 미술치료 장면과 연결하며 하나씩 풀어 봅니다.",
     category: "ACT",
+    seoKeywords: ["수용전념치료", "수용전념치료 기법", "수용전념치료 육각형", "ACT 미술치료"],
     image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80",
     date: "2026년 4월 5일",
     author: "고은별",
@@ -53,6 +78,7 @@ export const BLOG_POSTS: BlogPost[] = [
     title: "마음챙김 드로잉: 현재에 머무르기",
     excerpt: "가부좌 명상이 어렵게 느껴지시는 분들을 위해. Kabat-Zinn의 MBSR과 Csikszentmihalyi의 몰입 이론을 바탕으로, 펜 한 자루로 시작하는 다섯 가지 드로잉 실습을 안내합니다.",
     category: "실습 가이드",
+    seoKeywords: ["마음챙김 미술치료", "마음챙김 드로잉", "미술치료 방법"],
     image: "https://images.unsplash.com/photo-1758521232721-da2be69f0b64?w=600&q=80",
     date: "2026년 3월 20일",
     author: "고은별",
@@ -63,6 +89,7 @@ export const BLOG_POSTS: BlogPost[] = [
     title: "트라우마와 미술 표현의 관계",
     excerpt: "트라우마 기억 앞에서 말이 막히는 신경학적 이유와, 미술이 그 자리에 다리를 놓을 수 있는 근거. Schouten과 Malchiodi의 연구를 통해 페이싱 원칙을 살펴봅니다.",
     category: "미술치료",
+    seoKeywords: ["트라우마 미술치료", "미술치료 사례", "정신건강 미술치료"],
     image: "https://images.unsplash.com/photo-1572947650440-e8a97ef053b2?w=600&q=80",
     date: "2026년 3월 15일",
     author: "고은별",
