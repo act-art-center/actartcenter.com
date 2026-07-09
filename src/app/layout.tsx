@@ -7,6 +7,7 @@ import {
   SITE_DESCRIPTION,
   GSC_VERIFICATION,
   NAVER_VERIFICATION,
+  BING_VERIFICATION,
 } from "@/lib/constants";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -18,7 +19,10 @@ import "./globals.css";
 // Empty strings -> omit field -> Next.js won't emit <meta name="...verification">.
 const verification: Metadata["verification"] = {};
 if (GSC_VERIFICATION) verification.google = GSC_VERIFICATION;
-if (NAVER_VERIFICATION) verification.other = { "naver-site-verification": NAVER_VERIFICATION };
+const otherVerification: Record<string, string> = {};
+if (NAVER_VERIFICATION) otherVerification["naver-site-verification"] = NAVER_VERIFICATION;
+if (BING_VERIFICATION) otherVerification["msvalidate.01"] = BING_VERIFICATION;
+if (Object.keys(otherVerification).length) verification.other = otherVerification;
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -125,6 +129,7 @@ const globalGraphSchema = {
       },
       email: "actartkorea@gmail.com",
       // 전화번호는 실 번호 확정 전까지 의도적으로 제외 (spec §2.6, audit P2).
+      // TODO: telephone 실값 확보 후 추가(추측 금지) — 로컬 SEO 핵심 필드.
       availableService: [
         { "@type": "MedicalTherapy", name: "미술심리치료", therapyType: "Art Therapy" },
         { "@type": "MedicalTherapy", name: "수용전념치료", therapyType: "Acceptance and Commitment Therapy" },
@@ -166,6 +171,12 @@ export default function RootLayout({
     >
       <head>
         <JsonLd data={globalGraphSchema} />
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          title="ACT ART CENTER 블로그"
+          href="/blog/rss.xml"
+        />
       </head>
       <body className="min-h-screen min-h-dvh flex flex-col bg-paper text-charcoal antialiased">
         {/* Skip to content — accessibility */}

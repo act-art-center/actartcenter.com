@@ -9,9 +9,13 @@ export const SITE_TAGLINE_KR = "Exploring the mind through art, rediscovering me
 // Search console verification tokens.
 // - 값은 실제 GSC / 네이버 서치어드바이저 인증 후 환경변수로 주입한다.
 // - 빈 문자열이면 layout.tsx 에서 메타태그 자체를 출력하지 않도록 분기.
-// TODO: GSC 인증 후 GSC_VERIFICATION / NAVER_VERIFICATION 에 실제 토큰 주입.
+// TODO: 각 웹마스터 콘솔 인증 후 실제 토큰을 env(NEXT_PUBLIC_*)에 주입.
+//   GSC=search.google.com · Naver=searchadvisor.naver.com/console/board
+//   Bing=bing.com/webmasters · Daum=webmaster.daum.net (사이트 URL+PIN; 메타 태그명은 콘솔 인증화면에서 확인)
 export const GSC_VERIFICATION = process.env.NEXT_PUBLIC_GSC_VERIFICATION ?? "";
 export const NAVER_VERIFICATION = process.env.NEXT_PUBLIC_NAVER_VERIFICATION ?? "";
+export const BING_VERIFICATION = process.env.NEXT_PUBLIC_BING_VERIFICATION ?? "";
+export const DAUM_WEBMASTER = process.env.NEXT_PUBLIC_DAUM_WEBMASTER ?? "";
 
 export const CONTACT = {
   phone: "010-####-####",
