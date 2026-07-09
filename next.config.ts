@@ -37,6 +37,16 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+  async redirects() {
+    return [
+      // 신뢰도/SEO: 레거시 경로를 404 대신 정규 페이지로 통합
+      {
+        source: "/about",
+        destination: "/team",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

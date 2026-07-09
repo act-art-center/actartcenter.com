@@ -10,8 +10,8 @@ export function PhilosophySection() {
           {/* Image */}
           <div className="relative aspect-[4/3] rounded-2xl overflow-hidden order-2 lg:order-1">
             <Image
-              src="https://images.unsplash.com/photo-1753187991848-8a7e17d232a8?w=800&q=80"
-              alt="자연광이 드는 따뜻한 아틀리에 공간"
+              src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=1600&q=80"
+              alt="캔버스와 이젤이 있는 미술 작업 장면"
               fill
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"

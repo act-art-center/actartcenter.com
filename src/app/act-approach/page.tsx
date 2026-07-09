@@ -137,8 +137,8 @@ export default function ActApproachPage() {
         title="수용전념치료(ACT)란? 미술치료와 만나는 6가지 핵심 프로세스"
         subtitle="심리적 유연성을 높이는 것을 목표로 하는 3세대 인지행동치료. 고통스러운 생각과 감정을 있는 그대로 수용하면서 가치를 향해 행동하는 법을 배웁니다."
         label="Acceptance and Commitment Therapy"
-        imageSrc="https://images.unsplash.com/photo-1547891654-e66ed7ebb968?w=1920&q=80"
-        imageAlt="ACT 수용전념치료"
+        imageSrc="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=1920&q=80"
+        imageAlt="캔버스와 이젤이 있는 미술치료 작업 공간"
       />
 
       <div className="bg-paper pt-6 pb-2">
@@ -198,6 +198,54 @@ export default function ActApproachPage() {
               각 프로세스에는 반대편의 &ldquo;경직성 극 (inflexibility pole)&rdquo; 이 있으며, 세션은 이 축을
               따라 유연성 쪽으로 이동하는 여정입니다.
             </p>
+          </div>
+
+          {/* Hexaflex visual — 6각형 개념도 */}
+          <div className="relative z-[2] mb-10 lg:mb-14 max-w-4xl mx-auto">
+            <div className="hidden md:block relative h-[420px]">
+              {[
+                { idx: 0, x: "50%", y: "8%" },
+                { idx: 1, x: "74%", y: "24%" },
+                { idx: 2, x: "74%", y: "56%" },
+                { idx: 3, x: "50%", y: "72%" },
+                { idx: 4, x: "26%", y: "56%" },
+                { idx: 5, x: "26%", y: "24%" },
+              ].map((node) => {
+                const p = ACT_PROCESSES[node.idx];
+                return (
+                  <div
+                    key={`hex-${p.id}`}
+                    className="absolute -translate-x-1/2 -translate-y-1/2"
+                    style={{ left: node.x, top: node.y }}
+                  >
+                    <div
+                      className="w-[170px] h-[148px] bg-white/95 border border-primary-100 flex items-center justify-center text-center px-4"
+                      style={{ clipPath: "polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)", boxShadow: "var(--shadow-sm)" }}
+                    >
+                      <div>
+                        <p className="text-[11px] text-primary-500 font-semibold tracking-wide">{p.titleEn}</p>
+                        <p className="mt-1 text-sm lg:text-[15px] font-semibold text-night leading-tight">{p.title}</p>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+
+              <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+                <div className="w-[190px] h-[190px] rounded-full bg-primary-500 text-white flex items-center justify-center text-center px-4 shadow-[var(--shadow-md)]">
+                  <p className="text-sm lg:text-base font-semibold leading-snug">심리적 유연성<br />Psychological Flexibility</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="md:hidden grid grid-cols-2 gap-3">
+              {ACT_PROCESSES.map((p) => (
+                <div key={`hex-mobile-${p.id}`} className="bg-white rounded-xl p-3 text-center" style={{ boxShadow: "var(--shadow-sm)" }}>
+                  <p className="text-[11px] text-primary-500 font-semibold tracking-wide">{p.titleEn}</p>
+                  <p className="mt-1 text-sm font-semibold text-night leading-tight">{p.title}</p>
+                </div>
+              ))}
+            </div>
           </div>
 
           <div className="relative z-[2] grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-5xl mx-auto">
