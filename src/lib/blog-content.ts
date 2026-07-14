@@ -1,4 +1,178 @@
 export const blogContent: Record<string, string> = {
+  "art-therapy-not-drawing-skill": `
+<h2>처음 문의할 때 가장 많이 묻는 질문</h2>
+<p>미술치료를 처음 문의하시는 분들께서 조심스럽게 묻는 말이 있습니다. “우리 아이가 그림을 잘 못 그리는데 괜찮을까요?” “제가 미술을 해본 적이 거의 없는데 참여할 수 있을까요?”</p>
+
+<p>괜찮습니다. 미술치료는 예쁜 그림을 완성하는 수업이 아닙니다. 선이 삐뚤어도, 색이 섞여도, 무엇을 그렸는지 바로 설명하기 어려워도 괜찮습니다. 치료실에서는 결과물보다 그 사람이 재료를 만지는 방식, 시작을 망설이는 시간, 지우고 다시 그리는 과정, 완성한 뒤의 표정과 말에 더 오래 머뭅니다.</p>
+
+<h2>미술치료는 과정과 관계를 함께 다룹니다</h2>
+<p>학술적으로도 미술치료는 미술 작업과 치료적 관계를 함께 다룹니다. American Art Therapy Association은 미술치료를 창작 과정과 심리치료 이론을 바탕으로 정서, 자기이해, 대인관계, 삶의 기능을 돕는 전문 영역으로 설명합니다. 즉 그림 한 장을 보고 성격이나 진단을 단정하는 방식과는 거리가 있습니다.</p>
+
+<p>고은별 대표는 미술치료사로서 작품의 “의미 맞히기”에 앞서 표현이 나온 맥락을 살핍니다. 같은 검은색이라도 어떤 아이에게는 밤하늘일 수 있고, 어떤 분에게는 조용히 쉬고 싶은 마음일 수 있습니다. 중요한 것은 색 하나를 정답처럼 해석하는 일이 아니라, 그 표현이 지금 이 사람에게 어떤 경험으로 다가오는지 함께 바라보는 일입니다.</p>
+
+<h2>ACT는 미술치료 안에서 보조적으로 통합됩니다</h2>
+<p>필요할 때 수용전념치료(ACT)의 관점은 미술치료 과정 안에서 보조적으로 통합됩니다. 예를 들어 불편한 감정을 없애야 할 대상으로 다루기보다, 종이 위에 안전하게 놓아보고 이름 붙여보며, 내가 소중히 여기는 방향을 천천히 찾아가는 식입니다.</p>
+
+<h2>가정에서 건넬 수 있는 질문</h2>
+<p>아이가 그림을 보여줄 때 “이게 뭐야?”만 묻기보다 아래처럼 물어보세요.</p>
+<ul>
+<li>어디부터 그리기 시작했어?</li>
+<li>이 색을 고를 때 어떤 느낌이었어?</li>
+<li>이 부분은 조금 더 이야기해줄 수 있을까?</li>
+</ul>
+
+<p>평가보다 호기심이 먼저 전해질 때, 아이는 자기표현을 조금 더 편안하게 이어갈 수 있습니다. 미술치료는 잘 그리는 사람을 위한 시간이 아닙니다. 말로 정리되지 않는 마음을 재료와 관계 안에서 천천히 만나보는 시간입니다. 처음이라 어색해도 괜찮습니다. 그 어색함까지 함께 다루는 것이 미술치료의 시작일 수 있습니다.</p>
+
+<p>미술치료와 ACT의 통합 접근은 <a href="/act-approach">ACT 접근 페이지</a>에서 더 확인하실 수 있고, 현재 상황에 맞는 상담 가능 여부는 <a href="/booking">첫 상담 예약</a>에서 문의하실 수 있습니다.</p>
+
+<hr />
+<h3>이 글이 답한 질문</h3>
+<ul class="post-qa">
+<li><strong>Q: 미술치료는 그림을 잘 그려야 받을 수 있나요?</strong><br />A: 아닙니다. 미술치료는 작품의 완성도보다 재료를 만지는 방식, 표현 과정, 치료적 관계 안에서 일어나는 경험을 중요하게 살핍니다.</li>
+<li><strong>Q: 아이 그림을 보면 바로 심리 상태를 알 수 있나요?</strong><br />A: 색 하나나 모양 하나로 아이를 단정하지 않습니다. 미술치료에서는 그림의 과정, 아이의 이야기, 생활 맥락과 관계 경험을 함께 봅니다.</li>
+<li><strong>Q: ACT는 여기서 어떤 역할인가요?</strong><br />A: 중심은 미술치료입니다. ACT는 감정을 안전하게 바라보고 가치 있는 방향을 찾도록 돕는 보조적 통합 틀로 사용됩니다.</li>
+</ul>
+
+<hr />
+<h3>참고 문헌</h3>
+<ul class="references">
+<li><a href="https://arttherapy.org/about-art-therapy/" rel="noopener noreferrer" target="_blank">American Art Therapy Association. About Art Therapy.</a></li>
+<li><a href="https://www.routledge.com/Handbook-of-Art-Therapy/Malchiodi/p/book/9781462550524" rel="noopener noreferrer" target="_blank">Malchiodi, C. A. (Ed.). <em>Handbook of Art Therapy</em>. Routledge.</a></li>
+<li><a href="https://www.guilford.com/books/Acceptance-and-Commitment-Therapy/Hayes-Strosahl-Wilson/9781462528943" rel="noopener noreferrer" target="_blank">Hayes, S. C., Strosahl, K. D., &amp; Wilson, K. G. (2012). <em>Acceptance and Commitment Therapy: The Process and Practice of Mindful Change</em>.</a></li>
+</ul>
+`,
+
+  "unfinished-drawing-art-therapy": `
+<h2>끝까지 완성되지 않은 그림을 만날 때</h2>
+<p>미술치료실에서는 끝까지 완성되지 않은 그림을 자주 만납니다. 색을 칠하다 멈춘 종이, 한쪽 귀퉁이에만 남은 선, 지우개 자국이 더 많은 그림도 있습니다. 어떤 그림은 한참 바라보다가 그대로 접어두기도 합니다.</p>
+
+<p>저는 미술치료사로서 그런 순간을 서둘러 채우지 않으려 합니다. 종이 위에 남은 빈칸도 그날의 마음과 연결되어 있을 때가 많기 때문입니다. 말로는 괜찮다고 했지만 손이 멈추는 날이 있고, 그리고 싶지만 어디서 시작해야 할지 몰라 한참 재료만 만지는 날도 있습니다.</p>
+
+<h2>과정은 마음이 머문 자리를 보여줍니다</h2>
+<p>미술치료 연구와 임상에서는 작품의 결과물만큼 창작 과정, 재료 선택, 멈춤, 반복, 수정의 흐름을 함께 살핍니다. 특히 아동·청소년의 경우 그림은 감정을 설명하는 말이 충분히 준비되기 전, 자기 경험을 안전하게 꺼내보는 통로가 될 수 있습니다. 성인에게도 마찬가지입니다. 마음이 복잡할수록 선 하나를 긋는 일, 색을 고르는 일이 생각을 조금씩 정리하는 시간이 되기도 합니다.</p>
+
+<p>치료실에서 제가 관심 있게 보는 장면은 “잘 그렸는가”가 아닙니다. 아이가 어떤 색 앞에서 오래 머무는지, 어떤 재료를 편안해하는지, 지우고 다시 그릴 때 표정이 어떻게 바뀌는지 살핍니다. 때로는 “여기까지만 하고 싶어요”라는 말이 그날 가장 솔직한 표현일 수 있습니다.</p>
+
+<h2>완성 압박을 내려놓는 미술치료</h2>
+<p>미술치료 과정 안에서 수용전념치료(ACT)의 관점이 보조적으로 통합될 때도 있습니다. 완성해야 한다는 압박을 조금 내려놓고, 지금 느끼는 감정과 몸의 반응을 알아차리며, 자신에게 소중한 방향을 작은 이미지로 표현해보는 방식입니다. 이때 ACT는 미술치료를 앞서는 주제가 아니라, 표현을 더 안전하게 붙들어주는 임상적 틀로 함께 사용됩니다.</p>
+
+<h2>아이 그림 앞에서 할 수 있는 말</h2>
+<p>가정에서도 아이의 그림을 볼 때 “이건 뭐야?”라는 질문에 아래 질문을 함께 더해보실 수 있습니다.</p>
+<ul>
+<li>이 부분은 어떤 마음으로 그렸어?</li>
+<li>오늘은 어떤 색이 제일 손에 갔어?</li>
+<li>여기서 멈추고 싶었던 이유가 있었을까?</li>
+</ul>
+
+<p>대답이 짧아도 괜찮습니다. 아이가 “몰라”라고 말해도 그 안에는 아직 말이 되지 않은 감각이 있을 수 있습니다. 부모님께서 먼저 그림을 평가하지 않고 바라봐 주시면, 아이는 자기 표현이 안전하게 받아들여지는 경험을 조금씩 쌓아갑니다.</p>
+
+<p>완성되지 않은 그림은 부족한 그림이 아닙니다. 그날 마음이 머문 자리입니다. 미술치료실에서는 그 자리를 조용히 함께 바라보고, 필요한 만큼 기다립니다. 마음은 늘 완성된 문장으로 오지 않습니다. 때로는 멈춘 선 하나로 먼저 찾아옵니다.</p>
+
+<p>아이의 표현을 살피는 미술치료 접근은 <a href="/services/child">아동·청소년 미술치료</a>에서 더 보실 수 있고, 상담 가능 여부는 <a href="/booking">첫 상담 예약</a>에서 문의하실 수 있습니다.</p>
+
+<hr />
+<h3>이 글이 답한 질문</h3>
+<ul class="post-qa">
+<li><strong>Q: 완성하지 못한 그림도 의미가 있나요?</strong><br />A: 네. 미술치료에서는 완성 여부만 보지 않고 멈춤, 반복, 수정, 빈칸까지 표현의 과정으로 살핍니다.</li>
+<li><strong>Q: 아이가 “몰라”라고만 말하면 어떻게 해야 하나요?</strong><br />A: 짧은 대답도 표현의 일부일 수 있습니다. 부모님이 먼저 평가 없이 바라봐 주면 아이는 자기 속도로 표현을 이어갈 수 있습니다.</li>
+<li><strong>Q: ACT는 어떤 방식으로 함께 쓰이나요?</strong><br />A: 완성 압박을 내려놓고 현재 감정과 몸의 반응을 알아차리며, 소중한 방향을 이미지로 표현하도록 돕는 보조적 틀로 활용됩니다.</li>
+</ul>
+
+<hr />
+<h3>참고 문헌</h3>
+<ul class="references">
+<li><a href="https://arttherapy.org/about-art-therapy/" rel="noopener noreferrer" target="_blank">American Art Therapy Association. About Art Therapy.</a></li>
+<li><a href="https://www.routledge.com/Handbook-of-Art-Therapy/Malchiodi/p/book/9781462550524" rel="noopener noreferrer" target="_blank">Malchiodi, C. A. (Ed.). <em>Handbook of Art Therapy</em>. Routledge.</a></li>
+<li><a href="https://www.guilford.com/books/Acceptance-and-Commitment-Therapy/Hayes-Strosahl-Wilson/9781462528943" rel="noopener noreferrer" target="_blank">Hayes, S. C., Strosahl, K. D., &amp; Wilson, K. G. (2012). <em>Acceptance and Commitment Therapy: The Process and Practice of Mindful Change</em>.</a></li>
+</ul>
+`,
+
+  "safe-paper-art-therapy-room": `
+<h2>“저는 그림을 못 그려요”라는 말 안의 마음</h2>
+<p>미술치료실에 처음 오신 분들은 종종 이렇게 말씀하십니다. “저는 그림을 못 그려요.” 그 말 안에는 조금 긴장한 마음이 담겨 있습니다. 잘해야 할 것 같고, 이상하게 보이면 어쩌나 걱정되고, 완성된 그림으로 내 마음이 너무 쉽게 읽힐까 조심스러워지기도 합니다.</p>
+
+<h2>종이는 시험지가 아닙니다</h2>
+<p>미술치료에서 종이는 시험지가 아닙니다. 잘 그렸는지 확인하는 곳도 아닙니다. 종이는 잠시 마음을 내려놓아 보는 자리입니다. 선이 흔들려도 괜찮고, 색이 번져도 괜찮고, 무언가를 그리다가 멈추어도 괜찮습니다. 그 모든 과정이 지금의 나를 이해하는 작은 단서가 될 수 있습니다.</p>
+
+<p>학술적으로도 미술치료에서는 작품의 결과만큼 치료적 관계와 창작 과정이 중요하게 다루어집니다. American Art Therapy Association은 미술치료를 창작 과정, 심리학 이론, 치료적 관계를 바탕으로 정서와 경험을 다루는 전문 영역으로 설명합니다. 즉, 그림 한 장을 해석하는 일이 중심이 아니라, 안전한 관계 안에서 표현하고 바라보는 시간이 치료적 경험의 일부가 됩니다.</p>
+
+<h2>치료자는 결과보다 과정을 살핍니다</h2>
+<p>고은별 대표는 미술치료사로서 내담자가 어떤 그림을 그렸는지에만 머물지 않습니다. 재료를 고르는 손의 속도, 색을 바꾸는 순간의 망설임, 지우고 덧칠하는 움직임, 작품을 바라볼 때의 표정까지 함께 살핍니다. 이런 관찰은 누군가를 판단하기 위한 과정이 아니라, 그 사람이 자기 마음을 조금 더 안전하게 만날 수 있도록 돕기 위한 임상적 태도입니다.</p>
+
+<p>필요한 경우 수용전념치료(ACT)의 관점은 미술치료 과정 안에서 보조적으로 통합됩니다. 떠오르는 감정과 생각을 밀어내지 않고, 종이 위에 잠시 올려두고 바라보는 연습이 그 예입니다. 중심은 언제나 미술 재료, 표현 과정, 치료적 관계에 있습니다.</p>
+
+<h2>작은 종이 한 장으로 시작하는 질문</h2>
+<p>가정에서도 작은 미술 시간이 필요할 때가 있습니다. 완성도를 묻는 말 대신 이런 질문을 건네보셔도 좋습니다.</p>
+<ul>
+<li>이 색을 고를 때 마음이 어땠어?</li>
+<li>이 부분은 천천히 그리고 싶었어?</li>
+<li>지금 이 그림을 보면 어떤 느낌이 떠올라?</li>
+</ul>
+
+<p>어른에게도 같은 질문이 필요할 때가 있습니다. 오늘의 마음을 말로 다 설명하기 어려운 날, 작은 종이 한 장과 색연필 몇 개가 조용한 시작이 될 수 있습니다. 미술치료는 멋진 작품을 만드는 시간이 아니라, 안전한 자리에서 나를 조금씩 만나보는 시간입니다.</p>
+
+<p>미술치료와 ACT의 통합 접근은 <a href="/act-approach">ACT 접근 페이지</a>에서 더 확인하실 수 있고, 현재 상황에 맞는 상담 가능 여부는 <a href="/booking">첫 상담 예약</a>에서 문의하실 수 있습니다.</p>
+
+<hr />
+<h3>이 글이 답한 질문</h3>
+<ul class="post-qa">
+<li><strong>Q: 미술치료에서 종이는 어떤 역할을 하나요?</strong><br />A: 평가지가 아니라 마음을 안전하게 올려놓는 자리입니다. 창작 과정과 치료적 관계 안에서 자기 경험을 바라보도록 돕습니다.</li>
+<li><strong>Q: 그림을 못 그려도 참여할 수 있나요?</strong><br />A: 네. 미술치료에서는 완성도보다 재료 선택, 선의 속도, 멈춤과 수정 같은 표현 과정을 소중히 살핍니다.</li>
+<li><strong>Q: 집에서 비슷한 대화를 시작할 수 있나요?</strong><br />A: “이 색을 고를 때 마음이 어땠어?”처럼 평가보다 경험을 묻는 질문이 도움이 됩니다.</li>
+</ul>
+
+<hr />
+<h3>참고 문헌</h3>
+<ul class="references">
+<li><a href="https://arttherapy.org/about-art-therapy/" rel="noopener noreferrer" target="_blank">American Art Therapy Association. About Art Therapy.</a></li>
+<li><a href="https://www.routledge.com/Handbook-of-Art-Therapy/Malchiodi/p/book/9781462550524" rel="noopener noreferrer" target="_blank">Malchiodi, C. A. (Ed.). <em>Handbook of Art Therapy</em>. Routledge.</a></li>
+<li><a href="https://www.guilford.com/books/Acceptance-and-Commitment-Therapy/Hayes-Strosahl-Wilson/9781462528943" rel="noopener noreferrer" target="_blank">Hayes, S. C., Strosahl, K. D., &amp; Wilson, K. G. (2012). <em>Acceptance and Commitment Therapy: The Process and Practice of Mindful Change</em>.</a></li>
+</ul>
+`,
+
+  "child-lines-colors-art-therapy": `
+<h2>아이 그림에서 먼저 보이는 것</h2>
+<p>아이 그림을 보면 어른의 눈은 먼저 무엇을 그렸는지 찾게 됩니다. 사람인지, 집인지, 나무인지, 색을 왜 이렇게 썼는지 궁금해지지요. 그런데 미술치료실에서는 완성된 그림만큼이나 아이가 그림 앞에 머무는 시간을 천천히 봅니다.</p>
+
+<p>연필을 세게 쥐는지, 색을 고르다 오래 멈추는지, 종이를 꽉 채우는지, 작은 구석에서 시작하는지. 이런 모습은 아이가 말로 다 설명하지 못한 마음의 속도를 보여줄 때가 있습니다. 물론 한 가지 색이나 모양만으로 아이를 판단하지 않습니다. 미술치료에서는 그림을 진단표처럼 읽기보다, 아이가 표현하는 과정과 관계 안에서 조심스럽게 이해합니다.</p>
+
+<h2>손을 움직이는 시간이 몸의 긴장을 낮출 수 있습니다</h2>
+<p>미술 활동이 정서 조절에 영향을 줄 수 있다는 연구들은 꾸준히 보고되어 왔습니다. 예를 들어 Kaimal, Ray, Muniz의 2016년 연구에서는 짧은 미술 만들기 활동 뒤 성인의 코르티솔 수치가 낮아지는 경향이 관찰되었습니다. 모든 사람에게 같은 효과가 보장된다는 뜻은 아니지만, 손을 움직이고 색과 형태를 선택하는 시간이 몸의 긴장을 낮추는 경험으로 이어질 수 있음을 보여줍니다.</p>
+
+<h2>아동 미술치료에서는 표현의 속도를 존중합니다</h2>
+<p>아동 미술치료에서는 이 점이 조금 더 섬세하게 다루어집니다. 아이는 “불안해요”, “속상해요”라고 말하기 전, 먼저 선을 반복하거나 색을 덧칠하거나 같은 장면을 여러 번 그릴 수 있습니다. 고은별 대표는 미술치료사로서 이런 표현을 성급히 해석하기보다, 아이가 안전하게 머물 수 있는 재료와 관계를 먼저 살핍니다.</p>
+
+<p>필요한 경우 수용전념치료(ACT)의 관점은 미술치료 과정 안에서 보조적으로 통합됩니다. 아이가 떠오르는 생각이나 감정을 밀어내지 않고, 색과 선으로 잠시 바라보는 연습을 할 수 있도록 돕는 방식입니다. 중심은 언제나 미술치료의 표현 과정과 치료적 관계에 있습니다.</p>
+
+<h2>부모님이 집에서 건넬 수 있는 질문</h2>
+<p>가정에서는 아이 그림을 볼 때 이렇게 물어보셔도 좋습니다.</p>
+<ul>
+<li>이 색을 고를 때 어떤 느낌이 들었어?</li>
+<li>여기 그릴 때 손이 빨라졌어, 천천히 움직였어?</li>
+<li>이 그림에서 제일 마음이 가는 부분은 어디야?</li>
+</ul>
+
+<p>정답을 맞히려는 질문보다, 아이가 자기 표현을 다시 바라볼 수 있는 질문이 좋습니다. 아이의 그림은 설명을 요구받는 숙제가 아니라, 마음이 잠시 놓이는 자리일 수 있습니다. 부모님이 먼저 따뜻하게 바라봐 주실 때, 아이는 자기 마음을 조금 더 편안하게 꺼내볼 수 있습니다.</p>
+
+<p>아이의 표현을 살피는 미술치료 접근은 <a href="/services/child">아동·청소년 미술치료</a>에서 더 보실 수 있고, 상담 가능 여부는 <a href="/booking">첫 상담 예약</a>에서 문의하실 수 있습니다.</p>
+
+<hr />
+<h3>이 글이 답한 질문</h3>
+<ul class="post-qa">
+<li><strong>Q: 아이 그림에서 색 하나만 보고 해석해도 되나요?</strong><br />A: 권하지 않습니다. 미술치료에서는 색, 선, 재료 선택, 그리는 속도, 아이가 붙이는 이야기를 함께 봅니다.</li>
+<li><strong>Q: 미술 활동이 정서 조절에 도움이 될 수 있나요?</strong><br />A: 미술 활동 후 코르티솔 감소를 보고한 연구가 있습니다. 다만 개인차가 있으므로 효과를 보장하기보다 안전한 표현 경험으로 이해하는 것이 좋습니다.</li>
+<li><strong>Q: 부모가 아이 그림 앞에서 할 수 있는 질문은 무엇인가요?</strong><br />A: “이 색을 고를 때 어떤 느낌이 들었어?”처럼 아이가 자기 경험을 말할 수 있는 질문이 도움이 됩니다.</li>
+</ul>
+
+<hr />
+<h3>참고 문헌</h3>
+<ul class="references">
+<li><a href="https://doi.org/10.1080/07421656.2016.1166832" rel="noopener noreferrer" target="_blank">Kaimal, G., Ray, K., &amp; Muniz, J. (2016). Reduction of cortisol levels and participants' responses following art making. <em>Art Therapy</em>, 33(2), 74–80.</a></li>
+<li><a href="https://arttherapy.org/about-art-therapy/" rel="noopener noreferrer" target="_blank">American Art Therapy Association. About Art Therapy.</a></li>
+<li><a href="https://www.routledge.com/Handbook-of-Art-Therapy/Malchiodi/p/book/9781462550524" rel="noopener noreferrer" target="_blank">Malchiodi, C. A. (Ed.). <em>Handbook of Art Therapy</em>. Routledge.</a></li>
+</ul>
+`,
+
   "caregiver-fatigue-art-therapy": `
 <h2>돌보는 사람의 마음도 표현될 자리가 필요합니다</h2>
 <p>가족을 돌보는 시간에는 말로 설명하기 어려운 마음이 자주 찾아옵니다. 병원 일정과 약, 식사와 집안일을 챙기고 곁에 있는 사람의 표정까지 살피다 보면 내 마음은 조용히 뒤로 밀려나기도 합니다.</p>
