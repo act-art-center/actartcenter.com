@@ -118,6 +118,10 @@ const globalGraphSchema = {
         "Psychological Flexibility",
         "Trauma-informed Care",
         "Mindfulness",
+        "수용전념치료 기법",
+        "ACT 미술치료",
+        "마음챙김 미술치료",
+        "트라우마 미술치료",
       ],
       description: "수용전념치료(ACT)와 미술치료를 통합한 전문 연구·임상 기관",
     },
@@ -144,6 +148,12 @@ const globalGraphSchema = {
         longitude: 127.0263,
       },
       email: "actartkorea@gmail.com",
+      areaServed: [
+        { "@type": "AdministrativeArea", name: "서울특별시" },
+        { "@type": "AdministrativeArea", name: "서초구" },
+        { "@type": "AdministrativeArea", name: "강남구" },
+        { "@type": "Country", name: "대한민국" },
+      ],
       // 전화번호는 실 번호 확정 전까지 의도적으로 제외 (spec §2.6, audit P2).
       // TODO: telephone 실값 확보 후 추가(추측 금지) — 로컬 SEO 핵심 필드.
       availableService: [

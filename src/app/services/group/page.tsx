@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     "번아웃 그룹 미술치료",
     "Yalom 치료적 요인",
     "ACT 그룹 프로그램",
+    "집단 미술치료 프로그램",
   ],
   alternates: { canonical: `${SITE_URL}/services/group` },
   openGraph: {
@@ -63,6 +64,11 @@ const groupServiceSchema = {
       description:
         "4~6인 소그룹에서 ACT 6프로세스와 Yalom 치료적 요인을 미술 매체로 통합해 다루는 주 1회 × 90분 × 8회기 구조의 그룹 프로그램. 번아웃, 관계 회복, 부모 자기돌봄 등 주제별 트랙으로 운영합니다.",
       provider: { "@id": `${SITE_URL}/#organization` },
+      areaServed: [
+        { "@type": "AdministrativeArea", name: "서울특별시" },
+        { "@type": "AdministrativeArea", name: "서초구" },
+        { "@type": "AdministrativeArea", name: "강남구" },
+      ],
       url: `${SITE_URL}/services/group`,
       hasCourseInstance: {
         "@type": "CourseInstance",

@@ -20,6 +20,17 @@ export const BLOG_CATEGORIES = [
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "kramer-art-therapy-study-criteria",
+    title: "미술치료를 공부할 때 살펴볼 기준: 크레이머의 관점에서",
+    excerpt: "크레이머 미술치료 학교를 찾는 분들이 교육기관 이름보다 먼저 살펴보면 좋은 기준을, 미술치료사의 임상 관점에서 정리했습니다.",
+    category: "미술치료",
+    seoKeywords: ["크레이머 미술치료 학교", "미술치료 대학원", "미술치료 공부", "미술치료사", "미술치료 교육"],
+    image: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=600&q=80",
+    date: "2026년 7월 15일",
+    author: "고은별",
+    readTime: "6분",
+  },
+  {
     slug: "art-therapy-not-drawing-skill",
     title: "미술치료는 그림을 잘 그리는 시간이 아닙니다",
     excerpt: "미술치료를 처음 떠올릴 때 생기는 오해를 풀고, 그림 실력보다 표현의 과정과 치료적 관계가 왜 중요한지 따뜻하게 안내합니다.",

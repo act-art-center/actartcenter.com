@@ -19,6 +19,8 @@ export const metadata: Metadata = {
     "아동 심리상담",
     "학교 적응 미술치료",
     "ADHD 미술치료",
+    "아동 미술치료 프로그램",
+    "아동 미술치료 프로그램 계획서",
   ],
   alternates: { canonical: `${SITE_URL}/services/child` },
   openGraph: {
@@ -66,6 +68,11 @@ const childServiceSchema = {
       url: `${SITE_URL}/services/child`,
       image: `${SITE_URL}/og/services-child.png`,
       therapyType: "Art Therapy",
+      areaServed: [
+        { "@type": "AdministrativeArea", name: "서울특별시" },
+        { "@type": "AdministrativeArea", name: "서초구" },
+        { "@type": "AdministrativeArea", name: "강남구" },
+      ],
       provider: { "@id": `${SITE_URL}/#organization` },
       audience: {
         "@type": "PeopleAudience",
@@ -255,6 +262,10 @@ export default function ChildPage() {
                 단계와 기질에 맞는 '표현의 통로'를 함께 설계합니다. 매 세션
                 후에는 10분 부모 상담을 통해 가정에서의 지원 방식까지 함께
                 조율합니다.
+              </p>
+              <p className="mt-4 text-charcoal/80 leading-[var(--leading-normal)]">
+                아동 미술치료 프로그램은 아이의 발달 단계, 부모 상담에서 확인한
+                생활 맥락, 첫 회기 관찰을 함께 살펴 세션 목표와 매체를 정합니다.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <span className="px-3 py-1.5 bg-cream rounded-lg text-sm text-charcoal/70">아동 40분 + 부모 10분</span>
