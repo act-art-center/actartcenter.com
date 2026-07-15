@@ -20,11 +20,11 @@ export const BLOG_CATEGORIES = [
 
 export const BLOG_POSTS: BlogPost[] = [
   {
-    slug: "kramer-art-therapy-study-criteria",
-    title: "미술치료를 공부할 때 살펴볼 기준: 크레이머의 관점에서",
-    excerpt: "크레이머 미술치료 학교를 찾는 분들이 교육기관 이름보다 먼저 살펴보면 좋은 기준을, 미술치료사의 임상 관점에서 정리했습니다.",
+    slug: "kramer-art-as-therapy-sublimation",
+    title: "크레이머가 말한 미술치료: 예술 그 자체와 승화",
+    excerpt: "Edith Kramer가 미술치료에서 중요하게 본 예술 그 자체의 치료성, 승화, 창작 과정의 의미를 미술치료사의 시선으로 정리했습니다.",
     category: "미술치료",
-    seoKeywords: ["크레이머 미술치료 학교", "미술치료 대학원", "미술치료 공부", "미술치료사", "미술치료 교육"],
+    seoKeywords: ["크레이머 미술치료", "Edith Kramer", "미술치료 승화", "예술치료", "미술치료 이론"],
     image: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=600&q=80",
     date: "2026년 7월 15일",
     author: "고은별",
