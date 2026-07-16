@@ -1,9 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="ACT ART CENTER blog illustration: trauma-art-expression">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="ACT ART CENTER blog illustration: 트라우마와 미술 표현의 관계">
   <rect width="1600" height="900" rx="64" fill="#F8F4EC"/>
-  <rect x="70" y="70" width="1460" height="760" rx="70" fill="#D7E0E0"/>
-  <circle cx="1220" cy="190" r="92" fill="#8D6E63" opacity="0.75"/>
-  <circle cx="340" cy="210" r="58" fill="#fff" opacity="0.42"/>
-  <path d="M210 670 C430 465 610 465 800 670 C990 465 1170 465 1390 670" fill="none" stroke="#fff" stroke-width="32" stroke-linecap="round" opacity="0.42"/>
-<g transform="translate(800 410) scale(1.25)" stroke="#111" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"><path d="M-58 -92 C-82 -45 -80 20 -55 58 H62 C84 5 78 -58 46 -92 C18 -124 -30 -126 -58 -92 Z" fill="#111" stroke="none"/><circle cx="0" cy="-68" r="43" fill="#fff"/><circle cx="-14" cy="-72" r="4" fill="#111" stroke="none"/><circle cx="17" cy="-72" r="4" fill="#111" stroke="none"/><path d="M-10 -50 C2 -42 15 -45 23 -54" fill="none" stroke-width="5"/><path d="M-52 10 Q0 -15 52 10 L67 145 Q0 170 -67 145 Z" fill="#fff"/><path d="M-46 148 L-58 290 M46 148 L58 290"/><path d="M-68 292 H-18 M18 292 H68"/><path d="M-55 36 L-150 130 M55 36 L150 130"/><path d="M-130 178 C-60 100 60 100 130 178" fill="none" stroke="#0E5C50" stroke-width="12"/></g>
-  <path d="M150 780 C420 710 620 825 820 760 C1050 690 1240 820 1450 735" fill="none" stroke="#0E5C50" stroke-width="15" stroke-linecap="round" opacity="0.18"/>
+  <rect x="70" y="70" width="1460" height="760" rx="72" fill="#D7E0E0"/>
+  <circle cx="1245" cy="190" r="98" fill="#8D6E63" opacity="0.74"/>
+  <circle cx="315" cy="190" r="58" fill="#fff" opacity="0.40"/>
+  <text x="145" y="120" font-family="Pretendard, Arial, sans-serif" font-size="34" font-weight="700" fill="#111" opacity="0.58">ACT ART CENTER</text>
+  <path d="M165 615 C360 390 565 390 760 615" fill="none" stroke="#fff" stroke-width="34" stroke-linecap="round" opacity="0.58"/>
+<path d="M215 615 C385 465 535 465 710 615" fill="none" stroke="#0E5C50" stroke-width="12" stroke-linecap="round" opacity="0.45"/><path d="M110 735 C360 660 585 805 820 720 C1045 640 1265 780 1490 700" fill="none" stroke="#0E5C50" stroke-width="16" stroke-linecap="round" opacity="0.16"/>
+  <image href="/characters/artty-scenes.png" x="860" y="160" width="440" height="440" preserveAspectRatio="xMidYMid meet"/>
 </svg>

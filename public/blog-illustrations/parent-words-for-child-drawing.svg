@@ -1,9 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="ACT ART CENTER blog illustration: parent-words-for-child-drawing">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="ACT ART CENTER blog illustration: 아이 그림 앞에서 건네는 말">
   <rect width="1600" height="900" rx="64" fill="#F8F4EC"/>
-  <rect x="70" y="70" width="1460" height="760" rx="70" fill="#DCE7D4"/>
-  <circle cx="1220" cy="190" r="92" fill="#D7A06A" opacity="0.75"/>
-  <circle cx="340" cy="210" r="58" fill="#fff" opacity="0.42"/>
-  <circle cx="1190" cy="230" r="100" fill="#fff" opacity="0.3"/><circle cx="1320" cy="330" r="62" fill="#fff" opacity="0.24"/>
-<g transform="translate(800 410) scale(1.25)" stroke="#111" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"><path d="M-58 -92 C-82 -45 -80 20 -55 58 H62 C84 5 78 -58 46 -92 C18 -124 -30 -126 -58 -92 Z" fill="#111" stroke="none"/><circle cx="0" cy="-68" r="43" fill="#fff"/><circle cx="-14" cy="-72" r="4" fill="#111" stroke="none"/><circle cx="17" cy="-72" r="4" fill="#111" stroke="none"/><path d="M-10 -50 C2 -42 15 -45 23 -54" fill="none" stroke-width="5"/><path d="M-52 10 Q0 -15 52 10 L67 145 Q0 170 -67 145 Z" fill="#fff"/><path d="M-46 148 L-58 290 M46 148 L58 290"/><path d="M-68 292 H-18 M18 292 H68"/><path d="M-56 36 L-150 94 M56 36 L150 94"/><path d="M75 -126 H215 Q242 -126 242 -98 V-32 Q242 -6 215 -6 H135 L98 30 L108 -6 H75 Q48 -6 48 -32 V-98 Q48 -126 75 -126 Z" fill="#fff"/></g>
-  <path d="M150 780 C420 710 620 825 820 760 C1050 690 1240 820 1450 735" fill="none" stroke="#0E5C50" stroke-width="15" stroke-linecap="round" opacity="0.18"/>
+  <rect x="70" y="70" width="1460" height="760" rx="72" fill="#DCE7D4"/>
+  <circle cx="1245" cy="190" r="98" fill="#D7A06A" opacity="0.74"/>
+  <circle cx="315" cy="190" r="58" fill="#fff" opacity="0.40"/>
+  <text x="145" y="120" font-family="Pretendard, Arial, sans-serif" font-size="34" font-weight="700" fill="#111" opacity="0.58">ACT ART CENTER</text>
+  <path d="M190 185 H545 Q590 185 590 230 V365 Q590 410 545 410 H335 L260 478 L282 410 H190 Q145 410 145 365 V230 Q145 185 190 185Z" fill="#fff" opacity="0.72" stroke="#111" stroke-width="8"/>
+<circle cx="285" cy="300" r="12" fill="#D7A06A"/><circle cx="370" cy="300" r="12" fill="#D7A06A"/><circle cx="455" cy="300" r="12" fill="#D7A06A"/><path d="M110 735 C360 660 585 805 820 720 C1045 640 1265 780 1490 700" fill="none" stroke="#0E5C50" stroke-width="16" stroke-linecap="round" opacity="0.16"/>
+  <image href="/characters/artty-welcome.png" x="850" y="170" width="430" height="430" preserveAspectRatio="xMidYMid meet"/>
 </svg>
