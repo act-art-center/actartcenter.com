@@ -57,7 +57,7 @@ const contactSchema = {
       name: SITE_NAME,
       alternateName: "ACT ART CENTER 강남센터",
       url: SITE_URL,
-      image: `${SITE_URL}/characters/artty-welcome.png`,
+      image: `${SITE_URL}/images/office-hero.jpg`,
       address: {
         "@type": "PostalAddress",
         streetAddress: "강남대로 305, 현대렉시온 2518호",
