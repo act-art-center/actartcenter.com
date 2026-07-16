@@ -207,25 +207,6 @@ const priceInclusions = [
   },
 ];
 
-/** 한국 심리상담 시장의 일반 범위 (비급여, 센터별 편차 큼). */
-const marketReference = [
-  {
-    label: "심리상담 (민간 센터, 50분)",
-    range: "약 80,000 ~ 200,000원",
-    source: "서울·수도권 민간 심리상담 센터 공개 가격의 일반 범위(비급여). 협회 차원의 공식 수가 고시는 존재하지 않으며, 기관·상담사 경력에 따라 편차가 큽니다.",
-  },
-  {
-    label: "정신건강의학과 외래 진료 (건강보험)",
-    range: "1회 약 5,000 ~ 30,000원 (초진·본인부담 기준)",
-    source: "건강보험심사평가원 수가 체계 기준. 진단·약물 처방 중심으로 비급여 상담과는 성격이 다릅니다.",
-  },
-  {
-    label: "지역 정신건강복지센터",
-    range: "대부분 무료 또는 저비용",
-    source: "보건복지부 국가 정신건강 증진 시스템. 대기자 많고 회기 수 제한.",
-  },
-];
-
 /** 결제·환불 정책. */
 const policy = [
   {
@@ -397,44 +378,6 @@ export default function PricingPage() {
                 결정은 바로 하지 않으셔도 됩니다. 가능성만 열어두고 돌아가셔도 좋습니다.
               </li>
             </ul>
-          </div>
-        </Container>
-      </SectionWrapper>
-
-      {/* Market reference */}
-      <SectionWrapper bg="cream">
-        <Container>
-          <div className="max-w-4xl mx-auto">
-            <p className="text-xs font-medium tracking-widest uppercase text-secondary-500 text-center mb-3">
-              Market Reference
-            </p>
-            <h2 className="text-center text-2xl lg:text-3xl font-bold tracking-tight">
-              한국 심리상담 시장 가격 참고
-            </h2>
-            <p className="mt-4 text-center text-charcoal/70 leading-relaxed">
-              센터의 가격을 비교해 보실 수 있도록, 국내에서 흔히 접할 수 있는 세 유형의 일반 범위를
-              함께 정리했습니다. 각 유형은 비용뿐 아니라 ‘무엇을 위한 서비스인가’가 다르다는 점을
-              참고해 주세요.
-            </p>
-            <div className="mt-8 space-y-4">
-              {marketReference.map((m) => (
-                <div
-                  key={m.label}
-                  className="bg-white rounded-xl p-5"
-                  style={{ border: "1px solid rgba(196, 191, 183, 0.15)" }}
-                >
-                  <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-2">
-                    <h3 className="text-night font-semibold">{m.label}</h3>
-                    <p className="text-primary-500 font-semibold tabular-nums">{m.range}</p>
-                  </div>
-                  <p className="mt-2 text-stone text-xs leading-relaxed">{m.source}</p>
-                </div>
-              ))}
-            </div>
-            <p className="mt-6 text-center text-stone text-xs leading-relaxed">
-              ※ 위 수치는 공개 정보에 기반한 일반적 참고치이며, 개별 기관·상담사에 따라 차이가 큽니다.
-              광고·홍보 목적의 비교가 아니라 내담자의 합리적 선택을 돕기 위한 정보로 제공합니다.
-            </p>
           </div>
         </Container>
       </SectionWrapper>
