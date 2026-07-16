@@ -273,10 +273,10 @@ export default function OnlinePage() {
             </div>
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
               <Image
-                src="/characters/acttie-laptop.png"
+                src="https://images.unsplash.com/photo-1509909756405-be0199881695?w=800&q=80"
                 alt="온라인 미술치료를 위한 홈 스튜디오와 노트북"
                 fill
-                className="object-contain bg-cream p-4 lg:p-6"
+                className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 priority
               />

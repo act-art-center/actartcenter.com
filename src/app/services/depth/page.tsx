@@ -376,10 +376,10 @@ export default function DepthPage() {
             </div>
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
               <Image
-                src="/characters/artty-scenes.png"
+                src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=800&q=80"
                 alt="심층 탐색을 위한 스튜디오 — 오래 쌓인 작업물과 작업대"
                 fill
-                className="object-contain bg-cream p-4 lg:p-6"
+                className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 priority
               />

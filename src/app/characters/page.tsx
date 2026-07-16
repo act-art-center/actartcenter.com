@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: "ACTIE와 ARTTY | ACT ART CENTER",
     description: "미술치료 여정에 함께하는 두 안내자 ACTIE와 ARTTY를 소개합니다.",
     url: `${SITE_URL}/characters`,
-    images: [{ url: "/characters/twins-together.png", width: 1600, height: 900, alt: "ACTIE와 ARTTY" }],
+    images: [{ url: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=1920&q=80", width: 1600, height: 900, alt: "ACTIE와 ARTTY" }],
   },
 };
 
@@ -64,8 +64,8 @@ export default function CharactersPage() {
         title="ACTIE와 ARTTY"
         subtitle="ACT ART CENTER의 미술치료 여정에 함께하는 두 안내자입니다. 감정과 가치를 살피는 ACTIE, 색과 이미지로 표현을 돕는 ARTTY를 소개합니다."
         label="ACT ART CENTER Characters"
-        imageSrc="/characters/twins-together.png"
-        imageAlt="ACTIE와 ARTTY가 함께 서 있는 일러스트"
+        imageSrc="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=1920&q=80"
+        imageAlt="캔버스와 물감이 있는 미술 작업 이미지"
       />
 
       <div className="bg-paper pt-6 pb-2">

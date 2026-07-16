@@ -336,10 +336,10 @@ export default function GroupPage() {
             </div>
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
               <Image
-                src="/characters/twins-together.png"
+                src="https://images.unsplash.com/photo-1544967082-d9d25d867d66?w=800&q=80"
                 alt="원형 테이블에서 함께 그리는 소그룹 미술치료 장면"
                 fill
-                className="object-contain bg-cream p-4 lg:p-6"
+                className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 priority
               />

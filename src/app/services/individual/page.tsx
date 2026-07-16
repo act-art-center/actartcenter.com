@@ -277,10 +277,10 @@ export default function IndividualPage() {
             </div>
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
               <Image
-                src="/characters/acttie-reading.png"
+                src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=800&q=80"
                 alt="1:1 개인 미술치료 작업대 위의 수채 팔레트와 붓"
                 fill
-                className="object-contain bg-cream p-4 lg:p-6"
+                className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 priority
               />
