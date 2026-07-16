@@ -141,6 +141,33 @@ export default function CharactersPage() {
         </Container>
       </SectionWrapper>
 
+      <SectionWrapper bg="paper" className="pt-10 lg:pt-12">
+        <Container>
+          <div className="max-w-4xl mx-auto rounded-2xl bg-white p-6 lg:p-8" style={{ border: "1px solid rgba(196, 191, 183, 0.18)" }}>
+            <p className="text-xs font-semibold tracking-widest uppercase text-primary-500 mb-3">
+              References
+            </p>
+            <h2 className="text-night text-xl lg:text-2xl font-bold tracking-tight">
+              참고문헌
+            </h2>
+            <ul className="mt-5 space-y-3 text-charcoal/70 text-sm leading-relaxed">
+              <li>
+                Jung, C. G. (1959/1968). <em>The Archetypes and the Collective Unconscious</em>
+                (Collected Works of C. G. Jung, Vol. 9, Part 1). Princeton University Press.
+              </li>
+              <li>
+                Jung, C. G. (1951/1969). <em>Aion: Researches into the Phenomenology of the Self</em>
+                (Collected Works of C. G. Jung, Vol. 9, Part 2). Princeton University Press.
+                특히 “The Syzygy: Anima and Animus” 장을 참고했습니다.
+              </li>
+              <li>
+                Jung, C. G. (1953/1966). <em>Two Essays on Analytical Psychology</em>
+                (Collected Works of C. G. Jung, Vol. 7). Princeton University Press.
+              </li>
+            </ul>
+          </div>
+        </Container>
+      </SectionWrapper>
 
     </>
   );
