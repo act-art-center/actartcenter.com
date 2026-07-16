@@ -79,11 +79,10 @@ export default function BlogPage() {
                 공부한 문헌, 슈퍼비전에서 정리한 개념, 현장에서 반복되는 질문들을 정리합니다.
               </p>
               <p>
-                톤은 &ldquo;박사과정 중인 임상가의 메모&rdquo; 에 가깝습니다.
-                Steven C. Hayes 의 수용전념치료(ACT), Cathy A. Malchiodi 의 표현 기반 접근,
-                Bessel van der Kolk 의 신체 기반 트라우마 이론 등 국제적으로
-                검증된 틀 위에서, 한국어로 읽기 편하게 풀어내려고 합니다.
-                진단이나 의학적 조언 대신, 내 경험을 이해하는 언어를 더해 드리는 것이 목적입니다.
+                본 블로그 내용은 Steven C. Hayes 의 수용전념치료(ACT),
+                Cathy A. Malchiodi 의 표현 기반 접근, Bessel van der Kolk 의
+                신체 기반 트라우마 이론 등 국제적으로 검증된 틀 위에서,
+                편하게 풀어내려고 합니다. 내 경험을 이해하는 언어를 더해 드리는 것이 목적입니다.
               </p>
             </div>
           </div>
