@@ -87,12 +87,21 @@ export default function CharactersPage() {
               Why characters
             </p>
             <h2 className="text-2xl lg:text-3xl font-bold tracking-tight text-night">
-              미술치료를 더 편하게 만나는 작은 언어
+              ACT ART CENTER의 두 안내자를 소개합니다
             </h2>
-            <p className="mt-5 text-charcoal/75 leading-relaxed">
-              Actie와 Artty는 치료사를 대신하는 존재가 아닙니다. 미술치료의 안전한 과정, 재료와 이미지의 힘,
-              그리고 ACT(수용전념)의 보조적 관점을 조금 더 부드럽게 설명하기 위한 시각적 안내자입니다.
-            </p>
+            <div className="mt-5 space-y-4 text-charcoal/75 leading-relaxed">
+              <p>
+                Actie와 Artty는 미술치료의 여정을 조금 더 편안하게 만나도록 돕는 두 캐릭터입니다.
+                한 사람의 마음 안에는 조용히 느끼는 마음, 움직이고 선택하려는 마음처럼 서로 다른 결이 함께 있습니다.
+              </p>
+              <p>
+                융 심리학에서는 이런 내면의 서로 다른 에너지를 설명할 때 &ldquo;아니마&rdquo;와 &ldquo;아니무스&rdquo;라는 말을 사용합니다.
+                어렵게 생각하지 않으셔도 됩니다. 우리 안의 부드럽게 느끼는 힘과, 방향을 세우고 나아가려는 힘이 서로 대화하는 모습이라고 이해하시면 좋습니다.
+              </p>
+              <p>
+                Actie와 Artty는 그 두 마음의 움직임을 다정하게 보여 주며, 색과 이미지 안에서 나를 더 안전하게 만나도록 안내합니다.
+              </p>
+            </div>
           </div>
 
           <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
