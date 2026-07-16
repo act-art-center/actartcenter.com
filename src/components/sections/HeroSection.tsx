@@ -41,7 +41,7 @@ export function HeroSection() {
               aria-label="ACTIE와 ARTTY 상세 설명 페이지로 이동"
               className="inline-flex items-center px-7 py-3.5 bg-white/95 text-night font-semibold rounded-lg border-[1.5px] border-white/70 hover:bg-white transition-all duration-200 hover:scale-[1.02] shadow-[var(--shadow-sm)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-night"
             >
-              ACTIE &amp; ARTTY
+              ACTIE 액티 &amp; ARTTY 아티
             </Link>
           </div>
 
