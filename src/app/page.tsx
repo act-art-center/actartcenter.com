@@ -2,6 +2,7 @@ import { HeroSection } from "@/components/sections/HeroSection";
 import { TrustBar } from "@/components/sections/TrustBar";
 import { PhilosophySection } from "@/components/sections/PhilosophySection";
 import { ActApproach } from "@/components/sections/ActApproach";
+import { CharactersIntroSection } from "@/components/sections/CharactersIntroSection";
 import { ServicesSection } from "@/components/sections/ServicesSection";
 import { ProcessTimeline } from "@/components/sections/ProcessTimeline";
 import { TeamSection } from "@/components/sections/TeamSection";
@@ -25,6 +26,7 @@ export default function HomePage() {
       <HeroSection />
       <TrustBar />
       <PhilosophySection />
+      <CharactersIntroSection />
       <ActApproach />
       <ServicesSection />
       <ProcessTimeline />

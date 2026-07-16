@@ -30,7 +30,7 @@ export default function BlogPage() {
       {/* Hero */}
       <section className="relative min-h-[40vh] lg:min-h-[50vh] flex items-end overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1471897488648-5eae4ac6686b?w=1920&q=80"
+          src="/characters/acttie-reading.png"
           alt="블로그 — 미술치료 이야기"
           fill
           priority

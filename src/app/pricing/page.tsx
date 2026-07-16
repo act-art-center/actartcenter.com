@@ -239,7 +239,7 @@ export default function PricingPage() {
         title="ACT 미술치료 비용 안내"
         subtitle="투명한 비용 정책을 지향합니다. 첫 상담에서 상황에 맞는 프로그램과 비용을 안내드립니다."
         label="Pricing"
-        imageSrc="https://images.unsplash.com/photo-1456086272160-b28b0645b729?w=1920&q=80"
+        imageSrc="/characters/acttie-laptop.png"
         imageAlt="ACT ART CENTER 비용 안내"
       />
 

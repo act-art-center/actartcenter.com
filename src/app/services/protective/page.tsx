@@ -331,7 +331,7 @@ export default function ProtectivePage() {
             </div>
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=800&q=80"
+                src="/characters/artty-welcome.png"
                 alt="병원 환경에서 진행되는 미술 작업 — 종이와 수채 도구가 놓인 의료 공간"
                 fill
                 className="object-cover"

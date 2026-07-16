@@ -22,6 +22,7 @@ const PAGE_LAST_MODIFIED: Record<string, string> = {
   "/booking": "2026-04-15",
   "/contact": "2026-04-19",
   "/gallery": "2026-04-15",
+  "/characters": "2026-07-16",
   "/privacy": "2026-04-15",
 };
 
@@ -84,6 +85,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     entry("/booking", 0.7, "monthly"),
     entry("/contact", 0.6, "monthly"),
     entry("/gallery", 0.4, "monthly"),
+    entry("/characters", 0.4, "monthly"),
     // Legal
     entry("/privacy", 0.3, "yearly"),
   ];

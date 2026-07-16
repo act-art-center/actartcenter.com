@@ -277,7 +277,7 @@ export default function IndividualPage() {
             </div>
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=800&q=80"
+                src="/characters/acttie-reading.png"
                 alt="1:1 개인 미술치료 작업대 위의 수채 팔레트와 붓"
                 fill
                 className="object-cover"

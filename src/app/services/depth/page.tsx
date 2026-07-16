@@ -376,7 +376,7 @@ export default function DepthPage() {
             </div>
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=800&q=80"
+                src="/characters/artty-scenes.png"
                 alt="심층 탐색을 위한 스튜디오 — 오래 쌓인 작업물과 작업대"
                 fill
                 className="object-cover"

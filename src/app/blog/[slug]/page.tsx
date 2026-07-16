@@ -204,7 +204,7 @@ export default async function BlogPostPage({ params }: Props) {
             {/* Author box */}
             <div className="mt-16 p-6 bg-primary-50 rounded-xl flex items-start gap-5">
               <div className="w-14 h-14 rounded-full overflow-hidden shrink-0">
-                <Image src="/images/team-eunbyeol.jpg" alt="고은별" width={56} height={56} className="w-full h-full object-cover" />
+                <Image src="/characters/artty-welcome.png" alt="고은별" width={56} height={56} className="w-full h-full object-cover" />
               </div>
               <div>
                 <p className="text-night font-semibold">

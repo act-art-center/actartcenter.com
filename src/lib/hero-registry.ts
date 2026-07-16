@@ -42,7 +42,7 @@ export const HERO_REGISTRY: HeroSlot[] = [
     id: "team",
     page: "/team",
     imageUrl:
-      "https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?w=1920&q=80",
+      "/characters/twins-together.png",
     imageAlt: "ACT ART CENTER 전문가",
     category: "page",
   },
@@ -50,7 +50,7 @@ export const HERO_REGISTRY: HeroSlot[] = [
     id: "pricing",
     page: "/pricing",
     imageUrl:
-      "https://images.unsplash.com/photo-1456086272160-b28b0645b729?w=1920&q=80",
+      "/characters/acttie-laptop.png",
     imageAlt: "ACT ART CENTER 비용 안내",
     category: "page",
   },
@@ -58,7 +58,7 @@ export const HERO_REGISTRY: HeroSlot[] = [
     id: "act-approach",
     page: "/act-approach",
     imageUrl:
-      "https://images.unsplash.com/photo-1547891654-e66ed7ebb968?w=1920&q=80",
+      "/characters/twins-together.png",
     imageAlt: "ACT 수용전념치료 접근법",
     category: "page",
   },
@@ -66,7 +66,7 @@ export const HERO_REGISTRY: HeroSlot[] = [
     id: "faq",
     page: "/faq",
     imageUrl:
-      "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=1920&q=80",
+      "/characters/acttie-reading.png",
     imageAlt: "자주 묻는 질문",
     category: "page",
   },
@@ -74,7 +74,7 @@ export const HERO_REGISTRY: HeroSlot[] = [
     id: "blog-hub",
     page: "/blog",
     imageUrl:
-      "https://images.unsplash.com/photo-1471897488648-5eae4ac6686b?w=1920&q=80",
+      "/characters/acttie-reading.png",
     imageAlt: "블로그 — 미술치료 이야기",
     category: "page",
   },
@@ -82,7 +82,7 @@ export const HERO_REGISTRY: HeroSlot[] = [
     id: "services-hub",
     page: "/services",
     imageUrl:
-      "https://images.unsplash.com/photo-1544967082-d9d25d867d66?w=1920&q=80",
+      "/characters/twins-together.png",
     imageAlt: "서비스 안내",
     category: "page",
   },
@@ -92,7 +92,7 @@ export const HERO_REGISTRY: HeroSlot[] = [
     id: "home-philosophy",
     page: "/#philosophy",
     imageUrl:
-      "https://images.unsplash.com/photo-1753187991848-8a7e17d232a8?w=800&q=80",
+      "/characters/twins-together.png",
     imageAlt: "자연광이 드는 따뜻한 아틀리에 공간",
     category: "section",
   },
@@ -102,7 +102,7 @@ export const HERO_REGISTRY: HeroSlot[] = [
     id: "blog-art-therapy-science",
     page: "/blog/art-therapy-science",
     imageUrl:
-      "https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=600&q=80",
+      "/characters/artty-scenes.png",
     imageAlt: "미술치료 효과의 과학적 근거",
     category: "blog",
   },
@@ -110,7 +110,7 @@ export const HERO_REGISTRY: HeroSlot[] = [
     id: "blog-act-6-processes",
     page: "/blog/act-6-processes",
     imageUrl:
-      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80",
+      "/characters/twins-together.png",
     imageAlt: "ACT의 6가지 핵심 프로세스",
     category: "blog",
   },
@@ -118,7 +118,7 @@ export const HERO_REGISTRY: HeroSlot[] = [
     id: "blog-anxiety-art-therapy",
     page: "/blog/anxiety-art-therapy",
     imageUrl:
-      "https://images.unsplash.com/photo-1743657166982-9e3ff272122b?w=600&q=80",
+      "/characters/artty-thoughtful.png",
     imageAlt: "불안을 그림으로 표현하기",
     category: "blog",
   },
@@ -126,7 +126,7 @@ export const HERO_REGISTRY: HeroSlot[] = [
     id: "blog-mindfulness-drawing",
     page: "/blog/mindfulness-drawing",
     imageUrl:
-      "https://images.unsplash.com/photo-1758521232721-da2be69f0b64?w=600&q=80",
+      "/characters/acttie-reading.png",
     imageAlt: "마음챙김 드로잉: 현재에 머무르기",
     category: "blog",
   },
@@ -134,7 +134,7 @@ export const HERO_REGISTRY: HeroSlot[] = [
     id: "blog-trauma-art-expression",
     page: "/blog/trauma-art-expression",
     imageUrl:
-      "https://images.unsplash.com/photo-1572947650440-e8a97ef053b2?w=600&q=80",
+      "/characters/artty-paint.png",
     imageAlt: "트라우마와 미술 표현의 관계",
     category: "blog",
   },
@@ -142,7 +142,7 @@ export const HERO_REGISTRY: HeroSlot[] = [
     id: "blog-values-vision-board",
     page: "/blog/values-vision-board",
     imageUrl:
-      "https://images.unsplash.com/photo-1743385779436-a6950c168fff?w=600&q=80",
+      "/characters/twins-together.png",
     imageAlt: "가치 탐색: 비전 보드 만들기",
     category: "blog",
   },

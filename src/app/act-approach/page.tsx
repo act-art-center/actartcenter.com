@@ -143,7 +143,7 @@ export default function ActApproachPage() {
         title="ACT(수용전념) 미술치료"
         subtitle="ACT ART CENTER의 중심은 미술치료입니다. 재료와 이미지, 창작 과정 안에서 감정과 생각을 안전하게 바라보고, 필요한 경우 ACT(수용전념)의 관점을 보조적으로 통합합니다."
         label="Art Therapy with ACT"
-        imageSrc="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=1920&q=80"
+        imageSrc="/characters/twins-together.png"
         imageAlt="캔버스와 이젤이 있는 미술치료 작업 공간"
       />
 

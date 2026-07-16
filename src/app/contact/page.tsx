@@ -57,7 +57,7 @@ const contactSchema = {
       name: SITE_NAME,
       alternateName: "ACT ART CENTER 강남센터",
       url: SITE_URL,
-      image: `${SITE_URL}/images/office-hero.jpg`,
+      image: `${SITE_URL}/characters/artty-welcome.png`,
       address: {
         "@type": "PostalAddress",
         streetAddress: "강남대로 305, 현대렉시온 2518호",
@@ -141,7 +141,7 @@ export default function ContactPage() {
         title="오시는 길·연락처 — ACT ART CENTER 강남센터"
         subtitle="편한 방법으로 연락해 주세요. 모든 상담은 사전 예약제로 운영되며, Walk-in 상담은 불가합니다."
         label="Contact"
-        imageSrc="/images/office-hero.jpg"
+        imageSrc="/characters/artty-welcome.png"
         imageAlt="ACT ART CENTER 강남센터 내부 — 대형 테이블과 채광 좋은 상담 공간"
       />
 

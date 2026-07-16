@@ -285,7 +285,7 @@ export default function ChildPage() {
             </div>
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1596464716127-f2a82984de30?w=800&q=80"
+                src="/characters/artty-paint.png"
                 alt="아동 미술치료 작업대 위의 크레용과 종이"
                 fill
                 className="object-cover"

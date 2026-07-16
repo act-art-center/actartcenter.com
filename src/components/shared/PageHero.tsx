@@ -14,6 +14,8 @@ export function PageHero({
   imageSrc: string;
   imageAlt: string;
 }) {
+  const isCharacterImage = imageSrc.startsWith("/characters/");
+
   return (
     <section className="relative min-h-[40vh] lg:min-h-[50vh] flex items-end overflow-hidden">
       {/* Background image */}
@@ -22,7 +24,7 @@ export function PageHero({
         alt={imageAlt}
         fill
         priority
-        className="object-cover"
+        className={isCharacterImage ? "object-contain bg-cream p-8 lg:p-12" : "object-cover"}
         sizes="100vw"
       />
       {/* Overlay gradient */}

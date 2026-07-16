@@ -22,7 +22,7 @@ export function TeamSection() {
             {/* Profile photo */}
             <div className="w-40 h-52 mx-auto rounded-2xl overflow-hidden shadow-[var(--shadow-md)]">
               <Image
-                src="/images/team-eunbyeol.jpg"
+                src="/characters/artty-welcome.png"
                 alt="고은별 대표"
                 width={160}
                 height={208}

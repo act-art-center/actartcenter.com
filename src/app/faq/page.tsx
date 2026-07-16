@@ -90,7 +90,7 @@ export default function FaqPage() {
       {/* Hero */}
       <section className="relative min-h-[40vh] lg:min-h-[50vh] flex items-end overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=1920&q=80"
+          src="/characters/acttie-reading.png"
           alt="자주 묻는 질문"
           fill
           priority

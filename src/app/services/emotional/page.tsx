@@ -329,7 +329,7 @@ export default function EmotionalPage() {
             </div>
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1499892477393-f675706cbe6e?w=800&q=80"
+                src="/characters/artty-thoughtful.png"
                 alt="정서·트라우마 중심 미술심리치료 — 수채 매체와 작업하는 손"
                 fill
                 className="object-cover"
