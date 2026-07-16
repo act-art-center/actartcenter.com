@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 /**
  * CharacterIllustration
  * ---------------------
- * Acttie & Artty mascot renderer.
+ * ACTIE & ARTTY mascot renderer.
  *
  * - Uses next/image with fixed intrinsic width/height; caller controls display size
  *   via `className` (e.g. `w-48 md:w-64`).

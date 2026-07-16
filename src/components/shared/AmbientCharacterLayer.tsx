@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 /**
  * AmbientCharacterLayer
  * ---------------------
- * Section-scoped background layer that drops 1–3 Acttie/Artty mascots behind
+ * Section-scoped background layer that drops 1–3 ACTIE/ARTTY mascots behind
  * the section content. Each mascot runs CharacterIllustration's "ambient"
  * preset (slow drift + breathing + gentle rotate) so the page feels like it is
  * quietly breathing rather than displaying a static illustration.

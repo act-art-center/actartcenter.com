@@ -10,7 +10,7 @@ export function CharactersIntroSection() {
         <div className="grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] gap-10 lg:gap-16 items-center">
           <div>
             <p className="text-xs font-semibold tracking-widest uppercase text-primary-500 mb-3">
-              Actie & Artty
+              ACTIE & ARTTY
             </p>
             <h2 className="text-2xl lg:text-3xl font-bold tracking-tight text-night">
               미술치료 여정에 함께하는 두 안내자
@@ -27,7 +27,7 @@ export function CharactersIntroSection() {
                 href="/characters"
                 className="inline-flex items-center rounded-full bg-primary-500 px-6 py-3 text-sm font-semibold text-white transition hover:bg-primary-600"
               >
-                Actie와 Artty 자세히 보기
+                ACTIE와 ARTTY 자세히 보기
               </Link>
               <Link
                 href="/gallery"

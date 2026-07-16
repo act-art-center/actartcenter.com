@@ -7,35 +7,35 @@ import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Actie와 Artty | ACT ART CENTER 캐릭터 안내",
+  title: "ACTIE와 ARTTY | ACT ART CENTER 캐릭터 안내",
   description:
-    "ACT ART CENTER의 미술치료 철학을 친근하게 전하는 두 안내자 Actie와 Artty를 소개합니다. 감정·가치 탐색과 예술적 표현을 돕는 캐릭터입니다.",
+    "ACT ART CENTER의 미술치료 철학을 친근하게 전하는 두 안내자 ACTIE와 ARTTY를 소개합니다. 감정·가치 탐색과 예술적 표현을 돕는 캐릭터입니다.",
   alternates: { canonical: `${SITE_URL}/characters` },
   openGraph: {
     type: "website",
-    title: "Actie와 Artty | ACT ART CENTER",
-    description: "미술치료 여정에 함께하는 두 안내자 Actie와 Artty를 소개합니다.",
+    title: "ACTIE와 ARTTY | ACT ART CENTER",
+    description: "미술치료 여정에 함께하는 두 안내자 ACTIE와 ARTTY를 소개합니다.",
     url: `${SITE_URL}/characters`,
-    images: [{ url: "/characters/twins-together.png", width: 1600, height: 900, alt: "Actie와 Artty" }],
+    images: [{ url: "/characters/twins-together.png", width: 1600, height: 900, alt: "ACTIE와 ARTTY" }],
   },
 };
 
 const characters = [
   {
-    name: "Actie",
+    name: "ACTIE",
     image: "/characters/acttie-reading.png",
-    alt: "책을 읽으며 생각을 정리하는 Actie",
+    alt: "책을 읽으며 생각을 정리하는 ACTIE",
     title: "감정과 가치의 방향을 조용히 살피는 안내자",
     body:
-      "Actie는 미술치료 과정에서 떠오르는 감정과 생각을 천천히 바라보도록 돕는 캐릭터입니다. ACT(수용전념)의 관점이 필요할 때, 지금의 마음을 밀어내지 않고 내가 지키고 싶은 방향을 살피는 질문을 건넵니다.",
+      "ACTIE는 미술치료 과정에서 떠오르는 감정과 생각을 천천히 바라보도록 돕는 캐릭터입니다. ACT(수용전념)의 관점이 필요할 때, 지금의 마음을 밀어내지 않고 내가 지키고 싶은 방향을 살피는 질문을 건넵니다.",
   },
   {
-    name: "Artty",
+    name: "ARTTY",
     image: "/characters/artty-paint.png",
-    alt: "큰 붓을 들고 있는 Artty",
+    alt: "큰 붓을 들고 있는 ARTTY",
     title: "색과 이미지로 마음의 표현을 돕는 안내자",
     body:
-      "Artty는 말로 정리하기 어려운 경험을 색, 선, 재료, 이미지로 만나도록 돕는 캐릭터입니다. 작품의 완성도보다 표현의 과정과 안전한 관계를 소중히 여기는 ACT ART CENTER의 미술치료 철학을 전합니다.",
+      "ARTTY는 말로 정리하기 어려운 경험을 색, 선, 재료, 이미지로 만나도록 돕는 캐릭터입니다. 작품의 완성도보다 표현의 과정과 안전한 관계를 소중히 여기는 ACT ART CENTER의 미술치료 철학을 전합니다.",
   },
 ];
 
@@ -43,7 +43,7 @@ const moments = [
   {
     title: "처음 방문하는 분께",
     image: "/characters/artty-welcome.png",
-    body: "낯선 치료실에 들어오는 마음이 조금 편안해지도록, Actie와 Artty는 안내문과 페이지 곳곳에서 따뜻한 첫인사를 건넵니다.",
+    body: "낯선 치료실에 들어오는 마음이 조금 편안해지도록, ACTIE와 ARTTY는 안내문과 페이지 곳곳에서 따뜻한 첫인사를 건넵니다.",
   },
   {
     title: "온라인 미술치료를 준비할 때",
@@ -53,7 +53,7 @@ const moments = [
   {
     title: "표현이 막히는 순간에",
     image: "/characters/artty-thoughtful.png",
-    body: "그림이 바로 나오지 않는 시간도 미술치료의 일부입니다. Artty는 멈춤과 망설임까지 안전하게 바라보는 태도를 상징합니다.",
+    body: "그림이 바로 나오지 않는 시간도 미술치료의 일부입니다. ARTTY는 멈춤과 망설임까지 안전하게 바라보는 태도를 상징합니다.",
   },
 ];
 
@@ -61,11 +61,11 @@ export default function CharactersPage() {
   return (
     <>
       <PageHero
-        title="Actie와 Artty"
-        subtitle="ACT ART CENTER의 미술치료 여정에 함께하는 두 안내자입니다. 감정과 가치를 살피는 Actie, 색과 이미지로 표현을 돕는 Artty를 소개합니다."
+        title="ACTIE와 ARTTY"
+        subtitle="ACT ART CENTER의 미술치료 여정에 함께하는 두 안내자입니다. 감정과 가치를 살피는 ACTIE, 색과 이미지로 표현을 돕는 ARTTY를 소개합니다."
         label="ACT ART CENTER Characters"
         imageSrc="/characters/twins-together.png"
-        imageAlt="Actie와 Artty가 함께 서 있는 일러스트"
+        imageAlt="ACTIE와 ARTTY가 함께 서 있는 일러스트"
       />
 
       <div className="bg-paper pt-6 pb-2">
@@ -73,7 +73,7 @@ export default function CharactersPage() {
           <Breadcrumbs
             items={[
               { name: "홈", href: "/" },
-              { name: "Actie와 Artty", href: "/characters" },
+              { name: "ACTIE와 ARTTY", href: "/characters" },
             ]}
             emitJsonLd={false}
           />
@@ -91,7 +91,7 @@ export default function CharactersPage() {
             </h2>
             <div className="mt-5 space-y-4 text-charcoal/75 leading-relaxed">
               <p>
-                Actie와 Artty는 미술치료의 여정을 조금 더 편안하게 만나도록 돕는 두 캐릭터입니다.
+                ACTIE와 ARTTY는 미술치료의 여정을 조금 더 편안하게 만나도록 돕는 두 캐릭터입니다.
                 한 사람의 마음 안에는 조용히 느끼는 마음, 움직이고 선택하려는 마음처럼 서로 다른 결이 함께 있습니다.
               </p>
               <p>
@@ -99,7 +99,7 @@ export default function CharactersPage() {
                 어렵게 생각하지 않으셔도 됩니다. 우리 안의 부드럽게 느끼는 힘과, 방향을 세우고 나아가려는 힘이 서로 대화하는 모습이라고 이해하시면 좋습니다.
               </p>
               <p>
-                Actie와 Artty는 그 두 마음의 움직임을 다정하게 보여 주며, 색과 이미지 안에서 나를 더 안전하게 만나도록 안내합니다.
+                ACTIE와 ARTTY는 그 두 마음의 움직임을 다정하게 보여 주며, 색과 이미지 안에서 나를 더 안전하게 만나도록 안내합니다.
               </p>
             </div>
           </div>
