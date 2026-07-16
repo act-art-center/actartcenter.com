@@ -95,14 +95,12 @@ export default function CharactersPage() {
                 한 사람의 마음 안에는 조용히 느끼는 마음, 움직이고 선택하려는 마음처럼 서로 다른 결이 함께 있습니다.
               </p>
               <p>
-                융(C. G. Jung)은 분석심리학에서 &ldquo;아니마(anima)&rdquo;와 &ldquo;아니무스(animus)&rdquo;를 의식과 무의식 사이를 이어 주는 내면의 상징으로 설명했습니다.
-                고전적 이론에서는 아니마를 남성의 무의식에 나타나는 여성적 심상, 아니무스를 여성의 무의식에 나타나는 남성적 심상으로 보았습니다.
-                이 개념은 사람이 자기 안의 익숙하지 않은 정서, 관계성, 판단, 방향성을 만나며 더 넓은 자기 이해로 나아가는 과정과 연결됩니다.
+                융(C. G. Jung)은 분석심리학에서 마음의 깊은 층을 상징과 이미지의 언어로 설명했습니다.
+                ACTIE와 ARTTY는 그 학문적 배경을 바탕으로, 내면의 여러 결이 서로 만나고 조화를 이루는 모습을 미술치료적으로 표현한 안내자입니다.
               </p>
               <p>
-                현대 임상과 교육적 설명에서는 이를 고정된 성역할로 단정하지 않고, 한 사람 안에서 서로를 보완하는 심리적 기능과 상징 언어로 조심스럽게 다룹니다.
-                ACTIE와 ARTTY가 남자와 여자 캐릭터로 함께 서 있는 이유도 성별을 나누려는 뜻이 아니라,
-                느끼고 품는 힘과 구분하고 나아가는 힘이 서로 대화하며 균형을 이루는 모습을 미술치료적으로 보여 주기 위해서입니다.
+                말로 다 설명하기 어려운 마음도 그림과 상징 안에서는 조금 더 부드럽게 드러날 수 있습니다.
+                그래서 두 캐릭터는 정답을 말해 주는 존재가 아니라, 내담자가 자신의 속도대로 느끼고 바라보고 선택해 가는 과정을 곁에서 비추는 이미지로 사용됩니다.
               </p>
             </div>
           </div>
@@ -143,37 +141,6 @@ export default function CharactersPage() {
         </Container>
       </SectionWrapper>
 
-      <SectionWrapper bg="paper" className="pt-10 lg:pt-12">
-        <Container>
-          <div className="max-w-4xl mx-auto rounded-2xl bg-white p-6 lg:p-8" style={{ border: "1px solid rgba(196, 191, 183, 0.18)" }}>
-            <p className="text-xs font-semibold tracking-widest uppercase text-primary-500 mb-3">
-              References
-            </p>
-            <h2 className="text-night text-xl lg:text-2xl font-bold tracking-tight">
-              참고문헌
-            </h2>
-            <ul className="mt-5 space-y-3 text-charcoal/70 text-sm leading-relaxed">
-              <li>
-                Jung, C. G. (1959/1968). <em>The Archetypes and the Collective Unconscious</em>
-                (Collected Works of C. G. Jung, Vol. 9, Part 1). Princeton University Press.
-              </li>
-              <li>
-                Jung, C. G. (1951/1969). <em>Aion: Researches into the Phenomenology of the Self</em>
-                (Collected Works of C. G. Jung, Vol. 9, Part 2). Princeton University Press.
-                특히 “The Syzygy: Anima and Animus” 장을 참고했습니다.
-              </li>
-              <li>
-                Jung, C. G. (1953/1966). <em>Two Essays on Analytical Psychology</em>
-                (Collected Works of C. G. Jung, Vol. 7). Princeton University Press.
-              </li>
-              <li>
-                McKenzie, S. (2006). Queering gender: anima/animus and the paradigm of emergence.
-                <em>Journal of Analytical Psychology, 51</em>(3), 401–421. https://doi.org/10.1111/j.0021-8774.2006.00599.x
-              </li>
-            </ul>
-          </div>
-        </Container>
-      </SectionWrapper>
 
     </>
   );
