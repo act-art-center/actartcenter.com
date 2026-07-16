@@ -95,7 +95,7 @@ const actApproachSchema = {
       "@type": "BreadcrumbList",
       itemListElement: [
         { "@type": "ListItem", position: 1, name: "홈", item: SITE_URL },
-        { "@type": "ListItem", position: 2, name: "ACT란?", item: `${SITE_URL}/act-approach` },
+        { "@type": "ListItem", position: 2, name: "ACT 미술치료란?", item: `${SITE_URL}/act-approach` },
       ],
     },
     {
@@ -152,7 +152,7 @@ export default function ActApproachPage() {
           <Breadcrumbs
             items={[
               { name: "홈", href: "/" },
-              { name: "ACT란?", href: "/act-approach" },
+              { name: "ACT 미술치료란?", href: "/act-approach" },
             ]}
             emitJsonLd={false}
           />

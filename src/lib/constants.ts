@@ -27,7 +27,7 @@ export const CONTACT = {
 
 export const NAV_ITEMS = [
   { label: "서비스", href: "/services" },
-  { label: "ACT란?", href: "/act-approach" },
+  { label: "ACT 미술치료란?", href: "/act-approach" },
   { label: "팀소개", href: "/team" },
   { label: "비용", href: "/pricing" },
   { label: "블로그", href: "/blog" },
