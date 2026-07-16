@@ -17,8 +17,8 @@ export function HeroSection() {
           </h1>
 
           <p className="mt-6 text-white/80 max-w-md text-lg leading-relaxed">
-            수용전념치료(ACT)의 개념을 내포한 미술심리치료 전문 연구·임상 기관.
-            언어 이전의 감정과 복합적인 심리 경험을 예술적 표현을 통해 탐색합니다.
+            미술치료를 중심으로 ACT(수용전념)의 관점을 보조적으로 통합하는 전문 연구·임상 기관입니다.
+            말로 정리하기 어려운 감정과 복합적인 심리 경험을 예술적 표현 안에서 편하게 탐색합니다.
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">
@@ -31,10 +31,10 @@ export function HeroSection() {
             </Link>
             <Link
               href="/act-approach"
-              aria-label="ACT 수용전념치료 자세히 보기"
+              aria-label="ACT(수용전념) 미술치료 자세히 보기"
               className="inline-flex items-center px-7 py-3.5 text-white font-semibold rounded-lg border-[1.5px] border-white/30 hover:bg-white/10 transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-night"
             >
-              ACT 수용전념치료 자세히 보기
+              ACT(수용전념) 미술치료 자세히 보기
             </Link>
           </div>
 

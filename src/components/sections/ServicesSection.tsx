@@ -64,7 +64,7 @@ export function ServicesSection() {
               href="/act-approach"
               className="text-sm text-secondary-500 font-medium hover:underline underline-offset-4"
             >
-              ACT 수용전념치료 자세히 보기 →
+              ACT(수용전념) 미술치료 자세히 보기 →
             </Link>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
