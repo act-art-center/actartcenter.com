@@ -9,42 +9,41 @@ import { ACT_PROCESSES, ACT_EVIDENCE_REFS } from "@/lib/constants";
 import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "수용전념치료(ACT)란? ACT 미술치료 6가지 핵심 프로세스",
+  title: "ACT(수용전념) 미술치료 — 미술치료 안에서 만나는 심리적 유연성",
   description:
-    "수용전념치료(ACT)는 심리적 유연성을 키우는 3세대 인지행동치료입니다. 수용·탈융합·현재 순간·맥락으로서의 자기·가치·전념 행동 6가지 핵심 프로세스를 미술치료와 통합해 근거 기반으로 안내합니다.",
+    "ACT ART CENTER는 미술치료를 중심에 두고 ACT(수용전념)의 관점을 보조적으로 통합합니다. 재료·이미지·표현 과정 안에서 감정, 생각, 가치 방향을 안전하게 탐색합니다.",
   keywords: [
-    "수용전념치료",
-    "ACT 치료",
+    "미술치료",
     "ACT 미술치료",
+    "수용전념 미술치료",
+    "미술심리치료",
     "심리적 유연성",
-    "3세대 인지행동치료",
+    "정서 표현 미술치료",
     "ACT 6 프로세스",
     "수용전념치료 기법",
-    "수용전념치료 육각형",
-    "수용전념치료 마음챙김",
     "Hexaflex",
     "Steven Hayes",
   ],
   alternates: { canonical: `${SITE_URL}/act-approach` },
   openGraph: {
     type: "article",
-    title: "수용전념치료(ACT)란? 6가지 핵심 프로세스 × 미술치료",
+    title: "ACT(수용전념) 미술치료 — 미술치료 안에서 만나는 6가지 과정",
     description:
-      "ACT 6 프로세스(수용/탈융합/현재/자기/가치/전념)와 미술치료의 통합 접근. 실제 연구 기반 해설.",
+      "미술치료의 재료와 표현 과정을 중심으로 ACT 6 프로세스를 보조적으로 통합하는 접근을 안내합니다.",
     url: `${SITE_URL}/act-approach`,
     images: [
       {
         url: "/og/act-approach.png",
         width: 1200,
         height: 630,
-        alt: "ACT 수용전념치료 6가지 핵심 프로세스",
+        alt: "ACT(수용전념) 미술치료 작업 과정",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "수용전념치료(ACT)란? ACT 미술치료 6가지 핵심",
-    description: "3세대 CBT인 수용전념치료와 미술치료의 통합 가이드.",
+    title: "ACT(수용전념) 미술치료",
+    description: "미술치료를 중심으로 ACT 관점을 보조적으로 통합하는 안내.",
     images: ["/og/act-approach.png"],
   },
 };
@@ -65,11 +64,11 @@ const actApproachSchema = {
     {
       "@type": "Article",
       "@id": `${SITE_URL}/act-approach#article`,
-      headline: "수용전념치료(ACT)란? 미술치료와 만나는 6가지 핵심 프로세스",
+      headline: "ACT(수용전념) 미술치료 — 미술치료 안에서 만나는 심리적 유연성",
       description:
-        "Hayes·Strosahl·Wilson 이 정립한 수용전념치료(ACT)의 6가지 핵심 프로세스(수용·탈융합·현재 순간·맥락으로서의 자기·가치·전념 행동)를 미술치료와 통합해 해설합니다. ACBS·APA Division 12·RFT 등 국제 학문적 토대, 내담자가 ACT 에 끌릴 수 있는 다섯 가지 이유, 자기 인식 질문까지 함께 안내합니다.",
+        "ACT ART CENTER는 미술치료를 중심으로 ACT(수용전념)의 6가지 과정을 보조적으로 통합합니다. 재료·이미지·창작 과정 안에서 감정, 생각, 가치 방향을 안전하게 탐색하도록 안내합니다.",
       articleBody:
-        "수용전념치료(ACT)는 Steven C. Hayes, Kirk D. Strosahl, Kelly G. Wilson 이 함께 정립한 3세대 인지행동치료입니다. 관계틀이론(RFT) 을 이론적 토대로 하며, 수용·탈융합·현재 순간 접촉·맥락으로서의 자기·가치·전념 행동 이라는 6가지 핵심 프로세스를 통해 심리적 유연성을 높이는 것을 목표로 합니다. 국제적으로는 Association for Contextual Behavioral Science(ACBS) 가 60여 개 국 회원이 참여하는 학술 커뮤니티로 운영되고 있으며, APA Division 12(Society of Clinical Psychology) 의 경험적으로 지지되는 치료(Empirically Supported Treatments) 목록에도 ACT 가 등재되어 있습니다. University of Nevada Reno, Ghent University, Bond University 등 여러 대학 연구실이 ACT 와 관계틀이론 연구를 지속하고 있고, Steven Hayes 의 『Get Out of Your Mind and Into Your Life』(2005) 와 『A Liberated Mind』(2019) 는 세계 여러 언어로 번역되어 대중에게 전해졌습니다. 한국에서도 ACBS 의 한국 네트워크와 ACT 연구·임상 커뮤니티가 형성되는 단계에 있습니다. 미술치료는 언어 이전의 감각·이미지 경로를 열어 주기 때문에 이 6개 과정을 경험적으로 탐색하기에 적합한 매체입니다. 불안·우울·만성 통증·번아웃·트라우마 등에서의 유효성은 다수의 메타분석(A-Tjak et al., 2015; Gloster et al., 2020 등)에서 보고되어 왔으나, 모든 사례에 동일하게 작동하는 만병통치는 아니며 개별 상담과 임상 판단이 필요합니다. 본 페이지는 ACT 의 국제적 위상, 내담자가 ACT 에 끌릴 수 있는 다섯 가지 이유, 그리고 \"지금 이런 상태\" 라는 자기 인식 지점을 함께 안내합니다.",
+        "ACT ART CENTER의 중심은 미술치료입니다. 종이, 색, 선, 점토, 콜라주 같은 재료와 창작 과정은 말로 정리하기 어려운 감정과 몸의 반응을 안전하게 바라볼 수 있는 자리를 만듭니다. ACT(수용전념)는 이 미술치료 과정 안에서 보조적으로 통합되는 임상 틀입니다. 수용·탈융합·현재 순간 접촉·맥락으로서의 자기·가치·전념 행동이라는 6가지 과정은 작품을 완성하는 기준이 아니라, 표현 과정 안에서 감정과 생각을 관찰하고 삶의 방향을 확인하는 질문으로 활용됩니다. 수용전념치료(ACT)는 Steven C. Hayes, Kirk D. Strosahl, Kelly G. Wilson 이 함께 정립한 3세대 인지행동치료이며, ACBS·APA Division 12 등 국제 학문적 토대와 다수의 임상 연구를 통해 알려져 있습니다. 본 페이지는 ACT 자체를 앞세우기보다, 미술치료 장면에서 ACT 관점이 어떻게 안전한 표현, 정서 조절, 가치 탐색을 돕는지 안내합니다.",
       url: `${SITE_URL}/act-approach`,
       image: `${SITE_URL}/og/act-approach.png`,
       inLanguage: "ko-KR",
@@ -103,7 +102,7 @@ const actApproachSchema = {
       "@type": "HowTo",
       name: "ACT 6 프로세스로 심리적 유연성 키우기",
       description:
-        "ACT 의 6가지 핵심 프로세스를 미술 활동으로 경험하는 가이드. 각 단계는 Hexaflex 모델의 한 축을 시각적·감각적으로 경험할 수 있도록 구성됩니다.",
+        "미술치료 과정 안에서 ACT의 6가지 관점을 미술 활동으로 경험하는 가이드입니다. 각 단계는 Hexaflex 모델의 한 축을 시각적·감각적으로 경험할 수 있도록 구성됩니다.",
       step: ACT_PROCESSES.map((p) => ({
         "@type": "HowToStep",
         name: `${p.title} (${p.titleEn})`,
@@ -141,9 +140,9 @@ export default function ActApproachPage() {
     <>
       <JsonLd data={actApproachSchema} />
       <PageHero
-        title="수용전념치료(ACT)란? 미술치료와 만나는 6가지 핵심 프로세스"
-        subtitle="심리적 유연성을 높이는 것을 목표로 하는 3세대 인지행동치료. 고통스러운 생각과 감정을 있는 그대로 수용하면서 가치를 향해 행동하는 법을 배웁니다."
-        label="Acceptance and Commitment Therapy"
+        title="ACT(수용전념) 미술치료"
+        subtitle="ACT ART CENTER의 중심은 미술치료입니다. 재료와 이미지, 창작 과정 안에서 감정과 생각을 안전하게 바라보고, 필요한 경우 ACT(수용전념)의 관점을 보조적으로 통합합니다."
+        label="Art Therapy with ACT"
         imageSrc="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=1920&q=80"
         imageAlt="캔버스와 이젤이 있는 미술치료 작업 공간"
       />
@@ -160,32 +159,32 @@ export default function ActApproachPage() {
         </Container>
       </div>
 
-      {/* Intro — ACT 의 기원과 맥락 */}
+      {/* Intro — 미술치료 중심의 ACT 통합 */}
       <SectionWrapper bg="paper">
         <Container>
           <div className="max-w-3xl mx-auto">
             <span className="inline-block px-4 py-2 bg-primary-50 text-primary-600 text-xs font-semibold rounded-full mb-5">
-              ACT 개요
+              미술치료 중심 통합 접근
             </span>
             <h2 className="text-2xl lg:text-3xl font-bold tracking-tight">
-              고통을 없애는 대신, 고통과 함께 사는 법을 배웁니다
+              먼저 미술치료, 그 안에서 ACT를 만납니다
             </h2>
             <div className="mt-6 space-y-5 text-charcoal/80 leading-[var(--leading-normal)]">
               <p>
-                수용전념치료(Acceptance and Commitment Therapy, ACT) 는 Steven C. Hayes,
-                Kirk D. Strosahl, Kelly G. Wilson 이 함께 정립한 3세대 인지행동치료입니다.
-                기존 CBT 가 &ldquo;잘못된 생각을 합리적 생각으로 바꾸는 것&rdquo; 을 중요하게 여겼다면,
-                ACT 는 &ldquo;생각과 나 사이에 공간을 만들어 가치 방향으로 움직이는 힘&rdquo; 을 키우는 데 초점을 둡니다.
+                ACT ART CENTER의 중심은 미술치료입니다. 종이, 색, 선, 점토, 콜라주 같은 재료와
+                창작 과정은 말로 정리하기 어려운 감정과 몸의 반응을 안전하게 바라볼 수 있는 자리를 만듭니다.
+                작품의 완성도보다 표현의 과정, 재료를 선택하는 순간, 멈춤과 다시 시작하는 흐름을 세심하게 살핍니다.
               </p>
               <p>
-                ACT 가 가정하는 전제는 단순합니다. 불안·우울·분노 같은 감정을 없애려 애쓸수록 그 감정에 더
-                오래 붙들리게 된다는 것입니다. 대신 ACT 는 &ldquo;그 감정이 있어도 내가 소중하게 여기는
-                방향으로 한 걸음 옮길 수 있다&rdquo; 라는 심리적 유연성을 훈련합니다.
+                ACT(수용전념)는 이 미술치료 과정 안에서 보조적으로 통합됩니다. 떠오르는 감정과 생각을
+                종이 위에 잠시 올려두고, 그 감정이 있는 상태에서도 내가 지키고 싶은 방향을 살펴보는 방식입니다.
+                수용·탈융합·현재 순간·가치·전념 행동 같은 ACT의 개념은 미술 작업을 설명하기 위한 틀이자,
+                표현을 더 안전하게 붙들어 주는 질문으로 사용됩니다.
               </p>
               <p className="text-charcoal/75">
-                본 센터는 차의과학대학교에서 미술치료 석사를 마치고 박사 과정을 이수 중인 원장이 ACT 의
-                6 프로세스를 미술치료 임상에 통합해 진행합니다. 학술적 근거를 기반으로 하되, 내담자가
-                자신의 언어로 이해할 수 있도록 일상의 비유와 감각적 작업을 함께 활용합니다.
+                세션에서는 미술치료의 창작 과정과 치료적 관계를 중심에 두고,
+                필요한 만큼 ACT의 관점을 연결합니다. 학술적 근거를 바탕으로 하되,
+                내담자가 자신의 속도와 감각으로 이해할 수 있도록 재료, 이미지, 일상의 언어를 함께 활용합니다.
               </p>
             </div>
           </div>
@@ -199,11 +198,11 @@ export default function ActApproachPage() {
             <span className="inline-block px-4 py-2 bg-white text-primary-600 text-xs font-semibold rounded-full mb-5">
               Hexaflex · 6 Core Processes
             </span>
-            <h2 className="text-2xl lg:text-3xl font-bold tracking-tight">ACT 의 6가지 핵심 프로세스</h2>
+            <h2 className="text-2xl lg:text-3xl font-bold tracking-tight">미술치료 안에서 경험하는 ACT 6가지 과정</h2>
             <p className="mt-4 text-charcoal/70 max-w-[52ch] mx-auto">
-              여섯 프로세스는 유기적으로 연결되어 &ldquo;심리적 유연성&rdquo; 이라는 하나의 능력을 만듭니다.
-              각 프로세스에는 반대편의 &ldquo;경직성 극 (inflexibility pole)&rdquo; 이 있으며, 세션은 이 축을
-              따라 유연성 쪽으로 이동하는 여정입니다.
+              미술치료 세션에서는 재료를 고르고, 감정을 이미지로 놓아 보고, 작품을 바라보는 과정 안에서
+              심리적 유연성을 조금씩 경험합니다. ACT의 여섯 과정은 미술 작업을 이끄는 보조 질문으로
+              사용되며, 중심은 언제나 표현 과정과 치료적 관계에 있습니다.
             </p>
           </div>
 
@@ -330,11 +329,11 @@ export default function ActApproachPage() {
                 과학적 근거
               </span>
               <h2 className="text-2xl lg:text-3xl font-bold tracking-tight">
-                ACT 의 학문적 토대와 근거 기반 실천
+                미술치료에 보조적으로 통합하는 ACT 근거
               </h2>
               <p className="mt-4 text-charcoal/70 max-w-[56ch] mx-auto">
-                ACT 는 철학·이론·임상 근거가 누적된 접근 모델입니다. 특정 유행이 아닌, 국제 학회와
-                다수의 메타분석에 의해 지속적으로 검증되어 온 접근입니다.
+                ACT ART CENTER는 미술치료의 창작 과정과 치료적 관계를 중심에 두고,
+                ACT의 학문적 근거를 필요한 만큼 보조적으로 연결합니다.
               </p>
             </div>
 
@@ -361,7 +360,7 @@ export default function ActApproachPage() {
         </Container>
       </SectionWrapper>
 
-      {/* Section A — 세계가 이미 쓰고 있는 접근 (국제적 위상) */}
+      {/* Section A — 미술치료 안에서 참고하는 ACT 배경 */}
       <SectionWrapper bg="paper">
         <Container>
           <div className="max-w-5xl mx-auto">
@@ -369,15 +368,15 @@ export default function ActApproachPage() {
             <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_1fr] gap-10 lg:gap-14 items-start">
               <div>
                 <span className="inline-block px-4 py-2 bg-primary-50 text-primary-600 text-xs font-semibold rounded-full mb-5">
-                  국제적 위상
+                  학술적 배경
                 </span>
                 <h2 className="text-2xl lg:text-3xl font-bold tracking-tight">
-                  세계가 이미 쓰고 있는 접근, 한국에서는 이제 시작입니다
+                  미술치료 안에서 참고하는 ACT의 학문적 배경
                 </h2>
                 <p className="mt-6 text-charcoal/80 leading-[var(--leading-normal)]">
-                  한국에서 ACT 는 아직 많은 분들께 낯선 이름이지만, 해외에서는 수십 년간 학문적으로 축적되고
-                  임상 현장에 적용되어 온 접근입니다. 어떤 학회·어떤 대학·어떤 임상 영역에서 ACT 가 다뤄지고
-                  있는지 아래에 있는 그대로 정리해 드립니다.
+                  미술치료 현장에서 ACT 관점을 보조적으로 사용할 때도 학문적 근거를 확인합니다.
+                  아래 내용은 ACT를 앞세우기 위한 설명이 아니라, 미술치료 과정에 통합하는 개념의 배경을
+                  투명하게 안내하기 위한 자료입니다.
                 </p>
               </div>
               <div
@@ -385,11 +384,8 @@ export default function ActApproachPage() {
                 style={{ boxShadow: "var(--shadow-sm)" }}
               >
                 <p className="text-sm text-charcoal/75 leading-relaxed">
-                  &ldquo;ACT 는 특정 지역의 유행이 아니라, 국제적 학술 커뮤니티와 여러 대학 연구실이 함께
-                  다듬어 온 공공 지식에 가깝습니다.&rdquo;
-                </p>
-                <p className="mt-3 text-xs text-charcoal/55">
-                  — 본 센터 원장의 임상 노트 중에서
+                  &ldquo;미술치료가 먼저이고, ACT는 표현 과정 안에서 감정과 가치 방향을 살피도록 돕는
+                  보조적 지도에 가깝습니다.&rdquo;
                 </p>
               </div>
             </div>
@@ -483,7 +479,7 @@ export default function ActApproachPage() {
         </Container>
       </SectionWrapper>
 
-      {/* Section B — ACT 가 당신에게 매력적일 수 있는 5가지 이유 */}
+      {/* Section B — 미술치료 과정에서 ACT가 도움이 될 수 있는 순간 */}
       <SectionWrapper bg="cream">
         <Container>
           <div className="max-w-4xl mx-auto">
@@ -492,12 +488,11 @@ export default function ActApproachPage() {
                 내담자 관점
               </span>
               <h2 className="text-2xl lg:text-3xl font-bold tracking-tight">
-                ACT 가 당신에게 매력적일 수 있는 다섯 가지 이유
+                미술치료 과정에서 ACT가 도움이 될 수 있는 순간
               </h2>
               <p className="mt-5 text-charcoal/75 leading-[var(--leading-normal)] max-w-[60ch]">
-                아래는 기존 상담·치료가 잘 맞지 않았거나, 처음 상담을 고민하고 계신 분들이 ACT 에서 비교적
-                공감하기 쉬운 지점을 정리한 것입니다. 모든 분께 해당하는 보편 진리가 아니라, &ldquo;이런 부분이
-                마음에 와 닿으신다면 세션에서 더 깊게 다뤄 볼 수 있습니다&rdquo; 라는 의미로 읽어 주세요.
+                아래 내용은 ACT를 독립된 주제로 앞세우기보다, 미술치료 장면에서 재료와 이미지가
+                감정·생각·가치 방향을 어떻게 다루도록 돕는지 정리한 안내입니다.
               </p>
             </div>
 
@@ -505,27 +500,27 @@ export default function ActApproachPage() {
               {[
                 {
                   n: "01",
-                  head: "증상 제거가 아닌 \u201C가치 있는 삶\u201D 회복",
+                  head: "그림 안에서 삶의 방향을 다시 만날 때",
                   body:
-                    "전통적인 CBT 가 \u201C나쁜 생각을 더 합리적인 생각으로 바꾸자\u201D 에 초점을 둔다면, ACT 는 \u201C나쁜 생각이 있어도 삶은 계속된다\u201D 를 전제로 합니다. 증상이 100% 사라지길 기다리지 않고도, 소중한 방향으로 한 걸음씩 옮기는 연습을 함께합니다.",
+                    "미술치료에서는 지금의 감정과 함께 내가 지키고 싶은 방향을 이미지로 살펴볼 수 있습니다. ACT 관점은 증상이 모두 사라진 뒤 움직이는 방식이 아니라, 지금 가능한 작은 선택을 작품과 대화 속에서 찾아가도록 돕습니다.",
                 },
                 {
                   n: "02",
-                  head: "불편한 감정을 억누르지 않아도 됩니다",
+                  head: "불편한 감정을 색과 형태로 바라볼 때",
                   body:
-                    "\u201C긍정적으로 생각하세요\u201D 라는 사회적 압력 대신, 슬픔·불안·분노도 정당한 경험으로 받아들입니다. 저항할수록 커지는 감정을 이미 경험해 보신 분이라면, \u201C그 감정이 있어도 괜찮다\u201D 는 ACT 의 전제에서 숨 쉴 틈이 생기는 걸 경험하실 수 있습니다.",
+                    "슬픔·불안·분노는 종이 위에서 색, 선, 압력, 여백으로 나타날 수 있습니다. ACT 관점은 그 표현을 밀어내기보다 안전하게 관찰하도록 돕고, 미술치료사는 그 과정이 감당 가능한 속도로 이어지도록 함께합니다.",
                 },
                 {
                   n: "03",
-                  head: "단기 · 장기 모두 적용 가능한 구조",
+                  head: "짧은 작업부터 장기 동행까지 구성할 때",
                   body:
-                    "ACT 는 6\u201316 회기 수준의 단기 프로토콜부터 장기 개인화 세션까지 설계가 가능합니다. \u201C우선 짧게라도 해 보고 싶다\u201D 는 분들께는 진입 장벽이 낮고, 장기 동행이 필요한 분께는 가치 기반 장기 계획이 가능합니다.",
+                    "미술치료는 한 장의 이미지로 시작하는 짧은 탐색부터, 반복 세션을 통한 장기 동행까지 구성할 수 있습니다. ACT의 6가지 과정은 세션 목표와 속도를 정리하는 보조 틀이 되어 줍니다.",
                 },
                 {
                   n: "04",
-                  head: "만성 · 복합 문제에도 근거가 쌓여 왔습니다",
+                  head: "오래된 감정 패턴을 작품으로 살펴볼 때",
                   body:
-                    "만성 통증, 난치성 우울, 물질 사용 장애, 암 생존자의 심리 적응 등 기존 개입이 제한적으로 느껴지는 영역에서도 ACT 기반 개입의 효과가 보고되어 왔습니다. \u201C제 경우는 너무 오래돼서 안 될 것 같아요\u201D 라고 느끼신다면, 바로 그 지점을 세션에서 함께 점검해 볼 수 있습니다.",
+                    "오래 반복된 불안, 번아웃, 상실감, 관계의 긴장은 말로만 정리하기 어려울 수 있습니다. 미술치료에서는 그 패턴을 이미지와 재료의 흐름으로 살피고, ACT 관점은 지금 가능한 행동 방향을 함께 확인하도록 돕습니다.",
                 },
                 {
                   n: "05",
