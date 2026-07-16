@@ -99,11 +99,11 @@ export default function BlogPage() {
               },
               {
                 name: "ACT",
-                desc: "수용전념치료의 6가지 핵심 프로세스와 &ldquo;심리적 유연성&rdquo;. Hayes, Strosahl, Wilson(2012) 기준.",
+                desc: "수용전념치료의 6가지 핵심 프로세스와 심리적 유연성. Hayes, Strosahl, Wilson(2012) 기준.",
               },
               {
                 name: "증상별 가이드",
-                desc: "불안·우울·번아웃·트라우마·관계 갈등 등 주제별 접근. 증상 해소가 아니라 &ldquo;어떻게 관계 맺을 것인가&rdquo; 관점.",
+                desc: "불안·우울·번아웃·트라우마·관계 갈등 등 주제별 접근. 지금의 경험과 어떻게 관계 맺을 것인가를 살피는 관점.",
               },
               {
                 name: "실습 가이드",
