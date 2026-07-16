@@ -45,7 +45,7 @@ export function CharactersIntroSection() {
                 alt="ACT ART CENTER를 상징하는 액티와 아티 일러스트"
                 width={900}
                 height={450}
-                className="h-auto w-full rounded-2xl object-cover"
+                className="h-auto w-full rounded-2xl object-contain bg-cream p-4 lg:p-6"
                 sizes="(max-width: 1024px) 100vw, 45vw"
               />
             </div>

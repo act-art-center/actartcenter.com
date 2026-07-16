@@ -94,7 +94,7 @@ export default function FaqPage() {
           alt="자주 묻는 질문"
           fill
           priority
-          className="object-cover"
+          className="object-contain bg-cream p-8 lg:p-12"
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-night/70 via-night/30 to-night/10" />

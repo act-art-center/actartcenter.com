@@ -276,7 +276,7 @@ export default function OnlinePage() {
                 src="/characters/acttie-laptop.png"
                 alt="온라인 미술치료를 위한 홈 스튜디오와 노트북"
                 fill
-                className="object-cover"
+                className="object-contain bg-cream p-4 lg:p-6"
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 priority
               />

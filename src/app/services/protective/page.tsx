@@ -334,7 +334,7 @@ export default function ProtectivePage() {
                 src="/characters/artty-welcome.png"
                 alt="병원 환경에서 진행되는 미술 작업 — 종이와 수채 도구가 놓인 의료 공간"
                 fill
-                className="object-cover"
+                className="object-contain bg-cream p-4 lg:p-6"
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 priority
               />

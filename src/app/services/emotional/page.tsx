@@ -332,7 +332,7 @@ export default function EmotionalPage() {
                 src="/characters/artty-thoughtful.png"
                 alt="정서·트라우마 중심 미술심리치료 — 수채 매체와 작업하는 손"
                 fill
-                className="object-cover"
+                className="object-contain bg-cream p-4 lg:p-6"
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 priority
               />

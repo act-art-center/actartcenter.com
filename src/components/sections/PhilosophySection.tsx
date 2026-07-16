@@ -13,7 +13,7 @@ export function PhilosophySection() {
               src="/characters/artty-paint.png"
               alt="캔버스와 이젤이 있는 미술 작업 장면"
               fill
-              className="object-cover"
+              className="object-contain bg-cream p-4 lg:p-6"
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
           </div>

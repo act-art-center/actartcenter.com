@@ -288,7 +288,7 @@ export default function ChildPage() {
                 src="/characters/artty-paint.png"
                 alt="아동 미술치료 작업대 위의 크레용과 종이"
                 fill
-                className="object-cover"
+                className="object-contain bg-cream p-4 lg:p-6"
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 priority
               />

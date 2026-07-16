@@ -339,7 +339,7 @@ export default function GroupPage() {
                 src="/characters/twins-together.png"
                 alt="원형 테이블에서 함께 그리는 소그룹 미술치료 장면"
                 fill
-                className="object-cover"
+                className="object-contain bg-cream p-4 lg:p-6"
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 priority
               />

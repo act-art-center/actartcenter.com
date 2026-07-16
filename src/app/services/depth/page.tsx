@@ -379,7 +379,7 @@ export default function DepthPage() {
                 src="/characters/artty-scenes.png"
                 alt="심층 탐색을 위한 스튜디오 — 오래 쌓인 작업물과 작업대"
                 fill
-                className="object-cover"
+                className="object-contain bg-cream p-4 lg:p-6"
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 priority
               />

@@ -280,7 +280,7 @@ export default function IndividualPage() {
                 src="/characters/acttie-reading.png"
                 alt="1:1 개인 미술치료 작업대 위의 수채 팔레트와 붓"
                 fill
-                className="object-cover"
+                className="object-contain bg-cream p-4 lg:p-6"
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 priority
               />
