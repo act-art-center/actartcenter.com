@@ -2,7 +2,7 @@ export const SITE_URL = "https://actartcenter.com";
 export const SITE_NAME = "ACT ART CENTER";
 export const SITE_TITLE = "ACT ART CENTER | ACT 미술심리치료 연구소";
 export const SITE_DESCRIPTION =
-  "수용전념치료(ACT)의 개념을 내포한 미술심리치료 전문 연구·임상 기관. 언어 이전의 감정과 복합적인 심리 경험을 예술적 표현을 통해 탐색하며, 내담자가 자신의 삶과 감정에 보다 유연하고 안정적으로 관계 맺을 수 있도록 돕습니다.";
+  "미술치료를 중심으로 ACT(수용전념)의 관점을 보조적으로 통합하는 전문 연구·임상 기관. 말로 정리하기 어려운 감정과 복합적인 심리 경험을 예술적 표현 안에서 편하게 탐색합니다.";
 export const SITE_TAGLINE = "Accept. Create. Transform.";
 export const SITE_TAGLINE_KR = "Exploring the mind through art, rediscovering meaning in life.";
 
