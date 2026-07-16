@@ -66,7 +66,7 @@ const teamSchema = {
       jobTitle: "대표 / 미술심리치료사",
       description:
         "ACT ART CENTER 대표. 차의과학대학교 의학과 임상미술치료 박사과정, 석사. 홍익대학교 미술학 석사, 학사. 한국미술치료학회 정회원. 언어 이전의 경험을 예술로 꺼내고, 수용전념치료(ACT)로 방향을 세우는 통합 접근을 지향합니다.",
-      image: `${SITE_URL}/characters/artty-welcome.png`,
+      image: `${SITE_URL}/images/team-eunbyeol.jpg`,
       url: `${SITE_URL}/team`,
       worksFor: { "@id": `${SITE_URL}/#organization` },
       alumniOf: [
@@ -193,7 +193,7 @@ export default function TeamPage() {
               {/* Profile photo */}
               <div className="w-48 h-64 mx-auto rounded-2xl overflow-hidden shadow-[var(--shadow-md)]">
                 <Image
-                  src="/characters/artty-welcome.png"
+                  src="/images/team-eunbyeol.jpg"
                   alt="고은별 대표"
                   width={192}
                   height={256}
