@@ -103,14 +103,14 @@ export default function ServicesPage() {
               Our Approach
             </p>
             <h2 className="text-night text-2xl lg:text-3xl font-bold tracking-tight leading-tight">
-              진단·증상 제거가 아니라, 심리적 유연성과 가치 회복을 중심에 둡니다
+              심리적 유연성과 가치 회복을 중심에 둡니다
             </h2>
             <div className="mt-6 space-y-5 text-charcoal/85 leading-relaxed">
               <p>
-                ACT ART CENTER는 &ldquo;문제를 없애는 것&rdquo;을 목표로 삼지 않습니다.
+                ACT ART CENTER는 미술치료 안에서 심리적 유연성을 기르는 과정을 중요하게 봅니다.
                 Steven C. Hayes (Univ. of Nevada) 와 공동 연구진이 정립한 수용전념치료(ACT)는
-                불편한 감정과 생각을 통제하려는 싸움 대신, 그것을 품고도 내가 원하는 방향으로
-                걸어갈 수 있는 힘 — 즉 심리적 유연성(Psychological Flexibility) — 을 기릅니다.
+                불편한 감정과 생각을 알아차리고 품은 채, 내가 원하는 방향으로 걸어갈 수 있는 힘 —
+                즉 심리적 유연성(Psychological Flexibility) — 을 기릅니다.
               </p>
               <p>
                 여기에 미술치료사 Cathy A. Malchiodi (Trauma-Informed Practices Institute) 가
@@ -120,9 +120,9 @@ export default function ServicesPage() {
                 다뤄진 뒤, 이야기로 옮겨 갑니다.
               </p>
               <p>
-                그래서 센터의 세션은 &ldquo;증상 점수를 낮추는 시간&rdquo;이 아닙니다.
-                지금 이 자리에 서 있기 위해 각자가 치러 온 노력을 존중하며, 그 위에
-                조금 더 유연한 선택지를 함께 찾아가는 시간입니다.
+                센터의 세션은 지금 이 자리에 서 있기 위해 각자가 치러 온 노력을 존중합니다.
+                그 위에 조금 더 유연한 선택지를 함께 찾아가며, 삶의 가치와 연결되는 방향을
+                미술치료 과정 안에서 차분히 살펴봅니다.
               </p>
             </div>
           </div>
