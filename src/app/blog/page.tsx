@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { Search } from "lucide-react";
 import { Container } from "@/components/shared/Container";
@@ -30,7 +31,14 @@ export default function BlogPage() {
       {/* Hero */}
       <section className="relative min-h-[40vh] lg:min-h-[50vh] flex items-end overflow-hidden">
         <div className="absolute inset-0">
-          <BlogIllustration variant="hero" title="블로그 — 미술치료 이야기" />
+          <Image
+            src="https://images.unsplash.com/photo-1471897488648-5eae4ac6686b?w=1920&q=80"
+            alt="블로그 — 미술치료 이야기"
+            fill
+            priority
+            className="object-cover"
+            sizes="100vw"
+          />
         </div>
         <div className="absolute inset-0 bg-gradient-to-t from-night/70 via-night/30 to-night/10" />
         <Container className="relative z-10 pb-12 lg:pb-16 pt-32">

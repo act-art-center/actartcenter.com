@@ -90,11 +90,11 @@ export default function FaqPage() {
       {/* Hero */}
       <section className="relative min-h-[40vh] lg:min-h-[50vh] flex items-end overflow-hidden">
         <Image
-          src="/characters/acttie-reading.png"
+          src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=1920&q=80"
           alt="자주 묻는 질문"
           fill
           priority
-          className="object-contain bg-cream p-8 lg:p-12"
+          className="object-cover"
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-night/70 via-night/30 to-night/10" />
