@@ -20,7 +20,7 @@ export function CharactersIntroSection() {
               액티는 감정과 가치의 방향을 차분히 살피고, 아티는 색과 이미지로 마음을 표현하도록 돕습니다.
             </p>
             <p className="mt-4 text-charcoal/75 leading-relaxed">
-              두 캐릭터는 치료를 대신 설명하는 주인공이 아니라, 미술치료 과정에서 안전감과 호기심을 더해 주는 작은 안내자입니다.
+              두 캐릭터는 미술치료 여정에서 안전감과 호기심을 더해 주며 동행하는 안내자입니다.
             </p>
             <div className="mt-7 flex flex-wrap gap-3">
               <Link
