@@ -20,13 +20,13 @@ export const BLOG_CATEGORIES = [
 
 export const BLOG_POSTS: BlogPost[] = [
   {
-    slug: "kramer-art-as-therapy-sublimation",
-    title: "크레이머가 말한 미술치료: 예술 그 자체와 승화",
-    excerpt: "Edith Kramer가 미술치료에서 중요하게 본 예술 그 자체의 치료성, 승화, 창작 과정의 의미를 미술치료사의 시선으로 정리했습니다.",
+    slug: "grief-art-therapy-loss-recovery",
+    title: "상실의 시간을 지나갈 때, 그림이 조용히 담아주는 마음",
+    excerpt: "상실을 겪는 성인과 가족에게 미술치료가 마음의 시간을 담아주는 방식을 표현과 관계의 관점에서 설명합니다.",
     category: "미술치료",
-    seoKeywords: ["크레이머 미술치료", "Edith Kramer", "미술치료 승화", "예술치료", "미술치료 이론"],
+    seoKeywords: ["미술치료", "애도 미술치료", "상실 회복", "성인 미술치료", "가족 돌봄 미술치료"],
     image: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=600&q=80",
-    date: "2026년 7월 15일",
+    date: "2026년 7월 16일",
     author: "고은별",
     readTime: "6분",
   },
