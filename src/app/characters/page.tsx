@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
 import { PageHero } from "@/components/shared/PageHero";
 import { Container } from "@/components/shared/Container";
 import { SectionWrapper } from "@/components/shared/SectionWrapper";
@@ -132,25 +131,6 @@ export default function CharactersPage() {
         </Container>
       </SectionWrapper>
 
-      <SectionWrapper bg="night">
-        <Container>
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-white text-2xl lg:text-3xl font-bold tracking-tight">
-              미술치료가 먼저, 캐릭터는 다정한 안내입니다
-            </h2>
-            <p className="mt-5 text-stone/75 leading-relaxed">
-              ACT ART CENTER의 모든 콘텐츠는 미술치료를 중심으로 구성됩니다. Actie와 Artty는 그 중심을 흐리지 않고,
-              표현과 관계의 과정을 더 쉽게 이해하도록 돕는 보조적 시각 언어로 사용됩니다.
-            </p>
-            <Link
-              href="/booking"
-              className="mt-8 inline-flex items-center rounded-full bg-primary-500 px-7 py-3 text-sm font-semibold text-white transition hover:bg-primary-600"
-            >
-              첫 상담 예약하기
-            </Link>
-          </div>
-        </Container>
-      </SectionWrapper>
     </>
   );
 }
