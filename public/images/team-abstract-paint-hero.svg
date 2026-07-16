@@ -1,0 +1,58 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">물감이 부드럽게 섞인 추상 미술치료 이미지</title>
+  <desc id="desc">크림색 종이 위에 오커, 세이지, 블루, 코랄 물감이 겹겹이 번지며 섞이는 추상 이미지</desc>
+  <defs>
+    <radialGradient id="warm" cx="32%" cy="42%" r="55%">
+      <stop offset="0%" stop-color="#d8a348" stop-opacity="0.95"/>
+      <stop offset="52%" stop-color="#c7893a" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#f4efe6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blue" cx="64%" cy="40%" r="54%">
+      <stop offset="0%" stop-color="#5f91ac" stop-opacity="0.92"/>
+      <stop offset="55%" stop-color="#86aebf" stop-opacity="0.50"/>
+      <stop offset="100%" stop-color="#f4efe6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="sage" cx="47%" cy="66%" r="46%">
+      <stop offset="0%" stop-color="#8c9b80" stop-opacity="0.70"/>
+      <stop offset="58%" stop-color="#b8c1a4" stop-opacity="0.38"/>
+      <stop offset="100%" stop-color="#f4efe6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="coral" cx="75%" cy="72%" r="38%">
+      <stop offset="0%" stop-color="#c9826b" stop-opacity="0.68"/>
+      <stop offset="60%" stop-color="#ddb2a4" stop-opacity="0.34"/>
+      <stop offset="100%" stop-color="#f4efe6" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="paper" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="4" seed="11" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.13"/>
+      </feComponentTransfer>
+      <feBlend mode="multiply" in2="SourceGraphic"/>
+    </filter>
+    <filter id="softBlur">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="#f6f0e5"/>
+  <g filter="url(#paper)">
+    <path d="M136 165 C318 58 511 126 647 251 C792 385 940 286 1077 181 C1215 75 1415 106 1515 244 C1625 397 1501 617 1310 672 C1138 721 1019 646 862 724 C681 815 416 793 282 642 C145 489 -48 279 136 165Z" fill="#efe6d6" opacity="0.85"/>
+    <ellipse cx="535" cy="382" rx="425" ry="330" fill="url(#warm)" filter="url(#softBlur)"/>
+    <ellipse cx="935" cy="355" rx="445" ry="315" fill="url(#blue)" filter="url(#softBlur)"/>
+    <ellipse cx="785" cy="610" rx="520" ry="250" fill="url(#sage)" filter="url(#softBlur)"/>
+    <ellipse cx="1185" cy="625" rx="330" ry="210" fill="url(#coral)" filter="url(#softBlur)"/>
+    <path d="M172 540 C332 454 476 465 618 548 C773 639 892 621 1045 535 C1207 444 1365 465 1506 554" fill="none" stroke="#3f5f6d" stroke-width="22" stroke-linecap="round" opacity="0.12"/>
+    <path d="M221 352 C378 262 542 276 674 367 C811 462 917 468 1054 366 C1194 262 1358 268 1470 352" fill="none" stroke="#9a6b2f" stroke-width="18" stroke-linecap="round" opacity="0.14"/>
+    <path d="M266 694 C420 627 561 646 706 704 C846 760 1017 751 1164 681 C1295 619 1424 616 1528 662" fill="none" stroke="#7a8a6c" stroke-width="16" stroke-linecap="round" opacity="0.16"/>
+    <g opacity="0.32">
+      <circle cx="338" cy="246" r="20" fill="#bf7c3d"/>
+      <circle cx="1262" cy="302" r="16" fill="#537f99"/>
+      <circle cx="1118" cy="712" r="19" fill="#b17363"/>
+      <circle cx="674" cy="706" r="13" fill="#75876a"/>
+      <circle cx="846" cy="212" r="11" fill="#cfb15e"/>
+    </g>
+    <path d="M332 162 C500 232 582 332 584 468 C585 578 512 666 374 736" fill="none" stroke="#ffffff" stroke-width="38" stroke-linecap="round" opacity="0.18"/>
+    <path d="M1228 168 C1089 271 1039 382 1076 502 C1113 624 1232 679 1395 703" fill="none" stroke="#ffffff" stroke-width="34" stroke-linecap="round" opacity="0.16"/>
+  </g>
+  <rect width="1600" height="900" fill="url(#blue)" opacity="0.04"/>
+</svg>

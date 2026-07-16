@@ -165,8 +165,8 @@ export default function TeamPage() {
         title="대표 고은별 — 미술심리치료사 프로필"
         subtitle="미술과 심리치료 모두에서 깊은 전문성을 갖춘 치료사가 함께합니다."
         label="Our Team"
-        imageSrc="/characters/twins-together.png"
-        imageAlt="ACT ART CENTER 전문가"
+        imageSrc="/images/team-abstract-paint-hero.svg"
+        imageAlt="물감이 부드럽게 섞인 추상 미술치료 이미지"
       />
 
       <div className="bg-paper pt-6 pb-2">
