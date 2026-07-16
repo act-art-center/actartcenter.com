@@ -6,7 +6,7 @@ import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "미술치료 작품 갤러리 — 준비 중",
+  title: "ACT ART CENTER GALLERY — 준비 중",
   description:
     "ACT ART CENTER 미술심리치료 과정에서 만들어지는 창작의 순간들을 준비 중입니다. 모든 작품은 내담자의 서면 동의 후 비식별 처리되어 공개됩니다.",
   keywords: [
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   alternates: { canonical: `${SITE_URL}/gallery` },
   openGraph: {
     type: "website",
-    title: "미술치료 작품 갤러리 — ACT ART CENTER",
+    title: "ACT ART CENTER GALLERY — ACT ART CENTER",
     description: "미술심리치료 과정의 창작 순간들. 동의 기반 비식별 처리 예정.",
     url: `${SITE_URL}/gallery`,
     images: [
@@ -27,13 +27,13 @@ export const metadata: Metadata = {
         url: "/og/gallery.png",
         width: 1200,
         height: 630,
-        alt: "ACT 미술치료 작품 갤러리",
+        alt: "ACT ART CENTER 미술치료 갤러리",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "미술치료 작품 갤러리",
+    title: "ACT ART CENTER GALLERY",
     description: "창작 치유의 순간들. 비식별 처리 예정.",
     images: ["/og/gallery.png"],
   },
@@ -56,7 +56,7 @@ const gallerySchema = {
     {
       "@type": "WebPage",
       "@id": `${SITE_URL}/gallery`,
-      name: "미술치료 작품 갤러리 — 준비 중",
+      name: "ACT ART CENTER GALLERY — 준비 중",
       description: "ACT 미술심리치료 과정에서 만들어지는 창작의 순간들을 준비하고 있습니다. 실제 내담자의 서면 동의 후 비식별 처리되어 공개됩니다.",
       url: `${SITE_URL}/gallery`,
       publisher: { "@id": `${SITE_URL}/#organization` },
@@ -83,7 +83,7 @@ export default function GalleryPage() {
           </div>
           <div className="text-center max-w-2xl mx-auto">
             <h1 className="text-white text-3xl lg:text-4xl font-bold tracking-tight">
-              미술치료 작품 갤러리
+              ACT ART CENTER GALLERY
             </h1>
             <p className="mt-6 text-stone/70">
               미술심리치료 과정에서 만들어지는 창작의 순간들.

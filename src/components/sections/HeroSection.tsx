@@ -51,7 +51,7 @@ export function HeroSection() {
               href="/gallery"
               className="text-white/80 underline-offset-4 hover:underline hover:text-white"
             >
-              미술치료 작품 갤러리
+              ACT ART CENTER GALLERY
             </Link>
           </p>
         </div>
