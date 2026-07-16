@@ -30,7 +30,7 @@ export default function BlogPage() {
       {/* Hero */}
       <section className="relative min-h-[40vh] lg:min-h-[50vh] flex items-end overflow-hidden">
         <Image
-          src="/characters/acttie-reading.png"
+          src="/blog-illustrations/blog-hero.svg"
           alt="블로그 — 미술치료 이야기"
           fill
           priority
@@ -184,7 +184,7 @@ export default function BlogPage() {
                   className="group block bg-white rounded-xl overflow-hidden transition-all duration-200 hover:-translate-y-1 hover:shadow-[var(--shadow-md)]"
                   style={{ border: "1px solid rgba(196, 191, 183, 0.15)" }}
                 >
-                  <div className="relative aspect-[16/10] overflow-hidden">
+                  <div className="relative aspect-[16/9] overflow-hidden">
                     <Image
                       src={post.image}
                       alt={post.title}
