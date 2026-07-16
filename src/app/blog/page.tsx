@@ -1,12 +1,12 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { Search } from "lucide-react";
 import { Container } from "@/components/shared/Container";
 import { SectionWrapper } from "@/components/shared/SectionWrapper";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
+import { BlogIllustration, blogIllustrationVariant } from "@/components/shared/BlogIllustration";
 import { BLOG_POSTS, BLOG_CATEGORIES } from "@/lib/blog-data";
 import { cn } from "@/lib/utils";
 
@@ -29,14 +29,9 @@ export default function BlogPage() {
     <>
       {/* Hero */}
       <section className="relative min-h-[40vh] lg:min-h-[50vh] flex items-end overflow-hidden">
-        <Image
-          src="/blog-illustrations/blog-hero.svg"
-          alt="블로그 — 미술치료 이야기"
-          fill
-          priority
-          className="object-cover"
-          sizes="100vw"
-        />
+        <div className="absolute inset-0">
+          <BlogIllustration variant="hero" title="블로그 — 미술치료 이야기" />
+        </div>
         <div className="absolute inset-0 bg-gradient-to-t from-night/70 via-night/30 to-night/10" />
         <Container className="relative z-10 pb-12 lg:pb-16 pt-32">
           <p className="text-white/60 text-xs font-medium tracking-widest uppercase mb-3">Blog</p>
@@ -185,13 +180,7 @@ export default function BlogPage() {
                   style={{ border: "1px solid rgba(196, 191, 183, 0.15)" }}
                 >
                   <div className="relative aspect-[16/9] overflow-hidden">
-                    <Image
-                      src={post.image}
-                      alt={post.title}
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-500"
-                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    />
+                    <BlogIllustration variant={blogIllustrationVariant(post.slug)} title={post.title} />
                   </div>
                   <div className="p-5">
                     <div className="flex items-center gap-2 mb-2">

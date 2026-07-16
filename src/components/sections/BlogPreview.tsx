@@ -1,7 +1,7 @@
 import Link from "next/link";
-import Image from "next/image";
 import { SectionWrapper } from "@/components/shared/SectionWrapper";
 import { Container } from "@/components/shared/Container";
+import { BlogIllustration, blogIllustrationVariant } from "@/components/shared/BlogIllustration";
 import { BLOG_POSTS } from "@/lib/blog-data";
 
 const blogPosts = BLOG_POSTS.slice(0, 3);
@@ -33,13 +33,7 @@ export function BlogPreview() {
             style={{ border: "1px solid rgba(196, 191, 183, 0.15)" }}
           >
             <div className="relative aspect-[16/9] overflow-hidden">
-              <Image
-                src={blogPosts[0].image}
-                alt={blogPosts[0].title}
-                fill
-                className="object-cover group-hover:scale-105 transition-transform duration-500"
-                sizes="(max-width: 768px) 100vw, 60vw"
-              />
+              <BlogIllustration variant={blogIllustrationVariant(blogPosts[0].slug)} title={blogPosts[0].title} />
             </div>
             <div className="p-6">
               <span className="text-xs text-primary-500 font-medium tracking-wide">{blogPosts[0].category}</span>

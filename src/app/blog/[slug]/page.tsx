@@ -6,6 +6,7 @@ import { Container } from "@/components/shared/Container";
 import { SectionWrapper } from "@/components/shared/SectionWrapper";
 import { JsonLd } from "@/components/shared/JsonLd";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
+import { BlogIllustration, blogIllustrationVariant } from "@/components/shared/BlogIllustration";
 import { BLOG_POSTS, type BlogPost } from "@/lib/blog-data";
 import { blogContent } from "@/lib/blog-content";
 import { SITE_URL } from "@/lib/constants";
@@ -179,7 +180,7 @@ export default async function BlogPostPage({ params }: Props) {
       {/* Featured Image */}
       <div className="relative w-full max-w-4xl mx-auto px-6 -mt-2">
         <div className="relative aspect-[21/9] rounded-2xl overflow-hidden">
-          <Image src={post.image} alt={post.title} fill className="object-cover" sizes="100vw" priority />
+          <BlogIllustration variant={blogIllustrationVariant(post.slug)} title={post.title} />
         </div>
       </div>
 
