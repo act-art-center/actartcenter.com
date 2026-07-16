@@ -7,7 +7,6 @@ import {
   CONTACT,
   RESOURCE_LINKS,
   SERVICES_ALL,
-  SITE_TAGLINE,
 } from "@/lib/constants";
 
 /**
@@ -35,12 +34,6 @@ export function Footer() {
               <Logo className="w-8 h-8" invert />
               <span className="font-[var(--font-display)] text-xl">ACT ART CENTER</span>
             </Link>
-            <p
-              className="mt-3 text-stone/70 font-[var(--font-accent)] text-lg"
-              style={{ transform: "rotate(-1deg)" }}
-            >
-              {SITE_TAGLINE}
-            </p>
             <p className="mt-4 text-sm text-stone/60 max-w-[28ch] leading-relaxed">
               수용전념치료(ACT)와 미술치료를 결합한 전문 심리치료 센터
             </p>

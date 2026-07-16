@@ -297,7 +297,7 @@ export default function BookingPage() {
         </Container>
       </SectionWrapper>
 
-      {/* 예약 후 어떤 일이 생기나요 — success scenario */}
+      {/* 예약 이후 절차 — success scenario */}
       <SectionWrapper bg="paper" className="py-16 lg:py-20">
         <Container>
           <div className="max-w-3xl mx-auto">
@@ -305,7 +305,7 @@ export default function BookingPage() {
               What Happens Next
             </p>
             <h2 className="text-night text-xl lg:text-2xl font-bold tracking-tight text-center">
-              예약 후 어떤 일이 생기나요
+              예약 이후 절차
             </h2>
             <p className="mt-4 text-charcoal/70 text-sm leading-relaxed text-center">
               첫 상담(30분, 무료) 은 결정하러 오시는 시간이 아니라, 편하게 센터를 확인하시는 시간입니다.
