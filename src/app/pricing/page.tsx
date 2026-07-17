@@ -356,7 +356,7 @@ export default function PricingPage() {
               First Free Consultation
             </p>
             <h2 className="text-night text-xl lg:text-2xl font-bold tracking-tight">
-              초기 상담, 왜 먼저 받아보시는 것이 좋은가
+              초기 상담 먼저 받아보시는 것이 좋아요
             </h2>
             <p className="mt-4 text-charcoal/75 leading-relaxed">
               심리치료는 치료사와의 ‘맞음’ 이 실제 효과에 가장 큰 영향을 주는 요소 중 하나로 꼽힙니다.
