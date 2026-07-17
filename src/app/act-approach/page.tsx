@@ -756,7 +756,7 @@ export default function ActApproachPage() {
         <Container>
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-2xl lg:text-3xl font-bold tracking-tight">
-              당신의 이야기와 연결된 ACT 를 함께 찾아 봅니다
+              당신의 이야기에 동행할 준비가 되어있습니다
             </h2>
             <p className="mt-5 text-charcoal/75 leading-[var(--leading-normal)]">
               지금 당신이 겪고 있는 문제와 가장 잘 맞는 프로세스부터 살피며,
