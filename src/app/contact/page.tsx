@@ -298,7 +298,7 @@ export default function ContactPage() {
             <p className="mt-8 text-xs text-stone leading-relaxed max-w-2xl">
               * 위 소요 시간은 일반 도보 기준 근사치입니다. 교통 상황과 출구 선택에 따라
               차이가 있을 수 있으니 방문 전 지도 앱에서 실제 경로를 확인해 주세요.
-              주차 무료 검증은 방문 시 안내 데스크에 문의하시면 도움드립니다.
+              무료 주차는 방문 시 안내 데스크에 문의하시면 도움드립니다.
             </p>
           </div>
         </Container>
