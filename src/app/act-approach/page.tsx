@@ -75,15 +75,17 @@ const actApproachSchema = {
       author: { "@id": `${SITE_URL}/team#stella` },
       publisher: { "@id": `${SITE_URL}/#organization` },
       datePublished: "2026-04-15",
-      dateModified: "2026-04-19",
+      dateModified: "2026-07-17",
       mainEntityOfPage: `${SITE_URL}/act-approach`,
       articleSection: "ACT 이론",
       about: [
         { "@type": "Thing", name: "Acceptance and Commitment Therapy" },
         { "@type": "Thing", name: "미술치료" },
+        { "@type": "Thing", name: "ACT 수용전념치료" },
         { "@type": "Thing", name: "심리적 유연성" },
         { "@type": "Thing", name: "Psychological Flexibility" },
         { "@type": "Thing", name: "수용전념치료 기법" },
+        { "@type": "Thing", name: "수용전념치료 프로그램" },
         { "@type": "Thing", name: "수용전념치료 육각형" },
         { "@type": "Thing", name: "수용전념치료 마음챙김" },
         { "@type": "Thing", name: "Relational Frame Theory" },
@@ -757,8 +759,8 @@ export default function ActApproachPage() {
               당신의 이야기와 연결된 ACT 를 함께 찾아 봅니다
             </h2>
             <p className="mt-5 text-charcoal/75 leading-[var(--leading-normal)]">
-              ACT 는 매뉴얼대로 찍어내는 접근이 아닙니다. 지금 당신이 겪고 있는 문제와 가장 잘 맞는
-              프로세스부터, 미술치료의 속도에 맞춰 함께 열어 갑니다.
+              지금 당신이 겪고 있는 문제와 가장 잘 맞는 프로세스부터 살피며,
+              미술치료의 속도에 맞춰 함께 열어 갑니다.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row gap-3 justify-center">
               <Link

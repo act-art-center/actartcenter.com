@@ -86,8 +86,9 @@ export default function CharactersPage() {
             <p className="text-xs font-semibold tracking-widest uppercase text-primary-500 mb-3">
               Why characters
             </p>
-            <h2 className="text-2xl lg:text-3xl font-bold tracking-tight text-night">
-              ACT ART CENTER의 두 안내자를 소개합니다
+            <h2 className="text-2xl lg:text-3xl font-bold tracking-tight text-night leading-tight">
+              <span className="block">ACT ART CENTER의</span>
+              <span className="block">두 안내자를 소개합니다</span>
             </h2>
             <div className="mt-5 space-y-4 text-charcoal/75 leading-relaxed">
               <p>
