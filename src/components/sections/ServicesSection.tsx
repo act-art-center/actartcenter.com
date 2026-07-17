@@ -22,7 +22,7 @@ export function ServicesSection() {
         <div className="text-center mb-6">
           <h2 className="text-2xl lg:text-3xl font-bold tracking-tight">ACT ART CENTER의 세션 영역</h2>
           <p className="mt-4 text-charcoal/80 max-w-2xl mx-auto text-base leading-relaxed">
-            그림과 조형 활동을 단순한 표현 수단으로 사용하지 않습니다.
+            그림과 조형 활동은 표현을 넘어 마음을 살피는 과정으로 이어집니다.
             작품을 매개로 한 경험은{" "}
             <em className="text-primary-500 not-italic font-medium">지금-여기에서의 자각</em>,{" "}
             <em className="text-primary-500 not-italic font-medium">감정과 생각에 대한 수용</em>, 그리고{" "}
