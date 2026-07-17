@@ -20,6 +20,17 @@ export const BLOG_CATEGORIES = [
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "kramer-naumburg-art-therapy-perspectives",
+    title: "크레이머와 나움버그가 바라본 미술치료의 두 시선",
+    excerpt: "나움버그의 정신분석적 미술치료 관점과 크레이머의 창작 과정 중심 관점을 비교하며, 오늘의 미술치료 현장에서 두 이론이 어떻게 함께 살아 있는지 정리합니다.",
+    category: "미술치료",
+    seoKeywords: ["크레이머 미술치료", "나움버그 미술치료", "미술치료 이론", "Art as Therapy", "정신분석적 미술치료"],
+    image: "/blog-illustrations/kramer-naumburg-art-therapy-perspectives.svg",
+    date: "2026년 7월 17일",
+    author: "고은별",
+    readTime: "8분",
+  },
+  {
     slug: "grief-art-therapy-loss-recovery",
     title: "상실의 시간을 지나갈 때, 그림이 조용히 담아주는 마음",
     excerpt: "상실을 겪는 성인과 가족에게 미술치료가 마음의 시간을 담아주는 방식을 표현과 관계의 관점에서 설명합니다.",

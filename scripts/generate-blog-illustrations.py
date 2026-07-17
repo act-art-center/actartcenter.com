@@ -14,6 +14,13 @@ POSTS = [
         'props': 'library',
     },
     {
+        'slug': 'kramer-naumburg-art-therapy-perspectives',
+        'title': '크레이머와 나움버그의 두 시선',
+        'bg': '#E6DCCB', 'accent': '#2F6F64',
+        'chars': [('/characters/acttie-reading.png', 850, 170, 420)],
+        'props': 'two_art_therapy_views',
+    },
+    {
         'slug': 'grief-art-therapy-loss-recovery',
         'title': '상실의 시간을 지나갈 때',
         'bg': '#D9DFD1', 'accent': '#D9A13B',
@@ -108,6 +115,12 @@ POSTS = [
 
 def prop_svg(kind: str) -> str:
     common = '<path d="M110 735 C360 660 585 805 820 720 C1045 640 1265 780 1490 700" fill="none" stroke="#0E5C50" stroke-width="16" stroke-linecap="round" opacity="0.16"/>'
+    if kind == 'two_art_therapy_views':
+        return '''<rect x="150" y="165" width="255" height="355" rx="34" fill="#fff" opacity="0.58" stroke="#111" stroke-width="8"/>
+<rect x="455" y="165" width="255" height="355" rx="34" fill="#fff" opacity="0.58" stroke="#111" stroke-width="8"/>
+<path d="M205 340 C250 250 320 445 365 315" fill="none" stroke="#C8795A" stroke-width="15" stroke-linecap="round" opacity="0.66"/>
+<path d="M510 360 C555 295 625 285 665 230 M520 430 C585 360 650 445 690 350" fill="none" stroke="#2F6F64" stroke-width="15" stroke-linecap="round" opacity="0.66"/>
+<path d="M410 345 C430 330 438 330 455 345" fill="none" stroke="#D9A13B" stroke-width="13" stroke-linecap="round" opacity="0.72"/>''' + common
     if kind == 'library':
         return '''<rect x="130" y="145" width="600" height="110" rx="32" fill="#fff" opacity="0.32"/>
 <rect x="175" y="180" width="90" height="38" rx="10" fill="#0E5C50" opacity="0.45"/>
