@@ -664,7 +664,7 @@ export default function ActApproachPage() {
               ACT × 미술치료
             </span>
             <h2 className="text-2xl lg:text-3xl font-bold tracking-tight">
-              왜 ACT 와 미술치료를 함께 사용할까요?
+              왜 ACT 미술치료가 필요할까요?
             </h2>
 
             <div className="mt-6 space-y-5 text-charcoal/80 leading-[var(--leading-normal)]">
