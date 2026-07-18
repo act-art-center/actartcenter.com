@@ -36,7 +36,8 @@ export function Footer() {
             </Link>
             <p className="mt-4 text-sm text-stone/60 max-w-[28ch] leading-relaxed">
               미술치료를 중심으로<br />
-              ACT(수용전념치료)를 결합한 심리치료 센터
+              ACT(수용전념치료)를 통합한<br />
+              미술심리치료 센터
             </p>
 
             {/* Address — clickable to /contact so visitors can find the map */}
