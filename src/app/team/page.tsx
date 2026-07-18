@@ -266,7 +266,7 @@ export default function TeamPage() {
                 <ul className="space-y-1.5 text-sm text-charcoal/70">
                   {[
                     "현 OO병원 정신건강의학과 보호병동 및 외래 임상",
-                    "현 사회복지법인 동O원 아동양육시설 임상",
+                    "현 사회복지법인 OO원 아동양육시설 임상",
                     "현 용인 세브OO병원 정신건강의학과 입원병동 인턴",
                     "현 분당O병원 난임센터 인턴",
                     "이음병원 병원형Wee센터 보호병동 인턴",
