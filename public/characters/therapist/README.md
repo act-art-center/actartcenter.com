@@ -14,6 +14,7 @@ Assets:
 - `therapist-group-art-session.jpg` — group/session art-therapy scene
 - `therapist-workshop-easel.jpg` — workshop/easel art session
 - `therapist-desk-writing.jpg` — writing notes at desk
+- `therapist-writing-notebook-coffee.jpg` — writing in an open notebook with a coffee cup; approved for the center/middle card on the ACTIE/ARTTY page
 - `therapist-portrait-brush.jpg` — portrait with brush / art-making cue
 - `therapist-warm-cup.jpg` — warm cup / reflective rest
 - `therapist-holding-palette.jpg` — holding palette / media preparation
