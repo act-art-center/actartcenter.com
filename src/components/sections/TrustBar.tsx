@@ -2,7 +2,7 @@ import { SectionWrapper } from "@/components/shared/SectionWrapper";
 import { Container } from "@/components/shared/Container";
 
 const stats = [
-  { value: "ACT", label: "수용전념치료 기반" },
+  { value: "ACT + ART", label: "수용전념 미술치료" },
   { value: "1:1", label: "맞춤 프로그램 설계" },
   { value: "On/Off", label: "대면·온라인 상담" },
   { value: "사전 예약", label: "편안한 예약제 운영" },
