@@ -65,7 +65,7 @@ const teamSchema = {
       honorificSuffix: "MA",
       jobTitle: "미술치료사",
       description:
-        "ACT ART CENTER 미술치료사. 차의과학대학교 의학과 임상미술치료 박사과정, 석사. 홍익대학교 미술학 석사, 학사. 한국미술치료학회 정회원. 언어 이전의 경험을 예술로 꺼내고, ACT(수용전념) 미술치료로 방향을 세우는 통합 접근을 지향합니다.",
+        "ACT ART CENTER 미술치료사. 차의과학대학교 의학과 임상미술치료 박사과정, 석사. 홍익대학교 미술학 석사, 학사. 한국미술치료학회 정회원. 미술치료를 중심으로 은유적 표현과 가치의 시각화를 살피며, 필요한 경우 ACT(수용전념치료)를 학술적 근거로 보조 통합합니다.",
       image: `${SITE_URL}/images/team-eunbyeol.jpg`,
       url: `${SITE_URL}/team`,
       worksFor: { "@id": `${SITE_URL}/#organization` },
