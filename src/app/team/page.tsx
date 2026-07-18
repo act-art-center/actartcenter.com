@@ -287,7 +287,7 @@ export default function TeamPage() {
 
               {/* Thesis */}
               <div className="mt-6 p-5 bg-white rounded-xl" style={{ border: "1px solid rgba(196, 191, 183, 0.18)" }}>
-                <h2 className="text-night font-semibold text-sm mb-3">논문</h2>
+                <h2 className="text-night font-semibold text-sm mb-3">논문 (미술치료)</h2>
                 <ul className="space-y-1.5 text-sm text-charcoal/70">
                   <li className="flex items-start gap-2">
                     <span className="w-1.5 h-1.5 mt-2 rounded-full bg-primary-500 shrink-0" />
