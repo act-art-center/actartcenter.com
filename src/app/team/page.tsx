@@ -291,7 +291,7 @@ export default function TeamPage() {
                 <ul className="space-y-1.5 text-sm text-charcoal/70">
                   <li className="flex items-start gap-2">
                     <span className="w-1.5 h-1.5 mt-2 rounded-full bg-primary-500 shrink-0" />
-                    정신건강의학과 보호병동 입원 청소년 대상 ACT(수용전념) 기반 미술치료 단일사례연구
+                    정신건강의학과 보호병동 입원 청소년 대상 ACT(수용전념) 기반 미술치료 단일사례연구 (지도교수 정여주)
                   </li>
                 </ul>
               </div>
