@@ -10,7 +10,7 @@ export function CharactersIntroSection() {
         <div className="grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] gap-10 lg:gap-16 items-center">
           <div>
             <p className="text-xs font-semibold tracking-widest uppercase text-primary-500 mb-3">
-              ACTIE 액티 & ARTTY 아티
+              ACTIE(액티) & ARTTY(아티)
             </p>
             <h2 className="text-2xl lg:text-3xl font-bold tracking-tight text-night">
               미술치료 여정에 함께하는 두 안내자

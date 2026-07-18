@@ -8,9 +8,9 @@ import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "ACT 그룹 미술치료 — 4~6인 소그룹 8주 마음유연성 프로그램",
+  title: "ACT 그룹 미술치료 — 2~6인 소그룹 8주 마음유연성 프로그램",
   description:
-    "같은 고민을 가진 4~6명이 함께하는 소그룹 미술치료. Yalom의 치료적 요인과 ACT 6프로세스를 미술 작업으로 풀어내는 주 1회 × 8주 구조. 번아웃·관계 회복·부모 자기돌봄 등 주제별 소그룹으로 진행합니다.",
+    "같은 고민을 가진 2~6명이 함께하는 소그룹 미술치료. Yalom의 치료적 요인과 ACT 6프로세스를 미술 작업으로 풀어내는 주 1회 × 8주 구조. 번아웃·관계 회복·부모 자기돌봄 등 주제별 소그룹으로 진행합니다.",
   keywords: [
     "그룹 미술치료",
     "집단 미술치료",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   alternates: { canonical: `${SITE_URL}/services/group` },
   openGraph: {
     type: "website",
-    title: "ACT 그룹 미술치료 — 4~6인 소그룹 프로그램",
+    title: "ACT 그룹 미술치료 — 2~6인 소그룹 프로그램",
     description:
       "Yalom 치료적 요인 × ACT 6프로세스. 번아웃·관계 회복·부모 자기돌봄 주제별 8주 구조.",
     url: `${SITE_URL}/services/group`,
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "ACT 그룹 미술치료 — 4~6인 소그룹 프로그램",
+    title: "ACT 그룹 미술치료 — 2~6인 소그룹 프로그램",
     description:
       "혼자가 아니라는 감각을 회복하는 8주. 혼자 감당해 온 주제를 같은 결의 사람들과 미술로 풀어냅니다.",
     images: ["/og/services-group.png"],
@@ -62,7 +62,7 @@ const groupServiceSchema = {
       "@id": `${SITE_URL}/services/group#course-8weeks`,
       name: "마음유연성 8주 ACT 그룹 미술치료 프로그램",
       description:
-        "4~6인 소그룹에서 ACT 6프로세스와 Yalom 치료적 요인을 미술 매체로 통합해 다루는 주 1회 × 90분 × 8회기 구조의 그룹 프로그램. 번아웃, 관계 회복, 부모 자기돌봄 등 주제별 트랙으로 운영합니다.",
+        "2~6인 소그룹에서 ACT 6프로세스와 Yalom 치료적 요인을 미술 매체로 통합해 다루는 주 1회 × 90분 × 8회기 구조의 그룹 프로그램. 번아웃, 관계 회복, 부모 자기돌봄 등 주제별 트랙으로 운영합니다.",
       provider: { "@id": `${SITE_URL}/#organization` },
       areaServed: [
         { "@type": "AdministrativeArea", name: "서울특별시" },
@@ -134,7 +134,7 @@ const yalomFactors = [
 
 const whySmallGroup = [
   {
-    title: "왜 4~6명인가요",
+    title: "왜 2~6명인가요",
     description:
       "너무 작으면 관계 역동이 폐쇄되고, 너무 크면 안전감과 발언 기회가 줄어듭니다. 국내외 소그룹 심리치료 문헌에서 정서·자기 탐색 주제에 자주 권장되는 규모입니다.",
   },
@@ -310,7 +310,7 @@ export default function GroupPage() {
                 Group Art Therapy
               </p>
               <h1 className="text-3xl lg:text-4xl font-bold tracking-tight">
-                ACT 그룹 미술치료 — 4~6인 소그룹 8주 마음유연성 프로그램
+                ACT 그룹 미술치료 — 2~6인 소그룹 8주 마음유연성 프로그램
               </h1>
               <p className="mt-6 text-charcoal/80 leading-[var(--leading-normal)]">
                 혼자 감당해 온 주제를, 같은 결의 사람들과 나눠 보는 시간입니다.
@@ -320,7 +320,7 @@ export default function GroupPage() {
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <span className="px-3 py-1.5 bg-cream rounded-lg text-sm text-charcoal/70">90분 세션</span>
-                <span className="px-3 py-1.5 bg-cream rounded-lg text-sm text-charcoal/70">4~6인 소그룹</span>
+                <span className="px-3 py-1.5 bg-cream rounded-lg text-sm text-charcoal/70">2~6인 소그룹</span>
                 <span className="px-3 py-1.5 bg-cream rounded-lg text-sm text-charcoal/70">주 1회 × 8주</span>
                 <span className="px-3 py-1.5 bg-cream rounded-lg text-sm text-charcoal/70">주제별 트랙</span>
               </div>
@@ -382,7 +382,7 @@ export default function GroupPage() {
         <Container>
           <div className="max-w-2xl">
             <h2 className="text-2xl lg:text-3xl font-bold tracking-tight">
-              왜 4~6인 소그룹인가
+              왜 2~6인 소그룹인가
             </h2>
             <p className="mt-4 text-charcoal/70 text-sm leading-relaxed">
               친밀감과 역동 사이의 균형점을 맞추기 위함입니다. 세 가지 기준이

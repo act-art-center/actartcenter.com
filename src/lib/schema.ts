@@ -114,7 +114,7 @@ export function buildFaqPage(questions: ReadonlyArray<FaqQuestion>) {
 // ---------------------------------------------------------------------------
 
 export interface ServiceParams {
-  /** 서비스 이름 (예: "4~6인 그룹 프로그램"). */
+  /** 서비스 이름 (예: "2~6인 그룹 프로그램"). */
   name: string;
   description: string;
   /** 이 서비스의 canonical URL (상대 경로 OK). */

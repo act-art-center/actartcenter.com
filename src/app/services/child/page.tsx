@@ -8,13 +8,13 @@ import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "아동·청소년 미술치료 — 발달 단계별 놀이 × ACT 통합",
+  title: "아동·청소년 미술치료 — 발달 단계별 미술 접근",
   description:
-    "만 5세부터 청소년까지. 놀이와 서사, 미술을 통합해 정서 조절·또래 관계·학교 적응·트라우마를 다루는 발달 단계별 미술심리상담. 매 세션 후 부모 상담 10분 포함, Judith Rubin·Cathy Malchiodi 등 아동 미술치료 표준 문헌에 기반한 설계.",
+    "만 5세부터 청소년까지. 발달 단계에 맞춘 미술 매체와 표현 과정을 통해 정서 조절·또래 관계·학교 적응·트라우마를 다루는 발달 단계별 미술심리상담. 매 세션 후 부모 상담 10분 포함, Judith Rubin·Cathy Malchiodi 등 아동 미술치료 표준 문헌에 기반한 설계.",
   keywords: [
     "아동 미술치료",
     "청소년 미술치료",
-    "놀이치료 미술치료 통합",
+    "발달 단계별 미술치료",
     "부모 상담 미술치료",
     "아동 심리상담",
     "학교 적응 미술치료",
@@ -25,22 +25,22 @@ export const metadata: Metadata = {
   alternates: { canonical: `${SITE_URL}/services/child` },
   openGraph: {
     type: "website",
-    title: "아동·청소년 미술치료 — 발달 단계별 놀이 × ACT 통합",
+    title: "아동·청소년 미술치료 — 발달 단계별 미술 접근",
     description:
-      "만 5세부터. 부모 상담 병행. 놀이·서사·미술을 엮어 정서 조절·또래 관계·학교 적응·트라우마에 접근합니다.",
+      "만 5세부터. 부모 상담 병행. 발달 단계에 맞춘 미술 매체와 표현 과정을 통해 정서 조절·또래 관계·학교 적응·트라우마에 접근합니다.",
     url: `${SITE_URL}/services/child`,
     images: [
       {
         url: "/og/services-child.png",
         width: 1200,
         height: 630,
-        alt: "아동 미술치료 놀이 활동",
+        alt: "아동 미술치료 표현 활동",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "아동·청소년 미술치료 — 발달 단계별 놀이 × ACT 통합",
+    title: "아동·청소년 미술치료 — 발달 단계별 미술 접근",
     description:
       "아이의 발달 단계에 맞는 매체와 거리감으로, 부모님과 함께 설계하는 미술심리상담입니다.",
     images: ["/og/services-child.png"],
@@ -64,7 +64,7 @@ const childServiceSchema = {
       name: "아동·청소년 미술치료",
       alternateName: "Child & Adolescent Art Therapy",
       description:
-        "만 5세~18세 대상 발달 단계별 미술심리상담. 놀이치료·서사치료·ACT 요소를 통합해 정서 조절, 또래 관계, 학교 적응, 트라우마 개입을 다룹니다. 매 세션 후 부모 상담 10분 포함, Judith Rubin·Cathy Malchiodi 등 아동 미술치료 표준 문헌에 기반한 설계.",
+        "만 5세~18세 대상 발달 단계별 미술심리상담. 발달 단계에 맞춘 미술 매체와 표현 과정을 중심으로 정서 조절, 또래 관계, 학교 적응, 트라우마 개입을 다룹니다. 매 세션 후 부모 상담 10분 포함, Judith Rubin·Cathy Malchiodi 등 아동 미술치료 표준 문헌에 기반한 설계.",
       url: `${SITE_URL}/services/child`,
       image: `${SITE_URL}/og/services-child.png`,
       therapyType: "Art Therapy",
@@ -92,9 +92,9 @@ const childServiceSchema = {
 const developmentalStages = [
   {
     range: "만 5 – 7세 (유아기 후반)",
-    approach: "놀이 중심 미술",
+    approach: "발달 단계별 미술 접근",
     description:
-      "상징놀이와 미술이 긴밀하게 엮이는 시기입니다. 점토·핑거페인트·간단한 스토리 드로잉처럼 감각 기반 매체를 중심으로, 아이가 이야기를 만들어 낼 수 있는 안전한 장을 먼저 만듭니다.",
+      "발달 특성에 맞춘 미술 매체가 중요한 시기입니다. 점토·핑거페인트·간단한 스토리 드로잉처럼 감각 기반 매체를 중심으로, 아이가 이야기를 만들어 낼 수 있는 안전한 장을 먼저 만듭니다.",
   },
   {
     range: "만 8 – 12세 (학령기)",
@@ -156,8 +156,8 @@ const sessionFlow = [
   },
   {
     step: "3",
-    title: "나눔과 놀이 (5~10분)",
-    description: "완성 여부와 무관하게, 아이가 원하는 만큼만 말로 옮깁니다. 자연스러운 놀이로 마무리합니다.",
+    title: "나눔과 정리 (5~10분)",
+    description: "완성 여부와 무관하게, 아이가 원하는 만큼만 말로 옮깁니다. 자연스럽게 작업을 정리하며 마무리합니다.",
   },
   {
     step: "4",
@@ -211,7 +211,7 @@ const evidenceNotes = [
   {
     source: "Judith Aron Rubin, 『Child Art Therapy』",
     note:
-      "Rubin은 아동 미술치료의 고전 저자로, 아동의 발달 단계에 맞는 매체 선택·상징 놀이의 통합·부모 참여의 중요성을 정립했습니다. 본 센터의 구조화된 세션 설계는 Rubin의 임상 프레임에 기반합니다.",
+      "Rubin은 아동 미술치료의 고전 저자로, 아동의 발달 단계에 맞는 매체 선택·표현 과정·부모 참여의 중요성을 정립했습니다. 본 센터의 구조화된 세션 설계는 Rubin의 임상 프레임에 기반합니다.",
   },
   {
     source: "Cathy Malchiodi, 『Handbook of Art Therapy』·트라우마 통합 미술치료",
@@ -254,11 +254,11 @@ export default function ChildPage() {
                 Child & Adolescent
               </p>
               <h1 className="text-3xl lg:text-4xl font-bold tracking-tight">
-                아동·청소년 미술치료 — 발달 단계별 놀이 × ACT 통합
+                아동·청소년 미술치료 — 발달 단계별 미술 접근
               </h1>
               <p className="mt-6 text-charcoal/80 leading-[var(--leading-normal)]">
                 아이는 어른과 같은 방식으로 감정을 말로 정리하기 어렵습니다.
-                본 센터는 놀이·서사·미술을 한 회기 안에서 엮어, 아이의 발달
+                본 센터는 발달 단계에 맞춘 미술 매체와 표현 과정을 중심으로, 아이의 발달
                 단계와 기질에 맞는 '표현의 통로'를 함께 설계합니다. 매 세션
                 후에는 10분 부모 상담을 통해 가정에서의 지원 방식까지 함께
                 조율합니다.
@@ -307,7 +307,7 @@ export default function ChildPage() {
             <p className="mt-4 text-charcoal/70 text-sm leading-relaxed">
               같은 '미술치료'라도 5살 아이와 16살 청소년에게 필요한 매체와
               언어는 다릅니다. Judith Rubin의 『Child Art Therapy』는 아동
-              미술치료의 출발점을 '아이의 발달 단계에 맞는 재료와 거리감'으로
+              미술치료의 출발점을 '아이의 발달 단계에 맞는 매체와 거리감'으로
               정리한 바 있으며, 본 센터의 설계도 이를 따릅니다.
             </p>
           </div>

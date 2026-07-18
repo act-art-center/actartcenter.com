@@ -512,7 +512,7 @@ export default function IndividualPage() {
               <p className="text-primary-500 text-xs font-semibold tracking-wide uppercase">Group</p>
               <h3 className="mt-2 text-night font-semibold">ACT 그룹 미술치료</h3>
               <p className="mt-2 text-charcoal/70 text-sm leading-relaxed">
-                4~6인 소그룹에서 함께 작업하며 '나만 그런 게 아니구나'를 경험하고 싶은 분께.
+                2~6인 소그룹에서 함께 작업하며 '나만 그런 게 아니구나'를 경험하고 싶은 분께.
               </p>
             </Link>
             <Link

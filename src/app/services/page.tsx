@@ -311,7 +311,7 @@ export default function ServicesPage() {
               },
               {
                 situation: "혼자가 부담스럽고, 비슷한 사람들과 함께하고 싶어요",
-                recommend: "ACT 그룹 미술치료 (4~6인)",
+                recommend: "ACT 그룹 미술치료 (2~6인)",
                 href: "/services/group",
               },
               {
