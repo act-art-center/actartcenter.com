@@ -20,6 +20,7 @@ Assets:
 - `therapist-holding-palette.jpg` — holding palette / media preparation
 - `therapist-listening-session.jpg` — listening/counseling session
 - `therapist-art-table.jpg` — art table / media setup
+- `therapist-drawing-response-art.jpg` — therapist drawing/painting for response-art and self-care cards
 - `therapist-cover-overview.jpg` — cover-ready overview image
 - `therapist-child-session.jpg` — child/session support image
 - `therapist-calm-counseling.jpg` — calm counseling/session image
