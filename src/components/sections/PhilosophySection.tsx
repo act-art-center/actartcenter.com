@@ -23,7 +23,7 @@ export function PhilosophySection() {
             <h2 className="text-2xl lg:text-3xl font-bold tracking-tight">상담 철학</h2>
 
             <p className="mt-6 text-charcoal text-base leading-relaxed">
-              내담자의 <strong className="text-night">경험과 안전한 과정을 존중합니다.</strong>
+              한 사람의 <strong className="text-night">경험과 안전한 과정을 존중합니다.</strong>
               미술 경험을 통해 마음의 힘을 기르고 <strong className="text-night">삶의 방향성과 의미</strong>를 함께 탐색합니다.
             </p>
 
