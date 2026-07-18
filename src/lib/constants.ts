@@ -123,7 +123,7 @@ export const SERVICES_ALL = [
     description: "Zoom 화상 + 미술 재료 키트 자택 배송. 전국 어디서나, 해외 거주 한국인도 참여 가능한 비대면 ACT 미술치료.",
     href: "/services/online",
     anchor: "전국 온라인 미술치료",
-    image: "/characters/acttie-reading.png",
+    image: "/characters/acttie-laptop.png",
     imageAlt: "온라인 미술치료 Zoom 세션",
     group: "adult",
   },

@@ -50,7 +50,7 @@ export const HERO_REGISTRY: HeroSlot[] = [
     id: "pricing",
     page: "/pricing",
     imageUrl:
-      "/characters/acttie-reading.png",
+      "/characters/acttie-laptop.png",
     imageAlt: "ACT ART CENTER 비용 안내",
     category: "page",
   },

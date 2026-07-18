@@ -103,7 +103,7 @@ const VARIANT_MAP: Record<
   },
   caregiverRest: {
     character: "ACTIE",
-    characterSrc: "/characters/acttie-reading.png",
+    characterSrc: "/characters/acttie-laptop.png",
     accent: "#6E8B7C",
     bg: "#EFE1C6",
     label: "돌봄과 쉼",
