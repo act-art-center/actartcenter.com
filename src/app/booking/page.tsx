@@ -228,6 +228,7 @@ export default function BookingPage() {
                         <option value="group">그룹 프로그램</option>
                         <option value="child">아동·청소년 미술치료</option>
                         <option value="online">온라인 미술치료</option>
+                        <option value="tci">TCI 기질검사 및 상담</option>
                         <option value="protective">보호·의료 환경 미술심리치료</option>
                         <option value="emotional">정서·트라우마 중심 미술심리치료</option>
                         <option value="depth">심층 탐색·연구 기반 미술심리치료</option>

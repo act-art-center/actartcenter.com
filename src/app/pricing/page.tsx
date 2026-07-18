@@ -10,7 +10,7 @@ import { SITE_URL } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "미술치료 비용 — 개인·그룹·아동·온라인·패키지 요금표",
   description:
-    "ACT ART CENTER 미술심리치료 비용을 투명하게 공개합니다. 개인 50분 80,000~120,000원, 그룹 2~6인 40,000~60,000원, 아동 세션 80,000원부터. 가격 철학·결제 수단·환불 규정·한국 심리상담 시장 참고치까지 함께 안내합니다.",
+    "ACT ART CENTER 미술심리치료 비용을 투명하게 공개합니다. 개인 50분 80,000~120,000원, TCI 기질검사 및 상담 100,000원, 그룹 2~6인 40,000~60,000원. 가격 철학·결제 수단·환불 규정까지 함께 안내합니다.",
   keywords: [
     "미술치료 비용",
     "미술치료 가격",
@@ -58,7 +58,7 @@ const pricingSchema = {
       "@id": `${SITE_URL}/pricing#offers`,
       name: "ACT 미술치료 서비스 가격표",
       description:
-        "성인·아동 개인 세션, 2~6인 소그룹, 온라인 세션, 8주 패키지, 번아웃 워크숍, 가족 세션, 기업 워크숍의 표시 가격 범위.",
+        "성인·아동 개인 세션, TCI 기질검사 및 상담, 2~6인 소그룹, 온라인 세션, 8주 패키지, 번아웃 워크숍, 가족 세션, 기업 워크숍의 표시 가격 범위.",
       itemListElement: [
         {
           "@type": "Offer",
@@ -103,6 +103,15 @@ const pricingSchema = {
             priceCurrency: "KRW",
           },
           itemOffered: { "@id": `${SITE_URL}/services/online#service` },
+        },
+        {
+          "@type": "Offer",
+          name: "TCI 기질검사 및 상담",
+          priceSpecification: {
+            "@type": "PriceSpecification",
+            price: "100000",
+            priceCurrency: "KRW",
+          },
         },
         {
           "@type": "Offer",
@@ -159,6 +168,7 @@ const pricing = [
   },
   { service: "그룹 프로그램", duration: "90분", price: "40,000 ~ 60,000원 / 인", note: "2~6인 소그룹" },
   { service: "온라인 미술치료", duration: "50분", price: "70,000 ~ 100,000원", note: "미술 키트 배송 포함" },
+  { service: "TCI 기질검사 및 상담", duration: "검사 + 해석 상담", price: "100,000원", note: "" },
 ];
 
 const packages = [
@@ -196,9 +206,9 @@ const priceInclusions = [
       "50분 세션 뒤에는 임상 기록·다음 회기 설계·필요 시 슈퍼비전이 이어집니다. 표시 가격은 이 모든 시간을 포함합니다.",
   },
   {
-    title: "미술 재료와 공간",
+    title: "미술 매체와 공간",
     description:
-      "물감·파스텔·종이·콜라주 재료와 깨끗한 작업 공간, 작품 보관·사진 기록까지 추가 비용 없이 포함됩니다.",
+      "물감·파스텔·종이·콜라주 매체와 깨끗한 작업 공간, 작품 보관·사진 기록까지 추가 비용 없이 포함됩니다.",
   },
   {
     title: "비밀유지 인프라",
