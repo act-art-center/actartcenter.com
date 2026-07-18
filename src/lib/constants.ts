@@ -274,7 +274,7 @@ export const ACT_PROCESSES = [
     title: "전념 행동",
     titleEn: "Committed Action",
     description: "가치를 향해 구체적인 한 걸음을 내딛습니다.",
-    artConnection: "가치를 향한 한 걸음을 미술로 계획하세요",
+    artConnection: "미술 안에서 가치를 향한 한 걸음을 내딛을 용기를 만나보세요",
     essence:
       "가치는 선언이 아니라 행동으로 드러납니다. 불편한 감정이 있어도 가치 방향으로 한 걸음을 선택하는 반복적 실천입니다.",
     metaphor:
