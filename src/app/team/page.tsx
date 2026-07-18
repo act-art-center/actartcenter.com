@@ -9,14 +9,14 @@ import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { TEAM_MEMBERS, SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "대표 고은별 — ACT 미술심리치료사 프로필 (차의과학대학교 의학과 임상미술치료 박사과정)",
+  title: "미술치료사 고은별 — ACT(수용전념) 미술치료 프로필 (차의과학대학교 의학과 임상미술치료 박사과정)",
   description:
-    "ACT ART CENTER 대표 고은별(Stella)의 치료 철학·전문 영역·연구 관심사·첫 회기 흐름 안내. 차의과학대학교 의학과 임상미술치료 박사과정, 석사. 홍익대학교 미술학 석사, 학사. 한국미술치료학회 정회원.",
+    "ACT ART CENTER 미술치료사 고은별(Stella)의 치료 철학·전문 영역·연구 관심사·첫 회기 흐름 안내. 차의과학대학교 의학과 임상미술치료 박사과정, 석사. 홍익대학교 미술학 석사, 학사. 한국미술치료학회 정회원.",
   keywords: [
     "고은별 미술치료사",
     "Stella 미술치료사",
     "미술심리상담사",
-    "ACT 전문가",
+    "ACT(수용전념) 미술치료",
     "차의과대 미술치료 박사",
     "홍익대 미술대학 석사",
     "한국미술치료학회 정회원",
@@ -24,22 +24,22 @@ export const metadata: Metadata = {
   alternates: { canonical: `${SITE_URL}/team` },
   openGraph: {
     type: "profile",
-    title: "대표 고은별 — ACT 미술심리치료사",
+    title: "미술치료사 고은별 — ACT(수용전념) 미술치료",
     description:
-      "차의과학대학교 의학과 임상미술치료 박사과정, 석사 · 홍익대학교 미술학 석사, 학사 · 한국미술치료학회 정회원. ACT + 미술치료 통합 접근 전문.",
+      "차의과학대학교 의학과 임상미술치료 박사과정, 석사 · 홍익대학교 미술학 석사, 학사 · 한국미술치료학회 정회원. ACT(수용전념) 미술치료 통합 접근 전문.",
     url: `${SITE_URL}/team`,
     images: [
       {
         url: "/og/team.png",
         width: 1200,
         height: 630,
-        alt: "ACT ART CENTER 대표 고은별 프로필",
+        alt: "ACT ART CENTER 미술치료사 고은별 프로필",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "대표 고은별 — ACT 미술심리치료사",
+    title: "미술치료사 고은별 — ACT(수용전념) 미술치료",
     description: "차의과학대학교 의학과 임상미술치료 박사과정, 석사 · 홍익대학교 미술학 석사, 학사 · 한국미술치료학회 정회원.",
     images: ["/og/team.png"],
   },
@@ -63,9 +63,9 @@ const teamSchema = {
       name: "고은별",
       alternateName: "Stella Koh",
       honorificSuffix: "MA",
-      jobTitle: "대표 / 미술심리치료사",
+      jobTitle: "미술치료사",
       description:
-        "ACT ART CENTER 대표. 차의과학대학교 의학과 임상미술치료 박사과정, 석사. 홍익대학교 미술학 석사, 학사. 한국미술치료학회 정회원. 언어 이전의 경험을 예술로 꺼내고, 수용전념치료(ACT)로 방향을 세우는 통합 접근을 지향합니다.",
+        "ACT ART CENTER 미술치료사. 차의과학대학교 의학과 임상미술치료 박사과정, 석사. 홍익대학교 미술학 석사, 학사. 한국미술치료학회 정회원. 언어 이전의 경험을 예술로 꺼내고, ACT(수용전념) 미술치료로 방향을 세우는 통합 접근을 지향합니다.",
       image: `${SITE_URL}/images/team-eunbyeol.jpg`,
       url: `${SITE_URL}/team`,
       worksFor: { "@id": `${SITE_URL}/#organization` },
@@ -145,7 +145,7 @@ const teamSchema = {
       knowsAbout: [
         "미술심리치료",
         "Art Therapy",
-        "수용전념치료",
+        "ACT(수용전념) 미술치료",
         "Acceptance and Commitment Therapy",
         "트라우마 미술치료",
         "아동 미술치료",
@@ -162,7 +162,7 @@ export default function TeamPage() {
     <>
       <JsonLd data={teamSchema} />
       <PageHero
-        title="대표 고은별 — 미술심리치료사 프로필"
+        title="미술치료사 고은별 프로필"
         subtitle="미술과 심리치료 모두에서 깊은 전문성을 갖춘 치료사가 함께합니다."
         label="Our Team"
         imageSrc="https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?w=1920&q=80"
@@ -194,7 +194,7 @@ export default function TeamPage() {
               <div className="w-48 h-64 mx-auto rounded-2xl overflow-hidden shadow-[var(--shadow-md)]">
                 <Image
                   src="/images/team-eunbyeol.jpg"
-                  alt="고은별 대표"
+                  alt="고은별 미술치료사"
                   width={192}
                   height={256}
                   className="w-full h-full object-cover object-top"

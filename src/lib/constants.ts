@@ -178,7 +178,7 @@ export const RESOURCE_LINKS = [
 
 /** Footer 사이트맵 4컬럼용 센터 소개 링크. */
 export const ABOUT_LINKS = [
-  { label: "센터 소개·대표 프로필", href: "/team" },
+  { label: "센터 소개·미술치료사 프로필", href: "/team" },
   { label: "ACT 수용전념치료란?", href: "/act-approach" },
   { label: "작품 갤러리", href: "/gallery" },
 ] as const;
@@ -613,13 +613,13 @@ export const TEAM_MEMBERS = [
   {
     id: 1,
     name: "고은별",
-    role: "대표",
+    role: "미술치료사",
     credentials: "MA · 한국미술치료학회 정회원",
     education: [
       "차의과학대학교 의학과 임상미술치료 박사과정, 석사",
       "홍익대학교 미술학 석사, 학사",
     ],
-    specialties: ["미술심리치료", "수용전념치료(ACT)", "트라우마", "정서·심층탐색"],
+    specialties: ["미술심리치료", "ACT(수용전념) 미술치료", "트라우마", "정서·심층탐색"],
     bio: "세 아이의 어머니이자 미술심리치료 전문가. 홍익대학교에서 미술학 석사 및 학사를 마친 후 서울디자인재단 DDP 전시기획을 하며 예술 현장의 실무 경험을 쌓았다. 차의과학대학교임상미술치료 석사 이후, 현재는 의학과 박사 과정 중에 미술을 통한 정서 회복에 대한 연구를 이어가고 있다.",
     quote:
       "예술적 감수성과 임상적 통찰을 바탕으로, 개인의 내면을 존중하며 지속 가능한 심리적 성장을 돕는 미술치료를 지향합니다.",

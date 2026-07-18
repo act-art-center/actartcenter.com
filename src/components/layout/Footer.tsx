@@ -35,7 +35,8 @@ export function Footer() {
               <span className="font-[var(--font-display)] text-xl">ACT ART CENTER</span>
             </Link>
             <p className="mt-4 text-sm text-stone/60 max-w-[28ch] leading-relaxed">
-              수용전념치료(ACT)와 미술치료를 결합한 전문 심리치료 센터
+              미술치료를 중심으로<br />
+              ACT(수용전념치료)를 결합한 심리치료 센터
             </p>
 
             {/* Address — clickable to /contact so visitors can find the map */}
