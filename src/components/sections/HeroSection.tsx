@@ -15,13 +15,11 @@ export function HeroSection() {
           <h1 className="text-white font-bold leading-[1.1] tracking-[-0.03em] text-[clamp(2.2rem,1.5rem+4vw,4rem)] [word-break:keep-all]">
             미술로
             <br />
-            마음의 힘을 기르는 시간에
-            <br />
-            동행합니다
+            마음의 힘을 기르는 시간에 동행합니다
           </h1>
 
           <p className="mt-6 text-white/80 max-w-md text-lg leading-relaxed">
-            ACT ART CENTER, 액트 아트 센터는
+            ‘ACT ART CENTER, 액트 아트 센터’는
             <br />
             미술을 경험하며 마음이 잠시 쉬어갈 수 있는
             <br />
