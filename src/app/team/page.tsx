@@ -336,27 +336,6 @@ export default function TeamPage() {
         </Container>
       </SectionWrapper>
 
-      {/* Therapy philosophy */}
-      <SectionWrapper bg="paper">
-        <Container>
-          <div className="max-w-3xl mx-auto">
-            <p className="text-xs font-medium tracking-widest uppercase text-secondary-500 text-center mb-3">
-              Therapy Philosophy
-            </p>
-            <h2 className="text-center text-2xl lg:text-3xl font-bold tracking-tight">
-              왜 수용전념치료와 미술을 함께 다루는가
-            </h2>
-            <div className="mt-8 space-y-5">
-              {member.philosophyParagraphs.map((p, i) => (
-                <p key={i} className="text-charcoal/80 leading-relaxed">
-                  {p}
-                </p>
-              ))}
-            </div>
-          </div>
-        </Container>
-      </SectionWrapper>
-
       {/* Specialty details */}
       <SectionWrapper bg="cream">
         <Container>
@@ -411,6 +390,27 @@ export default function TeamPage() {
                 </li>
               ))}
             </ul>
+          </div>
+        </Container>
+      </SectionWrapper>
+
+      {/* Therapy philosophy */}
+      <SectionWrapper bg="cream">
+        <Container>
+          <div className="max-w-3xl mx-auto">
+            <p className="text-xs font-medium tracking-widest uppercase text-secondary-500 text-center mb-3">
+              Therapy Philosophy
+            </p>
+            <h2 className="text-center text-2xl lg:text-3xl font-bold tracking-tight">
+              왜 미술과 수용전념치료를 함께 다루는가
+            </h2>
+            <div className="mt-8 space-y-5">
+              {member.philosophyParagraphs.map((p, i) => (
+                <p key={i} className="text-charcoal/80 leading-relaxed">
+                  {p}
+                </p>
+              ))}
+            </div>
           </div>
         </Container>
       </SectionWrapper>
