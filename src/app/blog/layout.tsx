@@ -4,9 +4,9 @@ import { SITE_URL } from "@/lib/constants";
 import { BLOG_POSTS } from "@/lib/blog-data";
 
 export const metadata: Metadata = {
-  title: "ACT 미술치료 블로그 — 수용전념치료·미술치료 칼럼",
+  title: "미술치료 이야기 | ACT ART CENTER 블로그",
   description:
-    "ACT 수용전념치료와 미술치료를 쉽게 풀어쓴 칼럼 모음. 미술치료 효과, ACT 6 프로세스, 증상별 가이드, 마음챙김 드로잉 등 실용적 콘텐츠를 주 1회 업데이트합니다.",
+    "ACT ART CENTER의 미술치료 이야기입니다. 미술 매체와 표현 과정, 세션에서 만나는 마음의 변화, 쉬어 갈 수 있는 안전한 시간을 따뜻하게 나눕니다.",
   keywords: [
     "미술심리치료 블로그",
     "ACT 블로그",
@@ -18,22 +18,22 @@ export const metadata: Metadata = {
   alternates: { canonical: `${SITE_URL}/blog` },
   openGraph: {
     type: "website",
-    title: "ACT 미술치료 블로그 — 수용전념치료·미술치료 칼럼",
-    description: "미술치료와 ACT에 대한 전문 칼럼 모음.",
+    title: "미술치료 이야기 | ACT ART CENTER 블로그",
+    description: "미술치료 안에서 만나는 마음의 변화와 표현의 과정을 나누는 글 모음.",
     url: `${SITE_URL}/blog`,
     images: [
       {
         url: "/og/blog.png",
         width: 1200,
         height: 630,
-        alt: "ACT 미술치료 블로그",
+        alt: "미술치료 이야기 블로그",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "ACT 미술치료 블로그",
-    description: "수용전념치료와 미술치료 칼럼 주 1회 업데이트.",
+    title: "미술치료 이야기 | ACT ART CENTER 블로그",
+    description: "미술치료 안에서 만나는 마음의 변화와 표현의 과정을 나눕니다.",
     images: ["/og/blog.png"],
   },
 };

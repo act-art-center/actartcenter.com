@@ -44,10 +44,10 @@ export default function BlogPage() {
         <Container className="relative z-10 pb-12 lg:pb-16 pt-32">
           <p className="text-white/60 text-xs font-medium tracking-widest uppercase mb-3">Blog</p>
           <h1 className="text-white text-3xl lg:text-5xl font-extrabold tracking-tight leading-[1.1]">
-            ACT 미술치료 이야기 — 수용전념치료와 미술의 만남
+            미술치료 이야기
           </h1>
           <p className="mt-4 text-white/80 max-w-xl text-lg leading-relaxed">
-            미술치료와 수용전념치료에 대한 전문 콘텐츠를 나눕니다.
+            미술치료 안에서 만나는 마음의 변화와 표현의 과정을 따뜻하게 나눕니다.
           </p>
         </Container>
       </section>
