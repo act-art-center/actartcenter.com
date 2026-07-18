@@ -17,9 +17,11 @@ export function HeroSection() {
           </h1>
 
           <p className="mt-6 text-white/80 max-w-md text-lg leading-relaxed">
-            ACT ART CENTER는 미술치료를 통해
+            액트 아트 센터는
             <br />
-            마음이 잠시 머물며 쉬어 갈 수 있는 안전한 시간을 함께합니다.
+            미술을 경험하며 마음이 잠시 쉬어갈 수 있는
+            <br />
+            안전한 시간을 함께합니다.
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">
