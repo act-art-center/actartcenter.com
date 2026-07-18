@@ -312,8 +312,23 @@ export default function TeamPage() {
                 </ul>
               </div>
 
+              {/* Experience badges */}
+              <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {[
+                  "30여 년 미술 전공 및 창작 경험",
+                  "1,500여 시간 이상 미술치료 임상 경험",
+                ].map((item) => (
+                  <div
+                    key={item}
+                    className="rounded-xl bg-primary-50 px-4 py-3 text-center text-sm font-medium leading-relaxed text-primary-600"
+                  >
+                    {item}
+                  </div>
+                ))}
+              </div>
+
               {/* Quote */}
-              <blockquote className="mt-8 text-center text-primary-500 font-[var(--font-accent)] text-xl leading-relaxed italic max-w-[36ch] mx-auto">
+              <blockquote className="mt-6 text-center text-primary-500 font-[var(--font-accent)] text-xl leading-relaxed italic max-w-[36ch] mx-auto">
                 &ldquo;{member.quote}&rdquo;
               </blockquote>
             </div>
