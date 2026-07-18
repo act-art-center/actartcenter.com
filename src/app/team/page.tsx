@@ -9,9 +9,9 @@ import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { TEAM_MEMBERS, SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "미술치료사 고은별 — ACT(수용전념) 미술치료 프로필 (차의과학대학교 의학과 임상미술치료 박사과정)",
+  title: "미술치료사 고은별 — ACT(수용전념) 미술치료 프로필 (차 의과학대학교 의학과 임상미술치료 박사과정)",
   description:
-    "ACT ART CENTER 미술치료사 고은별(Stella)의 치료 철학·전문 영역·연구 관심사·첫 회기 흐름 안내. 차의과학대학교 의학과 임상미술치료 박사과정, 석사. 홍익대학교 미술학 석사, 학사. 한국미술치료학회 정회원.",
+    "ACT ART CENTER 미술치료사 고은별(Stella)의 치료 철학·전문 영역·연구 관심사·첫 회기 흐름 안내. 차 의과학대학교 의학과 임상미술치료 박사과정, 석사. 홍익대학교 미술학 석사, 학사. 한국미술치료학회 정회원.",
   keywords: [
     "고은별 미술치료사",
     "Stella 미술치료사",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     type: "profile",
     title: "미술치료사 고은별 — ACT(수용전념) 미술치료",
     description:
-      "차의과학대학교 의학과 임상미술치료 박사과정, 석사 · 홍익대학교 미술학 석사, 학사 · 한국미술치료학회 정회원. ACT(수용전념) 미술치료 통합 접근 전문.",
+      "차 의과학대학교 의학과 임상미술치료 박사과정, 석사 · 홍익대학교 미술학 석사, 학사 · 한국미술치료학회 정회원. ACT(수용전념) 미술치료 통합 접근 전문.",
     url: `${SITE_URL}/team`,
     images: [
       {
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "미술치료사 고은별 — ACT(수용전념) 미술치료",
-    description: "차의과학대학교 의학과 임상미술치료 박사과정, 석사 · 홍익대학교 미술학 석사, 학사 · 한국미술치료학회 정회원.",
+    description: "차 의과학대학교 의학과 임상미술치료 박사과정, 석사 · 홍익대학교 미술학 석사, 학사 · 한국미술치료학회 정회원.",
     images: ["/og/team.png"],
   },
 };
@@ -65,19 +65,19 @@ const teamSchema = {
       honorificSuffix: "MA",
       jobTitle: "미술치료사",
       description:
-        "ACT ART CENTER 미술치료사. 차의과학대학교 의학과 임상미술치료 박사과정, 석사. 홍익대학교 미술학 석사, 학사. 한국미술치료학회 정회원. 미술치료를 중심으로 은유적 표현과 가치의 시각화를 살피며, 필요한 경우 ACT(수용전념치료)를 학술적 근거로 보조 통합합니다.",
+        "ACT ART CENTER 미술치료사. 차 의과학대학교 의학과 임상미술치료 박사과정, 석사. 홍익대학교 미술학 석사, 학사. 한국미술치료학회 정회원. 미술치료를 중심으로 은유적 표현과 가치의 시각화를 살피며, 필요한 경우 ACT(수용전념치료)를 학술적 근거로 보조 통합합니다.",
       image: `${SITE_URL}/images/team-eunbyeol.jpg`,
       url: `${SITE_URL}/team`,
       worksFor: { "@id": `${SITE_URL}/#organization` },
       alumniOf: [
         {
           "@type": "EducationalOrganization",
-          name: "차의과학대학교 의학과 임상미술치료 박사과정",
+          name: "차 의과학대학교 의학과 임상미술치료 박사과정",
           sameAs: "https://www.cha.ac.kr/",
         },
         {
           "@type": "EducationalOrganization",
-          name: "차의과학대학교 의학과 임상미술치료 석사",
+          name: "차 의과학대학교 의학과 임상미술치료 석사",
           sameAs: "https://www.cha.ac.kr/",
         },
         {
@@ -101,10 +101,10 @@ const teamSchema = {
           "@type": "EducationalOccupationalCredential",
           credentialCategory: "대학원 학위",
           educationalLevel: "석사",
-          name: "의학과 임상미술치료 석사 (차의과학대학교)",
+          name: "의학과 임상미술치료 석사 (차 의과학대학교)",
           recognizedBy: {
             "@type": "EducationalOrganization",
-            name: "차의과학대학교",
+            name: "차 의과학대학교",
             url: "https://www.cha.ac.kr/",
           },
         },
@@ -112,10 +112,10 @@ const teamSchema = {
           "@type": "EducationalOccupationalCredential",
           credentialCategory: "대학원 과정",
           educationalLevel: "박사과정 이수중",
-          name: "의학과 임상미술치료 박사과정 (차의과학대학교)",
+          name: "의학과 임상미술치료 박사과정 (차 의과학대학교)",
           recognizedBy: {
             "@type": "EducationalOrganization",
-            name: "차의과학대학교",
+            name: "차 의과학대학교",
             url: "https://www.cha.ac.kr/",
           },
         },
@@ -310,7 +310,7 @@ export default function TeamPage() {
               연구 관심사
             </h2>
             <p className="mt-4 text-center text-charcoal/70">
-              차의과학대학교 미술치료학 박사 과정을 이어가며 임상과 연구를 함께 지속합니다.
+              차 의과학대학교 미술치료학 박사 과정을 이어가며 임상과 연구를 함께 지속합니다.
               연구에서의 발견은 세션의 구성과 임상적 결정에 꾸준히 반영됩니다.
             </p>
             <ul className="mt-8 space-y-3">

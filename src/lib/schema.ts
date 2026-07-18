@@ -200,7 +200,7 @@ export interface PersonParams {
  *  - 확정 전까지 `credentials` 에서 해당 항목 제외 또는 TODO 주석으로 표시할 것
  *
  * 확정된 자격 (`src/lib/constants.ts` TEAM_MEMBERS 기준):
- *  - 차의과학대학교 미술치료학 박사과정 이수중, 석사
+ *  - 차 의과학대학교 미술치료학 박사과정 이수중, 석사
  *  - 홍익대학교 미술대학 석사·학사
  */
 export function buildPerson(params: PersonParams) {

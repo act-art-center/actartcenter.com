@@ -78,7 +78,7 @@ export default function BlogPage() {
             <div className="mt-4 space-y-3 text-charcoal/80 text-sm leading-relaxed">
               <p>
                 ACT ART CENTER 블로그는 센터 대표 <strong>고은별</strong> 이 씁니다.
-                차의과학대학교 미술치료학 박사과정을 이수하며 세션 사이에
+                차 의과학대학교 미술치료학 박사과정을 이수하며 세션 사이에
                 공부한 문헌, 슈퍼비전에서 정리한 개념, 현장에서 반복되는 질문들을 정리합니다.
               </p>
               <p>

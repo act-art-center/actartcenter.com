@@ -10,7 +10,7 @@ import { SITE_URL } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "심층 탐색·연구 기반 미술심리치료 — 장기 자기 이해·슈퍼비전·연구 협력",
   description:
-    "자기 이해와 내적 탐색을 원하는 개인의 장기 심층 트랙, 미술치료 전문가를 위한 슈퍼비전, 차의과학대학교 박사과정 연구와 연계되는 사례 기반 학술 협력. Jungian 상징 작업과 Freudian 자유연상의 흐름을 ACT 프레임으로 재통합한 접근으로 설계합니다.",
+    "자기 이해와 내적 탐색을 원하는 개인의 장기 심층 트랙, 미술치료 전문가를 위한 슈퍼비전, 차 의과학대학교 박사과정 연구와 연계되는 사례 기반 학술 협력. Jungian 상징 작업과 Freudian 자유연상의 흐름을 ACT 프레임으로 재통합한 접근으로 설계합니다.",
   keywords: [
     "심층 미술심리치료",
     "장기 미술치료",
@@ -102,7 +102,7 @@ const depthServiceSchema = {
       name: "사례 기반 학술 연구 협력",
       serviceType: "Research Collaboration",
       description:
-        "차의과학대학교 미술치료학 박사과정 연구와 연결되는 사례 기반 학술 협력. 내담자의 사전 서면 동의를 바탕으로 익명화된 사례를 학술지·학회 발표·교육 자료에 활용합니다.",
+        "차 의과학대학교 미술치료학 박사과정 연구와 연결되는 사례 기반 학술 협력. 내담자의 사전 서면 동의를 바탕으로 익명화된 사례를 학술지·학회 발표·교육 자료에 활용합니다.",
       provider: { "@id": `${SITE_URL}/#organization` },
       audience: { "@type": "Audience", audienceType: "연구 참여에 동의하는 내담자·연구 협력 기관" },
     },
@@ -219,7 +219,7 @@ const researchCollaboration = [
   {
     title: "박사과정 연구와의 연결",
     description:
-      "원장은 차의과학대학교 미술치료학 박사과정을 이수하며, ACT 와 미술치료의 통합 프로토콜·성인 번아웃 집단·디지털 환경의 미술치료 적용을 장기 연구 관심으로 두고 있습니다. 사례 기반 질적 연구에 관심 있는 내담자·기관과의 협력을 환영합니다.",
+      "원장은 차 의과학대학교 미술치료학 박사과정을 이수하며, ACT 와 미술치료의 통합 프로토콜·성인 번아웃 집단·디지털 환경의 미술치료 적용을 장기 연구 관심으로 두고 있습니다. 사례 기반 질적 연구에 관심 있는 내담자·기관과의 협력을 환영합니다.",
   },
   {
     title: "윤리 동의 절차",
@@ -292,7 +292,7 @@ const evidenceNotes = [
       "『Acceptance and Commitment Therapy』(2nd ed., 2012) 와 ACBS(Association for Contextual Behavioral Science) 의 국제 프로토콜 업데이트는 본 센터의 통합 프레임 역할을 합니다. 심층 작업의 깊이는 유지하되, 해석 의존성을 낮추는 장치로 ACT 가 작동합니다.",
   },
   {
-    source: "한국미술치료학회 / 차의과학대학교 미술치료학과",
+    source: "한국미술치료학회 / 차 의과학대학교 미술치료학과",
     note:
       "국내 학회·학과는 장기·심층 사례 연구와 슈퍼비전 체계의 기준을 지속적으로 갱신해 왔습니다. 본 센터의 슈퍼비전·연구 협력 절차는 이 국내 임상 맥락에 맞춰 국지화되어 있습니다.",
   },
@@ -516,10 +516,10 @@ export default function DepthPage() {
         <Container>
           <div className="max-w-2xl">
             <h2 className="text-2xl lg:text-3xl font-bold tracking-tight">
-              연구 협력 — 차의과학대학교 박사과정과의 연결
+              연구 협력 — 차 의과학대학교 박사과정과의 연결
             </h2>
             <p className="mt-4 text-charcoal/70 text-sm leading-relaxed">
-              본 센터의 원장은 차의과학대학교 미술치료학 박사과정을 이수하며,
+              본 센터의 원장은 차 의과학대학교 미술치료학 박사과정을 이수하며,
               ACT 와 미술치료의 통합 프로토콜·성인 번아웃 집단·디지털 환경의
               미술치료 적용을 장기 연구 관심으로 두고 있습니다. 사례 기반 질적
               연구에 관심 있는 내담자·기관에게 다음 네 가지 구조로 협력을
