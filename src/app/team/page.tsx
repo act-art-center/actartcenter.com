@@ -242,7 +242,7 @@ export default function TeamPage() {
               </div>
 
               {/* Clinical internships */}
-              <div className="mt-6 p-5 bg-primary-50 rounded-xl">
+              <div className="mt-6 p-5 bg-white rounded-xl" style={{ border: "1px solid rgba(196, 191, 183, 0.18)" }}>
                 <h2 className="text-night font-semibold text-sm mb-3">임상 및 인턴십</h2>
                 <ul className="space-y-1.5 text-sm text-charcoal/70">
                   {[
