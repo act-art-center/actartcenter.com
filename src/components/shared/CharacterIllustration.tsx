@@ -35,7 +35,6 @@ export type CharacterName =
   | "artty-thoughtful"
   | "artty-scenes"
   | "acttie-reading"
-  | "acttie-laptop"
   | "twins-together";
 
 export type CharacterAnimation = "ambient" | "float" | "fade-in" | "none";
@@ -71,7 +70,6 @@ const FILE_MAP: Record<CharacterName, string> = {
   "artty-thoughtful": "/characters/artty-thoughtful.png",
   "artty-scenes": "/characters/artty-scenes.png",
   "acttie-reading": "/characters/acttie-reading.png",
-  "acttie-laptop": "/characters/acttie-laptop.png",
   "twins-together": "/characters/twins-together.png",
 };
 

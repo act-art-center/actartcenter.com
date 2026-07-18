@@ -47,7 +47,7 @@ const moments = [
   },
   {
     title: "학술적으로 연구하며 미술치료를 준비할 때",
-    image: "/characters/acttie-laptop.png",
+    image: "/characters/acttie-reading.png",
     body: "미술치료는 임상 경험과 학술적 근거를 함께 살피며 준비합니다. ACTIE는 문헌과 사례의 흐름을 정리하고, 이를 치료실에서 만나는 마음의 속도와 미술치료 과정에 맞게 연결하는 태도를 상징합니다.",
   },
   {
