@@ -2,7 +2,7 @@ export const SITE_URL = "https://actartcenter.com";
 export const SITE_NAME = "ACT ART CENTER";
 export const SITE_TITLE = "ACT ART CENTER | ACT 미술심리치료 연구소";
 export const SITE_DESCRIPTION =
-  "미술치료는 표현과 나눔을 통해 감정과 관계, 그리고 나를 천천히 살펴가는 과정입니다. ACT ART CENTER는 미술치료를 중심으로 ACT(수용전념)의 관점을 더해, 마음이 잠시 머물며 쉬어 갈 수 있는 안전한 시간을 함께합니다.";
+  "ACT ART CENTER는 미술치료를 통해 마음이 잠시 머물며 쉬어 갈 수 있는 안전한 시간을 함께합니다.";
 export const SITE_TAGLINE = "Accept. Create. Transform.";
 export const SITE_TAGLINE_KR = "Exploring the mind through art, rediscovering meaning in life.";
 

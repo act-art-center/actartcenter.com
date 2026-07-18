@@ -17,8 +17,7 @@ export function HeroSection() {
           </h1>
 
           <p className="mt-6 text-white/80 max-w-md text-lg leading-relaxed">
-            미술치료는 표현과 나눔을 통해 감정과 관계, 그리고 나를 천천히 살펴가는 과정입니다.
-            ACT ART CENTER는 미술치료를 중심으로 ACT(수용전념)의 관점을 더해, 마음이 잠시 머물며 쉬어 갈 수 있는 안전한 시간을 함께합니다.
+            ACT ART CENTER는 미술치료를 통해 마음이 잠시 머물며 쉬어 갈 수 있는 안전한 시간을 함께합니다.
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">
