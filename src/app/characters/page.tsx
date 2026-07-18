@@ -143,7 +143,21 @@ export default function CharactersPage() {
               페이지 속에서 만나는 장면들
             </h2>
             <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-5">
-              {moments.map((moment) => (
+              {moments.slice(0, 4).map((moment) => (
+                <article key={moment.title} className="bg-white rounded-2xl p-5">
+                  <div className="relative aspect-square rounded-xl bg-paper overflow-hidden">
+                    <Image src={moment.image} alt={moment.title} fill className="object-contain" sizes="(max-width: 768px) 100vw, 260px" />
+                  </div>
+                  <h3 className="mt-5 text-night font-semibold">{moment.title}</h3>
+                  <p className="mt-2 text-charcoal/70 text-sm leading-relaxed">{moment.body}</p>
+                </article>
+              ))}
+            </div>
+            <h2 className="mt-12 text-2xl lg:text-3xl font-bold tracking-tight text-night text-center">
+              그리고., 동행자 미술치료사
+            </h2>
+            <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-5">
+              {moments.slice(4).map((moment) => (
                 <article key={moment.title} className="bg-white rounded-2xl p-5">
                   <div className="relative aspect-square rounded-xl bg-paper overflow-hidden">
                     <Image src={moment.image} alt={moment.title} fill className="object-contain" sizes="(max-width: 768px) 100vw, 260px" />
