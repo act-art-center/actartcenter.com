@@ -246,7 +246,7 @@ export default function TeamPage() {
                 <h2 className="text-night font-semibold text-sm mb-3">자격증</h2>
                 <ul className="space-y-1.5 text-sm text-charcoal/70">
                   {[
-                    "미술심리재활 발달재활서비스 제공인력 자격 (한국장애인개발원)",
+                    "미술심리재활 발달재활서비스 제공인력 (한국장애인개발원)",
                     "평생교육사 2급 (교육부)",
                     "미술심리상담사 1급",
                     "색채심리상담사 1급",
