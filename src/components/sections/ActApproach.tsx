@@ -14,9 +14,13 @@ export function ActApproach() {
     <SectionWrapper bg="paper" id="act-approach">
       <Container>
         <div className="text-center mb-12 lg:mb-16">
-          <h2 className="text-2xl lg:text-3xl font-bold tracking-tight">ACT, 수용전념치료란?</h2>
+          <h2 className="text-2xl lg:text-3xl font-bold tracking-tight">
+            미술치료 안에서 경험하는<br />
+            ACT의 6가지 과정
+          </h2>
           <p className="mt-4 text-charcoal/80 max-w-2xl mx-auto text-base leading-relaxed">
-            6가지 핵심 프로세스를 통해 심리적 유연성을 높이고, 가치 있는 삶을 향해 나아갑니다.
+            미술치료의 표현 과정 안에서 은유와 이미지, 가치의 방향을 살피며
+            필요한 만큼 ACT의 여섯 과정을 보조적으로 연결합니다.
           </p>
         </div>
 
