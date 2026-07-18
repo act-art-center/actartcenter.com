@@ -241,6 +241,24 @@ export default function TeamPage() {
                 <p className="text-charcoal/70 text-sm leading-relaxed">{member.bio}</p>
               </div>
 
+              {/* Clinical internships */}
+              <div className="mt-6 p-5 bg-primary-50 rounded-xl">
+                <h2 className="text-night font-semibold text-sm mb-3">임상 및 인턴십</h2>
+                <ul className="space-y-1.5 text-sm text-charcoal/70">
+                  {[
+                    "현 이O병원 정신건강의학과 보호병동 및 외래",
+                    "현 용인 세브OO병원 정신건강의학과 입원병동",
+                    "현 분당O병원 난임센터",
+                    "이O병원 병원형WEE센터",
+                  ].map((item) => (
+                    <li key={item} className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 mt-2 rounded-full bg-primary-500 shrink-0" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
               {/* Quote */}
               <blockquote className="mt-8 text-center text-primary-500 font-[var(--font-accent)] text-xl leading-relaxed italic max-w-[36ch] mx-auto">
                 &ldquo;{member.quote}&rdquo;
