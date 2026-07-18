@@ -246,14 +246,14 @@ export default function TeamPage() {
                 <h2 className="text-night font-semibold text-sm mb-3">임상 및 인턴십</h2>
                 <ul className="space-y-1.5 text-sm text-charcoal/70">
                   {[
-                    "현 이O병원 정신건강의학과 보호병동 및 외래",
-                    "현 사회복지법인 동O원 아동복지시설",
-                    "현 용인 세브OO병원 정신건강의학과 입원병동",
-                    "현 분당O병원 난임센터",
-                    "이음병원 병원형WEE센터",
-                    "성루카 호스피스 병원",
-                    "무이재 암병원",
-                    "사단법인 희망의 숲",
+                    "현 OO병원 정신건강의학과 보호병동 및 외래 임상",
+                    "현 사회복지법인 동O원 아동복지시설 임상",
+                    "현 용인 세브OO병원 정신건강의학과 입원병동 인턴",
+                    "현 분당O병원 난임센터 인턴",
+                    "이음병원 병원형WEE센터 인턴",
+                    "성루카 호스피스 병원 인턴",
+                    "무이재 암병원 인턴",
+                    "사단법인 희망의 숲 장애아동복지시설 인턴",
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 mt-2 rounded-full bg-primary-500 shrink-0" />
@@ -262,7 +262,7 @@ export default function TeamPage() {
                   ))}
                 </ul>
                 <p className="mt-3 text-xs leading-relaxed text-charcoal/55">
-                  현 임상기관은 내담자 보호를 위해 비식별 처리함
+                  (현 임상기관은 내담자 보호를 위해 비식별 처리함)
                 </p>
               </div>
 
