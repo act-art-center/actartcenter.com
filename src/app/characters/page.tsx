@@ -35,7 +35,7 @@ const characters = [
     alt: "큰 붓을 들고 있는 ARTTY",
     title: "색과 이미지로 마음의 표현을 돕는 안내자",
     body:
-      "ARTTY는 말로 정리하기 어려운 경험을 색, 선, 재료, 이미지로 만나도록 돕는 캐릭터입니다. 작품의 완성도보다 표현의 과정과 안전한 관계를 소중히 여기는 ACT ART CENTER의 미술치료 철학을 전합니다.",
+      "ARTTY는 말로 정리하기 어려운 경험을 색, 선, 매체, 이미지로 만나도록 돕는 캐릭터입니다. 작품의 완성도보다 표현의 과정과 안전한 관계를 소중히 여기는 ACT ART CENTER의 미술치료 철학을 전합니다.",
   },
 ];
 
@@ -44,6 +44,11 @@ const moments = [
     title: "처음 방문하는 분께",
     image: "/characters/artty-welcome.png",
     body: "낯선 치료실에 들어오는 마음이 조금 편안해지도록, ACTIE와 ARTTY는 안내문과 페이지 곳곳에서 따뜻한 첫인사를 건넵니다.",
+  },
+  {
+    title: "감정을 있는 그대로 받아들여요",
+    image: "/characters/actie/actie-self-hug-acceptance.jpg",
+    body: "ACTIE는 지금 느껴지는 감정을 밀어내지 않고, 있는 그대로 알아차리며 잠시 머무는 태도를 상징합니다.",
   },
   {
     title: "학술적으로 연구하며 미술치료를 준비할 때",
