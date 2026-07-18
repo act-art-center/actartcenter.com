@@ -1,4 +1,52 @@
 export const blogContent: Record<string, string> = {
+  "art-therapy-media-helper-friends": `
+<h2>치료실에서 처음 만나는 작은 친구들</h2>
+<p>치료실에 들어오면 가장 먼저 눈에 들어오는 것은 종이와 색연필, 물감, 점토 같은 여러 미술 매체입니다. 어떤 분은 조심스럽게 색연필 하나를 집고, 어떤 아이는 물감을 보자마자 손을 뻗습니다. 또 어떤 분은 한참 동안 매체 앞에 머물며 천천히 바라봅니다.</p>
+
+<p>매체는 여러분의 미술 표현을 돕는 도우미 친구들입니다. 말로 다 설명하기 어려운 마음도 색연필, 물감, 점토, 종이 같은 매체를 만나면 조금 더 편안하게 밖으로 나올 수 있습니다.</p>
+
+<p>저는 미술치료사로서 그 시간을 소중하게 봅니다. 매체를 만나는 순간에는 그날의 마음 상태, 몸의 긴장, 표현하고 싶은 감각이 조용히 드러납니다. 빨리 시작하는 사람도 있고, 천천히 살피는 사람도 있습니다. 모두 그 사람의 속도입니다.</p>
+
+<h2>매체마다 마음을 돕는 방식이 다릅니다</h2>
+<p>미술치료 연구와 임상 문헌에서는 매체의 성질이 감정 표현과 자기조절에 영향을 줄 수 있다고 설명합니다. 단단한 연필은 선을 조절하며 안정감을 느끼기 좋고, 물감은 감정의 흐름을 넓게 펼쳐보기에 알맞습니다. 점토처럼 손으로 누르고 빚는 매체는 몸의 감각을 깨우며 긴장을 다루는 경험으로 이어질 수 있습니다.</p>
+
+<p>제 치료실에서는 작품의 완성도보다 매체를 만나는 태도와 과정의 변화를 세심하게 살핍니다. 색을 고르는 손의 움직임, 선을 멈추는 순간, 다시 덧칠하는 마음, 종이를 접었다 펴는 작은 행동 안에 그 사람만의 이야기가 담깁니다. 저는 그 이야기를 서두르지 않고 함께 바라봅니다.</p>
+
+<h2>치료사가 매체를 제안할 때</h2>
+<p>때로는 치료사가 매체를 먼저 구조화해 제안하기도 합니다. 예를 들어 감정이 빠르게 올라오는 시기에는 비교적 조절감이 있는 매체를 제안할 수 있고, 몸의 감각을 안전하게 깨우는 과정이 필요할 때는 촉각적 매체를 조심스럽게 안내할 수 있습니다.</p>
+
+<p>이 제안은 현재의 정서 상태와 치료 목표, 안전감을 함께 고려한 치료적 근거 위에서 이루어집니다. 내담자가 자기 속도를 지키며, 표현을 감당 가능한 범위 안에서 이어가도록 돕는 과정입니다.</p>
+
+<h2>ACT 관점은 표현을 안전하게 붙들어 줍니다</h2>
+<p>수용전념치료 관점은 미술치료 과정 안에서 보조적으로 통합됩니다. 예를 들어 불편한 감각이 올라올 때 그 감각을 색과 형태 안에 잠시 담아보며, 지금 내 마음이 어디에 머무는지 알아차릴 수 있습니다. 그 알아차림은 자신에게 중요한 방향을 다시 떠올리는 작은 발판이 됩니다.</p>
+
+<p>중심은 언제나 미술치료의 표현 과정과 치료적 관계에 있습니다. ACT는 그 과정 안에서 마음을 바라보는 질문을 더해 주는 보조적 임상 틀로 함께 사용됩니다.</p>
+
+<h2>가정에서 건넬 수 있는 따뜻한 말</h2>
+<p>가정에서도 작은 관찰을 해볼 수 있습니다. 아이가 그림을 그릴 때 “무엇을 그렸어?”라는 질문과 함께 “오늘은 이 색이 손에 잘 갔구나”, “여기를 오래 칠했네”, “이 부분을 만들 때 어떤 느낌이었어?”처럼 과정에 머무는 말을 건네보세요.</p>
+
+<p>성인이라면 하루 끝에 색 하나를 고르고, 그 색이 오늘의 몸과 마음에 어떻게 닿는지 짧게 적어보셔도 좋습니다. 미술치료는 마음이 표현될 수 있는 자리를 함께 만들어 갑니다. 매체를 만나는 짧은 시간에도 마음은 이미 움직이고 있습니다. 저는 그 움직임이 안전하게 이어지도록, 조용하고 따뜻한 관계 안에서 함께 머물겠습니다.</p>
+
+<p>미술치료와 ACT의 통합 접근은 <a href="/act-approach">ACT 접근 페이지</a>에서 더 확인하실 수 있고, 현재 상황에 맞는 상담 가능 여부는 <a href="/booking">첫 상담 예약</a>에서 문의하실 수 있습니다.</p>
+
+<hr />
+<h3>이 글이 답한 질문</h3>
+<ul class="post-qa">
+<li><strong>Q: 미술치료에서 매체는 어떤 의미인가요?</strong><br />A: 매체는 색연필, 물감, 점토, 종이처럼 미술 표현을 돕는 도우미 친구들입니다. 말로 정리되기 전의 마음을 색과 선, 질감으로 만나도록 돕습니다.</li>
+<li><strong>Q: 치료사가 매체를 정해 주는 경우도 있나요?</strong><br />A: 있습니다. 내담자의 정서 상태, 치료 목표, 안전감을 고려해 치료적 근거에 따라 매체를 구조화해 제안할 수 있습니다.</li>
+<li><strong>Q: 집에서도 매체를 활용해볼 수 있나요?</strong><br />A: 색 하나를 고르고 오늘의 몸과 마음에 어떻게 닿는지 적어보는 작은 활동부터 시작할 수 있습니다. 아이에게는 결과보다 과정에 머무는 말을 건네면 표현이 더 편안해집니다.</li>
+</ul>
+
+<hr />
+<h3>참고 문헌</h3>
+<ul class="references">
+<li><a href="https://arttherapy.org/about-art-therapy/" rel="noopener noreferrer" target="_blank">American Art Therapy Association. About Art Therapy.</a></li>
+<li><a href="https://www.routledge.com/Expressive-Therapies-Continuum/Hinz/p/book/9780367151190" rel="noopener noreferrer" target="_blank">Hinz, L. D. (2019). <em>Expressive Therapies Continuum: A Framework for Using Art in Therapy</em> (2nd ed.). Routledge.</a></li>
+<li><a href="https://www.guilford.com/books/Handbook-of-Art-Therapy/Cathy-Malchiodi/9781462550524" rel="noopener noreferrer" target="_blank">Malchiodi, C. A. (Ed.). (2012). <em>Handbook of Art Therapy</em> (2nd ed.). Guilford Press.</a></li>
+<li><a href="https://www.guilford.com/books/Acceptance-and-Commitment-Therapy/Hayes-Strosahl-Wilson/9781462528943" rel="noopener noreferrer" target="_blank">Hayes, S. C., Strosahl, K. D., &amp; Wilson, K. G. (2012). <em>Acceptance and Commitment Therapy: The Process and Practice of Mindful Change</em>.</a></li>
+</ul>
+`,
+
   "kramer-naumburg-art-therapy-perspectives": `
 <h2>미술치료를 이해할 때 자주 만나는 두 이름</h2>
 <p>미술치료를 공부하다 보면 자주 만나게 되는 두 이름이 있습니다. 마거릿 나움버그(Margaret Naumburg)와 에디스 크레이머(Edith Kramer)입니다.</p>

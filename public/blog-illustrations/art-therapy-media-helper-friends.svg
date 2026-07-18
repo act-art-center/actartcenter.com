@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="ACT ART CENTER blog illustration: 미술치료 매체를 만나는 시간">
+  <rect width="1600" height="900" rx="64" fill="#F8F4EC"/>
+  <rect x="70" y="70" width="1460" height="760" rx="72" fill="#D9DFD1"/>
+  <circle cx="1290" cy="190" r="104" fill="#D9A13B" opacity="0.72"/>
+  <circle cx="285" cy="180" r="62" fill="#fff" opacity="0.42"/>
+  <text x="145" y="120" font-family="Pretendard, Arial, sans-serif" font-size="34" font-weight="700" fill="#111" opacity="0.58">ACT ART CENTER</text>
+  <rect x="145" y="570" width="705" height="150" rx="44" fill="#F8F4EC" opacity="0.78"/>
+  <path d="M185 638 C280 575 370 700 480 625 C575 560 660 675 790 610" fill="none" stroke="#C8795A" stroke-width="20" stroke-linecap="round" opacity="0.55"/>
+  <circle cx="245" cy="655" r="25" fill="#0E5C50" opacity="0.56"/>
+  <circle cx="365" cy="615" r="20" fill="#D9A13B" opacity="0.68"/>
+  <circle cx="505" cy="655" r="23" fill="#C8795A" opacity="0.62"/>
+  <rect x="650" y="655" width="150" height="30" rx="15" fill="#0E5C50" opacity="0.62"/>
+  <rect x="190" y="255" width="360" height="245" rx="36" fill="#FFF8EC" opacity="0.76"/>
+  <path d="M235 365 C300 310 365 420 445 350" fill="none" stroke="#0E5C50" stroke-width="15" stroke-linecap="round" opacity="0.48"/>
+  <path d="M245 425 C330 380 390 475 495 410" fill="none" stroke="#D35D47" stroke-width="14" stroke-linecap="round" opacity="0.42"/>
+  <image href="/characters/artty-paint.png" x="890" y="180" width="420" height="420" preserveAspectRatio="xMidYMid meet"/>
+  <path d="M105 760 C340 690 560 815 795 730 C1020 650 1265 790 1495 705" fill="none" stroke="#0E5C50" stroke-width="16" stroke-linecap="round" opacity="0.16"/>
+</svg>
