@@ -200,7 +200,10 @@ export default function ActApproachPage() {
             <span className="inline-block px-4 py-2 bg-white text-primary-600 text-xs font-semibold rounded-full mb-5">
               Hexaflex · 6 Core Processes
             </span>
-            <h2 className="text-2xl lg:text-3xl font-bold tracking-tight">미술치료 안에서 경험하는 ACT 6가지 과정</h2>
+            <h2 className="text-2xl lg:text-3xl font-bold tracking-tight">
+              미술치료 안에서 경험하는<br />
+              ACT의 6가지 과정
+            </h2>
             <p className="mt-4 text-charcoal/70 max-w-[52ch] mx-auto">
               미술치료 세션에서는 재료를 고르고, 감정을 이미지로 놓아 보고, 작품을 바라보는 과정 안에서
               심리적 유연성을 조금씩 경험합니다. ACT의 여섯 과정은 미술 작업을 이끄는 보조 질문으로
