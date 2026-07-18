@@ -241,6 +241,25 @@ export default function TeamPage() {
                 <p className="text-charcoal/70 text-sm leading-relaxed">{member.bio}</p>
               </div>
 
+              {/* Credentials */}
+              <div className="mt-6 p-5 bg-white rounded-xl" style={{ border: "1px solid rgba(196, 191, 183, 0.18)" }}>
+                <h2 className="text-night font-semibold text-sm mb-3">자격증</h2>
+                <ul className="space-y-1.5 text-sm text-charcoal/70">
+                  {[
+                    "발달재활서비스 미술심리재활 (한국장애인개발원)",
+                    "평생교육사 2급 (교육부)",
+                    "아트딜러 (미술품판매지도사)",
+                    "색채심리상담사 1급",
+                    "미술심리상담사 1급",
+                  ].map((item) => (
+                    <li key={item} className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 mt-2 rounded-full bg-primary-500 shrink-0" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
               {/* Clinical internships */}
               <div className="mt-6 p-5 bg-white rounded-xl" style={{ border: "1px solid rgba(196, 191, 183, 0.18)" }}>
                 <h2 className="text-night font-semibold text-sm mb-3">임상 및 인턴십</h2>
@@ -264,25 +283,6 @@ export default function TeamPage() {
                 <p className="mt-3 text-xs leading-relaxed text-charcoal/55">
                   (현 임상기관은 내담자 보호를 위해 비식별 처리함)
                 </p>
-              </div>
-
-              {/* Credentials */}
-              <div className="mt-6 p-5 bg-white rounded-xl" style={{ border: "1px solid rgba(196, 191, 183, 0.18)" }}>
-                <h2 className="text-night font-semibold text-sm mb-3">자격증</h2>
-                <ul className="space-y-1.5 text-sm text-charcoal/70">
-                  {[
-                    "발달재활서비스 미술심리재활 (한국장애인개발원)",
-                    "평생교육사 2급 (교육부)",
-                    "아트딜러 (미술품판매지도사)",
-                    "색채심리상담사 1급",
-                    "미술심리상담사 1급",
-                  ].map((item) => (
-                    <li key={item} className="flex items-start gap-2">
-                      <span className="w-1.5 h-1.5 mt-2 rounded-full bg-primary-500 shrink-0" />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
               </div>
 
               {/* Thesis */}
