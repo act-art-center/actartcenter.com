@@ -248,9 +248,8 @@ export default function TeamPage() {
                   {[
                     "발달재활서비스 미술심리재활 (한국장애인개발원)",
                     "평생교육사 2급 (교육부)",
-                    "아트딜러 (미술품판매지도사)",
-                    "색채심리상담사 1급",
                     "미술심리상담사 1급",
+                    "아트딜러 (미술품판매지도사)",
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 mt-2 rounded-full bg-primary-500 shrink-0" />
