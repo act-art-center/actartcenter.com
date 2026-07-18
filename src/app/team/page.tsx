@@ -301,7 +301,8 @@ export default function TeamPage() {
                 <h2 className="text-night font-semibold text-sm mb-3">수상 및 워크숍</h2>
                 <ul className="space-y-1.5 text-sm text-charcoal/70">
                   {[
-                    "Cumulus Green Award",
+                    "Cumulus Green Award 대상 수상",
+                    "Cumulus Association, Melbourne 호주 워크숍",
                     "Icograda, Torino 이탈리아 워크숍",
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-2">
