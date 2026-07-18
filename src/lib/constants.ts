@@ -90,8 +90,8 @@ export const SERVICES_ALL = [
     description: "ACT 6프로세스 기반 1:1 맞춤 미술심리치료. 50분 세션으로 불안·우울·번아웃·트라우마·관계 갈등을 다룹니다.",
     href: "/services/individual",
     anchor: "성인 1:1 개인 미술치료 안내",
-    image: "/characters/artty/artty-writing-desk.jpg",
-    imageAlt: "ARTTY가 책상에서 미술 표현을 준비하는 장면",
+    image: "/characters/session/adult-individual-art-therapy.jpg",
+    imageAlt: "성인 1:1 개인 미술치료에서 함께 그림을 그리는 장면",
     group: "adult",
   },
   {
@@ -123,8 +123,8 @@ export const SERVICES_ALL = [
     description: "Zoom 화상 + 미술 매체 키트 자택 배송. 전국 어디서나, 해외 거주 한국인도 참여 가능한 비대면 ACT 미술치료.",
     href: "/services/online",
     anchor: "전국 온라인 미술치료",
-    image: "/characters/actie/actie-writing-desk.jpg",
-    imageAlt: "ACTIE가 책상에서 온라인 미술치료를 준비하는 장면",
+    image: "/characters/session/online-art-therapy.jpg",
+    imageAlt: "온라인 미술치료를 위해 노트북과 노트를 준비하는 장면",
     group: "adult",
   },
   {
@@ -145,8 +145,8 @@ export const SERVICES_ALL = [
     description: "삶의 전환기에 놓인 분들을 위한 치료. 만성 스트레스, 불안, 정서 소진, 관계 갈등, 상실, 트라우마 경험을 다룹니다.",
     href: "/services/emotional",
     anchor: "정서·트라우마 중심 미술심리치료",
-    image: "/characters/actie/actie-self-hug-acceptance.jpg",
-    imageAlt: "ACTIE가 자기 안아주기로 감정을 수용하는 정서 미술치료 장면",
+    image: "/characters/session/emotional-trauma-art-therapy.jpg",
+    imageAlt: "정서와 트라우마를 미술로 안전하게 표현하는 장면",
     group: "specialty",
   },
   {
