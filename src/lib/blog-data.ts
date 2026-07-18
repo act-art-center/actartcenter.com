@@ -22,7 +22,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: "art-therapy-media-helper-friends",
     title: "매체를 만나는 시간도 미술치료의 시작입니다",
-    excerpt: "색연필, 물감, 점토 같은 매체가 미술 표현을 돕는 도우미 친구가 되는 과정을 미술치료사의 시선으로 따뜻하게 안내합니다.",
+    excerpt: "색연필, 물감, 점토 같은 매체가 말로 정리되기 전의 마음을 색과 선, 질감으로 만나게 하는 과정을 미술치료사의 시선으로 따뜻하게 안내합니다.",
     category: "미술치료",
     seoKeywords: ["미술치료 매체", "미술치료 과정", "정서표현", "치료적 관계", "서초 미술치료", "미술치료사"],
     image: "/blog-illustrations/art-therapy-media-helper-friends.svg",
