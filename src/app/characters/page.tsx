@@ -46,9 +46,19 @@ const moments = [
     body: "낯선 치료실에 들어오는 마음이 조금 편안해지도록, ACTIE와 ARTTY는 안내문과 페이지 곳곳에서 따뜻한 첫인사를 건넵니다.",
   },
   {
+    title: "표현이 막히는 순간에",
+    image: "/characters/artty-thoughtful.png",
+    body: "그림이 바로 나오지 않는 시간도 미술치료의 일부입니다. ARTTY는 멈춤과 망설임까지 안전하게 바라보는 태도를 상징합니다.",
+  },
+  {
     title: "감정을 있는 그대로 받아들이기",
     image: "/characters/actie/actie-self-hug-acceptance.jpg",
     body: "ACTIE는 지금 느껴지는 감정을 밀어내지 않고, 있는 그대로 알아차리며 잠시 머물도록 돕습니다.",
+  },
+  {
+    title: "가치있는 방향을 바라봐요",
+    image: "/characters/actie/actie-telescope.jpg",
+    body: "ACTIE는 마음이 흔들리는 순간에도 내가 소중히 여기는 방향을 조용히 바라보고, 작은 한 걸음을 떠올리는 태도를 권합니다.",
   },
   {
     title: "학술적으로 연구하며 미술치료를 준비할 때",
@@ -59,16 +69,6 @@ const moments = [
     title: "반응작업 하며 자기돌봄",
     image: "/characters/therapist/therapist-drawing-response-art.jpg",
     body: "미술치료사는 반응작업을 통해 세션에서 만난 마음의 울림을 살피고, 미술로 자기돌봄의 시간을 이어갑니다.",
-  },
-  {
-    title: "표현이 막히는 순간에",
-    image: "/characters/artty-thoughtful.png",
-    body: "그림이 바로 나오지 않는 시간도 미술치료의 일부입니다. ARTTY는 멈춤과 망설임까지 안전하게 바라보는 태도를 상징합니다.",
-  },
-  {
-    title: "가치있는 방향을 바라봐요",
-    image: "/characters/actie/actie-telescope.jpg",
-    body: "ACTIE는 마음이 흔들리는 순간에도 내가 소중히 여기는 방향을 조용히 바라보고, 작은 한 걸음을 떠올리는 태도를 권합니다.",
   },
 ];
 

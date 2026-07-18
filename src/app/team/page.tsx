@@ -272,7 +272,7 @@ export default function TeamPage() {
                     "이음병원 병원형WEE센터 인턴",
                     "성루카 호스피스 병원 인턴",
                     "무이재 암병원 인턴",
-                    "사단법인 희망의 숲 장애아동양육시설 인턴",
+                    "사단법인 희망의 숲 장애아동복지시설 인턴",
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 mt-2 rounded-full bg-primary-500 shrink-0" />
