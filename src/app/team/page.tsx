@@ -250,7 +250,7 @@ export default function TeamPage() {
                     "평생교육사 2급 (교육부)",
                     "미술심리상담사 1급",
                     "색채심리상담사 1급",
-                    "아트딜러 (미술품판매지도사)",
+                    "아트딜러 미술품판매지도사 (한국아트딜러협회)",
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 mt-2 rounded-full bg-primary-500 shrink-0" />
