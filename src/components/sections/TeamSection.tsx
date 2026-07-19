@@ -61,10 +61,10 @@ export function TeamSection() {
 
             <Link
               href="/team"
-              aria-label="고은별 대표 프로필 보기"
+              aria-label="프로필 자세히 보기"
               className="mt-6 inline-flex items-center gap-1 text-secondary-500 text-sm font-medium hover:gap-2 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary-500 focus-visible:ring-offset-2 rounded"
             >
-              고은별 대표 프로필 보기
+              프로필 자세히 보기
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
               </svg>
