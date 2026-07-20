@@ -25,8 +25,8 @@ const DRAWING_ASSESSMENT_SERVICE = {
   description: "HTP, KFD, BND, PITR 등 그림검사와 해석 상담을 통해 마음과 관계의 경험을 함께 살핍니다.",
   href: "/booking",
   anchor: "그림검사 및 해석 상담 예약 문의",
-  image: "/characters/therapist/therapist-drawing-response-art.jpg",
-  imageAlt: "미술치료사가 그림을 살펴보며 그림검사 및 상담을 준비하는 장면",
+  image: "/images/drawing-assessment-consultation.jpg",
+  imageAlt: "미술치료사가 한 사람의 그림을 함께 살펴보며 그림검사 해석 상담을 진행하는 장면",
   cta: "예약 문의하기",
 };
 
@@ -67,7 +67,7 @@ export function ServicesSection() {
         {/* Row 1: 오픈스튜디오 및 검사·상담 — 데스크톱 좌우 2열 */}
         <div className="mt-12 lg:mt-16">
           <div className="flex items-baseline justify-between mb-5">
-            <h3 className="text-night text-lg font-semibold tracking-tight">오픈스튜디오 원데이클래스 · 검사 및 상담</h3>
+            <h3 className="text-night text-lg font-semibold tracking-tight">오픈스튜디오 원데이 클래스 / 그림검사 및 TCI 기질검사</h3>
             <Link
               href="/pricing"
               className="text-sm text-secondary-500 font-medium hover:underline underline-offset-4"
@@ -84,7 +84,7 @@ export function ServicesSection() {
         {/* Row 2: 성인 대상 4개 카드 */}
         <div className="mt-14 lg:mt-16">
           <div className="flex items-baseline justify-between mb-5">
-            <h3 className="text-night text-lg font-semibold tracking-tight">성인을 위한 ACT 미술치료</h3>
+            <h3 className="text-night text-lg font-semibold tracking-tight">모두를 위한 미술치료</h3>
             <Link
               href="/pricing"
               className="text-sm text-secondary-500 font-medium hover:underline underline-offset-4"
