@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 export type BlogIllustrationVariant =
+  | "holding"
   | "grief"
   | "misunderstanding"
   | "unfinished"
@@ -24,6 +25,7 @@ type BlogIllustrationProps = {
 };
 
 const SLUG_TO_VARIANT: Record<string, BlogIllustrationVariant> = {
+  "winnicott-holding-environment-art-therapy": "holding",
   "grief-art-therapy-loss-recovery": "grief",
   "art-therapy-not-drawing-skill": "misunderstanding",
   "unfinished-drawing-art-therapy": "unfinished",
@@ -54,6 +56,13 @@ const VARIANT_MAP: Record<
     prop: "lantern" | "marks" | "paper" | "safe" | "crayon" | "cup" | "speech" | "chart" | "hex" | "thread" | "circle" | "bridge" | "stars" | "books";
   }
 > = {
+  holding: {
+    character: "BOTH",
+    accent: "#5F8A7A",
+    bg: "#E8E0D2",
+    label: "안아주는 환경",
+    prop: "safe",
+  },
   hero: {
     character: "BOTH",
     accent: "#2E6B5F",

@@ -20,6 +20,17 @@ export const BLOG_CATEGORIES = [
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "winnicott-holding-environment-art-therapy",
+    title: "마음이 잠시 기대어 머무는 곳: 위니컷의 안아주는 환경과 미술치료",
+    excerpt: "위니컷의 안아주는 환경을 치료실의 안정적인 공간과 관계, 마음을 담아주는 미술 매체의 경험으로 풀어봅니다.",
+    category: "미술치료",
+    seoKeywords: ["위니컷 안아주는 환경", "홀딩 환경", "미술치료", "치료적 관계", "미술치료 매체", "충분히 좋은 환경"],
+    image: "/blog-illustrations/safe-paper-art-therapy-room.svg",
+    date: "2026년 7월 20일",
+    author: "고은별",
+    readTime: "7분",
+  },
+  {
     slug: "art-therapy-media-helper-friends",
     title: "매체를 만나는 시간도 미술치료의 시작입니다",
     excerpt: "색연필, 물감, 점토 같은 매체가 말로 정리되기 전의 마음을 색과 선, 질감으로 만나게 하는 과정을 미술치료사의 시선으로 따뜻하게 안내합니다.",
