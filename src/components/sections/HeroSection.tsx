@@ -1,5 +1,5 @@
-import Link from "next/link";
 import { Container } from "@/components/shared/Container";
+import { ActionLink } from "@/components/shared/ActionLink";
 import { VideoHero } from "@/components/shared/VideoHero";
 
 export function HeroSection() {
@@ -27,45 +27,49 @@ export function HeroSection() {
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">
-            <Link
+            <ActionLink
               href="/booking"
-              aria-label="첫 무료 상담 예약하기"
-              className="inline-flex items-center px-7 py-3.5 bg-primary-500 text-white font-semibold rounded-lg hover:bg-primary-600 transition-all duration-200 hover:scale-[1.02] shadow-[var(--shadow-md)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-night"
+              ariaLabel="첫 무료 상담 예약하기"
+              className="focus-visible:ring-white focus-visible:ring-offset-night"
             >
               첫 무료 상담 예약하기
-            </Link>
-            <Link
+            </ActionLink>
+            <ActionLink
               href="#sessions"
-              aria-label="미술치료 프로그램 자세히 보기"
-              className="inline-flex items-center px-7 py-3.5 text-white font-semibold rounded-lg border-[1.5px] border-white/30 hover:bg-white/10 transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-night"
+              ariaLabel="미술치료 프로그램 자세히 보기"
+              variant="inverse-outline"
+              className="focus-visible:ring-white focus-visible:ring-offset-night"
             >
               미술치료 프로그램 자세히 보기
-            </Link>
-            <Link
+            </ActionLink>
+            <ActionLink
               href="/characters"
-              aria-label="ACTIE와 ARTTY 상세 설명 페이지로 이동"
-              className="inline-flex items-center px-7 py-3.5 bg-white/95 text-night font-semibold rounded-lg border-[1.5px] border-white/70 hover:bg-white transition-all duration-200 hover:scale-[1.02] shadow-[var(--shadow-sm)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-night"
+              ariaLabel="ACTIE와 ARTTY 상세 설명 페이지로 이동"
+              variant="inverse-solid"
+              className="focus-visible:ring-white focus-visible:ring-offset-night"
             >
               ACTIE(액티) &amp; ARTTY(아티)
-            </Link>
+            </ActionLink>
           </div>
 
-          {/* Tertiary cross-links — keeps home hero → hub depth-1 (B2 §2.5) */}
-          <p className="mt-6 text-sm text-white/60 leading-relaxed">
-            <Link
+          <div className="mt-4 flex flex-wrap gap-3" aria-label="추가 바로가기">
+            <ActionLink
               href="/services"
-              className="text-white/80 underline-offset-4 hover:underline hover:text-white"
+              variant="inverse-outline"
+              size="compact"
+              className="focus-visible:ring-white focus-visible:ring-offset-night"
             >
               미술심리치료 서비스 전체 보기
-            </Link>
-            <span className="mx-2 text-white/30" aria-hidden="true">·</span>
-            <Link
+            </ActionLink>
+            <ActionLink
               href="/gallery"
-              className="text-white/80 underline-offset-4 hover:underline hover:text-white"
+              variant="inverse-outline"
+              size="compact"
+              className="focus-visible:ring-white focus-visible:ring-offset-night"
             >
               ACT ART CENTER GALLERY
-            </Link>
-          </p>
+            </ActionLink>
+          </div>
         </div>
       </Container>
 

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { SectionWrapper } from "@/components/shared/SectionWrapper";
 import { Container } from "@/components/shared/Container";
+import { ActionLink } from "@/components/shared/ActionLink";
 import { ACT_PROCESSES } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 
@@ -31,8 +32,11 @@ export function ActApproach() {
               const isActive = activeId === process.id;
               return (
                 <button
+                  type="button"
                   key={process.id}
                   onClick={() => setActiveId(isActive ? null : process.id)}
+                  aria-pressed={isActive}
+                  aria-expanded={isActive}
                   className={cn(
                     "group relative p-6 rounded-2xl text-center transition-all duration-250",
                     isActive
@@ -81,7 +85,9 @@ export function ActApproach() {
             return (
               <div key={process.id}>
                 <button
+                  type="button"
                   onClick={() => setActiveId(isActive ? null : process.id)}
+                  aria-expanded={isActive}
                   className={cn(
                     "w-full text-left p-4 rounded-xl transition-all duration-200",
                     isActive ? "bg-primary-50" : "bg-cream hover:bg-primary-50/50"
@@ -114,15 +120,15 @@ export function ActApproach() {
         </div>
 
         <div className="text-center mt-10">
-          <a
+          <ActionLink
             href="/act-approach"
-            className="inline-flex items-center gap-2 text-primary-500 font-medium hover:text-primary-600 transition-colors"
+            variant="outline"
           >
             ACT 더 알아보기
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
             </svg>
-          </a>
+          </ActionLink>
         </div>
       </Container>
     </SectionWrapper>

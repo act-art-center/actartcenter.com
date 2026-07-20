@@ -1,6 +1,6 @@
-import Link from "next/link";
 import { SectionWrapper } from "@/components/shared/SectionWrapper";
 import { Container } from "@/components/shared/Container";
+import { ActionLink } from "@/components/shared/ActionLink";
 
 /**
  * 홈 마무리 CTA 밴드.
@@ -22,39 +22,42 @@ export function CtaBand() {
           </p>
 
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-            <Link
+            <ActionLink
               href="/booking"
-              aria-label="첫 무료 상담 예약하기"
-              className="inline-flex items-center px-8 py-4 bg-white text-primary-500 font-semibold rounded-lg hover:bg-cream transition-all duration-200 hover:scale-[1.02] shadow-[var(--shadow-md)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary-500"
+              ariaLabel="첫 무료 상담 예약하기"
+              variant="inverse-solid"
+              className="focus-visible:ring-white focus-visible:ring-offset-primary-500"
             >
               첫 무료 상담 예약하기
-            </Link>
-            <Link
+            </ActionLink>
+            <ActionLink
               href="/contact"
-              aria-label="오시는 길·연락처 보기"
-              className="inline-flex items-center px-7 py-3.5 text-white font-semibold rounded-lg border-[1.5px] border-white/40 hover:bg-white/10 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary-500"
+              ariaLabel="오시는 길·연락처 보기"
+              variant="inverse-outline"
+              className="focus-visible:ring-white focus-visible:ring-offset-primary-500"
             >
               오시는 길·연락처
-            </Link>
+            </ActionLink>
           </div>
 
-          <p className="mt-6 text-sm text-white/70">
-            먼저{" "}
-            <Link
+          <div className="mt-4 flex flex-wrap items-center justify-center gap-3">
+            <ActionLink
               href="/pricing"
-              className="text-white font-medium underline-offset-4 hover:underline"
+              variant="inverse-outline"
+              size="compact"
+              className="focus-visible:ring-white focus-visible:ring-offset-primary-500"
             >
               세션 비용 안내
-            </Link>
-            를 확인하시거나{" "}
-            <Link
+            </ActionLink>
+            <ActionLink
               href="/faq"
-              className="text-white font-medium underline-offset-4 hover:underline"
+              variant="inverse-outline"
+              size="compact"
+              className="focus-visible:ring-white focus-visible:ring-offset-primary-500"
             >
               자주 묻는 질문
-            </Link>
-            을 살펴보실 수 있습니다.
-          </p>
+            </ActionLink>
+          </div>
         </div>
       </Container>
     </SectionWrapper>

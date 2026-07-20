@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Link from "next/link";
 import { Container } from "@/components/shared/Container";
 import { SectionWrapper } from "@/components/shared/SectionWrapper";
+import { ActionLink } from "@/components/shared/ActionLink";
 
 export function CharactersIntroSection() {
   return (
@@ -23,18 +23,17 @@ export function CharactersIntroSection() {
               두 캐릭터는 미술치료 여정에서 안전감과 호기심을 더해 주며 동행하는 안내자입니다.
             </p>
             <div className="mt-7 flex flex-wrap gap-3">
-              <Link
+              <ActionLink
                 href="/characters"
-                className="inline-flex items-center rounded-full bg-primary-500 px-6 py-3 text-sm font-semibold text-white transition hover:bg-primary-600"
               >
                 ACTIE와 ARTTY 자세히 보기
-              </Link>
-              <Link
+              </ActionLink>
+              <ActionLink
                 href="/gallery"
-                className="inline-flex items-center rounded-full border border-primary-200 px-6 py-3 text-sm font-semibold text-primary-700 transition hover:bg-primary-50"
+                variant="outline"
               >
                 ACT ART CENTER GALLERY 보기
-              </Link>
+              </ActionLink>
             </div>
           </div>
 
