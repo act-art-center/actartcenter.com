@@ -20,7 +20,7 @@ export function HeroSection() {
           </h1>
 
           <p className="mt-6 text-white/80 max-w-md text-lg leading-relaxed">
-            ‘ACT ART CENTER, 액트 아트 센터’는
+            ‘ACT ART CENTER, <strong className="font-bold">액트 아트 센터</strong>’ 는
             <br />
             미술을 경험하며 마음이 잠시 쉬어갈 수 있는
             <br />
