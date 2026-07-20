@@ -209,6 +209,16 @@ export default function CharactersPage() {
                 Jung, C. G. (1953/1966). <em>Two Essays on Analytical Psychology</em>
                 (Collected Works of C. G. Jung, Vol. 7). Princeton University Press.
               </li>
+              <li>
+                Hayes, S. C., Strosahl, K. D., &amp; Wilson, K. G. (2011).{" "}
+                <em>Acceptance and Commitment Therapy: The Process and Practice of Mindful Change</em>
+                {" "}(2nd ed.). Guilford Press.
+              </li>
+              <li>
+                Backos, A. (2022).{" "}
+                <em>ACT Art Therapy: Creative Approaches to Acceptance and Commitment Therapy</em>.
+                Jessica Kingsley Publishers.
+              </li>
             </ul>
           </div>
         </Container>
