@@ -8,9 +8,9 @@ import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "미술치료 비용 — 개인·그룹·아동·온라인·패키지 요금표",
+  title: "미술치료 비용 — 원데이 클래스·개인·그룹·아동·온라인 요금표",
   description:
-    "ACT ART CENTER 미술심리치료 비용을 투명하게 공개합니다. 개인 50분 80,000~120,000원, TCI 기질검사 및 상담 100,000원, 그룹 2~6인 40,000~60,000원. 가격 철학·결제 수단·환불 규정까지 함께 안내합니다.",
+    "ACT ART CENTER 미술심리치료 비용을 투명하게 공개합니다. 오픈 스튜디오 원데이 클래스 1인 50,000원, 개인 50분 80,000~120,000원, TCI 기질검사 및 상담 100,000원, 그룹 2~6인 40,000~60,000원. 가격 철학·결제 수단·환불 규정까지 함께 안내합니다.",
   keywords: [
     "미술치료 비용",
     "미술치료 가격",
@@ -23,8 +23,8 @@ export const metadata: Metadata = {
   alternates: { canonical: `${SITE_URL}/pricing` },
   openGraph: {
     type: "website",
-    title: "미술치료 비용 — 개인·그룹·아동·온라인·패키지 요금표",
-    description: "투명한 비용 정책. 80,000원부터. 결제·환불·보험 안내 포함.",
+    title: "미술치료 비용 — 원데이 클래스·개인·그룹·아동·온라인 요금표",
+    description: "오픈 스튜디오 원데이 클래스 1인 50,000원부터. 결제·환불·보험 안내 포함.",
     url: `${SITE_URL}/pricing`,
     images: [
       {
@@ -37,8 +37,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "미술치료 비용 — 개인·그룹·아동·온라인 요금표",
-    description: "투명한 비용 정책. 80,000원부터. 결제·환불·보험 안내 포함.",
+    title: "미술치료 비용 — 원데이 클래스·개인·그룹·아동·온라인 요금표",
+    description: "오픈 스튜디오 원데이 클래스 1인 50,000원부터. 결제·환불·보험 안내 포함.",
     images: ["/og/pricing.png"],
   },
 };
@@ -58,8 +58,17 @@ const pricingSchema = {
       "@id": `${SITE_URL}/pricing#offers`,
       name: "ACT 미술치료 서비스 가격표",
       description:
-        "성인·아동 개인 세션, TCI 기질검사 및 상담, 2~6인 소그룹, 온라인 세션, 8주 패키지, 번아웃 워크숍, 가족 세션, 기업 워크숍의 표시 가격 범위.",
+        "오픈 스튜디오 원데이 클래스, 성인·아동 개인 세션, TCI 기질검사 및 상담, 2~6인 소그룹, 온라인 세션, 8주 패키지, 번아웃 워크숍, 가족 세션, 기업 워크숍의 표시 가격 범위.",
       itemListElement: [
+        {
+          "@type": "Offer",
+          name: "오픈 스튜디오 원데이 클래스(1인)",
+          priceSpecification: {
+            "@type": "PriceSpecification",
+            price: "50000",
+            priceCurrency: "KRW",
+          },
+        },
         {
           "@type": "Offer",
           name: "개인 미술심리치료 (성인) 50분",
@@ -159,6 +168,7 @@ const pricingSchema = {
 };
 
 const pricing = [
+  { service: "오픈 스튜디오 원데이 클래스(1인)", duration: "1회", price: "50,000원", note: "" },
   { service: "개인 미술심리치료 (성인)", duration: "50분", price: "80,000 ~ 120,000원", note: "" },
   {
     service: "개인 미술심리치료 (아동·청소년)",

@@ -224,6 +224,7 @@ export default function BookingPage() {
                       <select id="service" name="service"
                         className="w-full px-4 py-3 rounded-lg bg-cream text-charcoal focus:outline-none focus:ring-2 focus:ring-primary-500 transition-all">
                         <option value="">선택해주세요</option>
+                        <option value="one-day-class">오픈 스튜디오 원데이 클래스(1인)</option>
                         <option value="individual">개인 미술치료</option>
                         <option value="group">그룹 프로그램</option>
                         <option value="child">아동·청소년 미술치료</option>

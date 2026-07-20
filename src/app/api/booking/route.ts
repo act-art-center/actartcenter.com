@@ -20,6 +20,7 @@ export async function POST(request: Request) {
     const resend = new Resend(process.env.RESEND_API_KEY);
 
     const serviceLabels: Record<string, string> = {
+      "one-day-class": "오픈 스튜디오 원데이 클래스(1인)",
       protective: "보호·의료 환경 미술심리치료",
       emotional: "정서·트라우마 중심 미술심리치료",
       depth: "심층 탐색·연구 기반 미술심리치료",
