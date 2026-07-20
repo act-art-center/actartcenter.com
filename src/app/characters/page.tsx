@@ -124,7 +124,7 @@ export default function CharactersPage() {
           <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
             {characters.map((character) => (
               <article key={character.name} className="bg-white rounded-3xl p-6 lg:p-8" style={{ boxShadow: "var(--shadow-sm)" }}>
-                <div className="relative mx-auto aspect-square max-w-[280px] overflow-hidden rounded-2xl bg-cream">
+                <div className="relative mx-auto aspect-square max-w-[280px] overflow-hidden rounded-2xl bg-white">
                   <Image src={character.image} alt={character.alt} fill className="object-contain" sizes="280px" />
                 </div>
                 <h3 className="mt-6 text-night text-xl font-bold">{character.name}</h3>
@@ -145,7 +145,7 @@ export default function CharactersPage() {
             <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-5">
               {moments.slice(0, 4).map((moment) => (
                 <article key={moment.title} className="bg-white rounded-2xl p-5">
-                  <div className="relative aspect-square rounded-xl bg-paper overflow-hidden">
+                  <div className="relative aspect-square rounded-xl bg-white overflow-hidden">
                     <Image src={moment.image} alt={moment.title} fill className="object-contain" sizes="(max-width: 768px) 100vw, 260px" />
                   </div>
                   <h3 className="mt-5 text-night font-semibold">{moment.title}</h3>
@@ -159,7 +159,7 @@ export default function CharactersPage() {
             <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-5">
               {moments.slice(4).map((moment) => (
                 <article key={moment.title} className="bg-white rounded-2xl p-5">
-                  <div className="relative aspect-square rounded-xl bg-paper overflow-hidden">
+                  <div className="relative aspect-square rounded-xl bg-white overflow-hidden">
                     <Image src={moment.image} alt={moment.title} fill className="object-contain" sizes="(max-width: 768px) 100vw, 260px" />
                   </div>
                   <h3 className="mt-5 text-night font-semibold">{moment.title}</h3>
