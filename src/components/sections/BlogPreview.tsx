@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { ActionLink } from "@/components/shared/ActionLink";
 import { SectionWrapper } from "@/components/shared/SectionWrapper";
 import { Container } from "@/components/shared/Container";
 import { BlogIllustration, blogIllustrationVariant } from "@/components/shared/BlogIllustration";
@@ -13,18 +12,16 @@ export function BlogPreview() {
       <Container>
         <div className="flex items-center justify-between mb-12 lg:mb-16">
           <h2 className="text-2xl lg:text-3xl font-bold tracking-tight">ACT 미술치료 이야기</h2>
-          <ActionLink
+          <Link
             href="/blog"
-            ariaLabel="미술치료·ACT 칼럼 전체 보기"
-            variant="outline"
-            size="compact"
-            className="hidden sm:inline-flex"
+            aria-label="미술치료·ACT 칼럼 전체 보기"
+            className="hidden sm:inline-flex items-center gap-1 text-secondary-500 text-sm font-medium hover:gap-2 transition-all"
           >
             미술치료·ACT 칼럼 전체 보기
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
             </svg>
-          </ActionLink>
+          </Link>
         </div>
 
         {/* Asymmetric: first card larger */}
@@ -32,7 +29,7 @@ export function BlogPreview() {
           {/* Feature post — spans 3 cols */}
           <Link
             href={`/blog/${blogPosts[0].slug}`}
-            className="md:col-span-3 group block bg-white rounded-xl overflow-hidden transition-all duration-200 hover:-translate-y-1 hover:shadow-[var(--shadow-md)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2"
+            className="md:col-span-3 group block bg-white rounded-xl overflow-hidden transition-all duration-200 hover:-translate-y-1 hover:shadow-[var(--shadow-md)]"
             style={{ border: "1px solid rgba(196, 191, 183, 0.15)" }}
           >
             <div className="relative aspect-[16/9] overflow-hidden">
@@ -44,12 +41,6 @@ export function BlogPreview() {
                 {blogPosts[0].title}
               </h3>
               <p className="mt-2 text-charcoal/70 text-sm">{blogPosts[0].excerpt}</p>
-              <span className="mt-5 inline-flex items-center gap-1 rounded-lg bg-primary-50 px-4 py-2 text-sm font-semibold text-primary-700 transition-all group-hover:gap-2 group-hover:bg-primary-100">
-                글 읽기
-                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                </svg>
-              </span>
             </div>
           </Link>
 
@@ -59,7 +50,7 @@ export function BlogPreview() {
               <Link
                 key={post.slug}
                 href={`/blog/${post.slug}`}
-                className="group block bg-white rounded-xl p-6 flex-1 transition-all duration-200 hover:-translate-y-1 hover:shadow-[var(--shadow-md)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2"
+                className="group block bg-white rounded-xl p-6 flex-1 transition-all duration-200 hover:-translate-y-1 hover:shadow-[var(--shadow-md)]"
                 style={{ border: "1px solid rgba(196, 191, 183, 0.15)" }}
               >
                 <span className="text-xs text-primary-500 font-medium tracking-wide">{post.category}</span>
@@ -67,29 +58,22 @@ export function BlogPreview() {
                   {post.title}
                 </h3>
                 <p className="mt-2 text-charcoal/70 text-sm">{post.excerpt}</p>
-                <span className="mt-5 inline-flex items-center gap-1 rounded-lg bg-primary-50 px-4 py-2 text-sm font-semibold text-primary-700 transition-all group-hover:gap-2 group-hover:bg-primary-100">
-                  글 읽기
-                  <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                  </svg>
-                </span>
               </Link>
             ))}
           </div>
         </div>
 
         <div className="sm:hidden text-center mt-8">
-          <ActionLink
+          <Link
             href="/blog"
-            ariaLabel="미술치료·ACT 칼럼 전체 보기"
-            variant="outline"
-            size="compact"
+            aria-label="미술치료·ACT 칼럼 전체 보기"
+            className="inline-flex items-center gap-1 text-secondary-500 text-sm font-medium"
           >
             미술치료·ACT 칼럼 전체 보기
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
             </svg>
-          </ActionLink>
+          </Link>
         </div>
       </Container>
     </SectionWrapper>

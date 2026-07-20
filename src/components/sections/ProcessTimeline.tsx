@@ -35,10 +35,8 @@ export function ProcessTimeline() {
                 const isPast = i < activeStep;
                 return (
                   <button
-                    type="button"
                     key={step.number}
                     onClick={() => setActiveStep(i)}
-                    aria-pressed={isActive}
                     className="group flex flex-col items-center"
                   >
                     <div
@@ -99,7 +97,6 @@ export function ProcessTimeline() {
           <div className="flex justify-center gap-3 mt-6">
             {PROCESS_STEPS.map((_, i) => (
               <button
-                type="button"
                 key={i}
                 onClick={() => setActiveStep(i)}
                 className={cn(
@@ -107,7 +104,6 @@ export function ProcessTimeline() {
                   i === activeStep ? "bg-primary-500 w-8" : "bg-sand hover:bg-primary-200 w-2.5"
                 )}
                 aria-label={`단계 ${i + 1}`}
-                aria-pressed={i === activeStep}
               />
             ))}
           </div>
@@ -123,10 +119,8 @@ export function ProcessTimeline() {
                 const isActive = i === activeStep;
                 return (
                   <button
-                    type="button"
                     key={step.number}
                     onClick={() => setActiveStep(i)}
-                    aria-expanded={isActive}
                     className="relative flex gap-5 text-left w-full group"
                   >
                     <div

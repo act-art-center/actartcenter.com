@@ -2,7 +2,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { SectionWrapper } from "@/components/shared/SectionWrapper";
 import { Container } from "@/components/shared/Container";
-import { ActionLink } from "@/components/shared/ActionLink";
 import { SERVICES_ADULT, SERVICES_SPECIALTY } from "@/lib/constants";
 
 const ONE_DAY_CLASS_SERVICE = {
@@ -54,29 +53,26 @@ export function ServicesSection() {
             <em className="text-primary-500 not-italic font-medium">감정과 생각에 대한 수용</em>, 그리고{" "}
             <em className="text-primary-500 not-italic font-medium">삶의 가치 인식</em>으로 자연스럽게 확장됩니다.
           </p>
-          <div className="mt-6">
-            <ActionLink
+          <p className="mt-3 text-sm text-charcoal/60">
+            <Link
               href="/services"
-              variant="soft"
-              size="compact"
+              className="underline-offset-4 hover:underline text-primary-500 font-medium"
             >
               미술심리치료 서비스 전체 보기
-            </ActionLink>
-          </div>
+            </Link>
+          </p>
         </div>
 
         {/* Row 1: 오픈스튜디오 및 검사·상담 — 데스크톱 좌우 2열 */}
         <div className="mt-12 lg:mt-16">
-          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between mb-5">
+          <div className="flex items-baseline justify-between mb-5">
             <h3 className="text-night text-lg font-semibold tracking-tight">오픈스튜디오 원데이 클래스 / 그림검사 및 TCI 기질검사</h3>
-            <ActionLink
+            <Link
               href="/pricing"
-              variant="outline"
-              size="compact"
-              className="shrink-0"
+              className="text-sm text-secondary-500 font-medium hover:underline underline-offset-4"
             >
-              세션 비용 안내
-            </ActionLink>
+              세션 비용 안내 →
+            </Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <ServiceCard service={ONE_DAY_CLASS_SERVICE} />
@@ -86,16 +82,14 @@ export function ServicesSection() {
 
         {/* Row 2: 성인 대상 4개 카드 */}
         <div className="mt-14 lg:mt-16">
-          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between mb-5">
+          <div className="flex items-baseline justify-between mb-5">
             <h3 className="text-night text-lg font-semibold tracking-tight">아동부터 성인, 모두를 위한 미술치료</h3>
-            <ActionLink
+            <Link
               href="/pricing"
-              variant="outline"
-              size="compact"
-              className="shrink-0"
+              className="text-sm text-secondary-500 font-medium hover:underline underline-offset-4"
             >
-              세션 비용 안내
-            </ActionLink>
+              세션 비용 안내 →
+            </Link>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {SERVICES_ADULT.map((service) => (
@@ -106,16 +100,14 @@ export function ServicesSection() {
 
         {/* Row 3: 특수·전문 영역 3개 카드 */}
         <div className="mt-14 lg:mt-16">
-          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between mb-5">
+          <div className="flex items-baseline justify-between mb-5">
             <h3 className="text-night text-lg font-semibold tracking-tight">특수·전문 영역 미술심리치료</h3>
-            <ActionLink
+            <Link
               href="/act-approach"
-              variant="outline"
-              size="compact"
-              className="shrink-0"
+              className="text-sm text-secondary-500 font-medium hover:underline underline-offset-4"
             >
-              ACT 미술치료 더 알아보기
-            </ActionLink>
+              ACT 미술치료 더 알아보기 →
+            </Link>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             {SERVICES_SPECIALTY.map((service) => (
@@ -125,16 +117,16 @@ export function ServicesSection() {
         </div>
 
         {/* Cross-link row — pricing/faq/team (B2 spec §2.5 anchor quality) */}
-        <div className="mt-12 text-center">
-          <p className="text-sm text-charcoal/70">더 자세한 안내를 확인해 보세요.</p>
-          <div className="mt-4 flex flex-wrap justify-center gap-3">
-            <ActionLink href="/faq" variant="outline" size="compact">
-              미술치료 자주 묻는 질문
-            </ActionLink>
-            <ActionLink href="/team" variant="outline" size="compact">
-              고은별 대표 프로필
-            </ActionLink>
-          </div>
+        <div className="mt-12 text-center text-sm text-charcoal/70">
+          더 자세한 안내는{" "}
+          <Link href="/faq" className="text-primary-500 font-medium hover:underline underline-offset-4">
+            미술치료 자주 묻는 질문
+          </Link>
+          {" "}또는{" "}
+          <Link href="/team" className="text-primary-500 font-medium hover:underline underline-offset-4">
+            고은별 대표 프로필
+          </Link>
+          을 참고하세요.
         </div>
       </Container>
     </SectionWrapper>
@@ -186,7 +178,7 @@ function ServiceCard({
           {service.description}
         </p>
         {service.meta && <p className="mt-4 text-sm text-charcoal/60">{service.meta}</p>}
-        <span className="mt-auto inline-flex w-fit items-center gap-1 rounded-lg bg-primary-50 px-4 py-2 text-primary-700 text-sm font-semibold group-hover:gap-2 group-hover:bg-primary-100 transition-all">
+        <span className="mt-auto pt-4 inline-flex items-center gap-1 text-secondary-500 text-sm font-medium group-hover:gap-2 transition-all">
           {service.cta ?? "자세히 알아보기"}
           <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />

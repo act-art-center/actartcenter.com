@@ -1,6 +1,6 @@
 "use client";
 
-import { ActionLink } from "@/components/shared/ActionLink";
+import Link from "next/link";
 import { SectionWrapper } from "@/components/shared/SectionWrapper";
 import { Container } from "@/components/shared/Container";
 import { JsonLd } from "@/components/shared/JsonLd";
@@ -79,21 +79,32 @@ export function FaqSection({ emitJsonLd = false }: FaqSectionProps = {}) {
           </Accordion>
 
           {/* Cross-links — FAQ → /faq, contact, booking (B2 §14.5 anchor quality) */}
-          <div className="mt-10 text-center">
+          <div className="mt-10 text-center space-y-2">
             <p className="text-sm text-charcoal/70 leading-relaxed">
-              전체 질문을 살펴보거나 편한 방법으로 상담을 시작해 보세요.
-            </p>
-            <div className="mt-4 flex flex-wrap justify-center gap-3">
-              <ActionLink href="/faq" variant="outline" size="compact">
+              <Link
+                href="/faq"
+                className="text-primary-500 font-medium hover:underline underline-offset-4"
+              >
                 미술치료 FAQ 전체 보기
-              </ActionLink>
-              <ActionLink href="/contact" variant="outline" size="compact">
+              </Link>
+            </p>
+            <p className="text-sm text-charcoal/70 leading-relaxed">
+              여기에 없는 질문이 있으신가요?{" "}
+              <Link
+                href="/contact"
+                className="text-primary-500 font-medium hover:underline underline-offset-4"
+              >
                 직접 문의하기
-              </ActionLink>
-              <ActionLink href="/booking" size="compact">
+              </Link>
+              {" "}또는{" "}
+              <Link
+                href="/booking"
+                className="text-primary-500 font-medium hover:underline underline-offset-4"
+              >
                 첫 무료 상담 예약
-              </ActionLink>
-            </div>
+              </Link>
+              을 이용해 주세요.
+            </p>
           </div>
         </div>
       </Container>
