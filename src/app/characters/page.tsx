@@ -80,6 +80,11 @@ const moments = [
     image: "/characters/therapist/therapist-drawing-response-art.jpg",
     body: "미술치료사는 반응작업을 통해 세션에서 만난 마음의 울림을 살피고, 미술로 자기돌봄의 시간을 이어갑니다.",
   },
+  {
+    title: "미술치료사는 앞서지 않고 동행합니다.",
+    image: "/characters/therapist/therapist-walking-alongside.jpg",
+    body: "미술치료사는 한 사람의 속도와 선택을 존중하며, 미술로 마음을 살피는 길을 곁에서 함께 걸어갑니다.",
+  },
 ];
 
 export default function CharactersPage() {
@@ -166,7 +171,7 @@ export default function CharactersPage() {
             <h2 className="mt-12 text-2xl lg:text-3xl font-bold tracking-tight text-night text-center">
               우정출연, 미술치료 동행자 Stella
             </h2>
-            <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-5">
+            <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-5">
               {moments.slice(6).map((moment) => (
                 <article key={moment.title} className="bg-white rounded-2xl p-5">
                   <div className="relative aspect-square rounded-xl bg-white overflow-hidden">
