@@ -16,12 +16,12 @@ export function Header() {
           </span>
         </Link>
 
-        <nav className="hidden lg:flex items-center gap-8" aria-label="메인 메뉴">
+        <nav className="hidden lg:flex items-center gap-5 xl:gap-7" aria-label="메인 메뉴">
           {NAV_ITEMS.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="text-charcoal text-[var(--text-small)] font-medium tracking-wide hover:text-primary-500 transition-colors"
+              className="whitespace-nowrap text-charcoal text-[var(--text-small)] font-medium tracking-wide hover:text-primary-500 transition-colors"
             >
               {item.label}
             </Link>
