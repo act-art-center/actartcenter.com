@@ -11,7 +11,7 @@ export function TeamSection() {
     <SectionWrapper bg="primary-50">
       <Container>
         <div className="text-center mb-12 lg:mb-16">
-          <h2 className="text-2xl lg:text-3xl font-bold tracking-tight">함께하는 전문가</h2>
+          <h2 className="text-2xl lg:text-3xl font-bold tracking-tight">동행하는 미술치료사</h2>
         </div>
 
         <div className="max-w-lg mx-auto">
