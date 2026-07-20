@@ -126,7 +126,7 @@ const pricingSchema = {
           name: "마음 유연성 8주 프로그램 (개인 8회)",
           priceSpecification: {
             "@type": "PriceSpecification",
-            price: "750000",
+            price: "800000",
             priceCurrency: "KRW",
           },
         },
@@ -182,7 +182,7 @@ const packages = [
   {
     name: "마음 유연성 8주 프로그램",
     sessions: "개인 8회기",
-    price: "750,000원",
+    price: "800,000원",
     note: "ACT 6프로세스 기반",
   },
   {
