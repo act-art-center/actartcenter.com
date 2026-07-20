@@ -25,13 +25,13 @@ export function CharactersIntroSection() {
             <div className="mt-7 flex flex-wrap gap-3">
               <Link
                 href="/characters"
-                className="inline-flex items-center rounded-full bg-primary-500 px-6 py-3 text-sm font-semibold text-white transition hover:bg-primary-600"
+                className="inline-flex items-center rounded-full bg-primary-500 px-6 py-3 text-sm font-semibold text-white transition hover:bg-primary-600 active:translate-y-1 active:duration-75 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2"
               >
                 ACTIE와 ARTTY 자세히 보기
               </Link>
               <Link
                 href="/gallery"
-                className="inline-flex items-center rounded-full border border-primary-200 px-6 py-3 text-sm font-semibold text-primary-700 transition hover:bg-primary-50"
+                className="inline-flex items-center rounded-full border border-primary-200 px-6 py-3 text-sm font-semibold text-primary-700 transition hover:bg-primary-50 active:translate-y-1 active:duration-75 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2"
               >
                 ACT ART CENTER GALLERY 보기
               </Link>
