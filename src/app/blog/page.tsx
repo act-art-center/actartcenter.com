@@ -93,7 +93,7 @@ export default function BlogPage() {
               <Link
                 href="#all-posts"
                 aria-label="블로그 전체 글 목록으로 이동"
-                className="inline-flex min-h-11 items-center gap-2 rounded-lg bg-primary-500 px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-primary-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2"
+                className="inline-flex min-h-11 items-center gap-1.5 rounded-lg bg-primary-500 px-4 py-2 text-sm font-semibold text-white transition-all duration-200 hover:bg-primary-600 active:translate-y-1 active:duration-75 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2"
               >
                 전체 글 보기
                 <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -125,10 +125,10 @@ export default function BlogPage() {
             ].map((t) => (
               <div
                 key={t.name}
-                className="bg-white/60 rounded-xl p-5"
+                className="relative bg-white/60 rounded-xl p-5"
                 style={{ border: "1px solid rgba(196, 191, 183, 0.15)" }}
               >
-                <p className="text-primary-600 font-semibold text-sm">{t.name}</p>
+                <p className="pr-24 text-primary-600 font-semibold text-sm">{t.name}</p>
                 <p className="mt-2 text-charcoal/75 text-xs leading-relaxed">{t.desc}</p>
                 <button
                   type="button"
@@ -137,13 +137,10 @@ export default function BlogPage() {
                     setSearchQuery("");
                     document.getElementById("all-posts")?.scrollIntoView({ behavior: "smooth", block: "start" });
                   }}
-                  className="mt-4 inline-flex min-h-11 items-center gap-2 rounded-lg bg-primary-500 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-primary-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2"
+                  className="absolute right-3 top-2 inline-flex min-h-11 items-center px-2 text-sm font-semibold text-primary-600 transition-colors hover:text-primary-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2"
                   aria-label={`${t.name} 글 보기`}
                 >
-                  글 보기
-                  <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                  </svg>
+                  글 보기 →
                 </button>
               </div>
             ))}
