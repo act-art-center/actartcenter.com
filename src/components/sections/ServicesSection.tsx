@@ -86,7 +86,7 @@ export function ServicesSection() {
                 오픈스튜디오 원데이클래스
               </h4>
               <p className="mt-3 text-charcoal/70 text-sm leading-relaxed">
-                가족, 친구와 함께 참여할 수 있는 열린 미술 시간입니다.
+                개인 세션 및 가족, 친구와 함께 참여도 가능한 열린 미술 시간입니다.
               </p>
               <span className="mt-4 inline-flex items-center gap-1 text-secondary-500 text-sm font-medium transition-all group-hover:gap-2">
                 예약 문의하기
