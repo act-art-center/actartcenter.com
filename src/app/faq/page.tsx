@@ -127,7 +127,7 @@ export default function FaqPage() {
             style={{ border: "1px solid rgba(196, 191, 183, 0.18)" }}
           >
             <p className="text-night font-semibold text-base">
-              처음 오시는 분들이 자주 궁금해하시는 것을 정리했습니다
+              처음 오시는 분들이 궁금해하실 수 있는 내용을 정리했습니다.
             </p>
             <p className="mt-3 text-charcoal/75 text-sm leading-relaxed">
               아래 여섯 가지 카테고리 가운데 지금 내 상황에 가장 가까운 주제를 먼저 읽어 보세요.
