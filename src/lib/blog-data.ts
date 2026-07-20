@@ -76,10 +76,10 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "safe-paper-art-therapy-room",
-    title: "미술치료실에서 종이가 안전한 자리가 되는 순간",
-    excerpt: "미술치료에서 종이와 재료가 평가의 대상이 아니라 안전하게 마음을 올려놓는 자리가 되는 과정을 설명합니다.",
+    title: "미술치료실에서 종이가 마음을 담는 안전한 공간이 되는 순간",
+    excerpt: "미술치료에서 종이와 미술 매체가 마음을 안전하게 담고 표현하는 공간이 되는 과정을 설명합니다.",
     category: "미술치료",
-    seoKeywords: ["미술치료", "미술치료실", "안전한 표현", "치료적 관계", "서초 미술치료", "성인 미술치료"],
+    seoKeywords: ["미술치료", "미술치료실", "안전한 표현", "마음을 담는 공간", "치료적 관계", "서초 미술치료", "성인 미술치료"],
     image: "/blog-illustrations/safe-paper-art-therapy-room.svg",
     date: "2026년 7월 11일",
     author: "고은별",
