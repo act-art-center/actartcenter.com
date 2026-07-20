@@ -281,7 +281,7 @@ export default function TeamPage() {
                   ))}
                 </ul>
                 <p className="mt-3 text-xs leading-relaxed text-charcoal/55">
-                  (현 임상기관은 내담자 보호를 위해 비식별 처리함)
+                  (현 임상기관은 내담자 보호를 위해 비식별 처리합니다.)
                 </p>
               </div>
 
