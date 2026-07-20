@@ -303,7 +303,7 @@ export default function TeamPage() {
                   {[
                     "Cumulus Green Award 대상 수상",
                     "Cumulus Association, Melbourne 호주 연수",
-                    "Icograda, Torino 이탈리아 연수",
+                    "ICOGRADA, Torino 이탈리아 연수",
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 mt-2 rounded-full bg-primary-500 shrink-0" />
