@@ -27,8 +27,8 @@ export default function HomePage() {
       <TrustBar />
       <PhilosophySection />
       <CharactersIntroSection />
-      <ActApproach />
       <ServicesSection />
+      <ActApproach />
       <ProcessTimeline />
       <TeamSection />
       {/* TestimonialsCarousel: 실제 내담자 후기 확보 전까지 노출 보류. docs/TODO.md 참조. */}

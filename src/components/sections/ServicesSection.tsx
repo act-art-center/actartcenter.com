@@ -15,7 +15,6 @@ const ONE_DAY_CLASS_SERVICE = {
   imageAlt: "이젤 앞에서 그림을 그리는 오픈스튜디오 원데이클래스 일러스트",
   cta: "예약 문의하기",
   meta: "1인 · 1회",
-  price: "50,000원",
 };
 
 const DRAWING_ASSESSMENT_SERVICE = {
@@ -107,7 +106,7 @@ export function ServicesSection() {
               href="/act-approach"
               className="text-sm text-secondary-500 font-medium hover:underline underline-offset-4"
             >
-              ACT(수용전념) 미술치료 자세히 보기 →
+              ACT 미술치료 더 알아보기 →
             </Link>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -148,7 +147,6 @@ function ServiceCard({
     imageAlt: string;
     cta?: string;
     meta?: string;
-    price?: string;
   };
 }) {
   return (
@@ -179,14 +177,7 @@ function ServiceCard({
         <p className="mt-3 text-charcoal/70 text-sm leading-relaxed line-clamp-3">
           {service.description}
         </p>
-        {(service.meta || service.price) && (
-          <div className="mt-4 flex items-end justify-between gap-4">
-            {service.meta && <p className="text-sm text-charcoal/60">{service.meta}</p>}
-            {service.price && (
-              <p className="whitespace-nowrap text-lg font-semibold tabular-nums text-primary-500">{service.price}</p>
-            )}
-          </div>
-        )}
+        {service.meta && <p className="mt-4 text-sm text-charcoal/60">{service.meta}</p>}
         <span className="mt-auto pt-4 inline-flex items-center gap-1 text-secondary-500 text-sm font-medium group-hover:gap-2 transition-all">
           {service.cta ?? "자세히 알아보기"}
           <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
