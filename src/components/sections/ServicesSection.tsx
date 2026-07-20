@@ -9,11 +9,11 @@ const ONE_DAY_CLASS_SERVICE = {
   title: "오픈스튜디오 원데이클래스",
   titleEn: "Open Studio One-Day Class",
   description: "개인 세션 및 가족, 친구와 함께 참여도 가능한 열린 미술 시간입니다.",
-  href: "/booking",
-  anchor: "오픈스튜디오 원데이클래스 예약 문의",
+  href: "/services/open-studio",
+  anchor: "오픈스튜디오 원데이클래스 자세히 알아보기",
   image: "/images/open-studio-one-day-class.jpg",
   imageAlt: "이젤 앞에서 그림을 그리는 오픈스튜디오 원데이클래스 일러스트",
-  cta: "예약 문의하기",
+  cta: "자세히 알아보기",
   meta: "1인 · 1회",
 };
 
@@ -22,11 +22,11 @@ const DRAWING_ASSESSMENT_SERVICE = {
   title: "그림검사 및 상담",
   titleEn: "Drawing Assessment & Consultation",
   description: "HTP, KFD, BND, PITR 등 그림검사와 해석 상담을 통해 마음과 관계의 경험을 함께 살핍니다. 그림의 해석은 충분한 대화를 통해 신중하게 이루어집니다.",
-  href: "/booking",
-  anchor: "그림검사 및 해석 상담 예약 문의",
+  href: "/services/drawing-assessment",
+  anchor: "그림검사 및 상담 자세히 알아보기",
   image: "/images/drawing-assessment-consultation.jpg",
   imageAlt: "미술치료사가 한 사람의 그림을 함께 살펴보며 그림검사 해석 상담을 진행하는 장면",
-  cta: "예약 문의하기",
+  cta: "자세히 알아보기",
 };
 
 /**
