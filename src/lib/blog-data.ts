@@ -21,8 +21,8 @@ export const BLOG_CATEGORIES = [
 export const BLOG_POSTS: BlogPost[] = [
   {
     slug: "winnicott-holding-environment-art-therapy",
-    title: "마음이 잠시 기대어 머무는 곳: 위니컷의 안아주는 환경과 미술치료",
-    excerpt: "위니컷의 안아주는 환경을 치료실의 안정적인 공간과 관계, 마음을 담아주는 미술 매체의 경험으로 풀어봅니다.",
+    title: "마음이 잠시 기대어 머무는 곳: 위니컷(Winnicott)의 안아주는 환경(Holding Environment)과 미술치료",
+    excerpt: "위니컷(Winnicott)의 안아주는 환경(Holding Environment)을 치료실의 안정적인 공간과 관계, 마음을 담아주는 미술 매체의 경험으로 풀어봅니다.",
     category: "미술치료",
     seoKeywords: ["위니컷 안아주는 환경", "홀딩 환경", "미술치료", "치료적 관계", "미술치료 매체", "충분히 좋은 환경"],
     image: "/blog-illustrations/safe-paper-art-therapy-room.svg",
