@@ -172,7 +172,7 @@ const pricing = [
     service: "오픈스튜디오 원데이클래스",
     duration: "1인 · 1회",
     price: "50,000원",
-    note: "",
+    note: "가족, 친구와 함께 참여 가능",
     imageSrc: "/images/open-studio-one-day-class.jpg",
     imageAlt: "이젤 앞에서 그림을 그리는 오픈스튜디오 원데이클래스 일러스트",
   },
