@@ -296,14 +296,14 @@ export default function TeamPage() {
                 </ul>
               </div>
 
-              {/* Awards and workshops */}
+              {/* Awards and academic training */}
               <div className="mt-6 p-5 bg-white rounded-xl" style={{ border: "1px solid rgba(196, 191, 183, 0.18)" }}>
-                <h2 className="text-night font-semibold text-sm mb-3">수상 및 워크숍</h2>
+                <h2 className="text-night font-semibold text-sm mb-3">수상 및 학술연수</h2>
                 <ul className="space-y-1.5 text-sm text-charcoal/70">
                   {[
                     "Cumulus Green Award 대상 수상",
-                    "Cumulus Association, Melbourne 호주 워크숍",
-                    "Icograda, Torino 이탈리아 워크숍",
+                    "Cumulus Association, Melbourne 호주 연수",
+                    "Icograda, Torino 이탈리아 연수",
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 mt-2 rounded-full bg-primary-500 shrink-0" />
