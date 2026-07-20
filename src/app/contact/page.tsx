@@ -103,7 +103,7 @@ const contactSchema = {
 const contactInfo = [
   { icon: Mail, label: "이메일", value: CONTACT.email, href: `mailto:${CONTACT.email}` },
   { icon: MapPin, label: "주소", value: CONTACT.address, href: undefined },
-  { icon: Clock, label: "운영방식", value: "사전 예약제 · Walk-in 상담 불가 · 영업일 기준 1~2일 내 회신", href: undefined },
+  { icon: Clock, label: "운영방식", value: "예약 상담만 가능합니다. 영업일 기준 1~2일 내 회신드립니다.", href: undefined },
 ];
 
 const directions = [
