@@ -9,7 +9,7 @@ export function PageHero({
   imageAlt,
 }: {
   title: string;
-  subtitle?: string;
+  subtitle?: React.ReactNode;
   label?: string;
   imageSrc: string;
   imageAlt: string;
