@@ -28,6 +28,8 @@ export async function POST(request: Request) {
       group: "그룹 프로그램",
       child: "아동·청소년 미술치료",
       online: "온라인 미술치료",
+      tci: "TCI 기질검사 및 상담",
+      "drawing-assessment": "그림검사 (HTP, KFD, BND, PITR 등)",
       other: "기타",
     };
 
