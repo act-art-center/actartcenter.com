@@ -81,7 +81,7 @@ const moments = [
     body: "미술치료사는 반응작업을 통해 세션에서 만난 마음의 울림을 살피고, 미술로 자기돌봄의 시간을 이어갑니다.",
   },
   {
-    title: "미술치료사는 앞서지 않고 동행합니다.",
+    title: "동행하며 앞서지 않는 미술치료사",
     image: "/characters/therapist/therapist-walking-alongside.jpg",
     body: "미술치료사는 한 사람의 속도와 선택을 존중하며, 미술로 마음을 살피는 길을 곁에서 함께 걸어갑니다.",
   },
