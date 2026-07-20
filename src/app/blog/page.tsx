@@ -77,9 +77,9 @@ export default function BlogPage() {
             </h2>
             <div className="mt-4 space-y-3 text-charcoal/80 text-sm leading-relaxed">
               <p>
-                ACT ART CENTER 블로그는 센터 대표 <strong>고은별</strong> 이 씁니다.
+                ACT ART CENTER 블로그는 미술치료사 <strong>고은별</strong>이 씁니다.
                 미술치료실에서 한 사람 한 사람을 만나며 마음에 남은 장면과 질문,
-                차 의과학대학교 미술치료학 박사과정과 슈퍼비전에서 배운 내용을
+                의학과 임상미술치료 전공 박사과정과 슈퍼비전을 통해 배운 내용을
                 따뜻하고 편안한 언어로 나눕니다.
               </p>
               <p>
