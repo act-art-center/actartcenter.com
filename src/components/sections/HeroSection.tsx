@@ -53,7 +53,7 @@ export function HeroSection() {
             </ActionLink>
           </div>
 
-          <div className="mt-5 flex flex-wrap items-center gap-x-3 gap-y-2 text-sm" aria-label="추가 바로가기">
+          <div className="mt-5 flex flex-wrap items-center gap-x-3 gap-y-2 pl-6 text-sm" aria-label="추가 바로가기">
             <Link
               href="/team"
               aria-label="미술치료사 고은별 프로필 페이지로 이동"
