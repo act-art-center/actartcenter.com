@@ -384,8 +384,9 @@ export default function PricingPage() {
               무엇이 포함되나요
             </h2>
             <p className="mt-4 text-center text-charcoal/70 leading-relaxed">
-              한 회기를 준비하는 보이지 않는 시간과, 수년간 쌓아 온 임상 훈련이 함께 가격을
-              구성합니다. 지불하시는 비용이 무엇을 포괄하는지 투명하게 밝혀 드립니다.
+              미술치료사의 회기를 준비하는 보이지 않는 정성과 노력, 수년간 쌓아 온 임상훈련,
+              미술에 대한 깊은 이해와 경력이 함께 포함됩니다. 치료 비용이 무엇을 포괄하는지
+              투명하게 밝혀 드립니다.
             </p>
             <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-5">
               {priceInclusions.map((p) => (
