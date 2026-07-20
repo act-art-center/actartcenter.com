@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">그림을 그리고 있는 손</title>
+  <desc id="desc">따뜻한 색의 붓으로 종이에 그림을 그리고 있는 손과 미술 매체가 놓인 작업대</desc>
+  <defs>
+    <linearGradient id="mint" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#dcefeb"/>
+      <stop offset="1" stop-color="#b9ddd5"/>
+    </linearGradient>
+    <linearGradient id="desk" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f5efe3"/>
+      <stop offset="1" stop-color="#e8dcc9"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#46534f" flood-opacity=".13"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="900" fill="#fff"/>
+  <path d="M188 0h824c104 0 188 84 188 188v380H0V188C0 84 84 0 188 0Z" fill="url(#mint)"/>
+  <circle cx="165" cy="172" r="44" fill="#f4c9bd" opacity=".5"/>
+  <circle cx="1040" cy="245" r="72" fill="#fff" opacity=".45"/>
+  <path d="M0 560c260-66 452-29 625 0 190 32 366 62 575-7v347H0Z" fill="url(#desk)"/>
+
+  <g filter="url(#shadow)" transform="rotate(-4 560 620)">
+    <rect x="262" y="286" width="610" height="490" rx="20" fill="#fffdf8"/>
+    <rect x="283" y="307" width="568" height="448" rx="12" fill="none" stroke="#e7ded0" stroke-width="4"/>
+  </g>
+
+  <g opacity=".98">
+    <path d="M392 562c52-74 106-121 164-128 76-9 132 50 160 111" fill="none" stroke="#ef9b7c" stroke-width="24" stroke-linecap="round"/>
+    <path d="M376 649c76-25 132-21 177 14 46 37 93 36 159 0" fill="none" stroke="#6fafa2" stroke-width="28" stroke-linecap="round"/>
+    <path d="M411 692c69-12 124 0 162 34" fill="none" stroke="#e7b85f" stroke-width="18" stroke-linecap="round"/>
+    <circle cx="585" cy="545" r="54" fill="#f6d977"/>
+    <circle cx="585" cy="545" r="24" fill="#d98969"/>
+    <path d="M513 497c-38-47-32-95 18-125 12 54 6 96-18 125Z" fill="#79b29f"/>
+    <path d="M658 486c41-38 82-37 119 2-49 19-88 18-119-2Z" fill="#9bc8be"/>
+  </g>
+
+  <g transform="translate(850 540)">
+    <ellipse cx="94" cy="94" rx="123" ry="89" fill="#fffaf1" stroke="#c7b9a6" stroke-width="5"/>
+    <circle cx="42" cy="73" r="24" fill="#e88f78"/>
+    <circle cx="92" cy="49" r="24" fill="#e7bd5e"/>
+    <circle cx="139" cy="72" r="24" fill="#77aa9e"/>
+    <circle cx="73" cy="119" r="24" fill="#9da9cf"/>
+    <circle cx="128" cy="120" r="24" fill="#d9a5b3"/>
+    <circle cx="178" cy="106" r="18" fill="#f3dfbd"/>
+    <circle cx="200" cy="151" r="22" fill="#fffaf1"/>
+  </g>
+
+  <g transform="translate(140 655) rotate(8)">
+    <rect x="0" y="0" width="248" height="34" rx="17" fill="#277b6d"/>
+    <path d="M248 0l58 17-58 17Z" fill="#d8bc90"/>
+    <path d="M296 14l10 3-10 3Z" fill="#343a38"/>
+    <rect x="30" y="0" width="22" height="34" fill="#e7c665" opacity=".9"/>
+  </g>
+  <g transform="translate(120 735) rotate(-7)">
+    <rect x="0" y="0" width="222" height="28" rx="14" fill="#df806c"/>
+    <path d="M222 0l48 14-48 14Z" fill="#d8bc90"/>
+    <path d="M261 11l9 3-9 3Z" fill="#343a38"/>
+  </g>
+
+  <g>
+    <path d="M1200 102V0H790c3 70 35 131 94 183l100 87c35 31 71 45 109 43 44-2 80-24 107-66Z" fill="#e29a86"/>
+    <path d="M1200 0H864c13 56 44 104 94 146l105 88c30 25 62 37 95 35 15-1 29-4 42-10Z" fill="#c96f61" opacity=".35"/>
+    <path d="M917 176c31 7 57 20 78 39l98 89c20 18 33 39 41 64 12 38 4 76-24 113-22 30-53 42-91 37-37-5-63-25-79-59l-36-76-56 53c-24 23-57 29-88 16-23-10-37-28-41-53-4-24 4-46 23-63l81-75-56-42c-22-17-27-47-11-69 14-20 39-28 61-20Z" fill="#f2c6aa" stroke="#633f39" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M873 259c-17 22-24 43-20 63 4 18 15 36 35 54" fill="none" stroke="#d6997e" stroke-width="5" stroke-linecap="round"/>
+    <path d="M934 301c-14 20-18 41-10 62 6 17 17 31 32 43" fill="none" stroke="#d6997e" stroke-width="5" stroke-linecap="round"/>
+    <path d="M987 350c-11 16-13 34-6 52 5 14 15 26 28 36" fill="none" stroke="#d6997e" stroke-width="5" stroke-linecap="round"/>
+    <g transform="translate(782 294) rotate(44)">
+      <rect x="0" y="-9" width="260" height="18" rx="9" fill="#346f65"/>
+      <rect x="188" y="-9" width="44" height="18" fill="#d6a652"/>
+      <path d="M260 0l-30-9v18Z" fill="#49413b"/>
+      <path d="M0 0l-42-13v26Z" fill="#d9886c"/>
+    </g>
+  </g>
+
+  <path d="M835 446c-21 21-39 47-51 76" fill="none" stroke="#d88469" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="779" cy="536" r="9" fill="#d88469"/>
+</svg>

@@ -8,7 +8,7 @@ import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "성인 1:1 개인 미술치료 — ACT 6프로세스 기반 8주 프로그램",
+  title: "성인 1:1 개인 미술치료",
   description:
     "성인을 위한 50분 1:1 개인 미술심리상담. 불안, 번아웃, 산후 우울, 트라우마, 정체성 탐색 등 언어로 꺼내기 어려운 경험을 미술 매체와 ACT 수용전념치료 6프로세스로 함께 탐색합니다. 주 1회 × 8주 구조 권장.",
   keywords: [
@@ -250,7 +250,7 @@ export default function IndividualPage() {
                 Individual Art Therapy
               </p>
               <h1 className="text-3xl lg:text-4xl font-bold tracking-tight">
-                성인 1:1 개인 미술치료 — ACT 6프로세스 기반 8주 구조
+                성인 1:1 개인 미술치료
               </h1>
               <p className="mt-6 text-charcoal/80 leading-[var(--leading-normal)]">
                 혼자 정리되지 않는 마음을, 한 사람의 속도로 함께 풀어 봅니다.
@@ -277,8 +277,8 @@ export default function IndividualPage() {
             </div>
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=800&q=80"
-                alt="1:1 개인 미술치료 작업대 위의 수채 팔레트와 붓"
+                src="/images/drawing-hand-art-therapy.svg"
+                alt="1:1 개인 미술치료에서 종이에 그림을 그리고 있는 손"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
