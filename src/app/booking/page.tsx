@@ -60,7 +60,7 @@ export default function BookingPage() {
             />
           </div>
           <div className="text-center max-w-2xl mx-auto">
-            <h1 className="text-3xl lg:text-4xl font-bold tracking-tight">ACT 미술치료 상담 예약</h1>
+            <h1 className="text-3xl lg:text-4xl font-bold tracking-tight">상담 예약</h1>
             <p className="mt-6 text-charcoal/80 leading-[var(--leading-normal)]">
               첫 상담(30분, 무료)에서 현재 상태와 목표를 함께 살펴보고,
               필요한 만큼만 회기를 설계합니다.

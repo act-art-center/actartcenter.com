@@ -3,7 +3,7 @@ import { JsonLd } from "@/components/shared/JsonLd";
 import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "ACT 미술치료 상담 예약 — 첫 상담 무료",
+  title: "상담 예약 — 첫 상담 무료",
   description:
     "ACT ART CENTER 미술심리치료 상담 예약. 이름·연락처·관심 프로그램을 남기시면 영업일 기준 1~2일 이내 연락드립니다. 첫 상담은 무료, 온라인·대면 선택 가능.",
   keywords: [
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    title: "ACT 미술치료 상담 예약",
+    title: "상담 예약",
     description: "이름·연락처·관심 프로그램을 남기시면 1~2일 내 연락드립니다.",
     url: `${SITE_URL}/booking`,
     images: [
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "ACT 미술치료 상담 예약",
+    title: "상담 예약",
     description: "첫 상담 무료. 영업일 1-2일 내 회신.",
     images: ["/og/booking.png"],
   },
@@ -53,7 +53,7 @@ const bookingSchema = {
     {
       "@type": "ContactPage",
       "@id": `${SITE_URL}/booking#page`,
-      name: "ACT 미술치료 상담 예약",
+      name: "상담 예약",
       url: `${SITE_URL}/booking`,
       inLanguage: "ko-KR",
       isPartOf: { "@id": `${SITE_URL}/#website` },
