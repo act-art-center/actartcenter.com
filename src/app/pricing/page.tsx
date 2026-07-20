@@ -10,14 +10,14 @@ import { SITE_URL } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "미술치료 비용 — 원데이 클래스·개인·그룹·온라인·검사 요금표",
   description:
-    "ACT ART CENTER 미술심리치료 비용을 투명하게 공개합니다. 원데이 클래스 50,000원, 아동·청소년 및 온라인 미술치료 100,000원, 그룹 프로그램 80,000원/인, TCI 기질검사 및 상담 100,000원이며 성인 개인 미술치료와 그림검사는 상담 후 안내합니다.",
+    "ACT ART CENTER 미술심리치료 비용을 투명하게 공개합니다. 원데이 클래스 50,000원, 아동·청소년 및 온라인 미술치료 100,000원, 그룹 프로그램 80,000원/인, TCI 기질검사 및 상담 100,000원이며 성인 개인 미술치료와 그림검사 및 상담은 상담 후 안내합니다.",
   keywords: [
     "미술치료 비용",
     "미술치료 가격",
     "상담료",
     "미술치료 1회 비용",
     "원데이 클래스 비용",
-    "그림검사 비용",
+    "그림검사 및 상담 비용",
     "미술치료 패키지 할인",
     "기업 미술치료 비용",
     "심리상담 비용 비급여",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     title: "미술치료 비용 — 원데이 클래스·개인·그룹·온라인·검사 요금표",
-    description: "원데이 클래스 50,000원, 아동·온라인·TCI 100,000원, 그룹 80,000원/인. 성인 개인 미술치료와 그림검사는 상담 후 안내합니다.",
+    description: "원데이 클래스 50,000원, 아동·온라인·TCI 100,000원, 그룹 80,000원/인. 성인 개인 미술치료와 그림검사 및 상담은 상담 후 안내합니다.",
     url: `${SITE_URL}/pricing`,
     images: [
       {
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "미술치료 비용 — 원데이 클래스·개인·그룹·온라인·검사 요금표",
-    description: "원데이 클래스 50,000원, 아동·온라인·TCI 100,000원, 그룹 80,000원/인. 성인 개인 미술치료와 그림검사는 상담 후 안내합니다.",
+    description: "원데이 클래스 50,000원, 아동·온라인·TCI 100,000원, 그룹 80,000원/인. 성인 개인 미술치료와 그림검사 및 상담은 상담 후 안내합니다.",
     images: ["/og/pricing.png"],
   },
 };
@@ -60,7 +60,7 @@ const pricingSchema = {
       "@id": `${SITE_URL}/pricing#offers`,
       name: "ACT 미술치료 서비스 가격표",
       description:
-        "오픈스튜디오 원데이클래스, 성인·아동 개인 세션, TCI 기질검사 및 상담, 2~6인 소그룹, 온라인 세션, 그림검사와 프로그램 패키지 비용 안내.",
+        "오픈스튜디오 원데이클래스, 성인·아동 개인 세션, TCI 기질검사 및 상담, 2~6인 소그룹, 온라인 세션, 그림검사 및 상담과 프로그램 패키지 비용 안내.",
       itemListElement: [
         {
           "@type": "Offer",
@@ -118,7 +118,7 @@ const pricingSchema = {
         },
         {
           "@type": "Offer",
-          name: "그림검사 (HTP, KFD, BND, PITR 등)",
+          name: "그림검사 및 상담 (HTP, KFD, BND, PITR 등)",
           description: "비용 변동 — 상담 후 안내",
         },
         {
@@ -183,7 +183,7 @@ const pricing = [
   { service: "그룹 프로그램", duration: "90분", price: "80,000원 / 인", note: "2~6인 소그룹" },
   { service: "온라인 미술치료", duration: "50분", price: "100,000원", note: "미술 키트 배송 포함" },
   { service: "TCI 기질검사 및 상담", duration: "검사 + 그림 + 해석 상담", price: "100,000원", note: "" },
-  { service: "그림검사", duration: "HTP, KFD, BND, PITR 등", price: "변동", note: "" },
+  { service: "그림검사 및 상담", duration: "HTP, KFD, BND, PITR 등", price: "변동", note: "" },
 ];
 
 const packages = [

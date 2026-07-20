@@ -4,6 +4,18 @@ import { SectionWrapper } from "@/components/shared/SectionWrapper";
 import { Container } from "@/components/shared/Container";
 import { SERVICES_ADULT, SERVICES_SPECIALTY } from "@/lib/constants";
 
+const DRAWING_ASSESSMENT_SERVICE = {
+  id: "drawing-assessment",
+  title: "그림검사 및 상담",
+  titleEn: "Drawing Assessment & Consultation",
+  description: "HTP, KFD, BND, PITR 등 그림검사와 해석 상담을 통해 마음과 관계의 경험을 함께 살핍니다.",
+  href: "/booking",
+  anchor: "그림검사 및 해석 상담 예약 문의",
+  image: "/characters/therapist/therapist-drawing-response-art.jpg",
+  imageAlt: "미술치료사가 그림을 살펴보며 그림검사 및 상담을 준비하는 장면",
+  cta: "예약 문의하기",
+};
+
 /**
  * 홈 ServicesSection — 전체 7개 서비스를 두 그룹으로 나눠 노출 (B2 §2.5, §4.5).
  *
@@ -91,7 +103,23 @@ export function ServicesSection() {
           </Link>
         </div>
 
-        {/* Row 2: 성인 대상 4개 카드 */}
+        {/* Row 2: 검사 및 상담 */}
+        <div className="mt-14 lg:mt-16">
+          <div className="flex items-baseline justify-between mb-5">
+            <h3 className="text-night text-lg font-semibold tracking-tight">검사 및 상담</h3>
+            <Link
+              href="/pricing"
+              className="text-sm text-secondary-500 font-medium hover:underline underline-offset-4"
+            >
+              검사 비용 안내 →
+            </Link>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <ServiceCard service={DRAWING_ASSESSMENT_SERVICE} />
+          </div>
+        </div>
+
+        {/* Row 3: 성인 대상 4개 카드 */}
         <div className="mt-14 lg:mt-16">
           <div className="flex items-baseline justify-between mb-5">
             <h3 className="text-night text-lg font-semibold tracking-tight">성인을 위한 ACT 미술치료</h3>
@@ -109,7 +137,7 @@ export function ServicesSection() {
           </div>
         </div>
 
-        {/* Row 3: 특수·전문 영역 3개 카드 */}
+        {/* Row 4: 특수·전문 영역 3개 카드 */}
         <div className="mt-14 lg:mt-16">
           <div className="flex items-baseline justify-between mb-5">
             <h3 className="text-night text-lg font-semibold tracking-tight">특수·전문 영역 미술심리치료</h3>
@@ -156,6 +184,7 @@ function ServiceCard({
     anchor: string;
     image: string;
     imageAlt: string;
+    cta?: string;
   };
 }) {
   return (
@@ -165,12 +194,12 @@ function ServiceCard({
       className="group block bg-white rounded-xl overflow-hidden transition-all duration-200 hover:-translate-y-1 hover:shadow-[var(--shadow-md)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2"
       style={{ border: "1px solid rgba(196, 191, 183, 0.15)" }}
     >
-      <div className="relative aspect-[16/10] overflow-hidden">
+      <div className="relative aspect-[16/10] overflow-hidden bg-white">
         <Image
           src={service.image}
           alt={service.imageAlt}
           fill
-          className="object-cover group-hover:scale-105 transition-transform duration-500"
+          className="object-contain group-hover:scale-[1.02] transition-transform duration-500"
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-night/20 to-transparent" />
@@ -187,7 +216,7 @@ function ServiceCard({
           {service.description}
         </p>
         <span className="mt-4 inline-flex items-center gap-1 text-secondary-500 text-sm font-medium group-hover:gap-2 transition-all">
-          자세히 알아보기
+          {service.cta ?? "자세히 알아보기"}
           <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
           </svg>
