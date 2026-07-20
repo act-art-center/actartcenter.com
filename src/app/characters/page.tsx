@@ -51,6 +51,11 @@ const moments = [
     body: "그림이 바로 나오지 않는 시간도 미술치료의 일부입니다. ARTTY는 멈춤과 망설임까지 안전하게 바라보는 태도를 상징합니다.",
   },
   {
+    title: "손으로 마음을 빚어 볼 때",
+    image: "/characters/artty/artty-clay-bear.jpg",
+    body: "ARTTY는 점토의 촉감과 형태를 천천히 만나며, 말로 다 담기 어려운 마음을 손끝의 표현으로 이어가도록 돕습니다.",
+  },
+  {
     title: "감정을 있는 그대로 받아들이기",
     image: "/characters/actie/actie-self-hug-acceptance.jpg",
     body: "ACTIE는 지금 느껴지는 감정을 밀어내지 않고, 있는 그대로 알아차리며 잠시 머물도록 돕습니다.",
@@ -59,11 +64,6 @@ const moments = [
     title: "가치있는 방향을 바라봐요",
     image: "/characters/actie/actie-telescope.jpg",
     body: "ACTIE는 마음이 흔들리는 순간에도 내가 소중히 여기는 방향을 조용히 바라보고, 작은 한 걸음을 떠올리는 태도를 권합니다.",
-  },
-  {
-    title: "손으로 마음을 빚어 볼 때",
-    image: "/characters/artty/artty-clay-bear.jpg",
-    body: "ARTTY는 점토의 촉감과 형태를 천천히 만나며, 말로 다 담기 어려운 마음을 손끝의 표현으로 이어가도록 돕습니다.",
   },
   {
     title: "소중한 가치를 구체화할 때",
