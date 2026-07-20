@@ -69,23 +69,24 @@ export default function BlogPage() {
             className="relative z-10 mb-10 max-w-3xl mx-auto bg-white rounded-2xl p-6 lg:p-8"
             style={{ border: "1px solid rgba(196, 191, 183, 0.18)" }}
           >
-            <p className="text-primary-500 text-xs font-medium tracking-widest uppercase">
-              About this Blog
+            <p className="text-primary-500 text-xs font-medium tracking-widest">
+              고은별 미술치료사의 기록
             </p>
             <h2 className="mt-2 text-night text-xl lg:text-2xl font-bold tracking-tight leading-snug">
-              임상 현장에서 본 것, 문헌에서 배운 것
+              미술치료실에서 만난 마음, 함께 나누고 싶은 이야기
             </h2>
             <div className="mt-4 space-y-3 text-charcoal/80 text-sm leading-relaxed">
               <p>
                 ACT ART CENTER 블로그는 센터 대표 <strong>고은별</strong> 이 씁니다.
-                차 의과학대학교 미술치료학 박사과정을 이수하며 세션 사이에
-                공부한 문헌, 슈퍼비전에서 정리한 개념, 현장에서 반복되는 질문들을 정리합니다.
+                미술치료실에서 한 사람 한 사람을 만나며 마음에 남은 장면과 질문,
+                차 의과학대학교 미술치료학 박사과정과 슈퍼비전에서 배운 내용을
+                따뜻하고 편안한 언어로 나눕니다.
               </p>
               <p>
-                본 블로그 내용은 미술치료를 중심으로 표현 기반 접근, 신체 기반 트라우마 이론,
-                수용전념치료(ACT)의 심리적 유연성 등 임상과 연구에서 살펴온 관점을
-                편안한 언어로 나눕니다. ACT 내용도 미술치료 안에서 함께 다루며,
-                한 사람이 자신의 경험을 이해하는 데 도움이 되는 언어를 전합니다.
+                미술치료를 중심으로 표현 기반 접근과 신체 기반 트라우마 이론,
+                수용전념치료(ACT)의 심리적 유연성을 함께 살펴봅니다.
+                전문적인 개념은 일상에서 이해하기 쉬운 말로 풀고,
+                한 사람의 경험과 속도를 존중하며 자신을 조금 더 다정하게 바라볼 수 있는 이야기를 전합니다.
               </p>
             </div>
           </div>
