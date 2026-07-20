@@ -4,6 +4,20 @@ import { SectionWrapper } from "@/components/shared/SectionWrapper";
 import { Container } from "@/components/shared/Container";
 import { SERVICES_ADULT, SERVICES_SPECIALTY } from "@/lib/constants";
 
+const ONE_DAY_CLASS_SERVICE = {
+  id: "open-studio-one-day-class",
+  title: "오픈스튜디오 원데이클래스",
+  titleEn: "Open Studio One-Day Class",
+  description: "개인 세션 및 가족, 친구와 함께 참여도 가능한 열린 미술 시간입니다.",
+  href: "/booking",
+  anchor: "오픈스튜디오 원데이클래스 예약 문의",
+  image: "/images/open-studio-one-day-class.jpg",
+  imageAlt: "이젤 앞에서 그림을 그리는 오픈스튜디오 원데이클래스 일러스트",
+  cta: "예약 문의하기",
+  meta: "1인 · 1회",
+  price: "50,000원",
+};
+
 const DRAWING_ASSESSMENT_SERVICE = {
   id: "drawing-assessment",
   title: "그림검사 및 상담",
@@ -50,10 +64,10 @@ export function ServicesSection() {
           </p>
         </div>
 
-        {/* Row 1: 오픈스튜디오 원데이클래스 */}
+        {/* Row 1: 오픈스튜디오 및 검사·상담 — 데스크톱 좌우 2열 */}
         <div className="mt-12 lg:mt-16">
           <div className="flex items-baseline justify-between mb-5">
-            <h3 className="text-night text-lg font-semibold tracking-tight">오픈스튜디오 원데이클래스</h3>
+            <h3 className="text-night text-lg font-semibold tracking-tight">오픈스튜디오 원데이클래스 · 검사 및 상담</h3>
             <Link
               href="/pricing"
               className="text-sm text-secondary-500 font-medium hover:underline underline-offset-4"
@@ -61,65 +75,13 @@ export function ServicesSection() {
               세션 비용 안내 →
             </Link>
           </div>
-
-          <Link
-            href="/booking"
-            aria-label="오픈스튜디오 원데이클래스 예약 문의"
-            className="group grid grid-cols-1 overflow-hidden rounded-xl bg-white transition-all duration-200 hover:-translate-y-1 hover:shadow-[var(--shadow-md)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 sm:grid-cols-[220px_1fr] lg:grid-cols-[260px_1fr_auto] lg:items-center"
-            style={{ border: "1px solid rgba(196, 191, 183, 0.15)" }}
-          >
-            <div className="relative aspect-[16/10] overflow-hidden bg-paper sm:h-full sm:min-h-52">
-              <Image
-                src="/images/open-studio-one-day-class.jpg"
-                alt="이젤 앞에서 그림을 그리는 오픈스튜디오 원데이클래스 일러스트"
-                fill
-                className="object-contain p-3 transition-transform duration-500 group-hover:scale-105"
-                sizes="(max-width: 640px) 100vw, 260px"
-              />
-            </div>
-
-            <div className="p-6 lg:px-8">
-              <p className="text-primary-500 text-xs font-medium tracking-wide uppercase mb-2">
-                Open Studio One-Day Class
-              </p>
-              <h4 className="text-night text-xl font-semibold transition-colors group-hover:text-primary-500">
-                오픈스튜디오 원데이클래스
-              </h4>
-              <p className="mt-3 text-charcoal/70 text-sm leading-relaxed">
-                개인 세션 및 가족, 친구와 함께 참여도 가능한 열린 미술 시간입니다.
-              </p>
-              <span className="mt-4 inline-flex items-center gap-1 text-secondary-500 text-sm font-medium transition-all group-hover:gap-2">
-                예약 문의하기
-                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                </svg>
-              </span>
-            </div>
-
-            <div className="px-6 pb-6 lg:px-8 lg:py-6 lg:text-right">
-              <p className="text-sm text-charcoal/60">1인 · 1회</p>
-              <p className="mt-1 whitespace-nowrap text-xl font-semibold tabular-nums text-primary-500">50,000원</p>
-            </div>
-          </Link>
-        </div>
-
-        {/* Row 2: 검사 및 상담 */}
-        <div className="mt-14 lg:mt-16">
-          <div className="flex items-baseline justify-between mb-5">
-            <h3 className="text-night text-lg font-semibold tracking-tight">검사 및 상담</h3>
-            <Link
-              href="/pricing"
-              className="text-sm text-secondary-500 font-medium hover:underline underline-offset-4"
-            >
-              검사 비용 안내 →
-            </Link>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <ServiceCard service={ONE_DAY_CLASS_SERVICE} />
             <ServiceCard service={DRAWING_ASSESSMENT_SERVICE} />
           </div>
         </div>
 
-        {/* Row 3: 성인 대상 4개 카드 */}
+        {/* Row 2: 성인 대상 4개 카드 */}
         <div className="mt-14 lg:mt-16">
           <div className="flex items-baseline justify-between mb-5">
             <h3 className="text-night text-lg font-semibold tracking-tight">성인을 위한 ACT 미술치료</h3>
@@ -137,7 +99,7 @@ export function ServicesSection() {
           </div>
         </div>
 
-        {/* Row 4: 특수·전문 영역 3개 카드 */}
+        {/* Row 3: 특수·전문 영역 3개 카드 */}
         <div className="mt-14 lg:mt-16">
           <div className="flex items-baseline justify-between mb-5">
             <h3 className="text-night text-lg font-semibold tracking-tight">특수·전문 영역 미술심리치료</h3>
@@ -185,13 +147,15 @@ function ServiceCard({
     image: string;
     imageAlt: string;
     cta?: string;
+    meta?: string;
+    price?: string;
   };
 }) {
   return (
     <Link
       href={service.href}
       aria-label={service.anchor}
-      className="group block bg-white rounded-xl overflow-hidden transition-all duration-200 hover:-translate-y-1 hover:shadow-[var(--shadow-md)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2"
+      className="group flex h-full flex-col bg-white rounded-xl overflow-hidden transition-all duration-200 hover:-translate-y-1 hover:shadow-[var(--shadow-md)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2"
       style={{ border: "1px solid rgba(196, 191, 183, 0.15)" }}
     >
       <div className="relative aspect-[16/10] overflow-hidden bg-white">
@@ -200,12 +164,12 @@ function ServiceCard({
           alt={service.imageAlt}
           fill
           className="object-contain group-hover:scale-[1.02] transition-transform duration-500"
-          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+          sizes="(max-width: 640px) 100vw, 50vw"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-night/20 to-transparent" />
       </div>
 
-      <div className="p-5 lg:p-6">
+      <div className="flex flex-1 flex-col p-5 lg:p-6">
         <p className="text-primary-500 text-xs font-medium tracking-wide uppercase mb-2">
           {service.titleEn}
         </p>
@@ -215,7 +179,15 @@ function ServiceCard({
         <p className="mt-3 text-charcoal/70 text-sm leading-relaxed line-clamp-3">
           {service.description}
         </p>
-        <span className="mt-4 inline-flex items-center gap-1 text-secondary-500 text-sm font-medium group-hover:gap-2 transition-all">
+        {(service.meta || service.price) && (
+          <div className="mt-4 flex items-end justify-between gap-4">
+            {service.meta && <p className="text-sm text-charcoal/60">{service.meta}</p>}
+            {service.price && (
+              <p className="whitespace-nowrap text-lg font-semibold tabular-nums text-primary-500">{service.price}</p>
+            )}
+          </div>
+        )}
+        <span className="mt-auto pt-4 inline-flex items-center gap-1 text-secondary-500 text-sm font-medium group-hover:gap-2 transition-all">
           {service.cta ?? "자세히 알아보기"}
           <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
