@@ -89,6 +89,18 @@ export default function BlogPage() {
                 한 사람의 경험과 속도를 존중하며 자신을 조금 더 다정하게 바라볼 수 있는 이야기를 전합니다.
               </p>
             </div>
+            <div className="mt-6">
+              <Link
+                href="#all-posts"
+                aria-label="블로그 전체 글 목록으로 이동"
+                className="inline-flex min-h-11 items-center gap-2 rounded-lg bg-primary-500 px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-primary-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2"
+              >
+                전체 글 보기
+                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                </svg>
+              </Link>
+            </div>
           </div>
 
           {/* Topic map — BLOG_CATEGORIES 설명 */}
@@ -118,6 +130,21 @@ export default function BlogPage() {
               >
                 <p className="text-primary-600 font-semibold text-sm">{t.name}</p>
                 <p className="mt-2 text-charcoal/75 text-xs leading-relaxed">{t.desc}</p>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setActiveCategory(t.name);
+                    setSearchQuery("");
+                    document.getElementById("all-posts")?.scrollIntoView({ behavior: "smooth", block: "start" });
+                  }}
+                  className="mt-4 inline-flex min-h-11 items-center gap-2 rounded-lg bg-primary-500 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-primary-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2"
+                  aria-label={`${t.name} 글 보기`}
+                >
+                  글 보기
+                  <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                  </svg>
+                </button>
               </div>
             ))}
           </div>
@@ -156,7 +183,7 @@ export default function BlogPage() {
           </div>
 
           {/* Search + Categories */}
-          <div className="relative z-10 mb-10 space-y-5">
+          <div id="all-posts" className="relative z-10 mb-10 scroll-mt-24 space-y-5">
             {/* Search */}
             <div className="relative max-w-md mx-auto">
               <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-stone" />
