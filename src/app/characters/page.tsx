@@ -169,7 +169,7 @@ export default function CharactersPage() {
               ))}
             </div>
             <h2 className="mt-12 text-2xl lg:text-3xl font-bold tracking-tight text-night text-center">
-              우정출연, 미술치료 동행자 Stella
+              그리고, 미술치료 동행자 Stella
             </h2>
             <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-5">
               {moments.slice(6).map((moment) => (
