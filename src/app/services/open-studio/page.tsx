@@ -10,17 +10,17 @@ import { SITE_URL } from "@/lib/constants";
 const path = "/services/open-studio";
 
 export const metadata: Metadata = {
-  title: "오픈스튜디오 원데이클래스 — 열린 미술 시간",
+  title: "오픈스튜디오 원데이 클래스 — 열린 미술 시간",
   description:
-    "개인 세션 또는 가족·친구와 함께 참여할 수 있는 ACT ART CENTER의 오픈스튜디오 원데이클래스입니다. 미술 매체를 고르고 각자의 속도로 표현하는 1회 열린 미술 시간을 안내합니다.",
-  keywords: ["오픈스튜디오 원데이클래스", "미술 원데이클래스", "가족 미술 활동", "친구 미술 체험", "성인 미술 체험"],
+    "개인 세션 또는 가족·친구와 함께 참여할 수 있는 ACT ART CENTER의 오픈스튜디오 원데이 클래스입니다. 미술 매체를 고르고 각자의 속도로 표현하는 1회 열린 미술 시간을 안내합니다.",
+  keywords: ["오픈스튜디오 원데이 클래스", "미술 원데이클래스", "가족 미술 활동", "친구 미술 체험", "성인 미술 체험"],
   alternates: { canonical: `${SITE_URL}${path}` },
   openGraph: {
     type: "website",
-    title: "오픈스튜디오 원데이클래스 | ACT ART CENTER",
+    title: "오픈스튜디오 원데이 클래스 | ACT ART CENTER",
     description: "개인 세션 및 가족, 친구와 함께 참여할 수 있는 열린 미술 시간입니다.",
     url: `${SITE_URL}${path}`,
-    images: [{ url: "/images/open-studio-one-day-class.jpg", width: 1200, height: 750, alt: "오픈스튜디오 원데이클래스" }],
+    images: [{ url: "/images/open-studio-one-day-class.jpg", width: 1200, height: 750, alt: "오픈스튜디오 원데이 클래스" }],
   },
 };
 
@@ -46,13 +46,13 @@ const schema = {
       itemListElement: [
         { "@type": "ListItem", position: 1, name: "홈", item: SITE_URL },
         { "@type": "ListItem", position: 2, name: "서비스", item: `${SITE_URL}/services` },
-        { "@type": "ListItem", position: 3, name: "오픈스튜디오 원데이클래스", item: `${SITE_URL}${path}` },
+        { "@type": "ListItem", position: 3, name: "오픈스튜디오 원데이 클래스", item: `${SITE_URL}${path}` },
       ],
     },
     {
       "@type": "Service",
       "@id": `${SITE_URL}${path}#service`,
-      name: "오픈스튜디오 원데이클래스",
+      name: "오픈스튜디오 원데이 클래스",
       alternateName: "Open Studio One-Day Class",
       description: "개인 세션 및 가족, 친구와 함께 참여할 수 있는 열린 미술 시간",
       url: `${SITE_URL}${path}`,
@@ -70,13 +70,13 @@ export default function OpenStudioPage() {
       <section className="bg-paper py-16 lg:py-24">
         <Container>
           <Breadcrumbs
-            items={[{ name: "홈", href: "/" }, { name: "서비스", href: "/services" }, { name: "오픈스튜디오 원데이클래스", href: path }]}
+            items={[{ name: "홈", href: "/" }, { name: "서비스", href: "/services" }, { name: "오픈스튜디오 원데이 클래스", href: path }]}
             emitJsonLd={false}
           />
           <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div>
               <p className="text-primary-500 text-xs font-medium tracking-wide uppercase mb-4">Open Studio One-Day Class</p>
-              <h1 className="text-3xl lg:text-4xl font-bold tracking-tight">오픈스튜디오 원데이클래스</h1>
+              <h1 className="text-3xl lg:text-4xl font-bold tracking-tight">오픈스튜디오 원데이 클래스</h1>
               <p className="mt-6 text-charcoal/80 leading-relaxed">
                 개인 세션 및 가족, 친구와 함께 참여도 가능한 열린 미술 시간입니다. 준비된 미술 매체를 만나고, 각자의 속도로 표현하며, 작품에 담긴 오늘의 경험을 함께 바라봅니다.
               </p>
@@ -87,7 +87,7 @@ export default function OpenStudioPage() {
               <Link href="/booking" className="mt-8 inline-flex items-center px-7 py-3.5 bg-primary-500 text-white font-semibold rounded-lg hover:bg-primary-600 transition-colors">참여 문의하기</Link>
             </div>
             <div className="relative aspect-[16/10] rounded-2xl overflow-hidden bg-white">
-              <Image src="/images/open-studio-one-day-class.jpg" alt="이젤 앞에서 그림을 그리는 오픈스튜디오 원데이클래스 일러스트" fill className="object-contain" sizes="(max-width: 1024px) 100vw, 50vw" priority />
+              <Image src="/images/open-studio-one-day-class.jpg" alt="이젤 앞에서 그림을 그리는 오픈스튜디오 원데이 클래스 일러스트" fill className="object-contain" sizes="(max-width: 1024px) 100vw, 50vw" priority />
             </div>
           </div>
         </Container>

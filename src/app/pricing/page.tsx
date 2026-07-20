@@ -60,11 +60,11 @@ const pricingSchema = {
       "@id": `${SITE_URL}/pricing#offers`,
       name: "ACT 미술치료 서비스 가격표",
       description:
-        "오픈스튜디오 원데이클래스, 성인·아동 개인 세션, TCI 기질검사 및 상담, 2~6인 소그룹, 온라인 세션, 그림검사 및 상담과 프로그램 패키지 비용 안내.",
+        "오픈스튜디오 원데이 클래스, 성인·아동 개인 세션, TCI 기질검사 및 상담, 2~6인 소그룹, 온라인 세션, 그림검사 및 상담과 프로그램 패키지 비용 안내.",
       itemListElement: [
         {
           "@type": "Offer",
-          name: "오픈스튜디오 원데이클래스",
+          name: "오픈스튜디오 원데이 클래스",
           priceSpecification: {
             "@type": "PriceSpecification",
             price: "50000",
@@ -160,22 +160,54 @@ const pricingSchema = {
 
 const pricing = [
   {
-    service: "오픈스튜디오 원데이클래스",
+    service: "오픈스튜디오 원데이 클래스",
     duration: "1인 · 1회",
     price: "50,000원",
     note: "가족, 친구와 함께 참여 가능",
+    href: "/services/open-studio",
   },
-  { service: "개인 미술심리치료 (성인)", duration: "50분", price: "변동", note: "" },
+  {
+    service: "개인 미술심리치료 (성인)",
+    duration: "50분",
+    price: "변동",
+    note: "",
+    href: "/services/individual",
+  },
   {
     service: "개인 미술심리치료 (아동·청소년)",
     duration: "40분 + 부모상담 10분",
     price: "100,000원",
     note: "",
+    href: "/services/child",
   },
-  { service: "그룹 프로그램", duration: "90분", price: "100,000원 / 인", note: "2~6인 소그룹" },
-  { service: "온라인 미술치료", duration: "50분", price: "120,000원", note: "미술 키트 배송 포함" },
-  { service: "TCI 기질검사 및 상담", duration: "검사 + 그림 + 해석 상담", price: "100,000원", note: "" },
-  { service: "그림검사 및 상담", duration: "HTP, KFD, BND, PITR 등", price: "변동", note: "" },
+  {
+    service: "그룹 프로그램",
+    duration: "90분",
+    price: "100,000원 / 인",
+    note: "2~6인 소그룹",
+    href: "/services/group",
+  },
+  {
+    service: "온라인 미술치료",
+    duration: "50분",
+    price: "120,000원",
+    note: "미술 키트 배송 포함",
+    href: "/services/online",
+  },
+  {
+    service: "TCI 기질검사 및 상담",
+    duration: "검사 + 그림 + 해석 상담",
+    price: "100,000원",
+    note: "",
+    href: "/services/drawing-assessment",
+  },
+  {
+    service: "그림검사 및 상담",
+    duration: "HTP, KFD, BND, PITR 등",
+    price: "변동",
+    note: "",
+    href: "/services/drawing-assessment",
+  },
 ];
 
 const packages = [
@@ -286,7 +318,14 @@ export default function PricingPage() {
                 style={{ border: "1px solid rgba(196, 191, 183, 0.15)" }}
               >
                 <div>
-                  <h3 className="text-night font-semibold">{item.service}</h3>
+                  <h3 className="text-night font-semibold">
+                    <Link
+                      href={item.href}
+                      className="rounded-sm underline-offset-4 transition-colors hover:text-primary-500 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2"
+                    >
+                      {item.service}
+                    </Link>
+                  </h3>
                   <p className="text-stone text-sm">
                     {item.duration}
                     {item.note && ` · ${item.note}`}

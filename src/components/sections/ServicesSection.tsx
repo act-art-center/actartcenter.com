@@ -6,13 +6,13 @@ import { SERVICES_ADULT, SERVICES_SPECIALTY } from "@/lib/constants";
 
 const ONE_DAY_CLASS_SERVICE = {
   id: "open-studio-one-day-class",
-  title: "오픈스튜디오 원데이클래스",
+  title: "오픈스튜디오 원데이 클래스",
   titleEn: "Open Studio One-Day Class",
   description: "개인 세션 및 가족, 친구와 함께 참여도 가능한 열린 미술 시간입니다.",
   href: "/services/open-studio",
-  anchor: "오픈스튜디오 원데이클래스 자세히 알아보기",
+  anchor: "오픈스튜디오 원데이 클래스 자세히 알아보기",
   image: "/images/open-studio-one-day-class.jpg",
-  imageAlt: "이젤 앞에서 그림을 그리는 오픈스튜디오 원데이클래스 일러스트",
+  imageAlt: "이젤 앞에서 그림을 그리는 오픈스튜디오 원데이 클래스 일러스트",
   cta: "자세히 알아보기",
   meta: "1인 · 1회",
 };
