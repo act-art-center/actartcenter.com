@@ -42,7 +42,7 @@ const DRAWING_ASSESSMENT_SERVICE = {
  */
 export function ServicesSection() {
   return (
-    <SectionWrapper bg="cream">
+    <SectionWrapper id="sessions" bg="cream" className="scroll-mt-24">
       <Container>
         <div className="text-center mb-6">
           <h2 className="text-2xl lg:text-3xl font-bold tracking-tight">ACT ART CENTER의 세션 영역</h2>

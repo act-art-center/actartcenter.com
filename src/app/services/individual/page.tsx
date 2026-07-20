@@ -277,8 +277,8 @@ export default function IndividualPage() {
             </div>
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
               <Image
-                src="/images/drawing-hand-art-therapy.svg"
-                alt="1:1 개인 미술치료에서 종이에 그림을 그리고 있는 손"
+                src="/images/individual-art-therapy-together.jpg"
+                alt="미술치료사와 참여자가 나란히 앉아 각자의 그림을 그리는 미술치료 장면"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -297,9 +297,8 @@ export default function IndividualPage() {
               이런 분께 권해 드려요
             </h2>
             <p className="mt-4 text-charcoal/70 text-sm leading-relaxed">
-              진단명이 꼭 있어야 하는 것은 아닙니다. '말로는 설명이 잘 안 되는데,
-              마음 한 켠이 계속 무겁다'는 감각이 이어진다면 첫 상담에서 함께
-              이야기 나눠 볼 수 있습니다.
+              '말로는 설명이 잘 안 되는데, 마음 한 켠이 계속 무겁다'는 감각이
+              이어진다면 첫 상담에서 함께 이야기 나눠 볼 수 있습니다.
             </p>
           </div>
           <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

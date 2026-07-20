@@ -35,11 +35,11 @@ export function HeroSection() {
               첫 무료 상담 예약하기
             </Link>
             <Link
-              href="/act-approach"
-              aria-label="ACT(수용전념) 미술치료 자세히 보기"
+              href="#sessions"
+              aria-label="미술치료 프로그램 자세히 보기"
               className="inline-flex items-center px-7 py-3.5 text-white font-semibold rounded-lg border-[1.5px] border-white/30 hover:bg-white/10 transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-night"
             >
-              ACT(수용전념) 미술치료 자세히 보기
+              미술치료 프로그램 자세히 보기
             </Link>
             <Link
               href="/characters"
