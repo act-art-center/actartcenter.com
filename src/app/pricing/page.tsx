@@ -154,12 +154,7 @@ const pricingSchema = {
         {
           "@type": "Offer",
           name: "기업 미술심리치료 워크숍",
-          priceSpecification: {
-            "@type": "PriceSpecification",
-            minPrice: "500000",
-            maxPrice: "1500000",
-            priceCurrency: "KRW",
-          },
+          description: "프로그램 내용 및 기간에 따라 비용 변동",
         },
       ],
     },
@@ -203,7 +198,7 @@ const packages = [
   {
     name: "기업 미술심리치료 워크숍",
     sessions: "반일 / 종일",
-    price: "500,000 ~ 1,500,000원",
+    price: "변동",
     note: "맞춤 설계",
   },
 ];
@@ -337,7 +332,7 @@ export default function PricingPage() {
             ))}
           </div>
           <p className="mt-8 text-center text-stone text-sm">
-            * 비용은 프로그램 내용과 치료사 경력에 따라 달라질 수 있습니다.
+            * 비용은 프로그램 내용 및 기간에 따라 달라질 수 있습니다.
           </p>
         </Container>
       </SectionWrapper>

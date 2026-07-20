@@ -129,7 +129,54 @@ export default function ServicesPage() {
         </Container>
       </SectionWrapper>
 
-      {/* 7개 서비스를 관통하는 4가지 원칙 */}
+      {/* 상황별 미술치료 프로그램 안내 */}
+      <SectionWrapper bg="cream" className="overflow-hidden">
+        <Container className="relative">
+          <div className="relative z-10 max-w-3xl mb-10 lg:mb-14">
+            <p className="text-primary-500 text-xs font-medium tracking-widest uppercase mb-3">
+              Programs
+            </p>
+            <h2 className="text-night text-2xl lg:text-3xl font-bold tracking-tight leading-tight">
+              7가지 프로그램 — 상황별 맞춤 안내
+            </h2>
+          </div>
+          <div className="relative z-10 space-y-12 lg:space-y-20">
+            {SERVICES_ALL.map((service, i) => (
+              <div
+                key={service.id}
+                className={`grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center ${i % 2 === 1 ? "lg:direction-rtl" : ""}`}
+              >
+                <div className={`relative aspect-[16/10] rounded-2xl overflow-hidden ${i % 2 === 1 ? "lg:order-2" : ""}`}>
+                  <Image
+                    src={service.image}
+                    alt={service.imageAlt}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                  />
+                </div>
+                <div className={i % 2 === 1 ? "lg:order-1" : ""}>
+                  <p className="text-primary-500 text-xs font-medium tracking-wide uppercase mb-2">{service.titleEn}</p>
+                  <h2 className="text-night text-2xl font-semibold">{service.title}</h2>
+                  <p className="mt-4 text-charcoal/80 leading-relaxed">{service.description}</p>
+                  <Link
+                    href={service.href}
+                    aria-label={service.anchor}
+                    className="mt-6 inline-flex items-center gap-1 text-secondary-500 font-medium hover:gap-2 transition-all"
+                  >
+                    자세히 알아보기
+                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                    </svg>
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+        </Container>
+      </SectionWrapper>
+
+      {/* 미술치료 프로그램을 관통하는 4가지 원칙 */}
       <SectionWrapper bg="sand" className="py-16 lg:py-20">
         <Container>
           <div className="max-w-3xl mb-10 lg:mb-14">
@@ -137,7 +184,7 @@ export default function ServicesPage() {
               Four Principles
             </p>
             <h2 className="text-night text-2xl lg:text-3xl font-bold tracking-tight leading-tight">
-              7개 프로그램이 공유하는 네 가지 원칙
+              미술치료 프로그램이 공유하는 네 가지 원칙
             </h2>
             <p className="mt-4 text-charcoal/75 leading-relaxed">
               성인 1:1 에서 그룹, 아동, 온라인, 보호·의료 환경, 트라우마, 심층 탐색까지 —
@@ -237,52 +284,6 @@ export default function ServicesPage() {
               </div>
             </div>
           ))}
-        </Container>
-      </SectionWrapper>
-
-      <SectionWrapper bg="cream" className="overflow-hidden">
-        <Container className="relative">
-          <div className="relative z-10 max-w-3xl mb-10 lg:mb-14">
-            <p className="text-primary-500 text-xs font-medium tracking-widest uppercase mb-3">
-              Programs
-            </p>
-            <h2 className="text-night text-2xl lg:text-3xl font-bold tracking-tight leading-tight">
-              7가지 프로그램 — 상황별 맞춤 안내
-            </h2>
-          </div>
-          <div className="relative z-10 space-y-12 lg:space-y-20">
-            {SERVICES_ALL.map((service, i) => (
-              <div
-                key={service.id}
-                className={`grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center ${i % 2 === 1 ? "lg:direction-rtl" : ""}`}
-              >
-                <div className={`relative aspect-[16/10] rounded-2xl overflow-hidden ${i % 2 === 1 ? "lg:order-2" : ""}`}>
-                  <Image
-                    src={service.image}
-                    alt={service.imageAlt}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 1024px) 100vw, 50vw"
-                  />
-                </div>
-                <div className={i % 2 === 1 ? "lg:order-1" : ""}>
-                  <p className="text-primary-500 text-xs font-medium tracking-wide uppercase mb-2">{service.titleEn}</p>
-                  <h2 className="text-night text-2xl font-semibold">{service.title}</h2>
-                  <p className="mt-4 text-charcoal/80 leading-relaxed">{service.description}</p>
-                  <Link
-                    href={service.href}
-                    aria-label={service.anchor}
-                    className="mt-6 inline-flex items-center gap-1 text-secondary-500 font-medium hover:gap-2 transition-all"
-                  >
-                    자세히 알아보기
-                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                    </svg>
-                  </Link>
-                </div>
-              </div>
-            ))}
-          </div>
         </Container>
       </SectionWrapper>
 
