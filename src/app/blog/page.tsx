@@ -129,15 +129,17 @@ export default function BlogPage() {
             <div>
               <p className="text-night font-semibold text-sm">업데이트 주기</p>
               <p className="text-charcoal/70 text-xs mt-1 leading-relaxed">
-                주 5회 이상. 학술적으로 깊이 있는 주제와 미술치료사의 따스한 시선을 나누고자 합니다.
+                주 5회 이상
+                <br />
+                학술적으로 깊이 있는 주제와 미술치료사의 따스한 시선을 나누고자 합니다.
               </p>
             </div>
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-nowrap gap-2 shrink-0">
               <a
                 href="https://www.instagram.com/act.art.center/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1 px-4 py-2 bg-primary-50 text-primary-600 font-medium text-xs rounded-lg hover:bg-primary-100 transition-colors"
+                className="inline-flex items-center whitespace-nowrap px-3 py-2 bg-primary-50 text-primary-600 font-medium text-xs rounded-lg hover:bg-primary-100 transition-colors"
               >
                 Instagram @act.art.center
               </a>
@@ -146,7 +148,7 @@ export default function BlogPage() {
                 disabled
                 aria-label="네이버 블로그 추후 오픈 예정"
                 title="네이버 블로그는 추후 오픈할 예정입니다"
-                className="inline-flex items-center px-4 py-2 bg-white text-charcoal/55 font-medium text-xs rounded-lg border border-primary-100 cursor-not-allowed"
+                className="inline-flex items-center whitespace-nowrap px-3 py-2 bg-white text-charcoal/55 font-medium text-xs rounded-lg border border-primary-100 cursor-not-allowed"
               >
                 네이버 블로그 · 추후 오픈 예정
               </button>
