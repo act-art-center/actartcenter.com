@@ -61,6 +61,16 @@ const moments = [
     body: "ACTIE는 마음이 흔들리는 순간에도 내가 소중히 여기는 방향을 조용히 바라보고, 작은 한 걸음을 떠올리는 태도를 권합니다.",
   },
   {
+    title: "손으로 마음을 빚어 볼 때",
+    image: "/characters/artty/artty-clay-bear.jpg",
+    body: "ARTTY는 점토의 촉감과 형태를 천천히 만나며, 말로 다 담기 어려운 마음을 손끝의 표현으로 이어가도록 돕습니다.",
+  },
+  {
+    title: "소중한 가치를 구체화할 때",
+    image: "/characters/actie/actie-values-notes.jpg",
+    body: "ACTIE는 삶에서 소중히 여기는 가치와 성장의 방향을 하나씩 적어 보며, 오늘 실천할 작은 선택으로 연결하도록 돕습니다.",
+  },
+  {
     title: "학술적으로 연구하며 미술치료를 준비할 때",
     image: "/characters/therapist/therapist-writing-notebook-coffee.jpg",
     body: "미술치료사는 임상 경험과 학술적 근거를 함께 살피며 준비합니다. 문헌과 사례의 흐름을 정리하고, 이를 치료실에서 만나는 마음의 속도와 미술치료 과정에 맞게 연결합니다.",
@@ -143,7 +153,7 @@ export default function CharactersPage() {
               페이지 속에서 만나는 장면들
             </h2>
             <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-5">
-              {moments.slice(0, 4).map((moment) => (
+              {moments.slice(0, 6).map((moment) => (
                 <article key={moment.title} className="bg-white rounded-2xl p-5">
                   <div className="relative aspect-square rounded-xl bg-white overflow-hidden">
                     <Image src={moment.image} alt={moment.title} fill className="object-contain" sizes="(max-width: 768px) 100vw, 260px" />
@@ -157,7 +167,7 @@ export default function CharactersPage() {
               우정출연, 미술치료 동행자 Stella
             </h2>
             <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-5">
-              {moments.slice(4).map((moment) => (
+              {moments.slice(6).map((moment) => (
                 <article key={moment.title} className="bg-white rounded-2xl p-5">
                   <div className="relative aspect-square rounded-xl bg-white overflow-hidden">
                     <Image src={moment.image} alt={moment.title} fill className="object-contain" sizes="(max-width: 768px) 100vw, 260px" />
