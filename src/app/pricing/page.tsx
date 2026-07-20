@@ -60,11 +60,11 @@ const pricingSchema = {
       "@id": `${SITE_URL}/pricing#offers`,
       name: "ACT 미술치료 서비스 가격표",
       description:
-        "오픈 스튜디오 원데이 클래스, 성인·아동 개인 세션, TCI 기질검사 및 상담, 2~6인 소그룹, 온라인 세션, 그림검사와 프로그램 패키지 비용 안내.",
+        "오픈스튜디오 원데이클래스, 성인·아동 개인 세션, TCI 기질검사 및 상담, 2~6인 소그룹, 온라인 세션, 그림검사와 프로그램 패키지 비용 안내.",
       itemListElement: [
         {
           "@type": "Offer",
-          name: "오픈 스튜디오 원데이 클래스(1인)",
+          name: "오픈스튜디오 원데이클래스",
           priceSpecification: {
             "@type": "PriceSpecification",
             price: "50000",
@@ -167,7 +167,7 @@ const pricingSchema = {
 };
 
 const pricing = [
-  { service: "오픈 스튜디오 원데이 클래스(1인)", duration: "1회", price: "50,000원", note: "" },
+  { service: "오픈스튜디오 원데이클래스", duration: "1인 · 1회", price: "50,000원", note: "" },
   { service: "개인 미술심리치료 (성인)", duration: "50분", price: "변동", note: "" },
   {
     service: "개인 미술심리치료 (아동·청소년)",
