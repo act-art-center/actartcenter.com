@@ -491,7 +491,7 @@ export default function ActApproachPage() {
           <div className="max-w-4xl mx-auto">
             <div className="mb-10 lg:mb-14">
               <span className="inline-block px-4 py-2 bg-white text-primary-600 text-xs font-semibold rounded-full mb-5">
-                내담자 관점
+                참여자 관점
               </span>
               <h2 className="text-2xl lg:text-3xl font-bold tracking-tight">
                 미술치료 과정에서 ACT가 도움이 될 수 있는 순간
