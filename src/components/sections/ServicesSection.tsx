@@ -83,7 +83,7 @@ export function ServicesSection() {
         {/* Row 2: 성인 대상 4개 카드 */}
         <div className="mt-14 lg:mt-16">
           <div className="flex items-baseline justify-between mb-5">
-            <h3 className="text-night text-lg font-semibold tracking-tight">모두를 위한 미술치료</h3>
+            <h3 className="text-night text-lg font-semibold tracking-tight">아동부터 성인, 모두를 위한 미술치료</h3>
             <Link
               href="/pricing"
               className="text-sm text-secondary-500 font-medium hover:underline underline-offset-4"
