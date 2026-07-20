@@ -260,9 +260,9 @@ export default function TeamPage() {
                 </ul>
               </div>
 
-              {/* Clinical internships */}
+              {/* Clinical experience */}
               <div className="mt-6 p-5 bg-white rounded-xl" style={{ border: "1px solid rgba(196, 191, 183, 0.18)" }}>
-                <h2 className="text-night font-semibold text-sm mb-3">임상 및 인턴십</h2>
+                <h2 className="text-night font-semibold text-sm mb-3">임상 경험</h2>
                 <ul className="space-y-1.5 text-sm text-charcoal/70">
                   {[
                     "현 OO병원 정신건강의학과 보호병동 및 외래 임상",
