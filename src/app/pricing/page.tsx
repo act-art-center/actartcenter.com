@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/shared/Container";
 import { PageHero } from "@/components/shared/PageHero";
@@ -173,8 +172,6 @@ const pricing = [
     duration: "1인 · 1회",
     price: "50,000원",
     note: "가족, 친구와 함께 참여 가능",
-    imageSrc: "/images/open-studio-one-day-class.jpg",
-    imageAlt: "이젤 앞에서 그림을 그리는 오픈스튜디오 원데이클래스 일러스트",
   },
   { service: "개인 미술심리치료 (성인)", duration: "50분", price: "변동", note: "" },
   {
@@ -296,25 +293,12 @@ export default function PricingPage() {
                 className="bg-white rounded-xl p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3"
                 style={{ border: "1px solid rgba(196, 191, 183, 0.15)" }}
               >
-                <div className="flex items-center gap-4">
-                  {item.imageSrc && (
-                    <div className="relative h-28 w-24 shrink-0 overflow-hidden rounded-lg bg-paper">
-                      <Image
-                        src={item.imageSrc}
-                        alt={item.imageAlt}
-                        fill
-                        sizes="96px"
-                        className="object-contain"
-                      />
-                    </div>
-                  )}
-                  <div>
-                    <h3 className="text-night font-semibold">{item.service}</h3>
-                    <p className="text-stone text-sm">
-                      {item.duration}
-                      {item.note && ` · ${item.note}`}
-                    </p>
-                  </div>
+                <div>
+                  <h3 className="text-night font-semibold">{item.service}</h3>
+                  <p className="text-stone text-sm">
+                    {item.duration}
+                    {item.note && ` · ${item.note}`}
+                  </p>
                 </div>
                 <p className="text-primary-500 font-semibold tabular-nums whitespace-nowrap">
                   {item.price}

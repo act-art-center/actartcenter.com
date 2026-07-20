@@ -38,8 +38,61 @@ export function ServicesSection() {
           </p>
         </div>
 
-        {/* Row 1: 성인 대상 4개 카드 */}
+        {/* Row 1: 오픈스튜디오 원데이클래스 */}
         <div className="mt-12 lg:mt-16">
+          <div className="flex items-baseline justify-between mb-5">
+            <h3 className="text-night text-lg font-semibold tracking-tight">오픈스튜디오 원데이클래스</h3>
+            <Link
+              href="/pricing"
+              className="text-sm text-secondary-500 font-medium hover:underline underline-offset-4"
+            >
+              세션 비용 안내 →
+            </Link>
+          </div>
+
+          <Link
+            href="/booking"
+            aria-label="오픈스튜디오 원데이클래스 예약 문의"
+            className="group grid grid-cols-1 overflow-hidden rounded-xl bg-white transition-all duration-200 hover:-translate-y-1 hover:shadow-[var(--shadow-md)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 sm:grid-cols-[220px_1fr] lg:grid-cols-[260px_1fr_auto] lg:items-center"
+            style={{ border: "1px solid rgba(196, 191, 183, 0.15)" }}
+          >
+            <div className="relative aspect-[16/10] overflow-hidden bg-paper sm:h-full sm:min-h-52">
+              <Image
+                src="/images/open-studio-one-day-class.jpg"
+                alt="이젤 앞에서 그림을 그리는 오픈스튜디오 원데이클래스 일러스트"
+                fill
+                className="object-contain p-3 transition-transform duration-500 group-hover:scale-105"
+                sizes="(max-width: 640px) 100vw, 260px"
+              />
+            </div>
+
+            <div className="p-6 lg:px-8">
+              <p className="text-primary-500 text-xs font-medium tracking-wide uppercase mb-2">
+                Open Studio One-Day Class
+              </p>
+              <h4 className="text-night text-xl font-semibold transition-colors group-hover:text-primary-500">
+                오픈스튜디오 원데이클래스
+              </h4>
+              <p className="mt-3 text-charcoal/70 text-sm leading-relaxed">
+                가족, 친구와 함께 참여할 수 있는 열린 미술 시간입니다.
+              </p>
+              <span className="mt-4 inline-flex items-center gap-1 text-secondary-500 text-sm font-medium transition-all group-hover:gap-2">
+                예약 문의하기
+                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                </svg>
+              </span>
+            </div>
+
+            <div className="px-6 pb-6 lg:px-8 lg:py-6 lg:text-right">
+              <p className="text-sm text-charcoal/60">1인 · 1회</p>
+              <p className="mt-1 whitespace-nowrap text-xl font-semibold tabular-nums text-primary-500">50,000원</p>
+            </div>
+          </Link>
+        </div>
+
+        {/* Row 2: 성인 대상 4개 카드 */}
+        <div className="mt-14 lg:mt-16">
           <div className="flex items-baseline justify-between mb-5">
             <h3 className="text-night text-lg font-semibold tracking-tight">성인을 위한 ACT 미술치료</h3>
             <Link
@@ -56,7 +109,7 @@ export function ServicesSection() {
           </div>
         </div>
 
-        {/* Row 2: 특수·전문 영역 3개 카드 */}
+        {/* Row 3: 특수·전문 영역 3개 카드 */}
         <div className="mt-14 lg:mt-16">
           <div className="flex items-baseline justify-between mb-5">
             <h3 className="text-night text-lg font-semibold tracking-tight">특수·전문 영역 미술심리치료</h3>
