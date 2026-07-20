@@ -345,9 +345,8 @@ export default function PricingPage() {
               무엇이 포함되나요
             </h2>
             <p className="mt-4 text-center text-charcoal/70 leading-relaxed">
-              심리치료의 가격은 단지 ‘50분의 대화값’이 아닙니다. 한 회기를 준비하는 보이지 않는
-              시간과, 수년간 쌓아 온 임상 훈련이 함께 가격을 구성합니다. 지불하시는 비용이 무엇을
-              포괄하는지 투명하게 밝혀 드립니다.
+              한 회기를 준비하는 보이지 않는 시간과, 수년간 쌓아 온 임상 훈련이 함께 가격을
+              구성합니다. 지불하시는 비용이 무엇을 포괄하는지 투명하게 밝혀 드립니다.
             </p>
             <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-5">
               {priceInclusions.map((p) => (
