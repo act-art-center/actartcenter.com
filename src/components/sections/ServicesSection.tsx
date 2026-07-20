@@ -21,7 +21,7 @@ const DRAWING_ASSESSMENT_SERVICE = {
   id: "drawing-assessment",
   title: "그림검사 및 상담",
   titleEn: "Drawing Assessment & Consultation",
-  description: "HTP, KFD, BND, PITR 등 그림검사와 해석 상담을 통해 마음과 관계의 경험을 함께 살핍니다.",
+  description: "HTP, KFD, BND, PITR 등 그림검사와 해석 상담을 통해 마음과 관계의 경험을 함께 살핍니다. 그림의 해석은 충분한 대화를 통해 신중하게 이루어집니다.",
   href: "/booking",
   anchor: "그림검사 및 해석 상담 예약 문의",
   image: "/images/drawing-assessment-consultation.jpg",

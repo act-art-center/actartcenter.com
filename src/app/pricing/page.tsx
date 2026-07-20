@@ -10,7 +10,7 @@ import { SITE_URL } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "미술치료 비용 — 원데이 클래스·개인·그룹·온라인·검사 요금표",
   description:
-    "ACT ART CENTER 미술심리치료 비용을 투명하게 공개합니다. 원데이 클래스 50,000원, 아동·청소년 및 온라인 미술치료 100,000원, 그룹 프로그램 80,000원/인, TCI 기질검사 및 상담 100,000원이며 성인 개인 미술치료와 그림검사 및 상담은 상담 후 안내합니다.",
+    "ACT ART CENTER 미술심리치료 비용을 투명하게 공개합니다. 원데이 클래스 50,000원, 아동·청소년·그룹 미술치료 및 TCI 기질검사·상담은 100,000원, 온라인 미술치료는 120,000원이며 성인 개인 미술치료와 그림검사 및 상담은 상담 후 안내합니다.",
   keywords: [
     "미술치료 비용",
     "미술치료 가격",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     title: "미술치료 비용 — 원데이 클래스·개인·그룹·온라인·검사 요금표",
-    description: "원데이 클래스 50,000원, 아동·온라인·TCI 100,000원, 그룹 80,000원/인. 성인 개인 미술치료와 그림검사 및 상담은 상담 후 안내합니다.",
+    description: "원데이 클래스 50,000원, 아동·그룹·TCI 100,000원, 온라인 120,000원. 성인 개인 미술치료와 그림검사 및 상담은 상담 후 안내합니다.",
     url: `${SITE_URL}/pricing`,
     images: [
       {
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "미술치료 비용 — 원데이 클래스·개인·그룹·온라인·검사 요금표",
-    description: "원데이 클래스 50,000원, 아동·온라인·TCI 100,000원, 그룹 80,000원/인. 성인 개인 미술치료와 그림검사 및 상담은 상담 후 안내합니다.",
+    description: "원데이 클래스 50,000원, 아동·그룹·TCI 100,000원, 온라인 120,000원. 성인 개인 미술치료와 그림검사 및 상담은 상담 후 안내합니다.",
     images: ["/og/pricing.png"],
   },
 };
@@ -92,7 +92,7 @@ const pricingSchema = {
           name: "그룹 프로그램 (1인당) 90분",
           priceSpecification: {
             "@type": "PriceSpecification",
-            price: "80000",
+            price: "100000",
             priceCurrency: "KRW",
           },
           itemOffered: { "@id": `${SITE_URL}/services/group#course-8weeks` },
@@ -102,7 +102,7 @@ const pricingSchema = {
           name: "온라인 미술치료 50분 (키트 배송 포함)",
           priceSpecification: {
             "@type": "PriceSpecification",
-            price: "100000",
+            price: "120000",
             priceCurrency: "KRW",
           },
           itemOffered: { "@id": `${SITE_URL}/services/online#service` },
@@ -172,8 +172,8 @@ const pricing = [
     price: "100,000원",
     note: "",
   },
-  { service: "그룹 프로그램", duration: "90분", price: "80,000원 / 인", note: "2~6인 소그룹" },
-  { service: "온라인 미술치료", duration: "50분", price: "100,000원", note: "미술 키트 배송 포함" },
+  { service: "그룹 프로그램", duration: "90분", price: "100,000원 / 인", note: "2~6인 소그룹" },
+  { service: "온라인 미술치료", duration: "50분", price: "120,000원", note: "미술 키트 배송 포함" },
   { service: "TCI 기질검사 및 상담", duration: "검사 + 그림 + 해석 상담", price: "100,000원", note: "" },
   { service: "그림검사 및 상담", duration: "HTP, KFD, BND, PITR 등", price: "변동", note: "" },
 ];

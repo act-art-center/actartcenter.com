@@ -79,9 +79,9 @@ const onlineServiceSchema = {
       },
       offers: {
         "@type": "Offer",
-        price: "70000",
+        price: "120000",
         priceCurrency: "KRW",
-        description: "50분 세션 70,000~100,000원 (아트키트 배송 포함)",
+        description: "50분 세션 120,000원 (미술 키트 배송 포함)",
       },
     },
   ],
