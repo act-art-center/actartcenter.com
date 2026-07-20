@@ -31,7 +31,7 @@ export function HeroSection() {
             <ActionLink
               href="/booking"
               ariaLabel="첫 무료 상담 예약하기"
-              className="focus-visible:ring-white focus-visible:ring-offset-night"
+              className="active:translate-y-1 active:duration-75 focus-visible:ring-white focus-visible:ring-offset-night"
             >
               첫 무료 상담 예약하기
             </ActionLink>
@@ -39,7 +39,7 @@ export function HeroSection() {
               href="#sessions"
               ariaLabel="미술치료 프로그램 자세히 보기"
               variant="inverse-outline"
-              className="focus-visible:ring-white focus-visible:ring-offset-night"
+              className="active:translate-y-1 active:duration-75 focus-visible:ring-white focus-visible:ring-offset-night"
             >
               미술치료 프로그램 자세히 보기
             </ActionLink>
@@ -47,7 +47,7 @@ export function HeroSection() {
               href="/characters"
               ariaLabel="ACTIE와 ARTTY 상세 설명 페이지로 이동"
               variant="inverse-solid"
-              className="focus-visible:ring-white focus-visible:ring-offset-night"
+              className="active:translate-y-1 active:duration-75 focus-visible:ring-white focus-visible:ring-offset-night"
             >
               ACTIE(액티) &amp; ARTTY(아티)
             </ActionLink>
