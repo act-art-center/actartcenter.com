@@ -431,7 +431,7 @@ export default function PricingPage() {
               </li>
               <li className="flex gap-2">
                 <span className="mt-2 w-1.5 h-1.5 rounded-full bg-primary-500 shrink-0" />
-                결정은 바로 하지 않으셔도 됩니다. 가능성만 열어두고 돌아가셔도 좋습니다.
+                가능성만 열어두셔도 좋습니다.
               </li>
             </ul>
           </div>
