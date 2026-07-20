@@ -35,7 +35,7 @@ export function Footer() {
               <span className="font-[var(--font-display)] text-xl">ACT ART CENTER</span>
             </Link>
             <p className="mt-4 text-sm text-stone/60 leading-relaxed">
-              <span className="block whitespace-nowrap font-bold">액트 아트 센터 / 한국 수용전념미술치료 연구소</span>
+              <span className="block whitespace-nowrap font-bold text-white">액트 아트 센터 / 한국 수용전념미술치료 연구소</span>
               <span className="block whitespace-nowrap">미술치료를 중심으로 ACT(수용전념치료)를 통합한</span>
               <span className="block">미술심리치료 센터</span>
             </p>
