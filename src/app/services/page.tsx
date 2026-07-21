@@ -76,9 +76,9 @@ export default function ServicesPage() {
     <>
       <JsonLd data={servicesHubSchema} />
       <PageHero
-        title="ACT 미술심리치료 서비스"
+        title="미술심리치료 프로그램"
         subtitle="그림과 조형 활동은 표현을 넘어, 작품을 매개로 한 경험을 자각과 수용, 삶의 가치 인식으로 자연스럽게 확장합니다."
-        label="Services"
+        label="Programs"
         imageSrc="https://images.unsplash.com/photo-1544967082-d9d25d867d66?w=1920&q=80"
         imageAlt="미술치료 서비스 공간"
       />
