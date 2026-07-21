@@ -7,7 +7,6 @@ import { Search } from "lucide-react";
 import { Container } from "@/components/shared/Container";
 import { SectionWrapper } from "@/components/shared/SectionWrapper";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
-import { BlogIllustration, blogIllustrationVariant } from "@/components/shared/BlogIllustration";
 import { BLOG_POSTS, BLOG_CATEGORIES } from "@/lib/blog-data";
 import { cn } from "@/lib/utils";
 
@@ -223,8 +222,14 @@ export default function BlogPage() {
                   className="group block bg-white rounded-xl overflow-hidden transition-all duration-200 hover:-translate-y-1 hover:shadow-[var(--shadow-md)]"
                   style={{ border: "1px solid rgba(196, 191, 183, 0.15)" }}
                 >
-                  <div className="relative aspect-[16/9] overflow-hidden">
-                    <BlogIllustration variant={blogIllustrationVariant(post.slug)} title={post.title} />
+                  <div className="relative aspect-[16/9] overflow-hidden bg-[#f4efe7]">
+                    <Image
+                      src={post.image}
+                      alt={`${post.title} 블로그 커버`}
+                      fill
+                      className="object-contain p-2 transition-transform duration-300 group-hover:scale-[1.02]"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
                   </div>
                   <div className="p-5">
                     <div className="flex items-center gap-2 mb-2">

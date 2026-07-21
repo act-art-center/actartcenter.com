@@ -1,7 +1,7 @@
+import Image from "next/image";
 import Link from "next/link";
 import { SectionWrapper } from "@/components/shared/SectionWrapper";
 import { Container } from "@/components/shared/Container";
-import { BlogIllustration, blogIllustrationVariant } from "@/components/shared/BlogIllustration";
 import { BLOG_POSTS } from "@/lib/blog-data";
 
 const blogPosts = BLOG_POSTS.slice(0, 3);
@@ -32,8 +32,14 @@ export function BlogPreview() {
             className="md:col-span-3 group block bg-white rounded-xl overflow-hidden transition-all duration-200 hover:-translate-y-1 hover:shadow-[var(--shadow-md)]"
             style={{ border: "1px solid rgba(196, 191, 183, 0.15)" }}
           >
-            <div className="relative aspect-[16/9] overflow-hidden">
-              <BlogIllustration variant={blogIllustrationVariant(blogPosts[0].slug)} title={blogPosts[0].title} />
+            <div className="relative aspect-[16/9] overflow-hidden bg-[#f4efe7]">
+              <Image
+                src={blogPosts[0].image}
+                alt={`${blogPosts[0].title} 블로그 커버`}
+                fill
+                className="object-contain p-2 transition-transform duration-300 group-hover:scale-[1.02]"
+                sizes="(max-width: 768px) 100vw, 60vw"
+              />
             </div>
             <div className="p-6">
               <span className="text-xs text-primary-500 font-medium tracking-wide">{blogPosts[0].category}</span>
