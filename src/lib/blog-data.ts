@@ -20,6 +20,17 @@ export const BLOG_CATEGORIES = [
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "winnicott-container-art-therapy",
+    title: "위니컷의 컨테이너 이야기: 마음을 담고 견디는 미술치료의 자리",
+    excerpt: "위니컷의 홀딩과 잠재적 공간, 비온의 담아내기 개념을 구분해 살펴보고 미술치료의 관계와 작품이 감정의 자리가 되는 경험을 풀어봅니다.",
+    category: "미술치료",
+    seoKeywords: ["위니컷 컨테이너", "미술치료 컨테이너", "비온 담아내기", "위니컷 홀딩", "잠재적 공간", "치료적 관계"],
+    image: "/characters/therapist/therapist-15.jpg",
+    date: "2026년 7월 21일",
+    author: "고은별",
+    readTime: "8분",
+  },
+  {
     slug: "winnicott-holding-environment-art-therapy",
     title: "마음이 잠시 기대어 머무는 곳: 위니컷(Winnicott)의 안아주는 환경(Holding Environment)과 미술치료",
     excerpt: "위니컷(Winnicott)의 안아주는 환경(Holding Environment)을 치료실의 안정적인 공간과 관계, 마음을 담아주는 미술 매체의 경험으로 풀어봅니다.",
