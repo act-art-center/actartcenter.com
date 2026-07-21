@@ -261,7 +261,7 @@ export default function IndividualPage() {
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <span className="px-3 py-1.5 bg-cream rounded-lg text-sm text-charcoal/70">50분 세션</span>
-                <span className="px-3 py-1.5 bg-cream rounded-lg text-sm text-charcoal/70">주 1회 × 8주 권장</span>
+                <span className="px-3 py-1.5 bg-cream rounded-lg text-sm text-charcoal/70">주 1회 × 8주 이상 권장</span>
                 <span className="px-3 py-1.5 bg-cream rounded-lg text-sm text-charcoal/70">1:1 맞춤 설계</span>
                 <span className="px-3 py-1.5 bg-cream rounded-lg text-sm text-charcoal/70">사전 예약제</span>
               </div>
@@ -339,7 +339,7 @@ export default function IndividualPage() {
               </p>
             </div>
             <div>
-              <h3 className="text-night font-semibold text-lg">집단과 다른 점</h3>
+              <h3 className="text-night font-semibold text-lg">집단 미술치료와 다른 점</h3>
               <ul className="mt-4 space-y-3 text-sm text-charcoal/80">
                 <li className="flex items-start gap-3">
                   <span className="w-1.5 h-1.5 mt-2 rounded-full bg-primary-400 shrink-0" />

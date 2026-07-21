@@ -376,7 +376,7 @@ export default function TeamPage() {
               연구 관심사
             </h2>
             <p className="mt-4 text-center text-charcoal/70">
-              차 의과학대학교 미술치료학 박사 과정을 이어가며 임상과 연구를 함께 지속합니다.
+              의학과 임상미술치료 박사 과정을 이어가며 임상과 연구를 함께 지속합니다.
               연구에서의 발견은 세션의 구성과 임상적 결정에 꾸준히 반영됩니다.
             </p>
             <ul className="mt-8 space-y-3">

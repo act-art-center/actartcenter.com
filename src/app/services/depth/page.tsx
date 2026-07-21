@@ -8,14 +8,14 @@ import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "심층 탐색·연구 기반 미술심리치료 — 장기 자기 이해·슈퍼비전·연구 협력",
+  title: "심층 탐색·연구 기반 미술심리치료 — 장기 자기 이해·자기돌봄·연구 협력",
   description:
-    "자기 이해와 내적 탐색을 원하는 개인의 장기 심층 트랙, 미술치료 전문가를 위한 슈퍼비전, 차 의과학대학교 박사과정 연구와 연계되는 사례 기반 학술 협력. Jungian 상징 작업과 Freudian 자유연상의 흐름을 ACT 프레임으로 재통합한 접근으로 설계합니다.",
+    "자기 이해와 내적 탐색을 원하는 개인의 장기 심층 트랙, 돌봄 직군을 위한 자기돌봄 미술치료, 박사과정 연구와 연계되는 사례 기반 학술 협력. 미술치료를 중심으로 ACT를 보조적으로 통합합니다.",
   keywords: [
     "심층 미술심리치료",
     "장기 미술치료",
-    "미술치료 슈퍼비전",
-    "미술치료 전문가 자문",
+    "돌봄 직군 자기돌봄",
+    "전문가 자기돌봄 미술치료",
     "미술치료 연구 협력",
     "Jungian 미술치료",
     "상징 작업 미술치료",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     type: "website",
     title: "심층 탐색·연구 기반 미술심리치료 — ACT ART CENTER",
     description:
-      "장기 심층 자기 이해, 미술치료 전문가 슈퍼비전, 박사과정 연구와 연결된 사례 기반 학술 협력을 제공합니다.",
+      "장기 심층 자기 이해, 돌봄 직군 자기돌봄, 박사과정 연구와 연결된 사례 기반 학술 협력을 안내합니다.",
     url: `${SITE_URL}/services/depth`,
     images: [
       {
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "심층 탐색·연구 기반 미술심리치료",
     description:
-      "장기 자기 이해·슈퍼비전·연구 협력 트랙. Jungian 상징 작업을 ACT 프레임으로 통합.",
+      "장기 자기 이해·자기돌봄·연구 협력 트랙. 미술치료를 중심으로 ACT를 보조적으로 통합합니다.",
     images: ["/og/services-depth.png"],
   },
 };
@@ -64,7 +64,7 @@ const depthServiceSchema = {
       alternateName: ["Depth-Oriented & Research-Based Art Therapy", "장기 심층 미술심리치료"],
       additionalType: "https://schema.org/PsychologicalTreatment",
       description:
-        "증상 완화를 넘어 장기적 자기 이해·상징 탐색을 목적으로 하는 심층 미술심리치료. Cathy Malchiodi 의 장기 사례 기술, Judith Rubin 의 『Introduction to Art Therapy』(2009) 흐름, Irvin Yalom 의 실존주의 심리치료 관점, Jungian 상징 작업, Freudian 자유연상의 아트 버전을 ACT(Hayes et al.) 프레임으로 통합한 접근입니다. 2주 1회·월 1회 간격의 장기 계약을 기본으로 합니다.",
+        "증상 완화를 넘어 장기적 자기 이해·상징 탐색을 목적으로 하는 심층 미술심리치료. Cathy Malchiodi 의 장기 사례 기술, Judith Rubin 의 『Introduction to Art Therapy』(2009) 흐름, Irvin Yalom 의 실존주의 심리치료 관점, Jungian 상징 작업, Freudian 자유연상의 아트 버전을 ACT(Hayes et al.) 프레임으로 통합한 접근입니다. 주 1회·2주 1회·월 1회 모두 가능하며, 현재 상황과 사례의 특성에 따라 회기 간격을 정합니다.",
       url: `${SITE_URL}/services/depth`,
       image: `${SITE_URL}/og/services-depth.png`,
       therapyType: "Art Therapy",
@@ -87,13 +87,13 @@ const depthServiceSchema = {
     },
     {
       "@type": "Service",
-      "@id": `${SITE_URL}/services/depth#supervision`,
-      name: "미술치료사 슈퍼비전 및 전문가 자문",
-      serviceType: "Clinical Supervision",
+      "@id": `${SITE_URL}/services/depth#professional-self-care`,
+      name: "돌봄 직군 자기돌봄 미술치료",
+      serviceType: "Art Therapy for Professional Self-Care",
       description:
-        "미술치료사 자격 교육 이수자·대학원생·현장 실무자를 대상으로 하는 사례 슈퍼비전과 임상 자문. 1:1 개별 슈퍼비전과 소그룹 슈퍼비전(3~5인) 두 가지 형태로 운영합니다.",
+        "상담·의료·교육·예술 현장에서 타인을 돌보는 직군이 감정 노동과 소진을 살피고 회복의 감각을 되찾도록 돕는 개인·소그룹 자기돌봄 미술치료입니다.",
       provider: { "@id": `${SITE_URL}/#organization` },
-      audience: { "@type": "Audience", audienceType: "미술치료 전문가·대학원생" },
+      audience: { "@type": "Audience", audienceType: "상담·의료·교육·예술 분야의 돌봄 직군" },
       areaServed: { "@type": "Country", name: "대한민국" },
     },
     {
@@ -102,7 +102,7 @@ const depthServiceSchema = {
       name: "사례 기반 학술 연구 협력",
       serviceType: "Research Collaboration",
       description:
-        "차 의과학대학교 미술치료학 박사과정 연구와 연결되는 사례 기반 학술 협력. 내담자의 사전 서면 동의를 바탕으로 익명화된 사례를 학술지·학회 발표·교육 자료에 활용합니다.",
+        "의학과 임상미술치료 박사과정 연구와 연결되는 사례 기반 학술 협력. 내담자의 사전 서면 동의를 바탕으로 익명화된 사례를 학술지·학회 발표·교육 자료에 활용합니다.",
       provider: { "@id": `${SITE_URL}/#organization` },
       audience: { "@type": "Audience", audienceType: "연구 참여에 동의하는 내담자·연구 협력 기관" },
     },
@@ -121,14 +121,14 @@ const fitAudience = [
       "상담·의료·교육·예술 현장에서 타인을 돌보는 역할을 오래 맡아 온 분. 기능으로서의 자기 뒤에 묻혀 있는 감각과 서사를 장기 작업으로 정리합니다.",
   },
   {
-    title: "미술치료사 슈퍼비전",
+    title: "소진 이후의 감각 회복",
     description:
-      "미술치료사 자격 교육 이수자·대학원생·현장 3년 이내 실무자를 대상으로 하는 사례 슈퍼비전. 본인의 임상 사례를 정기적으로 검토하고 윤리·기법·자기 반영을 점검합니다.",
+      "오랜 감정 노동과 돌봄 이후 자신의 감각과 욕구를 살피기 어려워진 분. 말과 이미지로 현재의 소진을 안전하게 표현하고 회복의 속도를 다시 찾습니다.",
   },
   {
-    title: "임상가의 전문 자문",
+    title: "창작자·예술가의 내적 정리",
     description:
-      "이미 임상 경험이 축적된 치료사·상담사·의료 인력이, 특정 사례·프로그램 설계·기관 이슈에 대한 짧은 자문을 원할 때. 단회 또는 3회기 자문 패키지로 운영합니다.",
+      "창작과 생계를 함께 이어가며 정체성·관계·번아웃을 정리하고 싶은 분. 결과물의 평가에서 잠시 벗어나 창작 과정과 삶의 방향을 천천히 살핍니다.",
   },
   {
     title: "연구 협력 · 사례 기반 학술 참여",
@@ -188,30 +188,30 @@ const longTermValue = [
   },
 ];
 
-const supervisionFormats = [
+const professionalSelfCareFormats = [
   {
     number: "01",
-    title: "1:1 개별 슈퍼비전",
+    title: "1:1 자기돌봄 세션",
     description:
-      "본인의 임상 사례를 정기적으로 검토합니다. 50분 기본, 월 1~2회 권장. 사례 개념화·매체 선택·윤리 이슈·역전이·자기 반영을 네 축으로 다룹니다.",
+      "50분 개인 세션에서 감정 노동과 소진, 역할 뒤에 미뤄 둔 감각을 살핍니다. 미술 매체를 통해 현재 상태를 표현하고 자신에게 맞는 회복의 리듬을 찾습니다.",
   },
   {
     number: "02",
-    title: "소그룹 슈퍼비전",
+    title: "소그룹 자기돌봄",
     description:
-      "3~5인 소그룹이 정기적으로 모여 사례를 공유합니다. 또래 학습(peer learning)의 관점 다양성과 개별 슈퍼비전의 깊이를 절충하는 구조입니다. 분기 또는 반기 단위 계약.",
+      "3~6인이 함께 미술 작업을 하며 각자의 소진 신호와 회복 자원을 발견합니다. 서로의 경험을 평가하지 않고 존중하며, 개인이 공개할 범위는 스스로 정합니다.",
   },
   {
     number: "03",
-    title: "단회·단기 자문",
+    title: "단회 기관 워크숍",
     description:
-      "특정 사례·프로그램 설계·기관 이슈에 대한 짧은 자문이 필요할 때. 단회 90분 또는 3회기 자문 패키지. 연구·논문 자문은 별도로 안내합니다.",
+      "기관과 팀의 일정에 맞춰 감정 환기와 회복을 돕는 미술치료 기반 워크숍을 구성합니다. 참여자의 직무 환경과 인원, 접근성을 사전에 확인해 매체와 흐름을 조정합니다.",
   },
   {
     number: "04",
-    title: "자격 조건 · 윤리 점검",
+    title: "시작 전 상담 · 안전 확인",
     description:
-      "한국미술치료학회 회원, 미술치료 석사 이수 또는 이수 예정, 현장 1~3년 실무자에게 가장 적합합니다. 슈퍼비전 시작 전 비밀유지·이중관계·사례 공유 범위에 대한 서면 계약을 체결합니다.",
+      "첫 상담에서 현재의 소진 정도와 참여 목적, 개인·집단 중 적합한 형태를 함께 살핍니다. 집단에서는 비밀보장과 작품 공유 범위를 안내하고 참여자의 선택을 존중합니다.",
   },
 ];
 
@@ -219,7 +219,7 @@ const researchCollaboration = [
   {
     title: "박사과정 연구와의 연결",
     description:
-      "원장은 차 의과학대학교 미술치료학 박사과정을 이수하며, ACT 와 미술치료의 통합 프로토콜·성인 번아웃 집단·디지털 환경의 미술치료 적용을 장기 연구 관심으로 두고 있습니다. 사례 기반 질적 연구에 관심 있는 내담자·기관과의 협력을 환영합니다.",
+      "미술치료사는 의학과 임상미술치료 박사과정을 이수하며, ACT 와 미술치료의 통합 프로토콜·성인 번아웃 집단·디지털 환경의 미술치료 적용을 장기 연구 관심으로 두고 있습니다. 사례 기반 질적 연구에 관심 있는 내담자·기관과의 협력을 환영합니다.",
   },
   {
     title: "윤리 동의 절차",
@@ -247,9 +247,9 @@ const sessionStructure = [
   },
   {
     number: "02",
-    title: "2주 1회 · 월 1회 간격",
+    title: "상황에 맞춘 회기 간격",
     description:
-      "단기 트랙이 주 1회 간격을 권장하는 반면, 심층 트랙은 2주 1회(bi-weekly) 또는 월 1회(monthly) 간격을 기본값으로 합니다. 회기 사이의 '숙성 시간' 자체가 작업의 일부입니다.",
+      "심층 트랙은 주 1회·2주 1회·월 1회로 진행할 수 있습니다. 현재 상황과 사례의 특성에 따라 회기 간격을 정합니다.",
   },
   {
     number: "03",
@@ -292,28 +292,28 @@ const evidenceNotes = [
       "『Acceptance and Commitment Therapy』(2nd ed., 2012) 와 ACBS(Association for Contextual Behavioral Science) 의 국제 프로토콜 업데이트는 본 센터의 통합 프레임 역할을 합니다. 심층 작업의 깊이는 유지하되, 해석 의존성을 낮추는 장치로 ACT 가 작동합니다.",
   },
   {
-    source: "한국미술치료학회 / 차 의과학대학교 미술치료학과",
+    source: "국내 미술치료 교육·윤리 기준",
     note:
-      "국내 학회·학과는 장기·심층 사례 연구와 슈퍼비전 체계의 기준을 지속적으로 갱신해 왔습니다. 본 센터의 슈퍼비전·연구 협력 절차는 이 국내 임상 맥락에 맞춰 국지화되어 있습니다.",
+      "국내 미술치료 교육과 윤리 기준은 내담자 존중·비밀보장·치료적 경계의 중요성을 강조합니다. 본 센터의 장기 작업과 자기돌봄 프로그램도 이 원칙을 바탕으로 운영합니다.",
   },
 ];
 
 const faqs = [
   {
     q: "장기 트랙은 어느 정도 기간이 권장되나요?",
-    a: "최소 6개월, 일반적으로 1년 이상을 권장합니다. 2주 1회 또는 월 1회 간격이 기본값이며, 첫 3개월은 관계 형성과 상징 자료의 누적 시기로 봅니다. '오늘의 한 장면'보다 '한 해의 궤적'이 변화의 단위입니다.",
+    a: "최소 6개월, 일반적으로 1년 이상을 권장합니다. 주 1회·2주 1회·월 1회 모두 가능하며, 현재 상황과 사례의 특성에 따라 회기 간격을 정합니다. 첫 3개월은 관계 형성과 상징 자료를 쌓아 가는 시기로 봅니다.",
   },
   {
     q: "결과는 언제쯤 느껴지나요?",
-    a: "증상 완화가 아니라 자기 이해의 언어가 먼저 달라지는 경우가 많습니다. 첫 반년 이후 '내가 나를 설명하는 방식' 이 부드러워졌다는 피드백을 자주 듣습니다. 다만 개인차가 크기에 '보장된 타임라인' 을 제시하지는 않습니다.",
+    a: "증상 완화보다 자기 이해의 언어가 먼저 달라질 수 있습니다. 첫 반년 이후 '내가 나를 설명하는 방식' 이 부드러워지는 경험이 있을 수 있습니다. 다만 변화의 시점과 과정에는 개인차가 있어 정해진 시기를 제시하지는 않습니다.",
   },
   {
     q: "연구·학술 참여 동의는 어떻게 이루어지나요?",
     a: "첫 계약 시점에는 연구 참여에 대해 묻지 않습니다. 작업이 안정적으로 쌓인 뒤, 기관 윤리 기준을 따르는 서면 동의서를 통해 익명화·발표 범위·철회 절차를 설명드립니다. 동의는 언제든 철회 가능하며, 철회가 세션에 영향을 주지 않습니다.",
   },
   {
-    q: "슈퍼비전은 어떤 자격에 열려 있나요?",
-    a: "미술치료 석사 이수 또는 이수 예정자, 한국미술치료학회 회원 또는 준회원, 현장 실무 1~3년차를 기본으로 합니다. 자격 조건 밖이어도 사례 자문·단기 자문 형태로 함께 논의할 수 있습니다. 슈퍼비전 시작 전 비밀유지·이중관계·사례 공유 범위에 대한 서면 계약을 체결합니다.",
+    q: "돌봄 직군도 개인 미술치료를 받을 수 있나요?",
+    a: "상담·의료·교육·예술 현장에서 일하는 분도 개인 내담자로 참여할 수 있습니다. 직무 사례를 평가하거나 지도하는 과정이 아니라, 자신의 감정과 소진, 회복을 중심에 두는 미술치료입니다. 첫 상담에서 개인 세션과 소그룹 중 적합한 형태를 함께 살핍니다.",
   },
 ];
 
@@ -345,9 +345,9 @@ export default function DepthPage() {
               </h1>
               <p className="mt-6 text-charcoal/80 leading-[var(--leading-normal)]">
                 증상 완화 이후에도 '나는 어떤 사람으로 살고 싶은가' 를 오래
-                묻고 싶은 분, 미술치료사 사례 슈퍼비전을 정기적으로 운영하고
-                싶은 분, 사례 기반 학술 협력·연구 참여에 열려 있는 분을 위한
-                트랙입니다. Cathy Malchiodi 의 장기 사례 기술, Judith Rubin 의
+                묻고 싶은 분, 돌봄 역할 속에서 자신의 회복을 살피고 싶은 분,
+                사례 기반 학술 협력·연구 참여에 열려 있는 분을 위한 트랙입니다.
+                Cathy Malchiodi 의 장기 사례 기술, Judith Rubin 의
                 『Introduction to Art Therapy』(2009), Irvin Yalom 의
                 실존주의 심리치료 관점, Jungian 상징 전통과 Freudian 자유연상의
                 아트 버전을 <strong>ACT 프레임으로 통합</strong>한 접근으로
@@ -355,9 +355,9 @@ export default function DepthPage() {
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <span className="px-3 py-1.5 bg-cream rounded-lg text-sm text-charcoal/70">50분 기본 세션</span>
-                <span className="px-3 py-1.5 bg-cream rounded-lg text-sm text-charcoal/70">2주 1회 · 월 1회</span>
+                <span className="px-3 py-1.5 bg-cream rounded-lg text-sm text-charcoal/70">주 1회 · 2주 1회 · 월 1회</span>
                 <span className="px-3 py-1.5 bg-cream rounded-lg text-sm text-charcoal/70">장기 계약 옵션</span>
-                <span className="px-3 py-1.5 bg-cream rounded-lg text-sm text-charcoal/70">슈퍼비전·연구 협력</span>
+                <span className="px-3 py-1.5 bg-cream rounded-lg text-sm text-charcoal/70">자기돌봄·연구 협력</span>
               </div>
               <p className="mt-4 text-charcoal/60 text-sm">
                 비용 안내는{" "}
@@ -396,9 +396,9 @@ export default function DepthPage() {
               이런 분께 열린 프로그램입니다
             </h2>
             <p className="mt-4 text-charcoal/70 text-sm leading-relaxed">
-              단기 증상 완화가 아닌 장기적 자기 이해·전문가 자기돌봄·슈퍼비전·연구
-              협력을 목적으로 하는 트랙입니다. 내담자는 물론, 미술치료사
-              자격 교육 이수자와 대학원생, 기관 연구자까지 함께 열려 있습니다.
+              장기적 자기 이해와 돌봄 직군의 자기돌봄, 연구 협력을 위한
+              트랙입니다. 개인 내담자와 상담·의료·교육·예술 분야 종사자,
+              연구 참여에 관심 있는 기관에 열려 있습니다.
             </p>
           </div>
           <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -479,22 +479,22 @@ export default function DepthPage() {
         </Container>
       </SectionWrapper>
 
-      {/* Supervision */}
+      {/* Professional self-care */}
       <SectionWrapper bg="paper">
         <Container>
           <div className="max-w-2xl">
             <h2 className="text-2xl lg:text-3xl font-bold tracking-tight">
-              미술치료사 슈퍼비전 — 자격·형태·절차
+              돌봄 직군 자기돌봄 미술치료 — 형태·흐름
             </h2>
             <p className="mt-4 text-charcoal/70 text-sm leading-relaxed">
-              슈퍼비전은 '가르치는 자리' 가 아니라 '함께 사례를 붙잡는 자리'
-              입니다. 본 센터는 한국미술치료학회 윤리 기준과 국제 슈퍼비전
-              문헌의 핵심 원칙(사례 개념화·매체 선택·역전이·자기 반영) 을 네
-              축으로 운영합니다.
+              타인을 돌보는 역할이 길어질수록 자신의 감정과 몸의 신호는 뒤로
+              밀리기 쉽습니다. 이 프로그램은 직무 사례를 평가하거나 지도하는
+              과정이 아니라, 참여자 자신의 소진과 회복을 중심에 두는
+              미술치료입니다.
             </p>
           </div>
           <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {supervisionFormats.map((s) => (
+            {professionalSelfCareFormats.map((s) => (
               <div
                 key={s.number}
                 className="bg-cream rounded-xl p-6"
@@ -516,10 +516,10 @@ export default function DepthPage() {
         <Container>
           <div className="max-w-2xl">
             <h2 className="text-2xl lg:text-3xl font-bold tracking-tight">
-              연구 협력 — 차 의과학대학교 박사과정과의 연결
+              연구 협력 — 박사과정과의 연결
             </h2>
             <p className="mt-4 text-charcoal/70 text-sm leading-relaxed">
-              본 센터의 원장은 차 의과학대학교 미술치료학 박사과정을 이수하며,
+              본 센터의 미술치료사는 의학과 임상미술치료 박사과정을 이수하며,
               ACT 와 미술치료의 통합 프로토콜·성인 번아웃 집단·디지털 환경의
               미술치료 적용을 장기 연구 관심으로 두고 있습니다. 사례 기반 질적
               연구에 관심 있는 내담자·기관에게 다음 네 가지 구조로 협력을
@@ -613,10 +613,10 @@ export default function DepthPage() {
         <Container>
           <div className="max-w-2xl">
             <h2 className="text-2xl lg:text-3xl font-bold tracking-tight">
-              자주 받는 질문
+              자주 할 수 있는 질문
             </h2>
             <p className="mt-4 text-charcoal/70 text-sm leading-relaxed">
-              심층 트랙·슈퍼비전·연구 협력에 대한 질문 중 가장 자주 듣는 내용에
+              심층 트랙·자기돌봄·연구 협력에서 궁금할 수 있는 내용에
               먼저 답을 드립니다. 구체적인 설계는 첫 무료 상담에서 함께 그려
               드립니다.
             </p>
@@ -675,8 +675,8 @@ export default function DepthPage() {
               <p className="text-primary-500 text-xs font-semibold tracking-wide uppercase">Team</p>
               <h3 className="mt-2 text-night font-semibold">대표 프로필·연구 관심</h3>
               <p className="mt-2 text-charcoal/70 text-sm leading-relaxed">
-                슈퍼비전·연구 협력을 결정하시기 전에, 원장의 임상 배경과 연구
-                관심을 먼저 확인해 보세요.
+                자기돌봄 미술치료와 연구 협력을 살펴보기 전에, 원장의 임상
+                배경과 연구 관심을 먼저 확인해 보세요.
               </p>
             </Link>
           </div>
@@ -691,7 +691,7 @@ export default function DepthPage() {
               오래 걸어가는 길을, 같이 그려 보시겠어요
             </h2>
             <p className="mt-4 text-white/80 max-w-xl mx-auto text-sm leading-relaxed">
-              개인 심층 트랙·슈퍼비전·연구 협력 모두 첫 무료 상담에서 출발합니다.
+              개인 심층 트랙·자기돌봄·연구 협력 모두 첫 무료 상담에서 출발합니다.
               지금 관심 있는 방향과 과거의 치료·교육 경험을 편하게 나눠 주시면,
               적합한 구조를 함께 설계해 드립니다.
             </p>
@@ -706,7 +706,7 @@ export default function DepthPage() {
                 href="/contact"
                 className="inline-flex items-center px-8 py-4 border border-white/60 text-white font-semibold rounded-lg hover:bg-white/10 transition-all"
               >
-                슈퍼비전·연구 문의
+                자기돌봄·연구 문의
               </Link>
             </div>
           </div>

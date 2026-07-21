@@ -178,9 +178,9 @@ const partnershipModels = [
   },
   {
     number: "04",
-    title: "슈퍼비전·자문 (Consultation)",
+    title: "연구 협력 (Research Collaboration)",
     description:
-      "병동 상주 심리 인력이 있는 기관을 위해 사례 슈퍼비전·매체 교육·윤리 자문을 단독 제공합니다. 직접 세션 없이 기관 역량 강화를 목적으로 하는 구조입니다.",
+      "기관과 본 센터가 프로그램 운영 결과를 비식별 자료로 정리하고, 참여자의 사전 동의와 기관 윤리 절차에 따라 사례 기반 질적 연구·프로그램 평가를 함께 진행합니다.",
   },
 ];
 
@@ -641,7 +641,7 @@ export default function ProtectivePage() {
               <p className="text-primary-500 text-xs font-semibold tracking-wide uppercase">Specialty</p>
               <h3 className="mt-2 text-night font-semibold">심층 탐색·연구 기반 미술심리치료</h3>
               <p className="mt-2 text-charcoal/70 text-sm leading-relaxed">
-                슈퍼비전·사례 자문·연구 협력을 원하는 기관 심리 인력·임상가를
+                장기 자기탐색과 사례 기반 연구 협력에 관심 있는 내담자·기관을
                 위한 트랙입니다.
               </p>
             </Link>
