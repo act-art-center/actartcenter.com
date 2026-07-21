@@ -66,14 +66,15 @@ export function ServicesSection() {
         {/* Row 1: 오픈스튜디오 및 검사·상담 — 데스크톱 좌우 2열 */}
         <div className="mt-12 lg:mt-16">
           <div className="flex flex-col items-end gap-2 mb-5 lg:flex-row lg:items-baseline lg:justify-between">
-            <h3 className="w-full whitespace-nowrap text-[clamp(0.7rem,2.7vw,1.125rem)] font-semibold leading-tight tracking-tight text-night">
+            <h3 className="w-full whitespace-nowrap text-[clamp(0.8rem,3vw,1.375rem)] font-semibold leading-tight tracking-tight text-night">
               오픈스튜디오 원데이 클래스 / 그림검사 및 TCI 기질검사
             </h3>
             <Link
               href="/pricing"
-              className="shrink-0 whitespace-nowrap text-sm text-secondary-500 font-medium hover:underline underline-offset-4"
+              className="shrink-0 text-sm text-secondary-500 font-medium hover:underline underline-offset-4"
             >
-              세션 비용 안내 →
+              <span className="block whitespace-nowrap">세션 비용 안내</span>
+              <span className="block text-right" aria-hidden="true">→</span>
             </Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
