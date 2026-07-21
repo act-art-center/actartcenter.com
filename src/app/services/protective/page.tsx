@@ -296,7 +296,7 @@ export default function ProtectivePage() {
                 Protective & Medical Environment
               </p>
               <h1 className="text-3xl lg:text-4xl font-bold tracking-tight">
-                보호·의료 환경 미술심리치료 — 의료 현장에 들어가는 미술 작업
+                보호·의료 환경 미술심리치료 — 의료 현장에 함께하는 미술 작업
               </h1>
               <p className="mt-6 text-charcoal/80 leading-[var(--leading-normal)]">
                 청소년 보호병동, 정신과 장기 입원 환경, 난임·생식의학 치료
