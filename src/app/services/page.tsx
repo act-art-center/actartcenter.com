@@ -137,7 +137,7 @@ export default function ServicesPage() {
               Programs
             </p>
             <h2 className="text-night text-2xl lg:text-3xl font-bold tracking-tight leading-tight">
-              7가지 프로그램 — 상황별 맞춤 안내
+              미술심리치료 프로그램 - 상황별 맞춤 안내
             </h2>
           </div>
           <div className="relative z-10 space-y-12 lg:space-y-20">
