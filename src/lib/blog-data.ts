@@ -31,6 +31,17 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: "7분",
   },
   {
+    slug: "pause-and-breathe-before-a-drawing",
+    title: "그림 앞에서 잠시 숨을 고르는 시간",
+    excerpt: "바쁜 하루 끝에 종이 한 장과 색 하나를 만나며 마음의 속도를 천천히 살피는 미술치료의 시간을 다정하게 풀어봅니다.",
+    category: "미술치료",
+    seoKeywords: ["미술치료", "성인 미술치료", "마음 회복", "정서 조절", "미술치료 이야기", "서초 미술치료"],
+    image: "/characters/therapist/therapist-drawing-flower.jpg",
+    date: "2026년 7월 19일",
+    author: "고은별",
+    readTime: "6분",
+  },
+  {
     slug: "art-therapy-media-helper-friends",
     title: "매체를 만나는 시간도 미술치료의 시작입니다",
     excerpt: "색연필, 물감, 점토 같은 매체가 말로 정리되기 전의 마음을 색과 선, 질감으로 만나게 하는 과정을 미술치료사의 시선으로 따뜻하게 안내합니다.",
