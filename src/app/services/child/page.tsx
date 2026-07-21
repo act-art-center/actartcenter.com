@@ -332,12 +332,11 @@ export default function ChildPage() {
         <Container>
           <div className="max-w-2xl">
             <h2 className="text-2xl lg:text-3xl font-bold tracking-tight">
-              이런 주제에서 도움이 될 수 있습니다
+              이런 상황에서 도움이 될 수 있습니다
             </h2>
             <p className="mt-4 text-charcoal/70 text-sm leading-relaxed">
-              진단명이 꼭 있어야 하는 것은 아닙니다. 아이가 최근 몇 달간 보여
-              온 변화 중 몇 가지가 아래 리스트와 겹친다면, 첫 부모 상담에서
-              함께 판단해 볼 수 있습니다.
+              아이가 최근 몇 달간 보여 온 변화 중 몇 가지가 아래 리스트와 겹친다면,
+              첫 부모 상담에서 함께 판단해 볼 수 있습니다.
             </p>
           </div>
           <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
