@@ -334,12 +334,12 @@ export default function GroupPage() {
                 참여 문의하기
               </Link>
             </div>
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
+            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-white">
               <Image
-                src="https://images.unsplash.com/photo-1544967082-d9d25d867d66?w=800&q=80"
-                alt="원형 테이블에서 함께 그리는 소그룹 미술치료 장면"
+                src="/characters/twins-together.png"
+                alt="ACTIE와 ARTTY가 손을 잡고 함께 서 있는 그룹 미술치료 안내 장면"
                 fill
-                className="object-cover"
+                className="object-contain"
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 priority
               />
