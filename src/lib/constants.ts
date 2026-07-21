@@ -66,7 +66,7 @@ export const SERVICES = [
     id: "depth",
     title: "심층 탐색·연구 기반 미술심리치료",
     titleEn: "Depth-Oriented & Research-Based",
-    description: "연구, 슈퍼비전, 전문 자문. 자기 이해와 내적 탐색을 원하는 개인 및 장기·심층 치료 사례를 위한 프로그램입니다.",
+    description: "자기 이해와 내적 탐색을 원하는 개인 및 장기·심층 치료 사례를 위한 프로그램입니다.",
     href: "/services/depth",
   },
 ] as const;
@@ -154,7 +154,7 @@ export const SERVICES_ALL = [
     id: "depth",
     title: "심층 탐색·연구 기반 미술심리치료",
     titleEn: "Depth-Oriented & Research-Based",
-    description: "연구, 슈퍼비전, 전문 자문. 자기 이해와 내적 탐색을 원하는 개인 및 장기·심층 치료 사례를 위한 프로그램입니다.",
+    description: "자기 이해와 내적 탐색을 원하는 개인 및 장기·심층 치료 사례를 위한 프로그램입니다.",
     href: "/services/depth",
     anchor: "심층 탐색·연구 기반 미술심리치료",
     image: "/characters/actie/actie-telescope.jpg",
