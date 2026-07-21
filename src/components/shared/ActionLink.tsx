@@ -22,12 +22,12 @@ interface ActionLinkProps {
 
 const variantClasses: Record<ActionLinkVariant, string> = {
   primary:
-    "bg-primary-500 text-white shadow-[var(--shadow-sm)] hover:bg-primary-600 hover:-translate-y-0.5",
+    "bg-primary-500 text-white shadow-[var(--shadow-sm)] hover:bg-primary-600",
   outline:
     "border border-primary-200 bg-white/70 text-primary-700 hover:border-primary-300 hover:bg-primary-50",
   soft: "bg-primary-50 text-primary-700 hover:bg-primary-100",
   "inverse-solid":
-    "border border-white/70 bg-white/95 text-night shadow-[var(--shadow-sm)] hover:bg-white hover:-translate-y-0.5",
+    "border border-white/70 bg-white/95 text-night shadow-[var(--shadow-sm)] hover:bg-primary-50",
   "inverse-outline":
     "border border-white/45 bg-white/5 text-white hover:border-white/70 hover:bg-white/12",
 };
