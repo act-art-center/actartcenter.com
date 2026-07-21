@@ -71,16 +71,9 @@ export function TeamSection() {
             </Link>
           </div>
 
-          {/* Cross-links — team → act-approach + booking (B2 spec anchor quality) */}
+          {/* Cross-link — team → booking */}
           <p className="mt-8 text-sm text-center text-charcoal/70 leading-relaxed">
-            대표가 진행하는{" "}
-            <Link
-              href="/act-approach"
-              className="text-primary-500 font-medium hover:underline underline-offset-4"
-            >
-              ACT 수용전념치료
-            </Link>
-            의 6가지 핵심 프로세스가 궁금하시다면, 먼저{" "}
+            ACT ART CENTER 에서 진행하는 미술심리치료 프로그램이 궁금하시다면, 먼저{" "}
             <Link
               href="/booking"
               className="text-primary-500 font-medium hover:underline underline-offset-4"
