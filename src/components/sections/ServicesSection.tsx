@@ -71,10 +71,10 @@ export function ServicesSection() {
             </h3>
             <Link
               href="/pricing"
-              className="shrink-0 text-sm text-secondary-500 font-medium hover:underline underline-offset-4"
+              className="shrink-0 inline-flex items-center gap-1 whitespace-nowrap text-sm text-secondary-500 font-medium hover:underline underline-offset-4"
             >
-              <span className="block whitespace-nowrap">세부 안내</span>
-              <span className="block text-right" aria-hidden="true">→</span>
+              세션 비용 안내
+              <span aria-hidden="true">→</span>
             </Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
