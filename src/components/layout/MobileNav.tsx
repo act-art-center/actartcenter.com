@@ -11,7 +11,7 @@ export function MobileNav() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="lg:hidden">
+    <div className="xl:hidden">
       <Sheet open={open} onOpenChange={setOpen}>
         <SheetTrigger
           className="p-2 text-charcoal hover:text-primary-500 transition-colors"

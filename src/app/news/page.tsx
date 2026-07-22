@@ -96,9 +96,9 @@ export default function NewsPage() {
         title="센터소식"
         subtitle={
           <>
-            ACT ART CENTER 의 소식을 전합니다
+            ACT ART CENTER의 소식을 전합니다.
             <br />
-            분기 별로 바뀌는 새로운 오픈스튜디오 프로그램 등 센터의 다양한 소식을 확인하실 수 있습니다.
+            분기별로 바뀌는 새로운 오픈스튜디오 프로그램 등 센터의 다양한 소식을 확인하실 수 있습니다.
           </>
         }
         label="Center News"

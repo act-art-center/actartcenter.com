@@ -8,15 +8,15 @@ import { HeaderScroll } from "./HeaderScroll";
 export function Header() {
   return (
     <HeaderScroll>
-      <Container className="flex items-center justify-between h-16 lg:h-20">
-        <Link href="/" className="flex items-center gap-2.5 text-night">
+      <Container className="flex max-w-[1440px] items-center justify-between h-16 lg:h-20">
+        <Link href="/" className="flex shrink-0 items-center gap-2.5 whitespace-nowrap text-night">
           <Logo className="w-8 h-8 lg:w-9 lg:h-9" />
           <span className="font-[var(--font-display)] text-lg lg:text-xl tracking-tight">
             {SITE_NAME}
           </span>
         </Link>
 
-        <nav className="hidden lg:flex items-center gap-5 xl:gap-7" aria-label="메인 메뉴">
+        <nav className="hidden xl:flex items-center gap-4 2xl:gap-6" aria-label="메인 메뉴">
           {NAV_ITEMS.map((item) => (
             <Link
               key={item.href}
@@ -28,10 +28,10 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="hidden lg:block">
+        <div className="hidden shrink-0 xl:block">
           <Link
             href="/booking"
-            className="inline-flex items-center px-5 py-2.5 bg-primary-500 text-white text-[var(--text-small)] font-semibold rounded-lg hover:bg-primary-600 transition-all duration-200 hover:scale-[1.02] shadow-[var(--shadow-sm)]"
+            className="inline-flex items-center whitespace-nowrap px-4 2xl:px-5 py-2.5 bg-primary-500 text-white text-[var(--text-small)] font-semibold rounded-lg hover:bg-primary-600 transition-all duration-200 hover:scale-[1.02] shadow-[var(--shadow-sm)]"
           >
             예약하기
           </Link>
