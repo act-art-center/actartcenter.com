@@ -179,15 +179,15 @@ function footerLabel(id: string): string {
     case "group":
       return "그룹 프로그램";
     case "child":
-      return "아동·청소년";
+      return "아동·청소년 미술치료";
     case "online":
-      return "온라인 상담";
+      return "온라인 미술치료";
     case "protective":
-      return "보호·의료 환경";
+      return "보호·의료 환경 미술치료";
     case "emotional":
-      return "정서·트라우마";
+      return "정서·트라우마 미술치료";
     case "depth":
-      return "심층 탐색";
+      return "심층 탐색 미술치료";
     default:
       return id;
   }
