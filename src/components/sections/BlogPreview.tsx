@@ -11,7 +11,7 @@ export function BlogPreview() {
     <SectionWrapper bg="cream">
       <Container>
         <div className="flex items-center justify-between mb-12 lg:mb-16">
-          <h2 className="text-2xl lg:text-3xl font-bold tracking-tight">미술치료 이야기</h2>
+          <h2 className="text-2xl lg:text-3xl font-bold tracking-tight">미술치료 이야기 Blog</h2>
           <Link
             href="/blog"
             aria-label="미술치료·ACT 칼럼 전체 보기"
