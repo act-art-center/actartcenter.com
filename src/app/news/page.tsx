@@ -98,7 +98,7 @@ export default function NewsPage() {
           <>
             ACT ART CENTER의 소식을 전합니다.
             <span className="block [overflow-wrap:anywhere]">
-              분기별로 바뀌는 새로운 오픈스튜디오 오픈 클래스 등 센터의 다양한 소식과 공지를 확인하실 수 있습니다.
+              분기별로 바뀌는 새로운 오픈스튜디오 원데이 클래스 등 센터의 다양한 소식과 공지를 확인하실 수 있습니다.
             </span>
           </>
         }
