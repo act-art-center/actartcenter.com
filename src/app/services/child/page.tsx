@@ -264,7 +264,7 @@ export default function ChildPage() {
                 조율합니다.
               </p>
               <p className="mt-4 text-charcoal/80 leading-[var(--leading-normal)]">
-                아동 미술치료 프로그램은 아동의 발달 단계, 부모 상담에서 확인한
+                아동·청소년 미술치료 프로그램은 발달 단계와 정서, 부모 상담에서 확인한
                 생활 맥락, 첫 회기 관찰을 함께 살펴 세션 목표와 매체를 정합니다.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
@@ -273,9 +273,6 @@ export default function ChildPage() {
                 <span className="px-3 py-1.5 bg-cream rounded-lg text-sm text-charcoal/70">부모 상담 병행</span>
                 <span className="px-3 py-1.5 bg-cream rounded-lg text-sm text-charcoal/70">사전 예약제</span>
               </div>
-              <p className="mt-4 text-charcoal/60 text-sm">
-                비용 안내는 <Link href="/pricing" className="text-primary-500 underline underline-offset-2">비용 페이지</Link>를 참고해 주세요.
-              </p>
               <Link
                 href="/booking"
                 className="mt-8 inline-flex items-center px-7 py-3.5 bg-primary-500 text-white font-semibold rounded-lg hover:bg-primary-600 transition-all duration-200"
@@ -393,7 +390,7 @@ export default function ChildPage() {
                 부모 상담은 왜 병행되어야 할까요
               </h2>
               <p className="mt-6 text-charcoal/80 leading-[var(--leading-normal)]">
-                아동 미술치료는 아동 한 명만의 작업이 아닙니다. 미국미술치료협회
+                미국미술치료협회
                 (AATA) 등 주요 기관이 공통적으로 강조하는 것은 <strong>부모·양육자와의
                 협력이 아동 치료 결과의 핵심 변인</strong>이라는 점입니다.
               </p>

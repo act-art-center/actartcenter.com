@@ -89,16 +89,21 @@ export default function BlogPage() {
               </p>
             </div>
             <div className="mt-6">
-              <Link
-                href="#all-posts"
-                aria-label="블로그 전체 글 목록으로 이동"
+              <button
+                type="button"
+                onClick={() => {
+                  setActiveCategory("전체");
+                  setSearchQuery("");
+                  document.getElementById("all-posts")?.scrollIntoView({ behavior: "smooth", block: "start" });
+                }}
+                aria-label="블로그 전체 글 보기"
                 className="inline-flex min-h-11 items-center gap-1.5 rounded-lg bg-primary-500 px-4 py-2 text-sm font-semibold text-white transition-all duration-200 hover:bg-primary-600 active:translate-y-1 active:duration-75 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2"
               >
                 전체 글 보기
                 <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                 </svg>
-              </Link>
+              </button>
             </div>
           </div>
 
@@ -227,7 +232,12 @@ export default function BlogPage() {
                       src={post.image}
                       alt={`${post.title} 블로그 커버`}
                       fill
-                      className="object-contain p-2 transition-transform duration-300 group-hover:scale-[1.02]"
+                      className={cn(
+                        "object-contain p-2 transition-transform duration-300",
+                        post.slug === "art-therapy-not-drawing-skill"
+                          ? "scale-[1.18] group-hover:scale-[1.2]"
+                          : "group-hover:scale-[1.02]"
+                      )}
                       sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     />
                   </div>
