@@ -27,7 +27,7 @@ export const CONTACT = {
 
 export const NAV_ITEMS = [
   { label: "프로그램", href: "/services" },
-  { label: "ACTIE(액티) & ARTTY(아티)", href: "/characters" },
+  { label: "ACTIE & ARTTY", href: "/characters" },
   { label: "미술치료사 소개", href: "/team" },
   { label: "비용", href: "/pricing" },
   { label: "블로그", href: "/blog" },
