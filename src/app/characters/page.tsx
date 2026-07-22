@@ -191,7 +191,7 @@ export default function CharactersPage() {
                 저작권 안내
               </h2>
               <p className="mt-4 text-charcoal/80 text-sm lg:text-base leading-relaxed">
-                (ACTIE)액티, (ARTTY)아티, (Stella)미술치료사 캐릭터의 디자인과 콘셉트에 관한 저작권은
+                (ACTIE)액티, (ARTTY)아티, (Stella)미술치료사 캐릭터의 디자인과 컨셉에 관한 저작권은
                 ACT ART CENTER에 있습니다. 사전 허가 없는 복제·전재·변형·도용 및 상업적 이용을 금지합니다.
               </p>
             </div>
