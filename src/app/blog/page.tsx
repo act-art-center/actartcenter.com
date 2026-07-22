@@ -235,7 +235,7 @@ export default function BlogPage() {
                       className={cn(
                         "object-contain p-2 transition-transform duration-300",
                         post.slug === "art-therapy-not-drawing-skill"
-                          ? "scale-[1.18] group-hover:scale-[1.2]"
+                          ? "scale-[1.35] group-hover:scale-[1.37]"
                           : "group-hover:scale-[1.02]"
                       )}
                       sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
