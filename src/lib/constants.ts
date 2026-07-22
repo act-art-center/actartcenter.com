@@ -33,6 +33,7 @@ export const NAV_ITEMS = [
   { label: "블로그", href: "/blog" },
   { label: "FAQ", href: "/faq" },
   { label: "ACT 미술치료란?", href: "/act-approach" },
+  { label: "센터소식", href: "/news" },
   { label: "오시는 길", href: "/contact" },
 ] as const;
 

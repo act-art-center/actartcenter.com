@@ -21,6 +21,7 @@ const PAGE_LAST_MODIFIED: Record<string, string> = {
   "/pricing": "2026-04-19",
   "/faq": "2026-04-19",
   "/blog": "2026-04-19",
+  "/news": "2026-07-22",
   "/booking": "2026-04-15",
   "/contact": "2026-04-19",
   "/gallery": "2026-04-15",
@@ -85,6 +86,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Blog hub + leaves
     entry("/blog", 0.8, "daily"),
     ...blogEntries,
+    entry("/news", 0.7, "weekly"),
     // Booking / contact / misc
     entry("/booking", 0.7, "monthly"),
     entry("/contact", 0.6, "monthly"),
