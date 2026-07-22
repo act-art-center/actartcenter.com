@@ -181,7 +181,7 @@ export const RESOURCE_LINKS = [
 /** Footer 사이트맵 4컬럼용 센터 소개 링크. */
 export const ABOUT_LINKS = [
   { label: "센터 소개·미술치료사 프로필", href: "/team" },
-  { label: "ACT 수용전념치료란?", href: "/act-approach" },
+  { label: "ACT(수용전념) 미술치료란?", href: "/act-approach" },
   { label: "작품 갤러리", href: "/gallery" },
 ] as const;
 
