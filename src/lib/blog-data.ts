@@ -21,7 +21,7 @@ export const BLOG_CATEGORIES = [
 export const BLOG_POSTS: BlogPost[] = [
   {
     slug: "winnicott-container-art-therapy",
-    title: "위니컷의 컨테이너 이야기: 마음을 담고 견디는 미술치료의 자리",
+    title: "위니컷(Donald W. Winnicott)의 컨테이너(Container) 이야기: 미술치료에서 마음을 안전하게 담아내기",
     excerpt: "위니컷의 홀딩과 잠재적 공간, 비온의 담아내기 개념을 구분해 살펴보고 미술치료의 관계와 작품이 감정의 자리가 되는 경험을 풀어봅니다.",
     category: "미술치료",
     seoKeywords: ["위니컷 컨테이너", "미술치료 컨테이너", "비온 담아내기", "위니컷 홀딩", "잠재적 공간", "치료적 관계"],
@@ -65,7 +65,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "kramer-naumburg-art-therapy-perspectives",
-    title: "크레이머와 나움버그가 바라본 미술치료의 두 시선",
+    title: "크레이머(Edith Kramer)와 나움버그(Margaret Naumburg)가 바라본 미술치료의 두 시선",
     excerpt: "나움버그의 정신분석적 미술치료 관점과 크레이머의 창작 과정 중심 관점을 비교하며, 오늘의 미술치료 현장에서 두 이론이 어떻게 함께 살아 있는지 정리합니다.",
     category: "미술치료",
     seoKeywords: ["크레이머 미술치료", "나움버그 미술치료", "미술치료 이론", "Art as Therapy", "정신분석적 미술치료"],
