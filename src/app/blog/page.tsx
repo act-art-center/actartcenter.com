@@ -152,7 +152,7 @@ export default function BlogPage() {
             <div>
               <p className="text-night font-semibold text-sm">업데이트 주기</p>
               <p className="text-charcoal/70 text-xs mt-1 leading-relaxed">
-                주 5회 이상
+                월 10회 이상
                 <br />
                 학술적으로 깊이 있는 주제와 미술치료사의 따스한 시선을 나눕니다.
               </p>

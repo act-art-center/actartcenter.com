@@ -26,13 +26,13 @@ export const CONTACT = {
 } as const;
 
 export const NAV_ITEMS = [
-  { label: "프로그램", href: "/services" },
-  { label: "ACT 미술치료란?", href: "/act-approach" },
+  { label: "미술심리치료 프로그램", href: "/services" },
   { label: "ACTIE(액티) & ARTTY(아티)", href: "/characters" },
   { label: "미술치료사 소개", href: "/team" },
   { label: "비용", href: "/pricing" },
   { label: "블로그", href: "/blog" },
   { label: "FAQ", href: "/faq" },
+  { label: "ACT 미술치료란?", href: "/act-approach" },
   { label: "오시는 길", href: "/contact" },
 ] as const;
 
