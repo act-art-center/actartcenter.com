@@ -301,7 +301,9 @@ export default function EmotionalPage() {
               </h1>
               <p className="mt-6 text-charcoal/80 leading-[var(--leading-normal)]">
                 상실·번아웃·만성 불안·관계 트라우마·정체성 전환처럼 언어로 먼저
-                꺼내기 어려운 경험을 다루는 장기 트랙입니다. Bessel van der Kolk
+                꺼내기 어려운 경험을 다루는 장기 트랙입니다. 미술치료의 인간중심 접근을
+                중심에 두고, 한 사람을 바라보는 다양한 심리학적 이해를 함께 살피며
+                진행합니다. Bessel van der Kolk
                 의 『The Body Keeps the Score』(2014)가 정리한 신체 기반 트라우마
                 이해, Dan Siegel 의 <strong>window of tolerance</strong> 개념,
                 Steven C. Hayes 등이 정립한 ACT 심리적 유연성 모델, Kristin Neff
