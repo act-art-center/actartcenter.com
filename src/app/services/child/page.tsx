@@ -191,7 +191,7 @@ const parentFaq = [
 
 const confidentiality = [
   {
-    title: "아동의 작업은 아동의 것",
+    title: "참여자의 작품은 참여자의 것",
     description:
       "세션에서 만든 작품은 참여자의 소유로 존중됩니다. 부모와 공유하는 내용은 '전체 흐름과 주제 수준'이며, 구체적인 내용을 아동의 동의 없이 전하지 않습니다.",
   },
@@ -257,8 +257,8 @@ export default function ChildPage() {
                 아동·청소년 미술치료 — 발달 단계별 미술 접근
               </h1>
               <p className="mt-6 text-charcoal/80 leading-[var(--leading-normal)]">
-                아동은 어른과 같은 방식으로 감정을 말로 정리하기 어렵습니다.
-                본 센터는 발달 단계에 맞춘 미술 매체와 표현 과정을 중심으로, 아동의 발달
+                아동·청소년은 어른과 같은 방식으로 감정을 말로 정리하기 어렵습니다.
+                본 센터는 발달 단계에 맞춘 미술 매체와 표현 과정을 중심으로, 아동·청소년의 발달
                 단계와 기질에 맞는 '표현의 통로'를 함께 설계합니다. 매 세션
                 후에는 10분 부모 상담을 통해 가정에서의 지원 방식까지 함께
                 조율합니다.
@@ -268,7 +268,7 @@ export default function ChildPage() {
                 생활 맥락, 첫 회기 관찰을 함께 살펴 세션 목표와 매체를 정합니다.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
-                <span className="px-3 py-1.5 bg-cream rounded-lg text-sm text-charcoal/70">아동 40분 + 부모 10분</span>
+                <span className="px-3 py-1.5 bg-cream rounded-lg text-sm text-charcoal/70">아동·청소년 40분 + 부모 10분</span>
                 <span className="px-3 py-1.5 bg-cream rounded-lg text-sm text-charcoal/70">만 5~18세</span>
                 <span className="px-3 py-1.5 bg-cream rounded-lg text-sm text-charcoal/70">부모 상담 병행</span>
                 <span className="px-3 py-1.5 bg-cream rounded-lg text-sm text-charcoal/70">사전 예약제</span>
@@ -283,7 +283,7 @@ export default function ChildPage() {
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
               <Image
                 src="https://images.unsplash.com/photo-1596464716127-f2a82984de30?w=800&q=80"
-                alt="아동 미술치료 작업대 위의 크레용과 종이"
+                alt="아동·청소년 미술치료 작업대 위의 크레용과 종이"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -440,7 +440,7 @@ export default function ChildPage() {
               비밀유지와 공유의 범위
             </h2>
             <p className="mt-4 text-charcoal/70 text-sm leading-relaxed">
-              아동의 자발적 표현이 유지되려면, 아동 스스로 '여기선 안전하다'고
+              아동의 자발적 표현이 유지되려면, 아동 스스로 '여기서는 안전하다'고
               느껴야 합니다. 본 센터는 다음 세 가지 원칙을 첫 회기에 아동·부모와
               모두 명시적으로 공유합니다.
             </p>
