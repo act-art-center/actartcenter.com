@@ -14,10 +14,10 @@ export function BlogPreview() {
           <h2 className="text-2xl lg:text-3xl font-bold tracking-tight">미술치료 이야기 Blog</h2>
           <Link
             href="/blog"
-            aria-label="미술치료·ACT 칼럼 전체 보기"
+            aria-label="미술치료 이야기 Blog 전체 보기"
             className="hidden sm:inline-flex items-center gap-1 text-secondary-500 text-sm font-medium hover:gap-2 transition-all"
           >
-            미술치료·ACT 칼럼 전체 보기
+            미술치료 이야기 Blog 전체 보기
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
             </svg>
