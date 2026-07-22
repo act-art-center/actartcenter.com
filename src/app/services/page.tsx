@@ -107,7 +107,7 @@ export default function ServicesPage() {
             </h2>
             <div className="mt-6 space-y-5 text-charcoal/85 leading-relaxed">
               <p>
-                ACT ART CENTER는 미술치료 안에서 심리적 유연성을 기르는 과정을 중요하게 봅니다.
+                ACT ART CENTER는 미술치료 안에서 심리적 유연성을 기르는 과정을 중요하게 생각합니다.
                 Steven C. Hayes (Univ. of Nevada) 와 공동 연구진이 정립한 수용전념치료(ACT)는
                 불편한 감정과 생각을 알아차리고 품은 채, 내가 원하는 방향으로 걸어갈 수 있는 힘 —
                 즉 심리적 유연성(Psychological Flexibility) — 을 기릅니다.
