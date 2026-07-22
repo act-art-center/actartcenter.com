@@ -580,7 +580,7 @@ export default function ActApproachPage() {
                 자기 인식 지점
               </span>
               <h2 className="text-2xl lg:text-3xl font-bold tracking-tight">
-                당신이 지금 이런 상태라면
+                만약 나의 이야기라면
               </h2>
               <p className="mt-5 text-charcoal/75 leading-[var(--leading-normal)]">
                 아래 질문 중 하나라도 &ldquo;내 이야기 같다&rdquo; 라는 느낌이 드신다면, 미술치료 안에서 이 경험을
