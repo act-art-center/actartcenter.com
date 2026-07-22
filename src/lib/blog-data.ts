@@ -168,7 +168,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt: "수용, 탈융합, 현재 순간 접촉, 맥락으로서의 자기, 가치, 전념 행동. Hayes의 헥사플렉스를 미술치료 장면과 연결하며 하나씩 풀어 봅니다.",
     category: "미술치료",
     seoKeywords: ["수용전념치료", "수용전념치료 기법", "수용전념치료 육각형", "ACT 미술치료"],
-    image: "/characters/actie/actie-variations-overview.jpg",
+    image: "/characters/actie/actie-stairs-goal.jpg",
     date: "2026년 4월 5일",
     author: "고은별",
     readTime: "10분",
