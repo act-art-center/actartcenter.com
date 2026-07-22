@@ -188,6 +188,23 @@ export default function CharactersPage() {
 
       <SectionWrapper bg="paper" className="pt-10 lg:pt-12">
         <Container>
+          <div
+            className="max-w-4xl mx-auto mb-6 rounded-2xl bg-primary-50 p-6 lg:p-8"
+            style={{ border: "1px solid rgba(60, 121, 104, 0.16)" }}
+          >
+            <p className="text-xs font-semibold tracking-widest uppercase text-primary-500 mb-3">
+              Intellectual Property
+            </p>
+            <h2 className="text-night text-xl lg:text-2xl font-bold tracking-tight">
+              저작권 및 지식재산권 안내
+            </h2>
+            <p className="mt-4 text-charcoal/80 text-sm lg:text-base leading-relaxed">
+              ACTIE(액티)와 ARTTY(아티)의 캐릭터 디자인 및 콘셉트에 관한 모든 지식재산권은
+              ACT ART CENTER에 있습니다. 캐릭터 디자인과 콘셉트의 무단 전재, 복제, 도용,
+              변형 및 상업적 이용을 금지합니다.
+            </p>
+          </div>
+
           <div className="max-w-4xl mx-auto rounded-2xl bg-white p-6 lg:p-8" style={{ border: "1px solid rgba(196, 191, 183, 0.18)" }}>
             <p className="text-xs font-semibold tracking-widest uppercase text-primary-500 mb-3">
               References
