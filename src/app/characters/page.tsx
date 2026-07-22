@@ -123,7 +123,7 @@ export default function CharactersPage() {
             <div className="mt-5 space-y-4 text-charcoal/75 leading-relaxed">
               <p>
                 ACTIE와 ARTTY는 미술치료의 여정을 조금 더 편안하게 만나도록 돕는 두 캐릭터입니다.
-                한 사람의 마음 안에는 조용히 느끼는 마음, 움직이고 선택하려는 마음처럼 서로 다른 결이 함께 있습니다.
+                한 사람의 마음 안에는 조용히 느끼는 마음과 움직이고 선택하려는 마음이 서로 이어져 있습니다.
               </p>
               <p>
                 융(C. G. Jung)은 분석심리학에서 아니마(anima)와 아니무스(animus)를 마음의 깊은 층에서 작용하는 중요한 상징 개념으로 설명했습니다.
