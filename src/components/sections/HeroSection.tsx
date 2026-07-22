@@ -69,6 +69,14 @@ export function HeroSection() {
             >
               미술치료 이야기
             </Link>
+            <span aria-hidden="true" className="text-white/45">·</span>
+            <Link
+              href="/news"
+              aria-label="센터소식 게시판으로 이동"
+              className="font-bold text-white underline-offset-4 transition-colors hover:text-white/80 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-night"
+            >
+              센터소식
+            </Link>
           </div>
         </div>
       </Container>
