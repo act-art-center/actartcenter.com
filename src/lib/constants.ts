@@ -111,7 +111,7 @@ export const SERVICES_ALL = [
     id: "child",
     title: "아동·청소년 미술치료",
     titleEn: "Child & Adolescent Art Therapy",
-    description: "만 5세부터 청소년까지, 장애·비장애 구분 없이 모두 참여할 수 있습니다. 발달 단계에 맞춰 미술 매체와 표현 과정으로 접근하는 맞춤 미술치료. 부모 상담 10분 포함.",
+    description: "발달 단계에 맞춘 미술 매체와 표현 과정을 통해 아이와 청소년이 자기감정을 안전하게 표현하도록 돕습니다. 장애·비장애 청소년을 포괄합니다. 부모 상담 10분이 포함되어 가정에서의 반응 전략도 함께 설계합니다.",
     href: "/services/child",
     anchor: "아동·청소년 미술치료 안내",
     image: "/characters/artty/artty-clay-bear.jpg",
