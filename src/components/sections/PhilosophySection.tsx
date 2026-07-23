@@ -8,14 +8,19 @@ export function PhilosophySection() {
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Image */}
-          <div className="relative aspect-[4/3] rounded-2xl overflow-hidden order-2 lg:order-1">
-            <Image
-              src="/characters/artty-paint.png"
-              alt="캔버스와 이젤이 있는 미술 작업 장면"
-              fill
-              className="object-contain bg-cream p-4 lg:p-6"
-              sizes="(max-width: 1024px) 100vw, 50vw"
-            />
+          <div className="rounded-2xl overflow-hidden bg-white order-2 lg:order-1">
+            <div className="relative aspect-[4/3]">
+              <Image
+                src="/characters/artty-paint.png"
+                alt="큰 붓을 들고 있는 ARTTY"
+                fill
+                className="object-contain bg-cream p-4 lg:p-6"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+            </div>
+            <p className="bg-white py-2 text-center text-[11px] leading-relaxed text-charcoal/45">
+              © ACT ART CENTER, all rights reserved
+            </p>
           </div>
 
           {/* Text */}

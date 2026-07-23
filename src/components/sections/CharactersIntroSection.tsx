@@ -48,6 +48,9 @@ export function CharactersIntroSection() {
                 className="h-auto w-full rounded-2xl object-contain bg-cream p-4 lg:p-6"
                 sizes="(max-width: 1024px) 100vw, 45vw"
               />
+              <p className="bg-white py-2 text-center text-[11px] leading-relaxed text-charcoal/45">
+                © ACT ART CENTER, all rights reserved
+              </p>
             </div>
           </div>
         </div>
