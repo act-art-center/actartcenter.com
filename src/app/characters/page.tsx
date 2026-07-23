@@ -144,7 +144,7 @@ export default function CharactersPage() {
                     <Image src={character.image} alt={character.alt} fill className="object-contain" sizes="280px" />
                   </div>
                   <p className="bg-white py-2 text-center text-[11px] leading-relaxed text-charcoal/45">
-                    (c)ACT ART CENTER all rights reserved
+                    (c)ACT ART CENTER, all rights reserved
                   </p>
                 </div>
                 <h3 className="mt-6 text-night text-xl font-bold">{character.name}</h3>
