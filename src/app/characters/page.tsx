@@ -165,12 +165,14 @@ export default function CharactersPage() {
             <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-5">
               {moments.slice(0, 6).map((moment) => (
                 <article key={moment.title} className="bg-white rounded-2xl p-5">
-                  <div className="relative aspect-square rounded-xl bg-white overflow-hidden">
-                    <Image src={moment.image} alt={moment.title} fill className="object-contain" sizes="(max-width: 768px) 100vw, 260px" />
+                  <div className="rounded-xl bg-white overflow-hidden">
+                    <div className="relative aspect-square">
+                      <Image src={moment.image} alt={moment.title} fill className="object-contain" sizes="(max-width: 768px) 100vw, 260px" />
+                    </div>
+                    <p className="bg-white py-2 text-center text-[11px] leading-relaxed text-charcoal/45">
+                      © ACT ART CENTER, all rights reserved
+                    </p>
                   </div>
-                  <p className="mt-2 text-center text-[11px] leading-relaxed text-charcoal/45">
-                    © ACT ART CENTER, all rights reserved
-                  </p>
                   <h3 className="mt-5 text-night font-semibold">{moment.title}</h3>
                   <p className="mt-2 text-charcoal/70 text-sm leading-relaxed">{moment.body}</p>
                 </article>
@@ -182,12 +184,14 @@ export default function CharactersPage() {
             <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-5">
               {moments.slice(6).map((moment) => (
                 <article key={moment.title} className="bg-white rounded-2xl p-5">
-                  <div className="relative aspect-square rounded-xl bg-white overflow-hidden">
-                    <Image src={moment.image} alt={moment.title} fill className="object-contain" sizes="(max-width: 768px) 100vw, 260px" />
+                  <div className="rounded-xl bg-white overflow-hidden">
+                    <div className="relative aspect-square">
+                      <Image src={moment.image} alt={moment.title} fill className="object-contain" sizes="(max-width: 768px) 100vw, 260px" />
+                    </div>
+                    <p className="bg-white py-2 text-center text-[11px] leading-relaxed text-charcoal/45">
+                      © ACT ART CENTER, all rights reserved
+                    </p>
                   </div>
-                  <p className="mt-2 text-center text-[11px] leading-relaxed text-charcoal/45">
-                    © ACT ART CENTER, all rights reserved
-                  </p>
                   <h3 className="mt-5 text-night font-semibold">{moment.title}</h3>
                   <p className="mt-2 text-charcoal/70 text-sm leading-relaxed">{moment.body}</p>
                 </article>

@@ -40,17 +40,19 @@ export function CharactersIntroSection() {
 
           <div className="relative">
             <div className="relative overflow-hidden rounded-3xl bg-cream p-3 shadow-[var(--shadow-sm)]">
-              <Image
-                src="/characters/twins-together.png"
-                alt="ACT ART CENTER를 상징하는 액티와 아티 일러스트"
-                width={900}
-                height={450}
-                className="h-auto w-full rounded-2xl object-contain bg-cream p-4 lg:p-6"
-                sizes="(max-width: 1024px) 100vw, 45vw"
-              />
-              <p className="bg-white py-2 text-center text-[11px] leading-relaxed text-charcoal/45">
-                © ACT ART CENTER, all rights reserved
-              </p>
+              <div className="overflow-hidden rounded-2xl bg-white">
+                <Image
+                  src="/characters/twins-together.png"
+                  alt="ACT ART CENTER를 상징하는 액티와 아티 일러스트"
+                  width={900}
+                  height={450}
+                  className="h-auto w-full object-contain bg-white p-4 lg:p-6"
+                  sizes="(max-width: 1024px) 100vw, 45vw"
+                />
+                <p className="bg-white py-2 text-center text-[11px] leading-relaxed text-charcoal/45">
+                  © ACT ART CENTER, all rights reserved
+                </p>
+              </div>
             </div>
           </div>
         </div>

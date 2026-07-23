@@ -14,7 +14,7 @@ export function PhilosophySection() {
                 src="/characters/artty-paint.png"
                 alt="큰 붓을 들고 있는 ARTTY"
                 fill
-                className="object-contain bg-cream p-4 lg:p-6"
+                className="object-contain bg-white p-4 lg:p-6"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
