@@ -166,6 +166,9 @@ export default function CharactersPage() {
                   <div className="relative aspect-square rounded-xl bg-white overflow-hidden">
                     <Image src={moment.image} alt={moment.title} fill className="object-contain" sizes="(max-width: 768px) 100vw, 260px" />
                   </div>
+                  <p className="mt-2 text-center text-[11px] leading-relaxed text-charcoal/45">
+                    © ACT ART CENTER, all rights reserved
+                  </p>
                   <h3 className="mt-5 text-night font-semibold">{moment.title}</h3>
                   <p className="mt-2 text-charcoal/70 text-sm leading-relaxed">{moment.body}</p>
                 </article>
@@ -180,6 +183,9 @@ export default function CharactersPage() {
                   <div className="relative aspect-square rounded-xl bg-white overflow-hidden">
                     <Image src={moment.image} alt={moment.title} fill className="object-contain" sizes="(max-width: 768px) 100vw, 260px" />
                   </div>
+                  <p className="mt-2 text-center text-[11px] leading-relaxed text-charcoal/45">
+                    © ACT ART CENTER, all rights reserved
+                  </p>
                   <h3 className="mt-5 text-night font-semibold">{moment.title}</h3>
                   <p className="mt-2 text-charcoal/70 text-sm leading-relaxed">{moment.body}</p>
                 </article>
