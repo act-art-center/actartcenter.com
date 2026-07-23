@@ -146,14 +146,19 @@ export default function ServicesPage() {
                 key={service.id}
                 className={`grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center ${i % 2 === 1 ? "lg:direction-rtl" : ""}`}
               >
-                <div className={`relative aspect-[16/10] rounded-2xl overflow-hidden ${i % 2 === 1 ? "lg:order-2" : ""}`}>
-                  <Image
-                    src={service.image}
-                    alt={service.imageAlt}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 1024px) 100vw, 50vw"
-                  />
+                <div className={i % 2 === 1 ? "lg:order-2" : ""}>
+                  <div className="relative aspect-[16/10] rounded-2xl overflow-hidden">
+                    <Image
+                      src={service.image}
+                      alt={service.imageAlt}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 1024px) 100vw, 50vw"
+                    />
+                  </div>
+                  <p className="mt-2 text-center text-[11px] leading-relaxed text-charcoal/45">
+                    (c) act art center
+                  </p>
                 </div>
                 <div className={i % 2 === 1 ? "lg:order-1" : ""}>
                   <p className="text-primary-500 text-xs font-medium tracking-wide uppercase mb-2">{service.titleEn}</p>

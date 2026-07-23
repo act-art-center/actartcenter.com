@@ -169,6 +169,9 @@ function ServiceCard({
         />
         <div className="absolute inset-0 bg-gradient-to-t from-night/20 to-transparent" />
       </div>
+      <p className="px-5 pt-2 text-center text-[11px] leading-relaxed text-charcoal/45">
+        (c) act art center
+      </p>
 
       <div className="flex flex-1 flex-col p-5 lg:p-6">
         <p className="text-primary-500 text-xs font-medium tracking-wide uppercase mb-2">

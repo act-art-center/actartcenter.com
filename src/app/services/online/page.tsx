@@ -271,15 +271,18 @@ export default function OnlinePage() {
                 온라인 상담 예약하기
               </Link>
             </div>
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-white">
-              <Image
-                src="/images/online-art-therapy.jpg"
-                alt="미술치료사가 노트북으로 온라인 미술치료를 진행하는 안내 장면"
-                fill
-                className="object-contain"
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                priority
-              />
+            <div>
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-white">
+                <Image
+                  src="/images/online-art-therapy.jpg"
+                  alt="미술치료사가 노트북으로 온라인 미술치료를 진행하는 안내 장면"
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  priority
+                />
+              </div>
+              <p className="mt-2 text-center text-[11px] leading-relaxed text-charcoal/45">(c) act art center</p>
             </div>
           </div>
         </Container>

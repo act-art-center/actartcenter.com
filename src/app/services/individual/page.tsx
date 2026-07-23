@@ -275,15 +275,18 @@ export default function IndividualPage() {
                 첫 무료 상담 예약하기
               </Link>
             </div>
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
-              <Image
-                src="/images/individual-art-therapy-together.jpg"
-                alt="미술치료사와 참여자가 나란히 앉아 각자의 그림을 그리는 미술치료 장면"
-                fill
-                className="object-cover"
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                priority
-              />
+            <div>
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
+                <Image
+                  src="/images/individual-art-therapy-together.jpg"
+                  alt="미술치료사와 참여자가 나란히 앉아 각자의 그림을 그리는 미술치료 장면"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  priority
+                />
+              </div>
+              <p className="mt-2 text-center text-[11px] leading-relaxed text-charcoal/45">(c) act art center</p>
             </div>
           </div>
         </Container>

@@ -86,8 +86,11 @@ export default function OpenStudioPage() {
               <p className="mt-5 text-sm text-charcoal/60">비용은 <Link href="/pricing" className="text-primary-500 underline underline-offset-2">세션 비용 안내</Link>에서 확인하실 수 있습니다.</p>
               <Link href="/booking" className="mt-8 inline-flex items-center px-7 py-3.5 bg-primary-500 text-white font-semibold rounded-lg hover:bg-primary-600 transition-colors">참여 문의하기</Link>
             </div>
-            <div className="relative aspect-[16/10] rounded-2xl overflow-hidden bg-white">
-              <Image src="/images/open-studio-one-day-class.jpg" alt="이젤 앞에서 그림을 그리는 오픈스튜디오 원데이 클래스 일러스트" fill className="object-contain" sizes="(max-width: 1024px) 100vw, 50vw" priority />
+            <div>
+              <div className="relative aspect-[16/10] rounded-2xl overflow-hidden bg-white">
+                <Image src="/images/open-studio-one-day-class.jpg" alt="이젤 앞에서 그림을 그리는 오픈스튜디오 원데이 클래스 일러스트" fill className="object-contain" sizes="(max-width: 1024px) 100vw, 50vw" priority />
+              </div>
+              <p className="mt-2 text-center text-[11px] leading-relaxed text-charcoal/45">(c) act art center</p>
             </div>
           </div>
         </Container>

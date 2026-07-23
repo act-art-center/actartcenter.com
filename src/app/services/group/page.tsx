@@ -46,6 +46,25 @@ export const metadata: Metadata = {
   },
 };
 
+const concerns = [
+  {
+    q: "내성적이고 말주변이 없어요. 그래도 참여할 수 있나요?",
+    a: "네, 오히려 권해 드립니다. 그룹 미술치료는 '말을 많이 해야 하는 자리'가 아닙니다. 먼저 이미지를 만들고, 원하는 만큼만 말로 옮기면 됩니다. 침묵도 존중되는 구조입니다.",
+  },
+  {
+    q: "다른 사람 이야기에 압도될까 걱정돼요.",
+    a: "치료사가 회기마다 정서적 밀도를 조율합니다. 참여자 간 자극량이 과해진다고 판단되면 속도를 늦추거나 개인 작업으로 전환합니다. 또한 비밀유지 규칙을 첫 회기에 함께 합의합니다.",
+  },
+  {
+    q: "미술을 정말 못해요.",
+    a: "그룹에서도 완성도 평가는 없습니다. 중요한 것은 '그 순간 내가 고른 색·선·재료'이며, 이는 기술과 무관합니다. 치료사가 매체 선택을 안내해 드립니다.",
+  },
+  {
+    q: "아는 사람을 만날까 봐 걱정돼요.",
+    a: "등록 시 기본 정보를 확인해 동일 직장·지인 관계가 겹치지 않도록 구성에 반영합니다. 우려되는 상황이 있다면 예약 문의 시 미리 알려 주시면 가장 안전합니다.",
+  },
+];
+
 const groupServiceSchema = {
   "@context": "https://schema.org",
   "@graph": [
@@ -95,6 +114,18 @@ const groupServiceSchema = {
         price: "250000",
         priceCurrency: "KRW",
       },
+    },
+    {
+      "@type": "FAQPage",
+      "@id": `${SITE_URL}/services/group#faq`,
+      mainEntity: concerns.map((item) => ({
+        "@type": "Question",
+        name: item.q,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: item.a,
+        },
+      })),
     },
   ],
 };
@@ -211,25 +242,6 @@ const programs = [
   },
 ];
 
-const concerns = [
-  {
-    q: "내성적이고 말주변이 없어요. 그래도 참여할 수 있나요?",
-    a: "네, 오히려 권해 드립니다. 그룹 미술치료는 '말을 많이 해야 하는 자리'가 아닙니다. 먼저 이미지를 만들고, 원하는 만큼만 말로 옮기면 됩니다. 침묵도 존중되는 구조입니다.",
-  },
-  {
-    q: "다른 사람 이야기에 압도될까 걱정돼요.",
-    a: "치료사가 회기마다 정서적 밀도를 조율합니다. 참여자 간 자극량이 과해진다고 판단되면 속도를 늦추거나 개인 작업으로 전환합니다. 또한 비밀유지 규칙을 첫 회기에 함께 합의합니다.",
-  },
-  {
-    q: "미술을 정말 못해요.",
-    a: "그룹에서도 완성도 평가는 없습니다. 중요한 것은 '그 순간 내가 고른 색·선·재료'이며, 이는 기술과 무관합니다. 치료사가 매체 선택을 안내해 드립니다.",
-  },
-  {
-    q: "아는 사람을 만날까 봐 걱정돼요.",
-    a: "등록 시 기본 정보를 확인해 동일 직장·지인 관계가 겹치지 않도록 구성에 반영합니다. 우려되는 상황이 있다면 예약 문의 시 미리 알려 주시면 가장 안전합니다.",
-  },
-];
-
 const evidenceNotes = [
   {
     source: "Irvin D. Yalom, 『The Theory and Practice of Group Psychotherapy』",
@@ -334,15 +346,18 @@ export default function GroupPage() {
                 참여 문의하기
               </Link>
             </div>
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-white">
-              <Image
-                src="/characters/twins-together.png"
-                alt="ACTIE와 ARTTY가 손을 잡고 함께 서 있는 그룹 미술치료 안내 장면"
-                fill
-                className="object-contain"
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                priority
-              />
+            <div>
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-white">
+                <Image
+                  src="/characters/twins-together.png"
+                  alt="ACTIE와 ARTTY가 손을 잡고 함께 서 있는 그룹 미술치료 안내 장면"
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  priority
+                />
+              </div>
+              <p className="mt-2 text-center text-[11px] leading-relaxed text-charcoal/45">(c) act art center</p>
             </div>
           </div>
         </Container>
