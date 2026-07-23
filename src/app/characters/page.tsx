@@ -170,7 +170,7 @@ export default function CharactersPage() {
                       <Image src={moment.image} alt={moment.title} fill className="object-contain" sizes="(max-width: 768px) 100vw, 260px" />
                     </div>
                     <p className="bg-white py-2 text-center text-[11px] leading-relaxed text-charcoal/45">
-                      © ACT ART CENTER, all rights reserved
+                      (c) ACT ART CENTER
                     </p>
                   </div>
                   <h3 className="mt-5 text-night font-semibold">{moment.title}</h3>
@@ -189,7 +189,7 @@ export default function CharactersPage() {
                       <Image src={moment.image} alt={moment.title} fill className="object-contain" sizes="(max-width: 768px) 100vw, 260px" />
                     </div>
                     <p className="bg-white py-2 text-center text-[11px] leading-relaxed text-charcoal/45">
-                      © ACT ART CENTER, all rights reserved
+                      (c) ACT ART CENTER
                     </p>
                   </div>
                   <h3 className="mt-5 text-night font-semibold">{moment.title}</h3>
