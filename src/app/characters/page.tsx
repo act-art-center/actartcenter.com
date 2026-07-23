@@ -142,6 +142,9 @@ export default function CharactersPage() {
                 <div className="relative mx-auto aspect-square max-w-[280px] overflow-hidden rounded-2xl bg-white">
                   <Image src={character.image} alt={character.alt} fill className="object-contain" sizes="280px" />
                 </div>
+                <p className="mt-2 text-center text-[11px] leading-relaxed text-charcoal/45">
+                  © ACT ART CENTER, all rights reserved
+                </p>
                 <h3 className="mt-6 text-night text-xl font-bold">{character.name}</h3>
                 <p className="mt-2 text-primary-600 font-semibold text-sm">{character.title}</p>
                 <p className="mt-4 text-charcoal/75 leading-relaxed text-sm">{character.body}</p>
