@@ -155,10 +155,10 @@ export default function ServicesPage() {
                       className="object-cover"
                       sizes="(max-width: 1024px) 100vw, 50vw"
                     />
+                    <p className="absolute inset-x-0 bottom-0 z-10 bg-white/95 py-2 text-center text-[11px] leading-relaxed text-charcoal/45">
+                      © act art center
+                    </p>
                   </div>
-                  <p className="mt-2 text-center text-[11px] leading-relaxed text-charcoal/45">
-                    (c) act art center
-                  </p>
                 </div>
                 <div className={i % 2 === 1 ? "lg:order-1" : ""}>
                   <p className="text-primary-500 text-xs font-medium tracking-wide uppercase mb-2">{service.titleEn}</p>

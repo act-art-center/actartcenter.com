@@ -285,8 +285,8 @@ export default function IndividualPage() {
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   priority
                 />
+                <p className="absolute inset-x-0 bottom-0 z-10 bg-white/95 py-2 text-center text-[11px] leading-relaxed text-charcoal/45">© act art center</p>
               </div>
-              <p className="mt-2 text-center text-[11px] leading-relaxed text-charcoal/45">(c) act art center</p>
             </div>
           </div>
         </Container>

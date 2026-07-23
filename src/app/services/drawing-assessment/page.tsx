@@ -92,8 +92,10 @@ export default function DrawingAssessmentPage() {
               <Link href="/booking" className="mt-8 inline-flex items-center px-7 py-3.5 bg-primary-500 text-white font-semibold rounded-lg hover:bg-primary-600 transition-colors">검사·상담 문의하기</Link>
             </div>
             <div>
-              <div className="relative aspect-[16/10] rounded-2xl overflow-hidden bg-white"><Image src="/images/drawing-assessment-consultation.jpg" alt="미술치료사와 한 사람이 그림을 함께 살펴보며 상담하는 장면" fill className="object-contain" sizes="(max-width: 1024px) 100vw, 50vw" priority /></div>
-              <p className="mt-2 text-center text-[11px] leading-relaxed text-charcoal/45">(c) act art center</p>
+              <div className="relative aspect-[16/10] rounded-2xl overflow-hidden bg-white">
+                <Image src="/images/drawing-assessment-consultation.jpg" alt="미술치료사와 한 사람이 그림을 함께 살펴보며 상담하는 장면" fill className="object-contain" sizes="(max-width: 1024px) 100vw, 50vw" priority />
+                <p className="absolute inset-x-0 bottom-0 z-10 bg-white/95 py-2 text-center text-[11px] leading-relaxed text-charcoal/45">© act art center</p>
+              </div>
             </div>
           </div>
         </Container>
