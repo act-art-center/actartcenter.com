@@ -67,7 +67,7 @@ export function ServicesSection() {
         <div className="mt-12 lg:mt-16">
           <div className="flex flex-col items-end gap-2 mb-5 lg:flex-row lg:items-baseline lg:justify-between">
             <h3 className="w-full text-night text-lg font-semibold leading-snug tracking-tight">
-              오픈스튜디오 원데이 클래스 / 그림검사 및 TCI 기질검사
+              오픈스튜디오 원데이 클래스 / 그림검사 / TCI 기질·성격검사
             </h3>
             <Link
               href="/pricing"
