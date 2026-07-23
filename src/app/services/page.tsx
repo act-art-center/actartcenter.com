@@ -158,7 +158,7 @@ export default function ServicesPage() {
                       />
                     </div>
                     <p className="bg-white py-2 text-center text-[11px] leading-relaxed text-charcoal/45">
-                      © act art center
+                      (c)ACT ART CENTER
                     </p>
                   </div>
                 </div>

@@ -171,7 +171,7 @@ function ServiceCard({
           <div className="absolute inset-0 bg-gradient-to-t from-night/20 to-transparent" />
         </div>
         <p className="bg-white py-2 text-center text-[11px] leading-relaxed text-charcoal/45">
-          © act art center
+          (c)ACT ART CENTER
         </p>
       </div>
 

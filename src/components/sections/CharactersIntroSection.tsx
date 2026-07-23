@@ -50,7 +50,7 @@ export function CharactersIntroSection() {
                   sizes="(max-width: 1024px) 100vw, 45vw"
                 />
                 <p className="bg-white py-2 text-center text-[11px] leading-relaxed text-charcoal/45">
-                  © ACT ART CENTER, all rights reserved
+                  (c)ACT ART CENTER
                 </p>
               </div>
             </div>

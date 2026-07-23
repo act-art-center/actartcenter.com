@@ -96,7 +96,7 @@ export default function DrawingAssessmentPage() {
                 <div className="relative aspect-[16/10]">
                   <Image src="/images/drawing-assessment-consultation.jpg" alt="미술치료사와 한 사람이 그림을 함께 살펴보며 상담하는 장면" fill className="object-contain" sizes="(max-width: 1024px) 100vw, 50vw" priority />
                 </div>
-                <p className="bg-white py-2 text-center text-[11px] leading-relaxed text-charcoal/45">© act art center</p>
+                <p className="bg-white py-2 text-center text-[11px] leading-relaxed text-charcoal/45">(c)ACT ART CENTER</p>
               </div>
             </div>
           </div>

@@ -91,7 +91,7 @@ export default function OpenStudioPage() {
                 <div className="relative aspect-[16/10]">
                   <Image src="/images/open-studio-one-day-class.jpg" alt="이젤 앞에서 그림을 그리는 오픈스튜디오 원데이 클래스 일러스트" fill className="object-contain" sizes="(max-width: 1024px) 100vw, 50vw" priority />
                 </div>
-                <p className="bg-white py-2 text-center text-[11px] leading-relaxed text-charcoal/45">© act art center</p>
+                <p className="bg-white py-2 text-center text-[11px] leading-relaxed text-charcoal/45">(c)ACT ART CENTER</p>
               </div>
             </div>
           </div>
