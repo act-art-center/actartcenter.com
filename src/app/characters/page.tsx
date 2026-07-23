@@ -91,7 +91,7 @@ export default function CharactersPage() {
   return (
     <>
       <PageHero
-        title="ACTIE와 ARTTY"
+        title="ACTIE 와 ARTTY"
         subtitle="ACT ART CENTER의 미술치료 여정에 함께하는 두 안내자입니다. 감정과 가치를 살피는 ACTIE, 색과 이미지로 표현을 돕는 ARTTY를 소개합니다."
         label="ACT ART CENTER Characters"
         imageSrc="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=1920&q=80"
