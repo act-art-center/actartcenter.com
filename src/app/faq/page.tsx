@@ -101,7 +101,7 @@ export default function FaqPage() {
         <Container className="relative z-10 pb-12 lg:pb-16 pt-32">
           <p className="text-white/60 text-xs font-medium tracking-widest uppercase mb-3">FAQ</p>
           <h1 className="text-white text-3xl lg:text-5xl font-extrabold tracking-tight leading-[1.1]">
-            ACT 미술치료 자주 묻는 질문
+            궁금한 점을 확인해 보세요
           </h1>
           <p className="mt-4 text-white/80 max-w-xl text-lg leading-relaxed">
             처음 오시는 분부터 세션 중간에 궁금하실 수 있는 질문까지, 여섯 주제로 정리했습니다.
