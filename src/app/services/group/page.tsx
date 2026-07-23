@@ -347,16 +347,18 @@ export default function GroupPage() {
               </Link>
             </div>
             <div>
-              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-white">
-                <Image
-                  src="/characters/twins-together.png"
-                  alt="ACTIE와 ARTTY가 손을 잡고 함께 서 있는 그룹 미술치료 안내 장면"
-                  fill
-                  className="object-contain"
-                  sizes="(max-width: 1024px) 100vw, 50vw"
-                  priority
-                />
-                <p className="absolute inset-x-0 bottom-0 z-10 bg-white/95 py-2 text-center text-[11px] leading-relaxed text-charcoal/45">© act art center</p>
+              <div className="rounded-2xl overflow-hidden bg-white">
+                <div className="relative aspect-[4/3]">
+                  <Image
+                    src="/characters/twins-together.png"
+                    alt="ACTIE와 ARTTY가 손을 잡고 함께 서 있는 그룹 미술치료 안내 장면"
+                    fill
+                    className="object-contain"
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    priority
+                  />
+                </div>
+                <p className="bg-white py-2 text-center text-[11px] leading-relaxed text-charcoal/45">© act art center</p>
               </div>
             </div>
           </div>

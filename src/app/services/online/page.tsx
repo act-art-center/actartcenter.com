@@ -272,16 +272,18 @@ export default function OnlinePage() {
               </Link>
             </div>
             <div>
-              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-white">
-                <Image
-                  src="/images/online-art-therapy.jpg"
-                  alt="미술치료사가 노트북으로 온라인 미술치료를 진행하는 안내 장면"
-                  fill
-                  className="object-contain"
-                  sizes="(max-width: 1024px) 100vw, 50vw"
-                  priority
-                />
-                <p className="absolute inset-x-0 bottom-0 z-10 bg-white/95 py-2 text-center text-[11px] leading-relaxed text-charcoal/45">© act art center</p>
+              <div className="rounded-2xl overflow-hidden bg-white">
+                <div className="relative aspect-[4/3]">
+                  <Image
+                    src="/images/online-art-therapy.jpg"
+                    alt="미술치료사가 노트북으로 온라인 미술치료를 진행하는 안내 장면"
+                    fill
+                    className="object-contain"
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    priority
+                  />
+                </div>
+                <p className="bg-white py-2 text-center text-[11px] leading-relaxed text-charcoal/45">© act art center</p>
               </div>
             </div>
           </div>

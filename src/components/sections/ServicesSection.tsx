@@ -159,16 +159,18 @@ function ServiceCard({
       className="group flex h-full flex-col bg-white rounded-xl overflow-hidden transition-all duration-200 hover:-translate-y-1 hover:shadow-[var(--shadow-md)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2"
       style={{ border: "1px solid rgba(196, 191, 183, 0.15)" }}
     >
-      <div className="relative aspect-[16/10] overflow-hidden bg-white">
-        <Image
-          src={service.image}
-          alt={service.imageAlt}
-          fill
-          className="object-contain group-hover:scale-[1.02] transition-transform duration-500"
-          sizes="(max-width: 640px) 100vw, 50vw"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-night/20 to-transparent" />
-        <p className="absolute inset-x-0 bottom-0 z-10 bg-white/95 py-2 text-center text-[11px] leading-relaxed text-charcoal/45">
+      <div className="overflow-hidden bg-white">
+        <div className="relative aspect-[16/10] overflow-hidden bg-white">
+          <Image
+            src={service.image}
+            alt={service.imageAlt}
+            fill
+            className="object-contain group-hover:scale-[1.02] transition-transform duration-500"
+            sizes="(max-width: 640px) 100vw, 50vw"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-night/20 to-transparent" />
+        </div>
+        <p className="bg-white py-2 text-center text-[11px] leading-relaxed text-charcoal/45">
           © act art center
         </p>
       </div>

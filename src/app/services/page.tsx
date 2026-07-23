@@ -147,15 +147,17 @@ export default function ServicesPage() {
                 className={`grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center ${i % 2 === 1 ? "lg:direction-rtl" : ""}`}
               >
                 <div className={i % 2 === 1 ? "lg:order-2" : ""}>
-                  <div className="relative aspect-[16/10] rounded-2xl overflow-hidden">
-                    <Image
-                      src={service.image}
-                      alt={service.imageAlt}
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 1024px) 100vw, 50vw"
-                    />
-                    <p className="absolute inset-x-0 bottom-0 z-10 bg-white/95 py-2 text-center text-[11px] leading-relaxed text-charcoal/45">
+                  <div className="rounded-2xl overflow-hidden bg-white">
+                    <div className="relative aspect-[16/10]">
+                      <Image
+                        src={service.image}
+                        alt={service.imageAlt}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 1024px) 100vw, 50vw"
+                      />
+                    </div>
+                    <p className="bg-white py-2 text-center text-[11px] leading-relaxed text-charcoal/45">
                       © act art center
                     </p>
                   </div>
