@@ -20,15 +20,15 @@ export const BLOG_CATEGORIES = [
 
 export const BLOG_POSTS: BlogPost[] = [
   {
-    slug: "art-therapist-mentoring-lifelong-supervision-aata-2026",
-    title: "미술치료사는 어떻게 오래 성장할까요: AATA 멘토링과 평생 슈퍼비전",
-    excerpt: "AATA의 2026 가을 Mentor Match와 생애주기적 슈퍼비전 자료를 바탕으로, 미술치료사가 관계 속에서 전문성을 돌보고 이어가는 방법을 살펴봅니다.",
-    category: "미술치료사 경험",
-    seoKeywords: ["미술치료사 멘토링", "미술치료 슈퍼비전", "AATA Mentor Match", "미술치료사 전문성", "미술치료 계속교육", "미술치료사 성장"],
-    image: "/characters/therapist/therapist-group-art-session.jpg",
+    slug: "art-based-supervision-response-art-reflection",
+    title: "이미지를 통해 다시 바라보는 치료의 장면: 《미술 기반 미술치료 슈퍼비전》을 읽고",
+    excerpt: "Barbara J. Fish의 미술 기반 슈퍼비전을 읽고, 회기 후 꾸준히 이어온 반응작업이 치료 장면과 치료사 자신의 반응을 통찰하는 시선을 어떻게 길러주는지 나눕니다.",
+    category: "미술치료 저서 리뷰",
+    seoKeywords: ["미술치료 슈퍼비전", "반응작업", "반응미술", "미술 기반 슈퍼비전", "Barbara J. Fish", "미술치료사 성찰"],
+    image: "/characters/therapist/therapist-drawing-response-art.jpg",
     date: "2026년 7월 24일",
     author: "고은별",
-    readTime: "8분",
+    readTime: "9분",
   },
   {
     slug: "winnicott-container-art-therapy",
