@@ -14,6 +14,9 @@ export function ActApproach() {
     <SectionWrapper bg="paper" id="act-approach">
       <Container>
         <div className="text-center mb-12 lg:mb-16">
+          <p className="mb-4 text-sm font-semibold text-primary-600">
+            ACT(수용전념) 통합 미술치료
+          </p>
           <h2 className="text-2xl lg:text-3xl font-bold tracking-tight">
             미술치료 안에서 경험하는<br />
             ACT의 6가지 과정
@@ -118,7 +121,7 @@ export function ActApproach() {
             href="/act-approach"
             className="inline-flex items-center gap-2 text-primary-500 font-medium hover:text-primary-600 transition-colors"
           >
-            ACT 미술치료 더 알아보기
+            ACT(수용전념) 통합 미술치료 자세히 보기
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
             </svg>

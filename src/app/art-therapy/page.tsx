@@ -4,6 +4,7 @@ import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { Container } from "@/components/shared/Container";
 import { JsonLd } from "@/components/shared/JsonLd";
 import { SectionWrapper } from "@/components/shared/SectionWrapper";
+import { ActApproach } from "@/components/sections/ActApproach";
 import { SITE_NAME, SITE_URL } from "@/lib/constants";
 
 const PAGE_URL = `${SITE_URL}/art-therapy`;
@@ -25,6 +26,8 @@ export const metadata: Metadata = {
     "성인 미술치료",
     "아동 미술치료",
     "청소년 미술치료",
+    "ACT 미술치료",
+    "수용전념 미술치료",
   ],
   alternates: { canonical: PAGE_URL },
   openGraph: {
@@ -105,6 +108,7 @@ const pageSchema = {
       about: [
         { "@type": "Thing", name: "미술치료", alternateName: "Art Therapy" },
         { "@type": "Thing", name: "미술심리치료" },
+        { "@type": "Thing", name: "ACT 수용전념 미술치료" },
       ],
       citation: [
         "https://arttherapy.org/about-art-therapy/",
@@ -124,29 +128,6 @@ const pageSchema = {
     },
   ],
 };
-
-const programLinks = [
-  {
-    title: "성인 1:1 개인 미술치료",
-    description: "불안·우울·번아웃·트라우마·관계의 어려움을 개인의 속도에 맞춰 살핍니다.",
-    href: "/services/individual",
-  },
-  {
-    title: "아동·청소년 미술치료",
-    description: "발달 단계에 맞춘 미술 매체와 표현 과정으로 감정과 경험을 안전하게 만납니다.",
-    href: "/services/child",
-  },
-  {
-    title: "그룹 미술치료",
-    description: "작은 그룹 안에서 함께 표현하고 나누며 관계와 삶의 가치를 탐색합니다.",
-    href: "/services/group",
-  },
-  {
-    title: "온라인 미술치료",
-    description: "전국과 해외에서 화상으로 연결해 익숙한 공간에서 미술치료에 참여합니다.",
-    href: "/services/online",
-  },
-];
 
 export default function ArtTherapyPage() {
   return (
@@ -241,37 +222,7 @@ export default function ArtTherapyPage() {
         </Container>
       </SectionWrapper>
 
-      <SectionWrapper bg="paper" className="py-14 lg:py-20">
-        <Container>
-          <div className="max-w-3xl">
-            <h2 className="text-night text-2xl lg:text-3xl font-bold tracking-tight">
-              발달 단계와 상황에 맞는 미술치료
-            </h2>
-            <p className="mt-4 text-charcoal/75 leading-relaxed">
-              미술치료는 아동·청소년·성인·부모와 가족, 작은 그룹이 각자의 필요에 맞게 참여할 수 있습니다.
-              ACT ART CENTER는 미술치료를 중심으로 개인·그룹·온라인 프로그램을 운영합니다.
-            </p>
-          </div>
-
-          <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-5">
-            {programLinks.map((program) => (
-              <Link
-                key={program.href}
-                href={program.href}
-                className="group rounded-2xl bg-white p-6 lg:p-7 transition-transform active:translate-y-0.5"
-              >
-                <h3 className="text-night text-lg font-semibold group-hover:text-primary-500 transition-colors">
-                  {program.title}
-                </h3>
-                <p className="mt-3 text-charcoal/70 text-sm leading-relaxed">{program.description}</p>
-                <span className="mt-5 inline-block text-secondary-500 text-sm font-medium">
-                  프로그램 자세히 보기 →
-                </span>
-              </Link>
-            ))}
-          </div>
-        </Container>
-      </SectionWrapper>
+      <ActApproach />
 
       <SectionWrapper bg="sand" className="py-14 lg:py-20">
         <Container>

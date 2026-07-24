@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import Link from "next/link";
 import { NAV_ITEMS, SITE_NAME } from "@/lib/constants";
 import { Container } from "@/components/shared/Container";
@@ -16,15 +17,21 @@ export function Header() {
           </span>
         </Link>
 
-        <nav className="hidden xl:flex items-center gap-4 2xl:gap-6" aria-label="메인 메뉴">
-          {NAV_ITEMS.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="whitespace-nowrap text-charcoal text-[var(--text-small)] font-medium tracking-wide hover:text-primary-500 transition-colors"
-            >
-              {item.label}
-            </Link>
+        <nav className="hidden xl:flex items-center gap-2 2xl:gap-3" aria-label="메인 메뉴">
+          {NAV_ITEMS.map((item, index) => (
+            <Fragment key={item.href}>
+              {index > 0 && (
+                <span aria-hidden="true" className="select-none text-charcoal/30 text-[var(--text-small)]">
+                  |
+                </span>
+              )}
+              <Link
+                href={item.href}
+                className="whitespace-nowrap text-charcoal text-[var(--text-small)] font-medium tracking-wide hover:text-primary-500 transition-colors"
+              >
+                {item.label}
+              </Link>
+            </Fragment>
           ))}
         </nav>
 

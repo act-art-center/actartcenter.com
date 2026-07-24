@@ -27,9 +27,9 @@ export const CONTACT = {
 
 export const NAV_ITEMS = [
   { label: "프로그램", href: "/services" },
-  { label: "미술치료", href: "/art-therapy" },
+  { label: "미술치료란?", href: "/art-therapy" },
   { label: "ACTIE & ARTTY", href: "/characters" },
-  { label: "미술치료사 소개", href: "/team" },
+  { label: "치료사 소개", href: "/team" },
   { label: "비용", href: "/pricing" },
   { label: "블로그", href: "/blog" },
   { label: "FAQ", href: "/faq" },
