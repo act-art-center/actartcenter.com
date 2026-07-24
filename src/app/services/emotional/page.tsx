@@ -64,7 +64,7 @@ const emotionalServiceSchema = {
       alternateName: ["Emotional & Trauma-Focused Art Therapy", "Trauma-Informed Art Therapy", "정서 미술심리치료"],
       additionalType: "https://schema.org/PsychologicalTreatment",
       description:
-        "불안·번아웃·상실·관계 트라우마·정체성 전환 등 정서 경험을 대상으로 하는 장기 ACT 미술심리치료. Bessel van der Kolk 『The Body Keeps the Score』(2014)의 신체 기반 트라우마 이해, Dan Siegel 의 window of tolerance 개념, Steven C. Hayes 의 ACT 심리적 유연성 모델, Kristin Neff 의 자기자비(self-compassion) 연구를 미술 매체와 통합합니다.",
+        "불안·번아웃·상실·관계 트라우마·정체성 전환 등 정서 경험을 대상으로 하는 장기 ACT 미술심리치료. Bessel van der Kolk 『The Body Keeps the Score』(2014)의 신체 기반 트라우마 이해, Dan Siegel 의 window of tolerance 개념, Steven C. Hayes 의 ACT 심리적 유연성 모델을 미술 매체와 통합합니다.",
       url: `${SITE_URL}/services/emotional`,
       image: `${SITE_URL}/og/services-emotional.png`,
       therapyType: "Art Therapy",
@@ -180,7 +180,7 @@ const actApplication = [
   {
     title: "인지적 탈융합(Defusion)",
     description:
-      "자기 비난 문장을 캐릭터·말풍선·기상 이미지로 외재화합니다. Steven C. Hayes 등이 정리한 ACT 의 defusion 은 '생각을 사실로 믿는 관계'를 '생각을 관찰하는 관계'로 재구성하는 훈련입니다.",
+      "미술 표현을 통해 생각을 외재화합니다.",
   },
   {
     title: "가치(Values) 재연결",
@@ -188,9 +188,9 @@ const actApplication = [
       "트라우마는 자주 '가치를 향해 움직이는 힘'을 무너뜨립니다. 다시 걷고 싶은 방향을 색·상징·콜라주로 꺼내고, 이것이 목표가 아닌 방향임을 시각적으로 확인합니다.",
   },
   {
-    title: "자기자비(Self-Compassion)",
+    title: "전념 행동(Committed Action)",
     description:
-      "Kristin Neff 의 자기자비 3요소(자기친절·공통 인간성·마음챙김)를 미술 작업에 통합합니다. '내가 나를 어떻게 대하는가'의 내부 톤을 이미지로 먼저 만나는 작업입니다.",
+      "가치의 방향을 오늘 실천할 수 있는 작은 행동으로 구체화합니다. 다음 한 걸음을 드로잉·작은 카드·시각 일정으로 만들고, 실행 뒤의 경험을 다시 살핍니다.",
   },
 ];
 
@@ -205,13 +205,13 @@ const sessionStructure = [
     number: "02",
     title: "미술 작업 (25분)",
     description:
-      "그날의 주제와 내담자 상태에 맞춘 매체를 함께 선택합니다. 수채·파스텔·콜라주·점토 등. 작업 자체가 개입이므로 '기술'이 아니라 '과정'이 기준입니다.",
+      "그날의 주제와 참여자의 상태에 맞춘 매체를 함께 선택합니다. 수채·파스텔·콜라주·점토 등. 작업 자체가 개입이므로 '기술'이 아니라 '과정'이 기준입니다.",
   },
   {
     number: "03",
     title: "대화와 의미 읽기 (15분)",
     description:
-      "해석하지 않고, 작업 앞에서 나누는 대화입니다. 내담자의 언어가 항상 가장 신뢰할 만한 단서입니다. ACT 프로세스 중 어떤 축이 작동했는지 함께 짚습니다.",
+      "해석하지 않고, 작업 앞에서 나누는 대화입니다. 참여자의 언어가 항상 가장 신뢰할 만한 단서입니다. ACT의 핵심 과정 중 어떤 축이 작동했는지 함께 짚습니다.",
   },
   {
     number: "04",
@@ -237,11 +237,7 @@ const evidenceNotes = [
     note:
       "『Acceptance and Commitment Therapy』(2nd ed., 2012)와 A-Tjak et al.(2015, Psychother Psychosom) 등 메타분석을 통해 불안·우울·만성 통증 등에서 심리적 유연성 기반 접근의 근거가 축적되어 왔습니다. 미술 매체와의 통합은 본 센터를 포함한 국내외 임상에서 연구가 진행 중인 영역입니다.",
   },
-  {
-    source: "Kristin Neff — Self-Compassion 연구",
-    note:
-      "Kristin Neff(Univ. of Texas at Austin)는 자기자비를 자기친절·공통 인간성·마음챙김 3요소로 정리했습니다. 트라우마 경험자에게 흔한 '자기 비난 고리'를 다루는 보조 개입으로 본 센터 세션에 반복 통합됩니다.",
-  },
+
   {
     source: "Cathy Malchiodi, 『Handbook of Art Therapy』 / Trauma-Informed Art Therapy 저술",
     note:
@@ -306,8 +302,8 @@ export default function EmotionalPage() {
                 진행합니다. Bessel van der Kolk
                 의 『The Body Keeps the Score』(2014)가 정리한 신체 기반 트라우마
                 이해, Dan Siegel 의 <strong>window of tolerance</strong> 개념,
-                Steven C. Hayes 등이 정립한 ACT 심리적 유연성 모델, Kristin Neff
-                의 자기자비 연구를 미술 매체와 함께 쓰는 구조입니다.
+                Steven C. Hayes 등이 정립한 ACT 심리적 유연성 모델을 미술 매체와
+                함께 쓰는 구조입니다.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <span className="px-3 py-1.5 bg-cream rounded-lg text-sm text-charcoal/70">50분 세션</span>
@@ -446,7 +442,7 @@ export default function EmotionalPage() {
             </h2>
             <p className="mt-4 text-charcoal/70 text-sm leading-relaxed">
               ACT(수용전념치료)는 증상 제거보다 '가치 있는 삶의 방향으로
-              움직이는 유연성'을 목표로 합니다. 본 센터는 ACT 6프로세스를 미술
+              움직이는 유연성'을 목표로 합니다. 본 센터는 ACT의 6가지 핵심 과정을 미술
               매체와 통합해 '말로만 하는 상담' 이 아닌 몸과 이미지가 함께 움직이는
               작업으로 진행하며, 정서·트라우마 트랙에서는 특히 네 가지 축이
               반복적으로 쓰입니다.
@@ -507,11 +503,10 @@ export default function EmotionalPage() {
               트라우마·정서 작업의 신경생리학 참조
             </h2>
             <p className="mt-4 text-charcoal/70 text-sm leading-relaxed">
-              정서 트랙 설계의 뼈대는 트라우마 신경생리학에 있습니다. Bessel van der Kolk이
-              『The Body Keeps the Score』에서 종합한 브로카 영역 연구, Dan Siegel의 window of
-              tolerance, Kristin Neff의 자기자비 모델 — 이 세 가지가 페이싱·자기비난 완화·감정
-              수용의 언어를 공급합니다. 여기에 Hayes의 ACT와 Malchiodi의 매체 원칙,
-              국내 한국미술치료학회의 사례 축적이 현지화 층위를 만듭니다.
+              정서 트랙은 Bessel van der Kolk가 종합한 신체 기반 트라우마 이해와 Dan Siegel의
+              window of tolerance를 페이싱의 참고 틀로 삼습니다. 여기에 Hayes의 ACT 심리적
+              유연성 모델과 Malchiodi의 미술 매체 원칙, 국내 한국미술치료학회의 사례 축적을
+              함께 살핍니다.
             </p>
           </div>
           <div className="mt-10 max-w-3xl grid grid-cols-1 lg:grid-cols-2 gap-4">

@@ -195,7 +195,7 @@ const pricing = [
     href: "/services/online",
   },
   {
-    service: "TCI 기질검사 및 상담",
+    service: "TCI 기질·성격검사 :",
     duration: "검사 + 그림 + 해석 상담",
     price: "100,000원",
     note: "",
@@ -215,7 +215,7 @@ const packages = [
     name: "마음 유연성 8주 프로그램",
     sessions: "개인 8회기",
     price: "800,000원",
-    note: "ACT 6프로세스 기반",
+    note: "ACT (수용전념) 기반 미술치료",
   },
   {
     name: "번아웃 탈출 워크숍",
@@ -418,7 +418,14 @@ export default function PricingPage() {
               미술심리치료는 치료사와 참여자가 한 걸음씩 방향과 속도를 맞춰 가는 것이 실제 경험에
               가장 큰 영향을 주는 요소 중 하나로 꼽힙니다. 센터가 첫 상담을 무료로 마련한 이유는
               ‘이 치료사와 함께 여정을 시작해도 될지’를 먼저 확인하시고 신중한 선택을 하실 수 있게
-              돕기 위해서입니다.
+              돕기 위해서입니다. 미술치료를 편하게 경험하고 싶으신 분은{" "}
+              <Link
+                href="/services/open-studio"
+                className="text-primary-500 underline underline-offset-2"
+              >
+                &lt;오픈 스튜디오 원데이 클래스&gt;
+              </Link>
+              {"부터 천천히 참여해보세요."}
             </p>
             <ul className="mt-5 space-y-2.5 text-charcoal/80 text-sm">
               <li className="flex gap-2">

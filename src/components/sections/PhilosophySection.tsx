@@ -60,7 +60,7 @@ export function PhilosophySection() {
               href="/art-therapy"
               className="mt-8 inline-flex items-center text-sm font-semibold text-primary-500 hover:underline underline-offset-4"
             >
-              미술치료란? 자세히 알아보기 →
+              미술치료 자세히 알아보기 →
             </Link>
           </div>
         </div>

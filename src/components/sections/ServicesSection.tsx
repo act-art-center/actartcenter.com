@@ -66,7 +66,7 @@ export function ServicesSection() {
         {/* Row 1: 오픈스튜디오 및 검사·상담 — 데스크톱 좌우 2열 */}
         <div className="mt-12 lg:mt-16">
           <div className="flex flex-col items-end gap-2 mb-5 lg:flex-row lg:items-baseline lg:justify-between">
-            <h3 className="w-full whitespace-nowrap text-night text-[clamp(10.75px,calc(3.96vw-1.88px),13.5px)] font-semibold leading-snug tracking-tight sm:text-sm lg:text-lg">
+            <h3 className="w-full min-w-0 flex-1 whitespace-nowrap text-night text-[clamp(11.25px,3.75vw,14px)] font-semibold leading-snug tracking-tight sm:text-base lg:text-[clamp(1.125rem,1.65vw,1.5rem)]">
               오픈스튜디오 원데이 클래스 / 그림검사 / TCI 기질·성격검사
             </h3>
             <Link
@@ -123,13 +123,13 @@ export function ServicesSection() {
         <div className="mt-12 text-center text-sm text-charcoal/70">
           더 자세한 안내는{" "}
           <Link href="/faq" className="text-primary-500 font-medium hover:underline underline-offset-4">
-            미술치료 자주 묻는 질문
+            FAQ
           </Link>
           {" "}또는{" "}
           <Link href="/team" className="text-primary-500 font-medium hover:underline underline-offset-4">
-            고은별 대표 프로필
+            치료사 소개
           </Link>
-          을 참고하세요.
+          를 참고하세요 :
         </div>
       </Container>
     </SectionWrapper>

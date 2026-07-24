@@ -188,6 +188,9 @@ export default async function BlogPostPage({ params }: Props) {
             sizes="(max-width: 896px) 100vw, 896px"
           />
         </div>
+        <p className="mt-2 text-right text-[11px] leading-relaxed text-charcoal/45">
+          (c)ACT ART CENTER
+        </p>
       </div>
 
       {/* Content */}
