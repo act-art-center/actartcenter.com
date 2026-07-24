@@ -178,19 +178,23 @@ export default async function BlogPostPage({ params }: Props) {
 
       {/* Featured Image */}
       <div className="relative w-full max-w-4xl mx-auto px-6 -mt-2">
-        <div className="relative aspect-[21/9] rounded-2xl overflow-hidden bg-[#f4efe7]">
-          <Image
-            src={post.image}
-            alt={`${post.title} 블로그 커버`}
-            fill
-            priority
-            className="object-contain p-3"
-            sizes="(max-width: 896px) 100vw, 896px"
-          />
+        <div className="aspect-[21/9] rounded-2xl overflow-hidden bg-[#f4efe7] p-3">
+          <div className="mx-auto flex h-full max-w-full aspect-square flex-col overflow-hidden rounded-md bg-white">
+            <div className="relative min-h-0 flex-1">
+              <Image
+                src={post.image}
+                alt={`${post.title} 블로그 커버`}
+                fill
+                priority
+                className="object-contain"
+                sizes="(max-width: 896px) 42vw, 360px"
+              />
+            </div>
+            <p className="shrink-0 bg-white px-3 pb-2 text-right text-[11px] leading-relaxed text-charcoal/45">
+              (c)ACT ART CENTER
+            </p>
+          </div>
         </div>
-        <p className="mt-2 text-right text-[11px] leading-relaxed text-charcoal/45">
-          (c)ACT ART CENTER
-        </p>
       </div>
 
       {/* Content */}
