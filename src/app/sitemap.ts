@@ -5,7 +5,8 @@ import { BLOG_POSTS } from "@/lib/blog-data";
 // 페이지별 최근 수정일 하드코딩 맵. 페이지 내용이 의미 있게 변경되면 업데이트.
 // ISO 8601 (YYYY-MM-DD). B2 spec §18.3 규정.
 const PAGE_LAST_MODIFIED: Record<string, string> = {
-  "/": "2026-04-19",
+  "/": "2026-07-24",
+  "/art-therapy": "2026-07-24",
   "/act-approach": "2026-04-19",
   "/services": "2026-04-19",
   "/services/individual": "2026-04-19",
@@ -67,6 +68,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Home
     entry("/", 1.0, "weekly"),
     // Hubs
+    entry("/art-therapy", 0.95, "monthly"),
     entry("/act-approach", 0.9, "monthly"),
     entry("/services", 0.9, "monthly"),
     // Service leaves

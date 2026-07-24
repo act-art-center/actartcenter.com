@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { SectionWrapper } from "@/components/shared/SectionWrapper";
 import { Container } from "@/components/shared/Container";
 
@@ -55,6 +56,12 @@ export function PhilosophySection() {
                 </div>
               </div>
             </div>
+            <Link
+              href="/art-therapy"
+              className="mt-8 inline-flex items-center text-sm font-semibold text-primary-500 hover:underline underline-offset-4"
+            >
+              미술치료란? 자세히 알아보기 →
+            </Link>
           </div>
         </div>
       </Container>

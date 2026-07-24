@@ -53,7 +53,7 @@ export const metadata: Metadata = {
         url: "/og/default.png",
         width: 1200,
         height: 630,
-        alt: "ACT ART CENTER — ACT 미술심리치료 연구소",
+        alt: "ACT ART CENTER 미술치료 안내",
       },
     ],
   },
@@ -92,7 +92,7 @@ const globalGraphSchema = {
       "@type": "Organization",
       "@id": `${SITE_URL}/#organization`,
       name: SITE_NAME,
-      alternateName: ["ACT 미술심리치료 연구소", "ACT 아트센터"],
+      alternateName: ["액트 아트 센터", "ACT 미술심리치료 연구소", "ACT 아트센터", "미술치료 센터"],
       url: SITE_URL,
       logo: {
         "@type": "ImageObject",
@@ -116,6 +116,7 @@ const globalGraphSchema = {
       knowsAbout: [
         "Acceptance and Commitment Therapy",
         "Art Therapy",
+        "미술치료",
         "Psychological Flexibility",
         "Trauma-informed Care",
         "Mindfulness",
@@ -138,7 +139,7 @@ const globalGraphSchema = {
       "@type": ["LocalBusiness", "MedicalBusiness"],
       "@id": `${SITE_URL}/#localbusiness`,
       name: SITE_NAME,
-      description: "ACT(수용전념치료) 기반 미술심리치료 전문센터",
+      description: "미술치료를 중심으로 ACT(수용전념)의 관점을 보조적으로 통합하는 서울 서초구 미술치료 센터",
       url: SITE_URL,
       image: `${SITE_URL}/og/default.png`,
       medicalSpecialty: "Psychiatric",
@@ -166,7 +167,7 @@ const globalGraphSchema = {
       // 전화번호는 실 번호 확정 전까지 의도적으로 제외 (spec §2.6, audit P2).
       // TODO: telephone 실값 확보 후 추가(추측 금지) — 로컬 SEO 핵심 필드.
       availableService: [
-        { "@type": "MedicalTherapy", name: "미술심리치료", therapyType: "Art Therapy" },
+        { "@type": "MedicalTherapy", name: "미술치료", alternateName: "미술심리치료", therapyType: "Art Therapy" },
         { "@type": "MedicalTherapy", name: "수용전념치료", therapyType: "Acceptance and Commitment Therapy" },
       ],
       openingHoursSpecification: {
@@ -180,6 +181,8 @@ const globalGraphSchema = {
       "@id": `${SITE_URL}/#website`,
       url: SITE_URL,
       name: SITE_NAME,
+      alternateName: "ACT ART CENTER 미술치료",
+      description: SITE_DESCRIPTION,
       inLanguage: "ko-KR",
       publisher: { "@id": `${SITE_URL}/#organization` },
       potentialAction: {

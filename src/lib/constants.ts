@@ -1,8 +1,8 @@
 export const SITE_URL = "https://actartcenter.com";
 export const SITE_NAME = "ACT ART CENTER";
-export const SITE_TITLE = "ACT ART CENTER | ACT 미술심리치료 연구소";
+export const SITE_TITLE = "미술치료 | ACT ART CENTER 액트 아트 센터";
 export const SITE_DESCRIPTION =
-  "‘ACT ART CENTER, 액트 아트 센터’는 미술을 경험하며 마음이 잠시 쉬어갈 수 있는 안전한 시간을 함께합니다.";
+  "ACT ART CENTER는 미술치료를 중심으로 아동·청소년·성인·그룹·온라인 프로그램을 운영하며, ACT(수용전념)의 관점을 보조적으로 통합합니다.";
 export const SITE_TAGLINE = "Accept. Create. Transform.";
 export const SITE_TAGLINE_KR = "Exploring the mind through art, rediscovering meaning in life.";
 
@@ -27,6 +27,7 @@ export const CONTACT = {
 
 export const NAV_ITEMS = [
   { label: "프로그램", href: "/services" },
+  { label: "미술치료란?", href: "/art-therapy" },
   { label: "ACTIE & ARTTY", href: "/characters" },
   { label: "미술치료사 소개", href: "/team" },
   { label: "비용", href: "/pricing" },
@@ -172,6 +173,7 @@ export const SERVICES_SPECIALTY = SERVICES_ALL.filter((s) => s.group === "specia
 
 /** Footer 사이트맵 4컬럼용 리소스 링크. */
 export const RESOURCE_LINKS = [
+  { label: "미술치료란?", href: "/art-therapy" },
   { label: "블로그", href: "/blog" },
   { label: "자주 묻는 질문", href: "/faq" },
   { label: "비용 안내", href: "/pricing" },
