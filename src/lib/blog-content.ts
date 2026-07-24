@@ -1,4 +1,70 @@
 export const blogContent: Record<string, string> = {
+  "art-therapist-mentoring-lifelong-supervision-aata-2026": `
+<p>미술치료사는 다른 사람의 마음이 자기 속도로 표현되도록 곁을 지키는 일을 합니다. 그 일을 오래 이어가려면 치료사에게도 질문을 꺼내고 경험을 나누며 다시 배울 수 있는 관계가 필요합니다.</p>
+
+<p>미국미술치료협회(American Art Therapy Association, AATA)가 2026년 7월 전한 소식에는 이 관계를 생각하게 하는 두 가지 흐름이 담겨 있습니다. 하나는 경력과 관심사를 연결하는 <strong>Mentor Match</strong>이고, 다른 하나는 수련 시기를 지나서도 계속되는 <strong>생애주기적 슈퍼비전</strong>입니다.</p>
+
+<h2>멘토링은 혼자 품고 있던 질문에 대화의 자리를 내어줍니다</h2>
+<p>AATA의 2026 가을 Mentor Match는 멘토와 멘티가 5개월 동안 연결되는 회원 전용 프로그램입니다. 멘토 40명과 멘티 40명으로 인원을 제한하고, 매달 코호트 모임과 MyAATA 커뮤니티를 통해 관계를 이어갑니다. 임상 관심 분야, 사용하는 언어, 미술 기법, 연구와 진로 같은 목표를 바탕으로 서로를 찾을 수 있도록 구성되어 있습니다.</p>
+
+<p>앞선 참여자들이 나눈 주제는 구체적입니다. 학교에서 유일한 미술치료사로 일하며 역할을 세우는 일, 자격 취득 과정을 이해하는 일, 이력서와 면접을 준비하는 일, 개인 실천이나 사회적 기업의 방향을 구상하는 일까지 포함되었습니다. 멘토링이 정답을 대신 주는 관계라기보다, 혼자 품고 있던 질문을 말로 꺼내고 다음 걸음을 함께 분명하게 만드는 관계임을 보여줍니다.</p>
+
+<p>2026년 가을 코호트는 9월 초 시작 예정이며, AATA는 신청 시작을 7월 27일로 안내하고 있습니다. 다만 공식 공지의 세부 본문에는 서로 다른 날짜가 함께 적혀 있어 실제 신청 전 <a href="https://my.arttherapy.org/about-mentor-match" rel="noopener noreferrer" target="_blank">Mentor Match 신청 페이지</a>에서 일정을 다시 확인하는 편이 안전합니다. 모집은 9월 1일 또는 정원 마감 시까지로 안내되어 있습니다.</p>
+
+<h2>멘토링과 슈퍼비전은 서로를 대신하지 않습니다</h2>
+<p>멘토링은 경력의 방향, 소속감, 전문적 네트워크와 경험의 전수를 돕습니다. 슈퍼비전은 임상 사례와 윤리, 치료적 관계, 치료사 자신의 반응을 구조적으로 성찰하며 안전하고 책임 있는 실천을 지지합니다. 두 관계는 서로 닿는 부분이 있지만 목적과 책임이 같지 않습니다.</p>
+
+<p>그래서 멘토가 있다는 이유로 필요한 슈퍼비전을 줄이거나, 슈퍼비전 안에서 모든 진로 고민까지 해결하려 하기보다 지금의 질문에 맞는 관계를 구분해 선택하는 일이 중요합니다. 특히 자격과 기관 규정에 따라 요구되는 임상 슈퍼비전은 해당 기준을 확인하며 이어가야 합니다.</p>
+
+<h2>슈퍼비전은 자격을 얻기 전까지만 받는 과정이 아닙니다</h2>
+<p>AATA 이사 Kathryn Snyder는 2026 슈퍼비전 시리즈를 돌아보며 슈퍼비전을 “임상가가 되기 위해 통과하는 한 단계가 아니라 우리와 함께 성장하는 실천”으로 설명합니다. 학생과 초기 경력에는 기술과 전문적 정체성을 세우는 일이 중심이 될 수 있고, 경력이 쌓이면 문화와 권력, 맥락을 더 정교하게 살피거나 교육·리더십·지속가능성을 성찰하는 일이 중요해집니다.</p>
+
+<p>AATA의 세 강의도 이 흐름을 따라갑니다. 관계문화적 관점에서 권력과 맥락을 다루고, 미술 기반 슈퍼비전으로 학생과 초기 경력 치료사의 전문적 정체성을 돕고, 숙련된 전문가의 성찰과 갱신을 살펴봅니다. 세 강의 녹화본은 <a href="https://at-institute.arttherapy.org/" rel="noopener noreferrer" target="_blank">AATA Online Learning Academy</a>에서 제공됩니다.</p>
+
+<p>미술치료 슈퍼비전에는 말로 사례를 정리하는 일과 함께 이미지를 만들고 바라보는 과정이 들어갈 수 있습니다. 치료 장면에서 남은 감각과 관계의 움직임을 색, 선, 형태로 외재화하면 미처 언어가 닿지 못했던 부분을 발견할 여지가 생깁니다. 중요한 것은 작품을 단정적으로 해석하는 일이 아니라, 치료사의 반응과 임상적 판단을 더 안전하고 넓은 맥락 안에서 성찰하는 일입니다.</p>
+
+<h2>계속교육은 더 많은 기법을 모으는 일에 머물지 않습니다</h2>
+<p>AATA2026 대면 학술대회는 10월 14일부터 17일까지 미국 노스캐롤라이나주 샬럿에서 열리며, 본 행사 전 선택 과정인 Advanced Practice Courses는 10월 14일에 진행됩니다. 전일 과정은 7시간·정원 20명, 반일 과정은 3시간·정원 25명으로 안내되어 있습니다. 온라인 학술대회는 11월 14일부터 15일까지 열리고, 학습 세션은 녹화 제공될 예정입니다.</p>
+
+<p>이런 계속교육의 의미는 새로운 기법의 수를 늘리는 데만 있지 않습니다. 내가 익숙하게 반복하는 판단을 다시 질문하고, 다른 현장과 문화에서 일하는 동료의 관점을 만나며, 현재의 임상 실천을 더 책임 있게 조정하는 데 있습니다.</p>
+
+<h2>이번에 함께 읽어볼 공개 논문 두 편</h2>
+<p>AATA 뉴스레터는 학술지 <em>Art Therapy</em> 43권 2호 가운데 두 논문을 2026년 9월 30일까지 무료로 읽을 수 있다고 안내했습니다.</p>
+
+<ul>
+<li><a href="https://doi.org/10.1080/07421656.2025.2458914" rel="noopener noreferrer" target="_blank"><strong>Arts-Based Psychosocial Support Trainings in Humanitarian Emergencies: A Scoping Review</strong></a> — 인도주의적 위기 상황의 예술 기반 심리사회적 지원 훈련 문헌을 검토합니다.</li>
+<li><a href="https://doi.org/10.1080/07421656.2025.2593598" rel="noopener noreferrer" target="_blank"><strong>The Material Culture of Art Therapy: Less Is More</strong></a> — 미술치료의 물질문화와 매체 사용을 ‘적을수록 더 풍부할 수 있다’는 관점에서 살펴봅니다.</li>
+</ul>
+
+<p>무료 공개 기간과 접속 권한은 출판사 정책에 따라 달라질 수 있으므로 논문 페이지에서 현재 상태를 확인해 주세요.</p>
+
+<h2>오래 일하기 위해 치료사도 연결될 자리가 필요합니다</h2>
+<p>전문성은 혼자 완성하는 능력이라기보다 관계 안에서 계속 다듬어지는 태도에 가깝습니다. 멘토링은 경험과 방향을 나누는 연결이 되고, 슈퍼비전은 임상 실천을 깊이 성찰하는 안전한 틀이 되며, 계속교육은 익숙한 시선을 다시 열어줍니다.</p>
+
+<p>저 역시 외부 전문가에게 슈퍼비전을 받으며 치료 장면과 치료사로서의 반응을 돌아봅니다. 누군가의 마음 곁에 오래 머물기 위해 제 시야와 상태를 함께 돌보는 과정입니다. 미술치료사의 성장은 더 이상 질문이 없는 상태가 아니라, 필요한 질문을 알아차리고 적절한 관계 안에서 정직하게 다룰 수 있는 힘에서 이어진다고 생각합니다.</p>
+
+<p>ACT ART CENTER의 미술치료 관점이 궁금하시면 <a href="/art-therapy">미술치료 안내</a>와 <a href="/team">치료사 소개</a>에서 더 살펴보실 수 있습니다.</p>
+
+<hr />
+<h3>이 글이 답한 질문</h3>
+<ul class="post-qa">
+<li><strong>Q: AATA Mentor Match는 누구나 신청할 수 있나요?</strong><br />A: AATA 회원 전용 프로그램입니다. 2026년 가을 코호트는 멘토와 멘티 각각 40명으로 제한되며, 공식 신청 페이지에서 최신 일정을 확인해야 합니다.</li>
+<li><strong>Q: 멘토링이 있으면 임상 슈퍼비전을 대신할 수 있나요?</strong><br />A: 대신할 수 없습니다. 멘토링은 경력과 경험의 연결을 돕고, 슈퍼비전은 임상 사례·윤리·치료적 관계를 구조적으로 성찰하는 별도의 전문 과정입니다.</li>
+<li><strong>Q: 경력이 쌓인 뒤에도 슈퍼비전이 필요한가요?</strong><br />A: 슈퍼비전의 질문과 방식은 경력 단계에 따라 달라질 수 있습니다. 숙련된 치료사에게도 성찰, 문화적 반응성, 지속가능성, 리더십과 전문적 갱신을 위한 자리가 될 수 있습니다.</li>
+</ul>
+
+<hr />
+<h3>공식 자료와 참고 링크</h3>
+<ul class="references">
+<li><a href="https://arttherapy.org/news-aata-fall-2026-mentor-match-cohort/" rel="noopener noreferrer" target="_blank">American Art Therapy Association. (2026, July 23). Join the Fall 2026 Mentor Match Cohort.</a></li>
+<li><a href="https://arttherapy.org/news-supervision-across-the-professional-lifespan-learning-growing-and-contributing/" rel="noopener noreferrer" target="_blank">Snyder, K. (2026, June 17). Supervision Across the Professional Lifespan: Learning, Growing, and Contributing.</a></li>
+<li><a href="https://arttherapy.org/aata2026-in-person-conference-advanced-practice-courses/" rel="noopener noreferrer" target="_blank">AATA2026 In-Person Conference Advanced Practice Courses.</a></li>
+<li><a href="https://arttherapy.org/annual-conferences/" rel="noopener noreferrer" target="_blank">AATA2026 Art Therapy Conference.</a></li>
+<li><a href="https://doi.org/10.1080/07421656.2025.2458914" rel="noopener noreferrer" target="_blank">Arslanbek, A., Wolf Bordonaro, G. P., Feen-Calligan, H., Dieterich-Hartwell, R., &amp; Kaimal, G. Arts-Based Psychosocial Support Trainings in Humanitarian Emergencies: A Scoping Review.</a></li>
+<li><a href="https://doi.org/10.1080/07421656.2025.2593598" rel="noopener noreferrer" target="_blank">Whitaker, P., &amp; McDermid-Thomas, A. The Material Culture of Art Therapy: Less Is More.</a></li>
+</ul>
+`,
+
   "winnicott-container-art-therapy": `
 <p>어떤 마음은 꺼내는 순간 흩어질 것처럼 느껴집니다. 슬픔은 어디에 두어야 할지 막막하고, 화는 손에 잡히지 않은 채 안에서 계속 움직입니다. 아직 이름을 찾지 못한 감정도 있습니다.</p>
 

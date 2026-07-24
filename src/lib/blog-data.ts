@@ -20,6 +20,17 @@ export const BLOG_CATEGORIES = [
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "art-therapist-mentoring-lifelong-supervision-aata-2026",
+    title: "미술치료사는 어떻게 오래 성장할까요: AATA 멘토링과 평생 슈퍼비전",
+    excerpt: "AATA의 2026 가을 Mentor Match와 생애주기적 슈퍼비전 자료를 바탕으로, 미술치료사가 관계 속에서 전문성을 돌보고 이어가는 방법을 살펴봅니다.",
+    category: "미술치료사 경험",
+    seoKeywords: ["미술치료사 멘토링", "미술치료 슈퍼비전", "AATA Mentor Match", "미술치료사 전문성", "미술치료 계속교육", "미술치료사 성장"],
+    image: "/characters/therapist/therapist-group-art-session.jpg",
+    date: "2026년 7월 24일",
+    author: "고은별",
+    readTime: "8분",
+  },
+  {
     slug: "winnicott-container-art-therapy",
     title: "위니컷(Winnicott)의 컨테이너(Container) 이야기: 미술치료에서 마음을 안전하게 담아내기",
     excerpt: "위니컷의 홀딩과 잠재적 공간, 비온의 담아내기 개념을 구분해 살펴보고 미술치료의 관계와 작품이 감정의 자리가 되는 경험을 풀어봅니다.",
