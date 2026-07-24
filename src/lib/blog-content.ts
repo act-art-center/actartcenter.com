@@ -4,6 +4,11 @@ export const blogContent: Record<string, string> = {
 
 <p>Barbara J. Fish의 <strong>《미술 기반 미술치료 슈퍼비전: 이미지를 통한 치료적 통찰력 수련》</strong>은 바로 이 지점에서 시작하는 책입니다. 슈퍼비전에서 사례를 말로 보고하는 데 그치지 않고, 치료사가 직접 이미지를 만들며 회기의 관계와 정서를 다시 살펴보도록 이끕니다.</p>
 
+<figure class="my-10 mx-auto max-w-sm text-center">
+<a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=253175121" rel="noopener noreferrer" target="_blank"><img src="/images/blog/art-based-supervision-book-cover.jpg" alt="미술 기반 미술치료 슈퍼비전 한국어판 책 표지" width="500" height="742" loading="lazy" class="w-full h-auto rounded-xl border border-primary-100 shadow-sm" /></a>
+<figcaption class="mt-3 text-sm text-charcoal/60">《미술 기반 미술치료 슈퍼비전》 한국어판 표지 · <a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=253175121" rel="noopener noreferrer" target="_blank">이미지 출처: 알라딘</a></figcaption>
+</figure>
+
 <h2>책에서 확인할 수 있는 내용</h2>
 <p>이 책은 슈퍼비전의 기본 원리와 미술 기반 슈퍼비전의 역사를 먼저 살펴봅니다. 이어 이미지를 만들 수 있는 안전한 공간, 슈퍼비전에 가져온 작품을 다루는 방법, 슈퍼바이저와 수련자 사이의 권력, 고통스러운 사례를 접한 치료사가 받는 영향, 대학원 교육과 졸업 이후의 슈퍼비전, 다학제 슈퍼비전과 종결의 문제를 다룹니다.</p>
 
