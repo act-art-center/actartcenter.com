@@ -10,7 +10,6 @@ Visual identity:
 
 Assets:
 - `therapist-art-making-overview.jpg` — overview / art-making therapist character
-- `therapist-reading-book.jpg` — reading/researching therapist
 - `therapist-group-art-session.jpg` — group/session art-therapy scene
 - `therapist-workshop-easel.jpg` — workshop/easel art session
 - `therapist-desk-writing.jpg` — writing notes at desk
