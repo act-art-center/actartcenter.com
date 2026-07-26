@@ -1,4 +1,98 @@
 export const blogContent: Record<string, string> = {
+  "art-therapy-relational-neuroscience-review": `
+<p>빈 종이를 앞에 두면 생각보다 몸이 먼저 반응합니다. 연필을 단단히 쥐기도 하고, 손끝으로 종이 가장자리를 만져 보기도 합니다. 선을 시작하기 전 잠시 숨을 고르거나 물감이 번지는 모습을 바라보며 어깨의 힘이 조금 풀리기도 합니다.</p>
+
+<p>미술치료에서는 이런 작은 움직임도 소중하게 살핍니다. 마음은 말과 함께 몸의 감각, 움직임, 색과 형태를 통해서도 모습을 드러냅니다.</p>
+
+<p>노아 하스-코헨과 조애나 클라이드 핀들레이의 <em>Art Therapy and the Neuroscience of Relationships, Creativity, and Resiliency</em>는 미술치료에서 일어나는 몸과 관계, 기억과 창조성의 움직임을 대인관계 신경생물학의 관점에서 설명합니다.</p>
+
+<p>두 저자는 미술치료 관계신경과학 모델(Art Therapy Relational Neuroscience Model, ATR-N)을 제안합니다. 창조적 체화, 관계적 공명, 표현적 의사소통, 적응적 반응, 변형적 통합, 공감과 연민이라는 여섯 원리가 이 모델을 이룹니다.</p>
+
+<h2>미술 표현은 몸에서 시작됩니다</h2>
+
+<p>선을 긋는 손의 속도, 종이에 닿는 힘, 색을 고를 때의 망설임, 점토를 누르는 감각이 작업에 참여합니다. 넓은 화면에서 팔을 움직일 때와 작은 종이 안에서 조심스럽게 선을 이어 갈 때에는 서로 다른 신체 경험이 생깁니다.</p>
+
+<p>치료사는 한 사람이 실제로 느끼는 감각을 듣고, 그날의 상태와 치료 목표에 맞는 작업을 함께 찾아갑니다. 같은 매체도 사람과 상황에 따라 다르게 다가오기 때문입니다.</p>
+
+<p>매체는 여러분의 미술 표현을 돕는 도우미 친구들입니다. 연필은 손의 움직임을 세밀하게 조절하도록 돕습니다. 수채물감은 색이 흐르고 서로 만나는 과정을 보여 줍니다. 점토는 손으로 누르고 떼고 붙이며 형태를 바꾸는 촉각 경험을 전합니다.</p>
+
+<p>미술치료사는 치료적 근거와 안전, 참여자의 현재 상태와 치료 목표를 살펴 매체와 작업 구조를 제안합니다. 작은 종이와 익숙한 색으로 시작할 수도 있고, 넓은 화면과 부드러운 매체를 선택할 수도 있습니다. 작업 중간에 잠시 멈추고 몸의 느낌을 살피는 시간도 함께 마련합니다.</p>
+
+<h2>작품을 함께 바라보는 관계</h2>
+
+<p>이 책을 읽으며 오래 머문 부분은 ‘관계적 공명’입니다. 치료적 관계에는 대화뿐 아니라 치료자의 목소리와 속도, 침묵을 기다리는 태도, 두 사람이 작품을 바라보는 거리와 자세도 참여합니다. 매체를 준비하고 작품을 안전하게 보관하는 방식도 그 관계의 리듬을 만듭니다.</p>
+
+<p>참여자는 치료자의 차분하고 일관된 태도 속에서 자신의 감각과 감정을 조금 더 편안하게 살펴볼 수 있습니다. 치료자는 표현이 이어질 수 있는 조건을 함께 마련하고, 참여자가 선택한 범위 안에서 이야기를 듣습니다. 작품에 관해 설명하고 싶은 부분과 조용히 간직하고 싶은 부분을 모두 존중합니다.</p>
+
+<p>저는 ‘공동 조절’이라는 말을 치료사가 다른 사람의 마음을 대신 조절한다는 뜻으로 읽지 않았습니다. 한 사람이 자신의 감각과 정서를 알아차리고 다룰 수 있도록 안정적인 리듬을 함께 만들어 가는 과정으로 읽었습니다.</p>
+
+<h2>이미지는 말과 다른 길로 경험을 전합니다</h2>
+
+<p>어떤 마음은 아직 문장이 되기 전 색으로 나타납니다. 반복되는 선이나 화면의 빈자리, 여러 번 덧붙인 형태가 지금의 감각을 담기도 합니다. 작품의 의미는 한 사람의 삶과 작업 과정, 관계 속에서 천천히 발견됩니다.</p>
+
+<blockquote><p>“이 부분을 바라볼 때 어떤 느낌이 드나요?”<br />“이 색과 조금 더 머물러 보고 싶으신가요?”<br />“그림 속에서 지금 가장 편안하게 느껴지는 자리는 어디인가요?”</p></blockquote>
+
+<p>이런 질문은 이미지와 대화할 수 있는 여백을 만듭니다. 작업을 마친 뒤 한 걸음 물러나 작품을 보는 시간도 중요합니다. 그리는 동안 보이지 않던 형태가 눈에 들어오고, 손이 오래 머문 자리를 새롭게 발견할 수 있습니다.</p>
+
+<h2>신경과학을 하나의 창으로 읽습니다</h2>
+
+<p>신경과학은 미술치료의 복잡한 과정을 바라보는 하나의 창입니다. 한 장의 그림에는 몸의 기억과 문화, 관계, 현재의 환경과 개인적인 의미가 함께 담깁니다. 이 책의 모델 역시 치료 과정을 이해하고 더 세심한 질문을 건네기 위한 이론적·임상적 틀로 읽을 때 유용합니다.</p>
+
+<p>특정 색이나 형태를 뇌의 특정 반응과 바로 연결하면 한 사람의 고유한 맥락을 놓치기 쉽습니다. 저는 이 책을 ‘그림을 뇌로 해석하는 책’보다 ‘몸과 관계가 이미지에 어떻게 참여하는지 질문하게 하는 책’으로 읽었습니다.</p>
+
+<h2>치료적 관계는 작품을 만드는 모든 순간에 있습니다</h2>
+
+<p>이 책을 읽으며 치료적 관계가 작품 바깥의 배경이 아니라는 점을 다시 생각했습니다. 참여자가 치료실에 들어와 자리를 고르는 순간, 종이 크기를 살피는 시간, 매체에 손을 대었다가 잠시 멈추는 장면에도 관계가 함께합니다.</p>
+
+<p>치료자는 표현의 결과만 보는 사람이 아닙니다. 손이 머뭇거리는 속도와 다시 움직이기 시작하는 순간을 기다리며, 참여자가 자신의 감각을 존중할 수 있도록 곁에 머뭅니다. 그 안정적인 동행이 작품 안팎의 경험을 이어 줍니다.</p>
+
+<h2>작품 앞에서 자신에게 건네는 질문</h2>
+
+<ul>
+<li>그림을 그릴 때 가장 먼저 느껴지는 몸의 감각은 무엇인가요?</li>
+<li>손에 힘이 들어가는 순간과 조금 부드러워지는 순간은 언제인가요?</li>
+<li>누군가가 조용히 곁에서 작품을 바라봐 줄 때 표현의 속도는 어떻게 달라지나요?</li>
+<li>오늘의 나에게 편안한 종이 크기와 매체는 무엇인가요?</li>
+<li>작품과 한 걸음 떨어져 마주하면 어떤 부분이 새롭게 눈에 들어오나요?</li>
+</ul>
+
+<p>오늘 종이 한 장과 편안하게 느껴지는 매체를 준비해 보세요. 손이 가는 곳에서 선 하나를 시작합니다. 천천히 이어 가도 좋고, 잠시 멈추어도 좋습니다. 그리고 자신의 손과 몸에 조용히 물어봅니다. “지금 이 선을 그리는 동안 나는 어떤 감각을 느끼고 있을까?”</p>
+
+<p>그 감각을 알아차리고 존중하는 시간은 자신의 마음과 관계를 맺는 따뜻한 시작이 됩니다.</p>
+
+<p>관계와 표현을 함께 살피는 미술치료 과정은 <a href="/art-therapy">미술치료란?</a>에서 확인하실 수 있습니다. 현재 상황에 맞는 상담 가능 여부는 <a href="/booking">첫 상담 예약</a>에서 문의해 주세요.</p>
+
+<hr />
+<h3>서지 및 내용 확인</h3>
+<ul class="references">
+<li><a href="https://wwnorton.com/books/9780393710748" rel="noopener noreferrer" target="_blank">W. W. Norton 공식 도서 페이지</a>: 저자, 부제, ISBN, 책 소개와 미술치료 관계신경과학 모델을 확인했습니다.</li>
+<li><a href="https://openlibrary.org/isbn/9780393710748" rel="noopener noreferrer" target="_blank">Open Library 서지 레코드</a>: 출판사, 발행일, 496쪽, 양장본과 ISBN을 교차 확인했습니다.</li>
+<li><a href="https://psycnet.apa.org/record/2015-25519-000" rel="noopener noreferrer" target="_blank">APA PsycNet 서지 레코드</a>: 심리학 분야의 도서 기록과 주제 분류를 확인했습니다.</li>
+<li>King, J. L. (2016). <a href="https://doi.org/10.1080/07421656.2016.1126691" rel="noopener noreferrer" target="_blank">서평: <em>Art Therapy and the Neuroscience of Relationships, Creativity, and Resiliency</em></a>. <em>Art Therapy, 33</em>(1).</li>
+</ul>
+
+<hr />
+<h3>책 정보</h3>
+<ul class="references">
+<li>원제: <em>Art Therapy and the Neuroscience of Relationships, Creativity, and Resiliency: Skills and Practices</em></li>
+<li>한국어 표기: 《미술치료와 관계, 창조성, 회복탄력성의 신경과학》 (이 글에서 이해를 돕기 위해 옮긴 제목)</li>
+<li>저자: Noah Hass-Cohen, Joanna Clyde Findlay</li>
+<li>서문: Louis Cozolino, Frances Kaplan</li>
+<li>출판사: W. W. Norton &amp; Company</li>
+<li>발행일: 2015년 7월 6일</li>
+<li>판형·분량: 양장본, 496쪽</li>
+<li>ISBN-13: 978-0-393-71074-8</li>
+<li>총서: Norton Series on Interpersonal Neurobiology</li>
+<li>언어: 영어 원서</li>
+</ul>
+
+<figure class="mt-8 mx-auto max-w-48 text-center">
+<a href="https://wwnorton.com/books/9780393710748" rel="noopener noreferrer" target="_blank"><img src="/images/blog/art-therapy-neuroscience-relationships-book-cover.jpeg" alt="Art Therapy and the Neuroscience of Relationships, Creativity, and Resiliency 영어 원서 표지" width="300" height="452" loading="lazy" class="w-full h-auto rounded-xl border border-primary-100 shadow-sm" /></a>
+<figcaption class="mt-3 text-sm text-charcoal/60"><em>Art Therapy and the Neuroscience of Relationships, Creativity, and Resiliency</em> 표지 · <a href="https://wwnorton.com/books/9780393710748" rel="noopener noreferrer" target="_blank">이미지 출처: W. W. Norton &amp; Company</a></figcaption>
+</figure>
+
+`,
+
   "scribble-art-therapy-present-self": `
 <h2>무엇을 그려야 할지 모르겠는 날</h2>
 

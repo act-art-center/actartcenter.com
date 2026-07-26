@@ -20,6 +20,17 @@ export const BLOG_CATEGORIES = [
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "art-therapy-relational-neuroscience-review",
+    title: "관계는 몸과 감각을 지나 이미지로 이어집니다",
+    excerpt: "미술치료에서 손의 움직임과 매체의 감각, 치료자와 함께 작품을 바라보는 시간이 어떻게 관계와 회복의 경험으로 이어지는지 한 권의 책과 함께 살펴봅니다.",
+    category: "미술치료 저서 리뷰",
+    seoKeywords: ["미술치료와 신경과학", "미술치료 치료적 관계", "관계신경과학", "대인관계 신경생물학", "미술치료 공동 조절", "미술치료 책 추천"],
+    image: "/characters/therapist/therapist-walking-alongside.jpg",
+    date: "2026년 7월 26일",
+    author: "고은별",
+    readTime: "9분",
+  },
+  {
     slug: "scribble-art-therapy-present-self",
     title: "마음이 선을 따라 움직일 때: 난화로 만나는 지금의 나",
     excerpt: "무엇을 그려야 할지 막막한 날, 자유로운 선에서 시작해 현재의 감각과 마음을 살피는 난화의 미술치료적 과정을 소개합니다.",
