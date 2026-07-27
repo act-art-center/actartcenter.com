@@ -104,7 +104,7 @@ export function ServicesSection() {
         {/* Row 3: 특수·전문 영역 3개 카드 */}
         <div className="mt-14 lg:mt-16">
           <div className="flex items-baseline justify-between mb-5">
-            <h3 className="text-night text-lg font-semibold tracking-tight">특수·전문 영역 미술심리치료</h3>
+            <h3 className="text-night text-xl font-semibold tracking-tight">특수·전문 영역 미술심리치료</h3>
             <Link
               href="/act-approach"
               className="text-sm text-secondary-500 font-medium hover:underline underline-offset-4"
