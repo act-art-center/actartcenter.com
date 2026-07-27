@@ -1,4 +1,93 @@
 export const blogContent: Record<string, string> = {
+  "person-centered-expressive-arts-creative-connection-review": `
+<p><strong>책 제목: 《인간중심 표현예술치료: 창조적 연결》</strong></p>
+
+<p>빈 종이 앞에서 손이 쉽게 움직이는 날이 있습니다. 어느 날에는 색 하나를 고르는 데에도 시간이 오래 걸립니다. 마음속에 많은 이야기가 있어도 어떤 모습으로 꺼내야 할지 떠오르지 않을 때도 있습니다.</p>
+
+<p>나탈리 로저스의 《인간중심 표현예술치료: 창조적 연결》은 그 머뭇거림도 표현의 과정으로 바라봅니다. 미술, 움직임, 소리, 글쓰기, 즉흥극을 이어 가며 한 사람이 자신의 감정과 감각을 탐색하는 방법을 소개합니다.</p>
+
+<p>나탈리 로저스는 칼 로저스의 인간중심 접근을 표현예술과 연결했습니다. 사람에게는 자신을 이해하고 성장해 갈 힘이 있으며, 공감과 존중이 살아 있는 관계 안에서 그 힘이 움직인다고 봅니다. 표현은 마음속 경험에 색과 형태, 움직임을 건네는 통로가 됩니다.</p>
+
+<h2>하나의 표현이 다음 표현을 부릅니다</h2>
+
+<p>책에서 말하는 ‘창조적 연결’은 여러 예술 양식을 자연스럽게 이어 가는 과정입니다. 몸을 움직이며 느낀 감정을 그림으로 옮기고, 그 그림을 바라보며 떠오르는 문장을 적을 수 있습니다. 색과 선에서 시작한 경험이 소리나 움직임으로 이어지기도 합니다.</p>
+
+<p>말로 정리되기 전의 경험은 여러 표현으로 이어집니다. 손의 움직임이 색으로 남고, 색을 바라본 느낌이 짧은 글이 되면서 마음을 여러 방향에서 만날 수 있습니다.</p>
+
+<h2>표현을 재촉하지 않는 관계</h2>
+
+<p>이 책을 읽으며 저는 치료실에서 기다리는 시간의 의미를 다시 생각했습니다. 종이와 미술 매체가 준비되어 있어도 한 사람이 안전하다고 느끼기까지는 각자의 시간이 필요합니다. 치료자는 표현의 속도를 존중하고, 선택한 거리만큼 곁에 머뭅니다.</p>
+
+<p>작품을 보여 줄 범위와 설명할 부분도 참여자가 정합니다. 한동안 말없이 함께 바라볼 수 있고, 아직 이름 붙이기 어려운 부분은 그대로 둘 수 있습니다. 자신의 표현이 존중받는 경험은 다음 선을 이어 갈 수 있는 안정감을 만듭니다.</p>
+
+<h2>미술 매체는 감각과 마음을 잇습니다</h2>
+
+<p>미술치료의 관점에서 이 책을 읽을 때, 매체와 관계가 함께 작용한다는 점에 오래 머물렀습니다. 연필은 손의 힘과 움직임을 세밀하게 조절하도록 돕습니다. 수채물감은 색이 흐르고 만나는 경험을 열어 줍니다. 점토는 누르고 붙이며 형태를 변화시키는 촉각 경험을 전합니다.</p>
+
+<p>같은 매체도 사람과 상황에 따라 다르게 다가옵니다. 어떤 날에는 번지는 물감이 편안하고, 다른 날에는 단단한 연필과 작은 종이가 안정적으로 느껴질 수 있습니다. 미술치료사는 치료적 근거와 안전, 참여자의 현재 상태와 치료 목표를 살펴 매체와 작업 구조를 제안합니다. 선택의 중심에는 한 사람이 실제로 느끼는 경험이 놓입니다.</p>
+
+<h2>완성된 작품보다 작업하는 동안의 경험</h2>
+
+<p>표현예술 과정에서는 작품의 완성도보다 작업하며 알아차린 경험을 살핍니다. 손이 멈춘 순간, 특정한 색에 오래 머문 시간, 몸의 움직임이 달라진 지점도 소중한 단서가 됩니다.</p>
+
+<p>미술치료에서는 작품의 의미를 한 사람의 삶과 작업 과정, 치료적 관계 속에서 천천히 발견합니다. “이 부분을 바라볼 때 어떤 느낌이 드나요?”, “이 색과 조금 더 머물러 보고 싶으신가요?” 같은 질문은 자신의 이미지와 대화할 여백을 마련합니다.</p>
+
+<h2>치료사도 자신의 반응을 작업합니다</h2>
+
+<p>저에게 오래 남은 또 하나의 지점은 치료사도 표현예술을 직접 경험한다는 내용입니다. 미술 매체 앞에서 생기는 망설임과 긴장, 잘하고 싶은 마음을 살펴본 치료사는 참여자의 침묵과 머뭇거림을 더 세심하게 만날 수 있습니다.</p>
+
+<p>저 역시 회기 후 반응작업을 하며 말로 다 담기 어려웠던 장면을 다시 바라봅니다. 손이 선택한 색과 형태에는 치료 장면에서 느낀 감정과 몸의 반응이 남습니다. 그 이미지를 천천히 살피는 시간은 제가 서둘렀던 순간과 충분히 기다린 순간을 돌아보게 합니다. 치료사의 자기 경험은 한 사람의 표현을 더 열린 마음으로 만나는 임상적 훈련이 됩니다.</p>
+
+<h2>미술치료사의 시선으로 읽은 ‘창조적 연결’</h2>
+
+<p>이 책은 표현예술치료를 다룹니다. 미술치료는 고유한 이론적 배경과 훈련 체계를 지니며, 관계 안에서 창조성을 신뢰하고 과정의 경험을 존중한다는 관점은 미술치료 장면에도 중요한 질문을 건넵니다.</p>
+
+<ul>
+<li>나는 한 사람의 창조성과 선택을 충분히 신뢰하고 있는가?</li>
+<li>작품을 빠르게 이해하려는 마음을 내려두고 그 사람이 발견한 의미를 듣고 있는가?</li>
+<li>매체를 제안할 때 치료 목표와 함께 참여자의 속도와 감각을 살피고 있는가?</li>
+<li>침묵과 머뭇거림이 안전하게 머물 자리를 마련하고 있는가?</li>
+</ul>
+
+<h2>오늘 표현에 건네는 작은 질문</h2>
+
+<p>종이 한 장을 앞에 두고 손이 가는 색을 골라 보세요. 선 하나를 천천히 움직인 뒤 잠시 바라봅니다.</p>
+
+<blockquote><p>“이 선은 지금 나에게 어떤 느낌을 들려주고 있을까?”</p></blockquote>
+
+<p>바로 답이 떠오르지 않아도 표현은 이미 시작되었습니다. 자신의 속도로 곁에 머무는 시간이 다음 색과 다음 이야기를 불러올 수 있습니다.</p>
+
+<p>관계와 표현을 함께 살피는 미술치료 과정은 <a href="/art-therapy">미술치료란?</a>에서 확인하실 수 있습니다. 현재 상황에 맞는 상담 가능 여부는 <a href="/booking">첫 상담 예약</a>에서 문의해 주세요.</p>
+
+<hr />
+<h3>서지 및 내용 확인</h3>
+<ul class="references">
+<li><a href="https://lib.paju.go.kr/grlib/menu/11200/program/30008/plusSearchResultDetail.do?recKey=1670100951&amp;bookKey=1670100953&amp;publishFormCode=BO" rel="noopener noreferrer" target="_blank">파주교하도서관 서지 레코드</a>: 저자, 공역자, 출판사, 발행연도, 원제와 ISBN을 확인했습니다.</li>
+<li><a href="https://www.personcenteredexpressivearts.com/about" rel="noopener noreferrer" target="_blank">Person-Centered Expressive Arts 공식 소개</a>: 창조적 연결과 인간중심 표현예술의 원리를 확인했습니다.</li>
+<li><a href="https://www.personcenteredexpressivearts.com/natalie-rogers" rel="noopener noreferrer" target="_blank">나탈리 로저스 공식 저자 소개</a>: 저자의 경력과 활동을 확인했습니다.</li>
+<li><a href="https://openlibrary.org/works/OL1918887W" rel="noopener noreferrer" target="_blank">Open Library 원서 기록</a>: 원서명과 초판 연도를 교차 확인했습니다.</li>
+<li><a href="https://www.yes24.com/product/goods/2690567" rel="noopener noreferrer" target="_blank">YES24 한국어판 도서정보</a>: 한국어판 발행일, ISBN, 책 소개와 표지를 확인했습니다.</li>
+</ul>
+
+<hr />
+<h3>책 정보</h3>
+<ul class="references">
+<li>제목: 《인간중심 표현예술치료: 창조적 연결》</li>
+<li>원제: <em>The Creative Connection: Expressive Arts as Healing</em></li>
+<li>저자: 나탈리 로저스(Natalie Rogers)</li>
+<li>옮긴이: 이정명·전미향·전태옥</li>
+<li>출판사: 시그마프레스</li>
+<li>한국어판 발행: 2007년 8월 30일</li>
+<li>ISBN: 978-89-5832-388-4</li>
+</ul>
+
+<figure class="mt-8 mx-auto max-w-48 text-center">
+<a href="https://www.yes24.com/product/goods/2690567" rel="noopener noreferrer" target="_blank"><img src="/images/blog/person-centered-expressive-arts-book-cover.jpg" alt="나탈리 로저스의 인간중심 표현예술치료 창조적 연결 한국어판 표지" width="317" height="400" loading="lazy" class="w-full h-auto rounded-xl border border-primary-100 shadow-sm" /></a>
+<figcaption class="mt-3 text-sm text-charcoal/60">《인간중심 표현예술치료: 창조적 연결》 표지 · <a href="https://www.yes24.com/product/goods/2690567" rel="noopener noreferrer" target="_blank">이미지 출처: YES24</a></figcaption>
+</figure>
+
+`,
+
   "art-therapy-relational-neuroscience-review": `
 <p><strong>책 제목: <em>Art Therapy and the Neuroscience of Relationships, Creativity, and Resiliency: Skills and Practices</em></strong></p>
 

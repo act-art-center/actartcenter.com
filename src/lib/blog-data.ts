@@ -20,6 +20,17 @@ export const BLOG_CATEGORIES = [
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "person-centered-expressive-arts-creative-connection-review",
+    title: "표현을 이끄는 힘은 안전한 관계에서 시작됩니다",
+    excerpt: "나탈리 로저스의 《인간중심 표현예술치료: 창조적 연결》을 미술치료사의 시선으로 읽으며, 한 사람의 속도와 선택을 존중하는 관계가 표현을 어떻게 받쳐 주는지 나눕니다.",
+    category: "미술치료 저서 리뷰",
+    seoKeywords: ["인간중심 표현예술치료", "나탈리 로저스", "창조적 연결", "미술치료 책 추천", "표현예술치료", "치료적 관계", "미술치료 매체"],
+    image: "/images/blog/person-centered-expressive-arts-book-cover.jpg",
+    date: "2026년 7월 27일",
+    author: "고은별",
+    readTime: "8분",
+  },
+  {
     slug: "art-therapy-relational-neuroscience-review",
     title: "관계는 몸과 감각을 지나 이미지로 이어집니다",
     excerpt: "미술치료에서 손의 움직임과 매체의 감각, 치료자와 함께 작품을 바라보는 시간이 어떻게 관계와 회복의 경험으로 이어지는지 한 권의 책과 함께 살펴봅니다.",

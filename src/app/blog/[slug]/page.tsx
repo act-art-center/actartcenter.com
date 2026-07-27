@@ -142,7 +142,12 @@ export default async function BlogPostPage({ params }: Props) {
   const isPublisherBookCover = post.image.includes("-book-cover.");
   const bookCoverSource = post.slug === "art-therapy-relational-neuroscience-review"
     ? "W. W. Norton & Company"
-    : "알라딘";
+    : post.slug === "person-centered-expressive-arts-creative-connection-review"
+      ? "YES24"
+      : "알라딘";
+  const bookCoverAspect = post.slug === "person-centered-expressive-arts-creative-connection-review"
+    ? "aspect-[317/400]"
+    : "aspect-[300/452]";
 
   return (
     <>
@@ -184,7 +189,7 @@ export default async function BlogPostPage({ params }: Props) {
       <div className={`relative w-full mx-auto px-6 -mt-2 ${isPublisherBookCover ? "max-w-md" : "max-w-4xl"}`}>
         <div className={`${isPublisherBookCover ? "rounded-2xl overflow-hidden bg-[#f4efe7] p-4" : "aspect-[21/9] rounded-2xl overflow-hidden bg-[#f4efe7] p-3"}`}>
           <div className={`${isPublisherBookCover ? "mx-auto flex max-w-[300px] flex-col overflow-hidden rounded-md bg-white" : "mx-auto flex h-full max-w-full aspect-square flex-col overflow-hidden rounded-md bg-white"}`}>
-            <div className={`${isPublisherBookCover ? "relative aspect-[300/452]" : "relative min-h-0 flex-1"}`}>
+            <div className={`${isPublisherBookCover ? `relative ${bookCoverAspect}` : "relative min-h-0 flex-1"}`}>
               <Image
                 src={post.image}
                 alt={`${post.title} 블로그 커버`}
