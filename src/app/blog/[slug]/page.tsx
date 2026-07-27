@@ -139,6 +139,7 @@ export default async function BlogPostPage({ params }: Props) {
   const content = blogContent[slug];
   const relatedPosts = BLOG_POSTS.filter((p) => p.slug !== slug && p.category === post.category).slice(0, 2);
   const isoDate = isoFromKoreanDate(post.date);
+  const isPublisherBookCover = post.slug === "art-therapy-relational-neuroscience-review";
 
   return (
     <>
@@ -177,22 +178,28 @@ export default async function BlogPostPage({ params }: Props) {
       </section>
 
       {/* Featured Image */}
-      <div className="relative w-full max-w-4xl mx-auto px-6 -mt-2">
-        <div className="aspect-[21/9] rounded-2xl overflow-hidden bg-[#f4efe7] p-3">
-          <div className="mx-auto flex h-full max-w-full aspect-square flex-col overflow-hidden rounded-md bg-white">
-            <div className="relative min-h-0 flex-1">
+      <div className={`relative w-full mx-auto px-6 -mt-2 ${isPublisherBookCover ? "max-w-md" : "max-w-4xl"}`}>
+        <div className={`${isPublisherBookCover ? "rounded-2xl overflow-hidden bg-[#f4efe7] p-4" : "aspect-[21/9] rounded-2xl overflow-hidden bg-[#f4efe7] p-3"}`}>
+          <div className={`${isPublisherBookCover ? "mx-auto flex max-w-[300px] flex-col overflow-hidden rounded-md bg-white" : "mx-auto flex h-full max-w-full aspect-square flex-col overflow-hidden rounded-md bg-white"}`}>
+            <div className={`${isPublisherBookCover ? "relative aspect-[300/452]" : "relative min-h-0 flex-1"}`}>
               <Image
                 src={post.image}
                 alt={`${post.title} 블로그 커버`}
                 fill
                 priority
                 className="object-contain"
-                sizes="(max-width: 896px) 42vw, 360px"
+                sizes={isPublisherBookCover ? "(max-width: 640px) calc(100vw - 90px), 300px" : "(max-width: 896px) 42vw, 360px"}
               />
             </div>
-            <p className="shrink-0 bg-white px-3 pb-2 text-right text-[11px] leading-relaxed text-charcoal/45">
-              (c)ACT ART CENTER
-            </p>
+            {isPublisherBookCover ? (
+              <p className="shrink-0 bg-white px-3 pb-2 text-center text-[11px] leading-relaxed text-charcoal/55">
+                이미지 출처: W. W. Norton &amp; Company
+              </p>
+            ) : (
+              <p className="shrink-0 bg-white px-3 pb-2 text-right text-[11px] leading-relaxed text-charcoal/45">
+                (c)ACT ART CENTER
+              </p>
+            )}
           </div>
         </div>
       </div>

@@ -25,7 +25,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt: "미술치료에서 손의 움직임과 매체의 감각, 치료자와 함께 작품을 바라보는 시간이 어떻게 관계와 회복의 경험으로 이어지는지 한 권의 책과 함께 살펴봅니다.",
     category: "미술치료 저서 리뷰",
     seoKeywords: ["미술치료와 신경과학", "미술치료 치료적 관계", "관계신경과학", "대인관계 신경생물학", "미술치료 공동 조절", "미술치료 책 추천"],
-    image: "/characters/therapist/two-women-walking-flowers-brush.jpg",
+    image: "/images/blog/art-therapy-neuroscience-relationships-book-cover.jpeg",
     date: "2026년 7월 26일",
     author: "고은별",
     readTime: "9분",

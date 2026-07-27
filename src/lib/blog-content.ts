@@ -1,5 +1,7 @@
 export const blogContent: Record<string, string> = {
   "art-therapy-relational-neuroscience-review": `
+<p><strong>책 제목: <em>Art Therapy and the Neuroscience of Relationships, Creativity, and Resiliency: Skills and Practices</em></strong></p>
+
 <p>빈 종이를 앞에 두면 생각보다 몸이 먼저 반응합니다. 연필을 단단히 쥐기도 하고, 손끝으로 종이 가장자리를 만져 보기도 합니다. 선을 시작하기 전 잠시 숨을 고르거나 물감이 번지는 모습을 바라보며 어깨의 힘이 조금 풀리기도 합니다.</p>
 
 <p>미술치료에서는 이런 작은 움직임도 소중하게 살핍니다. 마음은 말과 함께 몸의 감각, 움직임, 색과 형태를 통해서도 모습을 드러냅니다.</p>
