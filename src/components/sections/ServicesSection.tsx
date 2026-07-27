@@ -66,7 +66,7 @@ export function ServicesSection() {
         {/* Row 1: 오픈스튜디오 및 검사·상담 — 데스크톱 좌우 2열 */}
         <div className="mt-12 lg:mt-16">
           <div className="flex flex-col items-end gap-2 mb-5 lg:flex-row lg:items-baseline lg:justify-between">
-            <h3 className="w-full min-w-0 flex-1 text-night text-lg font-semibold leading-snug tracking-tight sm:text-xl lg:text-2xl">
+            <h3 className="w-full min-w-0 flex-1 text-night text-xl font-semibold leading-snug tracking-tight sm:text-[22px] lg:text-[26px]">
               오픈스튜디오 원데이 클래스 / 그림검사 / TCI 기질·성격검사
             </h3>
             <Link
