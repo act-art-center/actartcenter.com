@@ -255,9 +255,11 @@ export default function IndividualPage() {
               <p className="mt-6 text-charcoal/80 leading-[var(--leading-normal)]">
                 혼자 정리되지 않는 마음을, 한 사람의 속도로 함께 풀어 봅니다.
                 불안, 번아웃, 산후 우울, 트라우마, 정체성 전환기 등 언어로
-                꺼내기 어려운 경험을 미술 매체와 ACT 수용전념치료(Acceptance
-                and Commitment Therapy)로 탐색합니다. 결과물의 완성도가 아니라
-                과정에서 떠오르는 감각과 이야기를 중심으로 작업합니다.
+                꺼내기 어려운 경험을 미술 매체와 작품을 통해 표현하고, 미술치료를
+                중심으로 그 의미를 탐색합니다. ACT 수용전념치료의 관점은 작업
+                과정에서 지금의 경험을 알아차리고 삶의 방향을 살피는 데 보조적으로
+                참고합니다. 결과물의 완성도가 아니라 표현하고 탐색하는 과정을
+                중심으로 작업합니다.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <span className="px-3 py-1.5 bg-cream rounded-lg text-sm text-charcoal/70">50분 세션</span>
