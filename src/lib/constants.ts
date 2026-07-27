@@ -494,7 +494,7 @@ export const FAQ_ITEMS: ReadonlyArray<{
   // ── ACT 수용전념치료 ────────────────────────────────────────────
   {
     category: "act",
-    question: "ACT란 무엇인가요?",
+    question: "ACT 미술치료란 무엇인가요?",
     answer:
       "ACT(Acceptance and Commitment Therapy, 수용전념치료)는 3세대 인지행동치료의 하나로, 심리적 유연성을 높이는 것을 목표로 합니다. 수용·인지적 탈융합·현재 순간 접촉·맥락으로서의 자기·가치·전념 행동의 6가지 핵심 프로세스를 통해 의미 있는 삶을 살 수 있도록 돕습니다.",
   },
