@@ -139,7 +139,10 @@ export default async function BlogPostPage({ params }: Props) {
   const content = blogContent[slug];
   const relatedPosts = BLOG_POSTS.filter((p) => p.slug !== slug && p.category === post.category).slice(0, 2);
   const isoDate = isoFromKoreanDate(post.date);
-  const isPublisherBookCover = post.slug === "art-therapy-relational-neuroscience-review";
+  const isPublisherBookCover = post.image.includes("-book-cover.");
+  const bookCoverSource = post.slug === "art-therapy-relational-neuroscience-review"
+    ? "W. W. Norton & Company"
+    : "알라딘";
 
   return (
     <>
@@ -193,7 +196,7 @@ export default async function BlogPostPage({ params }: Props) {
             </div>
             {isPublisherBookCover ? (
               <p className="shrink-0 bg-white px-3 pb-2 text-center text-[11px] leading-relaxed text-charcoal/55">
-                이미지 출처: W. W. Norton &amp; Company
+                이미지 출처: {bookCoverSource}
               </p>
             ) : (
               <p className="shrink-0 bg-white px-3 pb-2 text-right text-[11px] leading-relaxed text-charcoal/45">

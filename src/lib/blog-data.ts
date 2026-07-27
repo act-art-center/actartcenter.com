@@ -69,7 +69,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt: "Barbara J. Fish의 미술 기반 슈퍼비전을 읽고, 회기 후 꾸준히 이어온 반응작업이 치료 장면과 치료사 자신의 반응을 통찰하는 시선을 어떻게 길러주는지 나눕니다.",
     category: "미술치료 저서 리뷰",
     seoKeywords: ["미술치료 슈퍼비전", "반응작업", "반응미술", "미술 기반 슈퍼비전", "Barbara J. Fish", "미술치료사 성찰"],
-    image: "/characters/therapist/therapist-drawing-response-art.jpg",
+    image: "/images/blog/art-based-supervision-book-cover.jpg",
     date: "2026년 7월 24일",
     author: "고은별",
     readTime: "9분",
