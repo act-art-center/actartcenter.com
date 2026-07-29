@@ -423,7 +423,7 @@ export default function PricingPage() {
                 href="/services/open-studio"
                 className="text-primary-500 underline underline-offset-2"
               >
-                &lt;오픈 스튜디오 원데이 클래스&gt;
+                오픈 스튜디오 원데이 클래스
               </Link>
               {"부터 천천히 참여해보세요."}
             </p>
