@@ -115,6 +115,7 @@ const pricingSchema = {
             price: "100000",
             priceCurrency: "KRW",
           },
+          itemOffered: { "@id": `${SITE_URL}/services/tci#service` },
         },
         {
           "@type": "Offer",
@@ -195,11 +196,11 @@ const pricing = [
     href: "/services/online",
   },
   {
-    service: "TCI 기질·성격검사 :",
+    service: "TCI 기질·성격검사",
     duration: "검사 + 그림 + 해석 상담",
     price: "100,000원",
     note: "",
-    href: "/services/drawing-assessment",
+    href: "/services/tci",
   },
   {
     service: "그림검사 및 상담",
