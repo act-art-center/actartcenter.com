@@ -188,9 +188,11 @@ export default function CharactersPage() {
                     <div className="relative aspect-square">
                       <Image src={moment.image} alt={moment.title} fill className="object-contain" sizes="(max-width: 768px) 100vw, 260px" />
                     </div>
-                    <p className="bg-white py-2 text-center text-[11px] leading-relaxed text-charcoal/45">
-                      (c)ACT ART CENTER
-                    </p>
+                    {moment.image !== "/characters/therapist/two-women-walking-flowers-brush.jpg" && (
+                      <p className="bg-white py-2 text-center text-[11px] leading-relaxed text-charcoal/45">
+                        (c)ACT ART CENTER
+                      </p>
+                    )}
                   </div>
                   <h3 className="mt-5 text-night font-semibold">{moment.title}</h3>
                   <p className="mt-2 text-charcoal/70 text-sm leading-relaxed">{moment.body}</p>
