@@ -10,7 +10,7 @@ import { SITE_URL } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "아동·청소년 미술치료 — 발달 단계별 미술 접근",
   description:
-    "만 5세부터 청소년까지. 발달 단계에 맞춘 미술 매체와 표현 과정을 통해 정서 조절·또래 관계·학교 적응·트라우마를 다룹니다. 매 세션 후 부모 상담 10분과 아동 미술치료 10회기당 보호자 미술치료 1회기 및 심층 상담을 제공합니다.",
+    "장애·비장애를 구분하지 않고 만 5세부터 청소년까지 참여할 수 있습니다. 발달 단계에 맞춘 미술 매체와 표현 과정을 중심으로 진행하며, 매 회기 후 부모 상담 10분과 아동·청소년 미술치료 10회기마다 보호자 미술치료 1회기 및 심층 상담을 제공합니다.",
   keywords: [
     "아동 미술치료",
     "청소년 미술치료",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     type: "website",
     title: "아동·청소년 미술치료 — 발달 단계별 미술 접근",
     description:
-      "만 5세부터. 매 세션 후 부모 상담을 병행하고, 아동 미술치료 10회기당 보호자 미술치료 1회기 및 심층 상담을 제공합니다.",
+      "장애·비장애를 구분하지 않고 만 5세부터 참여할 수 있습니다. 매 회기 후 부모 상담과 아동·청소년 미술치료 10회기마다 보호자 미술치료 1회기 및 심층 상담을 제공합니다.",
     url: `${SITE_URL}/services/child`,
     images: [
       {
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "아동·청소년 미술치료 — 발달 단계별 미술 접근",
     description:
-      "아동의 발달 단계에 맞는 매체와 거리감으로 함께 설계하며, 10회기당 보호자 미술치료 1회기 및 심층 상담을 제공합니다.",
+      "장애·비장애를 구분하지 않고 발달 단계와 표현 속도에 맞추어 함께하며, 10회기마다 보호자 미술치료 1회기 및 심층 상담을 제공합니다.",
     images: ["/og/services-child.png"],
   },
 };
@@ -64,7 +64,7 @@ const childServiceSchema = {
       name: "아동·청소년 미술치료",
       alternateName: "Child & Adolescent Art Therapy",
       description:
-        "만 5세~18세 대상 발달 단계별 미술심리상담. 발달 단계에 맞춘 미술 매체와 표현 과정을 중심으로 정서 조절, 또래 관계, 학교 적응, 트라우마 개입을 다룹니다. 매 세션 후 부모 상담 10분과 아동 미술치료 10회기당 보호자 미술치료 1회기 및 심층 상담을 제공합니다.",
+        "장애·비장애를 구분하지 않고 만 5세~18세 아동·청소년이 참여할 수 있는 발달 단계별 미술치료입니다. 발달 단계에 맞춘 미술 매체와 표현 과정을 중심으로 진행하며, 매 회기 후 부모 상담 10분과 아동·청소년 미술치료 10회기마다 보호자 미술치료 1회기 및 심층 상담을 제공합니다.",
       url: `${SITE_URL}/services/child`,
       image: `${SITE_URL}/og/services-child.png`,
       therapyType: "Art Therapy",
@@ -257,16 +257,26 @@ export default function ChildPage() {
                 아동·청소년 미술치료 — 발달 단계별 미술 접근
               </h1>
               <p className="mt-6 text-charcoal/80 leading-[var(--leading-normal)]">
-                아동·청소년은 어른과 같은 방식으로 감정을 말로 정리하기 어렵습니다.
-                본 센터는 발달 단계에 맞춘 미술 매체와 표현 과정을 중심으로, 아동·청소년의 발달
-                단계와 기질에 맞는 '표현의 통로'를 함께 설계합니다. 매 세션
-                후에는 10분 부모 상담을 통해 가정에서의 지원 방식까지 함께
-                조율합니다.
+                아동·청소년은 어른과 같은 방식으로 감정을 말로 정리하기 어려울 수 있습니다.
+                본 센터는 발달 단계에 맞춘 미술 매체와 표현 과정을 중심으로, 각자의 발달 특성과
+                기질에 맞는 ‘표현의 통로’를 함께 만들어 갑니다.
               </p>
               <p className="mt-4 text-charcoal/80 leading-[var(--leading-normal)]">
-                아동·청소년 미술치료 프로그램은 발달 단계와 정서, 부모 상담에서 확인한
-                생활 맥락, 첫 회기 관찰을 함께 살펴 세션 목표와 매체를 정합니다.
+                장애·비장애를 구분하지 않고 만 5~18세 아동·청소년 누구나 참여할 수 있습니다.
+                첫 상담에서 한 사람의 감각과 속도, 필요한 지원을 세심하게 살펴 편안한 참여 방식을
+                함께 정합니다.
               </p>
+              <div className="mt-5 rounded-xl bg-cream px-5 py-4 text-sm text-charcoal/80 leading-relaxed">
+                <p>
+                  매 회기 후에는 <strong className="text-night">10분 부모 상담</strong>을 통해
+                  가정에서의 지원 방향을 함께 조율합니다.
+                </p>
+                <p className="mt-2">
+                  이와 별도로, <strong className="text-night">아동·청소년 미술치료 10회기마다
+                  보호자 미술치료 1회기와 심층 상담</strong>을 제공합니다. 보호자께서도 자신의
+                  마음을 돌보며 아이와 가족에게 맞는 지원 방향을 함께 찾아갑니다.
+                </p>
+              </div>
               <div className="mt-6 flex flex-wrap gap-3">
                 <span className="px-3 py-1.5 bg-cream rounded-lg text-sm text-charcoal/70">아동·청소년 40분 + 부모 10분</span>
                 <span className="px-3 py-1.5 bg-cream rounded-lg text-sm text-charcoal/70">만 5~18세</span>
@@ -302,9 +312,9 @@ export default function ChildPage() {
               발달 단계별 접근
             </h2>
             <p className="mt-4 text-charcoal/70 text-sm leading-relaxed">
-              같은 '미술치료'라도 5살 아동과 16살 청소년에게 필요한 매체와
+              같은 ‘미술치료’라도 5살 아동과 16살 청소년에게 필요한 매체와
               언어는 다릅니다. Judith Rubin의 『Child Art Therapy』는 아동
-              미술치료의 출발점을 '아동의 발달 단계에 맞는 매체와 거리감'으로
+              미술치료의 출발점을 ‘아동의 발달 단계에 맞는 매체와 거리감’으로
               정리한 바 있으며, 본 센터의 설계도 이를 따릅니다.
             </p>
           </div>
@@ -395,13 +405,13 @@ export default function ChildPage() {
                 협력이 아동 치료 결과의 핵심 변인</strong>이라는 점입니다.
               </p>
               <p className="mt-4 text-charcoal/80 leading-[var(--leading-normal)]">
-                본 센터의 10분 부모 상담은 '가정에서의 일주일'과 '세션 공간에서의
-                50분'을 잇는 다리입니다. 같은 주제를 양쪽에서 조율할 수 있을
+                본 센터의 10분 부모 상담은 ‘가정에서의 일주일’과 ‘세션 공간에서의
+                50분’을 잇는 다리입니다. 같은 주제를 양쪽에서 조율할 수 있을
                 때, 변화의 속도가 달라집니다. 첫 상담은 아동 없이 부모님만
                 방문하셔서 아동의 상태를 충분히 나눠 주시면 됩니다.
               </p>
               <p className="mt-4 rounded-xl bg-cream px-5 py-4 text-charcoal/90 leading-[var(--leading-normal)]">
-                <strong>아동 미술치료 10회기당 보호자 미술치료 1회기 및 심층 상담을 제공합니다.</strong>
+                <strong>아동·청소년 미술치료 10회기마다 보호자 미술치료 1회기 및 심층 상담을 제공합니다.</strong>
               </p>
             </div>
             <div>
@@ -443,7 +453,7 @@ export default function ChildPage() {
               비밀유지와 공유의 범위
             </h2>
             <p className="mt-4 text-charcoal/70 text-sm leading-relaxed">
-              아동의 자발적 표현이 유지되려면, 아동 스스로 '여기서는 안전하다'고
+              아동의 자발적 표현이 유지되려면, 아동 스스로 ‘여기서는 안전하다’고
               느껴야 합니다. 본 센터는 다음 세 가지 원칙을 첫 회기에 아동·부모와
               모두 명시적으로 공유합니다.
             </p>
@@ -549,7 +559,7 @@ export default function ChildPage() {
               <p className="text-primary-500 text-xs font-semibold tracking-wide uppercase">For Parents</p>
               <h3 className="mt-2 text-night font-semibold">부모 자기돌봄 그룹</h3>
               <p className="mt-2 text-charcoal/70 text-sm leading-relaxed">
-                같은 결의 부모님들과 함께 '부모 역할 안에서의 나'를 돌보는 소그룹 트랙입니다.
+                같은 결의 부모님들과 함께 ‘부모 역할 안에서의 나’를 돌보는 소그룹 트랙입니다.
               </p>
             </Link>
             <Link
