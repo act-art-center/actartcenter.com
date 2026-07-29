@@ -53,7 +53,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: post.title,
       description: post.excerpt,
       url,
-      images: [{ url: post.image, width: 1200, height: 630, alt: post.title }],
+      images: [{
+        url: post.image,
+        width: post.bookCover?.width ?? 1200,
+        height: post.bookCover?.height ?? 630,
+        alt: post.title,
+      }],
       publishedTime: publishedIso,
       modifiedTime: publishedIso,
       authors: [`${SITE_URL}/team`],
@@ -98,8 +103,8 @@ function buildBlogPostingSchema(post: BlogPost) {
         image: {
           "@type": "ImageObject",
           url: post.image,
-          width: 1200,
-          height: 675,
+          width: post.bookCover?.width ?? 1200,
+          height: post.bookCover?.height ?? 675,
         },
         url,
         mainEntityOfPage: url,
@@ -139,15 +144,8 @@ export default async function BlogPostPage({ params }: Props) {
   const content = blogContent[slug];
   const relatedPosts = BLOG_POSTS.filter((p) => p.slug !== slug && p.category === post.category).slice(0, 2);
   const isoDate = isoFromKoreanDate(post.date);
-  const isPublisherBookCover = post.image.includes("-book-cover.");
-  const bookCoverSource = post.slug === "art-therapy-relational-neuroscience-review"
-    ? "W. W. Norton & Company"
-    : post.slug === "person-centered-expressive-arts-creative-connection-review"
-      ? "YES24"
-      : "알라딘";
-  const bookCoverAspect = post.slug === "person-centered-expressive-arts-creative-connection-review"
-    ? "aspect-[317/400]"
-    : "aspect-[300/452]";
+  const bookCover = post.bookCover;
+  const isPublisherBookCover = Boolean(bookCover);
 
   return (
     <>
@@ -189,7 +187,10 @@ export default async function BlogPostPage({ params }: Props) {
       <div className={`relative w-full mx-auto px-6 -mt-2 ${isPublisherBookCover ? "max-w-md" : "max-w-4xl"}`}>
         <div className={`${isPublisherBookCover ? "rounded-2xl overflow-hidden bg-[#f4efe7] p-4" : "aspect-[21/9] rounded-2xl overflow-hidden bg-[#f4efe7] p-3"}`}>
           <div className={`${isPublisherBookCover ? "mx-auto flex max-w-[300px] flex-col overflow-hidden rounded-md bg-white" : "mx-auto flex h-full max-w-full aspect-square flex-col overflow-hidden rounded-md bg-white"}`}>
-            <div className={`${isPublisherBookCover ? `relative ${bookCoverAspect}` : "relative min-h-0 flex-1"}`}>
+            <div
+              className={isPublisherBookCover ? "relative" : "relative min-h-0 flex-1"}
+              style={bookCover ? { aspectRatio: `${bookCover.width} / ${bookCover.height}` } : undefined}
+            >
               <Image
                 src={post.image}
                 alt={`${post.title} 블로그 커버`}
@@ -201,7 +202,14 @@ export default async function BlogPostPage({ params }: Props) {
             </div>
             {isPublisherBookCover ? (
               <p className="shrink-0 bg-white px-3 pb-2 text-center text-[11px] leading-relaxed text-charcoal/55">
-                이미지 출처: {bookCoverSource}
+                <a
+                  href={bookCover?.sourceUrl}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  className="underline underline-offset-2 hover:text-primary-600"
+                >
+                  이미지 출처: {bookCover?.sourceLabel}
+                </a>
               </p>
             ) : (
               <p className="shrink-0 bg-white px-3 pb-2 text-right text-[11px] leading-relaxed text-charcoal/45">

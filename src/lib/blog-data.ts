@@ -8,6 +8,12 @@ export type BlogPost = {
   date: string;
   author: string;
   readTime: string;
+  bookCover?: {
+    width: number;
+    height: number;
+    sourceLabel: string;
+    sourceUrl: string;
+  };
 };
 
 export const BLOG_CATEGORIES = [
@@ -20,6 +26,40 @@ export const BLOG_CATEGORIES = [
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "art-therapy-sourcebook-review",
+    title: "그림을 잘 그려야 한다는 마음이 먼저 찾아올 때",
+    excerpt: "캐시 A. 말키오디의 《The Art Therapy Sourcebook》을 통해 미술치료의 기본 원리, 창작 과정, 감정 표현, 매체 선택과 치료적 관계를 따뜻한 언어로 살펴봅니다.",
+    category: "미술치료 저서 리뷰",
+    seoKeywords: ["미술치료 책 추천", "미술치료 소스북", "캐시 말키오디", "미술치료 원리", "미술치료 매체", "미술치료 그림 해석"],
+    image: "/images/blog/art-therapy-sourcebook-book-cover.jpg",
+    date: "2026년 7월 28일",
+    author: "고은별",
+    readTime: "9분",
+    bookCover: {
+      width: 398,
+      height: 500,
+      sourceLabel: "Open Library",
+      sourceUrl: "https://openlibrary.org/books/OL7301414M/Art_Therapy_Sourcebook_(Sourcebooks)",
+    },
+  },
+  {
+    slug: "handbook-of-art-therapy-case-dalley-review",
+    title: "치료실에는 이미지도 함께 앉아 있습니다",
+    excerpt: "캐럴라인 케이스와 테사 달리의 《The Handbook of Art Therapy》를 통해 이미지 제작, 치료적 관계, 미술치료실의 환경과 경계, 미술치료사의 임상적 역할을 살펴봅니다.",
+    category: "미술치료 저서 리뷰",
+    seoKeywords: ["미술치료 책 추천", "미술치료 핸드북", "캐럴라인 케이스", "테사 달리", "미술치료 치료적 관계", "미술치료실 환경"],
+    image: "/images/blog/handbook-art-therapy-book-cover.jpg",
+    date: "2026년 7월 27일",
+    author: "고은별",
+    readTime: "8분",
+    bookCover: {
+      width: 335,
+      height: 500,
+      sourceLabel: "Open Library · Routledge",
+      sourceUrl: "https://openlibrary.org/isbn/9780415815796",
+    },
+  },
+  {
     slug: "person-centered-expressive-arts-creative-connection-review",
     title: "표현을 이끄는 힘은 안전한 관계에서 시작됩니다",
     excerpt: "나탈리 로저스의 《인간중심 표현예술치료: 창조적 연결》을 미술치료사의 시선으로 읽으며, 한 사람의 속도와 선택을 존중하는 관계가 표현을 어떻게 받쳐 주는지 나눕니다.",
@@ -29,6 +69,12 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "2026년 7월 27일",
     author: "고은별",
     readTime: "8분",
+    bookCover: {
+      width: 317,
+      height: 400,
+      sourceLabel: "YES24",
+      sourceUrl: "https://www.yes24.com/product/goods/2690567",
+    },
   },
   {
     slug: "art-therapy-relational-neuroscience-review",
@@ -40,6 +86,12 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "2026년 7월 26일",
     author: "고은별",
     readTime: "9분",
+    bookCover: {
+      width: 300,
+      height: 453,
+      sourceLabel: "W. W. Norton & Company",
+      sourceUrl: "https://wwnorton.com/books/9780393710748",
+    },
   },
   {
     slug: "scribble-art-therapy-present-self",
@@ -84,6 +136,63 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "2026년 7월 24일",
     author: "고은별",
     readTime: "9분",
+    bookCover: {
+      width: 500,
+      height: 742,
+      sourceLabel: "알라딘",
+      sourceUrl: "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=357631197",
+    },
+  },
+  {
+    slug: "art-therapy-an-introduction-rubin-review",
+    title: "기법보다 먼저 만나는 미술치료의 전체 지도",
+    excerpt: "주디스 A. 루빈의 《미술치료학 개론》을 통해 미술치료의 역사와 이론, 평가, 임상 현장과 전문 윤리를 한눈에 살펴봅니다.",
+    category: "미술치료 저서 리뷰",
+    seoKeywords: ["미술치료학 개론", "주디스 루빈", "미술치료 책 추천", "미술치료 이론", "미술치료 평가", "미술치료 윤리"],
+    image: "/images/blog/art-therapy-introduction-book-cover.jpg",
+    date: "2026년 7월 23일",
+    author: "고은별",
+    readTime: "7분",
+    bookCover: {
+      width: 320,
+      height: 400,
+      sourceLabel: "YES24 · 학지사",
+      sourceUrl: "https://www.yes24.com/product/goods/1934812",
+    },
+  },
+  {
+    slug: "self-in-picture-gisela-schmeer-review",
+    title: "그림 안에서 만나는 자아",
+    excerpt: "기젤라 슈메어의 《그림 속의 나》를 읽으며 그림 속 자아의 표현과 보호, 치료적 관계, 한 사람의 삶을 오래 바라보는 미술치료사의 태도를 나눕니다.",
+    category: "미술치료 저서 리뷰",
+    seoKeywords: ["그림 속의 나", "기젤라 슈메어", "미술치료 책 추천", "정신역동 미술치료", "그림 속 자아", "치료적 관계"],
+    image: "/images/blog/self-in-picture-book-cover.jpg",
+    date: "2026년 7월 22일",
+    author: "고은별",
+    readTime: "7분",
+    bookCover: {
+      width: 279,
+      height: 400,
+      sourceLabel: "YES24 · 학지사",
+      sourceUrl: "https://www.yes24.com/product/goods/1423421",
+    },
+  },
+  {
+    slug: "pediatric-cancer-drawings-art-therapy-susan-bach-review",
+    title: "그림을 해석하기 전에, 한 아이의 삶을 오래 바라보는 일",
+    excerpt: "수잔 바흐의 《소아암 중환아의 그림과 미술치료》를 읽으며 중증 질환 아동의 그림을 성급히 해석하지 않고, 연작과 삶의 맥락을 오래 살피는 임상적·윤리적 태도를 돌아봅니다.",
+    category: "미술치료 저서 리뷰",
+    seoKeywords: ["소아암 중환아의 그림과 미술치료", "수잔 바흐", "소아암 미술치료", "중환아 미술치료", "아동 그림 해석", "미술치료 임상 기록"],
+    image: "/images/blog/pediatric-cancer-drawings-art-therapy-book-cover.jpg",
+    date: "2026년 7월 22일",
+    author: "고은별",
+    readTime: "8분",
+    bookCover: {
+      width: 894,
+      height: 1200,
+      sourceLabel: "YES24 · 학지사",
+      sourceUrl: "https://www.yes24.com/product/goods/142813733",
+    },
   },
   {
     slug: "winnicott-container-art-therapy",
