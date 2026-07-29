@@ -10,7 +10,7 @@ import { SITE_URL } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "아동·청소년 미술치료 — 발달 단계별 미술 접근",
   description:
-    "만 5세부터 청소년까지. 발달 단계에 맞춘 미술 매체와 표현 과정을 통해 정서 조절·또래 관계·학교 적응·트라우마를 다루는 발달 단계별 미술심리상담. 매 세션 후 부모 상담 10분 포함, Judith Rubin·Cathy Malchiodi 등 아동 미술치료 표준 문헌에 기반한 설계.",
+    "만 5세부터 청소년까지. 발달 단계에 맞춘 미술 매체와 표현 과정을 통해 정서 조절·또래 관계·학교 적응·트라우마를 다룹니다. 매 세션 후 부모 상담 10분과 아동 미술치료 10회기당 보호자 미술치료 1회기 및 심층 상담을 제공합니다.",
   keywords: [
     "아동 미술치료",
     "청소년 미술치료",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     type: "website",
     title: "아동·청소년 미술치료 — 발달 단계별 미술 접근",
     description:
-      "만 5세부터. 부모 상담 병행. 발달 단계에 맞춘 미술 매체와 표현 과정을 통해 정서 조절·또래 관계·학교 적응·트라우마에 접근합니다.",
+      "만 5세부터. 매 세션 후 부모 상담을 병행하고, 아동 미술치료 10회기당 보호자 미술치료 1회기 및 심층 상담을 제공합니다.",
     url: `${SITE_URL}/services/child`,
     images: [
       {
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "아동·청소년 미술치료 — 발달 단계별 미술 접근",
     description:
-      "아동의 발달 단계에 맞는 매체와 거리감으로, 부모님과 함께 설계하는 미술심리상담입니다.",
+      "아동의 발달 단계에 맞는 매체와 거리감으로 함께 설계하며, 10회기당 보호자 미술치료 1회기 및 심층 상담을 제공합니다.",
     images: ["/og/services-child.png"],
   },
 };
@@ -64,7 +64,7 @@ const childServiceSchema = {
       name: "아동·청소년 미술치료",
       alternateName: "Child & Adolescent Art Therapy",
       description:
-        "만 5세~18세 대상 발달 단계별 미술심리상담. 발달 단계에 맞춘 미술 매체와 표현 과정을 중심으로 정서 조절, 또래 관계, 학교 적응, 트라우마 개입을 다룹니다. 매 세션 후 부모 상담 10분 포함, Judith Rubin·Cathy Malchiodi 등 아동 미술치료 표준 문헌에 기반한 설계.",
+        "만 5세~18세 대상 발달 단계별 미술심리상담. 발달 단계에 맞춘 미술 매체와 표현 과정을 중심으로 정서 조절, 또래 관계, 학교 적응, 트라우마 개입을 다룹니다. 매 세션 후 부모 상담 10분과 아동 미술치료 10회기당 보호자 미술치료 1회기 및 심층 상담을 제공합니다.",
       url: `${SITE_URL}/services/child`,
       image: `${SITE_URL}/og/services-child.png`,
       therapyType: "Art Therapy",
@@ -399,6 +399,9 @@ export default function ChildPage() {
                 50분'을 잇는 다리입니다. 같은 주제를 양쪽에서 조율할 수 있을
                 때, 변화의 속도가 달라집니다. 첫 상담은 아동 없이 부모님만
                 방문하셔서 아동의 상태를 충분히 나눠 주시면 됩니다.
+              </p>
+              <p className="mt-4 rounded-xl bg-cream px-5 py-4 text-charcoal/90 leading-[var(--leading-normal)]">
+                <strong>아동 미술치료 10회기당 보호자 미술치료 1회기 및 심층 상담을 제공합니다.</strong>
               </p>
             </div>
             <div>
