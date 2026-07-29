@@ -164,7 +164,7 @@ export default function ServicesPage() {
                 </div>
                 <div className={i % 2 === 1 ? "lg:order-1" : ""}>
                   <p className="text-primary-500 text-xs font-medium tracking-wide uppercase mb-2">{service.titleEn}</p>
-                  <h2 className="text-night text-2xl font-semibold">{service.title}</h2>
+                  <h2 className="text-night text-xl font-semibold">{service.title}</h2>
                   <p className="mt-4 text-charcoal/80 leading-relaxed">{service.description}</p>
                   <Link
                     href={service.href}
