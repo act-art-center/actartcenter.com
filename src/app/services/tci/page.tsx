@@ -160,6 +160,11 @@ const references = [
       "Josefsson, K., Jokela, M., Cloninger, C. R., Hintsanen, M., Salo, J., Hintsa, T., Pulkki-Råback, L., & Keltikangas-Järvinen, L. (2013). Maturity and change in personality: Developmental trends of temperament and character in adulthood. Development and Psychopathology, 25(3), 713–727.",
     href: "https://doi.org/10.1017/S0954579413000126",
   },
+  {
+    citation:
+      "Kalmanti, A., Yotsidi, V., Douzenis, A., Moraiti, V., Malafanti, A., & Michopoulos, I. (2025). Relationship between hybrid arts-based CBT-CP intervention and personality dimensions in patients with non-malignant chronic pain: Evidence from a non-randomized control trial. Healthcare, 13(12), 1440.",
+    href: "https://doi.org/10.3390/healthcare13121440",
+  },
 ];
 
 const faq = [
@@ -393,6 +398,12 @@ export default function TciAssessmentPage() {
                 작품을 진단하는 도구로 설명하지 않습니다.
               </p>
               <p>
+                2025년 초기 연구 한 편에서는 만성통증 환자를 대상으로 TCI-140과 그림·표현적 글쓰기
+                등을 포함한 예술기반 CBT 복합개입을 함께 살펴보았습니다. 일부 성격 차원과 프로그램
+                참여·통증 대처 결과의 관련 가능성이 보고됐지만, 비무작위·자기선택 연구이며 순수한
+                미술치료의 효과나 TCI에 따른 맞춤 미술치료를 검증한 연구는 아닙니다.
+              </p>
+              <p>
                 대신 검사에서 드러난 경향을 <strong>임상적 가설이 아니라 대화를 여는 질문</strong>으로
                 활용합니다. 예를 들어 새로운 시도가 부담스러운지, 선택지가 많을 때 편안한지, 관계의
                 반응이 작업에 어떤 영향을 주는지, 완성까지 지속하는 과정에서 무엇이 필요한지를 실제
@@ -409,9 +420,10 @@ export default function TciAssessmentPage() {
               <p className="mt-2">
                 TCI의 성격 모형과 한국판 신뢰도·타당도는 연구되어 왔습니다. 2002년 한국판 연구는
                 대학생 851명을 대상으로 검토했으며 전반적으로 만족할 만한 심리측정 특성을 보고했지만,
-                요인분석에서 원 모형의 7요인 구조가 완전히 재현되지는 않았습니다. 또한 위 미술치료
-                활용은 TCI-미술치료 직접 효과 연구가 아니라, 검사 결과를 생활 맥락과 실제 작업 반응에
-                비추어 신중하게 이해하기 위한 센터의 보조적 임상 활용 원칙입니다.
+                요인분석에서 원 모형의 7요인 구조가 완전히 재현되지는 않았습니다. 예술기반 복합개입과
+                TCI를 함께 분석한 초기 연구는 있으나, 특정 점수에 따른 미술 매체·기법의 배정 효과는
+                확인되지 않았습니다. 위 미술치료 활용은 검사 결과를 생활 맥락과 실제 작업 반응에 비추어
+                신중하게 이해하기 위한 센터의 보조적 임상 활용 원칙입니다.
               </p>
             </div>
           </div>
@@ -455,7 +467,7 @@ export default function TciAssessmentPage() {
           <div className="max-w-4xl">
             <h2 className="text-2xl font-bold tracking-tight text-night">참고문헌</h2>
             <p className="mt-3 text-sm leading-relaxed text-charcoal/65">
-              아래 원저·한국판 타당화 연구와 심리측정 연구를 바탕으로 작성했습니다.
+              아래 원저·한국판 타당화·심리측정 연구와 예술기반 복합개입의 초기 연구를 바탕으로 작성했습니다.
             </p>
             <ol className="mt-6 space-y-4">
               {references.map((reference, index) => (
