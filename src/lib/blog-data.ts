@@ -46,7 +46,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: "handbook-of-art-therapy-case-dalley-review",
     title: "치료실의 세 번째 존재, 이미지",
     excerpt: "캐럴라인 케이스와 테사 달리의 《The Handbook of Art Therapy》를 통해 이미지 제작, 치료적 관계, 미술치료실의 환경과 경계, 미술치료사의 임상적 역할을 살펴봅니다.",
-    category: "미술치료 저서 리뷰",
+    category: "미술치료사 경험",
     seoKeywords: ["미술치료 책 추천", "미술치료 핸드북", "캐럴라인 케이스", "테사 달리", "미술치료 치료적 관계", "미술치료실 환경"],
     image: "/images/blog/handbook-art-therapy-book-cover.jpg",
     date: "2026년 7월 27일",
