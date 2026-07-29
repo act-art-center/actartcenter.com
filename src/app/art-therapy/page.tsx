@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { Container } from "@/components/shared/Container";
@@ -134,8 +135,21 @@ export default function ArtTherapyPage() {
     <>
       <JsonLd data={pageSchema} />
 
-      <header className="bg-cream py-14 lg:py-20">
-        <Container>
+      <header className="relative isolate overflow-hidden bg-cream py-14 lg:py-20">
+        <Image
+          src="/images/art-therapy/watercolor-bloom-cc0.webp"
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          aria-hidden="true"
+          className="-z-20 object-cover object-[58%_48%] sm:object-center"
+        />
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(247,242,232,0.94)_0%,rgba(247,242,232,0.88)_62%,rgba(247,242,232,0.72)_100%)] sm:bg-[linear-gradient(90deg,rgba(247,242,232,0.96)_0%,rgba(247,242,232,0.88)_58%,rgba(247,242,232,0.58)_100%)]"
+        />
+        <Container className="relative">
           <Breadcrumbs
             items={[
               { name: "홈", href: "/" },
