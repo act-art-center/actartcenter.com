@@ -265,7 +265,7 @@ export default function TeamPage() {
                 <h2 className="text-night font-semibold text-sm mb-3">임상 경험</h2>
                 <ul className="space-y-1.5 text-sm text-charcoal/70">
                   {[
-                    "현 OO병원 정신건강의학과 보호병동 및 외래 임상",
+                    "현 OO병원 정신건강의학과 임상",
                     "현 사회복지법인 OO원 아동양육시설 임상",
                     "현 용인 세브OO병원 정신건강의학과 입원병동 인턴",
                     "현 분당O병원 난임센터 인턴",
