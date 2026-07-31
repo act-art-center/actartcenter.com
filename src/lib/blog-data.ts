@@ -26,6 +26,23 @@ export const BLOG_CATEGORIES = [
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "the-rabbit-listened-art-therapist-reflection",
+    title: "곁에 머물러 가만히 들어주는 미술치료사",
+    excerpt: "코리 도어펠드의 《가만히 들어주었어》를 읽으며, 곁에서 듣고 기다리고 한 사람의 속도와 함께 걷는 미술치료사의 태도를 돌아봅니다.",
+    category: "미술치료사 경험",
+    seoKeywords: ["가만히 들어주었어", "코리 도어펠드", "미술치료사 경험", "미술치료 경청", "치료적 관계", "미술치료사 성찰"],
+    image: "/images/blog/the-rabbit-listened-korean-book-cover.jpg",
+    date: "2026년 7월 31일",
+    author: "고은별",
+    readTime: "7분",
+    bookCover: {
+      width: 1210,
+      height: 1200,
+      sourceLabel: "YES24 · 북뱅크",
+      sourceUrl: "https://www.yes24.com/product/goods/72172926",
+    },
+  },
+  {
     slug: "art-therapy-sourcebook-review",
     title: "그림을 잘 그려야 한다는 마음이 먼저 찾아올 때",
     excerpt: "캐시 A. 말키오디의 《The Art Therapy Sourcebook》을 통해 미술치료의 기본 원리, 창작 과정, 감정 표현, 매체 선택과 치료적 관계를 따뜻한 언어로 살펴봅니다.",
