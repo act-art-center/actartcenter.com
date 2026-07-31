@@ -26,17 +26,6 @@ export const BLOG_CATEGORIES = [
 
 export const BLOG_POSTS: BlogPost[] = [
   {
-    slug: "museum-art-therapy-reflection",
-    title: "미술관에서 미술치료를 생각하다: 작품 앞에서 마음을 만나는 시간",
-    excerpt: "국내외 미술관의 접근성·감상 프로그램과 미술치료 사례를 살펴보며, 작품 감상과 반응작업이 한 사람의 표현과 관계로 이어지기 위해 필요한 미술치료사의 역할을 나눕니다.",
-    category: "미술치료사 경험",
-    seoKeywords: ["미술관 미술치료", "전시연계 미술치료", "작품 감상", "반응작업", "미술관 접근성", "미술치료사 경험"],
-    image: "/characters/therapist/therapist-workshop-easel.jpg",
-    date: "2026년 7월 31일",
-    author: "고은별",
-    readTime: "8분",
-  },
-  {
     slug: "art-therapy-sourcebook-review",
     title: "그림을 잘 그려야 한다는 마음이 먼저 찾아올 때",
     excerpt: "캐시 A. 말키오디의 《The Art Therapy Sourcebook》을 통해 미술치료의 기본 원리, 창작 과정, 감정 표현, 매체 선택과 치료적 관계를 따뜻한 언어로 살펴봅니다.",
