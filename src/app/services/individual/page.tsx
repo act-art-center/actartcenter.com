@@ -151,22 +151,59 @@ const mediaPalette = [
   {
     medium: "수채 · 잉크",
     quality:
-      "유동적이고 통제가 어려운 매체. 감정의 흐름·긴장 이완·불안 표현에 자주 활용된 사례가 있습니다. 결과보다 번짐 자체가 기록이 될 수 있습니다.",
+      "물의 양과 붓의 움직임에 따라 번짐이 달라지는 유동적 매체입니다. 미술치료사는 이러한 감각적·정서적 경험을 참여자의 상태와 목표에 맞게 구조화합니다.",
+    references: [1, 2],
   },
   {
     medium: "유화 · 오일 파스텔",
     quality:
-      "밀도와 층이 쌓이는 매체. 오랜 시간 눌러둔 감정, 복잡한 정동을 두껍게 표현할 수 있어 소진·우울 주제에 활용될 수 있습니다.",
+      "손의 압력, 혼합과 겹침에 따라 밀도와 층을 조절할 수 있는 매체입니다. 치료사는 참여자가 원하는 표현 방식과 작업 중의 반응을 함께 살피며 매체를 제안합니다.",
+    references: [1, 2],
   },
   {
     medium: "콜라주",
     quality:
-      "이미 만들어진 이미지를 선택·배치하는 작업. 정체성 탐색, 가치 명료화, 자기 표상 작업에 적용할 수 있습니다.",
+      "이미 만들어진 이미지를 고르고 자르고 배치하면서 자기표상과 이야기를 구성하는 매체입니다. 잡지 사진 콜라주는 미술치료의 평가와 치료적 작업에 활용되어 왔습니다.",
+    references: [3],
   },
   {
     medium: "점토 · 조형",
     quality:
-      "촉각·무게·저항이 있는 매체. 신체 경험과 연결되는 매체로, 트라우마 기억의 안전한 그라운딩에 활용된 사례가 있습니다.",
+      "촉각·무게·저항과 입체적 형태를 경험하는 매체입니다. 점토 작업은 만지고 움직이고 만들고 허무는 감각운동 과정을 포함하며, 트라우마 주제에서는 치료사가 자극 수준과 참여자의 반응을 세심하게 살피며 구조화합니다.",
+    references: [4, 5],
+  },
+];
+
+const mediaReferences = [
+  {
+    number: 1,
+    citation:
+      "Lusebrink, V. B. (2010). Assessment and Therapeutic Application of the Expressive Therapies Continuum: Implications for Brain Structures and Functions. Art Therapy, 27(4), 168–177.",
+    href: "https://doi.org/10.1080/07421656.2010.10129380",
+  },
+  {
+    number: 2,
+    citation:
+      "Snir, S., & Regev, D. (2013). A dialog with five art materials: Creators share their art making experiences. The Arts in Psychotherapy, 40(1), 94–100.",
+    href: "https://doi.org/10.1016/j.aip.2012.11.004",
+  },
+  {
+    number: 3,
+    citation:
+      "Landgarten, H. B. (1994). Magazine Photo Collage as a Multicultural Treatment and Assessment Technique. Art Therapy, 11(3), 218–219.",
+    href: "https://doi.org/10.1080/07421656.1994.10759089",
+  },
+  {
+    number: 4,
+    citation:
+      "Sholt, M., & Gavron, T. (2006). Therapeutic Qualities of Clay-work in Art Therapy and Psychotherapy: A Review. Art Therapy, 23(2), 66–72.",
+    href: "https://doi.org/10.1080/07421656.2006.10129647",
+  },
+  {
+    number: 5,
+    citation:
+      "Elbrecht, C., & Antcliff, L. R. (2014). Being touched through touch: Trauma treatment through haptic perception at the Clay Field. International Journal of Art Therapy, 19(1), 19–30.",
+    href: "https://doi.org/10.1080/17454832.2014.880932",
   },
 ];
 
@@ -304,7 +341,7 @@ export default function IndividualPage() {
               이런 분께 권해 드려요
             </h2>
             <p className="mt-4 text-charcoal/70 text-sm leading-relaxed">
-              '말로는 설명이 잘 안 되는데, 마음 한 켠이 계속 무겁다'는 감각이
+              말로 설명하기 어려운데 마음 한켠이 계속 무겁다는 감각이
               이어진다면 첫 상담에서 함께 이야기 나눠 볼 수 있습니다.
             </p>
           </div>
@@ -341,7 +378,7 @@ export default function IndividualPage() {
                 미술치료 연구자 Cathy Malchiodi는 저서 『Handbook of Art Therapy』에서,
                 1:1 세팅이 <strong>매체 선택·자극량·속도</strong>를 내담자의
                 신경계에 맞춰 정밀하게 조절할 수 있는 구조라고 기술합니다. 본
-                센터 역시 트라우마 주제에서는 자극을 천천히 올리는 '타이트레이션'
+                센터 역시 트라우마 주제에서는 자극을 천천히 올리는 타이트레이션
                 원칙을 지키며 세션을 설계합니다.
               </p>
             </div>
@@ -365,7 +402,7 @@ export default function IndividualPage() {
                 <li className="flex items-start gap-3">
                   <span className="w-1.5 h-1.5 mt-2 rounded-full bg-primary-400 shrink-0" />
                   <span>
-                    침묵도 작업의 일부로 존중됩니다. '꼭 무언가를 말해야 한다'는
+                    침묵도 작업의 일부로 존중됩니다. 무언가를 꼭 말해야 한다는
                     부담이 낮습니다.
                   </span>
                 </li>
@@ -416,12 +453,13 @@ export default function IndividualPage() {
         <Container>
           <div className="max-w-2xl">
             <h2 className="text-2xl lg:text-3xl font-bold tracking-tight">
-              매체(미술재료)의 심리적 성격
+              미술 매체의 경험적 특성
             </h2>
             <p className="mt-4 text-charcoal/70 text-sm leading-relaxed">
-              매체마다 저항과 유동성이 다르고, 그 성질 자체가 고유한 특성을 가집니다.
-              치료사가 매체를 구조화 할 때도 있지만, 참여자가 직접 그날 적합한 재료를
-              자유롭게 고를 수도있습니다.
+              미술 매체는 유동성, 저항, 촉감과 조절 가능성이 서로 다릅니다. 치료사는
+              안전과 한 사람의 상태, 치료 목표를 살피며 매체를 구조화하거나 제안하고,
+              참여자의 선택과 반응을 함께 존중합니다. 아래 설명은 일반적인 경향을
+              소개하며, 실제 의미는 한 사람의 맥락과 작업 경험 안에서 함께 탐색합니다.
             </p>
           </div>
           <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -432,9 +470,45 @@ export default function IndividualPage() {
                 style={{ border: "1px solid rgba(196, 191, 183, 0.15)" }}
               >
                 <h3 className="text-night font-semibold">{m.medium}</h3>
-                <p className="mt-2 text-charcoal/70 text-sm leading-relaxed">{m.quality}</p>
+                <p className="mt-2 text-charcoal/70 text-sm leading-relaxed">
+                  {m.quality}{" "}
+                  {m.references.map((referenceNumber) => (
+                    <sup key={referenceNumber} className="ml-0.5 text-[0.72em] align-super">
+                      <a
+                        href={`#media-reference-${referenceNumber}`}
+                        aria-label={`매체 설명 참고문헌 ${referenceNumber}번으로 이동`}
+                        className="text-primary-600 underline underline-offset-2"
+                      >
+                        [{referenceNumber}]
+                      </a>
+                    </sup>
+                  ))}
+                </p>
               </div>
             ))}
+          </div>
+          <div className="mt-10 max-w-4xl rounded-xl bg-cream p-6 lg:p-8">
+            <h3 className="text-night font-semibold">매체 설명의 학술적 근거</h3>
+            <ol className="mt-4 space-y-3 text-xs leading-relaxed text-charcoal/65">
+              {mediaReferences.map((reference) => (
+                <li id={`media-reference-${reference.number}`} key={reference.number}>
+                  <span className="mr-1 font-semibold text-charcoal/80">[{reference.number}]</span>
+                  {reference.citation}{" "}
+                  <a
+                    href={reference.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary-600 underline underline-offset-2 break-all"
+                  >
+                    DOI
+                  </a>
+                </li>
+              ))}
+            </ol>
+            <p className="mt-5 text-xs leading-relaxed text-charcoal/60">
+              매체의 특성은 일반적 참고 기준입니다. 치료사는 한 사람의 감각 선호,
+              현재 상태, 안전과 치료 목표를 함께 살펴 매체의 종류와 구조를 조정합니다.
+            </p>
           </div>
         </Container>
       </SectionWrapper>
@@ -450,8 +524,8 @@ export default function IndividualPage() {
               ACT(수용전념치료)는 Steven C. Hayes 등이 정립한 3세대 인지행동치료
               흐름으로, 심리적 유연성(psychological flexibility)을 6가지
               프로세스로 설명합니다. 본 센터는 각 프로세스를 미술 매체와
-              연결해 '말로만 하는 상담'이 아닌 <strong>몸과 이미지가 함께
-              참여하는 과정</strong>으로 진행합니다.
+              미술치료를 중심에 두고 각 프로세스를 보조적인 관점으로 연결해
+              <strong>몸과 이미지가 함께 참여하는 과정</strong>으로 진행합니다.
             </p>
           </div>
           <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -467,9 +541,9 @@ export default function IndividualPage() {
             ))}
           </div>
           <p className="mt-8 text-charcoal/60 text-xs leading-relaxed max-w-3xl">
-            ※ 본 센터는 미술치료와 ACT의 결합이 만능 해법임을 주장하지 않습니다.
-            연구 근거는 각 영역에서 꾸준히 축적되는 단계이며, 개인의 상태와
-            목표에 따라 다른 접근이 더 적합할 수 있습니다.
+            ※ 본 센터는 미술치료를 중심에 두고 ACT를 한 사람의 상태와 목표에 따라
+            보조적으로 통합합니다. 두 영역의 연구 근거는 계속 축적되고 있으며,
+            첫 상담에서 현재 상황에 맞는 접근을 신중히 살핍니다.
           </p>
         </Container>
       </SectionWrapper>
@@ -518,7 +592,7 @@ export default function IndividualPage() {
               <p className="text-primary-500 text-xs font-semibold tracking-wide uppercase">Group</p>
               <h3 className="mt-2 text-night font-semibold">ACT 그룹 미술치료</h3>
               <p className="mt-2 text-charcoal/70 text-sm leading-relaxed">
-                2~6인 소그룹에서 함께 작업하며 '나만 그런 게 아니구나'를 경험하고 싶은 분께.
+                2~6인 소그룹에서 서로의 경험을 나누며 공감과 연결감을 느끼고 싶은 분께.
               </p>
             </Link>
             <Link

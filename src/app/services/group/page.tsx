@@ -134,7 +134,7 @@ const yalomFactors = [
   {
     title: "보편성 (Universality)",
     description:
-      "'나만 이런 게 아니구나'라는 경험. 혼자 붙들고 있던 주제를 같은 결의 사람들이 꺼낼 때 가장 먼저 풀리는 매듭입니다.",
+      "서로의 경험을 들으며 공감과 연결감을 느끼는 과정입니다. 혼자 품어 온 주제를 같은 결의 사람들이 꺼낼 때 마음의 긴장이 조금씩 풀릴 수 있습니다.",
   },
   {
     title: "대인관계 학습 (Interpersonal Learning)",
@@ -328,7 +328,7 @@ export default function GroupPage() {
                 혼자 감당해 온 주제를, 같은 결의 사람들과 나눠 보는 시간입니다.
                 Irvin D. Yalom이 정리한 집단 치료적 요인과 ACT 수용전념치료
                 6프로세스를 미술 매체로 풀어내는 주 1회 × 90분 × 8주 구조입니다.
-                '나만 이런 게 아니었구나'라는 감각이 가장 먼저 시작됩니다.
+                서로의 경험 속에서 공감과 연결감을 느끼는 과정이 시작됩니다.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <span className="px-3 py-1.5 bg-cream rounded-lg text-sm text-charcoal/70">90분 세션</span>
@@ -430,7 +430,7 @@ export default function GroupPage() {
             </h2>
             <p className="mt-4 text-charcoal/70 text-sm leading-relaxed">
               그룹 토크만 하는 집단치료와는 다른 장치들이 작동합니다. 이미지와
-              매체가 매개가 되기에 '언어 이전의 경험'이 더 안전하게 오갑니다.
+              매체가 매개가 되어 언어로 다 표현되기 전의 경험이 안전한 구조 안에서 오갑니다.
             </p>
           </div>
           <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -456,7 +456,7 @@ export default function GroupPage() {
               주 1회 × 90분 × 8주 — 회기 흐름
             </h2>
             <p className="mt-4 text-charcoal/70 text-sm leading-relaxed">
-              아래는 '마음유연성 8주' 기본 트랙의 흐름입니다. 주제별 트랙(번아웃·관계
+              아래는 마음유연성 8주 기본 트랙의 흐름입니다. 주제별 트랙(번아웃·관계
               회복·부모 자기돌봄)은 해당 주제에 맞춰 Week 3~7의 매체와 프롬프트가
               변주됩니다.
             </p>
@@ -557,7 +557,7 @@ export default function GroupPage() {
               그룹 미술치료 실무 정의 — 참여자 간 상호작용과 창작 과정이 동시에 운영되는 형식 — 을 따릅니다.
               국내 임상 적용은 <strong>한국미술치료학회</strong>의 소그룹 사례 연구 축적(정서 조절·자기표현·
               사회적 지지감 측면)에서 언어와 절차를 가져왔습니다. 마지막 축은 <strong>Steven C. Hayes 외의 ACT 모델</strong>로,
-              특히 '가치 명료화'와 '전념 행동' 단계에서 그룹 구성원이 서로의 증인이 되어 주는 효과가 관찰됩니다.
+              특히 가치 명료화와 전념 행동 단계에서 그룹 구성원이 서로의 증인이 되어 주는 효과가 관찰됩니다.
             </p>
           </div>
           <details className="mt-8 max-w-3xl">
