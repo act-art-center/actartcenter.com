@@ -89,7 +89,7 @@ export const SERVICES_ALL = [
     id: "individual",
     title: "성인 1:1 개인 미술치료",
     titleEn: "Individual Art Therapy",
-    description: "그림 실력과 관계없이 미술 매체를 활용해 말로 다 표현하기 어려운 감정과 경험을 표현하고, 미술치료사와 함께 그 의미를 천천히 살펴봅니다. 50분 세션으로 불안·우울·번아웃·트라우마·관계 갈등을 다룹니다.",
+    description: "미술에 익숙하지 않아도 괜찮습니다. 말로 다 전하기 어려운 마음과 경험을 색과 선, 다양한 미술 매체로 천천히 표현해 봅니다. 미술치료사가 곁에서 함께 바라보며, 50분 동안 불안·우울·번아웃·트라우마·관계의 어려움을 한 사람의 속도에 맞춰 다정하고 신중하게 살핍니다.",
     href: "/services/individual",
     anchor: "성인 1:1 개인 미술치료 안내",
     image: "/characters/session/adult-individual-art-therapy.jpg",

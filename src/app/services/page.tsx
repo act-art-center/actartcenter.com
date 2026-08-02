@@ -153,7 +153,7 @@ export default function ServicesPage() {
                         src={service.image}
                         alt={service.imageAlt}
                         fill
-                        className="object-cover"
+                        className={service.id === "individual" ? "object-contain" : "object-cover"}
                         sizes="(max-width: 1024px) 100vw, 50vw"
                       />
                     </div>
