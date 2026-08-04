@@ -265,10 +265,10 @@ export default function TeamPage() {
                 <h2 className="text-night font-semibold text-sm mb-3">임상 경험</h2>
                 <ul className="space-y-1.5 text-sm text-charcoal/70">
                   {[
-                    "현 OO병원 정신건강의학과 임상",
                     "현 사회복지법인 OO원 아동양육시설 임상",
                     "현 용인 세브OO병원 정신건강의학과 입원병동 인턴",
                     "현 분당O병원 난임센터 인턴",
+                    "이음병원 정신건강의학과 보호병동 및 외래",
                     "이음병원 병원형Wee센터 보호병동 인턴",
                     "성루카 호스피스 병원 인턴",
                     "무이재 암병원 인턴",
@@ -304,6 +304,7 @@ export default function TeamPage() {
                     "Cumulus Green Award 대상 수상",
                     "Cumulus Association, Melbourne 호주 연수",
                     "ICOGRADA, Torino 이탈리아 연수",
+                    "홍익대학교 WCU(World Class University), 해외 석학(Kunihisa Ito) 국제공동연구 프로젝트",
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 mt-2 rounded-full bg-primary-500 shrink-0" />
