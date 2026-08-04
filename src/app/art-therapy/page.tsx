@@ -137,17 +137,17 @@ export default function ArtTherapyPage() {
 
       <header className="relative isolate overflow-hidden bg-cream py-14 lg:py-20">
         <Image
-          src="/images/art-therapy/watercolor-bloom-cc0.webp"
+          src="/images/art-therapy/pink-peach-floral-painting.webp"
           alt=""
           fill
           priority
           sizes="100vw"
           aria-hidden="true"
-          className="-z-20 object-cover object-[58%_48%] sm:object-center"
+          className="-z-20 object-cover object-center"
         />
         <div
           aria-hidden="true"
-          className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(247,242,232,0.94)_0%,rgba(247,242,232,0.88)_62%,rgba(247,242,232,0.72)_100%)] sm:bg-[linear-gradient(90deg,rgba(247,242,232,0.96)_0%,rgba(247,242,232,0.88)_58%,rgba(247,242,232,0.58)_100%)]"
+          className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(247,242,232,0.94)_0%,rgba(247,242,232,0.84)_62%,rgba(247,242,232,0.68)_100%)] sm:bg-[linear-gradient(90deg,rgba(247,242,232,0.94)_0%,rgba(247,242,232,0.76)_58%,rgba(247,242,232,0.30)_100%)]"
         />
         <Container className="relative">
           <Breadcrumbs
