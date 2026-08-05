@@ -143,11 +143,7 @@ export default function ArtTherapyPage() {
           priority
           sizes="100vw"
           aria-hidden="true"
-          className="-z-20 object-cover object-center"
-        />
-        <div
-          aria-hidden="true"
-          className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(247,242,232,0.94)_0%,rgba(247,242,232,0.84)_62%,rgba(247,242,232,0.68)_100%)] sm:bg-[linear-gradient(90deg,rgba(247,242,232,0.94)_0%,rgba(247,242,232,0.76)_58%,rgba(247,242,232,0.30)_100%)]"
+          className="-z-10 object-cover object-center"
         />
         <Container className="relative">
           <Breadcrumbs
