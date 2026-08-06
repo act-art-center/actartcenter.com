@@ -268,8 +268,8 @@ export default function TeamPage() {
                     "현 사회복지법인 OO원 아동양육시설 임상",
                     "현 용인 세브OO병원 정신건강의학과 입원병동 인턴",
                     "현 분당O병원 난임센터 인턴",
-                    "이음병원 정신건강의학과 보호병동 및 외래",
-                    "이음병원 병원형Wee센터 보호병동 인턴",
+                    "OO병원 정신건강의학과 보호병동 및 외래",
+                    "OO병원 병원형Wee센터 보호병동 인턴",
                     "성루카 호스피스 병원 인턴",
                     "무이재 암병원 인턴",
                     "사단법인 희망의 숲 장애아동복지시설 임상",
@@ -281,7 +281,7 @@ export default function TeamPage() {
                   ))}
                 </ul>
                 <p className="mt-3 text-xs leading-relaxed text-charcoal/55">
-                  (현 임상기관은 내담자 보호를 위해 비식별 처리합니다.)
+                  (일부 임상기관은 내담자 보호를 위해 비식별 처리합니다.)
                 </p>
               </div>
 
@@ -304,7 +304,7 @@ export default function TeamPage() {
                     "Cumulus Green Award 대상 수상",
                     "Cumulus Association, Melbourne 호주 연수",
                     "ICOGRADA, Torino 이탈리아 연수",
-                    "홍익대학교 WCU(World Class University), 해외 석학(Kunihisa Ito) 국제공동연구 프로젝트",
+                    "홍익대학교 WCU(World Class University), 해외 석학(Kunihisa Ito) 국제공동연구 프로젝트 연구원",
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 mt-2 rounded-full bg-primary-500 shrink-0" />
