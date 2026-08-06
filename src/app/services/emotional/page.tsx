@@ -347,8 +347,8 @@ export default function EmotionalPage() {
               이런 분께 권해 드려요
             </h2>
             <p className="mt-4 text-charcoal/70 text-sm leading-relaxed">
-              진단명이 꼭 있어야 하는 것은 아닙니다. '말로는 설명이 잘 안 되는데
-              마음 한 곳이 오래 무겁다' 는 감각이 이어진다면, 첫 상담에서 지금의
+              진단명이 꼭 있어야 하는 것은 아닙니다. ‘말로는 설명이 잘 안 되는데
+              마음 한 곳이 오래 무겁다’ 는 감각이 이어진다면, 첫 상담에서 지금의
               상태와 세션 속도를 함께 점검해 드립니다.
             </p>
           </div>
@@ -375,7 +375,7 @@ export default function EmotionalPage() {
               말이 닿지 않는 영역 — 트라우마의 신경생리학
             </h2>
             <p className="mt-4 text-charcoal/70 text-sm leading-relaxed">
-              트라우마 경험은 '말로 설명하면 풀릴 것'이라는 가정만으로 다루기
+              트라우마 경험은 ‘말로 설명하면 풀릴 것’이라는 가정만으로 다루기
               어려운 영역입니다. 본 센터가 미술 매체를 첫 진입로로 쓰는 이유는,
               다음 네 가지 관점이 국제 임상에서 지속적으로 기술되어 왔기
               때문입니다.
@@ -394,7 +394,7 @@ export default function EmotionalPage() {
             ))}
           </div>
           <p className="mt-8 text-charcoal/60 text-xs leading-relaxed max-w-3xl">
-            ※ 본 센터는 미술치료가 트라우마를 '해소'한다고 주장하지 않습니다.
+            ※ 본 센터는 미술치료가 트라우마를 ‘해소’한다고 주장하지 않습니다.
             다만 언어 기반 처리와는 다른 경로로 경험에 접촉할 수 있다는 가능성이
             꾸준히 시사되고 있으며, 본 센터는 그 가능성을 보수적으로 인용합니다.
           </p>
@@ -409,7 +409,7 @@ export default function EmotionalPage() {
               페이싱 원칙 — 안전이 먼저, 서사는 나중
             </h2>
             <p className="mt-4 text-charcoal/70 text-sm leading-relaxed">
-              '지금 꺼내도 괜찮은가' 의 판단이 기법보다 먼저입니다. 본 센터는
+              ‘지금 꺼내도 괜찮은가’ 의 판단이 기법보다 먼저입니다. 본 센터는
               Dan Siegel 의 window of tolerance 개념과 Peter Levine 의 somatic
               experiencing 에서 온 타이트레이션 원칙을 미술 작업에 번역해,
               자극량을 천천히 올리는 네 가지 원칙을 운영합니다.
@@ -441,9 +441,9 @@ export default function EmotionalPage() {
               ACT 는 정서 작업에서 어떻게 쓰이나요
             </h2>
             <p className="mt-4 text-charcoal/70 text-sm leading-relaxed">
-              ACT(수용전념치료)는 증상 제거보다 '가치 있는 삶의 방향으로
-              움직이는 유연성'을 목표로 합니다. 본 센터는 ACT의 6가지 핵심 과정을 미술
-              매체와 통합해 '말로만 하는 상담' 이 아닌 몸과 이미지가 함께 움직이는
+              ACT(수용전념치료)는 증상 제거보다 ‘가치 있는 삶의 방향으로
+              움직이는 유연성’을 목표로 합니다. 본 센터는 ACT의 6가지 핵심 과정을 미술
+              매체와 통합해 ‘말로만 하는 상담’ 이 아닌 몸과 이미지가 함께 움직이는
               작업으로 진행하며, 정서·트라우마 트랙에서는 특히 네 가지 축이
               반복적으로 쓰입니다.
             </p>
@@ -471,8 +471,8 @@ export default function EmotionalPage() {
               회기 구조 — 50분 + 10분 정리
             </h2>
             <p className="mt-4 text-charcoal/70 text-sm leading-relaxed">
-              한 회기는 60분(세션 50분 + 정리 10분)을 기본으로 합니다. '꺼낸 채로
-              돌려보내지 않기' 위해 종결 의식을 반드시 포함하며, 홈워크는 선택
+              한 회기는 60분(세션 50분 + 정리 10분)을 기본으로 합니다. ‘꺼낸 채로
+              돌려보내지 않기’ 위해 종결 의식을 반드시 포함하며, 홈워크는 선택
               사항입니다. 아래 흐름은 기본값이며, 주제·상태에 따라 비율을
               조정합니다.
             </p>

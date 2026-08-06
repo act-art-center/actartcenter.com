@@ -393,7 +393,7 @@ export default function ProtectivePage() {
                 (1999)은 이 영역의 국제 참조 자료로 오래 인용되어 왔고, 이후
                 Art Therapy: Journal of the American Art Therapy Association에
                 사례 연구가 지속적으로 축적되어 왔습니다. 본 센터는 이들 흐름을
-                '효과 단정'이 아니라 '설계 원칙'으로 참조합니다.
+                ‘효과 단정’이 아니라 ‘설계 원칙’으로 참조합니다.
               </p>
             </div>
             <div>
@@ -445,8 +445,8 @@ export default function ProtectivePage() {
               기관·병원 파트너십 운영 방식
             </h2>
             <p className="mt-4 text-charcoal/70 text-sm leading-relaxed">
-              기관 담당자가 가장 먼저 궁금해 하시는 것이 '어떤 방식으로 들어갈 수
-              있는가'입니다. 본 센터는 네 가지 협력 모델을 운영하며, 기관의 인력
+              기관 담당자가 가장 먼저 궁금해 하시는 것이 ‘어떤 방식으로 들어갈 수
+              있는가’입니다. 본 센터는 네 가지 협력 모델을 운영하며, 기관의 인력
               구성·공간 제약·치료 계획 범위에 맞추어 조합합니다.
             </p>
           </div>
@@ -527,7 +527,7 @@ export default function ProtectivePage() {
                 난임·생식의학 맥락 — 주기와 상실의 리듬
               </h2>
               <p className="mt-4 text-charcoal/70 text-sm leading-relaxed">
-                난임 치료 과정은 '주기'라는 고유한 시간 구조를 가집니다. 이
+                난임 치료 과정은 ‘주기’라는 고유한 시간 구조를 가집니다. 이
                 리듬을 무시한 세션 설계는 오히려 자극량을 높일 수 있기 때문에,
                 본 센터는 클리닉 일정과 세션 밀도를 함께 움직이는 구조로
                 설계합니다. Helen Greenslade Hartrick 등 국제 저술이 기록해 온
@@ -559,7 +559,7 @@ export default function ProtectivePage() {
               의료 맥락에서의 미술치료
             </h2>
             <p className="mt-4 text-charcoal/70 text-sm leading-relaxed">
-              'medical art therapy'는 1990년대 후반 Cathy Malchiodi의 두 편의 단행본을 기점으로
+              ‘medical art therapy’는 1990년대 후반 Cathy Malchiodi의 두 편의 단행본을 기점으로
               학문적 언어를 갖추기 시작했고, 이후 AATA의 실무 기준과 JAATA 게재 사례 연구로
               축적되어 왔습니다. 본 센터의 파트너십 모델은 이 국제·국내 흐름 위에서 설계됐습니다.
             </p>

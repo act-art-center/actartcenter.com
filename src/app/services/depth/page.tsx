@@ -344,7 +344,7 @@ export default function DepthPage() {
                 심층 탐색·연구 기반 미술심리치료 — 오래 걷는 길을 위한 구조
               </h1>
               <p className="mt-6 text-charcoal/80 leading-[var(--leading-normal)]">
-                증상 완화 이후에도 '나는 어떤 사람으로 살고 싶은가' 를 오래
+                증상 완화 이후에도 ‘나는 어떤 사람으로 살고 싶은가’ 를 오래
                 묻고 싶은 분, 돌봄 역할 속에서 자신의 회복을 살피고 싶은 분,
                 사례 기반 학술 협력·연구 참여에 열려 있는 분을 위한 트랙입니다.
                 Cathy Malchiodi 의 장기 사례 기술, Judith Rubin 의
@@ -421,10 +421,10 @@ export default function DepthPage() {
         <Container>
           <div className="max-w-2xl">
             <h2 className="text-2xl lg:text-3xl font-bold tracking-tight">
-              '심층(depth-oriented)' 이라는 말의 의미
+              ‘심층(depth-oriented)’ 이라는 말의 의미
             </h2>
             <p className="mt-4 text-charcoal/70 text-sm leading-relaxed">
-              심층 작업은 '깊게 파고 들어가 해석하는 기술' 이 아닙니다. 오히려
+              심층 작업은 ‘깊게 파고 들어가 해석하는 기술’ 이 아닙니다. 오히려
               해석을 서두르지 않고 상징·이미지·서사가 스스로 움직일 시간을
               확보해 주는 구조입니다. 본 센터는 네 가지 전통을 참조하되, 그
               권위를 ACT 프레임으로 상대화합니다.
@@ -443,7 +443,7 @@ export default function DepthPage() {
             ))}
           </div>
           <p className="mt-8 text-charcoal/60 text-xs leading-relaxed max-w-3xl">
-            ※ 본 센터는 Jungian·Freudian 전통의 '해석 권위' 를 수용하지 않습니다.
+            ※ 본 센터는 Jungian·Freudian 전통의 ‘해석 권위’ 를 수용하지 않습니다.
             상징의 의미는 치료사가 내담자에게 부여하는 것이 아니라, 내담자가
             삶의 맥락 안에서 스스로 만들어 가는 것입니다.
           </p>
@@ -458,7 +458,7 @@ export default function DepthPage() {
               장기 작업의 가치 — 점진성의 언어
             </h2>
             <p className="mt-4 text-charcoal/70 text-sm leading-relaxed">
-              장기 트랙이 단기 트랙보다 '더 좋다' 는 이야기는 아닙니다. 다만
+              장기 트랙이 단기 트랙보다 ‘더 좋다’ 는 이야기는 아닙니다. 다만
               단기로 접근할 때 놓치기 쉬운 결을, 장기 작업은 다른 언어로
               되돌려줍니다. 다음 네 가지는 본 센터가 장기 트랙에서 반복적으로
               관찰해 온 결입니다.
@@ -590,7 +590,7 @@ export default function DepthPage() {
             <p className="mt-4 text-charcoal/70 text-sm leading-relaxed">
               심층 트랙은 하나의 학파가 아니라 <em>교차하는 계보</em> 위에서 설계됩니다.
               정신역동·실존주의·상징 전통·행동과학이 미술치료 안에서 만나는 자리이며, 본 센터는
-              어느 하나를 '해석의 권위'로 고정하지 않고 각 전통의 언어를 참조로만 씁니다.
+              어느 하나를 ‘해석의 권위’로 고정하지 않고 각 전통의 언어를 참조로만 씁니다.
             </p>
           </div>
           <dl className="mt-10 max-w-3xl space-y-6">

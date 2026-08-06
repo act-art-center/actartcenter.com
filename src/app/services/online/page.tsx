@@ -250,7 +250,7 @@ export default function OnlinePage() {
               <p className="mt-6 text-charcoal/80 leading-[var(--leading-normal)]">
                 팬데믹 이후 원격 심리치료(Telehealth Psychotherapy)의 효과성
                 연구가 누적되어 왔습니다. 본 센터는 그 흐름 위에서, 단순한
-                '화상 상담'이 아니라 세션 전 아트키트를 자택으로 배송해
+                ‘화상 상담’이 아니라 세션 전 아트키트를 자택으로 배송해
                 <strong> 매체의 물성까지 함께 전달</strong>하는 온라인
                 미술치료를 운영합니다. 서울 외 지역·해외 거주·이동이 어려운
                 시기에 계신 분들을 위한 설계입니다.
@@ -328,7 +328,7 @@ export default function OnlinePage() {
               온라인의 강점
             </h2>
             <p className="mt-4 text-charcoal/70 text-sm leading-relaxed">
-              원격 세션은 대면의 '축소판'이 아닙니다. 일부 주제에서는 오히려
+              원격 세션은 대면의 ‘축소판’이 아닙니다. 일부 주제에서는 오히려
               원격이 더 적합한 장면이 있습니다.
             </p>
           </div>

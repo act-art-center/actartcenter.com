@@ -23,6 +23,7 @@ export default function BookingPage() {
       email: (form.elements.namedItem("email") as HTMLInputElement).value,
       service: (form.elements.namedItem("service") as HTMLSelectElement).value,
       message: (form.elements.namedItem("message") as HTMLTextAreaElement).value,
+      website: (form.elements.namedItem("website") as HTMLInputElement).value,
     };
 
     try {
@@ -197,11 +198,21 @@ export default function BookingPage() {
                   )}
 
                   <form onSubmit={handleSubmit} className="space-y-5">
+                    <div className="hidden" aria-hidden="true">
+                      <label htmlFor="website">웹사이트</label>
+                      <input
+                        id="website"
+                        name="website"
+                        type="text"
+                        tabIndex={-1}
+                        autoComplete="off"
+                      />
+                    </div>
                     <div>
                       <label htmlFor="name" className="block text-sm font-medium text-night mb-1.5">
                         이름 <span className="text-secondary-500">*</span>
                       </label>
-                      <input id="name" name="name" type="text" required placeholder="이름을 입력해주세요"
+                      <input id="name" name="name" type="text" required maxLength={80} placeholder="이름을 입력해주세요"
                         className="w-full px-4 py-3 rounded-lg bg-cream text-charcoal placeholder:text-stone/50 focus:outline-none focus:ring-2 focus:ring-primary-500 transition-all" />
                     </div>
 
@@ -209,13 +220,13 @@ export default function BookingPage() {
                       <label htmlFor="phone" className="block text-sm font-medium text-night mb-1.5">
                         연락처 <span className="text-secondary-500">*</span>
                       </label>
-                      <input id="phone" name="phone" type="tel" required placeholder="010-0000-0000"
+                      <input id="phone" name="phone" type="tel" required minLength={7} maxLength={40} placeholder="010-0000-0000"
                         className="w-full px-4 py-3 rounded-lg bg-cream text-charcoal placeholder:text-stone/50 focus:outline-none focus:ring-2 focus:ring-primary-500 transition-all" />
                     </div>
 
                     <div>
                       <label htmlFor="email" className="block text-sm font-medium text-night mb-1.5">이메일</label>
-                      <input id="email" name="email" type="email" placeholder="email@example.com"
+                      <input id="email" name="email" type="email" maxLength={254} placeholder="email@example.com"
                         className="w-full px-4 py-3 rounded-lg bg-cream text-charcoal placeholder:text-stone/50 focus:outline-none focus:ring-2 focus:ring-primary-500 transition-all" />
                     </div>
 
@@ -240,7 +251,7 @@ export default function BookingPage() {
 
                     <div>
                       <label htmlFor="message" className="block text-sm font-medium text-night mb-1.5">하고 싶은 이야기</label>
-                      <textarea id="message" name="message" rows={4} placeholder="현재 상태나 궁금한 점을 자유롭게 적어주세요."
+                      <textarea id="message" name="message" rows={4} maxLength={3000} placeholder="현재 상태나 궁금한 점을 자유롭게 적어주세요."
                         className="w-full px-4 py-3 rounded-lg bg-cream text-charcoal placeholder:text-stone/50 focus:outline-none focus:ring-2 focus:ring-primary-500 transition-all resize-none" />
                     </div>
 

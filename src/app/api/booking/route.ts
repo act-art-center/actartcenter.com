@@ -1,5 +1,10 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
+import {
+  escapeHtml,
+  MAX_BOOKING_BODY_BYTES,
+  validateBookingInput,
+} from "@/lib/booking-validation";
 
 // Resend 무료 플랜: 계정 소유자 이메일로만 발송 가능
 // 도메인 인증(resend.com/domains) 후 다른 수신자 추가 가능
@@ -7,13 +12,47 @@ const RECIPIENTS = ["actartkorea@gmail.com"];
 
 export async function POST(request: Request) {
   try {
-    const body = await request.json();
-    const { name, phone, email, service, message } = body;
-
-    if (!name || !phone) {
+    const declaredLength = Number(request.headers.get("content-length") || 0);
+    if (declaredLength > MAX_BOOKING_BODY_BYTES) {
       return NextResponse.json(
-        { error: "이름과 연락처는 필수입니다." },
-        { status: 400 }
+        { error: "요청 내용이 너무 깁니다." },
+        { status: 413 },
+      );
+    }
+
+    const rawBody = await request.text();
+    if (new TextEncoder().encode(rawBody).length > MAX_BOOKING_BODY_BYTES) {
+      return NextResponse.json(
+        { error: "요청 내용이 너무 깁니다." },
+        { status: 413 },
+      );
+    }
+
+    let body: unknown;
+    try {
+      body = JSON.parse(rawBody);
+    } catch {
+      return NextResponse.json(
+        { error: "올바른 예약 정보를 입력해주세요." },
+        { status: 400 },
+      );
+    }
+
+    const validation = validateBookingInput(body);
+    if (!validation.ok) {
+      return NextResponse.json(
+        { error: validation.error },
+        { status: validation.bot ? 422 : 400 },
+      );
+    }
+
+    const { name, phone, email, service, message } = validation.data;
+
+    if (!process.env.RESEND_API_KEY) {
+      console.error("Booking API is missing RESEND_API_KEY");
+      return NextResponse.json(
+        { error: "예약 시스템을 잠시 이용할 수 없습니다." },
+        { status: 503 },
       );
     }
 
@@ -33,13 +72,20 @@ export async function POST(request: Request) {
       other: "기타",
     };
 
-    const serviceName = serviceLabels[service] || service || "미선택";
+    const serviceName = serviceLabels[service] || "미선택";
+    const safe = {
+      name: escapeHtml(name),
+      phone: escapeHtml(phone),
+      email: escapeHtml(email || "미기재"),
+      serviceName: escapeHtml(serviceName),
+      message: escapeHtml(message),
+    };
 
     const { error } = await resend.emails.send({
       from: "ACT ART CENTER <onboarding@resend.dev>",
       to: RECIPIENTS,
       replyTo: email || undefined,
-      subject: `[ACT ART CENTER] 새 예약 문의 — ${name}`,
+      subject: `[ACT ART CENTER] 새 예약 문의 — ${name.replace(/[\r\n]/g, " ")}`,
       html: `
         <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto;">
           <h2 style="color: #00534b; border-bottom: 2px solid #00534b; padding-bottom: 12px;">
@@ -48,25 +94,25 @@ export async function POST(request: Request) {
           <table style="width: 100%; border-collapse: collapse; margin-top: 16px;">
             <tr>
               <td style="padding: 8px 12px; font-weight: bold; color: #1d1c15; width: 120px;">이름</td>
-              <td style="padding: 8px 12px; color: #4a4639;">${name}</td>
+              <td style="padding: 8px 12px; color: #4a4639;">${safe.name}</td>
             </tr>
             <tr style="background: #fff9ee;">
               <td style="padding: 8px 12px; font-weight: bold; color: #1d1c15;">연락처</td>
-              <td style="padding: 8px 12px; color: #4a4639;">${phone}</td>
+              <td style="padding: 8px 12px; color: #4a4639;">${safe.phone}</td>
             </tr>
             <tr>
               <td style="padding: 8px 12px; font-weight: bold; color: #1d1c15;">이메일</td>
-              <td style="padding: 8px 12px; color: #4a4639;">${email || "미기재"}</td>
+              <td style="padding: 8px 12px; color: #4a4639;">${safe.email}</td>
             </tr>
             <tr style="background: #fff9ee;">
               <td style="padding: 8px 12px; font-weight: bold; color: #1d1c15;">관심 프로그램</td>
-              <td style="padding: 8px 12px; color: #4a4639;">${serviceName}</td>
+              <td style="padding: 8px 12px; color: #4a4639;">${safe.serviceName}</td>
             </tr>
           </table>
           ${message ? `
           <div style="margin-top: 20px; padding: 16px; background: #f7f2e8; border-radius: 8px;">
             <p style="font-weight: bold; color: #1d1c15; margin: 0 0 8px 0;">메시지</p>
-            <p style="color: #4a4639; margin: 0; white-space: pre-wrap;">${message}</p>
+            <p style="color: #4a4639; margin: 0; white-space: pre-wrap;">${safe.message}</p>
           </div>
           ` : ""}
           <p style="margin-top: 24px; font-size: 12px; color: #c5bfb4;">

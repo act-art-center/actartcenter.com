@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useEffect, useState, useSyncExternalStore } from "react";
+import { useRef, useEffect, useSyncExternalStore } from "react";
 import { cn } from "@/lib/utils";
 
 function subscribeMedia(query: string) {
@@ -37,13 +37,8 @@ export function VideoHero({
   const videoRef = useRef<HTMLVideoElement>(null);
   const isDesktop = useMediaQuery("(min-width: 768px)");
   const reducedMotion = useMediaQuery("(prefers-reduced-motion: reduce)");
-  const [mounted, setMounted] = useState(false);
-  const shouldPlayVideo = mounted && isDesktop && !reducedMotion;
+  const shouldPlayVideo = isDesktop && !reducedMotion;
   const mobileBg = mobileImageSrc ?? posterSrc;
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
 
   useEffect(() => {
     const v = videoRef.current;

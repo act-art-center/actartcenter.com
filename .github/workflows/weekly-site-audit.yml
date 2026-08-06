@@ -1,0 +1,34 @@
+name: Weekly production site audit
+
+on:
+  schedule:
+    - cron: "30 20 * * 1" # Tuesday 05:30 Asia/Seoul
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: weekly-production-audit
+  cancel-in-progress: true
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+      - name: Install locked dependencies
+        run: npm ci
+      - name: Audit production dependencies
+        run: npm audit --omit=dev --audit-level=high
+      - name: Audit sitemap, SEO essentials, and security headers
+        env:
+          SITE_URL: https://actartcenter.com
+        run: npm run audit:live
