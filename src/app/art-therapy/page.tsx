@@ -160,7 +160,7 @@ export default function ArtTherapyPage() {
             <h1 className="mt-3 text-night text-4xl lg:text-6xl font-bold tracking-tight leading-tight">
               미술치료란?
             </h1>
-            <p className="mt-6 max-w-3xl text-charcoal/80 text-lg lg:text-xl leading-relaxed">
+            <p className="mt-6 max-w-3xl text-night/90 text-lg lg:text-xl leading-relaxed">
               미술치료는 미술 창작과 표현 과정을 치료적 관계 안에서 함께 경험하며,
               말로 다 전하기 어려운 마음을 이미지와 색, 형태로 만나도록 돕는 심리치료입니다.
             </p>
