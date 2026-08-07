@@ -26,6 +26,17 @@ export const BLOG_CATEGORIES = [
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "safety-neuroscience-art-therapy-reflection",
+    title: "안전이 쌓일 때, 마음은 조금씩 움직입니다",
+    excerpt: "심리치료의 반응성을 설명하는 신경과학 원리를 살펴보고, 반복되는 안전한 관계와 미술 표현의 경험, 치료사의 반응작업과 슈퍼비전이 지닌 의미를 돌아봅니다.",
+    category: "미술치료사 경험",
+    seoKeywords: ["뇌과학과 미술치료", "치료적 관계", "신경가소성", "정서조절", "반응작업", "미술치료사 성찰"],
+    image: "/characters/therapist/two-women-walking-flowers-brush.jpg",
+    date: "2026년 8월 7일",
+    author: "고은별",
+    readTime: "9분",
+  },
+  {
     slug: "the-rabbit-listened-art-therapist-reflection",
     title: "곁에 머물러 가만히 들어주는 미술치료사",
     excerpt: "코리 도어펠드의 《가만히 들어주었어》를 읽으며, 곁에서 듣고 기다리고 한 사람의 속도와 함께 걷는 미술치료사의 태도를 돌아봅니다.",
