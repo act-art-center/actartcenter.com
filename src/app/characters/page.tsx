@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 const characters = [
   {
     name: "ACTIE",
-    image: "/characters/acttie-reading.png",
+    image: "/characters/acttie-reading-transparent.webp",
     alt: "책을 읽으며 생각을 정리하는 ACTIE",
     title: "감정과 가치의 방향을 조용히 살피는 안내자",
     body:
@@ -31,7 +31,7 @@ const characters = [
   },
   {
     name: "ARTTY",
-    image: "/characters/artty-paint.png",
+    image: "/characters/artty-paint-transparent.webp",
     alt: "큰 붓을 들고 있는 ARTTY",
     title: "색과 이미지로 마음의 표현을 돕는 안내자",
     body:
@@ -42,47 +42,47 @@ const characters = [
 const moments = [
   {
     title: "처음 방문하는 분께",
-    image: "/characters/artty-welcome.png",
+    image: "/characters/artty-welcome-transparent.webp",
     body: "낯선 치료실에 들어오는 마음이 조금 편안해지도록, ACTIE와 ARTTY는 안내문과 페이지 곳곳에서 따뜻한 첫인사를 건넵니다.",
   },
   {
     title: "표현이 막히는 순간에",
-    image: "/characters/artty-thoughtful.png",
+    image: "/characters/artty-thoughtful-transparent.webp",
     body: "그림이 바로 나오지 않는 시간도 미술치료의 일부입니다. ARTTY는 멈춤과 망설임까지 안전하게 바라보는 태도를 상징합니다.",
   },
   {
     title: "손으로 마음을 빚어 볼 때",
-    image: "/characters/artty/artty-clay-bear.jpg",
+    image: "/characters/artty/artty-clay-bear-transparent.webp",
     body: "ARTTY는 점토의 촉감과 형태를 천천히 만나며, 말로 다 담기 어려운 마음을 손끝의 표현으로 이어가도록 돕습니다.",
   },
   {
     title: "감정을 있는 그대로 받아들이기",
-    image: "/characters/actie/actie-self-hug-acceptance.jpg",
+    image: "/characters/actie/actie-self-hug-acceptance-transparent.webp",
     body: "ACTIE는 지금 느껴지는 감정을 밀어내지 않고, 있는 그대로 알아차리며 잠시 머물도록 돕습니다.",
   },
   {
     title: "가치있는 방향을 바라봐요",
-    image: "/characters/actie/actie-telescope.jpg",
+    image: "/characters/actie/actie-telescope-transparent.webp",
     body: "ACTIE는 마음이 흔들리는 순간에도 내가 소중히 여기는 방향을 조용히 바라보고, 작은 한 걸음을 떠올리는 태도를 권합니다.",
   },
   {
     title: "소중한 가치를 구체화할 때",
-    image: "/characters/actie/actie-values-notes.jpg",
+    image: "/characters/actie/actie-values-notes-transparent.webp",
     body: "ACTIE는 삶에서 소중히 여기는 가치와 성장의 방향을 하나씩 적어 보며, 오늘 실천할 작은 선택으로 연결하도록 돕습니다.",
   },
   {
     title: "학술적으로 연구하며 미술치료를 준비할 때",
-    image: "/characters/therapist/therapist-writing-notebook-coffee.jpg",
+    image: "/characters/therapist/therapist-writing-notebook-coffee-transparent.webp",
     body: "미술치료사는 임상 경험과 학술적 근거를 함께 살피며 준비합니다. 문헌과 사례의 흐름을 정리하고, 이를 치료실에서 만나는 마음의 속도와 미술치료 과정에 맞게 연결합니다.",
   },
   {
     title: "반응작업 하며 자기돌봄",
-    image: "/characters/therapist/therapist-drawing-response-art.jpg",
+    image: "/characters/therapist/therapist-drawing-response-art-transparent.webp",
     body: "미술치료사는 반응작업을 통해 세션에서 만난 마음의 울림을 살피고, 미술로 자기돌봄의 시간을 이어갑니다.",
   },
   {
     title: "동행하며 앞서지 않는 미술치료사",
-    image: "/characters/therapist/two-women-walking-flowers-brush.jpg",
+    image: "/characters/therapist/two-women-walking-flowers-brush-transparent.webp",
     body: "미술치료사는 한 사람의 속도와 선택을 존중하며, 미술로 마음을 살피는 길을 곁에서 함께 걸어갑니다.",
   },
 ];
@@ -188,7 +188,7 @@ export default function CharactersPage() {
                     <div className="relative aspect-square">
                       <Image src={moment.image} alt={moment.title} fill className="object-contain" sizes="(max-width: 768px) 100vw, 260px" />
                     </div>
-                    {moment.image !== "/characters/therapist/two-women-walking-flowers-brush.jpg" && (
+                    {moment.image !== "/characters/therapist/two-women-walking-flowers-brush-transparent.webp" && (
                       <p className="bg-white py-2 text-center text-[11px] leading-relaxed text-charcoal/45">
                         (c)ACT ART CENTER
                       </p>

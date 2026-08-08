@@ -28,7 +28,7 @@ card, and KakaoTalk share previews to not 404 — but it is **visually empty**.
 | 8 | `team.png` | 1200×630 | `/team` | `대표 고은별` + profile silhouette + sub: `차의과대 미술치료 박사과정 · 홍대 석사` |
 | 9 | `blog.png` | 1200×630 | `/blog` hub | `ACT 미술치료 블로그` + open journal motif + sub: `미술치료·ACT 전문 칼럼` |
 | 10 | `booking.png` | 1200×630 | `/booking` | `상담 예약` + calendar icon + sub: `첫 상담 무료 · 사전 예약제` |
-| 11 | `contact.png` | 1200×630 | `/contact` | `오시는 길` + map pin + sub: `서울 서초구 강남대로 305 현대렉시온 2518호` |
+| 11 | `contact.png` | 1200×630 | `/contact` | `오시는 길` + map pin + sub: `서울 서초구 강남대로 305 현대렉시온 2519호` |
 | 12 | `faq.png` | 1200×630 | `/faq` | `자주 묻는 질문` + speech bubble + sub: `미술치료·ACT FAQ` |
 | 13 | `gallery.png` | 1200×630 | `/gallery` | `작품 갤러리` + 3-frame thumbnail row + sub: `내담자 동의 기반 비식별 작품` |
 | 14 | `pricing.png` | 1200×630 | `/pricing` | `비용 안내` + simple rate card + sub: `개인 80-120k · 그룹 40-60k / 회기` |

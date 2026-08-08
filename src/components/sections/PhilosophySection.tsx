@@ -12,7 +12,7 @@ export function PhilosophySection() {
           <div className="rounded-2xl overflow-hidden bg-white order-2 lg:order-1">
             <div className="relative aspect-[4/3]">
               <Image
-                src="/characters/artty-paint.png"
+                src="/characters/artty-paint-transparent.webp"
                 alt="큰 붓을 들고 있는 ARTTY"
                 fill
                 className="object-contain bg-white p-4 lg:p-6"

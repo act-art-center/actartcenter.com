@@ -10,7 +10,7 @@ import { Mail, MapPin, Clock, Train, Bus, Car } from "lucide-react";
 export const metadata: Metadata = {
   title: "오시는 길·연락처 — ACT ART CENTER 강남센터",
   description:
-    "ACT ART CENTER 강남센터 위치·연락처 안내. 서울시 서초구 강남대로 305 현대렉시온 2518호. 지하철·버스로 편리하게, 건물 내 주차 2시간까지 무료.",
+    "ACT ART CENTER 강남센터 위치·연락처 안내. 서울시 서초구 강남대로 305 현대렉시온 2519호. 지하철·버스로 편리하게, 건물 내 주차 2시간까지 무료.",
   keywords: [
     "ACT ART CENTER 오시는 길",
     "강남 미술치료",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     title: "오시는 길·연락처 — ACT ART CENTER 강남센터",
-    description: "서울시 서초구 강남대로 305 현대렉시온 2518호. 주차 2시간 무료.",
+    description: "서울시 서초구 강남대로 305 현대렉시온 2519호. 주차 2시간 무료.",
     url: `${SITE_URL}/contact`,
     images: [
       {
@@ -60,7 +60,7 @@ const contactSchema = {
       image: `${SITE_URL}/images/office-hero.jpg`,
       address: {
         "@type": "PostalAddress",
-        streetAddress: "강남대로 305, 현대렉시온 2518호",
+        streetAddress: "강남대로 305, 현대렉시온 2519호",
         addressLocality: "서초구",
         addressRegion: "서울특별시",
         postalCode: "06628",
@@ -220,7 +220,7 @@ export default function ContactPage() {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="ACT ART CENTER 강남센터 지도 — 서울시 서초구 강남대로 305 현대렉시온 2518호"
+                  title="ACT ART CENTER 강남센터 지도 — 서울시 서초구 강남대로 305 현대렉시온 2519호"
                   className="aspect-square lg:aspect-auto lg:h-full"
                 />
               </div>

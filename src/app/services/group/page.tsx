@@ -350,7 +350,7 @@ export default function GroupPage() {
               <div className="rounded-2xl overflow-hidden bg-white">
                 <div className="relative aspect-[4/3]">
                   <Image
-                    src="/characters/twins-together.png"
+                    src="/characters/twins-together-transparent.webp"
                     alt="ACTIE와 ARTTY가 손을 잡고 함께 서 있는 그룹 미술치료 안내 장면"
                     fill
                     className="object-contain"

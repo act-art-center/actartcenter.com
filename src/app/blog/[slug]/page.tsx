@@ -186,7 +186,7 @@ export default async function BlogPostPage({ params }: Props) {
       {/* Featured Image */}
       <div className={`relative w-full mx-auto px-6 -mt-2 ${isPublisherBookCover ? "max-w-md" : "max-w-4xl"}`}>
         <div className={`${isPublisherBookCover ? "rounded-2xl overflow-hidden bg-[#f4efe7] p-4" : "aspect-[21/9] rounded-2xl overflow-hidden bg-[#f4efe7] p-3"}`}>
-          <div className={`${isPublisherBookCover ? "mx-auto flex max-w-[300px] flex-col overflow-hidden rounded-md bg-white" : "mx-auto flex h-full max-w-full aspect-square flex-col overflow-hidden rounded-md bg-white"}`}>
+          <div className={`${isPublisherBookCover ? "mx-auto flex max-w-[300px] flex-col overflow-hidden rounded-md bg-white" : `mx-auto flex h-full max-w-full aspect-square flex-col overflow-hidden rounded-md ${post.imageCopyrightEmbedded ? "bg-transparent" : "bg-white"}`}`}>
             <div
               className={isPublisherBookCover ? "relative" : "relative min-h-0 flex-1"}
               style={bookCover ? { aspectRatio: `${bookCover.width} / ${bookCover.height}` } : undefined}
@@ -211,11 +211,11 @@ export default async function BlogPostPage({ params }: Props) {
                   이미지 출처: {bookCover?.sourceLabel}
                 </a>
               </p>
-            ) : (
+            ) : !post.imageCopyrightEmbedded ? (
               <p className="shrink-0 bg-white px-3 pb-2 text-right text-[11px] leading-relaxed text-charcoal/45">
                 (c)ACT ART CENTER
               </p>
-            )}
+            ) : null}
           </div>
         </div>
       </div>

@@ -146,7 +146,7 @@ const globalGraphSchema = {
       priceRange: "₩₩",
       address: {
         "@type": "PostalAddress",
-        streetAddress: "강남대로 305, 현대렉시온 2518호",
+        streetAddress: "강남대로 305, 현대렉시온 2519호",
         addressLocality: "서초구",
         addressRegion: "서울특별시",
         postalCode: "06628",

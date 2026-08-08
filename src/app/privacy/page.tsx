@@ -245,7 +245,7 @@ export default function PrivacyPage() {
 
           <div className="mt-16 pt-8 border-t border-sand text-center text-stone text-sm">
             <p>ACT ART CENTER</p>
-            <p>서울시 서초구 강남대로 305, 현대렉시온 2518호</p>
+            <p>서울시 서초구 강남대로 305, 현대렉시온 2519호</p>
             <p>actartkorea@gmail.com</p>
           </div>
         </div>

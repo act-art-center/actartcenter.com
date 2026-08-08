@@ -66,13 +66,13 @@ export interface CharacterIllustrationProps {
 }
 
 const FILE_MAP: Record<CharacterName, string> = {
-  "artty-welcome": "/characters/artty-welcome.png",
-  "artty-paint": "/characters/artty-paint.png",
-  "artty-thoughtful": "/characters/artty-thoughtful.png",
-  "artty-scenes": "/characters/artty-scenes.png",
-  "acttie-reading": "/characters/acttie-reading.png",
-  "acttie-laptop": "/characters/acttie-laptop.png",
-  "twins-together": "/characters/twins-together.png",
+  "artty-welcome": "/characters/artty-welcome-transparent.webp",
+  "artty-paint": "/characters/artty-paint-transparent.webp",
+  "artty-thoughtful": "/characters/artty-thoughtful-transparent.webp",
+  "artty-scenes": "/characters/artty-scenes-transparent.webp",
+  "acttie-reading": "/characters/acttie-reading-transparent.webp",
+  "acttie-laptop": "/characters/acttie-laptop-transparent.webp",
+  "twins-together": "/characters/twins-together-transparent.webp",
 };
 
 export function CharacterIllustration({

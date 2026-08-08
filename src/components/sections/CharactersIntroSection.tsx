@@ -42,7 +42,7 @@ export function CharactersIntroSection() {
             <div className="relative overflow-hidden rounded-3xl bg-cream p-3 shadow-[var(--shadow-sm)]">
               <div className="overflow-hidden rounded-2xl bg-white">
                 <Image
-                  src="/characters/twins-together.png"
+                  src="/characters/twins-together-transparent.webp"
                   alt="ACT ART CENTER를 상징하는 액티와 아티 일러스트"
                   width={900}
                   height={450}

@@ -72,7 +72,7 @@ const VARIANT_MAP: Record<
   },
   grief: {
     character: "ARTTY",
-    characterSrc: "/characters/artty-thoughtful.png",
+    characterSrc: "/characters/artty-thoughtful-transparent.webp",
     accent: "#D9A13B",
     bg: "#D9DFD1",
     label: "상실과 애도",
@@ -80,7 +80,7 @@ const VARIANT_MAP: Record<
   },
   misunderstanding: {
     character: "ACTIE",
-    characterSrc: "/characters/acttie-reading.png",
+    characterSrc: "/characters/acttie-reading-transparent.webp",
     accent: "#C8795A",
     bg: "#EFE4D3",
     label: "그림 실력보다 과정",
@@ -88,7 +88,7 @@ const VARIANT_MAP: Record<
   },
   unfinished: {
     character: "ARTTY",
-    characterSrc: "/characters/artty-paint.png",
+    characterSrc: "/characters/artty-paint-transparent.webp",
     accent: "#7FA392",
     bg: "#F2D9C8",
     label: "완성되지 않은 그림",
@@ -96,7 +96,7 @@ const VARIANT_MAP: Record<
   },
   safePaper: {
     character: "ACTIE",
-    characterSrc: "/characters/acttie-reading.png",
+    characterSrc: "/characters/acttie-reading-transparent.webp",
     accent: "#B9895B",
     bg: "#E8E0D2",
     label: "안전한 종이",
@@ -104,7 +104,7 @@ const VARIANT_MAP: Record<
   },
   childLines: {
     character: "ARTTY",
-    characterSrc: "/characters/artty-paint.png",
+    characterSrc: "/characters/artty-paint-transparent.webp",
     accent: "#E2B84E",
     bg: "#CFE1DA",
     label: "아이의 선과 색",
@@ -112,7 +112,7 @@ const VARIANT_MAP: Record<
   },
   caregiverRest: {
     character: "ACTIE",
-    characterSrc: "/characters/acttie-laptop.png",
+    characterSrc: "/characters/acttie-laptop-transparent.webp",
     accent: "#6E8B7C",
     bg: "#EFE1C6",
     label: "돌봄과 쉼",
@@ -120,7 +120,7 @@ const VARIANT_MAP: Record<
   },
   parentWords: {
     character: "ARTTY",
-    characterSrc: "/characters/artty-welcome.png",
+    characterSrc: "/characters/artty-welcome-transparent.webp",
     accent: "#D7A06A",
     bg: "#DCE7D4",
     label: "부모의 말",
@@ -128,7 +128,7 @@ const VARIANT_MAP: Record<
   },
   science: {
     character: "ACTIE",
-    characterSrc: "/characters/acttie-reading.png",
+    characterSrc: "/characters/acttie-reading-transparent.webp",
     accent: "#5F8A8B",
     bg: "#E9D6B8",
     label: "연구와 근거",
@@ -143,7 +143,7 @@ const VARIANT_MAP: Record<
   },
   anxiety: {
     character: "ARTTY",
-    characterSrc: "/characters/artty-thoughtful.png",
+    characterSrc: "/characters/artty-thoughtful-transparent.webp",
     accent: "#7788A8",
     bg: "#EAD9CF",
     label: "불안의 실",
@@ -151,7 +151,7 @@ const VARIANT_MAP: Record<
   },
   mindfulness: {
     character: "ACTIE",
-    characterSrc: "/characters/acttie-reading.png",
+    characterSrc: "/characters/acttie-reading-transparent.webp",
     accent: "#8A9A5B",
     bg: "#F0DFC0",
     label: "마음챙김 드로잉",
@@ -159,7 +159,7 @@ const VARIANT_MAP: Record<
   },
   traumaBridge: {
     character: "ARTTY",
-    characterSrc: "/characters/artty-scenes.png",
+    characterSrc: "/characters/artty-scenes-transparent.webp",
     accent: "#8D6E63",
     bg: "#D7E0E0",
     label: "트라우마와 표현",
@@ -231,8 +231,8 @@ export function BlogIllustration({ variant, title }: BlogIllustrationProps) {
 
       {item.character === "BOTH" ? (
         <div className="absolute bottom-[-6%] left-[8%] flex items-end gap-2 sm:gap-4">
-          <CharacterImage src="/characters/acttie-reading.png" alt="ACTIE" className="h-[78%] min-h-[220px] w-[185px]" />
-          <CharacterImage src="/characters/artty-paint.png" alt="ARTTY" className="h-[82%] min-h-[235px] w-[205px]" />
+          <CharacterImage src="/characters/acttie-reading-transparent.webp" alt="ACTIE" className="h-[78%] min-h-[220px] w-[185px]" />
+          <CharacterImage src="/characters/artty-paint-transparent.webp" alt="ARTTY" className="h-[82%] min-h-[235px] w-[205px]" />
         </div>
       ) : (
         <div className="absolute bottom-[-8%] left-[8%]">
