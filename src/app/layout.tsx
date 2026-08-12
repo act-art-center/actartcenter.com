@@ -82,7 +82,7 @@ export const metadata: Metadata = {
   ...(Object.keys(verification).length > 0 ? { verification } : {}),
 };
 
-// Global structured data: Organization + LocalBusiness/MedicalBusiness + WebSite + SearchAction.
+// Global structured data: Organization + LocalBusiness + WebSite + SearchAction.
 // Page-level schema (Article, Person, Breadcrumb, FAQPage, etc.) is injected
 // by individual page.tsx files via <JsonLd /> — NOT here.
 const globalGraphSchema = {
@@ -136,14 +136,13 @@ const globalGraphSchema = {
       description: "미술치료를 중심으로 ACT(수용전념)의 관점을 더해 마음이 머물며 쉬어 갈 수 있는 시간을 함께하는 센터",
     },
     {
-      "@type": ["LocalBusiness", "MedicalBusiness"],
+      "@type": "LocalBusiness",
       "@id": `${SITE_URL}/#localbusiness`,
       name: SITE_NAME,
       description: "미술치료를 중심으로 ACT(수용전념)의 관점을 보조적으로 통합하는 서울 서초구 미술치료 센터",
       url: SITE_URL,
       image: `${SITE_URL}/og/default.png`,
-      medicalSpecialty: "Psychiatric",
-      priceRange: "₩₩",
+      priceRange: "가격표 및 초기 상담 후 안내",
       address: {
         "@type": "PostalAddress",
         streetAddress: "강남대로 305, 현대렉시온 2519호",
@@ -167,8 +166,8 @@ const globalGraphSchema = {
       // 전화번호는 실 번호 확정 전까지 의도적으로 제외 (spec §2.6, audit P2).
       // TODO: telephone 실값 확보 후 추가(추측 금지) — 로컬 SEO 핵심 필드.
       availableService: [
-        { "@type": "MedicalTherapy", name: "미술치료", alternateName: "미술심리치료", therapyType: "Art Therapy" },
-        { "@type": "MedicalTherapy", name: "수용전념치료", therapyType: "Acceptance and Commitment Therapy" },
+        { "@type": "Service", name: "미술치료", alternateName: "미술심리치료", serviceType: "Art Therapy" },
+        { "@type": "Service", name: "ACT(수용전념) 통합 미술치료", serviceType: "Art Therapy with an integrated ACT perspective" },
       ],
       openingHoursSpecification: {
         "@type": "OpeningHoursSpecification",

@@ -54,6 +54,10 @@ function inferMedicalConditions(question: string, answer: string): MedicalCondit
   return refs;
 }
 
+// 화면 본문은 보존하되, 현재 가격표와 불일치하는 과거 가격 답변은
+// 검색엔진용 FAQPage 데이터에서 제외해 잘못된 가격 인용을 막습니다.
+const faqSchemaItems = FAQ_ITEMS.filter((item) => item.question !== "상담 비용은 얼마인가요?");
+
 const faqPageSchema = {
   "@context": "https://schema.org",
   "@graph": [
@@ -67,7 +71,7 @@ const faqPageSchema = {
     {
       "@type": "FAQPage",
       "@id": `${SITE_URL}/faq#faq`,
-      mainEntity: FAQ_ITEMS.map((item) => {
+      mainEntity: faqSchemaItems.map((item) => {
         const conditions = inferMedicalConditions(item.question, item.answer);
         const question: Record<string, unknown> = {
           "@type": "Question",

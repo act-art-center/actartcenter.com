@@ -52,7 +52,7 @@ const contactSchema = {
       ],
     },
     {
-      "@type": ["LocalBusiness", "MedicalBusiness"],
+      "@type": "LocalBusiness",
       "@id": `${SITE_URL}/#localbusiness`,
       name: SITE_NAME,
       alternateName: "ACT ART CENTER 강남센터",

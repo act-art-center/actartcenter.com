@@ -58,16 +58,15 @@ const protectiveServiceSchema = {
       ],
     },
     {
-      "@type": "MedicalTherapy",
+      "@type": "Service",
       "@id": `${SITE_URL}/services/protective#service`,
       name: "보호·의료 환경 미술심리치료",
       alternateName: ["Protective & Medical Environment Art Therapy", "Medical Art Therapy", "의료 미술심리치료"],
-      additionalType: "https://schema.org/MedicalProcedure",
       description:
         "청소년 보호병동·정신과 입원 환경·난임 및 생식의학 치료 과정에서 진행되는 ACT 기반 미술심리치료. 미국미술치료협회(AATA)의 medical art therapy 실무 원칙과 Malchiodi 『Medical Art Therapy with Adults』(1999), 『Medical Art Therapy with Children』(1999) 흐름을 참고하여, 의료 현장의 제약과 병행 치료 맥락을 존중하며 세션을 설계합니다.",
       url: `${SITE_URL}/services/protective`,
       image: `${SITE_URL}/og/services-protective.png`,
-      therapyType: "Art Therapy",
+      serviceType: "보호·의료 환경 미술심리치료",
       provider: { "@id": `${SITE_URL}/#organization` },
       areaServed: { "@type": "Country", name: "대한민국" },
       audience: [

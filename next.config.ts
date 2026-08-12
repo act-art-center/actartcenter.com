@@ -43,6 +43,12 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "www.actartcenter.com" }],
+        destination: "https://actartcenter.com/:path*",
+        permanent: true,
+      },
       // 신뢰도/SEO: 레거시 경로를 404 대신 정규 페이지로 통합
       {
         source: "/about",

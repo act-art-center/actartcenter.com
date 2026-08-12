@@ -57,7 +57,7 @@ const onlineServiceSchema = {
       ],
     },
     {
-      "@type": "MedicalTherapy",
+      "@type": "Service",
       "@id": `${SITE_URL}/services/online#service`,
       name: "온라인 미술치료",
       alternateName: ["Online Art Therapy", "비대면 미술치료", "Telehealth Art Therapy"],
@@ -65,7 +65,7 @@ const onlineServiceSchema = {
         "Zoom 화상으로 진행되는 ACT 기반 미술심리상담. 세션 전 종이·물감·붓·마커·소형 점토 등으로 구성된 아트키트를 자택으로 배송하며, 팬데믹 이후 누적된 원격 심리치료(telehealth psychotherapy) 효과성 연구와 AATA의 원격 실무 가이드라인에 기반해 설계된 50분 구조입니다.",
       url: `${SITE_URL}/services/online`,
       image: `${SITE_URL}/og/services-online.png`,
-      therapyType: "Art Therapy",
+      serviceType: "온라인 미술치료",
       provider: { "@id": `${SITE_URL}/#organization` },
       areaServed: [
         { "@type": "Country", name: "대한민국" },

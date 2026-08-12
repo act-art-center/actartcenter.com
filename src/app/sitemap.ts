@@ -58,6 +58,13 @@ function entry(
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const latestBlogDate = BLOG_POSTS.reduce(
+    (latest, post) => {
+      const date = isoFromKoreanDate(post.date);
+      return date > latest ? date : latest;
+    },
+    PAGE_LAST_MODIFIED["/blog"] ?? DEFAULT_LAST_MODIFIED,
+  );
   const blogEntries: MetadataRoute.Sitemap = BLOG_POSTS.map((post) => ({
     url: `${SITE_URL}/blog/${post.slug}`,
     lastModified: new Date(isoFromKoreanDate(post.date)),
@@ -88,7 +95,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     entry("/pricing", 0.8, "monthly"),
     entry("/faq", 0.8, "monthly"),
     // Blog hub + leaves
-    entry("/blog", 0.8, "daily"),
+    { ...entry("/blog", 0.8, "daily"), lastModified: new Date(latestBlogDate) },
     ...blogEntries,
     entry("/news", 0.7, "weekly"),
     // Booking / contact / misc

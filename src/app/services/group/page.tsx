@@ -97,9 +97,9 @@ const groupServiceSchema = {
       },
       offers: {
         "@type": "Offer",
-        price: "560000",
+        price: "800000",
         priceCurrency: "KRW",
-        description: "8회기 패키지 560,000~800,000원",
+        description: "마음 유연성 8주 프로그램 800,000원",
       },
     },
     {
@@ -111,8 +111,9 @@ const groupServiceSchema = {
       provider: { "@id": `${SITE_URL}/#organization` },
       offers: {
         "@type": "Offer",
-        price: "250000",
+        price: "350000",
         priceCurrency: "KRW",
+        description: "번아웃 탈출 워크숍 그룹 4회기 1인 350,000원",
       },
     },
     {

@@ -45,7 +45,9 @@ const HIGHLIGHTED_ITEMS = HIGHLIGHT_QUESTIONS.map(
 
 export function FaqSection({ emitJsonLd = false }: FaqSectionProps = {}) {
   const schema = emitJsonLd
-    ? buildGraph(buildFaqPage(HIGHLIGHTED_ITEMS.map((i) => ({ q: i.question, a: i.answer }))))
+    ? buildGraph(buildFaqPage(HIGHLIGHTED_ITEMS
+      .filter((item) => item.question !== "상담 비용은 얼마인가요?")
+      .map((i) => ({ q: i.question, a: i.answer }))))
     : null;
 
   return (

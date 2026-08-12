@@ -59,7 +59,7 @@ const childServiceSchema = {
       ],
     },
     {
-      "@type": "MedicalTherapy",
+      "@type": "Service",
       "@id": `${SITE_URL}/services/child#service`,
       name: "아동·청소년 미술치료",
       alternateName: "Child & Adolescent Art Therapy",
@@ -67,7 +67,7 @@ const childServiceSchema = {
         "장애·비장애를 구분하지 않고 만 5세~18세 아동·청소년이 참여할 수 있는 발달 단계별 미술치료입니다. 발달 단계에 맞춘 미술 매체와 표현 과정을 중심으로 진행하며, 매 회기 후 부모 상담 10분과 아동·청소년 미술치료 10회기마다 보호자 미술치료 1회기 및 심층 상담을 제공합니다.",
       url: `${SITE_URL}/services/child`,
       image: `${SITE_URL}/og/services-child.png`,
-      therapyType: "Art Therapy",
+      serviceType: "아동·청소년 미술치료",
       areaServed: [
         { "@type": "AdministrativeArea", name: "서울특별시" },
         { "@type": "AdministrativeArea", name: "서초구" },
@@ -81,9 +81,9 @@ const childServiceSchema = {
       },
       offers: {
         "@type": "Offer",
-        price: "80000",
+        price: "100000",
         priceCurrency: "KRW",
-        description: "50분(아동 40분+부모 10분) 기준 80,000~100,000원",
+        description: "아동 40분 + 부모상담 10분 기준 100,000원",
       },
     },
   ],

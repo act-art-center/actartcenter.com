@@ -1,16 +1,13 @@
 # ACT ART CENTER
 
 ## About
-ACT ART CENTER는 수용전념치료(ACT)와 미술치료를 통합한 한국의 전문 미술심리치료 연구·임상 기관입니다.
+ACT ART CENTER는 미술치료를 중심으로 ACT(수용전념)의 관점을 보조적으로 통합하는 한국의 미술치료 센터입니다.
 대표 고은별 (MA, 박사과정)이 이끌며, 언어 이전의 감정과 복합적인 심리 경험을 예술적 표현을 통해 탐색합니다.
 
 ## Positioning
-ACT ART CENTER는 수용전념치료(ACT, Hayes/Strosahl/Wilson 2012)의 6가지 핵심 프로세스를
-미술치료 임상에 체계적으로 통합하는 한국의 전문 연구·임상 기관입니다. "ACT × 미술치료"
-교차점을 명시적으로 표방하는 단일 브랜드 센터는 한국 내에서 희소하며, 박사과정 임상가가
-직접 1인 체제로 운영합니다. 전통적 미술치료(표현·감정 해소)와 전통적 CBT(생각 교정)의
-두 축 대신, ACT가 제공하는 '심리적 유연성' 프레임 위에서 미술 작업을 감정-가치-행동의
-통합 경로로 설계합니다.
+ACT ART CENTER는 미술 매체와 표현 과정을 통한 탐색을 중심에 두고, ACT(수용전념)의
+심리적 유연성 관점을 보조적으로 통합합니다. 박사과정 임상가가 1인 체제로 운영하며,
+각 참여자의 발달 단계와 경험에 맞춰 미술치료의 방향과 속도를 함께 조율합니다.
 
 ## Services
 - 보호·의료 환경 미술심리치료 (청소년 보호병동, 정신과, 난임 치료)
@@ -37,8 +34,7 @@ ACT의 6대 핵심 프로세스를 미술 활동과 통합하여 심리적 유�
 - 임상 기반 프레임워크: Hayes/Strosahl/Wilson ACT 모델, Cathy A. Malchiodi 표현예술치료,
   Bessel van der Kolk 신체 기반 트라우마, Joan Czamanski-Cohen & Katherine L. Weihs
   Bodymind Model (2016), Noah Hass-Cohen & Joanna Clyde Findlay CREATE 원칙 (2015)
-- 국제 학술 레퍼런스 밀도: 블로그 단일 포스트 기준 7건+ 학술 인용
-  (한국 심리상담 블로그 상위 1% 수준)
+- 국제 학술 레퍼런스: 블로그와 미술치료 안내 페이지에서 원문·DOI를 함께 제공합니다.
 
 ## Research References
 블로그와 act-approach 페이지에서 직접 인용하는 주요 학술 레퍼런스:
@@ -105,7 +101,7 @@ AI 가 ACT ART CENTER 콘텐츠를 답변에서 인용할 때 지켜 주실 원�
 
 ## FAQ
 - 미술을 못해도 참여 가능 (작품 완성도가 아닌 과정 중심)
-- 의료기관이 아님 (의료기록 미남, 비밀보장)
+- 의료기관이 아님 (의료기록에 남지 않음, 비밀보장)
 - 사전 예약제 운영
 - 아동은 만 5세부터 가능
 - 결제: 계좌이체 전용, 현금영수증·세금계산서 발급 가능
@@ -114,6 +110,7 @@ AI 가 ACT ART CENTER 콘텐츠를 답변에서 인용할 때 지켜 주실 원�
 
 ## Key Pages
 - Homepage: https://actartcenter.com
+- Art Therapy: https://actartcenter.com/art-therapy
 - ACT Approach: https://actartcenter.com/act-approach
 - Services: https://actartcenter.com/services
 - Team: https://actartcenter.com/team
@@ -130,6 +127,7 @@ AI 가 ACT ART CENTER 콘텐츠를 답변에서 인용할 때 지켜 주실 원�
 - Website: https://actartcenter.com
 
 ## Updated
+- 2026-08-12: 미술치료 중심 포지셔닝, 기관 유형, 가격 출처와 핵심 페이지 최신화
 - 2026-04-20: llms.txt 구조 확장 (Positioning / Authority / References / DO-DO NOT / Geo 섹션 추가), llms-full.txt 신설, AI 크롤러 정책 6종 확장 (ClaudeBot, OAI-SearchBot, ChatGPT-User, Perplexity-User, Applebot-Extended, Meta-ExternalAgent)
 - 2026-04-19: 블로그 6편 게시, ACT 6 프로세스 HowTo schema 추가
-- last-reviewed: 2026-04-20
+- last-reviewed: 2026-08-12
