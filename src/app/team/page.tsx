@@ -349,7 +349,7 @@ export default function TeamPage() {
           </h2>
           <p className="mt-4 text-center text-charcoal/70 max-w-2xl mx-auto">
             각 영역은 독립적이기보다 서로를 보완합니다. 첫 상담에서 지금 당신에게 필요한 접근을
-            함께 찾아 드립니다.
+            함께 이야기합니다.
           </p>
           <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-5 max-w-4xl mx-auto">
             {member.specialtyDetails.map((d) => (
