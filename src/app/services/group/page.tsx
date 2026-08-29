@@ -8,7 +8,7 @@ import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "ACT 그룹 미술치료 — 2~6인 소그룹 8주 마음유연성 프로그램",
+  title: "집단·그룹 미술치료 — 2~6인 소그룹 8주 마음유연성 프로그램",
   description:
     "같은 고민을 가진 2~6명이 함께하는 소그룹 미술치료. Yalom의 치료적 요인과 ACT 6프로세스를 미술 작업으로 풀어내는 주 1회 × 8주 구조. 번아웃·관계 회복·부모 자기돌봄 등 주제별 소그룹으로 진행합니다.",
   keywords: [
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   alternates: { canonical: `${SITE_URL}/services/group` },
   openGraph: {
     type: "website",
-    title: "ACT 그룹 미술치료 — 2~6인 소그룹 프로그램",
+    title: "집단·그룹 미술치료 — 2~6인 소그룹 프로그램",
     description:
       "Yalom 치료적 요인 × ACT 6프로세스. 번아웃·관계 회복·부모 자기돌봄 주제별 8주 구조.",
     url: `${SITE_URL}/services/group`,
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "ACT 그룹 미술치료 — 2~6인 소그룹 프로그램",
+    title: "집단·그룹 미술치료 — 2~6인 소그룹 프로그램",
     description:
       "혼자가 아니라는 감각을 회복하는 8주. 혼자 감당해 온 주제를 같은 결의 사람들과 미술로 풀어냅니다.",
     images: ["/og/services-group.png"],
@@ -79,7 +79,7 @@ const groupServiceSchema = {
     {
       "@type": "Course",
       "@id": `${SITE_URL}/services/group#course-8weeks`,
-      name: "마음유연성 8주 ACT 그룹 미술치료 프로그램",
+      name: "마음유연성 8주 집단·그룹 미술치료 프로그램",
       description:
         "2~6인 소그룹에서 ACT 6프로세스와 Yalom 치료적 요인을 미술 매체로 통합해 다루는 주 1회 × 90분 × 8회기 구조의 그룹 프로그램. 번아웃, 관계 회복, 부모 자기돌봄 등 주제별 트랙으로 운영합니다.",
       provider: { "@id": `${SITE_URL}/#organization` },
