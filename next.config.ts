@@ -41,8 +41,12 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+  async rewrites() {
+    return [{ source: "/card/stella", destination: "/digital-card/stella/index.html" }];
+  },
   async redirects() {
     return [
+      { source: "/card", destination: "/card/stella", permanent: true },
       {
         source: "/:path*",
         has: [{ type: "host", value: "www.actartcenter.com" }],

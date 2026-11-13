@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { notoSerifKR, manrope, caveat } from "@/lib/fonts";
+import { brandFontClassName } from "@/lib/fonts";
 import {
   SITE_URL,
   SITE_NAME,
@@ -204,7 +204,7 @@ export default function RootLayout({
   return (
     <html
       lang="ko"
-      className={`${notoSerifKR.variable} ${manrope.variable} ${caveat.variable} scroll-smooth`}
+      className={`${brandFontClassName} scroll-smooth`}
     >
       <head>
         <JsonLd data={globalGraphSchema} />
