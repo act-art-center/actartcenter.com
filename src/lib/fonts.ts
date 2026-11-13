@@ -1,20 +1,2 @@
-import { Noto_Serif_KR, Manrope, Caveat } from "next/font/google";
-
-export const notoSerifKR = Noto_Serif_KR({
-  weight: ["400", "700"],
-  subsets: ["latin"],
-  variable: "--font-noto-serif",
-  display: "swap",
-});
-
-export const manrope = Manrope({
-  subsets: ["latin"],
-  variable: "--font-manrope",
-  display: "swap",
-});
-
-export const caveat = Caveat({
-  subsets: ["latin"],
-  variable: "--font-caveat",
-  display: "swap",
-});
+// Shared sans-serif typography is defined in globals.css and served directly from R2.
+export const brandFontClassName = "font-sans";
