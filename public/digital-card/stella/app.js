@@ -15,7 +15,15 @@ document.querySelector('#share').addEventListener('click', async () => {
  field.value=url;shareDialog.showModal();
 });
 document.querySelector('#closeDialog').addEventListener('click', () => shareDialog.close());
-Promise.all([fetch('i18n.json').then(r => {if(!r.ok)throw Error('Translations unavailable');return r.json();}),fetch('card-assets.json').then(r => {if(!r.ok)throw Error('Card assets unavailable');return r.json();})]).then(([translations,assets])=>{
+const retryLanguage = document.querySelector('#retry-language');
+let languageReady = false;
+function loadLanguage(){
+ if(languageReady)return;
+ retryLanguage.disabled=true;
+ return Promise.all([fetch('i18n.json').then(r => {if(!r.ok)throw Error('Translations unavailable');return r.json();}),fetch('card-assets.json').then(r => {if(!r.ok)throw Error('Card assets unavailable');return r.json();})]).then(([translations,assets])=>{
+ languageReady=true;
+ document.querySelector('.language-status').hidden=true;
+ document.querySelectorAll('[data-lang]').forEach(b=>{b.disabled=false;});
  function setLanguage(lang){
   document.documentElement.lang=lang;
   document.querySelectorAll('[data-i18n]').forEach(el=>{el.innerHTML=translations[el.dataset.i18n][lang];});
@@ -28,11 +36,13 @@ Promise.all([fetch('i18n.json').then(r => {if(!r.ok)throw Error('Translations un
   document.querySelector('.portrait img').alt=en?'Stella Ko, Director':'고은별 대표';
   document.querySelector('#share').setAttribute('aria-label',en?'Share card information':'명함 공유 안내');
   document.querySelector('.contact').setAttribute('aria-label',en?'Contact details':'연락처');
-  document.querySelector('.quick-actions').setAttribute('aria-label',en?'Quick contact':'빠른 연락');
-  document.querySelectorAll('.quick-actions a').forEach(a=>{const label=en?a.dataset.labelEn:a.dataset.labelKo;a.setAttribute('aria-label',label);a.title=label;});
   try{localStorage.setItem('act-card-language',lang);}catch{}
  }
  document.querySelectorAll('[data-lang]').forEach(button=>button.addEventListener('click',()=>setLanguage(button.dataset.lang)));
  let initial='ko';try{if(localStorage.getItem('act-card-language')==='en')initial='en';}catch{}
+ const requested=new URLSearchParams(location.search).get('lang');if(requested==='ko'||requested==='en')initial=requested;
  setLanguage(initial);
-}).catch(()=>{document.querySelectorAll('[data-lang]').forEach(b=>{b.disabled=true;});});
+}).catch(()=>{document.querySelectorAll('[data-lang]').forEach(b=>{b.disabled=true;});document.querySelector('.language-status').hidden=false;retryLanguage.disabled=false;});
+}
+retryLanguage.addEventListener('click',loadLanguage);
+loadLanguage();
